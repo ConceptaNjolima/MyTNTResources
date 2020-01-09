@@ -68,7 +68,14 @@ Pre-reqs
    * It’s both powerful (because it’s open-ended), plentiful (b/c it’s open source), and sometimes hard to use (because it’s open-ended).
    * It takes practice, it's a learned skill, it's not intuitive - ask your coaches about their Git disasters, everyone has a story.
 
-5. **Demo** - local work flow in VS Code
+5. Tool Tour [TO DO describe how they come together and how the tour works]
+   * *All pre-installed?*
+   * Git
+   * Git in VS Code
+   * GitHub
+   * Source tree 
+
+6. **Demo** - local work flow in VS Code
 Instructor demos the basic local workflow and then NTs will follow on their own.
    * `git init` - command to create a new repo
      * Create a new directory, folder, or choose an existing one
@@ -83,10 +90,10 @@ Instructor demos the basic local workflow and then NTs will follow on their own.
      * See changes in the Source Control tab of the Explorer. Click on the change to see a comparison side by side.
    * `git commit` - command commit change
 
-6. NTs create local workflow
+7. NTs create local workflow
    * *Steps? What to name it*
 
-7. **Demo** - Sourcetree 
+8. **Demo** - Sourcetree 
 Instructor demos Sourcetree by adding local repository and looking at history. 
    * Sourcetree is an app for interacting with Git repositories. It does a good job visualizing what's going on.
    * You can make changes to repos with both the command line in VS Code and Sourcetree, there's some overlap in functionality. Try both and find what works best.
@@ -94,14 +101,14 @@ Instructor demos Sourcetree by adding local repository and looking at history.
    * Make change and commit with Soucretree.
    * *Talk about staged vs unstaged commits?*
 
-8. NTs look at repo in SourceTree, make change and commit.
+9. NTs look at repo in SourceTree, make change and commit.
 
-9. **Demo** - remote repository in VS Code with GitHub Instructor demos migrating repository to GitHub.
+10. **Demo** - remote repository in VS Code with GitHub Instructor demos migrating repository to GitHub.
    * Create a new repo in GitHub, *want to do it by building in TNT repo or in individual?*
    * Select "upload existing file". Choose files.
    * Need to clone repo to start working from GitHub rather than the local only copy.
 
-10. **Demo** - cloning, branching, committing, a repo from GitHib.
+11. **Demo** - cloning, branching, committing, a repo from GitHib.
      * Clone - Many projects start from an existing repo. This is a more coming flow than starting locally.
        * View "Clone or download" button in GitHub.
        * Open new VS Code window. `git clone` + GitHub URL and start working from remote repo.
@@ -116,30 +123,30 @@ Instructor demos Sourcetree by adding local repository and looking at history.
        * `git checkout` - command lists all the branches and lets you switch between them. This can also be switched from the status bar.
        * You can also create a branch in Sourcetree by clicking "Branch" button.
 
-11. NTs create a repo and upload files, then clone from repo and create a branch.
+12. NTs create a repo and upload files, then clone from repo and create a branch.
 
-12. **Demo** - change, stage, commit, then push
+13. **Demo** - change, stage, commit, then push
      * The cycle is make a change, stage, commit, then push.
      * Stage allows you to to commit some of the changes. If you're still working on part, you can stage and commit just what's ready.
      * If you don't need to stage you can commit everything.
      * Save. `git stage` `git commit` `git push`. 
      * View changes in branch. Repeat as you work.
   
-13. **Demo** - Merge 
+14. **Demo** - Merge 
      * Changes are merged from other branches back into master. master is treated at as the source of truth. 
      * `git checkout` to master. 
      * `git merge` and select the branch you'd like to merge from into master.
 
-14. NTs make and push changes, then merge branch.
+15. NTs make and push changes, then merge branch.
 
-15. Fetch
+16. Fetch
      * Changes are fetched from master back into your local master branch. This is important to stay up to date with changes other people may be making.
      * `git checkout` to your local master branch and then `get fetch` to get the changes from the server.
 
-16. Review - 
+17. Review - 
      * Next up: undoing, merge conflicts, pull requests
 
-17. NTs create a new repo, branches, merges
+18. NTs create a new repo, branches, merges
      * Explore GitHub, VS Code git features, and Sourcetree
 
 ## Stretch
