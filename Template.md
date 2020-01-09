@@ -21,4 +21,4 @@ Total time: 1.5 hour
 [Instruction]
 
 ## Stretch
-[Links and other projects for futher learning and exploration]
+[Links and other projects for further learning and exploration]
