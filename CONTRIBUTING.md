@@ -5,4 +5,4 @@ TODO
 TODO
 
 ## Code of Conduct
-TODO
+[Microsoft Code of Conduct](https://github.com/microsoft/TNT_Curriculum/blob/master/CODE_OF_CONDUCT.md)
