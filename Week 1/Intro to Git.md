@@ -23,8 +23,7 @@ Total time: 1.5 hour
 Pre-reqs
 * [Install VS Code](https://code.visualstudio.com/)
 * [Install Git](https://git-scm.com/downloads)
-* [Install SourceTree](https://www.sourcetreeapp.com/), BitBucket account also required
-   * Don't install Mercurial
+* [Install SourceTree](https://www.sourcetreeapp.com/), BitBucket account also required, don't install Mercurial
 
 ## Lesson details
 ### Source control and You (10 min)
@@ -81,9 +80,10 @@ Instructor demos the basic local workflow and then NTs will follow on their own.
    * Make a code change and save `ctrl+s`
      * See "M", modified, file has been changed but not committed
      * See changes in the Source Control tab of the Explorer.
-   * `git commit` to commit change
+   * `git commit` - command commit change
 
 5. NTs create local workflow
+   * *Steps? What to name it*
 
 6. **Demo** - Sourcetree 
 Instructor demos Sourcetree by adding local repository and looking at history. 
@@ -93,14 +93,32 @@ Instructor demos Sourcetree by adding local repository and looking at history.
    * Make change and commit with Soucretree.
    * *Talk about staged vs unstaged commits?*
 
-7. NTs look at repo in SourceTree, make change and commit. 
+7. NTs look at repo in SourceTree, make change and commit.
 
 6. **Demo** - remote repository in VS Code with GitHub
-Instructor demos pushing repository to GitHub and cloning a repository from GitHub.
+Instructor demos migrating repository to GitHub.
+   * Create a new repo in GitHub, *want to do it by building in TNT repo or in individual?*
+  * Select "upload existing file". Choose files.
+  * Need to clone repo to start working from GitHub rather than the local only copy.
+
+Instructor demos cloning, branching, committing, a repo from GitHib.
+Clone
+  * Many projects start from an existing repo.
+  * View "Clone or download" button in GitHub.
+  * Open new VS Code window. `git clone` + GitHub URL and start working from remote repo.
+  * *How does Sourcetree work with a repo you've cloned but not through Sourcetree? If it's cloned from VS Code can you still use source tree?*
+Branch
+  * Branching creates a separate world, thread, for you to work in. By default you're in the Master branch. Typically most work is done in a different branch and then merged with Master.
+     * You can see the branch in the VS Code status bar and Sourcetree.
+  * `git create branch` - command to create new branch
+  * Give it a name and VS Code will automatically switch to it.
+  * `git checkout` - command lists all the branches and lets you switch between them.
+Change, stage, commit, then push
+  * The cycle is make a change, stage, commit, then push.
+  * Stage allows you to to commit some of the changes. If you're still working on part, you can stage and commit just what's ready.
+  *  
 
 7. Review - 
-
-8. Clone?
 
 
 ## Stretch
