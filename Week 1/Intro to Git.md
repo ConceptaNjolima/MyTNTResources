@@ -20,6 +20,12 @@ Total time: 1.5 hour
 * [Udacity Version Control with Git](https://www.udacity.com/course/version-control-with-git--ud123)
 * [How to Teach Git](https://recompilermag.com/issues/issue-1/how-to-teach-git/)
 
+Pre-reqs
+* [Install VS Code](https://code.visualstudio.com/)
+* [Install Git](https://git-scm.com/downloads)
+* [Install SourceTree](https://www.sourcetreeapp.com/), BitBucket account also required
+   * Don't install Mercurial
+
 ## Lesson details
 ### Source control and You (10 min)
 1. In groups have NTs discuss the following questions:
@@ -62,11 +68,35 @@ Total time: 1.5 hour
    * It’s both powerful (because it’s open-ended), plentiful (b/c it’s open source), and sometimes hard to use (because it’s open-ended).
    * It takes practice, it's a learned skill, it's not intuitive - ask your coaches about their Git disasters, everyone has a story.
 
-4. Demo - local work flow
+4. **Demo** - local work flow in VS Code
+Instructor demos the basic local workflow and then NTs will follow on their own.
+   * `git init` - command to create a new repo
+     * Create a new directory, folder, or choose an existing one
+   * Create a new file. By default the repo is empty.
+     * Multiple ways to do this - click new file button in Explorer, `ctrl+n`, `File` -> `New File`.
+     * Name file with extension of file type "hello_world.ts".
+     * See "U", untracked, file hasn't yet been committed.
+   * `git commit` - commend to commit changes
+     * Add commit message to describe change
+   * Make a code change and save `ctrl+s`
+     * See "M", modified, file has been changed but not committed
+     * See changes in the Source Control tab of the Explorer.
+   * `git commit` to commit change
 
-5. NTs Create local workflow
+5. NTs create local workflow
 
-6. Demo - remote repository
+6. **Demo** - Sourcetree 
+Instructor demos Sourcetree by adding local repository and looking at history. 
+   * Sourcetree is an app for interacting with Git repositories. It does a good job visualizing what's going on.
+   * You can make changes to repos with both the command line in VS Code and Sourcetree, there's some overlap in functionality. Try both and find what works best.
+   * Open / add local repo. Look at commits.
+   * Make change and commit with Soucretree.
+   * *Talk about staged vs unstaged commits?*
+
+7. NTs look at repo in SourceTree, make change and commit. 
+
+6. **Demo** - remote repository in VS Code with GitHub
+Instructor demos pushing repository to GitHub and cloning a repository from GitHub.
 
 7. Review - 
 
