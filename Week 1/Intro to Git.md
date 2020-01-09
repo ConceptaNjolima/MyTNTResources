@@ -76,11 +76,11 @@ Instructor demos the basic local workflow and then NTs will follow on their own.
      * Multiple ways to do this - click new file button in Explorer, `ctrl+n`, `File` -> `New File`.
      * Name file with extension of file type "hello_world.ts".
      * See "U", untracked, file hasn't yet been committed.
-   * `git commit` - commend to commit changes
+   * `git commit` - command to commit changes
      * Add commit message to describe change
    * Make a code change and save `ctrl+s`
      * See "M", modified, file has been changed but not committed
-     * See changes in the Source Control tab of the Explorer.
+     * See changes in the Source Control tab of the Explorer. Click on the change to see a comparison side by side.
    * `git commit` - command commit change
 
 6. NTs create local workflow
@@ -139,7 +139,8 @@ Instructor demos Sourcetree by adding local repository and looking at history.
 16. Review - 
      * Next up: undoing, merge conflicts, pull requests
 
-17. NTs create a new repo, branches, merges 
+17. NTs create a new repo, branches, merges
+     * Explore GitHub, VS Code git features, and Sourcetree
 
 ## Stretch
 [Links and other projects for further learning and exploration]
