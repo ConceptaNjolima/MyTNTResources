@@ -116,7 +116,8 @@ Branch
 Change, stage, commit, then push
   * The cycle is make a change, stage, commit, then push.
   * Stage allows you to to commit some of the changes. If you're still working on part, you can stage and commit just what's ready.
-  *  
+  * If you don't need to stage you can commit everything.
+  * Save. `git stage`S
 
 7. Review - 
 
