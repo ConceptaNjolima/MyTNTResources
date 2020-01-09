@@ -15,13 +15,13 @@ Total time: 1.5 hour
 * 15 minutes - evaluate: specific activity to demonstrate understanding
 
 ## Background / review
-* (Automated Version Control with Git)[http://swcarpentry.github.io/git-novice/01-basics/]
-* (Ada Developers Academy Intro to Git)[https://github.com/Ada-Developers-Academy/textbook-curriculum/blob/master/00-programming-fundamentals/git-intro-to-git.md]
-* (Udacity Version Control with Git)[https://www.udacity.com/course/version-control-with-git--ud123]
-* (How to Teach Git)[https://recompilermag.com/issues/issue-1/how-to-teach-git/]
+* [Automated Version Control with Git](http://swcarpentry.github.io/git-novice/01-basics/)
+* [Ada Developers Academy Intro to Git](https://github.com/Ada-Developers-Academy/textbook-curriculum/blob/master/00-programming-fundamentals/git-intro-to-git.md)
+* [Udacity Version Control with Git](https://www.udacity.com/course/version-control-with-git--ud123)
+* [How to Teach Git](https://recompilermag.com/issues/issue-1/how-to-teach-git/)
 
 ## Lesson details
-[Instruction]
+###
 
 ## Stretch
 [Links and other projects for further learning and exploration]
