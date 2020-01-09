@@ -21,8 +21,60 @@ Total time: 1.5 hour
 * [How to Teach Git](https://recompilermag.com/issues/issue-1/how-to-teach-git/)
 
 ## Lesson details
-###
+### Source control and You (10 min)
+1. In groups have NTs discuss the following questions:
+   * Have you ever worked on a code project or a document with other people? How did you share? Google doc? Emailing? GitHub?
+   * When working with other people on code or project, what has gone wrong? Have you gotten versions of the document mixed up? Have you lost changes?
+
+2. Groups come back together and share.
+
+3. Wrap up and connect to source control.
+   * Source control enables code collaboration
+   * Makes large projects with 1,000s of people possible
+   * Makes it easy to manage your own changes and work
+
+### Intro to version control and Git
+1. What is Git?
+   * Git is a tool
+   * Git allows you to add, edit, and break your code without fear. Git creates save points along the way so you can go back.
+   * Git allows you to make changes to a file and store those changes back in a central repository (repo), file archive hosted locally or online, privately or publicly
+   * Technically it's a "distributed version control system" (VCS)
+   * Distributed: each person who has their own copy of the code and history
+   * Version: like a document that's being written, code changes over time. Saving and committing creates a version of it. Another version is created when you add more and save again.
+   * Control: Git is the system and processes that controls creating new versions. It also manages multiple people collaborating on those files.
+
+2. Why Git?
+   * There are other version control systems. Git is the most popular, and an industry standard.
+   * It has some advantages over a centralized system, that has a single copy of the code: 
+       * It's quick to take action on your own copy 
+       * It works locally and offline 
+       * It makes having multiple branches, parallel world of code, easier
+
+3. What is GitHub and why GitHub? (Show and describe)
+    * GitHub is were projects live. Individuals and organizations use GitHib.
+    * Files for a project are stored in a repository (repo). Each repo has its own URL.
+    * GitHub repos can be public and open to contributions from anyone - open source software (OSS).
+    * GitHub repos can be can be private, with access restricted to a an individual, few people, or an organization.
+    * GitHub is the largest community world wide community developers and widely used in the industry.
+
+4. Git Gotchyas
+   * Git can mean several things - the name of the source control technology, the functionality built into VS Code, the file formats and protocols that underlies the system.
+   * It’s both powerful (because it’s open-ended), plentiful (b/c it’s open source), and sometimes hard to use (because it’s open-ended).
+   * It takes practice, it's a learned skill, it's not intuitive - ask your coaches about their Git disasters, everyone has a story.
+
+4. Demo - local work flow
+
+5. NTs Create local workflow
+
+6. Demo - remote repository
+
+7. Review - 
+
+8. Clone?
+
 
 ## Stretch
 [Links and other projects for further learning and exploration]
 
+## Bonus
+[xkcd](https://xkcd.com/1597/)
