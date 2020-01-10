@@ -3,23 +3,23 @@ This lesson introduces the fundamentals of the Git workflow, backtracking, and c
 
 ## Learning objectives
 * TNTs will understand what is source control and why we need it.
-* TNTs will learn how their previous code or doc collaboration experience to aspects source control.
+* TNTs will learn how their previous code or doc collaboration experience maps to aspects source control.
 * TNTs will be able to work with a local and remote repository using Git.
 
 ## Time required and pace
 Total time: 1.5 hour
-* 10 minutes - engage: opening activity
-* 20 minutes - explain
-* 30 minutes - explore: specific activity
-* 15 minutes - elaborate: review trouble spots
-* 15 minutes - evaluate: specific activity to demonstrate understanding
+* 10 minutes - engage: source control and you
+* 50 minutes - explain and explore: alternate demos and doing with Git
+* 15 minutes - elaborate: review trouble spots and Git best practices
+* 15 minutes - evaluate: git free time - branch, commit, push, pull, merge
 
 ## Background / review
-* [Ramp up on Git and GitHub](https://lab.github.com/githubtraining/paths/ramp-up-on-git-and-github)
 * [Automated Version Control with Git](http://swcarpentry.github.io/git-novice/01-basics/)
 * [Ada Developers Academy Intro to Git](https://github.com/Ada-Developers-Academy/textbook-curriculum/blob/master/00-programming-fundamentals/git-intro-to-git.md)
 * [Udacity Version Control with Git](https://www.udacity.com/course/version-control-with-git--ud123)
 * [How to Teach Git](https://recompilermag.com/issues/issue-1/how-to-teach-git/)
+* [Ramp up on Git and GitHub Lab](https://lab.github.com/githubtraining/paths/ramp-up-on-git-and-github)
+* [Git Book](https://git-scm.com/book/en/v2)
 
 Pre-reqs
 * [Install VS Code](https://code.visualstudio.com/)
@@ -38,8 +38,9 @@ Pre-reqs
    * Source control enables code collaboration
    * Makes large projects with 1,000s of people possible
    * Makes it easy to manage your own changes and work
+   * Source control allows you to try things with out fear
 
-### Intro to version control and Git
+### Intro to version control and Git (50 minutes)
 1. What is Git?
    * Git is a tool
    * Git allows you to add, edit, and break your code without fear. Git creates save points along the way so you can go back.
@@ -50,32 +51,32 @@ Pre-reqs
    * Control: Git is the system and processes that controls creating new versions. It also manages multiple people collaborating on those files.
 
 2. Why Git?
-   * There are other version control systems. Git is the most popular, and an industry standard.
+   * There are other version control systems. Git is the most popular and an industry standard.
    * It has some advantages over a centralized system, that has a single copy of the code: 
        * It's quick to take action on your own copy 
-       * It works locally and offline 
-       * It makes having multiple branches, parallel world of code, easier
+       * It works locally, on your own computer, and offline
+       * It makes having multiple branches, parallel worlds of code, easier
 
-3. What is GitHub and why GitHub? (Show and describe)
-    * GitHub is were projects live. Individuals and organizations use GitHib.
-    * Files for a project are stored in a repository (repo). Each repo has its own URL.
-    * GitHub repos can be public and open to contributions from anyone - open source software (OSS).
-    * GitHub repos can be can be private, with access restricted to a an individual, few people, or an organization.
-    * GitHub is the largest community world wide community developers and widely used in the industry.
-
-4. Git Gotchyas
+3. Git Gotchyas
    * Git can mean several things - the name of the source control technology, the functionality built into VS Code, the file formats and protocols that underlies the system.
    * It’s both powerful (because it’s open-ended), plentiful (b/c it’s open source), and sometimes hard to use (because it’s open-ended).
    * It takes practice, it's a learned skill, it's not intuitive - ask your coaches about their Git disasters, everyone has a story.
 
-5. Tool Tour [TO DO describe how they come together and how the tour works]
+4. Tool Tour [TO DO describe how they come together and how the tour works]
    * *All pre-installed?*
-   * Git
-   * Git in VS Code
-   * GitHub
-   * Source tree 
+   * Git - installing Git makes it available for use on your computer, with your local file system, and the developer tools
+   * Git in VS Code - supports Git out of the box, Git commands, and source control tab in the Explorer
+   * GitHub -  a website for remote repositories, it also has features for managing projects like issues, access and permission control
+      * GitHub is were projects live. Individuals and organizations, companies, schools, clubs..., use GitHib.
+      * Files for a project are stored in a repository (repo). Each repo has its own URL.
+      * GitHub repos can be public and open to contributions from anyone - open source software (OSS).
+      * GitHub repos can be can be private, with access restricted to a an individual, few people, or an organization.
+      * GitHub is the largest community world wide community developers and widely used in the industry.
+   * Source tree - an application for visualizing Git, see branches and changes
+      * You can take many of the same actions from VS Code and SourceTree, try both and figure out what works for you
 
-6. **Demo** - local work flow in VS Code
+---
+5. **Demo** - local work flow in VS Code
 Instructor demos the basic local workflow and then NTs will follow on their own.
    * `git init` - command to create a new repo
      * Create a new directory, folder, or choose an existing one
@@ -90,10 +91,11 @@ Instructor demos the basic local workflow and then NTs will follow on their own.
      * See changes in the Source Control tab of the Explorer. Click on the change to see a comparison side by side.
    * `git commit` - command commit change
 
-7. NTs create local workflow
+6. **Try it** - NTs create local workflow
    * *Steps? What to name it*
+---
 
-8. **Demo** - Sourcetree 
+9. **Demo** - Sourcetree 
 Instructor demos Sourcetree by adding local repository and looking at history. 
    * Sourcetree is an app for interacting with Git repositories. It does a good job visualizing what's going on.
    * You can make changes to repos with both the command line in VS Code and Sourcetree, there's some overlap in functionality. Try both and find what works best.
@@ -101,7 +103,9 @@ Instructor demos Sourcetree by adding local repository and looking at history.
    * Make change and commit with Soucretree.
    * *Talk about staged vs unstaged commits?*
 
-9. NTs look at repo in SourceTree, make change and commit.
+9. **Try it** - NTs look at repo in SourceTree, make change and commit.
+
+---
 
 10. **Demo** - remote repository in VS Code with GitHub Instructor demos migrating repository to GitHub.
    * Create a new repo in GitHub, *want to do it by building in TNT repo or in individual?*
@@ -123,7 +127,8 @@ Instructor demos Sourcetree by adding local repository and looking at history.
        * `git checkout` - command lists all the branches and lets you switch between them. This can also be switched from the status bar.
        * You can also create a branch in Sourcetree by clicking "Branch" button.
 
-12. NTs create a repo and upload files, then clone from repo and create a branch.
+12. **Try it** - NTs create a repo and upload files, then clone from repo and create a branch.
+---
 
 13. **Demo** - change, stage, commit, then push
      * The cycle is make a change, stage, commit, then push.
@@ -137,20 +142,39 @@ Instructor demos Sourcetree by adding local repository and looking at history.
      * `git checkout` to master. 
      * `git merge` and select the branch you'd like to merge from into master.
 
-15. NTs make and push changes, then merge branch.
-
-16. Fetch
+15. Fetch
      * Changes are fetched from master back into your local master branch. This is important to stay up to date with changes other people may be making.
      * `git checkout` to your local master branch and then `get fetch` to get the changes from the server.
 
-17. Review - 
-     * Next up: undoing, merge conflicts, pull requests
+16. **Try it** - NTs make and push changes, then merge branch, fetch changes from master to another branch.
 
-18. NTs create a new repo, branches, merges
-     * Explore GitHub, VS Code git features, and Sourcetree
+---
+
+## Review and Git best practices (15 min)
+1. Room discussion - What worked? Where did you get stuck?
+     * Address trouble areas
+
+2. Git best practices
+     * It takes practice
+     * Keep commits light - it's good to save often and keep the change set small, it'll be easier to merge
+     * Take a minute to review your changes before checking-in - more time will be spent on debugging, diff tools make it easier quickly glance
+
+3. Next up: undoing, merge conflicts, pull requests
+     * The first super power of Git is branches, the second is being able to undo your changes.
+     * There are a few different strategies for undoing and more to talk about in collaborative coding.
+
+## Evaluate
+1. Spend the rest of time practice and exploring Git.
+2. Try -
+     * Create a new repo in GitHub
+     * Cloning a repository
+     * Creating multiple branches and switching between branches
+     * Make changes, staging, committing, and pushing
+     * Merger branches
+     * Pull changes
+3. By the end of the lesson you should a repository that shows a history of changes, branches, merges.
 
 ## Stretch
-[Links and other projects for further learning and exploration]
-
-## Bonus
-[xkcd](https://xkcd.com/1597/)
+* Interested in how Git works under the hood? Learn about how [git works internally](https://medium.com/@shalithasuranga/how-does-git-work-internally-7c36dcb1f2cf).
+* Interested in security? Learn about how [git uses cyrptographic hashes](https://ericsink.com/vcbe/html/cryptographic_hashes.html).
+* [xkcd](https://xkcd.com/1597/)
