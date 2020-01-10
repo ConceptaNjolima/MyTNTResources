@@ -1,5 +1,5 @@
 # Intro to Git
-This lesson introduces the fundamentals of the Git workflow and collaborating.
+This lesson introduces the fundamentals of the Git workflow and tools.
 
 *Open questions in lesson:*
 * *Include backtracking and undoing?*
