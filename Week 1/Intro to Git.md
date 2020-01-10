@@ -48,7 +48,6 @@ Pre-reqs
 
 ### Intro to version control and Git (50 minutes)
 1. What is Git?
-   * Git is a tool
    * Git allows you to add, edit, and break your code without fear. Git creates save points along the way so you can go back.
    * Git allows you to make changes to a file and store those changes back in a central repository (repo), file archive hosted locally or online, privately or publicly
    * Technically it's a "distributed version control system" (VCS)
