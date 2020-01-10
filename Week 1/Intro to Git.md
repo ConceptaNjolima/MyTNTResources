@@ -31,6 +31,7 @@ Pre-reqs
 * [Install VS Code](https://code.visualstudio.com/)
 * [Install Git](https://git-scm.com/downloads)
 * [Install SourceTree](https://www.sourcetreeapp.com/), BitBucket account also required, don't install Mercurial
+* GitHub account
 
 ## Lesson details
 ### Source control and You (10 min)
@@ -175,6 +176,9 @@ Instructor demos Sourcetree by adding local repository and looking at history.
      * Make changes, staging, committing, and pushing
      * Merger branches
      * Pull changes
+     * Look at the changes in GitHub, check out the branches and commits
+     * Look at the changes in SourceTree, check out the branches and commits
+     * Look at the source control tab in VS Code, check out the file diffs
 3. By the end of the lesson you should a repository that shows a history of changes, branches, merges.
 
 ## Stretch
