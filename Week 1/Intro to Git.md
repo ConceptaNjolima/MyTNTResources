@@ -1,5 +1,10 @@
 # Intro to Git
-This lesson introduces the fundamentals of the Git workflow, backtracking, and collaborating.
+This lesson introduces the fundamentals of the Git workflow and collaborating.
+
+*Open questions in lesson:*
+* *Include backtracking and undoing?*
+* *Have students work in their own private repos or from the room repo?*
+* *Additional best practices initially?*
 
 ## Learning objectives
 * TNTs will understand what is source control and why we need it.
@@ -96,9 +101,7 @@ Instructor demos the basic local workflow and then NTs will follow on their own.
 ---
 
 9. **Demo** - Sourcetree 
-Instructor demos Sourcetree by adding local repository and looking at history. 
-   * Sourcetree is an app for interacting with Git repositories. It does a good job visualizing what's going on.
-   * You can make changes to repos with both the command line in VS Code and Sourcetree, there's some overlap in functionality. Try both and find what works best.
+Instructor demos Sourcetree by adding local repository and looking at history.
    * Open / add local repo. Look at commits.
    * Make change and commit with Soucretree.
    * *Talk about staged vs unstaged commits?*
