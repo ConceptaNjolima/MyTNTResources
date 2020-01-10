@@ -180,6 +180,7 @@ Instructor demos Sourcetree by adding local repository and looking at history.
      * Look at the changes in SourceTree, check out the branches and commits
      * Look at the source control tab in VS Code, check out the file diffs
 3. By the end of the lesson you should a repository that shows a history of changes, branches, merges.
+4. If you get stuck or discover something cool, share it with a neighbor.
 
 ## Stretch
 * Interested in how Git works under the hood? Learn about how [git works internally](https://medium.com/@shalithasuranga/how-does-git-work-internally-7c36dcb1f2cf).
