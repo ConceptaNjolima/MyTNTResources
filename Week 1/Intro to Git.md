@@ -5,6 +5,7 @@ This lesson introduces the fundamentals of the Git workflow and tools.
 * *Include backtracking and undoing?*
 * *Have students work in their own private repos or from the room repo?*
 * *Additional best practices initially?*
+* *Computers already set up?*
 
 ## Learning objectives
 * TNTs will understand what is source control and why we need it.
