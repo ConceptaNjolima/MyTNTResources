@@ -1,5 +1,5 @@
-# Intro to VS Code and TypeScript
-This lesson introduces VS Code and TypeScript including why this set of technology, a tour and basics using the IDE, and TypeScript fundamentals. 
+# Intro to web app architecture
+This lesson provides an overview of how web apps work, HTML, and CSS to lay the foundation for the prototypes NTs will build.
 
 ## Learning objectives
 * TNTs will be able to...
