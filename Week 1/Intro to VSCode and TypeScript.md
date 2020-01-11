@@ -18,7 +18,7 @@ Total time: 1.5 hour
 [Resources for instructors, coaches, and students for ramp up or additional learning]
 
 ## Lesson details
-[Instruction]
+
 
 ## Stretch
 [Links and other projects for further learning and exploration]

@@ -19,7 +19,27 @@ Total time: 1.5 hour
 * [W3Schools Online Code editor](https://www.w3schools.com/tryit/)
 
 ## Lesson details
-[Instruction]
+### Opening activity
+TODO
+
+### EXPLAIN
+1. What is a website and a web app?
+     * Website - 
+     * Web app -
+
+2. How do web apps compare to apps on iOS, Android, or Windows?
+     * 
+
+3. How HTML, CSS, and JavaScript come together:
+     * W3Schools describe it well:
+         * HTML - the language for building webpages
+         * CSS - the language for styling webpages
+         * JavaSCript - the language for programming web pages
+
+4. Navigating w3schools.com
+     * References - summarize what the languages do
+     * Tutorials - learning paths
+     * Examples - sample code for more complex properties, features, and functions
 
 ## Stretch
 [Links and other projects for further learning and exploration]
