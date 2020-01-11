@@ -17,12 +17,17 @@ Total time: 1.5 hour
 ## Background / review
 * [HTML, CSS, JS tutorials, exercises, and references](https://www.w3schools.com/)
 * [W3Schools Online Code editor](https://www.w3schools.com/tryit/)
+* [html-css-js.com](https://html-css-js.com/)
+* [HTML CheatSheet](https://htmlcheatsheet.com/)
+* TODO - some place for good CSS samples
 
 ## Lesson details
 ### Opening activity
 TODO
 
-### EXPLAIN
+### EXPLAIN  TODO
+There's likely a range of familiarity with web pages, web apps, and how they work. This refresher aims at closing any gaps and providing  the opportunity to dig in and get familiar with resources that will be useful throughout the program.
+
 1. What is a website and a web app?
      * Website - 
      * Web app -
@@ -32,14 +37,24 @@ TODO
 
 3. How HTML, CSS, and JavaScript come together:
      * W3Schools describe it well:
-         * HTML - the language for building webpages
-         * CSS - the language for styling webpages
+         * Hyper Text Markup Language (HTML) - the language for building webpages
+         * Cascading Style Sheets (CSS) - the language for styling webpages
          * JavaSCript - the language for programming web pages
+    * Draw or display diagram of the languages working together
 
-4. Navigating w3schools.com
+4. Demo w3schools.com
      * References - summarize what the languages do
      * Tutorials - learning paths
      * Examples - sample code for more complex properties, features, and functions
+
+### EXPLORE - SPECIFIC ACTIVITIES ON W3SCHOOLs and SUCH
+TODO
+
+### ELABORATE
+TODO - bring it back together
+
+### EVALUATE
+TODO - CLOSING ACTIVITY
 
 ## Stretch
 [Links and other projects for further learning and exploration]
