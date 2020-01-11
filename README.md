@@ -6,6 +6,7 @@ Web development curriculum for The New Technologist Summer Academy	Welcome to th
 * *Close on sharing material with NTs?*
 * *Add project section*
 * *Add quick cheat sheets - Git... others?*
+* *Order lessons*
 
 ## How to use these materials
 * **Instructors** - this course is the day by day lesson plan.
