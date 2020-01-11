@@ -1,10 +1,10 @@
 # Intro to web app architecture
-This lesson provides an overview of how web apps work, HTML, and CSS to lay the foundation for the prototypes NTs will build.
+This lesson provides an overview of how web apps work, HTML, CSS, and JavaScript to lay the foundation for the prototypes NTs will build.
 
 ## Learning objectives
-* TNTs will be able to...
-* TNTs will understand...
-* TNTs will learn...
+* TNTs will learn the basics of how web pages and web apps work.
+* TNTs will be able to make HTML and CSS changes.
+* TNTs will learn where to go for CSS and HTML info and resources.
 
 ## Time required and pace
 Total time: 1.5 hour
@@ -15,7 +15,8 @@ Total time: 1.5 hour
 * 15 minutes - evaluate: specific activity to demonstrate understanding
 
 ## Background / review
-[Resources for instructors, coaches, and students for ramp up or additional learning]
+* [HTML, CSS, JS tutorials, exercises, and references](https://www.w3schools.com/)
+* [W3Schools Online Code editor](https://www.w3schools.com/tryit/)
 
 ## Lesson details
 [Instruction]
