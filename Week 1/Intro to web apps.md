@@ -8,10 +8,10 @@ This lesson provides an overview of how web apps work, HTML, CSS, and JavaScript
 
 ## Time required and pace
 Total time: 1.5 hour
-* 10 minutes - engage: opening activity
+* 15 minutes - engage: tradeoffs of web apps and native apps
 * 20 minutes - explain
 * 30 minutes - explore: specific activity
-* 15 minutes - elaborate: review trouble spots
+* 10 minutes - elaborate: review trouble spots
 * 15 minutes - evaluate: specific activity to demonstrate understanding
 
 ## Background / review
@@ -22,27 +22,47 @@ Total time: 1.5 hour
 * TODO - some place for good CSS samples
 
 ## Lesson details
-### Opening activity
-TODO
-
-### EXPLAIN  TODO
-There's likely a range of familiarity with web pages, web apps, and how they work. This refresher aims at closing any gaps and providing  the opportunity to dig in and get familiar with resources that will be useful throughout the program.
-
+### Tradeoffs of web apps and native apps (15 minutes)
 1. What is a website and a web app?
-     * Website - 
-     * Web app -
+      * Website - informational, can be static or dynamic
+      * Web app - interactive, user control, saves data, often sign-in (identity)
 
 2. How do web apps compare to apps on iOS, Android, or Windows?
-     * 
+      * Apps targeting a a specific operating system are called "native apps" and work just on that platform - iOS, Android, Windows, Linux
+      * Some examples of how they compare:
+      | Native Apps  | Web apps |
+      |---|---|
+      | Specific operating system   | Internet browser  |
+      | Install from app store, download | URL, access online |
+      | Performance optimized for platform | Performance optimized for browser |
 
-3. How HTML, CSS, and JavaScript come together:
+3.  As a group:
+       * List examples of websites, web applications, and native applications
+       * Research and list how web applications are both similar and different than native applications, consider a venn diagram
+       * Answer: why would you build a web app vs. native app? What are the tradeoffs of each?
+
+4. Come back together:
+       * Groups share top similarities and differences
+       * Groups share tradeoffs
+
+### EXPLAIN  TODO
+There's likely a range of familiarity with web pages, web apps, and how they work. This refresher aims at closing any gaps and providing  the opportunity to dig in and get familiar with resources that will be applicable throughout the program.
+
+5. Why are we building a web app?
+       * Quick to prototype
+       * Introduction to broadly applicable tech - VS Code, HTML, CSS, JavaScript, TypeScript
+       * So many projects professionally, community, philanthropic, for fun, have some web component
+       * Some capabilities between web and native apps are closing, can 
+
+      
+. How HTML, CSS, and JavaScript come together:
      * W3Schools describe it well:
          * Hyper Text Markup Language (HTML) - the language for building webpages
          * Cascading Style Sheets (CSS) - the language for styling webpages
          * JavaSCript - the language for programming web pages
     * Draw or display diagram of the languages working together
 
-4. Demo w3schools.com
+. Demo w3schools.com
      * References - summarize what the languages do
      * Tutorials - learning paths
      * Examples - sample code for more complex properties, features, and functions
