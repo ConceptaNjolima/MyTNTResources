@@ -1,5 +1,5 @@
 # Intro to web app architecture
-This lesson provides an overview of how web apps work, HTML, CSS, and JavaScript to lay the foundation for the prototypes NTs will build.
+This lesson provides an overview of how web apps work, HTML and CSS to lay the foundation for the prototypes NTs will build.
 
 ## Learning objectives
 * TNTs will learn the basics of how web pages and web apps work.
@@ -48,18 +48,33 @@ Total time: 1.5 hour
 ### EXPLAIN  TODO
 There's likely a range of familiarity with web pages, web apps, and how they work. This refresher aims at closing any gaps and providing  the opportunity to dig in and get familiar with resources that will be applicable throughout the program.
 
-5. Why are we building a web app?
+1. Why are we building a web app?
        * Quick to prototype
-       * Introduction to broadly applicable tech - VS Code, HTML, CSS, JavaScript, TypeScript
-       * So many projects professionally, community, philanthropic, for fun, have some web component
+       * Introduction to broadly applicable tech - VS Code, HTML, CSS, TypeScript
+       * Many projects professionally, community, philanthropic, for fun, have some web component
        * Some capabilities between web and native apps are closing, can 
 
-      
-. How HTML, CSS, and JavaScript come together:
-     * W3Schools describe it well:
+2. Tech we will be using and introduced over the next week. This lesson focuses on HTML, CSS, and an introduction to TypeScript.
+      | Technology / Tooling | Solution |
+      |---|---|
+      | Programming Language   | HTML, CSS, TypeScript  |
+      | Web framework | React |
+      | Component library | Fabric |
+      | Store management | Redux and state component|
+      | Sever environment | Node.js, npm|
+      | Package manager | Yarn |
+      | Source control | Git |
+      | Source control tools | SourceTree, *Command line* (include?), VS Code|
+      | Testing infrastructure | Jest |
+      | Debugging | VS Code debugger |
+      | Text editor | VS Code |
+      | Project setup | React create app tool |
+
+. How HTML, CSS, and TypeScript come together:
+     * W3Schools describes it well:
          * Hyper Text Markup Language (HTML) - the language for building webpages
          * Cascading Style Sheets (CSS) - the language for styling webpages
-         * JavaSCript - the language for programming web pages
+         * TypeScript - the language for programming web pages
     * Draw or display diagram of the languages working together
 
 . Demo w3schools.com
