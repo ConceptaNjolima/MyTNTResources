@@ -8,8 +8,8 @@ This lesson provides an overview of how web apps work, HTML and CSS to lay the f
 
 ## Time required and pace
 Total time: 1.5 hour
-* 15 minutes - engage: tradeoffs of web apps and native apps
-* 20 minutes - explain
+* 20 minutes - engage: tradeoffs of web apps and native apps
+* 15 minutes - explain
 * 30 minutes - explore: specific activity
 * 10 minutes - elaborate: review trouble spots
 * 15 minutes - evaluate: specific activity to demonstrate understanding
@@ -19,10 +19,11 @@ Total time: 1.5 hour
 * [W3Schools Online Code editor](https://www.w3schools.com/tryit/)
 * [html-css-js.com](https://html-css-js.com/)
 * [HTML CheatSheet](https://htmlcheatsheet.com/)
+* [Udemy - Learn HTML, CSS, JavaScript And TypeScript From Scratch](https://www.udemy.com/course/html-and-css-from-scratch/)
 * TODO - some place for good CSS samples
 
 ## Lesson details
-### Tradeoffs of web apps and native apps (15 minutes)
+### Tradeoffs of web apps and native apps (20 minutes)
 1. What is a website and a web app?
       * Website - informational, can be static or dynamic
       * Web app - interactive, user control, saves data, often sign-in (identity)
