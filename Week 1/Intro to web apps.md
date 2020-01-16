@@ -70,13 +70,20 @@ There's likely a range of familiarity with web pages, web apps, and how they wor
       | Text editor | VS Code |
       | Project setup | React create app tool |
 
-. How HTML, CSS, and TypeScript come together:
-     * W3Schools describes it well:
-         * Hyper Text Markup Language (HTML) - the language for building webpages
-         * Cascading Style Sheets (CSS) - the language for styling webpages
-         * TypeScript - the language for programming web pages
-    * Draw or display diagram of the languages working together
+3. How HTML, CSS, and TypeScript come together:
+       * W3Schools describes it well:
+             * Hyper Text Markup Language (HTML) - the language for building webpages
+             * Cascading Style Sheets (CSS) - the language for styling webpages
+             * TypeScript (JS) - the language for programming web pages
 
+4. TypeScript vs. JavaScript
+       * TypeScript is a superset of JavaScript.
+        | TypeScript | JavaScript |
+        |---|---|
+        | Strongly type object oriented compile language | Scripting, interpreted programming language |
+        |   |   |
+
+       
 . Demo w3schools.com
      * References - summarize what the languages do
      * Tutorials - learning paths
