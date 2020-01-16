@@ -71,6 +71,7 @@ Pre-reqs
 4. Tool Tour [TO DO describe how they come together and how the tour works]
    * *All pre-installed?*
    * Git - installing Git makes it available for use on your computer, with your local file system, and the developer tools
+   * *Git command line*
    * Git in VS Code - supports Git out of the box, Git commands, and source control tab in the Explorer
    * GitHub -  a website for remote repositories, it also has features for managing projects like issues, access and permission control
       * GitHub is were projects live. Individuals and organizations, companies, schools, clubs..., use GitHib.
@@ -84,6 +85,7 @@ Pre-reqs
 ---
 5. **Demo** - local work flow in VS Code
 Instructor demos the basic local workflow and then NTs will follow on their own.
+   * *add steps for command line*
    * `git init` - command to create a new repo
      * Create a new directory, folder, or choose an existing one
    * Create a new file. By default the repo is empty.
@@ -117,6 +119,7 @@ Instructor demos Sourcetree by adding local repository and looking at history.
    * Need to clone repo to start working from GitHub rather than the local only copy.
 
 11. **Demo** - cloning, branching, committing, a repo from GitHib.
+     * *Add steps for command line*
      * Clone - Many projects start from an existing repo. This is a more coming flow than starting locally.
        * View "Clone or download" button in GitHub.
        * Open new VS Code window. `git clone` + GitHub URL and start working from remote repo.
@@ -135,6 +138,7 @@ Instructor demos Sourcetree by adding local repository and looking at history.
 ---
 
 13. **Demo** - change, stage, commit, then push
+     * *Add steps for command line* Show both in VS Code and command line
      * The cycle is make a change, stage, commit, then push.
      * Stage allows you to to commit some of the changes. If you're still working on part, you can stage and commit just what's ready.
      * If you don't need to stage you can commit everything.
