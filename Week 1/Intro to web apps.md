@@ -31,11 +31,12 @@ Total time: 1.5 hour
 2. How do web apps compare to apps on iOS, Android, or Windows?
       * Apps targeting a a specific operating system are called "native apps" and work just on that platform - iOS, Android, Windows, Linux
       * Some examples of how they compare:
-      | Native Apps  | Web apps |
-      |---|---|
-      | Specific operating system   | Internet browser  |
-      | Install from app store, download | URL, access online |
-      | Performance optimized for platform | Performance optimized for browser |
+      
+        | Native Apps  | Web apps |
+        |---|---|
+        | Specific operating system   | Internet browser  |
+        | Install from app store, download | URL, access online |
+        | Performance optimized for platform | Performance optimized for browser |
 
 3.  As a group:
        * List examples of websites, web applications, and native applications
@@ -56,6 +57,7 @@ There's likely a range of familiarity with web pages, web apps, and how they wor
        * Some capabilities between web and native apps are closing, can 
 
 2. Tech we will be using and introduced over the next week. This lesson focuses on HTML, CSS, and an introduction to TypeScript.
+
       | Technology / Tooling | Solution |
       |---|---|
       | Programming Language   | HTML, CSS, TypeScript  |
@@ -79,13 +81,8 @@ There's likely a range of familiarity with web pages, web apps, and how they wor
 
 4. TypeScript vs. JavaScript
        * TypeScript is a superset of JavaScript.
-        | TypeScript | JavaScript |
-        |---|---|
-        | Strongly type object oriented compile language | Scripting, interpreted programming language |
-        |   |   |
-
        
-. Demo w3schools.com
+5. Demo w3schools.com
      * References - summarize what the languages do
      * Tutorials - learning paths
      * Examples - sample code for more complex properties, features, and functions
