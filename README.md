@@ -22,7 +22,7 @@ The curriculum is divided into five threads that span five weeks.
 * **Web design** - building a web application with HTML, CSS, and React.
 * **Typescript programming** - building a web application with VS Code and TypeScript.
 
-The course is applied to the to the application development process, end to end, from identifying user needs to building a prototype. The course accumulates with NTs 
+The course is applied to the to the application development process, end to end, from identifying user needs to building a prototype. The course accumulates with NTs building and pitching an app prototype.
 
 **Product thinking**
 
