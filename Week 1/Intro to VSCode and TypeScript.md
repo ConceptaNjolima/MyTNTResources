@@ -5,7 +5,7 @@ This lesson introduces VS Code and TypeScript including why this set of technolo
 * *VS code already set up?*
 * *Thoughts on people behind product bit?*
 * *Sample code needed*
-* *What's the classroom managment for code samples? Branch? Fork? into NT's repo, room repo, team repo? Naming conventions?*
+* *What's the classroom management for code samples? Branch? Fork? into NT's repo, room repo, team repo? Naming conventions?*
 
 ## Learning objectives
 * TNTs will be able navigate VS Code.
@@ -36,14 +36,14 @@ Pre-reqs
 
 ## Lesson details
 ### People behind the products (10 minutes)
-1. Visual Studio Code (VS Code) is the integrated development environment we'll use to build apps. It's bulit by Microsoft and was released in 2015.
+1. Visual Studio Code (VS Code) is the integrated development environment we'll use to build apps. It's built by Microsoft and was released in 2015.
 2. It represents a significant change in how Microsoft builds and ships products. 
     * It's lightweight and customizable, you can install what you need to use. 
     * It's an [open source project](https://github.com/microsoft/vscode), anyone can contribute. Over 19.1K people contributed in 2019 according to the [GitHub State of the Octoverse report](https://octoverse.github.com/). 
     * It works on Windows, Mac OS, and Linux. 
     * It was the most popular IDE in the [StackOverflow 2019 Developer Survey](https://insights.stackoverflow.com/survey/2019#development-environments-and-tools).
-3. The product is the result of customer driven engineering, understanding user needs and building software that does a great job at meeting the user needs. Testing and validating hypothesis and aplying user feedback.
-4. Julia Liuson is the head of Microsoft's developer division and lead the culture change that enabling building this prouct. In 2019 she was inducted into to the Women in Technology Hall of Fame.
+3. The product is the result of customer driven engineering, understanding user needs and building software that does a great job at meeting the user needs. Testing and validating hypothesis and applying user feedback.
+4. Julia Liuson is the head of Microsoft's developer division and lead the culture change that enabling building this product. In 2019 she was inducted into to the Women in Technology Hall of Fame.
 5. Here's a little bit about Julia Liuson ([YouTube](https://www.youtube.com/watch?v=g8SCdMvUH2A)).
 
 ### Visual Studio Code Tour, create and run TypeScript (20 minutes)
@@ -58,7 +58,7 @@ Pre-reqs
      * Checked that it installed correctly by checking the version `tsc --version`
      * Review using the terminal - integrated in VS Code for command line tasks like installation. The terminal can be opened from "View" in the toolbar or `Ctrl+\`` 
      * Review npm - an online repository for publishing open-source node.js projects and a command line utility for interacting with the repo for package installation, version management, and dependency management. 
-         * It makes it easy to install and mantain packages. [What is node](https://nodejs.org/en/knowledge/getting-started/npm/what-is-npm/).
+         * It makes it easy to install and maintain packages. [What is node](https://nodejs.org/en/knowledge/getting-started/npm/what-is-npm/).
          * A package contains all the files needed for a module.
          * A module is a file that's re-used throughout an application.
 
@@ -76,7 +76,7 @@ Pre-reqs
 4. VS Code TS language support features
     * Introduce and demo - IntelliSense and Code Snippets.
     * Here to help but you need to drive and understand.
-    * IntelliSense - code compleetion, hover info, and signature information.
+    * IntelliSense - code completion, hover info, and signature information.
     * Snippets - chunks of TS.
     
 5. **Try it** - NTs create and run HelloWorld.ts
@@ -88,7 +88,7 @@ Pre-reqs
     * `let` is used to define variables inside a scope and var can be accessed outside a scope
     * *todo - sample of let vs var*
 
-2. Functions - [overiew of functions]()
+2. Functions - [overview of functions]()
     * Functions are building blocks of applications in JS
     * They're used for abstraction, TS also has classes, name spaces, and modules
     * Functions can be named or anonymous
@@ -103,7 +103,7 @@ Pre-reqs
 
 4. **Try it** - NTs clone a sample repo with different data types and functions
     * *todo - create code sample*
-    * *todo - instructions for clonning and running*
+    * *todo - instructions for cloning and running*
     
 ### Review (10 minutes)
 1. Poll the room - what went well, what didn't go well?
