@@ -13,8 +13,9 @@ This lesson introduces VS Code and TypeScript including why this set of technolo
 ## Time required and pace
 Total time: 1.5 hour
 * 10 minutes - engage: people behind the product
-* 60 minutes - explain and explore: Visual Studio Code tour, create and run first TypeScript, intro datatypes, functions, components
-* 5 minutes - elaborate: review trouble spots
+* 20 minutes - explain and explore: Visual Studio Code tour, create and run first TypeScript 
+* 35 minutes - explain and explore: introduction to TS datatypes, functions, components
+* 10 minutes - elaborate: review trouble spots
 * 15 minutes - evaluate: specific activity to demonstrate understanding
 
 ## Background / review
@@ -42,7 +43,7 @@ Pre-reqs
 4. Julia Liuson is the head of Microsoft's developer division and lead the culture change that enabling building this prouct. In 2019 she was inducted into to the Women in Technology Hall of Fame.
 5. Here's a little bit about Julia Liuson [YouTube](https://www.youtube.com/watch?v=g8SCdMvUH2A) 
 
-### Visual Studio Code Tour, create and run TypeScript (60 minutes)
+### Visual Studio Code Tour, create and run TypeScript (20 minutes)
 1. Open VS Code, without a workspace folder open.
     * Highlight the activity bar, status bar, and side bar.
     * Highlight the "Help" option in the toolbar for quick access to references.
@@ -77,7 +78,7 @@ Pre-reqs
     
 5. **Try it** - NTs create and run HelloWorld.ts
 
----
+### Introduction to TS datatypes, functions, components (35 minutes)
 
 
 ## Stretch
