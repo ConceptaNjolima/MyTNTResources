@@ -4,6 +4,8 @@ This lesson introduces VS Code and TypeScript including why this set of technolo
 *Open questions in lesson plan*
 * *VS code already set up?*
 * *Thoughts on people behind product bit?*
+* *Sample code needed*
+* *What's the classroom managment for code samples? Branch? Fork? into NT's repo, room repo, team repo? Naming conventions?*
 
 ## Learning objectives
 * TNTs will be able navigate VS Code.
