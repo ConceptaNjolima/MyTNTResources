@@ -50,23 +50,23 @@ Pre-reqs
 ### Intro to version control and Git (50 minutes)
 1. What is Git?
    * Git allows you to add, edit, and break your code without fear. Git creates save points along the way so you can go back.
-   * Git allows you to make changes to a file and store those changes back in a central repository (repo), file archive hosted locally or online, privately or publicly
+   * Git allows you to make changes to a file and store those changes back in a central repository (repo) file archive hosted locally or online, privately or publicly
    * Technically it's a "distributed version control system" (VCS)
-   * Distributed: each person who has their own copy of the code and history
+   * Distributed: each person has their own copy of the code and history
    * Version: like a document that's being written, code changes over time. Saving and committing creates a version of it. Another version is created when you add more and save again.
-   * Control: Git is the system and processes that controls creating new versions. It also manages multiple people collaborating on those files.
+   * Control: Git is the system and process that controls creating new versions. It also manages multiple people collaborating on those files.
 
 2. Why Git?
    * There are other version control systems. Git is the most popular and an industry standard.
-   * It has some advantages over a centralized system, that has a single copy of the code: 
+   * It has some advantages over a centralized system, which has a single copy of the code: 
        * It's quick to take action on your own copy 
        * It works locally, on your own computer, and offline
        * It makes having multiple branches, parallel worlds of code, easier
 
 3. Git Gotchyas
-   * Git can mean several things - the name of the source control technology, the functionality built into VS Code, the file formats and protocols that underlies the system.
-   * It’s both powerful (because it’s open-ended), plentiful (b/c it’s open source), and sometimes hard to use (because it’s open-ended).
-   * It takes practice, it's a learned skill, it's not intuitive - ask your coaches about their Git disasters, everyone has a story.
+   * Git can mean several things - the name of the source control technology, the functionality built into VS Code, the file formats and protocols that underlie the system.
+   * It’s both powerful (because it’s open-ended), plentiful (because it’s open source), and sometimes hard to use (because it’s open-ended).
+   * It takes practice, it's a learned skill, it's not intuitive - ask your coaches about their Git disasters - everyone has a story.
 
 4. Tool Tour [TO DO describe how they come together and how the tour works]
    * *All pre-installed?*
@@ -77,8 +77,8 @@ Pre-reqs
       * GitHub is were projects live. Individuals and organizations, companies, schools, clubs..., use GitHib.
       * Files for a project are stored in a repository (repo). Each repo has its own URL.
       * GitHub repos can be public and open to contributions from anyone - open source software (OSS).
-      * GitHub repos can be can be private, with access restricted to a an individual, few people, or an organization.
-      * GitHub is the largest community world wide community developers and widely used in the industry.
+      * GitHub repos can be can be private, with access restricted to an individual, a few people, or an organization.
+      * GitHub is the largest world wide community of developers and is widely used in the industry.
    * Source tree - an application for visualizing Git, see branches and changes
       * You can take many of the same actions from VS Code and SourceTree, try both and figure out what works for you
 
@@ -91,11 +91,11 @@ Instructor demos the basic local workflow and then NTs will follow on their own.
    * Create a new file. By default the repo is empty.
      * Multiple ways to do this - click new file button in Explorer, `ctrl+n`, `File` -> `New File`.
      * Name file with extension of file type "hello_world.ts".
-     * See "U", untracked, file hasn't yet been committed.
+     * See "U", untracked, means file hasn't yet been committed.
    * `git commit` - command to commit changes
      * Add commit message to describe change
    * Make a code change and save `ctrl+s`
-     * See "M", modified, file has been changed but not committed
+     * See "M", modified,  means file has been changed but not committed
      * See changes in the Source Control tab of the Explorer. Click on the change to see a comparison side by side.
    * `git commit` - command commit change
 
@@ -118,15 +118,15 @@ Instructor demos Sourcetree by adding local repository and looking at history.
    * Select "upload existing file". Choose files.
    * Need to clone repo to start working from GitHub rather than the local only copy.
 
-11. **Demo** - cloning, branching, committing, a repo from GitHib.
+11. **Demo** - cloning, branching, committing a repo from GitHib.
      * *Add steps for command line*
-     * Clone - Many projects start from an existing repo. This is a more coming flow than starting locally.
+     * Clone - Many projects start from an existing repo. This is a more common flow than starting locally.
        * View "Clone or download" button in GitHub.
        * Open new VS Code window. `git clone` + GitHub URL and start working from remote repo.
        * *How does Sourcetree work with a repo you've cloned but not through Sourcetree? If it's cloned from VS Code can you still use source tree?*
      * Branch - Branching creates a separate world, thread, for you to work in. By default you're in the master branch. 
        * Typically most work is done in a different branch and then merged with master.
-       * If four people are working on a project, each person has a branch. If you have two different features you're working on, you can can make a branch for each.
+       * If four people are working on a project, each person has a branch. If you have two different features you're working on, you can make a branch for each.
        * You can see the branch in the VS Code status bar and Sourcetree.
        * `git create branch` - command to create new branch
        * Give it a name and VS Code will automatically switch to it.
@@ -146,7 +146,7 @@ Instructor demos Sourcetree by adding local repository and looking at history.
      * View changes in branch. Repeat as you work.
   
 14. **Demo** - Merge 
-     * Changes are merged from other branches back into master. master is treated at as the source of truth. 
+     * Changes are merged from other branches back into master. master is treated as the source of truth. 
      * `git checkout` to master. 
      * `git merge` and select the branch you'd like to merge from into master.
 
@@ -165,7 +165,7 @@ Instructor demos Sourcetree by adding local repository and looking at history.
 2. Git best practices
      * It takes practice
      * Keep commits light - it's good to save often and keep the change set small, it'll be easier to merge
-     * Take a minute to review your changes before checking-in - more time will be spent on debugging, diff tools make it easier quickly glance
+     * Take a minute to review your changes before checking-in - more time will be spent on debugging, diff tools make it easier to quickly glance
 
 3. Next up: undoing, merge conflicts, pull requests
      * The first super power of Git is branches, the second is being able to undo your changes.
@@ -183,7 +183,7 @@ Instructor demos Sourcetree by adding local repository and looking at history.
      * Look at the changes in GitHub, check out the branches and commits
      * Look at the changes in SourceTree, check out the branches and commits
      * Look at the source control tab in VS Code, check out the file diffs
-3. By the end of the lesson you should a repository that shows a history of changes, branches, merges.
+3. By the end of the lesson you should have a repository that shows a history of changes, branches, merges.
 4. If you get stuck or discover something cool, share it with a neighbor.
 
 ## Stretch
