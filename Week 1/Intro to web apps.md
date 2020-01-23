@@ -53,10 +53,10 @@ There's likely a range of familiarity with web pages, web apps, and how they wor
 1.  Why are we building a web app?
        * Quick to prototype
        * Introduction to broadly applicable tech - VS Code, HTML, CSS, TypeScript
-       * Many projects professionally, community, philanthropic, for fun, have some web component
+       * Many projects - professional, community, philanthropic, for fun... have some web component
        * Some capabilities between web and native apps are closing
 
-2. Tech we will be using and introduced over the next week. This lesson focuses on HTML, CSS, and an introduction to TypeScript.
+2. Tech we will use and introduce over the next week. This lesson focuses on HTML, CSS, and an introduction to TypeScript.
 
       | Technology / Tooling | Solution |
       |---|---|
@@ -82,7 +82,7 @@ There's likely a range of familiarity with web pages, web apps, and how they wor
        * TypeScript is a superset of JavaScript.
        
 5. Demo w3schools.com
-     * References - summarize what the languages do
+     * References - summarizes what the languages do
      * Tutorials - learning paths
      * Examples - sample code for more complex properties, features, and functions
 
