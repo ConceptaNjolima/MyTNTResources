@@ -13,7 +13,7 @@ This lesson introduces VS Code and TypeScript including why this set of technolo
 ## Time required and pace
 Total time: 1.5 hour
 * 10 minutes - engage: people behind the product
-* 20 minutes - explain: 
+* 20 minutes - explain: Visual Studio Code tour, create and run TypeScript
 * 30 minutes - explore: specific activity
 * 15 minutes - elaborate: review trouble spots
 * 15 minutes - evaluate: specific activity to demonstrate understanding
@@ -22,9 +22,13 @@ Total time: 1.5 hour
 * Load video before starting: https://www.youtube.com/watch?v=g8SCdMvUH2A
 * [Getting started with Visual Studio Code](https://code.visualstudio.com/docs)
 * [TypeScript in Visual Studio Code](https://code.visualstudio.com/docs/languages/typescript)
+* [VS Code User Interface Guide](https://code.visualstudio.com/docs/getstarted/userinterface)
+* [VS Code User Shortcuts](https://code.visualstudio.com/docs/getstarted/keybindings)
+* [What's the difference between a console, a terminal, and a shell](https://www.hanselman.com/blog/WhatsTheDifferenceBetweenAConsoleATerminalAndAShell.aspx)
 
 Pre-reqs
-* Download [Visual Studio Code](https://code.visualstudio.com/)
+* [Visual Studio Code](https://code.visualstudio.com/)
+* [Node.js Package Manager](https://www.npmjs.com/)
 
 ## Lesson details
 ### People behind the products (10 minutes)
@@ -33,10 +37,24 @@ Pre-reqs
     * It's lightweight and customizable, you can install what you need to use. 
     * It's an [open source project](https://github.com/microsoft/vscode), anyone can contribute. Over 19.1K people contributed in 2019 ([GitHub - State of the Octoverse](https://octoverse.github.com/)). 
     * It works on Windows, Mac OS, and Linux. 
-    * It was the most popular IDE in the [StackOverflow 2019 Developer Survey](https://insights.stackoverflow.com/survey/2019#development-environments-and-tools).
+    * It was the most popular IDE in the [StackOverflow 2019 Developer Survey](https://insights.stackoverflow.com/survey/2019#development-
+    environments-and-tools).
 3. The product is the result of customer driven engineering, understanding user needs and building software that does a great job at meeting the user needs. Testing and validating hypothesis and aplying user feedback.
 4. Julia Liuson is the head of Microsoft's developer division and lead the culture change that enabling building this prouct. In 2019 she was inducted into to the Women in Technology Hall of Fame.
 5. Here's a little bit about Julia Liuson [YouTube](https://www.youtube.com/watch?v=g8SCdMvUH2A) 
+
+### Visual Studio Code Tour, create and run TypeScript (20 minutes)
+1. Open VS Code, without a workspace folder open.
+    * Highlight the activity bar, status bar, and side bar.
+    * Highlight the "Help" option in the toolbar for quick access to references.
+    * Call out that "Learn" is in the landing page. It takes time to get to adopt VS Code, for everyone.
+
+2. Install the TypeScript compiler `tsc`.
+     * TypeScript language is supported out of the box. The TypeScript compiler must be installed.
+     * `npm install -g typescript`, the `-g` installs it globally
+     * Checked that it installed correctly by checking the version `tsc --version`
+     * Review using the terminal - integrated in VS Code for command line tasks like installation. The terminal can be opened from "View" in the toolbar or `Ctrl+\`` 
+     * Review npm - an online repository for publishing open-source node.js projects and a command line utility for interacting with the repo for package installation, version management, and dependency management. It makes it easy to install and mantain packages. [What is node](https://nodejs.org/en/knowledge/getting-started/npm/what-is-npm/).
 
 
 ## Stretch
