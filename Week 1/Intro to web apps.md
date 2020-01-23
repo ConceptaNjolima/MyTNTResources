@@ -1,6 +1,11 @@
 # Intro to web app architecture
 This lesson provides an overview of how web apps work, HTML and CSS to lay the foundation for the prototypes NTs will build.
 
+*Open questions in lesson*
+* *create app architecure diagram*
+* *is it worth spending time on HTML and CSS basics - is more instruction needed or exploration level ok*?
+* *stretch goals for lesson?*
+
 ## Learning objectives
 * TNTs will learn the basics of how web pages and web apps work.
 * TNTs will be able to make HTML and CSS changes.
@@ -78,17 +83,17 @@ There's likely a range of familiarity with web pages, web apps, and how they wor
        * TypeScript (JS) - the language for programming web pages
 
 4. TypeScript vs. JavaScript
-       * TypeScript (TS) is a superset of JavaScript (JS), JS + additional features and capabilities
-       * TS is strongly typed - only certain values can be assigned to certain data types
-       * JS is weakly typed - makes conversations between data types, automatically types for you
-       * TS is object oriented - built on logicial, reusable objects
-       * TS is compiled - it generates JS
-       * Major bennefits: easier to debug, easier to build programs that scale
+      * TypeScript (TS) is a superset of JavaScript (JS), JS + additional features and capabilities
+      * TS is strongly typed - only certain values can be assigned to certain data types
+      * JS is weakly typed - makes conversations between data types, automatically types for you
+      * TS is object oriented - built on logicial, reusable objects
+      * TS is compiled - it generates JS
+      * Major bennefits: easier to debug, easier to build programs that scale
 
 5. Introduce app architecture diagram
-       * *TODO create diagram*
-       * This is something we'll revist more than once
-       * Return focus to HTML and CSS
+      * *TODO create diagram*
+      * This is something we'll revist more than once
+      * Return focus to HTML and CSS
  
 6. Demo w3schools.com
      * References - summarizes what the languages do
