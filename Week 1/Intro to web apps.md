@@ -83,16 +83,16 @@ There's likely a range of familiarity with web pages, web apps, and how they wor
        * TypeScript (JS) - the language for programming web pages
 
 4. TypeScript vs. JavaScript
-      * TypeScript (TS) is a superset of JavaScript (JS), JS + additional features and capabilities
+      * TypeScript (TS) is a super set of JavaScript (JS), JS + additional features and capabilities
       * TS is strongly typed - only certain values can be assigned to certain data types
       * JS is weakly typed - makes conversations between data types, automatically types for you
-      * TS is object oriented - built on logicial, reusable objects
+      * TS is object oriented - built on logical, reusable objects
       * TS is compiled - it generates JS
-      * Major bennefits: easier to debug, easier to build programs that scale
+      * Major benefits: easier to debug, easier to build programs that scale
 
 5. Introduce app architecture diagram
       * *TODO create diagram*
-      * This is something we'll revist more than once
+      * This is something we'll revisit more than once
       * Return focus to HTML and CSS
  
 6. Demo w3schools.com
