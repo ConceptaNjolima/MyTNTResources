@@ -53,7 +53,10 @@ Pre-reqs
      * `npm install -g typescript`, the `-g` installs it globally
      * Checked that it installed correctly by checking the version `tsc --version`
      * Review using the terminal - integrated in VS Code for command line tasks like installation. The terminal can be opened from "View" in the toolbar or `Ctrl+\`` 
-     * Review npm - an online repository for publishing open-source node.js projects and a command line utility for interacting with the repo for package installation, version management, and dependency management. It makes it easy to install and mantain packages. [What is node](https://nodejs.org/en/knowledge/getting-started/npm/what-is-npm/).
+     * Review npm - an online repository for publishing open-source node.js projects and a command line utility for interacting with the repo for package installation, version management, and dependency management. 
+         * It makes it easy to install and mantain packages. [What is node](https://nodejs.org/en/knowledge/getting-started/npm/what-is-npm/).
+         * A package contains all the files needed for a module.
+         * A module is a file that's re-used throughout an application.
 
 3. **Demo** - Hello World tutorial [instructions](https://code.visualstudio.com/docs/typescript/typescript-tutorial)
     * Create a new folder, workspace, for the project
