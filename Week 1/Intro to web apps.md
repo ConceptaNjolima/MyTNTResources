@@ -9,10 +9,10 @@ This lesson provides an overview of how web apps work, HTML and CSS to lay the f
 ## Time required and pace
 Total time: 1.5 hour
 * 20 minutes - engage: tradeoffs of web apps and native apps
-* 15 minutes - explain
-* 30 minutes - explore: specific activity
-* 10 minutes - elaborate: review trouble spots
-* 15 minutes - evaluate: specific activity to demonstrate understanding
+* 15 minutes - explain: intro to tech and web appp architecture
+* 30 minutes - explore: W3School HTML and CSS activities
+* 10 minutes - elaborate: what did you learn?
+* 15 minutes - evaluate: mock up a sample app
 
 ## Background / review
 * [HTML, CSS, JS tutorials, exercises, and references](https://www.w3schools.com/)
@@ -20,7 +20,6 @@ Total time: 1.5 hour
 * [html-css-js.com](https://html-css-js.com/)
 * [HTML CheatSheet](https://htmlcheatsheet.com/)
 * [Udemy - Learn HTML, CSS, JavaScript And TypeScript From Scratch](https://www.udemy.com/course/html-and-css-from-scratch/)
-* TODO - some place for good CSS samples
 
 ## Lesson details
 ### Tradeoffs of web apps and native apps (20 minutes)
@@ -47,7 +46,7 @@ Total time: 1.5 hour
        * Groups share top similarities and differences
        * Groups share tradeoffs
 
-### EXPLAIN  TODO
+### Intro to tech and web app architecture (15 minutes)
 There's likely a range of familiarity with web pages, web apps, and how they work. This refresher aims at closing any gaps and providing  the opportunity to dig in and get familiar with resources that will be applicable throughout the program.
 
 1.  Why are we building a web app?
@@ -79,21 +78,40 @@ There's likely a range of familiarity with web pages, web apps, and how they wor
        * TypeScript (JS) - the language for programming web pages
 
 4. TypeScript vs. JavaScript
-       * TypeScript is a superset of JavaScript.
-       
-5. Demo w3schools.com
+       * TypeScript (TS) is a superset of JavaScript (JS), JS + additional features and capabilities
+       * TS is strongly typed - only certain values can be assigned to certain data types
+       * JS is weakly typed - makes conversations between data types, automatically types for you
+       * TS is object oriented - built on logicial, reusable objects
+       * TS is compiled - it generates JS
+       * Major bennefits: easier to debug, easier to build programs that scale
+
+5. Introduce app architecture diagram
+       * *TODO create diagram*
+       * This is something we'll revist more than once
+       * Return focus to HTML and CSS
+ 
+6. Demo w3schools.com
      * References - summarizes what the languages do
      * Tutorials - learning paths
      * Examples - sample code for more complex properties, features, and functions
+     * Good reference and learning resource
 
-### EXPLORE - SPECIFIC ACTIVITIES ON W3SCHOOLs and SUCH
-TODO
+### W3School HTML and CSS activities (30 minutes)
+1. Start here:
+     * [HTML basics](https://www.w3schools.com/html/html_basic.asp)
+     * [CSS intro](w3schools.com/css/css_intro.asp)
+2. If you are familiar with HTML and CSS - find a new topic tutorials and try it out. Push yourself to discover something you didn't know before.
+3. If you are new to HTML and CSS continue with the tutorials in order, they do a pretty good job building on one another.
 
-### ELABORATE
-TODO - bring it back together
+### What did you learn? (10 minutes)
+1. In your building's Team channel, post what you learned - a new tag, syntax, or property? The mystery behind to why [MySpace](https://news.codecademy.com/myspace-coding-legacy/) (insert your favorite classic early internet customizable site here) was so popular?
+2. As group, poll for anything that's stumped or blocking.
 
-### EVALUATE
-TODO - CLOSING ACTIVITY
+### Mock up sample app (15 minutes)
+1. Pick one of your favorite apps on your phone.
+2. Using the [online editor](https://www.w3schools.com/css/tryit.asp?filename=trycss_default) try to mock, or recreate, a single screen from the app with CSS and HTML.
+3. Post your screen in your team's Team channel.
+4. If you finish one screen, choose another more challenging screen.
 
 ## Stretch
 [Links and other projects for further learning and exploration]
