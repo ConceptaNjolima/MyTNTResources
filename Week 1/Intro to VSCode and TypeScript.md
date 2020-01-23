@@ -15,8 +15,8 @@ Total time: 1.5 hour
 * 10 minutes - engage: people behind the product
 * 20 minutes - explain and explore: Visual Studio Code tour, create and run first TypeScript 
 * 35 minutes - explain and explore: introduction to TS datatypes, functions, components
-* 10 minutes - elaborate: review trouble spots
-* 15 minutes - evaluate: specific activity to demonstrate understanding
+* 10 minutes - elaborate: review
+* 15 minutes - evaluate: fix and complete the code sample
 
 ## Background / review
 * Load video before starting: https://www.youtube.com/watch?v=g8SCdMvUH2A
@@ -24,7 +24,8 @@ Total time: 1.5 hour
 * [TypeScript in Visual Studio Code](https://code.visualstudio.com/docs/languages/typescript)
 * [VS Code User Interface Guide](https://code.visualstudio.com/docs/getstarted/userinterface)
 * [VS Code User Shortcuts](https://code.visualstudio.com/docs/getstarted/keybindings)
-* [TS Hello World](Tutorial)
+* [TS Hello World](https://www.typescriptlang.org/docs/handbook/basic-types.html)
+* [Basic TS data types](https://www.typescriptlang.org/docs/handbook/basic-types.html)
 * [What's the difference between a console, a terminal, and a shell](https://www.hanselman.com/blog/WhatsTheDifferenceBetweenAConsoleATerminalAndAShell.aspx)
 
 Pre-reqs
@@ -79,7 +80,39 @@ Pre-reqs
 5. **Try it** - NTs create and run HelloWorld.ts
 
 ### Introduction to TS datatypes, functions, components (35 minutes)
+1. Datatypes - [overview of the datatypes](https://www.typescriptlang.org/docs/handbook/basic-types.html).
+    * Datatypes - what type of value can be assigned to a variable depends on the datatype
+    * TypeScript uses types to describe data (get it, *Type*Script), JS doesn't 
+    * `let` is used to define variables inside a scope and var can be accessed outside a scope
+    * *todo - sample of let vs var*
 
+2. Functions - [overiew of functions]()
+    * Functions are building blocks of applications in JS
+    * They're used for abstraction, TS also has classes, name spaces, and modules
+    * Functions can be named or anonymous
+    * Functions can have types and optional default parameters
+    * Let's talk about `this` parameter
+    * *todo - sample of functions
+
+3. Components - [overview of components]()
+    * Components are building blocks of React Apps that split up the UI intro reusable pieces
+    * Conceptually they're like JS functions, the accept inputs "props" and return React elements that describe what should appear on the screen, or how the user interface should *react*
+    * More on React in a future lesson
+
+4. **Try it** - NTs clone a sample repo with different data types and functions
+    * *todo - create code sample*
+    * *todo - instructions for clonning and running*
+    
+### Review (10 minutes)
+1. Poll the room - what went well, what didn't go well?
+2. Walk through any blocking concepts, demo code snippets that cause confusion
+
+### Fix and complete the code sample (15 minutes)
+1. Fork the repo - 
+2. Read through the code comments and identify what the code is trying to do.
+3. Try running the code, why isn't it working?
+4. Fix the code and complete the sample.
+5. Push the changes back to your fork.
 
 ## Stretch
 [Links and other projects for further learning and exploration]
