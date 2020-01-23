@@ -15,9 +15,9 @@ This lesson introduces the fundamentals of the Git workflow and tools.
 ## Time required and pace
 Total time: 1.5 hour
 * 10 minutes - engage: source control and you
-* 50 minutes - explain and explore: alternate demos and doing with Git
-* 15 minutes - elaborate: review trouble spots and Git best practices
-* 15 minutes - evaluate: git free time - branch, commit, push, pull, merge
+* 50 minutes - explain and explore: into to version control and Git
+* 15 minutes - elaborate: review and Git best practices
+* 15 minutes - evaluate: Git free time - branch, commit, push, pull, merge
 
 ## Background / review
 * [Automated Version Control with Git](http://swcarpentry.github.io/git-novice/01-basics/)
@@ -171,7 +171,7 @@ Instructor demos Sourcetree by adding local repository and looking at history.
      * The first super power of Git is branches, the second is being able to undo your changes.
      * There are a few different strategies for undoing and more to talk about in collaborative coding.
 
-## Evaluate
+## Git free time - branch, commit, push, pull, merge (15 minutes)
 1. Spend the rest of time practice and exploring Git.
 2. Try -
      * Create a new repo in GitHub
