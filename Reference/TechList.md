@@ -1,4 +1,4 @@
-## This is a summarry of the tech and quick links to intsall and reference.
+### This is a summarry of the tech and quick links to intsall and reference.
 | Technology / Tooling | Solution |
 |---|---|
 | Programming Language   | [HTML](https://www.w3schools.com/html/default.asp), [CSS](https://www.w3schools.com/css/default.asp), [TypeScript](https://www.typescriptlang.org/) |
@@ -15,7 +15,7 @@
 | Project setup | [React create app tool](https://reactjs.org/docs/create-a-new-react-app.html), [TypeScript](https://create-react-app.dev/docs/adding-typescript/) |
 
 
-## Acounts
+### Acounts
 * GitHub
 * Atlassian - Source Tree
-* Microsoft v-dash
+* Microsoft v-dash - Outlookm Teams, Office
