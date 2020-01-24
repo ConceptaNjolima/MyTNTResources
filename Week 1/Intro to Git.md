@@ -3,9 +3,11 @@ This lesson introduces the fundamentals of the Git workflow and tools.
 
 *Open questions in lesson:*
 * *Include backtracking and undoing?*
+* *Add command line instructions*
 * *Have students work in their own private repos or from the room repo?*
 * *Additional best practices initially?*
 * *Computers already set up?*
+* *Add resolving conflicts and name and alias demo*
 
 ## Learning objectives
 * TNTs will understand what is source control and why we need it.
@@ -172,7 +174,7 @@ Instructor demos Sourcetree by adding local repository and looking at history.
      * There are a few different strategies for undoing and more to talk about in collaborative coding.
 
 ## Git free time - branch, commit, push, pull, merge (15 minutes)
-1. Spend the rest of time practice and exploring Git.
+1. Spend the rest of time practicing and exploring Git.
 2. Try -
      * Create a new repo in GitHub
      * Cloning a repository
