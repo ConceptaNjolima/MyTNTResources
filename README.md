@@ -75,7 +75,7 @@ TypeScript unwrapping and chaining | | | |
 *Please be advised this is approximate pacing. Topics and schedule are subject to change.*
 
 ## Projects
-Team deliverables that span and unite concepts across the curriculum threads. Projects will be introduced throughout the weeks ending with the app prototype and pitch.
+Individual and team deliverables that span and unite concepts across the curriculum threads. Projects will be introduced throughout the weeks ending with the app prototype and pitch.
 
 ## References
 Quick guides describing tech stack, Git, acronyms, and other useful topics.
