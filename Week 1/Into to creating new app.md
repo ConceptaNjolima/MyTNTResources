@@ -1,6 +1,10 @@
 # Title
 This lesson introduces how to create a new React App project with TypeScript. It introduces React. It covers generating the project with the React integrated tool chain, the pieces of the project, making changes, and running the project.
 
+*Open questions in lesson*
+* *Need app architecture diagram*
+
+
 ## Learning objectives
 * TNTs will be able to create a new React app with TypeScript.
 * TNTs will understand how React fits into the app architecture.
@@ -9,8 +13,8 @@ This lesson introduces how to create a new React App project with TypeScript. It
 
 ## Time required and pace
 Total time: 1.5 hour
-* 10 minutes - engage: opening activity
-* 20 minutes - explain
+* 10 minutes - engage: revisit app architecture
+* 20 minutes - explain: creating a new React app with TypeScript
 * 30 minutes - explore: specific activity
 * 15 minutes - elaborate: review trouble spots
 * 15 minutes - evaluate: specific activity to demonstrate understanding
@@ -19,8 +23,60 @@ Total time: 1.5 hour
 * [Create a New React App](https://reactjs.org/docs/create-a-new-react-app.html)
 * [Create a React App - Adding TypeScript](https://create-react-app.dev/docs/adding-typescript/)
 
+Pre-reqs
+* [Yarn](https://www.npmjs.com/package/yarn) - `npm install -g yarn`
+* Create React app library - `npm install -g create-react-app`
+
 ## Lesson details
-[Instruction]
+### Revisit app architecture (10 minutes)
+* Revisit React as the component framework
+   * React is a JS library for building user interfaces
+   * UI is built in small, isolated pieces called components
+   * Components tell React what to display on the screen
+   * When the data changes, React *reacts* and updates the screen
+   * CSS is used to style React
+   * React is the code behind rendering HTML in a webpage
+   * [React](https://github.com/facebook/react) is an open source project from Facebook. It's used at Microsoft in web experiences across teams. IG, Netflix, New York Times, Khan Academy, What's App, Dropbox... all use and contribute to React.
+* As a table, TNTs draw what they've learned so far about the app architecture 
+   * Display app architecture with labels, no descriptions
+   * TNT groups talk through the function of the different parts and how they connect
+* Re-group and walk through architecture thus far together - HTML, CSS, React, Node, React...
+
+### Creating a new React app with TypeScript
+* Introduce tool chain for generated a react app
+    * https://reactjs.org/docs/create-a-new-react-app.html 
+    * This section covers using TypeScript: https://create-react-app.dev/docs/adding-typescript/
+    * The library sets up the environment with the latest TS features and optimizes the app for production
+
+* Demo - Create React Project
+    * `yarn create react-app my-app --template typescript` is the command to run in the terminal. Breaking down the command:
+    * `yarn` - command line programing for installing JS packages from npm
+    * `create react-app` - library for generating the environment 
+    * `my-app` - name of the app
+    * `--template typescript` - use the TypeScript template
+    * Run the command
+
+* Demo - terminal during create React app
+    * The command fetches and installs the dependencies needed for a React TypeScript app. The first time it's installed you can see it in action.
+    * create react-app will creates a workspace folder with the provided name where the terminal directory, folder, is at. 
+    * If it succeeds a Git repository is created.
+
+* Demo - starting the app
+    * create react-app ends with some helpful commands to run.
+    * `cd` - change directory to where the repo was created
+    * Run `yarn start`
+    * The app runs! The Node,js server is running locally.
+
+* Demo - editing the app
+    * Open the workspace folder in VS Code, it's the same directory used to start the app.
+    *  Tour the contents of what was generated:
+       * favicon.ico - the image that's displayed in a browser tab
+       * index.html - most common name for the default webpage of a website
+       * logo.png - two sizes, displayed in the web page
+       * manifest.json - metadata for WebExtensions API, used for bookmarks and cross-browsers for compatibility
+       * robots.txt - used by search engines for indexing
+       * App.css - top level style
+       * App.test.tsx
 
 ## Stretch
 [Links and other projects for further learning and exploration]

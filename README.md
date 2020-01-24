@@ -8,7 +8,8 @@ Web development curriculum for The New Technologist Summer Academy - Welcome to 
 * *Add quick cheat sheets - Git... others?*
 * *Order lessons*
 * *What's the voice? Narrating to the instructors?*
-* *Public repo so TNTs can edit, contrbiute without associating GitHub ID with MSFT?*
+* *Public repo so TNTs can edit, contribute without associating GitHub ID with MSFT?*
+* *Use both npm and yarn*?
 
 ## How to use these materials
 * **Instructors** - this course is the day by day lesson plan.
