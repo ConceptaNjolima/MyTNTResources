@@ -1,8 +1,10 @@
-# Title
+# Intro to creating a new app and React
 This lesson introduces how to create a new React App project with TypeScript. It introduces React. It covers generating the project with the React integrated tool chain, the pieces of the project, making changes, and running the project.
 
 *Open questions in lesson*
 * *Need app architecture diagram*
+* *React sample code snippet, react sample app description*
+* *is there a mobile version of create react?*
 
 
 ## Learning objectives
@@ -15,9 +17,9 @@ This lesson introduces how to create a new React App project with TypeScript. It
 Total time: 1.5 hour
 * 10 minutes - engage: revisit app architecture
 * 20 minutes - explain: creating a new React app with TypeScript
-* 30 minutes - explore: specific activity
-* 15 minutes - elaborate: review trouble spots
-* 15 minutes - evaluate: specific activity to demonstrate understanding
+* 30 minutes - explore: explore create React app
+* 15 minutes - elaborate: review
+* 15 minutes - evaluate: small React sample app
 
 ## Background / review
 * [Create a New React App](https://reactjs.org/docs/create-a-new-react-app.html)
@@ -42,7 +44,7 @@ Pre-reqs
    * TNT groups talk through the function of the different parts and how they connect
 * Re-group and walk through architecture thus far together - HTML, CSS, React, Node, React...
 
-### Creating a new React app with TypeScript
+### Creating a new React app with TypeScript (20 minutes)
 * Introduce tool chain for generated a react app
     * https://reactjs.org/docs/create-a-new-react-app.html 
     * This section covers using TypeScript: https://create-react-app.dev/docs/adding-typescript/
@@ -64,19 +66,51 @@ Pre-reqs
 * Demo - starting the app
     * create react-app ends with some helpful commands to run.
     * `cd` - change directory to where the repo was created
-    * Run `yarn start`
+    * Run `yarn start` script
     * The app runs! The Node,js server is running locally.
 
 * Demo - editing the app
     * Open the workspace folder in VS Code, it's the same directory used to start the app.
     *  Tour the contents of what was generated:
+       * public folder - can be opened from browser address bar
+       * src folder - "source" working files to create the build
+       * node_modules folder - installed packages
        * favicon.ico - the image that's displayed in a browser tab
        * index.html - most common name for the default webpage of a website
        * logo.png - two sizes, displayed in the web page
        * manifest.json - metadata for WebExtensions API, used for bookmarks and cross-browsers for compatibility
        * robots.txt - used by search engines for indexing
        * App.css - top level style
-       * App.test.tsx
+       * App.test.tsx - running test with Jest, more on this later
+       * App.tsx - React module
+       * index.tsx - React module
+       * logo.svg - scalable vector of logo
+       * react-app-env.d.ts - dev environment 
+       * serviceWorker.ts - executes in the background on separate thread from UI, allows app to work offline and used for platform integration
+       * setupTests.ts - tests Jest will run
+       * .gitignore - tells Git which files or folder to ignore in a project such as editor backup and local configuration files
+       * package.json - dependencies
+       * README - scripts for project and links to learn more about create React app
+       * tsconfig.json - TypeScript configuration
+       * yarn.lock - stores what versions were installed
+    * Edit the App.tsx
+    * Save
+    * Watch app re-render
+
+* Demo - small React sample
+     * *todo - add react sample*
+
+### Explore create React app (30 minutes)
+NTs create a new React TS app with create react app. Observe for NTs blocked in generating app from missing dependencies. 
+1. Run the app.
+2. Make changes in the app using CSS, HTML, and React. Save the file App.tsx and watch the page reload. 
+3. Make changes in the app.css file. Notice how the style changes. 
+4. Try adding the React sample.
+
+### Review (10 minutes)
+
+### Small React sample app (20)
+NTs will update the create react sample app to *x* *todo- define x*. When done the repo should be uploaded to GitHub *in which repo*?
 
 ## Stretch
 [Links and other projects for further learning and exploration]

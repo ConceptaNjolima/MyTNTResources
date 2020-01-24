@@ -1,10 +1,10 @@
-# Title
-[Description]
+# Sample app - bringing it TS, React, HTML, and CSS together
+In this lessson NTs will explore a sample mobile list app that demonstrates how the core technologies work together.
 
 ## Learning objectives
-* TNTs will be able to...
-* TNTs will understand...
-* TNTs will learn...
+* TNTs will understand how the intro blocks of TS, React, HTML, and CSS are used in the app.
+* TNTs will practice cloning (*branching?*) an repository from GitHub.
+* TNTs will be able to make changes and run a mobile React app.
 
 ## Time required and pace
 Total time: 1.5 hour
