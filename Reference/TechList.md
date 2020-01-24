@@ -1,16 +1,21 @@
-##This is a summarry of the tech and quick links to intsall and reference.
+## This is a summarry of the tech and quick links to intsall and reference.
+| Technology / Tooling | Solution |
+|---|---|
+| Programming Language   | [HTML](https://www.w3schools.com/html/default.asp), [CSS](https://www.w3schools.com/css/default.asp), [TypeScript](https://www.typescriptlang.org/) |
+| Web framework | [React](https://reactjs.org/) |
+| Component library | [Fabric](https://developer.microsoft.com/en-us/fabric#/) |
+| Store management | [Redux and state component](https://redux.js.org/)|
+| Sever environment | [Node.js, npm](https://www.npmjs.com/)|
+| Package manager | [Yarn](https://yarnpkg.com/en/) |
+| Source control | [Git](https://git-scm.com/), [GitHub](https://github.com/) |
+| Source control tools | [SourceTree](https://www.sourcetreeapp.com/), [Command line](https://git-scm.com/book/en/v2/Getting-Started-The-Command-Line), [VS Code](https://code.visualstudio.com/Docs/editor/versioncontrol)|
+| Testing infrastructure | [Jest](https://jestjs.io/) |
+| Debugging | [VS Code debugger](https://code.visualstudio.com/Docs/editor/debugging) |
+| Text editor | [VS Code](https://code.visualstudio.com/) |
+| Project setup | [React create app tool](https://reactjs.org/docs/create-a-new-react-app.html), [TypeScript](https://create-react-app.dev/docs/adding-typescript/) |
 
-      | Technology / Tooling | Solution |
-      |---|---|
-      | Programming Language   | HTML, CSS, TypeScript  |
-      | Web framework | React |
-      | Component library | Fabric |
-      | Store management | Redux and state component|
-      | Sever environment | Node.js, npm|
-      | Package manager | Yarn |
-      | Source control | Git |
-      | Source control tools | SourceTree, Command line, VS Code|
-      | Testing infrastructure | Jest |
-      | Debugging | VS Code debugger |
-      | Text editor | VS Code |
-      | Project setup | React create app tool |
+
+## Acounts
+* GitHub
+* Atlassian - Source Tree
+* Microsoft v-dash
