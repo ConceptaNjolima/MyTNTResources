@@ -74,6 +74,12 @@ TypeScript unwrapping and chaining | | | |
 
 *Please be advised this is approximate pacing. Topics and schedule are subject to change.*
 
+## Projects
+Individual and team deliverables that span and unite concepts across the curriculum threads. Projects will be introduced throughout the weeks ending with the app prototype and pitch.
+
+## References
+Quick guides describing tech stack, Git, acronyms, and other useful topics.
+
 ## How to contribute
 Contributions are encouraged and appreciated to fix spelling, grammar, and formating. Each lesson also has a reference section where you can add your favorite learning resources. The curriculum evolves as we learn. For larger topics and changes, open an issue for discussion. See the CONTRIBUTING.md for more details.
 
