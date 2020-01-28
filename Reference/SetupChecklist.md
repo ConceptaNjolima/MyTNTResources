@@ -1,7 +1,7 @@
 # Setup Checklist
 ## Create web app 
 1. [Install VS Code](https://code.visualstudio.com/)
-2. [Install node package manager](https://www.npmjs.com/)
+2. [Install node.js and node package manager](https://nodejs.org/en/download/)
 3. [Install yarn](https://legacy.yarnpkg.com/en/)
 4. [Install create-react-app](https://create-react-app.dev/docs/adding-typescript/)
     * Command `npm install -g create-react-app`
