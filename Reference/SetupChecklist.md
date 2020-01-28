@@ -5,7 +5,9 @@
 3. [Install yarn](https://legacy.yarnpkg.com/en/)
 4. [Install create-react-app](https://create-react-app.dev/docs/adding-typescript/)
     * Command `npm install -g create-react-app`
-5. Test setup: Create a new TS project: `yarn create react-app test-app --template typescript`
+
+Test setup: 
+* Create a new TS project: `yarn create react-app test-app --template typescript`
 
 ## Version control
 1. [Install Git](https://git-scm.com/downloads)
