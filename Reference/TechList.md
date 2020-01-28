@@ -13,9 +13,3 @@
 | Debugging | [VS Code debugger](https://code.visualstudio.com/Docs/editor/debugging) |
 | Text editor | [VS Code](https://code.visualstudio.com/) |
 | Project setup | [React create app tool](https://reactjs.org/docs/create-a-new-react-app.html), [TypeScript](https://create-react-app.dev/docs/adding-typescript/) |
-
-
-### Acounts
-* GitHub
-* Atlassian - Source Tree
-* Microsoft v-dash - Outlookm Teams, Office
