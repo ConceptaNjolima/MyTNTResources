@@ -77,6 +77,13 @@ TypeScript unwrapping and chaining | | | |
 ## Projects
 Individual and team deliverables that span and unite concepts across the curriculum threads. Projects will be introduced throughout the weeks ending with the app prototype and pitch.
 
+Week 1 | Week 2 | Week 3 | Week 4 | Week 5
+--- | --- | --- | --- | ---
+To Do - all the basics | Merge challenge | Project title - state management and Redux | Project title - group working| 
+ | Idea pitch | User feedback barbecue | Spec | 
+ | | | | 
+ | | | | 
+
 ## References
 Quick guides describing tech stack, Git, acronyms, and other useful topics.
 
