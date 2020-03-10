@@ -86,7 +86,7 @@ Pre-reqs
     * Datatypes - what type of value can be assigned to a variable depends on the datatype
     * TypeScript uses types to describe data (get it, *Type*Script), JS doesn't 
     * `let` is used to define variables inside a scope and var can be accessed outside a scope
-    * *todo - sample of let vs var*
+    * *todo - sample of let vs var vs const*
 
 2. Functions - [overview of functions]()
     * Functions are building blocks of applications in JS
@@ -96,12 +96,19 @@ Pre-reqs
     * Let's talk about `this` parameter
     * *todo - sample of functions
 
-3. Components - [overview of components]()
+3. Objects
+   * reference vs Copy
+   * Interface
+   
+4. Class
+   * *todo - sample classes 
+
+5. Components - [overview of components]()
     * Components are building blocks of React Apps that split up the UI intro reusable pieces
     * Conceptually they're like JS functions, the accept inputs "props" and return React elements that describe what should appear on the screen, or how the user interface should *react*
     * More on React in a future lesson
 
-4. **Try it** - NTs clone a sample repo with different data types and functions
+6. **Try it** - NTs clone a sample repo with different data types and functions
     * *todo - create code sample*
     * *todo - instructions for cloning and running*
     
