@@ -50,16 +50,16 @@ Total time: 1.5 hour
    - Yarn add @types/react-redux
 
 2. Create a **reducer** : a function that takes in a state and action and returns a state.
-b) Create the **store** using the reducer at the top of the app.
+  - Create the **store** using the reducer at the top of the app.
 
 3. Create an action to modify the state.
- Define the action's behavior in the reducer.
+  - Define the action's behavior in the reducer.
 
 4. Wrap the App component in a connect call
-  a) Define mapStateToProps(gets the state's values) and mapDispatchToProps(modifies the state's values)
-  b) Add the props to get/change the state in the App Component.
-  c) Use the container in index.js
-  d) We can now change the App component to use our new props
+  - Define mapStateToProps(gets the state's values) and mapDispatchToProps(modifies the state's values)
+  - Add the props to get/change the state in the App Component.
+  - Use the container in index.js
+  - We can now change the App component to use our new props
 
 ### **Rules to follow for easier development (15 minutes)**
 
