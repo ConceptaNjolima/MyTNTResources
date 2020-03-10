@@ -45,9 +45,9 @@ Total time: 1.5 hour
 
 ### **How to add redux to a project ( 30minutes):** Add redux to list app
 
-1. Yarn add react-redux
-; Yarn add redux
-; Yarn add @types/react-redux
+1. -Yarn add react-redux
+   - Yarn add redux
+   - Yarn add @types/react-redux
 
 2. Create a **reducer** : a function that takes in a state and action and returns a state.
 b) Create the **store** using the reducer at the top of the app.
