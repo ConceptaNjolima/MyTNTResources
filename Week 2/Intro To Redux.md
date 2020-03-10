@@ -45,29 +45,25 @@ Total time: 1.5 hour
 
 ### **How to add redux to a project ( 30minutes):** Add redux to list app
 
-1. 1.Yarn add react-redux
+1. Yarn add react-redux
+; Yarn add redux
+; Yarn add @types/react-redux
 
-### Yarn add redux
+2. Create a **reducer** : a function that takes in a state and action and returns a state.
+b) Create the **store** using the reducer at the top of the app.
 
-### Yarn add @types/react-redux
+3. Create an action to modify the state.
+ Define the action's behavior in the reducer.
 
-1. 2.Create a **reducer** : a function that takes in a state and action and returns a state.
-
-### Create the **store** using the reducer at the top of the app.
-
-1. 3.Create an action to modify the state.
-
-### Define the action&#39;s behavior in the reducer.
-
-1. 4.Wrap the App component in a connect call
-  1. a.Define mapStateToProps(gets the state&#39;s values) and mapDispatchToProps(modifies the state&#39;s values)
-  2. b.Add the props to get/change the state in the App Component.
-  3. c.Use the container in index.js
-  4. d.We can now change the App component to use our new props
+4. Wrap the App component in a connect call
+  a) Define mapStateToProps(gets the state's values) and mapDispatchToProps(modifies the state's values)
+  b) Add the props to get/change the state in the App Component.
+  c) Use the container in index.js
+  d) We can now change the App component to use our new props
 
 ### **Rules to follow for easier development (15 minutes)**
 
-Use interfaces instead of &#39;any&#39; type
+Use interfaces instead of 'any' type
 
 1. Create an interface for your state to ensure that no reducer can put in a property that shouldn&#39;t exists
 2. Create an interface for your actions and an enum for your action types. This ensures that your reducer won&#39;t expect a property that doesn&#39;t exists on that action type.
