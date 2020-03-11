@@ -59,10 +59,10 @@ Example:
 
 ### **Class Component ( 10minutes):**
 
-1. **1.** Render (required): This method returns the JSX element to be displayed by the class. It runs whenever the component&#39;s view updates.
-2. **2.** Properties (optional): This are arguments passed into the component from its parent components. They cannot be changed by the component.
-3. **3.** State (optional): This is are arguments that exists only withing the component. Changing them causes the component to update
-4. **4.** LifeCycle methods: as component gets introduced
+1. Render (required): This method returns the JSX element to be displayed by the class. It runs whenever the component&#39;s view updates.
+2. Properties (optional): This are arguments passed into the component from its parent components. They cannot be changed by the component.
+3. State (optional): This is are arguments that exists only withing the component. Changing them causes the component to update
+4. LifeCycle methods: as component gets introduced
 
 ### **Function Component ( 10minutes):** Add redux to list app
 
