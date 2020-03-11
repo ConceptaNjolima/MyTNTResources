@@ -12,8 +12,9 @@ This lesson explains what middle wares are and explains how to use thunk actions
 
 Total time: 1.5 hour
 
-- 30 minutes – explain why we need redux
-- 40 minutes – walkthrough of adding redux to list app
+- 5 minutes – Explain MiddleWare
+- 15 minutes – Explain Thunk Actions
+- 15 minutes - Activity
 
 ## **Background / review**
 
@@ -33,7 +34,7 @@ Total time: 1.5 hour
 
 export const store = createStore(GameReducer, applyMiddleware(thunk));
 
-### **Thunk Actions ( 30minutes):
+### **Thunk Actions ( 15 minutes):
 
 Thunks is a very common middle ware that allow you to pass in an action that returns a function. The function can do any operations you need to do before then dispatching another action.
 
@@ -50,11 +51,13 @@ Thunks is a very common middle ware that allow you to pass in an action that ret
          }
 
     }
+    
+    
+### **Activity* Add thunkActions to project
 
-### **Use Cases for thunks (15 minutes)**
+### **Use Cases for thunks ( minutes)**
 
-While most actions
 
 1. You can make modifications to the values passed into an action before dispatching a different action.
-2. Actions don&#39;t have to be dispatched synchronously if they exist in a thunk action.
-3. ThunkActions have access to the store&#39;s current state values.
+2. Actions don't have to be dispatched synchronously if they exist in a thunk action.
+3. ThunkActions have access to the store's current state values.
