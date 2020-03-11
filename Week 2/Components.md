@@ -66,9 +66,9 @@ Example:
 
 ### **Function Component ( 10minutes):** Add redux to list app
 
-1. **1.** The function is expected to return the JSX element to be displayed.
-2. **2.** Properties (optional): These arguments are passed in from the component&#39;s parent similarly to passing parameters to a function. They cannot be changed in the component.
-3. **3.** UseState: A hook function that returns a state variable, giving function components a way to manipulate a state the way class components do.
+1. The function is expected to return the JSX element to be displayed.
+2. Properties (optional): These arguments are passed in from the component&#39;s parent similarly to passing parameters to a function. They cannot be changed in the component.
+3. UseState: A hook function that returns a state variable, giving function components a way to manipulate a state the way class components do.
 
 ### **LifeCycle Methods (10 minutes)**
 
