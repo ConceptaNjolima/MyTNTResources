@@ -74,7 +74,7 @@ Example:
 
 These are methods that are trigger through out a components existence from when they&#39;re constructed to when they are dismissed.
 
-### PICTURE
+![LifeCycleDiagram](./Week 2/LifeCycle.png)
 
 [https://www.w3schools.com/react/react\_lifecycle.asp](https://www.w3schools.com/react/react_lifecycle.asp)
 
