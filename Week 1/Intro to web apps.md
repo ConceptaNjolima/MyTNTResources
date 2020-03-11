@@ -91,7 +91,7 @@ There's likely a range of familiarity with web pages, web apps, and how they wor
       * Major benefits: easier to debug, easier to build programs that scale
 
 5. Introduce app architecture diagram
-     *BasicArchitecture.png
+![Basic Architecture](Week 1/BasicArchitecture.png)
  
 6. Demo w3schools.com
      * References - summarizes what the languages do
