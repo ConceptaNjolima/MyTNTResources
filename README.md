@@ -79,7 +79,7 @@ Individual and team deliverables that span and unite concepts across the curricu
 
 Week 1 | Week 2 | Week 3 | Week 4 | Week 5
 --- | --- | --- | --- | ---
-To Do - all the basics | Simon Says - state management and Redux | Project title - team engineering | | 
+To Do - all the basics | Simon Says - state management and Redux | YourShare - team engineering | | 
  Idea pitch | User feedback barbecue | Spec | | 
  | | | | 
  | | | | 
