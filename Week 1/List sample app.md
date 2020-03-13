@@ -50,6 +50,8 @@ Regroup as team, what's going well, what are you blocked on
 2. Commit and Push to GitHub as you go
 3. End of lesson, final Push and comment on what you learned and what was challenging
 
+### Steps:
+[list app steps](ListAppSteps.md)
 ## Stretch
 * Check for input, duplicates, more props (quantities)
 * Stylize the app
