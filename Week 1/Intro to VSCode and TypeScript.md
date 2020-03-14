@@ -71,7 +71,21 @@ Pre-reqs
     console.log(message);
     ```
     * Compile the TS code. TS compiles to JS and runs as JS. In the terminal `tsc filename.ts`. `filename.js` is created.
-    * In the terminal `node filename.js` to run the JS file. Look for the output in the terminal.
+    * Create a file call tsconfig.json in the same folder.
+    * add the following lines to tsconfig.json:
+    ```
+    {
+      "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "outDir": "out",
+        "sourceMap": true
+      }
+    }
+    ```
+    * while in your typescript file click on the debug/run menu and click start debugging
+    * select node.js as the environment
+    this allows you to run the typescript file and set breakpoints/debug the file
 
 4. VS Code TS language support features
     * Introduce and demo - IntelliSense and Code Snippets.
