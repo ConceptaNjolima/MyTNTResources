@@ -51,7 +51,7 @@ Regroup as team, what's going well, what are you blocked on
 3. End of lesson, final Push and comment on what you learned and what was challenging
 
 ### Steps:
-[list app steps]([ENGresourceListAppSteps.md)
+[list app steps]([ENGresource]ListAppSteps.md)
 ## Stretch
 * Check for input, duplicates, more props (quantities)
 * Stylize the app
