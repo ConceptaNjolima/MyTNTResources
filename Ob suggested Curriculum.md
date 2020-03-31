@@ -1,25 +1,33 @@
 Week 1:
 
 1. Typescript basics:
+    - What typescript is and how it is similar/different from Javascript
     - Datatypes
-    -  Const vs let
-    - Enums
+        - Number, Boolean, String
+        - Variable declarations (const, let) and scope
+        - Enums
+        - Optionals
+        - Objects
+    - Data structures
+        - Arrays
+        - Dictionaries
     - Functions
-    - Arrays
-    - Objects
     - Reference vs Copy
     - Interface
     - Classes
     - Inheritance
-2. Vs Basics:
-    - Debug through ts code
+2. VSCode Basics:
+    - Navigating VSCode (Sidebar, Search, Explorer)
+    - Debug through VSCode
     - Add logPoint
     - Add conditional breakpoint
 3. HTML Basics:
+    - What HTML is and how it integrates with React
     - Edit twitter (make a fake tweet) in chrome console to show what everything in page boils down to.
     - Create basic .html file
     - Add a header and a paragraph and add style
 4. GIT Basics:
+    - What git is and why it's important
     - Pull our repo(only has one file in it)
     - Make a local branch
     - Add a file with your name
@@ -29,52 +37,58 @@ Week 1:
     - Make new branch
     - Add your name to the one global file( instructor should also change file)
     - Try to push (shouldn&#39;t work , merge conflicts)
-    - Show how to fix merge conflict
+    - Show how to fix merge conflicts
 5. React: Build shopping list Project
 
 Week 2:
 
-1. MVC
-    - This doesn'   - as directly as it did with swift but it&#39;s important to establish the concept of separating your view from your logic from your data.
+1. Flux architecture
+    - Esnure students understand the underlying architecture used for React
+    - Establish the concept of separating your view from your logic from your data.
     - Concurrent with teaching redux because it redux&#39;s basic practices show why this is necessary
-2. Function Components:
-    - Build a custom button as a function component
-3. Animations(Need to decide between React-Animations and React-Springs):
+2. Components:
+    - React component lifecycle (what casues a re-render) and local state
+    - Build a custom button as a functional component
+    - Build a class-based component
+3. View/Component layout
+    - How views are layed out in the DOM
+    - How to lay out components with flexbox
+    - Lay things out in a table
+    - How to add styles with CSS
+4. UI Debugging
+    - Basic concept of debugging: How to debug
+    - Debugging views in Chromium
+    - Viewing and change applied styles on the fly
+4. Animations(Need to decide between React-Animations and React-Springs):
     - Install animation Library
     - Animate custom button to flash
     - Show looping Animations
-    - ToDo:
-4. Intro To Redux
-    - Explain what causes a rerender
-    - Project should have multiple nested components to show the need for redux
+5. Intro To Redux
+    - Explain what redux is and why it's needed (data shared across components)
+    - Actions/reducers
+    - Explain what causes a rerender with redux props
     - Explain the standard redux practices and why they exists:
     - ----No sideEffects in reducer
     - ----Actions doing just one thing
-5. Tables
-6. Async vs Sync
-7. Project: Simon Says(single) / Matching Tiles(Group?)
-
-
-
-
-
-
-
-
-
+6. Project: Simon Says(single) / Matching Tiles(Group?)
 
 
 Week 3:
 
-1. Redux:
+1. Unit testing:
+    - What are unit tests and why are they important
+    - Unit testing best practices
+    - How to use jest to set up a basic unit tests
+2. Redux:
+    - Async vs sync
     - Create a thunkAction
     - Compare thunkAction vs Regular Action
-2. Cookies/Web Storage
-3. Api requests
+3. Cookies/Web Storage
+4. Api requests
     - Use data from apis
     - Edit and Share Data between classmates
-4. Canvas (maybe be out of scope depending on prompt)
-5. Project: Survival Group Project (satisfy unit tests)
+5. Canvas (maybe be out of scope depending on prompt)
+6. Project: Survival Group Project (satisfy unit tests)
 
 Week 4
 
