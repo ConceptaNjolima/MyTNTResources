@@ -47,7 +47,7 @@ Pre-reqs
    * Source control enables code collaboration
    * Makes large projects with 1,000s of people possible
    * Makes it easy to manage your own changes and work
-   * Source control allows you to try things with out fear
+   * Source control allows you to try things without fear
 
 ### Intro to version control and Git (50 minutes)
 1. What is Git?
@@ -65,7 +65,7 @@ Pre-reqs
        * It works locally, on your own computer, and offline
        * It makes having multiple branches, parallel worlds of code, easier
 
-3. Git Gotchyas
+3. Git Gotchas
    * Git can mean several things - the name of the source control technology, the functionality built into VS Code, the file formats and protocols that underlie the system.
    * It’s both powerful (because it’s open-ended), plentiful (because it’s open source), and sometimes hard to use (because it’s open-ended).
    * It takes practice, it's a learned skill, it's not intuitive - ask your coaches about their Git disasters - everyone has a story.
@@ -76,10 +76,10 @@ Pre-reqs
    * *Git command line*
    * Git in VS Code - supports Git out of the box, Git commands, and source control tab in the Explorer
    * GitHub -  a website for remote repositories, it also has features for managing projects like issues, access and permission control
-      * GitHub is were projects live. Individuals and organizations, companies, schools, clubs..., use GitHib.
+      * GitHub is where projects live. Individuals and organizations, companies, schools, clubs..., use GitHib.
       * Files for a project are stored in a repository (repo). Each repo has its own URL.
       * GitHub repos can be public and open to contributions from anyone - open source software (OSS).
-      * GitHub repos can be can be private, with access restricted to an individual, a few people, or an organization.
+      * GitHub repos can be private, with access restricted to an individual, a few people, or an organization.
       * GitHub is the largest world wide community of developers and is widely used in the industry.
    * Source tree - an application for visualizing Git, see branches and changes
       * You can take many of the same actions from VS Code and SourceTree, try both and figure out what works for you
@@ -99,7 +99,6 @@ Instructor demos the basic local workflow and then NTs will follow on their own.
    * Make a code change and save `ctrl+s`
      * See "M", modified,  means file has been changed but not committed
      * See changes in the Source Control tab of the Explorer. Click on the change to see a comparison side by side.
-   * `git commit` - command commit change
 
 6. **Try it** - NTs create local workflow
    * *Steps? What to name it*
@@ -130,7 +129,7 @@ Instructor demos Sourcetree by adding local repository and looking at history.
        * Typically most work is done in a different branch and then merged with master.
        * If four people are working on a project, each person has a branch. If you have two different features you're working on, you can make a branch for each.
        * You can see the branch in the VS Code status bar and Sourcetree.
-       * `git create branch` - command to create new branch
+       * `git branch <branch name>` - command to create new branch
        * Give it a name and VS Code will automatically switch to it.
        * `git publish branch` - command to publish it to the VS Code repo.
        * `git checkout` - command lists all the branches and lets you switch between them. This can also be switched from the status bar.
@@ -151,10 +150,15 @@ Instructor demos Sourcetree by adding local repository and looking at history.
      * Changes are merged from other branches back into master. master is treated as the source of truth. 
      * `git checkout` to master. 
      * `git merge` and select the branch you'd like to merge from into master.
+     * Merge conflicts occur when multiple developers edit the same content. At this point, Git is asking for human input to fix the conflicts.
+       *  Make changes in master eg: README.md and commit changes.
+       * `git checkout` to branch and make changes to the same line of the file that was edited in master with different text.
+       * `git checkout` to master and `git merge` branch
+       * Resolve conflicts in VS Code.
 
 15. Fetch
      * Changes are fetched from master back into your local master branch. This is important to stay up to date with changes other people may be making.
-     * `git checkout` to your local master branch and then `get fetch` to get the changes from the server.
+     * `git checkout` to your local master branch and then `git fetch` to get the changes from the server.
 
 16. **Try it** - NTs make and push changes, then merge branch, fetch changes from master to another branch.
 
@@ -175,13 +179,13 @@ Instructor demos Sourcetree by adding local repository and looking at history.
 
 ## Git free time - branch, commit, push, pull, merge (15 minutes)
 1. Spend the rest of time practicing and exploring Git.
-2. Try -
-     * Create a new repo in GitHub
-     * Cloning a repository
-     * Creating multiple branches and switching between branches
-     * Make changes, staging, committing, and pushing
-     * Merger branches
+2. Try - Adding your name and alias
+     * Clone TNT repository 
+     * Create a branch and add your name and alias to the txt file
+     * Save, stage, and commit your change
+     * Checkout to master and merge branch into master
      * Pull changes
+     * Push changes
      * Look at the changes in GitHub, check out the branches and commits
      * Look at the changes in SourceTree, check out the branches and commits
      * Look at the source control tab in VS Code, check out the file diffs
@@ -191,4 +195,5 @@ Instructor demos Sourcetree by adding local repository and looking at history.
 ## Stretch
 * Interested in how Git works under the hood? Learn about how [git works internally](https://medium.com/@shalithasuranga/how-does-git-work-internally-7c36dcb1f2cf).
 * Interested in security? Learn about how [git uses cyrptographic hashes](https://ericsink.com/vcbe/html/cryptographic_hashes.html).
-* [xkcd](https://xkcd.com/1597/)
+* [xkcd](https://xkcd.com/1597/).
+* [Git Cheat Sheet](https://www.git-tower.com/blog/git-cheat-sheet).
