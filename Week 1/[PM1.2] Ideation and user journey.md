@@ -4,7 +4,7 @@ This session introduces the basics of solution ideation and the user journey. NT
 ## Learning objectives
 * TNTs will learn how to articulate a user journey.
 * TNTs will be able to sketch to express highlevel product concepts.
-* TNTs will understand how this process fits into the product lifecycle.
+* TNTs will understand how low fidelity sketching fits into the product lifecycle.
 
 
 ## Time required and pace
