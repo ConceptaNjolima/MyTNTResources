@@ -7,12 +7,10 @@ This lesson introduces the roles of program (product) manager (PM) and gives an 
 * TNTs will be able to view the upcomming problem statement through the design thinking lens. 
 
 ## Time required and pace
-Total time: 60 hour
+Total time: 45 min
 * 10 minutes - engage: lunch with anyone
-* 20 minutes - explain
-* 30 minutes - explore: specific activity
-* 15 minutes - elaborate: review trouble spots
-* 15 minutes - evaluate: specific activity to demonstrate understanding
+* 25 minutes - explain: PM, product lifecycle
+* 10 minutes - explore: specific activity - design a refrigerator
 
 ## Background / review
 Deck: 
