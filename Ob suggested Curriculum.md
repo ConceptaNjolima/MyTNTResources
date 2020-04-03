@@ -74,11 +74,7 @@ Week 3:
     - What are unit tests and why are they important
     - Unit testing best practices
     - How to use jest to set up a basic unit tests
-2. Redux:
-    - Async vs sync
-    - Create a thunkAction
-    - Compare thunkAction vs Regular Action
-5. Project: Survival Group Project (satisfy unit tests)
+2. Project: Survival Group Project (satisfy unit tests)
 
 Week 4
 
@@ -92,3 +88,7 @@ Stretch:
 4. Api requests
     - Use data from apis
     - Edit and Share Data between classmates
+5. Redux:
+    - Async vs sync
+    - Create a thunkAction
+    - Compare thunkAction vs Regular Action
