@@ -44,5 +44,5 @@ If there are multiple children in the container each child will fill an amount o
 2. **Flex-Wrap** : Usually the items will all try to fit on one line. Setting this property to wrap allows the items to flow to a new line rather than overflow the view
 ![flexWrap](./flexWrap.png)
 3. **Justify-Content** : Sets the alignment on the main axis
-![justifyContent](./justifyContent.png)
+![justifyContent](./justifyContent.PNG)
 4. **Align-Items** : Sets the alignment on the cross axis
