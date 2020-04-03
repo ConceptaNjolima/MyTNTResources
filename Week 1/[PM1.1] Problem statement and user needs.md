@@ -8,11 +8,12 @@ During this session each building recieves their problem statement. The concepts
 
 ## Time required and pace
 Total time: 1.5 hour
-* 10 minutes - engage: opening activity
+* 10 minutes - engage: great ideas pitch :D
 * 20 minutes - explain: introduce problem statement, revisit user needs
-* 30 minutes - explore: round 1 how might we
-* 10 minutes - elaborate: challenge expanding
-* 15 minutes - evaluate: round 2 how might exploration
+* 10 minutes - explore: round 1 how might we
+* 5 minutes - elaborate: challenge expanding
+* 10 minutes - explore: round 2 how might we
+* 35 minutes - evaluate: affinity and discussion
 
 ## Background / review
 Deck:
