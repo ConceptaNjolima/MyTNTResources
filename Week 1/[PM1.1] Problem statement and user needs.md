@@ -1,4 +1,4 @@
-# Problem statement user needs
+# Problem statement and user needs
 During this session each building recieves their problem statement. The concepts of user needs is renforced and students explore the problem space.
 
 ## Learning objectives
