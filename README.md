@@ -48,29 +48,40 @@ Minimum value project (MVP) | Agile overview | | |
 
 Week 1 | Week 2 | Week 3 | Week 4 | Week 5
 --- | --- | --- | --- | ---
-Why Git? | Review | Pull requests and code reviews | Review | Open source communities
-Local workflow | Branching | Merge challenge | 
-Remote repositories | Conflicts | |
-Git repositories and GitHub | GitFlow | | 
-Sourcetree | | | |
+ | | Why Git? | | |
+ | | Local workflow | | |
+ | | Remote repositories| | |
+ | | Git repositories and GitHub |  |  | 
+ | | Branching |  | 
+ | | Pull requests and code reviews | | |
+ | | Merge challenge\Conflicts | |
+ | | GitFlow | | 
+ | | Sourcetree | | |
+ | | Open source communities | | |
 
  **Web design**
 
  Week 1 | Week 2 | Week 3 | Week 4 | Week 5
 --- | --- | --- | --- | ---
-Web app architecture | Digital prototypes | Table collection view | Flexbox | Animation
-Basic HTML, CSS | Interface guidelines overview | Customizing table cells | Adaptive layout | App specific topics
-React | Basic navigation, seques | Model-View-Controller | App specific topics
- | | Controls: buttons, input, Fabric | | |
+Web app architecture | Components |Flexbox | App specific topics | App specific topics
+Basic HTML, CSS | Interface guidelines overview | Adaptive layout |  | 
+React | Basic navigation, seques |  | 
+| | Controls: buttons, input, Fabric |  | | |
+| | Table view| | |
+| | Animation| | |
 
  **TypeScript programming**
 
   Week 1 | Week 2 | Week 3 | Week 4 | Week 5
 --- | --- | --- | --- | ---
-VS Code intro | TypeScript enums, structs, interfaces, component classes | Delegate pattern | Dictionaries, maps, and local storage | Generics
-Deploying the app, documentation | | Separating table view and data source | Share data between controllers | Repository pattern and AppDelegate
-TypeScript syntax: datatypes, functions, components | | Modeling data with interfaces | Unit testing with Jest
+VS Code intro | Redux | Unit testing with Jest |  | Generics
+Deploying the app, documentation |Separating view and data source |  |  | Repository pattern
+| Debugging through VsCode|Share data between components | | | 
 TypeScript unwrapping and chaining | | | | 
+| TypeScript syntax: datatypes, functions, components| | | |
+| TypeScript enums, structs, interfaces, component classes| | | |
+| Modeling data with interfaces | | | |
+|Dictionaries, maps, and local storage| | | |
 
 *Please be advised this is approximate pacing. Topics and schedule are subject to change.*
 
