@@ -48,16 +48,16 @@ Minimum value project (MVP) | Agile overview | | |
 
 Week 1 | Week 2 | Week 3 | Week 4 | Week 5
 --- | --- | --- | --- | ---
- | | Why Git? | | |
- | | Local workflow | | |
- | | Remote repositories| | |
- | | Git repositories and GitHub |  |  | 
- | | Branching |  | 
+ | Why Git? | Git repositories and GitHub | | Open source communities |
+ | Local workflow | Branching | | |
  | | Pull requests and code reviews | | |
- | | Merge challenge\Conflicts | |
- | | GitFlow | | 
- | | Sourcetree | | |
- | | Open source communities | | |
+ | | Merge conflicts |  |  | 
+ | | Tools GitFlow and   |  | 
+ | |  Sourcetree  | | |
+ | | | |
+ | | | | 
+ | | | | |
+ | | | | |
 
  **Web design**
 
