@@ -54,10 +54,6 @@ Week 1 | Week 2 | Week 3 | Week 4 | Week 5
  | | Merge conflicts |  |  | 
  | | Tools GitFlow and   |  | 
  | |  Sourcetree  | | |
- | | | |
- | | | | 
- | | | | |
- | | | | |
 
  **Web design**
 
