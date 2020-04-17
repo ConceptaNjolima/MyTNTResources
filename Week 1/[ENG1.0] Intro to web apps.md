@@ -1,11 +1,6 @@
 # Intro to web app architecture
 This lesson provides an overview of how web apps work, HTML and CSS to lay the foundation for the prototypes NTs will build.
 
-*Open questions in lesson*
-* *create app architecure diagram*
-* *is it worth spending time on HTML and CSS basics - is more instruction needed or exploration level ok*?
-* *stretch goals for lesson?*
-
 ## Learning objectives
 * TNTs will learn the basics of how web pages and web apps work.
 * TNTs will be able to make HTML and CSS changes.
