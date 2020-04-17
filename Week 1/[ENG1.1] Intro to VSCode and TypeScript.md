@@ -108,8 +108,6 @@ Pre-reqs
     * Functions can have types and optional default parameters
       * Types define the datatypes of the variables passed into and returned from the function.
       * Parameters are what's passed into the function.
-    * Let's talk about `this` parameter
-      *  *Needed at this point in time?*
 
 3. Objects - [overview of objects](https://www.tutorialspoint.com/typescript/typescript_objects.htm)
    * An object reprsents key value pairs that describe something. For example a rectangle has length and width. A contact may have name, phone number and address.
@@ -118,7 +116,13 @@ Pre-reqs
    * An interface represents one of TypeScripts core principles, type checking the shape values have. Interfaces name the types.
    
 4. Class - [overview of classes](https://www.typescriptlang.org/docs/handbook/classes.html#classes)
-   * *todo - sample classes 
+   * A class in object-oriented programming languages, like TypeScriptm is a template for creating objects. Classes are a feature of TS, only avaliable in more recent versions of JS (from 2015 onwards). 
+   * A class contains properties, constructors, and methods. 
+   * In a class, `this.` denotes that it's referring to one of the members in the class.
+   * `new` is used to construct an instance of the class. 
+   * TS also introduces inhertiance. Inheritance extends classes.
+      * Classes inherit properties and methods from the base class.
+      * View the [animal class example](https://www.typescriptlang.org/docs/handbook/classes.html#inheritance).
 
 5. Components - [overview of components](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-1-8.html#function-components-in-react)
     * Components are building blocks of React Apps that split up the UI intro reusable pieces
