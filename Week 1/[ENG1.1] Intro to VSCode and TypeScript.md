@@ -101,15 +101,21 @@ Pre-reqs
     * `let` is used to define variables inside a scope and var can be accessed outside a scope
 
 2. Functions - [overview of functions](https://www.typescriptlang.org/docs/handbook/functions.html#functions)
-    * Functions are building blocks of applications in JS
-    * They're used for abstraction, TS also has classes, name spaces, and modules
-    * Functions can be named or anonymous
+    * Functions are building blocks of applications in JS.
+    * They're used for abstraction, TS also has classes, name spaces, and modules.
+    * Functions can be named or anonymous.
+       * *Why is it important at this stage*
     * Functions can have types and optional default parameters
+      * Types define the datatypes of the variables passed into and returned from the function.
+      * Parameters are what's passed into the function.
     * Let's talk about `this` parameter
+      *  *Needed at this point in time?*
 
-3. Objects - [overview of objects](https://www.typescriptlang.org/docs/handbook/basic-types.html#object)
-   * Reference vs Copy
-   * Interface
+3. Objects - [overview of objects](https://www.tutorialspoint.com/typescript/typescript_objects.htm)
+   * An object reprsents key value pairs that describe something. For example a rectangle has length and width. A contact may have name, phone number and address.
+   * Reference - creates an additional name for the same object. Changing a value in the reference object, changes the original object.
+   * Copy - creates a copy of the object. Changing the copy object will not impact the original object.
+   * An interface represents one of TypeScripts core principles, type checking the shape values have. Interfaces name the types.
    
 4. Class - [overview of classes](https://www.typescriptlang.org/docs/handbook/classes.html#classes)
    * *todo - sample classes 
