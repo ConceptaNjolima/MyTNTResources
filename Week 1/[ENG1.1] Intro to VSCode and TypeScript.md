@@ -116,7 +116,7 @@ Pre-reqs
    
 4. Class - [overview of classes](https://www.typescriptlang.org/docs/handbook/classes.html#classes)
    * A class in object-oriented programming languages, like TypeScriptm is a template for creating objects. Classes are a feature of TS, only avaliable in more recent versions of JS (from 2015 onwards). 
-   * A class contains properties, constructors, and methods. 
+   * A class contains properties, constructors, and methods. Constructors are methods automatically invoked when an instance of the class is created.
    * In a class, `this.` denotes that it's referring to one of the members in the class.
    * `new` is used to construct an instance of the class. 
    * TS also introduces inhertiance. Inheritance extends classes.
