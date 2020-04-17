@@ -86,6 +86,9 @@ There's likely a range of familiarity with web pages, web apps, and how they wor
       * Major benefits: easier to debug, easier to build programs that scale
 
 5. Introduce app architecture diagram
+     * This is an early view of where we're headed. It doesn't need to be understood in full right now. When you look back at it in a few weeks it'll be a clear picture.
+     * ReactDOM() function - renders what's shown on the screen, displays takes the two arguments, HTML code and an HTML element, and displays the specified HTML code in the specified HTML element. In the App, 'Hello World' is displayed.
+
 ![Basic Architecture](./BasicArchitecture.png)
  
 6. Demo w3schools.com
