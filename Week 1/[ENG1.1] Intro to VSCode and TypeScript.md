@@ -1,11 +1,5 @@
 # Intro to VS Code and TypeScript
-This lesson introduces VS Code and TypeScript including why this set of technology, a tour and basics using the IDE, and TypeScript fundamentals. 
-
-*Open questions in lesson plan*
-* *VS code already set up?*
-* *Thoughts on people behind product bit?*
-* *Sample code needed*
-* *What's the classroom management for code samples? Branch? Fork? into NT's repo, room repo, team repo? Naming conventions?*
+This lesson introduces VS Code and TypeScript including why this set of technology, a tour and basics using the IDE, and TypeScript fundamentals.
 
 ## Learning objectives
 * TNTs will be able navigate VS Code.
@@ -13,9 +7,9 @@ This lesson introduces VS Code and TypeScript including why this set of technolo
 * TNTs will learn the basics of TypeScript datatypes, functions, components.
 
 ## Time required and pace
-Total time: 1.5 hour
+Total time: 1 hour 40 min
 * 10 minutes - engage: people behind the product
-* 20 minutes - explain and explore: Visual Studio Code tour, create and run first TypeScript 
+* 30 minutes - explain and explore: Visual Studio Code tour, create and run first TypeScript 
 * 35 minutes - explain and explore: introduction to TS datatypes, functions, components
 * 10 minutes - elaborate: review
 * 15 minutes - evaluate: fix and complete the code sample
@@ -46,7 +40,7 @@ Pre-reqs
 4. Julia Liuson is the head of Microsoft's developer division and lead the culture change that enabling building this product. In 2019 she was inducted into to the Women in Technology Hall of Fame.
 5. Here's a little bit about Julia Liuson ([YouTube](https://www.youtube.com/watch?v=g8SCdMvUH2A)).
 
-### Visual Studio Code Tour, create and run TypeScript (20 minutes)
+### Visual Studio Code Tour, create and run TypeScript (30 minutes)
 1. Open VS Code, without a workspace folder open.
     * Highlight the activity bar, status bar, and side bar.
     * Highlight the "Help" option in the toolbar for quick access to references.
@@ -72,7 +66,7 @@ Pre-reqs
     ```
     * Compile the TS code. TS compiles to JS and runs as JS. In the terminal `tsc filename.ts`. `filename.js` is created.
     * Create a file call tsconfig.json in the same folder.
-    * add the following lines to tsconfig.json:
+    * Add the following lines to tsconfig.json:
     ```
     {
       "compilerOptions": {
@@ -83,26 +77,25 @@ Pre-reqs
       }
     }
     ```
-    * while in your typescript file click on the debug/run menu and click start debugging
-    * select node.js as the environment
-    this allows you to run the typescript file and set breakpoints/debug the file
+    * While in your typescript file click on the debug/run menu and click start debugging.
+        * Select node.js as the environment. This allows you to run the typescript file and set breakpoints/debug the file
 
 4. VS Code TS language support features
     * Introduce and demo - IntelliSense and Code Snippets.
-    * Here to help but you need to drive and understand.
+    * Here to help but you need to drive and understand the road.
     * IntelliSense - code completion, hover info, and signature information.
     * Snippets - chunks of TS.
     
 5. **Try it** - NTs create and run HelloWorld.ts
 
 ### Introduction to TS datatypes, functions, components (35 minutes)
-1. Datatypes - [overview of the datatypes](https://www.typescriptlang.org/docs/handbook/basic-types.html).
+1. Datatypes - [overview of the datatypes](https://www.typescriptlang.org/docs/handbook/basic-types.html)
     * Datatypes - what type of value can be assigned to a variable depends on the datatype
     * TypeScript uses types to describe data (get it, *Type*Script), JS doesn't 
     * `let` is used to define variables inside a scope and var can be accessed outside a scope
     * *todo - sample of let vs var vs const*
 
-2. Functions - [overview of functions]()
+2. Functions - [overview of functions](https://www.typescriptlang.org/docs/handbook/functions.html#functions)
     * Functions are building blocks of applications in JS
     * They're used for abstraction, TS also has classes, name spaces, and modules
     * Functions can be named or anonymous
@@ -110,14 +103,14 @@ Pre-reqs
     * Let's talk about `this` parameter
     * *todo - sample of functions
 
-3. Objects
-   * reference vs Copy
+3. Objects - [overview of objects](https://www.typescriptlang.org/docs/handbook/basic-types.html#object)
+   * Reference vs Copy
    * Interface
    
-4. Class
+4. Class - [overview of classes](https://www.typescriptlang.org/docs/handbook/classes.html#classes)
    * *todo - sample classes 
 
-5. Components - [overview of components]()
+5. Components - [overview of components](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-1-8.html#function-components-in-react)
     * Components are building blocks of React Apps that split up the UI intro reusable pieces
     * Conceptually they're like JS functions, the accept inputs "props" and return React elements that describe what should appear on the screen, or how the user interface should *react*
     * More on React in a future lesson
@@ -135,7 +128,6 @@ Pre-reqs
 2. Read through the code comments and identify what the code is trying to do.
 3. Try running the code, why isn't it working?
 4. Fix the code and complete the sample.
-5. Push the changes back to your fork.
 
 ## Stretch
 [Links and other projects for further learning and exploration]
