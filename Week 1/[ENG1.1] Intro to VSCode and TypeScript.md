@@ -65,7 +65,7 @@ Pre-reqs
     ```
     4. Compile the TS code. TS compiles to JS and runs as JS. In the terminal `tsc filename.ts`. `filename.js` is created. 
     5. Run the code. Enter `node helloworld.js` in the command line.
-    6. Create a file call tsconfig.json in the same folder. *Need to do this now*?
+    6. Create a file call tsconfig.json in the same folder. This indicates the root of a TS file and defines how the project is compiled.
     7. Add the following lines to tsconfig.json:
     ```
     {
