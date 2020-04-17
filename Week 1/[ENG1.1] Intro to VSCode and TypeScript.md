@@ -90,6 +90,8 @@ Pre-reqs
 5. **Try it** - NTs create and run HelloWorld.ts
 
 ### Introduction to TS datatypes, functions, components (35 minutes)
+Samples for datatypes, functions, objects, and classes are avaliable here: [Intro_TS.ts]([ENGresource]Intro_TS.ts). Open the file VS Code to talk through it with the descriptions that follow.
+
 1. Datatypes - [overview of the datatypes](https://www.typescriptlang.org/docs/handbook/basic-types.html), [overview of variable declarations](https://www.typescriptlang.org/docs/handbook/variable-declarations.html)
     * Datatypes - what type of value can be assigned to a variable depends on the datatype. Boolean for true false statements, numbers, strings for text...
     * TypeScript uses types to describe data (get it, *Type*Script), JS doesn't 
