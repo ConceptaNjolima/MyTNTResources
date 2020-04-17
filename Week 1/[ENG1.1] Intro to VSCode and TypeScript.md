@@ -57,16 +57,17 @@ Pre-reqs
          * A module is a file that's re-used throughout an application.
 
 3. **Demo** - Hello World tutorial [instructions](https://code.visualstudio.com/docs/typescript/typescript-tutorial)
-    * Create a new folder, workspace, for the project
-    * Create a file in workspace
+    1. Create a new folder, workspace, for the project using the command line.
+    2. Create a file in workspace
     * Declare and print the string <br /> 
     ```typescript
     let message: string = 'Hello World';
     console.log(message);
     ```
-    * Compile the TS code. TS compiles to JS and runs as JS. In the terminal `tsc filename.ts`. `filename.js` is created.
-    * Create a file call tsconfig.json in the same folder.
-    * Add the following lines to tsconfig.json:
+    3. Compile the TS code. TS compiles to JS and runs as JS. In the terminal `tsc filename.ts`. `filename.js` is created. 
+    4. Run the code. Enter `node helloworld.js` in the command line.
+    4. Create a file call tsconfig.json in the same folder. *Need to do this now*?
+    6. Add the following lines to tsconfig.json:
     ```
     {
       "compilerOptions": {
@@ -77,8 +78,9 @@ Pre-reqs
       }
     }
     ```
-    * While in your typescript file click on the debug/run menu and click start debugging.
+    7. While in your typescript file click on the debug/run menu and click start debugging.
         * Select node.js as the environment. This allows you to run the typescript file and set breakpoints/debug the file
+        * Running switches to the Run tab in the side bar. Click the top 'Explorer' icon to get back to the folder view.
 
 4. VS Code TS language support features
     * Introduce and demo - IntelliSense and Code Snippets.
