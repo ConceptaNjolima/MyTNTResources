@@ -12,7 +12,7 @@ Total time: 1 hour 40 min
 * 30 minutes - explain and explore: Visual Studio Code tour, create and run first TypeScript 
 * 35 minutes - explain and explore: introduction to TS datatypes, functions, components
 * 10 minutes - elaborate: review
-* 15 minutes - evaluate: fix and complete the code sample
+* 35 minutes - evaluate: fix and complete the code sample
 
 ## Background / review
 * Load video before starting: https://www.youtube.com/watch?v=g8SCdMvUH2A
@@ -138,7 +138,7 @@ Samples for datatypes, functions, objects, and classes are avaliable here: [Intr
 1. Poll the room - what went well, what didn't go well?
 2. Walk through any blocking concepts, demo code snippets that cause confusion
 
-### Fix and complete the code sample (15 minutes)
+### Fix and complete the code sample (35 minutes)
 1. Fork the repo - 
 2. Read through the code comments and identify what the code is trying to do.
 3. Try running the code, why isn't it working?
