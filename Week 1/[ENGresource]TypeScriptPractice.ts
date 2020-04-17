@@ -28,14 +28,17 @@ console.log(scores);
 console.log(`scores[1]: ${scores[1]}`);
 
 
-
-
-
 //222222222222222222
+//Named function
 function add(a: number, b: number): number {
   return a + b;
 }
-// create basic arithmetic functions to practice
+console.log(add(2,3))
+
+//Anonymous function
+let added = function(x: number, y: number) {return x + y};
+
+//Create more basic arithmetic functions to practice
 
 
 //3333333333333333
