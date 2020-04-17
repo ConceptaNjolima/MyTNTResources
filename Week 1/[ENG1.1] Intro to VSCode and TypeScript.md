@@ -22,7 +22,6 @@ Total time: 1 hour 40 min
 * [VS Code User Shortcuts](https://code.visualstudio.com/docs/getstarted/keybindings)
 * [TS Hello World](https://www.typescriptlang.org/docs/handbook/basic-types.html)
 * [Basic TS data types](https://www.typescriptlang.org/docs/handbook/basic-types.html)
-* [What's the difference between a console, a terminal, and a shell](https://www.hanselman.com/blog/WhatsTheDifferenceBetweenAConsoleATerminalAndAShell.aspx)
 
 Pre-reqs
 * [Visual Studio Code](https://code.visualstudio.com/)
@@ -144,4 +143,6 @@ Pre-reqs
 4. Fix the code and complete the sample.
 
 ## Stretch
-[Links and other projects for further learning and exploration]
+* [TypeScript vs JavaScript pros and cons](https://www.youtube.com/watch?v=D6or2gdrHRE) - dig into the pros and cons of TypeScript compared to JavaScript.
+* [TypeScript Playground](https://www.typescriptlang.org/play/index.html) - check out the online editor for quickly running and experimenting with TS.
+* [What's the difference between a console, a terminal, and a shell](https://www.hanselman.com/blog/WhatsTheDifferenceBetweenAConsoleATerminalAndAShell.aspx)
