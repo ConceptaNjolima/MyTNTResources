@@ -91,11 +91,14 @@ Pre-reqs
 5. **Try it** - NTs create and run HelloWorld.ts
 
 ### Introduction to TS datatypes, functions, components (35 minutes)
-1. Datatypes - [overview of the datatypes](https://www.typescriptlang.org/docs/handbook/basic-types.html)
-    * Datatypes - what type of value can be assigned to a variable depends on the datatype
+1. Datatypes - [overview of the datatypes](https://www.typescriptlang.org/docs/handbook/basic-types.html), [overview of variable declarations](https://www.typescriptlang.org/docs/handbook/variable-declarations.html)
+    * Datatypes - what type of value can be assigned to a variable depends on the datatype. Boolean for true false statements, numbers, strings for text...
     * TypeScript uses types to describe data (get it, *Type*Script), JS doesn't 
+    * There are three different ways to define a variable.
+       * `var` - scope, where it can be used from, is global or function/locally making it easy to accidently re-define.
+       * `let` - block, scoped. Block in TS is a chunk of code bounded by {}. Let makes it easier to manage variables
+       * `const` - maintain the same value, cannot be updated, can only be accessed within the block it was declared.
     * `let` is used to define variables inside a scope and var can be accessed outside a scope
-    * *todo - sample of let vs var vs const*
 
 2. Functions - [overview of functions](https://www.typescriptlang.org/docs/handbook/functions.html#functions)
     * Functions are building blocks of applications in JS
@@ -103,7 +106,6 @@ Pre-reqs
     * Functions can be named or anonymous
     * Functions can have types and optional default parameters
     * Let's talk about `this` parameter
-    * *todo - sample of functions
 
 3. Objects - [overview of objects](https://www.typescriptlang.org/docs/handbook/basic-types.html#object)
    * Reference vs Copy
