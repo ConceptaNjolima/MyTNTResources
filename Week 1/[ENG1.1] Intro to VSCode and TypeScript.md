@@ -131,7 +131,9 @@ Samples for datatypes, functions, objects, and classes are avaliable here: [Intr
     * More on React in a future lesson
 
 6. **Try it** - NTs clone a sample repo with different data types and functions
-    * *todo - create code sample*
+    * To clone the sample, start in VS Code.
+       1. From GitHub, copy the file path: Week 1/[ENGresource]Intro_TS.ts.
+       2. In empty Explorer tab click the "Clone Repository" or in the command palette type `git: Clone`.
     * *todo - instructions for cloning and running*
     
 ### Review (10 minutes)
