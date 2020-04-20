@@ -1,4 +1,4 @@
-# Components explained
+# Components
 
 This lesson explains in detail how a component works and how its methods function
 
@@ -76,6 +76,9 @@ These are methods that are trigger through out a components existence from when 
 ![LifeCycleDiagram](./LifeCycle.png)
 
 [https://www.w3schools.com/react/react\_lifecycle.asp](https://www.w3schools.com/react/react_lifecycle.asp)
+
+### Build components (x minutes)
+*Exercise for NTs building custom button as functional component, and a class based component*
 
 ## Stretch (20 minutes)
 
