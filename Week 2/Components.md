@@ -63,7 +63,7 @@ Example:
 2. Properties (optional): This are arguments passed into the component from its parent components. They cannot be changed by the component.
 3. State (optional): This is are arguments that exists only withing the component. Changing them causes the component to update
 
-### Function Component ( 10minutes): Add redux to list app
+### Function Component ( 10minutes):
 
 1. The function is expected to return the JSX element to be displayed.
 2. Properties (optional): These arguments are passed in from the component's parent similarly to passing parameters to a function. They cannot be changed in the component.
