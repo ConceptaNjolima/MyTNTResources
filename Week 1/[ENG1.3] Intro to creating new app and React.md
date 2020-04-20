@@ -5,7 +5,6 @@ This lesson introduces how to create a new React App project with TypeScript. It
 *Open questions in lesson*
 * *Need app architecture diagram*
 * *React sample code snippet, react sample app description*
-* *is there a mobile version of create react?*
 
 ## Learning objectives
 
@@ -61,7 +60,7 @@ Pre-reqs
 * Demo - Create React Project
   * `yarn create react-app my-app --template typescript` is the command to run in the terminal. Breaking down the command:
   * `yarn` - command line programing for installing JS packages from npm
-  * `create react-app` - library for generating the environment 
+  * `create react-app` - library for generating the environment
   * `my-app` - name of the app
   * `--template typescript` - use the TypeScript template
   * Run the command
@@ -106,7 +105,7 @@ Pre-reqs
     * Watch app re-render
 
 * Demo - small React sample
-     * *todo - add react sample*
+    | * *todo - add react sample* to my-app
 
 ### Explore create React app (30 minutes)
 
@@ -121,8 +120,8 @@ NTs create a new React TS app with create react app. Observe for NTs blocked in 
 
 ### Small React sample app (20)
 
-NTs will update the create react sample app to *x* *todo- define x*. When done the repo should be uploaded to GitHub *in which repo*?
+NTs will update the create react sample app to *x* *todo- define x*.
 
 ## Stretch
 
-[Links and other projects for further learning and exploration]
+* Check out these community samples: [Example projects](https://reactjs.org/community/examples.html)
