@@ -47,9 +47,9 @@ We're going to build a list app. These is a high level introduction of the steps
 
 Here are examples of components, props, and inputs that are essential to building the to-do app.
 
-1. Component example
-2. Prop example
-3. Input example
+1. Component example *in to-do app*
+2. Prop example *in to-do app*
+3. Input example *in to-do app*
 
 Revisit git best practices
 
