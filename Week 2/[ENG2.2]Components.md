@@ -1,6 +1,7 @@
 # Components explained
 
 This lesson explains in detail how a component works and how its methods function
+*Add details on view component layout*
 
 ## Learning objectives
 
