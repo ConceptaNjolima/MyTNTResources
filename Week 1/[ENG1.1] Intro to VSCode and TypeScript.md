@@ -2,6 +2,8 @@
 
 This lesson introduces VS Code and TypeScript including why this set of technology, a tour and basics using the IDE, and TypeScript fundamentals.
 
+*Add debugging*
+
 ## Learning objectives
 
 * TNTs will be able navigate VS Code.
@@ -143,8 +145,10 @@ Samples for datatypes, functions, objects, and classes are available here: [Intr
     * Components are building blocks of React Apps that split up the UI intro reusable pieces
     * Conceptually they're like JS functions, the accept inputs "props" and return React elements that describe what should appear on the screen, or how the user interface should *react*
     * More on React in a future lesson
+    
+6. Debugging through VS Code *to add*
 
-6. **Try it** - NTs clone a sample repo with different data types and functions
+7. **Try it** - NTs clone a sample repo with different data types and functions
     * To clone the sample, start in VS Code.
        1. From GitHub, copy the file path: Week 1/[ENGresource]Intro_TS.ts.
        2. In empty Explorer tab click the "Clone Repository" or in the command palette type `git: Clone`.
