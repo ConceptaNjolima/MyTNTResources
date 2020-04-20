@@ -21,7 +21,7 @@ Total time: 1.5 hour
 * 20 minutes - explain: creating a new React app with TypeScript
 * 30 minutes - explore: explore create React app
 * 15 minutes - elaborate: review
-* 15 minutes - evaluate: small React sample app
+* 15 minutes - evaluate: extend the sample
 
 ## Background / review
 
@@ -106,6 +106,7 @@ Pre-reqs
 
 * Demo - small React sample
     | * *todo - add react sample* to my-app
+    | * text box to update welcome string?
 
 ### Explore create React app (30 minutes)
 
@@ -118,7 +119,11 @@ NTs create a new React TS app with create react app. Observe for NTs blocked in 
 
 ### Review (10 minutes)
 
-### Small React sample app (20)
+1. Post to Teams what went well and what was challenging?
+2. A few students share with the room.
+3. Talk through examples of how to resolve the challenges?
+
+### Extend the sample (20)
 
 NTs will update the create react sample app to *x* *todo- define x*.
 
