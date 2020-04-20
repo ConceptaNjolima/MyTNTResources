@@ -45,11 +45,13 @@ We're going to build a list app. These is a high level introduction of the steps
 7. Create addShoppingItem function and input text
 8. Stretch goals are styling, checking for empty inputs, duplicate inputs, and adding more props like quantities
 
-Here are examples that will guide app creation:
-2. Component example
-3. Prop example
-4. Input example
-5. Revisit git best practices
+Here are examples of components, props, and inputs that are essential to building the to-do app.
+
+1. Component example
+2. Prop example
+3. Input example
+
+Revisit git best practices
 
 ### Build list app (30 minutes)
 
