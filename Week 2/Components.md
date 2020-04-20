@@ -1,19 +1,19 @@
-#
-# Components Explained
+# Components explained
 
-This lesson explains in detail how a component works and how it&#39;s methods function
+This lesson explains in detail how a component works and how its methods function
 
 ## **Learning objectives**
 
-- TNTs will understand how a component&#39;s key methods function
+- TNTs will understand how a component's key methods function
 - TNTs will understand how the store, reducer and actions work together
+- TNTs will practices
 
 ## **Time required and pace**
 
 Total time: 1.5 hour
 
-- 20 minutes – explain basic component&#39;s content
-- 10 minutes – Explain component&#39;s lifecycle
+- 20 minutes – explain basic component's content
+- 10 minutes – Explain component's lifecycle
 - 20 minutes - practice
 
 ## **Background / review**
@@ -59,26 +59,25 @@ Example:
 
 ### **Class Component ( 10minutes):**
 
-1. Render (required): This method returns the JSX element to be displayed by the class. It runs whenever the component&#39;s view updates.
+1. Render (required): This method returns the JSX element to be displayed by the class. It runs whenever the component's view updates.
 2. Properties (optional): This are arguments passed into the component from its parent components. They cannot be changed by the component.
 3. State (optional): This is are arguments that exists only withing the component. Changing them causes the component to update
 
 ### **Function Component ( 10minutes):** Add redux to list app
 
 1. The function is expected to return the JSX element to be displayed.
-2. Properties (optional): These arguments are passed in from the component&#39;s parent similarly to passing parameters to a function. They cannot be changed in the component.
+2. Properties (optional): These arguments are passed in from the component's parent similarly to passing parameters to a function. They cannot be changed in the component.
 3. UseState: A hook function that returns a state variable, giving function components a way to manipulate a state the way class components do.
 
 ### **LifeCycle Methods (10 minutes)**
 
-These are methods that are trigger through out a components existence from when they&#39;re constructed to when they are dismissed.
+These are methods that are trigger through out a components existence from when they're constructed to when they are dismissed.
 
 ![LifeCycleDiagram](./LifeCycle.png)
 
 [https://www.w3schools.com/react/react\_lifecycle.asp](https://www.w3schools.com/react/react_lifecycle.asp)
 
 ## **Stretch (20 minutes)**
-
 
   1. Convert a giving class Component to a functionComponent.
   2. Convert a given function component to a class component.
