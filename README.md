@@ -51,12 +51,9 @@ Week 1 | Week 2 | Week 3 | Week 4 | Week 5
 
  Week 1 | Week 2 | Week 3 | Week 4 | Week 5
 --- | --- | --- | --- | ---
-Web app architecture | Components |Flexbox | App specific topics | App specific topics
-Basic HTML, CSS | View component layout | Adaptive layout |  | 
-React | UI Debugging | Animation | 
-| | |  | | |
-| | | | |
-| | | | |
+Web app architecture | Components | Adaptive layout | App specific topics | App specific topics
+Basic HTML, CSS | View / component layout | Animation | | 
+React | UI Debugging | | 
 
  **TypeScript programming**
 
