@@ -53,7 +53,7 @@ Week 1 | Week 2 | Week 3 | Week 4 | Week 5
 --- | --- | --- | --- | ---
 Web app architecture | Components | Adaptive layout | App specific topics | App specific topics
 Basic HTML, CSS | View / component layout | Animation | | 
-React | UI Debugging | | 
+React | UI Debugging | Component libraries | 
 
  **TypeScript programming**
 
