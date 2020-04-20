@@ -1,4 +1,4 @@
-# Intro to web app architecture
+# Intro to Redux
 
 This lesson explains what redux is and how to use it in a practical scenario.
 
