@@ -36,13 +36,6 @@ Problem statement and HMW | Prototype and validate | Spec | Hallway usability |
 Ideation and user journey | Value prop and pitch | | | 
 Solution and pitch | Competitor audit | | | 
 
-**Project management**
-
-Week 1 | Week 2 | Week 3 | Week 4 | Week 5
---- | --- | --- | --- | ---
-Minimum value project (MVP) | Agile overview | | | 
-  | | Sprint cycle overview | | 
-
  **Git and GitHub**
 
 Week 1 | Week 2 | Week 3 | Week 4 | Week 5
