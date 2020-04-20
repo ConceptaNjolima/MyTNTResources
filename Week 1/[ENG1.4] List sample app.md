@@ -10,6 +10,7 @@ In this lesson NTs will build a sample mobile list app that demonstrates how the
 ## Time required and pace
 
 Total time: 2 hrs hour
+
 * 10 minutes - engage: 
 * 20 minutes - explain: introduce project spec, component, props, input
 * 30 minutes - explore: build list app
@@ -17,28 +18,25 @@ Total time: 2 hrs hour
 * 45 minutes - evaluate: continue list app
 
 ## Background / review
-* 
 
 ## Lesson details
 
 ### engage (10 minutes)
 
 ### Introduce project spec, components, props, inputs (20 minutes)
-1. We're going to build a list app. [Spec notes]
-Initialization – how to setup a new app​
-Running default react app​
-Changing content​
-Creating a component -> Shopping Item with props​
-Displaying ShoppingItem in App​
-Styling ShoppingItem​
-Creating many shopping items in App​
-Creating ShoppingItems iteratively from object​
-Moving ShoppingItems to state​
-Creating deleteShoppingItem function​
-Creating addShoppingItem function + input text​
-Stretch: Styling ​
-Stretch: Checks for empty input, duplicates, more props (quantities, etc)
 
+We're going to build a list app. These is a high level introduction of the steps and app requirements.
+
+1. Initialize the the app and get the new app up and running with the create react app default.
+2. Change the contents of the app and create a new component.
+3. The first piece added is a shopping item.
+4. Then the ability to create many ShoppingItems in App followed by creating ShoppingItems iteratively from an object.
+5. Move shopping items to state.
+6. Create delete ShoppingItem function
+7. Create addShoppingItem function and input text
+8. Stretch goals are styling, checking for empty inputs, duplicate inputs, and adding more props like quantities
+
+Here are examples that will guide app creation:
 2. Component example
 3. Prop example
 4. Input example
