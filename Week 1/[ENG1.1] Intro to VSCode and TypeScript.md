@@ -1,20 +1,25 @@
 # Intro to VS Code and TypeScript
+
 This lesson introduces VS Code and TypeScript including why this set of technology, a tour and basics using the IDE, and TypeScript fundamentals.
 
 ## Learning objectives
+
 * TNTs will be able navigate VS Code.
 * TNTs will be able to create new and run TypeScript file.
 * TNTs will learn the basics of TypeScript datatypes, functions, components.
 
 ## Time required and pace
+
 Total time: 1 hour 40 min
+
 * 10 minutes - engage: people behind the product
-* 30 minutes - explain and explore: Visual Studio Code tour, create and run first TypeScript 
+* 30 minutes - explain and explore: Visual Studio Code tour, create and run first TypeScript
 * 35 minutes - explain and explore: introduction to TS datatypes, functions, components
 * 10 minutes - elaborate: review
 * 35 minutes - evaluate: fix and complete the code sample
 
 ## Background / review
+
 * Load video before starting: https://www.youtube.com/watch?v=g8SCdMvUH2A
 * [Getting started with Visual Studio Code](https://code.visualstudio.com/docs)
 * [TypeScript in Visual Studio Code](https://code.visualstudio.com/docs/languages/typescript)
@@ -24,15 +29,18 @@ Total time: 1 hour 40 min
 * [Basic TS data types](https://www.typescriptlang.org/docs/handbook/basic-types.html)
 
 Pre-reqs
+
 * [Visual Studio Code](https://code.visualstudio.com/)
 * [Node.js Package Manager](https://www.npmjs.com/)
 
 ## Lesson details
+
 ### People behind the products (10 minutes)
+
 1. Visual Studio Code (VS Code) is the integrated development environment we'll use to build apps. It's built by Microsoft and was released in 2015.
-2. It represents a significant change in how Microsoft builds and ships products. 
-    * It's lightweight and customizable, you can install what you need to use. 
-    * It's an [open source project](https://github.com/microsoft/vscode), anyone can contribute. Over 19.1K people contributed in 2019 according to the [GitHub State of the Octoverse report](https://octoverse.github.com/). 
+2. It represents a significant change in how Microsoft builds and ships products.
+    * It's lightweight and customizable, you can install what you need to use.
+    * It's an [open source project](https://github.com/microsoft/vscode), anyone can contribute. Over 19.1K people contributed in 2019 according to the [GitHub State of the Octoverse report](https://octoverse.github.com/).
     * It works on Windows, Mac OS, and Linux. 
     * It was the most popular IDE in the [StackOverflow 2019 Developer Survey](https://insights.stackoverflow.com/survey/2019#development-environments-and-tools).
 3. The product is the result of customer driven engineering, understanding user needs and building software that does a great job at meeting the user needs. Testing and validating hypothesis and applying user feedback.
@@ -40,6 +48,7 @@ Pre-reqs
 5. Here's a little bit about Julia Liuson ([YouTube](https://www.youtube.com/watch?v=g8SCdMvUH2A)).
 
 ### Visual Studio Code Tour, create and run TypeScript (30 minutes)
+
 1. Open VS Code, without a workspace folder open.
     * Highlight the activity bar, status bar, and side bar.
     * Highlight the "Help" option in the toolbar for quick access to references.
@@ -59,14 +68,17 @@ Pre-reqs
     1. Create a new folder, workspace, for the project using the command line.
     2. Create a file in workspace
     3. Declare and print the string <br /> 
+
     ```typescript
     let message: string = 'Hello World';
     console.log(message);
     ```
+
     4. Compile the TS code. TS compiles to JS and runs as JS. In the terminal `tsc filename.ts`. `filename.js` is created. 
     5. Run the code. Enter `node helloworld.js` in the command line.
     6. Create a file call tsconfig.json in the same folder. This indicates the root of a TS file and defines how the project is compiled.
     7. Add the following lines to tsconfig.json:
+    
     ```
     {
       "compilerOptions": {
@@ -77,6 +89,7 @@ Pre-reqs
       }
     }
     ```
+
     8. While in your typescript file click on the debug/run menu and click start debugging.
         * Select node.js as the environment. This allows you to run the typescript file and set breakpoints/debug the file
         * Running switches to the Run tab in the side bar. Click the top 'Explorer' icon to get back to the folder view.
@@ -86,11 +99,12 @@ Pre-reqs
     * Here to help but you need to drive and understand the road.
     * IntelliSense - code completion, hover info, and signature information.
     * Snippets - chunks of TS.
-    
+
 5. **Try it** - NTs create and run HelloWorld.ts
 
 ### Introduction to TS datatypes, functions, components (35 minutes)
-Samples for datatypes, functions, objects, and classes are avaliable here: [Intro_TS.ts]([ENGresource]Intro_TS.ts). Open the file VS Code to talk through it with the descriptions that follow.
+
+Samples for datatypes, functions, objects, and classes are available here: [Intro_TS.ts]([ENGresource]Intro_TS.ts). Open the file VS Code to talk through it with the descriptions that follow.
 
 1. Datatypes - [overview of the datatypes](https://www.typescriptlang.org/docs/handbook/basic-types.html), [overview of variable declarations](https://www.typescriptlang.org/docs/handbook/variable-declarations.html)
     * Datatypes - what type of value can be assigned to a variable depends on the datatype. Boolean for true false statements, numbers, strings for text...
@@ -111,17 +125,17 @@ Samples for datatypes, functions, objects, and classes are avaliable here: [Intr
       * Parameters are what's passed into the function.
 
 3. Objects - [overview of objects](https://www.tutorialspoint.com/typescript/typescript_objects.htm)
-   * An object reprsents key value pairs that describe something. For example a rectangle has length and width. A contact may have name, phone number and address.
+   * An object represents key value pairs that describe something. For example a rectangle has length and width. A contact may have name, phone number and address.
    * Reference - creates an additional name for the same object. Changing a value in the reference object, changes the original object.
    * Copy - creates a copy of the object. Changing the copy object will not impact the original object.
    * An interface represents one of TypeScripts core principles, type checking the shape values have. Interfaces name the types.
-   
+
 4. Class - [overview of classes](https://www.typescriptlang.org/docs/handbook/classes.html#classes)
-   * A class in object-oriented programming languages, like TypeScriptm is a template for creating objects. Classes are a feature of TS, only avaliable in more recent versions of JS (from 2015 onwards). 
+   * A class in object-oriented programming languages, like TypeScript is a template for creating objects. Classes are a feature of TS, only available in more recent versions of JS (from 2015 onwards).
    * A class contains properties, constructors, and methods. Constructors are methods automatically invoked when an instance of the class is created.
    * In a class, `this.` denotes that it's referring to one of the members in the class.
-   * `new` is used to construct an instance of the class. 
-   * TS also introduces inhertiance. Inheritance extends classes.
+   * `new` is used to construct an instance of the class.
+   * TS also introduces inheritance. Inheritance extends classes.
       * Classes inherit properties and methods from the base class.
       * View the [animal class example](https://www.typescriptlang.org/docs/handbook/classes.html#inheritance).
 
@@ -135,18 +149,21 @@ Samples for datatypes, functions, objects, and classes are avaliable here: [Intr
        1. From GitHub, copy the file path: Week 1/[ENGresource]Intro_TS.ts.
        2. In empty Explorer tab click the "Clone Repository" or in the command palette type `git: Clone`.
     * *todo - instructions for cloning and running*
-    
+
 ### Review (10 minutes)
+
 1. Poll the room - what went well, what didn't go well?
 2. Walk through any blocking concepts, demo code snippets that cause confusion
 
 ### Fix and complete the code sample (35 minutes)
+
 1. Fork the repo - 
 2. Read through the code comments and identify what the code is trying to do.
 3. Try running the code, why isn't it working?
 4. Fix the code and complete the sample.
 
 ## Stretch
+
 * [TypeScript vs JavaScript pros and cons](https://www.youtube.com/watch?v=D6or2gdrHRE) - dig into the pros and cons of TypeScript compared to JavaScript.
 * [TypeScript Playground](https://www.typescriptlang.org/play/index.html) - check out the online editor for quickly running and experimenting with TS.
 * [What's the difference between a console, a terminal, and a shell](https://www.hanselman.com/blog/WhatsTheDifferenceBetweenAConsoleATerminalAndAShell.aspx)

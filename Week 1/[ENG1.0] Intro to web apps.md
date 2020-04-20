@@ -11,6 +11,7 @@ This lesson provides an overview of how web apps work, HTML and CSS to lay the f
 ## Time required and pace
 
 Total time: 1.5 hour
+
 * 20 minutes - engage: tradeoffs of web apps and native apps
 * 15 minutes - explain: intro to tech and web appp architecture
 * 30 minutes - explore: W3School HTML and CSS activities
