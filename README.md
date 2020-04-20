@@ -58,11 +58,10 @@ React | UI Debugging | Component libraries |
 
   Week 1 | Week 2 | Week 3 | Week 4 | Week 5
 --- | --- | --- | --- | ---
-VS Code intro | Redux and Flux | Unit testing with Jest |  |
-Deploying the app, documentation | |  |  |
-| Debugging through VsCode| | | | 
-| TypeScript syntax: datatypes, functions, components | | | 
-| TypeScript enums, structs, interfaces, component classes | | | |
+Intro to VS Code | Redux and Flux | Unit testing with Jest |  |
+Intro to TypeScript syntax, datatypes, structure | |  |  |
+| Creating a new app and React | | | | 
+
 
 *Please be advised this is approximate pacing. Topics and schedule are subject to change.*
 
