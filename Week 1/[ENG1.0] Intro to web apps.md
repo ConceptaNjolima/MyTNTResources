@@ -1,4 +1,5 @@
 # Intro to web app architecture
+
 This lesson provides an overview of how web apps work, HTML and CSS to lay the foundation for the prototypes NTs will build.
 
 ## Learning objectives
