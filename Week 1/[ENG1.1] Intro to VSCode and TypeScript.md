@@ -58,8 +58,8 @@ Pre-reqs
      * TypeScript language is supported out of the box. The TypeScript compiler must be installed.
      * `npm install -g typescript`, the `-g` installs it globally
      * Checked that it installed correctly by checking the version `tsc --version`
-     * Review using the terminal - integrated in VS Code for command line tasks like installation. The terminal can be opened from "View" in the toolbar or `Ctrl+\`` 
-     * Review npm - an online repository for publishing open-source node.js projects and a command line utility for interacting with the repo for package installation, version management, and dependency management. 
+     * Review using the terminal - integrated in VS Code for command line tasks like installation. The terminal can be opened from "View" in the toolbar or `Ctrl+\``
+     * Review npm - an online repository for publishing open-source node.js projects and a command line utility for interacting with the repo for package installation, version management, and dependency management.
          * It makes it easy to install and maintain packages. [What is node](https://nodejs.org/en/knowledge/getting-started/npm/what-is-npm/).
          * A package contains all the files needed for a module.
          * A module is a file that's re-used throughout an application.
@@ -67,7 +67,7 @@ Pre-reqs
 3. **Demo** - Hello World tutorial [instructions](https://code.visualstudio.com/docs/typescript/typescript-tutorial)
     1. Create a new folder, workspace, for the project using the command line.
     2. Create a file in workspace
-    3. Declare and print the string <br /> 
+    3. Declare and print the string
 
     ```typescript
     let message: string = 'Hello World';
@@ -108,7 +108,7 @@ Samples for datatypes, functions, objects, and classes are available here: [Intr
 
 1. Datatypes - [overview of the datatypes](https://www.typescriptlang.org/docs/handbook/basic-types.html), [overview of variable declarations](https://www.typescriptlang.org/docs/handbook/variable-declarations.html)
     * Datatypes - what type of value can be assigned to a variable depends on the datatype. Boolean for true false statements, numbers, strings for text...
-    * TypeScript uses types to describe data (get it, *Type*Script), JS doesn't 
+    * TypeScript uses types to describe data (get it, *Type*Script), JS doesn't
     * There are three different ways to define a variable.
        * `var` - scope, where it can be used from, is global or function/locally making it easy to accidently re-define.
        * `let` - block, scoped. Block in TS is a chunk of code bounded by {}. Let makes it easier to manage variables
@@ -157,7 +157,7 @@ Samples for datatypes, functions, objects, and classes are available here: [Intr
 
 ### Fix and complete the code sample (35 minutes)
 
-1. Fork the repo - 
+1. Fork the repo -
 2. Read through the code comments and identify what the code is trying to do.
 3. Try running the code, why isn't it working?
 4. Fix the code and complete the sample.
