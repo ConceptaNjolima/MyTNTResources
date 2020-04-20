@@ -62,8 +62,8 @@ React | UI Debugging | Animation |
 
   Week 1 | Week 2 | Week 3 | Week 4 | Week 5
 --- | --- | --- | --- | ---
-VS Code intro | Redux and Flux | Unit testing with Jest |  | Generics
-Deploying the app, documentation | |  |  | Repository pattern
+VS Code intro | Redux and Flux | Unit testing with Jest |  |
+Deploying the app, documentation | |  |  |
 | Debugging through VsCode| | | | 
 | TypeScript syntax: datatypes, functions, components | | | 
 | TypeScript enums, structs, interfaces, component classes | | | |
