@@ -19,8 +19,7 @@ Web development curriculum for The New Technologist Summer Academy - Welcome to 
 ## Overview
 The curriculum is divided into five threads that span five weeks.
 
-* **Product thinking** - going from a problem statement to an impactful experience and pitch.
-* **Project management** - executing and delivering as an engineering team.
+* **Product thinking** - going from a problem statement to an impactful experience and pitch, delivering as a team.
 * **Git and GitHub** - using version control and managing a project with a team.
 * **Web design** - building a web application with HTML, CSS, and React.
 * **Typescript programming** - building a web application with VS Code and TypeScript.
