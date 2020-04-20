@@ -52,24 +52,21 @@ Week 1 | Week 2 | Week 3 | Week 4 | Week 5
  Week 1 | Week 2 | Week 3 | Week 4 | Week 5
 --- | --- | --- | --- | ---
 Web app architecture | Components |Flexbox | App specific topics | App specific topics
-Basic HTML, CSS | Interface guidelines overview | Adaptive layout |  | 
-React | Basic navigation, seques |  | 
-| | Controls: buttons, input, Fabric |  | | |
-| | Table view| | |
-| | Animation| | |
+Basic HTML, CSS | View component layout | Adaptive layout |  | 
+React | UI Debugging | Animation | 
+| | |  | | |
+| | | | |
+| | | | |
 
  **TypeScript programming**
 
   Week 1 | Week 2 | Week 3 | Week 4 | Week 5
 --- | --- | --- | --- | ---
-VS Code intro | Redux | Unit testing with Jest |  | Generics
-Deploying the app, documentation |Separating view and data source |  |  | Repository pattern
-| Debugging through VsCode|Share data between components | | | 
-TypeScript unwrapping and chaining | | | | 
-| TypeScript syntax: datatypes, functions, components| | | |
-| TypeScript enums, structs, interfaces, component classes| | | |
-| Modeling data with interfaces | | | |
-|Dictionaries, maps, and local storage| | | |
+VS Code intro | Redux and Flux | Unit testing with Jest |  | Generics
+Deploying the app, documentation | |  |  | Repository pattern
+| Debugging through VsCode| | | | 
+| TypeScript syntax: datatypes, functions, components | | | 
+| TypeScript enums, structs, interfaces, component classes | | | |
 
 *Please be advised this is approximate pacing. Topics and schedule are subject to change.*
 
