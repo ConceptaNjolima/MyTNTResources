@@ -2,39 +2,35 @@
 
 This lesson explains how to make animations using react-springs
 
-**Learning objectives**
+## Learning objectives
 
-- TNTs will be able to add animations to a component
-- TNTs will understand how to create their own custom animations
+* TNTs will be able to add animations to a component
+* TNTs will understand how to create their own custom animations
 
-**Time required and pace**
+## Time required and pace
 
 Total time: 1 hour
 
-- 20 minutes - explain: How to add spring animations to an element.
-- 20 minutes - Explore spring properties
-- 20 minutes - evaluate: create an animated component
+* 20 minutes - explain: How to add spring animations to an element.
+* 20 minutes - Explore spring properties
+* 20 minutes - evaluate: create an animated component
 
-**Background / review**
+## Background / review
 
-- Function components/Class Components
-- Props, state, Render
+* Function components/Class Components
+* Props, state, Render
 
-**Lesson details**
+## Lesson details
 
-**Add react-springs to a function (20 minutes)**
+### Add react-springs to a function (20 minutes)
 
-1. 1)Yarn add react-springs
-2. 2)As a table, TNTs draw what they&#39;ve learned so far about the app architecture
-  - Display app architecture with labels, no descriptions
-  - TNT groups talk through the function of the different parts and how they connect
-3. 3)Re-group and walk through architecture thus far together - HTML, CSS, React, Node, React...
+1. Yarn add react-springs
 
-**How To Use Springs (20 minutes)**
+## How To Use Springs (20 minutes)
 
-Springs are used by assigning the style property of an element to a &#39;spring&#39; object. This can be done with a spring component or a spring hook in a function component.
+Springs are used by assigning the style property of an element to a "spring" object. This can be done with a spring component or a spring hook in a function component.
 
-1. 1)Spring Component in a class component:
+1. Spring Component in a class component:
 
 A spring component expects a function returning a JSX element. The function will get a spring object that can be assigned to its style. As the spring changes the style object will be updated.
 
@@ -48,9 +44,9 @@ A spring component expects a function returning a JSX element. The function will
       }
     }
 
-1. 2)Spring hooks in a function Component
+2. Spring hooks in a function Component
 
-Spring hooks are used by calling useSpring with an object containing the basic spring properties. The object returned can then be assigned to a JSX element&#39;s style property
+Spring hooks are used by calling useSpring with an object containing the basic spring properties. The object returned can then be assigned to a JSX element's style property
 
     function AnimatiedFunc() {
       const springProps = useSpring({
@@ -68,10 +64,10 @@ Spring hooks are used by calling useSpring with an object containing the basic s
       );
     }
 
-**Core Properties (20 minutes)**
+### Core Properties (20 minutes)
 
 1. From: Object of type CssProperties, specifying the initial style of the animation.
-2. To: Object of type CssPoperties specifying the end style of the animation
+2. To: Object of type Css Poperties specifying the end style of the animation
 3. Delay: Time before animation starts
 4. Immediate: Stops animation from running if set to true
 5. Reset: Runs animation again
@@ -81,10 +77,10 @@ Spring hooks are used by calling useSpring with an object containing the basic s
 9. OnFrame: Function called on each frame of the animation
 10. Config: Takes in arguments to specify the physical properties of the animation(velocity, duration, etc)
 
-**Animation Activity (20min)**
+## Animation Activity (20min)
 
 Create a function component that takes in a JSX Element as a property and renders it with an animation
 
-**Stretch**
+## Stretch
 
 Name three differences between spring components and spring hooks
