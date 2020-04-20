@@ -39,12 +39,11 @@ Solution and pitch | Competitor audit | | |
 
 Week 1 | Week 2 | Week 3 | Week 4 | Week 5
 --- | --- | --- | --- | ---
- | Why Git? | Git repositories and GitHub | | Open source communities |
+ | Why Git? | Remote repositories and GitHub | | Open source communities |
  | Local workflow | Branching | | |
  | Git undoing and backtracking | Pull requests and code reviews | | |
  | | Merge conflicts |  |  | 
- | | Tools GitFlow and   |  | 
- | |  Sourcetree  | | |
+ | | Tools - GitFlow and Sourcetree |  | 
 
  **Web design**
 
@@ -72,8 +71,7 @@ Week 1 | Week 2 | Week 3 | Week 4 | Week 5
 --- | --- | --- | --- | ---
 To Do - all the basics | Simon Says - state management and Redux | YourShare - team engineering | | 
  Idea pitch | User feedback barbecue | Spec | | 
- | | | | 
- | | | | 
+ | | | |  
 
 ## References
 Quick guides describing tech stack, Git, acronyms, and other useful topics.
