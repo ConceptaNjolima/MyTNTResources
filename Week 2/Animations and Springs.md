@@ -1,4 +1,4 @@
-**Animations with Spring**
+# Animations with Spring
 
 This lesson explains how to make animations using react-springs
 
