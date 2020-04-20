@@ -53,6 +53,8 @@ Here are examples of components, props, and inputs that are essential to buildin
 
 Revisit git best practices
 
+* Commit often
+
 ### Build list app (30 minutes)
 
 NTs kick off building the list app
