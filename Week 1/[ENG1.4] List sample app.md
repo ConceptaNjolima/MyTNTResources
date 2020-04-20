@@ -11,7 +11,7 @@ In this lesson NTs will build a sample mobile list app that demonstrates how the
 
 Total time: 2 hrs hour
 
-* 10 minutes - engage: 
+* 10 minutes - engage: common controls
 * 20 minutes - explain: introduce project spec, component, props, input
 * 30 minutes - explore: build list app
 * 15 minutes - elaborate: check-in on progress
@@ -19,9 +19,18 @@ Total time: 2 hrs hour
 
 ## Background / review
 
+* [Create React app] (https://create-react-app.dev/docs/adding-typescript/)
+
 ## Lesson details
 
-### engage (10 minutes)
+### Common controls (10 minutes)
+
+Controls in a user interface (UI) follow familiar patterns of behavior. Customers using an app expect that certain controls behave in a certain way. For example - a checkbox allows you to select more than one option while a radio button only allows you to select one option. These affordances, when the quality or property of an object defines its possible uses or makes it clear how it can or should be used, increases ease of use. Many of these controls are provided by the platform or operating system as part of the developer experience.  
+
+* NTs - Look at two apps on your phone or computer. What common controls or interaction patterns do you see?
+* Post one common control to the Teams channel.
+* Come back together as a group.Share highlights. Some places to look if they're missed - navigation, window management, backstage and menus, buttons - radio, checkbox, dropdown, date / time picker...
+* Keep these common behaviors and interaction patterns in mind as you think about your prototypes.
 
 ### Introduce project spec, components, props, inputs (20 minutes)
 
