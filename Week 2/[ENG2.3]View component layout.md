@@ -75,6 +75,7 @@ Children Properties:
 
 ![FlexGrowShrink](./flex-grow.svg)
 
+[https://css-tricks.com/snippets/css/a-guide-to-flexbox/](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 ### Practice: Build a React table with CSS flexbox (30 minutes)
 *Exercise for NTs building a table with basic CSS flexbox layout*
 
