@@ -61,6 +61,8 @@ The Flexbox Layout is an efficient way to layout and distribute child items in a
 
 When configuring a Flexbox layout both the Parent Container and Children Items have properties you can set to meet your UI needs. We will go more in depth in ENG3.1 Adaptive Layouts.
 
+Below are a few examples of Flexbox properties for both the Parent Container and Child Items.
+
 Parent Properties:
 
     flex-direction: row | row-reverse | column | column-reverse
