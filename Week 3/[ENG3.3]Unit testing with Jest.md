@@ -50,6 +50,16 @@ Red, Green, Refactor is an engineering pattern of TDD (Test Driven Development) 
 * Mocking - If your class depends on external classes mockinging can help to test behavior specific to your class only
 * Async Code - Jest provides several ways to wait for async code to finish before proceeding to the next test
 
+To install Jest:
+
+1. npm install --save-dev jest
+2. To write tests with Typescript we must install ts-jest using 'npm install --save-dev ts-jest @types/jest'
+3. Create a jest config file using 'npx ts-jest config:init'
+
+To run tests with Jest:
+
+1. In the Terminal window use 'npm t'
+
 ### Let's write unit tests (30 minutes)
 
 #### Examples of unit tests
@@ -79,6 +89,6 @@ A starter project has been created which contains stubbed unit tests. Use the Re
 1. 'git clone' the TNT_Samples github repo <https://github.com/microsoft/TNT_Samples>
 2. Use VS Code to open the 'Week_3/unit-testing-with-jest' project
 3. Cmd+J to reveal the Terminal in VS Code
-4. In the Terminal window type 'npm install' to install dependencies
+4. 'jest' and 'ts-jest' are already listed as dependencies in package.json so in the Terminal window type 'npm install' to install both dependencies
 5. To run tests type 'npm t' in the Terminal window
 6. The file src/store-locator/StoreFilter.test.tsx has empty test stubs that NT's will complete
