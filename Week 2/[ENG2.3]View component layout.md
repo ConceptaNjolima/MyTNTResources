@@ -1,4 +1,4 @@
-# Components
+# Component Layout
 
 This lesson explains how to layout components, how to organize components with alignment and distribute space dynamically.
 
