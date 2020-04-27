@@ -1,12 +1,13 @@
-# Components
+# UI Debugging
 
-This lesson explains how you can debug UI in Edge (Chromium)
+This lesson explains how you can debug UI in Edge (Chromium) and introduces the developer tools in more detail.
 
 ## Learning objectives
 
+* TNTs will learn about basic debugging
 * TNTs will understand Edge's debugging UI
-* TNTs will understand basic debugging
 * TNTs will understand how to make file changes while debugging
+* TNTs will practice the debugging tools
 
 ## Time required and pace
 
@@ -19,17 +20,19 @@ Total time: 1.1 hours
 
 ## Background / review
 
+* Enable Developer Tools in Microsoft Edge
+
 ## Lesson details
 
 ### Edge Debugger UI (10 minutes)
 
-    Prerequisite: Enable Developer Tools in Microsoft Edge 
+The developer tools are best shown in action. Open a website and show and demo the panels.
 
 The developer tools provide several panels to assist with debugging. Here are a few noteworthy panels:
 
 1. Elements panel - View the DOM and CSS
 2. Console panel - View messages and logs
-3. Sources panel - View resources loaded by the web page and debug Javasccript files via breakpoints
+3. Sources panel - View resources loaded by the web page and debug Javascript files via breakpoints
 4. Network panel - View network traffic, HTTP status codes, file types, file size, download times, etc.
 5. Performance - View performance metrics
 
@@ -52,9 +55,10 @@ Let's explore the Elements panel to see how it can help us with UI debugging.
 3. Edit the CSS - Update classes to see changes
 4. Break on DOM modifications - You can start debugging on any DOM element changes that have been made by Javascript
 
-### Exercise: Using UI Debugger (30 minutes)
-*I'm thinking a simple website that has UI issues NT's can identify? Kind of like a scavenger hunt e.g. why does this webpage take 4 seconds to load? Could have a 100mb image download. Another is an unsecure resource being downloaded.*
+### Exercise: Explore with the UI debugger (15 minutes)
 
-## Stretch (20 minutes)
-
-  1. Some stretch exercise here
+1. Go to [www.microsoft.com](www.microsoft.com)
+2. Open Developer tools.
+3. Familiarize yourself with the panels.
+4. In the Console, what warnings do you see? Share with you team.
+5. With the elements panel, change the color of the banner and on screen change some text. Post a screenshot to your Team's channel.
