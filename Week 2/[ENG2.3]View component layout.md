@@ -1,18 +1,19 @@
 # Components
 
-This lesson explains how you can layout components
+This lesson explains how to layout components, how to organize components with alignment and distribute space dynamically.
 
 ## Learning objectives
 
-* TNTs will understand how to layout a table with React
-* TNTs will understand the basics of CSS flexbox layout
+* TNTs will learn how to layout a table with React
+* TNTs will understand the basics of CSS Flexbox layout
+* TNTs will practice using Flexbox
 
 ## Time required and pace
 
 Total time: 1 hour
 
 * 15 minutes – Building a table with react
-* 15 minutes – Explain the basics of CSS flexbox
+* 15 minutes – Explain the basics of CSS Flexbox
 * 30 minutes - Practice
 
 ## Background / review
