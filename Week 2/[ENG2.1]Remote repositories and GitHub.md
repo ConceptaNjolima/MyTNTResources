@@ -1,4 +1,4 @@
-# Title
+# Remote repositories and GitHub
 
 [Description - this template accounts for individual / pre-lesson work, reading, videos to introduce key concepts]
 
