@@ -44,39 +44,31 @@ Use the sandbox for this exercise to preserve your local git configuration.
 
 ## Session set up
 
-* GitHub - create repository from NameandFavFood demo in Samples
+* GitHub - create repository in group from NameandFavFood demo in Samples
 
 ## Lesson details
 
 ### Recap learning (20 minutes)
 
 1. Demo: cloning, branching, committing a repo from GitHib.
-
-     * *Add steps for command line*
-     * Clone - Many projects start from an existing repo. This is a more common flow than starting locally.
-       * View "Clone or download" button in GitHub.
-       * Open new VS Code window. `git clone` + GitHub URL and start working from remote repo.
-       * *How does Sourcetree work with a repo you've cloned but not through Sourcetree? If it's cloned from VS Code can you still use source tree?*
-     * Branch - Branching creates a separate world, thread, for you to work in. By default you're in the master branch. 
-       * Typically most work is done in a different branch and then merged with master.
-       * If four people are working on a project, each person has a branch. If you have two different features you're working on, you can make a branch for each.
-       * You can see the branch in the VS Code status bar and Sourcetree.
-       * `git branch <branch name>` - command to create new branch
-       * Give it a name and VS Code will automatically switch to it.
-       * `git publish branch` - command to publish it to the VS Code repo.
-       * `git checkout` - command lists all the branches and lets you switch between them. This can also be switched from the status bar.
-       * You can also create a branch in Sourcetree by clicking "Branch" button.
+    1. We're going to review the basics of creating a branch and merging using GitHub.
+    2. With Git Bash, clone the NameandFavFood repository.
+    3. Create a new branch and check out to the branch.
+    4. Open and edit the file in VS Code, adding name and favorite food.
+    5. Commit the changes to the branch.
+    6. Open a pull request to merge to master.
+    7. In VS Code look at the pull request and complete the pull request.
+    8. From master, make a change in GitHub added a fictitious name and food.
+    9. From VS Code on the branch, make a change adding a different change
 
 2. Best practices to resolve and reduce merge conflicts
+    1. Git attempts to resolve differences in code. Merge conflicts occur when Git is unable to resolve the differences. This occurs when there are changes made to the same part of the same file on two different branches.
+    2. Before attempting to merge, make sure any work in progress is either committed or merged. If you need to `git merge --abort` this will prevent you from loosing changes.
+    3. Take a minute (or several) to understand the conflict. This will help you pick a solution to resolve the conflict.
+    4. Decide what code should be included in master after the merge.
+    6. Fetch from master and pull intro your branch frequently to stay in sync.
 
-
-15. Fetch
-     * Changes are fetched from master back into your local master branch. This is important to stay up to date with changes other people may be making.
-     * `git checkout` to your local master branch and then `git fetch` to get the changes from the server.
-
-16. **Try it** - NTs make and push changes, then merge branch, fetch changes from master to another branch.
-
-## Git free time - branch, commit, push, pull, merge (15 minutes)
+### Try it: clone repo, make branch, merge changes (30 minutes)
 
 1. Spend the rest of time practicing and exploring Git.
 2. Try - Adding your name and alias
