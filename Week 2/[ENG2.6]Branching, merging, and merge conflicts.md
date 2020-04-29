@@ -5,7 +5,7 @@ This lesson introduces branching for team collaboration. This is how you work to
 ## Learning objectives
 
 * TNTs will understand the basic of branching, merging, and resolving conflicts.
-* TNTs will learn what is a merge conflict, what causes them, how to resovle and reduce
+* TNTs will learn what is a merge conflict, what causes them, how to resolve and reduce.
 * TNTs will be able to create and merge a branch locally and with GitHub.
 
 ## Time required and pace
@@ -19,17 +19,21 @@ Total time: 2 hours
 
 ## Pre-session
 
+### Overview on Git and working with branches
+
+Watch this video [Git working with branches](https://www.youtube.com/watch?v=JTE2Fn_sCZs)
+
+* Why branches?
+* Creating a branch
+* Working from a branch
+
 ### Collaborate with Git
 
-Complete this learning module - [Collaborate to Git](https://docs.microsoft.com/en-us/learn/modules/collaborate-with-git/)
+Complete this learning module - [Edit code through branching and merging in Git](https://docs.microsoft.com/en-us/learn/modules/branch-merge-git/)
 Use the sandbox for this exercise to preserve your local git configuration.
 
-* Clone a repository
-* Introduction to pull requests
-* Stash changes
-* Push changes
-
-![Cloud shell Git repo](cloudShellGitRepos.png)
+* Create branches in get
+* Merge branches in get
 
 ## Session set up
 
