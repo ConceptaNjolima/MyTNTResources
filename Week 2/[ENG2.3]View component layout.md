@@ -77,10 +77,18 @@ Children Properties:
 ![FlexGrowShrink](./flex-grow.svg)
 
 [https://css-tricks.com/snippets/css/a-guide-to-flexbox/](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
-### Practice: Build a React table with CSS flexbox (30 minutes)
-*Exercise for NTs building a table with basic CSS flexbox layout*
+
+### Practice: Build a Keyword Collection component with CSS Flexbox (30 minutes)
+
+You will build (2) React components:
+
+1. Keyword component
+2. KeywordCollection component
+
+Using CSS Flexbox layout multiple Keywords and apply Flexbox properties to achieve the results below
+
+![ComponentLayout](./view-layout-component.png)
 
 ## Stretch (20 minutes)
 
-  1. Extract the table into Header and Row components.
-  2. Add filtering to the Table component.
+  1. Add an input field above your component to accept an input from a user and add it to your Keyword Collection component
