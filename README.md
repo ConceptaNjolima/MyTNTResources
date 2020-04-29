@@ -43,7 +43,7 @@ Week 1 | Week 2 | Week 3 | Week 4 | Week 5
  | Local workflow | Branching | | |
  | Git undoing and backtracking | Pull requests and code reviews | | |
  | | Merge conflicts |  |  | 
- | | Tools - GitFlow and Sourcetree |  | 
+ | | Tools - Sourcetree |  | 
 
  **Web design**
 
