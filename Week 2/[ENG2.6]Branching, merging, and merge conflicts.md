@@ -12,12 +12,12 @@ This lesson introduces branching for team collaboration. This is how you work to
 
 Total time: 2 hours
 
-* 60 minutes - pre-session: Edit code through branching and merging in Git
+* 60 minutes - pre-session: overview of branching and merging with git
 * 20 minutes - explain: recap learning
 * 30 minutes - explore: create and use a repo on GitHub
-* 15 minutes - elaborate: review trouble spots
+* 10 minutes - elaborate: review trouble spots
 
-## Pre-session
+## Pre-session (60 minutes)
 
 ### Overview on Git and working with branches
 
@@ -34,21 +34,23 @@ Watch this video [GIT: merging and workflow](https://www.youtube.com/watch?v=0iu
 * Why merging?
 * Overview of branches in real world development
 
-### Collaborate with Git
+### Collaborate with Git module
 
 Complete this learning module - [Edit code through branching and merging in Git](https://docs.microsoft.com/en-us/learn/modules/branch-merge-git/)
 Use the sandbox for this exercise to preserve your local git configuration.
 
-* Create branches in get
-* Merge branches in get
+* Create branches with git
+* Merge branches with git
 
 ## Session set up
 
-* GitHub - ready branch and clone
+* GitHub - create repository from NameandFavFood demo in Samples
 
 ## Lesson details
 
-11. **Demo** - cloning, branching, committing a repo from GitHib.
+### Recap learning (20 minutes)
+
+1. Demo: cloning, branching, committing a repo from GitHib.
 
      * *Add steps for command line*
      * Clone - Many projects start from an existing repo. This is a more common flow than starting locally.
@@ -65,50 +67,14 @@ Use the sandbox for this exercise to preserve your local git configuration.
        * `git checkout` - command lists all the branches and lets you switch between them. This can also be switched from the status bar.
        * You can also create a branch in Sourcetree by clicking "Branch" button.
 
-12. **Try it** - NTs create a repo and upload files, then clone from repo and create a branch.
----
+2. Best practices to resolve and reduce merge conflicts
 
-13. **Demo** - change, stage, commit, then push
-
-     * *Add steps for command line* Show both in VS Code and command line
-     * The cycle is make a change, stage, commit, then push.
-     * Stage allows you to to commit some of the changes. If you're still working on part, you can stage and commit just what's ready.
-     * If you don't need to stage you can commit everything.
-     * Save. `git stage` `git commit` `git push`. 
-     * View changes in branch. Repeat as you work.
-  
-14. **Demo** - Merge 
-
-     * Changes are merged from other branches back into master. master is treated as the source of truth. 
-     * `git checkout` to master. 
-     * `git merge` and select the branch you'd like to merge from into master.
-     * Merge conflicts occur when multiple developers edit the same content. At this point, Git is asking for human input to fix the conflicts.
-       *  Make changes in master eg: README.md and commit changes.
-       * `git checkout` to branch and make changes to the same line of the file that was edited in master with different text.
-       * `git checkout` to master and `git merge` branch
-       * Resolve conflicts in VS Code.
 
 15. Fetch
-
      * Changes are fetched from master back into your local master branch. This is important to stay up to date with changes other people may be making.
      * `git checkout` to your local master branch and then `git fetch` to get the changes from the server.
 
 16. **Try it** - NTs make and push changes, then merge branch, fetch changes from master to another branch.
-
----
-## Review and Git best practices (15 min)
-
-1. Room discussion - What worked? Where did you get stuck?
-     * Address trouble areas
-
-2. Git best practices
-     * It takes practice
-     * Keep commits light - it's good to save often and keep the change set small, it'll be easier to merge
-     * Take a minute to review your changes before checking-in - more time will be spent on debugging, diff tools make it easier to quickly glance
-
-3. Next up: undoing, merge conflicts, pull requests
-     * The first super power of Git is branches, the second is being able to undo your changes.
-     * There are a few different strategies for undoing and more to talk about in collaborative coding.
 
 ## Git free time - branch, commit, push, pull, merge (15 minutes)
 
