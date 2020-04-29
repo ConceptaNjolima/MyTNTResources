@@ -1,7 +1,9 @@
 # Intro to Git
-This lesson introduces the fundamentals of the Git workflow and tools.
+
+This lesson introduces the fundamentals of the Git workflow and local tools.
 
 *Open questions in lesson:*
+
 * *Include backtracking and undoing?*
 * *Add command line instructions*
 * *Have students work in their own private repos or from the room repo?*
@@ -10,18 +12,22 @@ This lesson introduces the fundamentals of the Git workflow and tools.
 * *Add resolving conflicts and name and alias demo*
 
 ## Learning objectives
+
 * TNTs will understand what is source control and why we need it.
 * TNTs will learn how their previous code or doc collaboration experience maps to aspects source control.
 * TNTs will be able to work with a local and remote repository using Git.
 
 ## Time required and pace
+
 Total time: 1.5 hour
+
 * 10 minutes - engage: source control and you
 * 50 minutes - explain and explore: into to version control and Git
 * 15 minutes - elaborate: review and Git best practices
 * 15 minutes - evaluate: Git free time - branch, commit, push, pull, merge
 
 ## Background / review
+
 * [Automated Version Control with Git](http://swcarpentry.github.io/git-novice/01-basics/)
 * [Ada Developers Academy Intro to Git](https://github.com/Ada-Developers-Academy/textbook-curriculum/blob/master/00-programming-fundamentals/git-intro-to-git.md)
 * [Udacity Version Control with Git](https://www.udacity.com/course/version-control-with-git--ud123)
@@ -30,13 +36,16 @@ Total time: 1.5 hour
 * [Git Book](https://git-scm.com/book/en/v2)
 
 Pre-reqs
+
 * [Install VS Code](https://code.visualstudio.com/)
 * [Install Git](https://git-scm.com/downloads)
 * [Install SourceTree](https://www.sourcetreeapp.com/), BitBucket account also required, don't install Mercurial
 * GitHub account
 
 ## Lesson details
+
 ### Source control and You (10 min)
+
 1. In groups have NTs discuss the following questions:
    * Have you ever worked on a code project or a document with other people? How did you share? Google doc? Emailing? GitHub?
    * When working with other people on code or project, what has gone wrong? Have you gotten versions of the document mixed up? Have you lost changes?
@@ -50,6 +59,7 @@ Pre-reqs
    * Source control allows you to try things without fear
 
 ### Intro to version control and Git (50 minutes)
+
 1. What is Git?
    * Git allows you to add, edit, and break your code without fear. Git creates save points along the way so you can go back.
    * Git allows you to make changes to a file and store those changes back in a central repository (repo) file archive hosted locally or online, privately or publicly
@@ -86,7 +96,9 @@ Pre-reqs
 
 ---
 5. **Demo** - local work flow in VS Code
+
 Instructor demos the basic local workflow and then NTs will follow on their own.
+
    * *add steps for command line*
    * `git init` - command to create a new repo
      * Create a new directory, folder, or choose an existing one
@@ -101,10 +113,12 @@ Instructor demos the basic local workflow and then NTs will follow on their own.
      * See changes in the Source Control tab of the Explorer. Click on the change to see a comparison side by side.
 
 6. **Try it** - NTs create local workflow
+
    * *Steps? What to name it*
 ---
 
 9. **Demo** - Sourcetree 
+
 Instructor demos Sourcetree by adding local repository and looking at history.
    * Open / add local repo. Look at commits.
    * Make change and commit with Soucretree.
@@ -115,11 +129,13 @@ Instructor demos Sourcetree by adding local repository and looking at history.
 ---
 
 10. **Demo** - remote repository in VS Code with GitHub Instructor demos migrating repository to GitHub.
+
    * Create a new repo in GitHub, *want to do it by building in TNT repo or in individual?*
    * Select "upload existing file". Choose files.
    * Need to clone repo to start working from GitHub rather than the local only copy.
 
 11. **Demo** - cloning, branching, committing a repo from GitHib.
+
      * *Add steps for command line*
      * Clone - Many projects start from an existing repo. This is a more common flow than starting locally.
        * View "Clone or download" button in GitHub.
@@ -139,6 +155,7 @@ Instructor demos Sourcetree by adding local repository and looking at history.
 ---
 
 13. **Demo** - change, stage, commit, then push
+
      * *Add steps for command line* Show both in VS Code and command line
      * The cycle is make a change, stage, commit, then push.
      * Stage allows you to to commit some of the changes. If you're still working on part, you can stage and commit just what's ready.
@@ -147,6 +164,7 @@ Instructor demos Sourcetree by adding local repository and looking at history.
      * View changes in branch. Repeat as you work.
   
 14. **Demo** - Merge 
+
      * Changes are merged from other branches back into master. master is treated as the source of truth. 
      * `git checkout` to master. 
      * `git merge` and select the branch you'd like to merge from into master.
@@ -157,6 +175,7 @@ Instructor demos Sourcetree by adding local repository and looking at history.
        * Resolve conflicts in VS Code.
 
 15. Fetch
+
      * Changes are fetched from master back into your local master branch. This is important to stay up to date with changes other people may be making.
      * `git checkout` to your local master branch and then `git fetch` to get the changes from the server.
 
@@ -165,6 +184,7 @@ Instructor demos Sourcetree by adding local repository and looking at history.
 ---
 
 ## Review and Git best practices (15 min)
+
 1. Room discussion - What worked? Where did you get stuck?
      * Address trouble areas
 
@@ -178,6 +198,7 @@ Instructor demos Sourcetree by adding local repository and looking at history.
      * There are a few different strategies for undoing and more to talk about in collaborative coding.
 
 ## Git free time - branch, commit, push, pull, merge (15 minutes)
+
 1. Spend the rest of time practicing and exploring Git.
 2. Try - Adding your name and alias
      * Clone TNT repository 
@@ -193,6 +214,7 @@ Instructor demos Sourcetree by adding local repository and looking at history.
 4. If you get stuck or discover something cool, share it with a neighbor.
 
 ## Stretch
+
 * Interested in how Git works under the hood? Learn about how [git works internally](https://medium.com/@shalithasuranga/how-does-git-work-internally-7c36dcb1f2cf).
 * Interested in security? Learn about how [git uses cyrptographic hashes](https://ericsink.com/vcbe/html/cryptographic_hashes.html).
 * [xkcd](https://xkcd.com/1597/).
