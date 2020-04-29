@@ -13,9 +13,9 @@ This lesson introduces branching for team collaboration. This is how you work to
 Total time: 2 hours
 
 * 60 minutes - pre-session: overview of branching and merging with git
-* 20 minutes - explain: recap learning
+* 20 minutes - explain: recap learning and introduce Source Tree
 * 30 minutes - explore: create and use a repo on GitHub
-* 10 minutes - elaborate: review trouble spots
+* 10 minutes - elaborate: regroup and review
 
 ## Pre-session (60 minutes)
 
@@ -48,7 +48,7 @@ Use the sandbox for this exercise to preserve your local git configuration.
 
 ## Lesson details
 
-### Recap learning (20 minutes)
+### Recap learning (30 minutes)
 
 1. Demo: cloning, branching, committing a repo from GitHib.
     1. We're going to review the basics of creating a branch and merging using GitHub.
@@ -66,23 +66,32 @@ Use the sandbox for this exercise to preserve your local git configuration.
     2. Before attempting to merge, make sure any work in progress is either committed or merged. If you need to `git merge --abort` this will prevent you from loosing changes.
     3. Take a minute (or several) to understand the conflict. This will help you pick a solution to resolve the conflict.
     4. Decide what code should be included in master after the merge.
-    6. Fetch from master and pull intro your branch frequently to stay in sync.
+    5. Fetch from master and pull intro your branch frequently to stay in sync.
+    6. Plan the work. Breakdown who is working on what and what may conflict.
 
-### Try it: clone repo, make branch, merge changes (30 minutes)
+3. Using Source Tree
+    1. Source Tree is a tool that shows repository history and actions visually.
+    2. It has quick commands to branch and merge.  
+    3. **To-DO: add source tree demo**
 
-1. Spend the rest of time practicing and exploring Git.
-2. Try - Adding your name and alias
-     * Clone TNT repository 
-     * Create a branch and add your name and alias to the txt file
-     * Save, stage, and commit your change
-     * Checkout to master and merge branch into master
-     * Pull changes
-     * Push changes
-     * Look at the changes in GitHub, check out the branches and commits
-     * Look at the changes in SourceTree, check out the branches and commits
-     * Look at the source control tab in VS Code, check out the file diffs
-3. By the end of the lesson you should have a repository that shows a history of changes, branches, merges.
-4. If you get stuck or discover something cool, share it with a neighbor.
+### Try it: add name and favorite food to the list (20 minutes)
+
+1. Together we're going to create a whole bunch of merge conflicts.
+2. Clone the NameandFavFood repository.
+3. Create a branch named using Source Tree "firstnameLastInitial", for example "MichaelS".
+4. Make a change adding your name, favorite food to the list. "Michael, soft pretzels".
+5. Commit the change to your branch.
+6. Make a pull request with the changes.
+7. Merge the branch and resolve the merge conflicts.
+    * Be mindful not to delete other people's response
+    * You may have to deal with merge conflicts more than once through this process.
+8. Delete your branch when you're done
+
+### Regroup and review (10 minutes)
+
+1. Take a look at the repository commit history, look at all the changes!
+2. At branches or pull requests outstanding?
+3. Poll the room - what made this difficult? What helped?
 
 ## Stretch
 
