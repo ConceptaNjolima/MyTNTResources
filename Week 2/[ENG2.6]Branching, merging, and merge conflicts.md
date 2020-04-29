@@ -58,11 +58,13 @@ Use the sandbox for this exercise to preserve your local git configuration.
     4. Open and edit the file in VS Code, adding name and favorite food.
     5. Commit the changes to the branch.
     6. Open a pull request to merge to master.
-    7. In VS Code look at the pull request and complete the pull request.
-    8. From master, make a change in GitHub added a fictitious name and food.
-    9. From VS Code on the branch, make a change adding a different change
+    7. In VS Code look at the pull request and complete the pull request and merge.
 
-2. Best practices to resolve and reduce merge conflicts
+2. Demo: show a merge conflict
+    8. From master, make a change in GitHub added a fictitious name and food.
+    9. From VS Code on the branch, make a change adding a different change.
+
+3. Best practices to resolve and reduce merge conflicts
     1. Git attempts to resolve differences in code. Merge conflicts occur when Git is unable to resolve the differences. This occurs when there are changes made to the same part of the same file on two different branches.
     2. Before attempting to merge, make sure any work in progress is either committed or merged. If you need to `git merge --abort` this will prevent you from loosing changes.
     3. Take a minute (or several) to understand the conflict. This will help you pick a solution to resolve the conflict.
@@ -70,7 +72,7 @@ Use the sandbox for this exercise to preserve your local git configuration.
     5. Fetch from master and pull intro your branch frequently to stay in sync.
     6. Plan the work. Breakdown who is working on what and what may conflict.
 
-3. Using Source Tree
+4. Using Source Tree
     1. Source Tree is a tool that shows repository history and actions visually.
     2. It has quick commands to branch and merge.  
     3. **To-DO: add source tree demo**
@@ -97,3 +99,5 @@ Use the sandbox for this exercise to preserve your local git configuration.
 ## Stretch
 
 * Checkout learning modules on GitHub: [Managing merge conflicts](https://lab.github.com/githubtraining/managing-merge-conflicts) or [Ramp up on Git and GitHub](https://lab.github.com/githubtraining/paths/ramp-up-on-git-and-github)
+
+* Interactive online tutorial for practicing Git Branching: {Learn Git Branching] (https://learngitbranching.js.org/)
