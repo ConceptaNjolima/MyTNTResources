@@ -12,7 +12,7 @@
 
 Total time: 2 hours
 
-* 45 minutes - learning: pre-session background research and investigations
+* 45 minutes - pre-session: background learning, research, and investigations
 * 10 minutes - engage: opening activity
 * 10 minutes - explain: recap learning
 * 30 minutes - explore: specific activity
