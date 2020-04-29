@@ -45,6 +45,7 @@ Use the sandbox for this exercise to preserve your local git configuration.
 ## Session set up
 
 * GitHub - create repository in group from NameandFavFood demo in Samples
+* Source Tree installed and ready to go
 
 ## Lesson details
 
@@ -81,7 +82,7 @@ Use the sandbox for this exercise to preserve your local git configuration.
 3. Create a branch named using Source Tree "firstnameLastInitial", for example "MichaelS".
 4. Make a change adding your name, favorite food to the list. "Michael, soft pretzels".
 5. Commit the change to your branch.
-6. Make a pull request with the changes.
+6. Make a pull request to push the changes.
 7. Merge the branch and resolve the merge conflicts.
     * Be mindful not to delete other people's response
     * You may have to deal with merge conflicts more than once through this process.
