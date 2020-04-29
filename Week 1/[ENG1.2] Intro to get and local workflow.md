@@ -12,11 +12,11 @@ This lesson introduces the fundamentals of the Git workflow, Git Bash, and VS Co
 
 Total time: 2 hours
 
-* 75 minutes - learning: Introduction to Git module
+* 75 minutes - pre-session: Introduction to Git module
 * 10 minutes - engage: source control and you
 * 15 minutes - explain: recap git basics and best practices
-* 10 minutes - explore: create repo
-* 10 minutes - elaborate: review trouble spots and talk about next next Git topics
+* 10 minutes - explore: create repo and edit in VS Code
+* 10 minutes - elaborate: best practices, trouble spots and talk about next next Git topics
 
 ## Pre-session
 
@@ -79,13 +79,14 @@ After checking the git version number, skip the rest of the Configure Git exerci
    * It takes practice, it's a learned skill, it's not intuitive - ask your coaches about their Git disasters - everyone has a story.
 
 3. Demo scenario using Git Bash: creating new repo and initial commit
-    1. `mkdir Dogs` - create new folder named Dogs
-    2. `cd Dogs` - move to the project folder
-    3. `git init` - initialize the repository
-    4. `touch index.html` - create a new file
-    5. `git status` - view the repository status
-    6. `git add.` - stage the files to commit and tell get what files to track, "." selects all the new files or files with changes
-    7. `git commit index.html -m "New index file"` - add the changes to the repo with the named file, "-m" indicates message included
+    1. The flow for using git starts with creating a directory (folder). The cycle as changes are made is `add` and `commit`. Small chunks as you go.
+    2. `mkdir Dogs` - create new folder named Dogs
+    3. `cd Dogs` - move to the project folder
+    4. `git init` - initialize the repository
+    5. `touch index.html` - create a new file
+    6. `git status` - view the repository status
+    7. `git add.` - stage the files to commit and tell get what files to track, "." selects all the new files or files with changes
+    8. `git commit index.html -m "New index file"` - add the changes to the repo with the named file, "-m" indicates message included
 
 4. Demo scenario using Git Bash: git revert
     1. `git revert` undoes committed changes by cancelling out the commit with another commit.
@@ -106,6 +107,35 @@ After checking the git version number, skip the rest of the Configure Git exerci
 6. Best practices
     * To commit changes for all files us ".". It is a best practice to include a short and descriptive message. Your future self thanks you.
 
-## Stretch
+### Create repo and edit in VS Code (10 minutes)
 
-[Links and other projects for further learning and exploration]
+This practice reinforces using the git command line and VS Code together.
+
+1. Start this practice by creating a new directory with Git Bash. Add two files.
+2. Open the work space in VS Code.
+3. Edit one of the files and stage the commit.
+4. View the diff.
+5. Commit!
+6. Make another edit that deletes some of your changes. Stage and commit.
+7. Oh no, you need those changes back. Undo the the commit with git revert.
+8. Post the Git status to teams.
+
+### Best practices, trouble spots, and what's next
+
+1. Git best practices
+     * It takes practice
+     * Keep commits light - it's good to save often and keep the change set small, it'll be easier to merge
+     * Take a minute to review your changes before checking-in - more time will be spent on debugging, diff tools make it easier to quickly glance
+
+2. Room discussion - What worked? Where did you get stuck?
+     * Address trouble areas
+
+3. What's next?
+     * How does this actually help if it's just local on my computer? Remote repositories are next! This week practice the basics of source control on your local machine. Next week we'll dive into remote repositories, branching, pull requests, and merge conflicts.
+
+## Stretch topics
+
+* Interested in how Git works under the hood? Learn about how [git works internally](https://medium.com/@shalithasuranga/how-does-git-work-internally-7c36dcb1f2cf).
+* Interested in security? Learn about how [git uses cyrptographic hashes](https://ericsink.com/vcbe/html/cryptographic_hashes.html).
+* [xkcd](https://xkcd.com/1597/).
+* [Git Cheat Sheet](https://www.git-tower.com/blog/git-cheat-sheet).
