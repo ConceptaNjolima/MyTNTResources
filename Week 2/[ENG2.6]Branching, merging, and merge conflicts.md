@@ -12,7 +12,7 @@ This lesson introduces branching for team collaboration. This is how you work to
 
 Total time: 2 hours
 
-* 55 minutes - pre-session: Edit code through branching and merging in Git
+* 60 minutes - pre-session: Edit code through branching and merging in Git
 * 20 minutes - explain: recap learning
 * 30 minutes - explore: create and use a repo on GitHub
 * 15 minutes - elaborate: review trouble spots
@@ -21,11 +21,18 @@ Total time: 2 hours
 
 ### Overview on Git and working with branches
 
-Watch this video [Git working with branches](https://www.youtube.com/watch?v=JTE2Fn_sCZs)
+Watch this video [GIT: working with branches](https://www.youtube.com/watch?v=JTE2Fn_sCZs)
 
 * Why branches?
 * Creating a branch
 * Working from a branch
+
+### Overview of Git merge
+
+Watch this video [GIT: merging and workflow](https://www.youtube.com/watch?v=0iuqXh0oojo)
+
+* Why merging?
+* Overview of branches in real world development
 
 ### Collaborate with Git
 
@@ -37,7 +44,7 @@ Use the sandbox for this exercise to preserve your local git configuration.
 
 ## Session set up
 
-* GitHub - ready to make and clone a remote repository
+* GitHub - ready branch and clone
 
 ## Lesson details
 
