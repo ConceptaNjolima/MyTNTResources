@@ -82,6 +82,9 @@ The goal is to create a repo on GitHub, clone the repository, make changes in VS
 
 ![commitHistory](commitHistory.png)
 
-## Stretch
+### Review trouble spots (15 minutes)
 
-[Links and other projects for further learning and exploration]
+In your team's Team channel, discuss:
+
+* What went well?
+* What was difficult?
