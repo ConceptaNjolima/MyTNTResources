@@ -78,7 +78,7 @@ After checking the git version number, skip the rest of the Configure Git exerci
    * It’s both powerful (because it’s open-ended), plentiful (because it’s open source), and sometimes hard to use (because it’s open-ended).
    * It takes practice, it's a learned skill, it's not intuitive - ask your coaches about their Git disasters - everyone has a story.
 
-3. Demo scenario using Git Bash: Creating new repo and initial commit
+3. Demo scenario using Git Bash: creating new repo and initial commit
     1. `mkdir Dogs` - create new folder named Dogs
     2. `cd Dogs` - move to the project folder
     3. `git init` - initialize the repository
@@ -87,14 +87,22 @@ After checking the git version number, skip the rest of the Configure Git exerci
     6. `git add.` - stage the files to commit and tell get what files to track, "." selects all the new files or files with changes
     7. `git commit index.html -m "New index file"` - add the changes to the repo with the named file, "-m" indicates message included
 
-To commit changes for all files us ".". It is a best practice to include a short and descriptive message. Your future self thanks you.
-
 4. Demo scenario using Git Bash: git revert
     1. `git revert` undoes committed changes by cancelling out the commit with another commit.
     2. `git log` - to view the commit history. What's in the Git log? Hash or long string that identifies the commit, user, data / time, comment.
     ![Git log](gitLog.png)
     3. `git reset --hard HEAD^` - head indicates the last commit
     4. `got log` to see the change
+
+5. Demo: Git in VS Code
+    1. Open the workspace in VS Code. VS Code has git support built in. It doesn't have all the commands of Git Bash but is convenient when working in VS Code.
+    2. Make a change in a file.
+    3. Invoke the command either View -> Command Palette or Ctrl+Shift+P.
+    4. Type / select "Git: stage all changes".
+    5. Invoke the command pallette again and type / select "Git: commit".
+
+6. Best practices
+    * To commit changes for all files us ".". It is a best practice to include a short and descriptive message. Your future self thanks you.
 
 ## Stretch
 
