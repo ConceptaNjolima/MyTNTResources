@@ -23,7 +23,7 @@ Total time: 2 hours
 
 [Pre-virtual session material for NTs to review]
 
-## Session setp up
+## Session set up
 
 [Resources for instructors to get set up on lesson]
 
