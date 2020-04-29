@@ -92,14 +92,16 @@ After checking the git version number, skip the rest of the Configure Git exerci
     2. `git log` - to view the commit history. What's in the Git log? Hash or long string that identifies the commit, user, data / time, comment.
     ![Git log](gitLog.png)
     3. `git reset --hard HEAD^` - head indicates the last commit
-    4. `got log` to see the change
+    4. `git log` to see the change
 
 5. Demo: Git in VS Code
     1. Open the workspace in VS Code. VS Code has git support built in. It doesn't have all the commands of Git Bash but is convenient when working in VS Code.
     2. Make a change in a file.
     3. Invoke the command either View -> Command Palette or Ctrl+Shift+P.
     4. Type / select "Git: stage all changes".
-    5. Invoke the command pallette again and type / select "Git: commit".
+    5. Show the Source Control tab and the file diffs.
+    6. Invoke the command pallette again and type / select "Git: commit".
+    7. Check out the changes in Git Bash with `git log`
 
 6. Best practices
     * To commit changes for all files us ".". It is a best practice to include a short and descriptive message. Your future self thanks you.
