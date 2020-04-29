@@ -1,77 +1,99 @@
-11. **Demo** - cloning, branching, committing a repo from GitHib.
+# Branching, merging, and merge conflicts
 
-     * *Add steps for command line*
-     * Clone - Many projects start from an existing repo. This is a more common flow than starting locally.
-       * View "Clone or download" button in GitHub.
-       * Open new VS Code window. `git clone` + GitHub URL and start working from remote repo.
-       * *How does Sourcetree work with a repo you've cloned but not through Sourcetree? If it's cloned from VS Code can you still use source tree?*
-     * Branch - Branching creates a separate world, thread, for you to work in. By default you're in the master branch. 
-       * Typically most work is done in a different branch and then merged with master.
-       * If four people are working on a project, each person has a branch. If you have two different features you're working on, you can make a branch for each.
-       * You can see the branch in the VS Code status bar and Sourcetree.
-       * `git branch <branch name>` - command to create new branch
-       * Give it a name and VS Code will automatically switch to it.
-       * `git publish branch` - command to publish it to the VS Code repo.
-       * `git checkout` - command lists all the branches and lets you switch between them. This can also be switched from the status bar.
-       * You can also create a branch in Sourcetree by clicking "Branch" button.
+This lesson introduces branching for team collaboration. This is how you work together on projects!
 
-12. **Try it** - NTs create a repo and upload files, then clone from repo and create a branch.
----
+## Learning objectives
 
-13. **Demo** - change, stage, commit, then push
+* TNTs will understand the basic of branching, merging, and resolving conflicts.
+* TNTs will learn what is a merge conflict, what causes them, how to resolve and reduce.
+* TNTs will be able to create and merge a branch locally and with GitHub.
 
-     * *Add steps for command line* Show both in VS Code and command line
-     * The cycle is make a change, stage, commit, then push.
-     * Stage allows you to to commit some of the changes. If you're still working on part, you can stage and commit just what's ready.
-     * If you don't need to stage you can commit everything.
-     * Save. `git stage` `git commit` `git push`. 
-     * View changes in branch. Repeat as you work.
-  
-14. **Demo** - Merge 
+## Time required and pace
 
-     * Changes are merged from other branches back into master. master is treated as the source of truth. 
-     * `git checkout` to master. 
-     * `git merge` and select the branch you'd like to merge from into master.
-     * Merge conflicts occur when multiple developers edit the same content. At this point, Git is asking for human input to fix the conflicts.
-       *  Make changes in master eg: README.md and commit changes.
-       * `git checkout` to branch and make changes to the same line of the file that was edited in master with different text.
-       * `git checkout` to master and `git merge` branch
-       * Resolve conflicts in VS Code.
+Total time: 2 hours
 
-15. Fetch
+* 60 minutes - pre-session: overview of branching and merging with git
+* 20 minutes - explain: recap learning and introduce Source Tree
+* 30 minutes - explore: create and use a repo on GitHub
+* 10 minutes - elaborate: regroup and review
 
-     * Changes are fetched from master back into your local master branch. This is important to stay up to date with changes other people may be making.
-     * `git checkout` to your local master branch and then `git fetch` to get the changes from the server.
+## Pre-session (60 minutes)
 
-16. **Try it** - NTs make and push changes, then merge branch, fetch changes from master to another branch.
+### Overview on Git and working with branches
 
----
-## Review and Git best practices (15 min)
+Watch this video [GIT: working with branches](https://www.youtube.com/watch?v=JTE2Fn_sCZs)
 
-1. Room discussion - What worked? Where did you get stuck?
-     * Address trouble areas
+* Why branches?
+* Creating a branch
+* Working from a branch
 
-2. Git best practices
-     * It takes practice
-     * Keep commits light - it's good to save often and keep the change set small, it'll be easier to merge
-     * Take a minute to review your changes before checking-in - more time will be spent on debugging, diff tools make it easier to quickly glance
+### Overview of Git merge
 
-3. Next up: undoing, merge conflicts, pull requests
-     * The first super power of Git is branches, the second is being able to undo your changes.
-     * There are a few different strategies for undoing and more to talk about in collaborative coding.
+Watch this video [GIT: merging and workflow](https://www.youtube.com/watch?v=0iuqXh0oojo)
 
-## Git free time - branch, commit, push, pull, merge (15 minutes)
+* Why merging?
+* Overview of branches in real world development
 
-1. Spend the rest of time practicing and exploring Git.
-2. Try - Adding your name and alias
-     * Clone TNT repository 
-     * Create a branch and add your name and alias to the txt file
-     * Save, stage, and commit your change
-     * Checkout to master and merge branch into master
-     * Pull changes
-     * Push changes
-     * Look at the changes in GitHub, check out the branches and commits
-     * Look at the changes in SourceTree, check out the branches and commits
-     * Look at the source control tab in VS Code, check out the file diffs
-3. By the end of the lesson you should have a repository that shows a history of changes, branches, merges.
-4. If you get stuck or discover something cool, share it with a neighbor.
+### Collaborate with Git module
+
+Complete this learning module - [Edit code through branching and merging in Git](https://docs.microsoft.com/en-us/learn/modules/branch-merge-git/)
+Use the sandbox for this exercise to preserve your local git configuration.
+
+* Create branches with git
+* Merge branches with git
+
+## Session set up
+
+* GitHub - create repository in group from NameandFavFood demo in Samples
+* Source Tree installed and ready to go
+
+## Lesson details
+
+### Recap learning (30 minutes)
+
+1. Demo: cloning, branching, committing a repo from GitHib.
+    1. We're going to review the basics of creating a branch and merging using GitHub.
+    2. With Git Bash, clone the NameandFavFood repository.
+    3. Create a new branch and check out to the branch.
+    4. Open and edit the file in VS Code, adding name and favorite food.
+    5. Commit the changes to the branch.
+    6. Open a pull request to merge to master.
+    7. In VS Code look at the pull request and complete the pull request.
+    8. From master, make a change in GitHub added a fictitious name and food.
+    9. From VS Code on the branch, make a change adding a different change
+
+2. Best practices to resolve and reduce merge conflicts
+    1. Git attempts to resolve differences in code. Merge conflicts occur when Git is unable to resolve the differences. This occurs when there are changes made to the same part of the same file on two different branches.
+    2. Before attempting to merge, make sure any work in progress is either committed or merged. If you need to `git merge --abort` this will prevent you from loosing changes.
+    3. Take a minute (or several) to understand the conflict. This will help you pick a solution to resolve the conflict.
+    4. Decide what code should be included in master after the merge.
+    5. Fetch from master and pull intro your branch frequently to stay in sync.
+    6. Plan the work. Breakdown who is working on what and what may conflict.
+
+3. Using Source Tree
+    1. Source Tree is a tool that shows repository history and actions visually.
+    2. It has quick commands to branch and merge.  
+    3. **To-DO: add source tree demo**
+
+### Try it: add name and favorite food to the list (20 minutes)
+
+1. Together we're going to create a whole bunch of merge conflicts.
+2. Clone the NameandFavFood repository.
+3. Create a branch named using Source Tree "firstnameLastInitial", for example "MichaelS".
+4. Make a change adding your name, favorite food to the list. "Michael, soft pretzels".
+5. Commit the change to your branch.
+6. Make a pull request to push the changes.
+7. Merge the branch and resolve the merge conflicts.
+    * Be mindful not to delete other people's response
+    * You may have to deal with merge conflicts more than once through this process.
+8. Delete your branch when you're done
+
+### Regroup and review (10 minutes)
+
+1. Take a look at the repository commit history, look at all the changes!
+2. At branches or pull requests outstanding?
+3. Poll the room - what made this difficult? What helped?
+
+## Stretch
+
+* Checkout learning modules on GitHub: [Managing merge conflicts](https://lab.github.com/githubtraining/managing-merge-conflicts) or [Ramp up on Git and GitHub](https://lab.github.com/githubtraining/paths/ramp-up-on-git-and-github)
