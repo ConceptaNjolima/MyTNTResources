@@ -1,3 +1,42 @@
+# Branching, merging, and merge conflicts
+
+This lesson introduces branching for team collaboration. This is how you work together on projects!
+
+## Learning objectives
+
+* TNTs will understand the basic of branching, merging, and resolving conflicts.
+* TNTs will learn what is a merge conflict, what causes them, how to resovle and reduce
+* TNTs will be able to create and merge a branch locally and with GitHub.
+
+## Time required and pace
+
+Total time: 2 hours
+
+* 55 minutes - pre-session: Edit code through branching and merging in Git
+* 20 minutes - explain: recap learning
+* 30 minutes - explore: create and use a repo on GitHub
+* 15 minutes - elaborate: review trouble spots
+
+## Pre-session
+
+### Collaborate with Git
+
+Complete this learning module - [Collaborate to Git](https://docs.microsoft.com/en-us/learn/modules/collaborate-with-git/)
+Use the sandbox for this exercise to preserve your local git configuration.
+
+* Clone a repository
+* Introduction to pull requests
+* Stash changes
+* Push changes
+
+![Cloud shell Git repo](cloudShellGitRepos.png)
+
+## Session set up
+
+* GitHub - ready to make and clone a remote repository
+
+## Lesson details
+
 11. **Demo** - cloning, branching, committing a repo from GitHib.
 
      * *Add steps for command line*
@@ -75,3 +114,7 @@
      * Look at the source control tab in VS Code, check out the file diffs
 3. By the end of the lesson you should have a repository that shows a history of changes, branches, merges.
 4. If you get stuck or discover something cool, share it with a neighbor.
+
+## Stretch
+
+* Checkout learning modules on GitHub: [Managing merge conflicts](https://lab.github.com/githubtraining/managing-merge-conflicts) or [Ramp up on Git and GitHub](https://lab.github.com/githubtraining/paths/ramp-up-on-git-and-github)
