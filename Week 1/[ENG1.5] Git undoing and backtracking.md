@@ -10,9 +10,9 @@ This lesson reiterates the basics for fixing with Git when something goes awry.
 
 ## Time required and pace
 
-Total time: 45 minutes
+Total time: 50 minutes
 
-* 10 minutes - engage: opening activity
+* 15 minutes - engage: practice explaining git
 * 20 minutes - explain: revisit tactics for backtracking and undoing with git
 * 15 minutes - explore and elaborate: specific activity
 
@@ -27,7 +27,23 @@ None
 
 ## Lesson details
 
-### [opening activity] (10 minutes)
+### Practice explaining Git (15 minutes)
+
+Thinking through how Git works and explaining to others is a good way to cement Git understanding. Git is also a common tool and skill in the industry. Questions related to git may come up in an interview.
+
+1. In your team, each person select one of the following questions to answer:
+    * What is Git?
+    * What are some advantages of using Git?
+    * How can you create a repository in Git?
+    * What is `git add` used for?
+    * What is a commit message?
+
+2. Write a two part answer. Part A, the answer to the question. Part B, an example that elaborates on the definition.
+    * Question: What is the difference between Git and GitHub?
+    * A: Git is a version control system that manages and tracks source code history. GitHub is a cloud-based hosting services for managing Git Repositories.
+    * B: Git can be used with local repositories and other cloud hosting repositories like GitLab or BitBucket. The cloud hosting services like GitHub support Git and introduce more features that support team development life cycle, with a graphical user interface, control, and task-management tools.
+
+3. Post your answer into your team and discuss.
 
 ### Revisit tactics for backtracking and undoing with git (20 minutes)
 
