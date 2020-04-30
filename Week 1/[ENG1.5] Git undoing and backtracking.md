@@ -13,10 +13,8 @@ This lesson reiterates the basics for fixing with Git when something goes awry.
 Total time: 45 minutes
 
 * 10 minutes - engage: opening activity
-* 20 minutes - explain
-* 30 minutes - explore: specific activity
-* 15 minutes - elaborate: review trouble spots
-* 15 minutes - evaluate: specific Wactivity to demonstrate understanding
+* 20 minutes - explain: revisit tactics for backtracking and undoing with git
+* 15 minutes - explore and elaborate: specific activity
 
 ## Pre-session
 
@@ -24,7 +22,8 @@ None
 
 ## Background / review
 
-[Resources for instructors, coaches, and students for ramp up or additional learning]
+* Git Bash
+* VS Code
 
 ## Lesson details
 
@@ -51,5 +50,13 @@ We'll cover three scenarios: amending a commit, recovering a deleted file, and r
     2. `git revert HEAD` makes a change that's exactly the oppositely of the last commit.
     3. `git reset --hard HEAD^` removes the most recent commit and history
 
-## Stretch
-[Links and other projects for further learning and exploration]
+### Practice backtracking and undoing (15 minutes)
+
+In this activity complete the three scenarios, amending a commit, recovering a deleted file, and reverting a commit. Post on Teams if you're blocked or have a tip to share.
+
+1. Make a new directory, add some sample files, and begin tracking with git.
+2. Edit the files in VS Code. Make several (3-5) commits.
+3. Amend your last commit.
+4. Delete a file. Restore the file.
+5. Make another commit.
+6. Revert the commit.
