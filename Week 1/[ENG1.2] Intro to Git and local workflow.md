@@ -109,7 +109,7 @@ After checking the git version number, skip the rest of the Configure Git exerci
 
 ### Create repo and edit in VS Code (10 minutes)
 
-This practice reinforces using the git command line and VS Code together.
+This practice reinforces using the Git command line and VS Code together.
 
 1. Start this practice by creating a new directory with Git Bash. Add two files.
 2. Open the work space in VS Code.
