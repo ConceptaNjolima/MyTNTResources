@@ -39,6 +39,8 @@ Pre-reqs
 
 ### People behind the products (10 minutes)
 
+NTs watch the video on their own and then regroup for hte VS Code Tour and TS intro.
+
 1. Visual Studio Code (VS Code) is the integrated development environment we'll use to build apps. It's built by Microsoft and was released in 2015.
 2. It represents a significant change in how Microsoft builds and ships products.
     * It's lightweight and customizable, you can install what you need to use.
