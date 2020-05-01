@@ -28,7 +28,7 @@ Deck: **add link**
 
 ## Lesson details
 
-This lesson will be kicked off by PM coaches from the building. It builds real world connection with the PM role and the work is directly applicable to the prototype. Coaches should check in on progress and have NTs share their research.
+This lesson will be kicked off by PM coaches from the building.
 
 ### Practice listening (10 minutes)
 
@@ -70,26 +70,28 @@ Details are in the deck. The deck:
 NTs work in their teams to kick off the empathize phase.
 
 1. Spend a few minutes digesting the problem statement together. Share - are you excited? Hoping for something else?Questions on what it means or clarification?
-2. Dive into the methods shared in the explain section. Split them up and work individually or in pairs to get start them.
-    * Take notes in OneNote as you go. Best practice is to create a page for each.
+2. Dive into the strategies shared in the explain section. Split them up and work individually or in pairs for the interview exercise.
+    * Take notes in OneNote as you go.
 3. Reach out on Teams if you're blocked or have a question.
 
 ### Check-in (10 min)
 
-* Regroup as a building
+* Regroup as a building.
 * Any questions? What has worked well? Where are you blocked?
 
 ### Continue and combine (50 minutes)
 
 * Keep on with the investigations, consider switching methods within your team
-* Leave 15-20 to summarize your findings. Post three major pain points you've identified in the building Team channel.
+* Leave 15-20 to summarize your findings. Create an empathy map and post three major pain points you've identified in the building Team channel.
   * Regroup as a team
   * Walk through your findings together, build on one another and expand, don't shut anything down
+  * Pull your research together into an empathy map
   * Look for common trends in pain points
 * Share with your coaches
 
 ## Stretch
 
-Additional resources for brainstorming:
-* 1
-* 2
+More on empathy and strategies for building empathy:
+
+* 1 [What is empathy in design thinking](https://careerfoundry.com/en/blog/ux-design/what-is-empathy-in-design-thinking/)
+* 2 [Design Thinking: getting started with empathy](https://www.interaction-design.org/literature/article/design-thinking-getting-started-with-empathy)
