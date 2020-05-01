@@ -10,7 +10,7 @@ This session introduces the basics user interviews and usability testing in prep
 
 ## Time required and pace
 
-Total time: 1.5 hour
+Total time: 1 hour and 40 minutes
 
 * 10 minutes - engage: leading questions
 * 20 minutes - explain: user interview and usability testing basics
@@ -30,9 +30,11 @@ Deck:
 
 This lesson will be led by PM coaches from the building.
 
+### Leading questions
+
 ### User interview and testing basics
 
-This information is in the deck.
+This information is in the deck. It defines usability testing and user interviews, walks through the process of preparing for an interview, and demos conducting an interview.
 
 ### Draft interview guide (30 min)
 
