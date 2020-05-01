@@ -15,7 +15,7 @@ Total time: 1.30 hour
 * 10 minutes - engage: draw
 * 30 minutes - explain: introduction to prototyping
 * 50 minutes - explore: create paper prototype walkthrough
-* 
+* 30 minutes - explore: combine walkthroughs
 * [After] - evaluate: practice and feedback with coaches
 
 ## Background / review
