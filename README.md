@@ -57,8 +57,8 @@ React | UI Debugging | Component libraries |
 
   Week 1 | Week 2 | Week 3 | Week 4 | Week 5
 --- | --- | --- | --- | ---
-Intro to VS Code | Redux and Flux | Unit testing with Jest |  |
-Intro to TypeScript syntax, datatypes, structure | |  |  |
+Intro to VS Code | Intro to Redux | Unit testing with Jest |  |
+Intro to TypeScript syntax, datatypes, structure | Redux and Flux |  |  |
 | Creating a new app and React | | | | 
 
 
@@ -69,8 +69,8 @@ Individual and team deliverables that span and unite concepts across the curricu
 
 Week 1 | Week 2 | Week 3 | Week 4 | Week 5
 --- | --- | --- | --- | ---
-To Do - all the basics | Simon Says - state management and Redux | YourShare - team engineering | | 
- Idea pitch | User feedback barbecue | Spec | | 
+To Do - all the basics | To Do - with Redux basics | YourShare - team engineering | | 
+ Idea pitch | User Feedback Jamboree | Spec | | 
  | | | |  
 
 ## References
