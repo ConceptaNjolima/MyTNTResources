@@ -2,15 +2,6 @@
 # Introduction
 Web development curriculum for The New Technologist Summer Academy - Welcome to the TNT curriculum. The course introduces web app development with TypeScript and React using Visual Studio Code, Git, and GitHub combined with a design sprint, product thinking, and project management. New Technologists use these skills to build incredible prototype applications. The course is infused with the experience of TNT mentors and coaches, connecting what's learned back to industry product development.
 
-## TODO
-* *Add project section*
-* *Add quick cheat sheets - Git... others?*
-* *Order lessons*
-* *What's the voice? Narrating to the instructors?*
-* *Public repo so TNTs can edit, contribute without associating GitHub ID with MSFT?*
-* *Use both npm and yarn?*
-* *Presentation format, decks to accompany?*
-
 ## How to use these materials
 * **Instructors** - this course is the day by day lesson plan.
 * **Coaches** - this is a map to connect where teams are at throughout the program.
