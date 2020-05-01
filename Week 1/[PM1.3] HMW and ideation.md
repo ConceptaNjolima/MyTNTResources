@@ -69,10 +69,10 @@ Bring the openness to the ideation today.
 
 2 x Crazy 8s
 
-1. Fold a paper into eight sections.
+1. Fold a paper into eight sections and pick one of the problem statements start with.
 2. Start a timer for 5 minutes. Draw something in each section.
 3. Regroup as a team and share each section.
-4. Repeat!
+4. Repeat (with the other problem statement)!
 
 Wrap up:
 

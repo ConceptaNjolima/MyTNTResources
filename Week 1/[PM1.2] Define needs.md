@@ -41,7 +41,7 @@ This warm up is gets you ready to draw.
 4. Everyone on your team must draw at least three times.
 5. When times up, tack a screenshot and post it to the group Team's channel.
 
-### Target audience, user journey mapping (30 min)
+### Target audience, user journey mapping, intro to problem statements (30 min)
 
 This content is covered in the deck. The goal is to provide strategies to define who you're building for and describe there experience today. This will then feed into refining the problem statement.
 
