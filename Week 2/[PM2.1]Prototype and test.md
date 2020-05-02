@@ -1,12 +1,13 @@
-# Prototype and validate
+# Prototype and test
 
 NTs explore some of their problem statement ideas through prototyping. It introduces the value of prototyping and various methods, starting with low fidelity options.
 
 ## Learning objectives
 
 * TNTs will learn how to build a paper prototype.
-* TNTs will be introduced to tools for additional prototyping.
+* TNTs will be introduced to tools for prototyping.
 * TNTs will understand how prototyping fits into the product life cycle.
+* TNTs will learn how to and practice testing a prototype.
 
 ## Time required and pace
 
