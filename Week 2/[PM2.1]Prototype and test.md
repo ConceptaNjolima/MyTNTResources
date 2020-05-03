@@ -1,12 +1,13 @@
-# Prototype and validate
+# Prototype and test
 
 NTs explore some of their problem statement ideas through prototyping. It introduces the value of prototyping and various methods, starting with low fidelity options.
 
 ## Learning objectives
 
 * TNTs will learn how to build a paper prototype.
-* TNTs will be introduced to tools for additional prototyping.
+* TNTs will be introduced to tools for prototyping.
 * TNTs will understand how prototyping fits into the product life cycle.
+* TNTs will learn how to and practice testing a prototype.
 
 ## Time required and pace
 
@@ -32,7 +33,7 @@ Warm up exercise to being drawing.
 
 ### Introduction to prototyping (20 min)
 
-Details are in the deck. The phases of the design sprint are revisited. The role of UX designer is introduce. Prototyping and the value of prototyping is introduced. Three methods - drawing, low-fidelity mockup, high-fidelity interactive prototypes are discussed. Large screen vs. small screen considerations are discussed. The goal for the prototype and the User Feedback Jamboree is set.
+Details are in the deck. The phases of the design sprint are revisited. The role of UX designer is introduce. Prototyping and the value of prototyping is introduced. Three methods - paper, low-md fidelity mockup, high-fidelity interactive prototypes are discussed. Large screen vs. small screen considerations are discussed. The goal for the prototype and the User Feedback Jamboree is set.
 
 ### Create paper prototype walk through (50 min)
 
@@ -51,4 +52,4 @@ Regroup as a team and share your walkthroughs.
 
 ## Stretch
 
-[To-add: Other methods for prototyping]
+[A guide to paper prototyping & testing for web interfaces](https://medium.com/digital-experience-design/a-guide-to-paper-prototyping-testing-for-web-interfaces-49e542ba765f)
