@@ -21,8 +21,8 @@ The course is applied to the to the application development process, end to end,
 
 Week 1 | Week 2 | Week 3 | Week 4 | Week 5
 --- | --- | --- | --- | ---
-Intro to PM and design sprint | Usability and interviewing | Walkthrough | Iterate | Pitch
-Empathize with users | Prototype and test | Spec | Hallway usability |
+Intro to PM and design sprint | Usability and interviewing | Walkthrough | Hallway usability |
+Empathize with users | Prototype and test | Spec | |
 Define needs | Value prop and pitch | | | 
 HMW + Ideation | Competitor audit | | | 
 
@@ -60,9 +60,10 @@ Individual and team deliverables that span and unite concepts across the curricu
 
 Week 1 | Week 2 | Week 3 | Week 4 | Week 5
 --- | --- | --- | --- | ---
-To Do - all the basics | To Do - with Redux basics | YourShare - team engineering | | 
- Idea pitch | User Feedback Jamboree | Spec | | 
- | | | |  
+To Do - all the basics | To Do - with Redux basics | YourShare - team engineering | Final presentation intro| Presentation practice
+ Idea pitch | User Feedback Jamboree | Spec | | App demo
+ | | | | App summary
+ | | | | Final presentation
 
 ## References
 Quick guides describing tech stack, Git, acronyms, and other useful topics.
