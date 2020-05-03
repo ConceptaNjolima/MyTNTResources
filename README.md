@@ -62,8 +62,8 @@ Week 1 | Week 2 | Week 3 | Week 4 | Week 5
 --- | --- | --- | --- | ---
 To Do - all the basics | To Do - with Redux basics | YourShare - team engineering | Final presentation intro| Presentation practice
  Idea pitch | User Feedback Jamboree | Spec | | App demo
- | | | | App summary
- | | | | Final presentation
+ | | | | | Final presentation
+ | | | | | Presentation summary
 
 ## References
 Quick guides describing tech stack, Git, acronyms, and other useful topics.
