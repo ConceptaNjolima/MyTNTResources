@@ -60,7 +60,7 @@ Individual and team deliverables that span and unite concepts across the curricu
 
 Week 1 | Week 2 | Week 3 | Week 4 | Week 5
 --- | --- | --- | --- | ---
-To Do - all the basics | To Do - with Redux basics | YourShare - team engineering | Final presentation intro| Presentation practice
+To Do - all the basics | YourShare - team engineering | To Do - with Redux basics | Final presentation intro| Presentation practice
 | | User Feedback Jamboree | Spec | | App demo
  | | | | | Final presentation
  | | | | | Presentation summary
