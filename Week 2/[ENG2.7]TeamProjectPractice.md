@@ -7,12 +7,11 @@ TNTs will understand how to scope work.
 TNTs will practice merging and resolving merge conflicts.
 
 ## Time required and pace
-Total time: 5hrs hour, 45 instruction, remaining work time
-* 20 minutes - engage: revisit best practices for resolving merge conflicts
+Total time: 3 hours, 45 instruction, remaining work time
+* 10 minutes - engage: revisit best practices for resolving merge conflicts
 * 20 minutes - explain: introduce the spec, scoping, and breaking down work
-* 3 hours - explore: during work time teams break down the engineering work and review with coaches, create and check-in first changes, resolve merge issues
-* 10 minutes - elaborate: review trouble spots
-* 1 hour - evaluate: NTs finish initial changes and resolve merge issues
+* 1 hours - explore: during work time teams break down the engineering work and review with coaches, create and check-in first changes, resolve merge issues
+* 1.5 hour - evaluate: NTs finish initial changes and resolve merge issues
 
 ## Background / review
 * *Monday Spec intro presentation*
