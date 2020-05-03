@@ -45,6 +45,8 @@ Looking at other products, how existing solutions on the market meet the same ne
   * Threats: What obstacles do you face? What are competitors doing to meet the emerging user needs?
 * Pitch -  a competitor analysis can help refine your app value prop and pitch. It allows you to both acknowledge how others are addressing customer needs and speak to why yours is better, amazing, and incredible.
 
+This can be part of both the Empathize and Ideate design phases. It expands your understanding of what users do today and can inspire wider ideation.
+
 Here's an outline on how to get started and conduct a competitor audit:
 
 1. Before diving in and looking at competitors think about what you want to learn. Some questions to consider:
