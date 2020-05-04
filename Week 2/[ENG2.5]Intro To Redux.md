@@ -6,70 +6,130 @@ This lesson explains what redux is and how to use it in a practical scenario.
 
 * TNTs will understand the importance of redux
 * TNTs will learn how the store, reducer and actions work together
-* TNTs will be able to use Redux
+* TNTs will have a basic understanding of redux
 
 ## Time required and pace
 
-Total time: 1.5 hour
+Total time: 1 hour
 
-* 30 minutes – explain why we need redux
+* 45 minutes – explain what is redux and the benefits
 * 15 minutes - rules to follow for easier development
-* 30 minutes – walkthrough of adding redux to list app
 
 ## Background / review
 
 ## Lesson details
 
-### Redux description(30 minutes)
+### Redux description (45 minutes)
 
-1. What is redux and why do we need it:
-   * Redux is a state management container similar to the state you're familiar with in react. 
-   * So far you've only been exposed to immutable properties passed into components and mutable states changed within components.
-   * What if we need to pass a mutable property between components, change said property and have the change affect different components.
-   * Redux lets us keep a state that persists through out the app and can be accessed by every component
+What is redux and why do we need it:
 
-2. Four basic parts of redux:
-    * Connect-This is used to connect our component's properties to the state
-    * Actions-This is a function used to change the state
-    * Store-This is the state object that exists throughout the app
-    * Reducer-This is a collection of functions that map actions to the State
+* Redux is a state management container similar to the state you're familiar with in react.
+* So far you've only been exposed to immutable properties passed into components and mutable states changed within components.
+* What if we need to pass a mutable property between components, change said property and have the change affect different components.
+* Redux lets us keep a state that persists through out the app and can be accessed by every component
 
-    ![ReduxDataFlow](./redux-data-flow.png)
+There are four basic parts of redux. Let's go over what each part does and an example of what it looks like:
 
-3. Store
-    * The store is just a normal object (key-value pair) like you've already been exposed to.
-    * The store is generally defined once at the top of your app by calling in createStore(). It takes in one argument, your reducer and returns a state.
-    * It's an immutable object that can be referenced anywhere in your app.
-    * The state is referenced by calling mapStateToProps or mapDispatchToProps.
+#### Connect
 
-4. Reducer
-   * This is a function that returns a state object.
+This is used to connect our component, property maps and action maps to the store
+
+```js
+import { connect } from 'react-redux'
+import { increment, decrement, reset } from './actionCreators'
+
+// Map store properties to component properties
+const mapStateToProps = (state /*, ownProps*/) => {
+  return {
+    counter: state.counter
+  }
+}
+
+// An object full of action creators
+const mapDispatchToProps = { increment, decrement, reset }
+
+// Connect Counter component to the redux store
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Counter)
+```
+
+#### Actions
+
+This is a function used to change the state
+
+```js
+export function addTodo(payload) {
+  return { type: "ADD_TODO", payload }
+};
+```
+
+#### Store
+
+This is the state object (key value pairs) that exists throughout the app. The store is generally defined once at the top of your app.
+
+```js
+// Example of a state object
+const appState= {
+   todos: []
+}
+```
+
+#### Reducer
+
+The reducer ties together Actions and Store and returns a new state object. This is a collection of functions that map actions to the store.
+
+```js
+
+const initialState = {
+  todos: []
+};
+
+function reducer(state = initialState, action) {
+  if (action.type === "ADD_TODO") {
+    return Object.assign({}, state, {
+      todos: state.todos.concat(action.payload)
+    });
+  }
+  return state;
+}
+
+export default reducer;
+```
+
+#### Let's put all 4 parts together
+
+![ReduxDataFlow](./redux-data-flow.png)
 
 ### Rules to follow for easier development (15 minutes)
 
 Use interfaces instead of 'any' type
 
-1. Create an interface for your state to ensure that no reducer can put in a property that shouldn't exists
-2. Create an interface for your actions and an enum for your action types. This ensures that your reducer won't expect a property that doesn't exists on that action type.
+* Create an interface for your state to ensure that no reducer can put in a property that shouldn't exist.
 
-### How to add redux to a project (30 minutes): Add redux to list app
+```js
+export interface AppState {
+  todos: string[];
+}
+```
 
-1. -Yarn add react-redux
-   * Yarn add redux
-   * Yarn add @types/react-redux
+* Create an interface for your actions and an enum for your action types. This ensures that your reducer won't expect a property that doesn't exist on that action type.
 
-2. Create a **reducer** : a function that takes in a state and action and returns a state.
-   * Create the **store** using the reducer at the top of the app.
+```js
+// Action Types
+export const ADD_TODO = "ADD_TODO"
 
-3. Create an action to modify the state.
-   * Define the action's behavior in the reducer.
+export interface AddToDoAction extends Action {
+   type: typeof ADD_TODO,
+   payload: string
+}
 
-4. Wrap the App component in a connect call
-   * Define mapStateToProps(gets the state's values) and mapDispatchToProps(modifies the state's values)
-   * Add the props to get/change the state in the App Component.
-   * Use the container in index.js
-   * We can now change the App component to use our new props
-
-## Stretch
-
-* Move all states in your list app to redux state
+// Action Creators
+export function addToDo(payload: string) {
+   return {
+      type: ADD_TODO,
+      payload: payload
+   }
+}
+```
