@@ -29,7 +29,7 @@ Checkout [ENG 2.6] Branching, merging, and merge conflicts for a refresher.
 
 ### Introduce spec, scoping, and breaking down work (20 min)
 
-1. For this project NTs will be provided with a spec. Spec, short for specification, is a description of the app and it's functionality. It defines what is being built, while capturing the essentials of why it's being built and how.
+1. For this project NTs will be beak down the work in the sample spec, short for specification, is a description of the app and it's functionality. It defines what is being built, while capturing the essentials of why it's being built and how.
 
 2. There are two steps to the project:
     * By breaking down the engineering work.
@@ -40,20 +40,22 @@ Checkout [ENG 2.6] Branching, merging, and merge conflicts for a refresher.
 
 ### Breakdown engineering work
 
-1. To break down the engineering work consider what are the pieces it will take to build the user story or functionality. For the prototype purposes, consider what you can show in the UI that would later be back by real integration with other API's or services. For example, it might be out of scope for the prototype to introduce authentication flows. Instead use text boxes to mimic a sign-in experience.
-2. After breaking down the work, assign the engineering work items. Make sure everyone has a significant contribution to building the app. A good starting place is to have people write down which pieces they'd like to work on then compare. Consider your strengths and the strengths of your team.
-3. After you've broken down the work, review with your coaches. Once you have sign-off from your engineering coach you can start building.
+Find the sample spec - YourShare in the Reference folder.
+
+1. Create a new GitHub repository for your team and put a copy of the spec in your repo.
+2. To break down the engineering work consider what are the pieces it will take to build the user story or functionality. For the prototype purposes, consider what you can show in the UI that would later be back by real integration with other API's or services. For example, it might be out of scope for the prototype to introduce authentication flows. Instead use text boxes to mimic a sign-in experience.
+3. After breaking down the work, assign the engineering work items. Make sure everyone has a significant contribution to building the app. A good starting place is to have people write down which pieces they'd like to work on then compare. Consider your strengths and the strengths of your team.
+4. After you've broken down the work, review with your coaches. Once you have sign-off from your engineering coach you can start building.
 
 ### Code, branch, merge and resolve conflicts
 
 Here are some tips getting stared on the team development of YourShare:
 
-1. Create a GitHub repository with an initial commit.
-2. Everyone clone the master repository locally.
-3. Everyone creates a new branch for their user story.
-4. To get started, one persons starts a new app with Create React App in a branch, merges the branch.
-5. Update your local master branch and merge it into your branch.
-6. Work on your user story, commit frequently, push, merge back into master in functional chunks. Fetch from mast frequently and merge into your branch.
-7. When you hit a merge conflict, debug to together.
-8. Once you have the basics flow of the app in and can click between the screens, your done! Make the final merges and delete your branches.
-9. In the real world you'd pick up new user stories and begin again.
+1. Everyone clone the repository locally.
+2. Everyone creates a new branch for their user story.
+3. To get started, one persons starts a new app with Create React App in a branch, merges the branch.
+4. Update your local master branch and merge it into your branch.
+5. Work on your user story, commit frequently, push, merge back into master in functional chunks. Fetch from mast frequently and merge into your branch.
+6. When you hit a merge conflict, debug to together.
+7. Once you have the basics flow of the app in and can click between the screens, your done! Make the final merges.
+8. In the real world before moving to the next user story you would implement the full functionality described in the spec for the user story. We're stopping here for time.
