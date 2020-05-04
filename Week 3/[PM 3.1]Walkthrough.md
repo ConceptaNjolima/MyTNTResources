@@ -30,6 +30,9 @@ Total time: 2 hours
 ## Lesson details
 
 [Instruction]
+Define your walk through with scenarios or user stories
+* Solution agnostic
+* Walkthrough shows the how
 
 ## Stretch
 

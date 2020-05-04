@@ -76,7 +76,8 @@ Here's an outline on how to get started and conduct a competitor audit:
 5. Create a SWOT (Strength, Weaknesses, Opportunities, Threat) diagram.
     * A SWOT diagram is a tool for concisely compiling your competitor audit.
     * *Hint*: a table is an easy way to layout the information.
-     ![SWOT diagram](SWOT_table.png)
+
+        ![SWOT diagram](SWOT_table.png)
 
 ### Conduct competitive research and SWOT diagram (45 minutes)
 
