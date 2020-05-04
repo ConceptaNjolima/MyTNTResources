@@ -21,8 +21,8 @@ The course is applied to the to the application development process, end to end,
 
 Week 1 | Week 2 | Week 3 | Week 4 | Week 5
 --- | --- | --- | --- | ---
-Intro to PM and design sprint | Usability and interviewing | Walkthrough | Iterate | Pitch
-Empathize with users | Prototype and test | Spec | Hallway usability |
+Intro to PM and design sprint | Usability and interviewing | Walkthrough | |
+Empathize with users | Prototype and test | Spec | |
 Define needs | Value prop and pitch | | | 
 HMW + Ideation | Competitor audit | | | 
 
