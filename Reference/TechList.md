@@ -1,4 +1,4 @@
-# This is a summarry of the tech and quick links to intsall and reference
+# This is a summary of the tech and quick links to install and reference
 
 | Technology / Tooling | Solution |
 |---|---|
