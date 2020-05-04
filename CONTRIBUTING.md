@@ -13,9 +13,9 @@ Submit pull requests for spelling, grammar, clarity, and additional resources in
 
 Open an issue for concept changes or introductions, for proposals of additional topics to cover,  questions about why a certain tool or technology was selected or not selected for inclusion in the curriculum, or changes to the design phases curriculum decks. This will kick of a discussion and we'll choose a course of action from the resolution.
 
-## Questions about an assignment or expectation
+## Questions about a deliverable
 
-First reach out to instructors and coaches, especially if it is about your particular work or project. They will be able to unblock you quickly. If you think the general instructions are unclear or out of date submit a pull request or open an issue.
+First reach out to instructors or coaches, especially if it is about your particular work or project. They will be able to unblock you quickly. If you think the general instructions are unclear or out of date submit a pull request or open an issue. (See above for details.)
 
 ## Want to contribute more
 
