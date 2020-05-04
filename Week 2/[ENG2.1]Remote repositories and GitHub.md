@@ -88,3 +88,13 @@ In your team's Team channel, discuss:
 
 * What went well?
 * What was difficult?
+
+## Wrap up
+
+Create a repository on GitHub for your to-do app and move your local repository to GitHub.
+
+1. Prepare your repository to move. Commit any pending changes.
+2. Create a new repository in GitHub in the TNT organization, not a private repository. Name the repository your alias-todo.
+3. Follow the instructions provided by GitHub "..or push an existing repository from the command line".
+
+As you continue to build on the to-do app in future activities, use the remote repository.

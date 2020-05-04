@@ -66,7 +66,7 @@ Regroup as team, what's going well, what are you blocked on
 ### Continue list app and push to GitHub (45 minutes)
 
 1. Try completing functionality
-2. Commit and Push to GitHub as you go
+2. Commit to your local repository as you go.
 3. End of lesson, final Push and comment on what you learned and what was challenging
 
 ### Steps

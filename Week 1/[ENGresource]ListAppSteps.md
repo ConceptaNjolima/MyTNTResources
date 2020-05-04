@@ -8,19 +8,19 @@ _PreReq: variables, constants, arrays, array-methods(maps, length, etc)_
     - In Index.tsx, map App in App.tsx to App id in index.html
 4. Add state to App
     - Create interface and state
-    - Replace list with state&#39;s list
+    - Replace list with state's list
 5. Add input
     - Add Form And input
-    - Alert input&#39;s value on submit
-    - And try to show input&#39;s value in list (should'nt update because input is a variable not in state hence no rerender. Explain that the value change but the app didn't rerender)
+    - Alert input's value on submit
+    - And try to show input's value in list (shouldn't update because input is a variable not in state hence no re-render. Explain that the value change but the app didn't re-render)
 6. Add new item to list
     - Change submitForm to update array.
-    - --- Explain thatsetstae causes rerender
+    - --- Explain thatsetstae causes re-render
     - --- Explain why we prevent default( so we don't refresh the page)
     - --- Explain why we make a newArray (reference vs copy)
 7. TODO: make listItem component to learn passing props
 
-**Extra Tasks for students:**
+**Stretch tasks for:**
 
 Add new item button
 
