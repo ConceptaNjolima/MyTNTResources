@@ -5,7 +5,7 @@ Web development curriculum for The New Technologist Summer Academy - Welcome to 
 
 ## Under construction
 
-You may notice some to-dos left in the curriculum ans some lessons and samples in the works. Here's what's still under construction:
+You may notice some to-dos left in the curriculum and some lessons and samples in the works. Here's what's still under construction:
 
 * Adjustments for remote TNT program - big change for the program this summer, the curriculum will under go some changes to optimize for a work from home structure.
 * Day by day schedule - this will be part of the remote work adjustments, right now the topics of ordered.
