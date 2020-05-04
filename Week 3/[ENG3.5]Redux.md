@@ -5,20 +5,20 @@ This lesson goes more in depth on Redux including how to debug redux, applying m
 ## Learning objectives
 
 * TNTs will get a recap on basics of Redux
-* TNTs will understand advanced topics of Redux
-* TNTs will understand what middleware
-* TNTs will how view redux store with debugging tools
+* TNTs will understand Redux in depth
+* TNTs will understand what middleware is
+* TNTs will get an introduction to redux devtools to help with redux debugging
 * TNTs will add redux to the To Do app
 
 ## Time required and pace
 
-Total time: 1.5 hours
+Total time: ~ 2 hours
 
 * 10 minutes - recap of redux
 * 20 minutes - redux in depth
 * 20 minutes - what is middleware
 * 10 minutes - redux devtools
-* 45 minutes - add redux to To Do app
+* 45 minutes - practice
 
 ## Session set up
 
@@ -26,9 +26,11 @@ Resources for instructors
 
 Using redux: [https://react-redux.js.org/using-react-redux/connect-mapstate](https://react-redux.js.org/using-react-redux/connect-mapstate)
 
-React Devtools: [https://www.npmjs.com/package/react-devtools](https://www.npmjs.com/package/react-devtools)
+Redux devtools: [https://github.com/zalmoxisus/redux-devtools-extension](https://github.com/zalmoxisus/redux-devtools-extension)
 
 Middleware: [https://redux.js.org/advanced/middleware](https://redux.js.org/advanced/middleware)
+
+Thunk middleware: [https://github.com/reduxjs/redux-thunk](https://github.com/reduxjs/redux-thunk)
 
 ## Lesson details
 
@@ -183,9 +185,7 @@ Steps to install:
 NTs should focus on implementing one piece of Redux at a time and work their way to the complete solution
 
 1. Install react-redux
-
 2. Install redux-devtools (Optional) - See above for instructions on installation
-
 3. Implement redux in the Todo app by moving all state to redux
 
 ## Stretch
