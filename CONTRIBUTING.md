@@ -11,7 +11,7 @@ Submit pull requests for spelling, grammar, clarity, and additional resources in
 
 ## Opening an issue
 
-Open an issue for concept changes or introductions, for proposals of additional topics to cover, or questions about why a certain tool or technology was selected or not selected for inclusion in the curriculum. This will kick of a discussion and we'll choose a course of action from the resolution.
+Open an issue for concept changes or introductions, for proposals of additional topics to cover,  questions about why a certain tool or technology was selected or not selected for inclusion in the curriculum, or changes to the design phases curriculum decks. This will kick of a discussion and we'll choose a course of action from the resolution.
 
 ## Questions about an assignment or expectation
 
