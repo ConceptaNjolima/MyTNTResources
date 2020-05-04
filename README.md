@@ -1,13 +1,25 @@
 
 # Introduction
+
 Web development curriculum for The New Technologist Summer Academy - Welcome to the TNT curriculum. The course introduces web app development with TypeScript and React using Visual Studio Code, Git, and GitHub combined with a design sprint, product thinking, and project management. New Technologists use these skills to build incredible prototype applications. The course is infused with the experience of TNT mentors and coaches, connecting what's learned back to industry product development.
 
+## Under construction
+
+You may notice some to-dos left in the curriculum ans some lessons and samples in the works. Here's what's still under construction:
+
+* Adjustments for remote TNT program - big change for the program this summer, the curriculum will under go some changes to optimize for a work from home structure.
+* Day by day schedule - this will be part of the remote work adjustments, right now the topics of ordered.
+* Stretch topics - these are stretch topics that some NTs and teams will approach. Additional details and topics are still in the work.
+* Deliverable map - week by week what NTs are delivering and what coaches should check-in on, give feedback, guide
+
 ## How to use these materials
+
 * **Instructors** - lesson material
 * **Coaches** - map to connect where teams are at throughout the program
 * **New Technologists** - reference to review and expand your learning
 
 ## Overview
+
 The curriculum is divided into five threads that span five weeks.
 
 * **Product thinking** - going from a problem statement to an impactful experience and pitch, delivering as a team.
@@ -52,10 +64,10 @@ Intro to VS Code | Intro to Redux | Unit testing with Jest |  |
 Intro to TypeScript syntax, datatypes, structure | | Redux and Flux |  |  |
 | Creating a new app and React | | | | 
 
-
 *Please be advised this is approximate pacing. Topics and schedule are subject to change.*
 
 ## Projects
+
 Individual and team deliverables that span and unite concepts across the curriculum threads. Projects will be introduced throughout the weeks ending with the app prototype and pitch.
 
 Week 1 | Week 2 | Week 3 | Week 4 | Week 5
@@ -66,9 +78,11 @@ To Do - all the basics | YourShare - team engineering | To Do - with Redux basic
  | | | | | Presentation summary
 
 ## References
+
 Quick guides describing tech stack, Git, acronyms, and other useful topics.
 
 ## How to contribute
+
 Contributions are encouraged and appreciated to fix spelling, grammar, and formating. Each lesson also has a reference section where you can add your favorite learning resources. The curriculum evolves as we learn. For larger topics and changes, open an issue for discussion. See the CONTRIBUTING.md for more details.
 
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
