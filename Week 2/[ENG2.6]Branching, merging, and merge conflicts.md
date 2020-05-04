@@ -51,6 +51,8 @@ Use the sandbox for this exercise to preserve your local git configuration.
 
 ### Recap learning (30 minutes)
 
+Here's how the team development process is applied with GitHub: [Understanding the GitHub Flow](https://guides.github.com/introduction/flow/).
+
 1. Demo: cloning, branching, committing a repo from GitHib.
     1. We're going to review the basics of creating a branch and merging using GitHub.
     2. With Git Bash, clone the NameandFavFood repository.
