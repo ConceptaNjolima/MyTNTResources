@@ -1,4 +1,5 @@
-### This is a summarry of the tech and quick links to intsall and reference.
+# This is a summarry of the tech and quick links to intsall and reference
+
 | Technology / Tooling | Solution |
 |---|---|
 | Programming Language   | [HTML](https://www.w3schools.com/html/default.asp), [CSS](https://www.w3schools.com/css/default.asp), [TypeScript](https://www.typescriptlang.org/) |
