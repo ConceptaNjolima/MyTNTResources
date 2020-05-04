@@ -43,7 +43,7 @@ A walkthrough is a mockup that describes the end to end app flow. It is represen
      * It's used in the spec to represent the user stories visually and describe what works.
      * It's used to break down the engineering work. Like in the YourShare example, it's key to figuring out how features are going to be built and helps the work go smoothly.
 
-### Teams create walkthrough together (2-3 hours)
+### Teams create walkthrough together (3-4 hours)
 
 1. Start by defining the user scenarios you want to include in your walkthrough.
       * Consider the prototypes you've iterated on. Take into corporation the feedback you've gotten.

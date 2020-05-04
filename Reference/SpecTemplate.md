@@ -19,11 +19,11 @@
 
 ## In scope
 
-*Target scenarios*
+*Target  user stories / scenarios*
 
 ## Out of scope
 
-*Scenarios not included in the spec or in MVP*
+*User stories / scenarios not included in the spec or in MVP*
 
 ## UX
 
