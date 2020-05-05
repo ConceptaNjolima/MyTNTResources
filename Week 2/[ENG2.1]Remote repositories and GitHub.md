@@ -24,6 +24,8 @@ Total time: 2 hours
 Complete this learning module - [Collaborate to Git](https://docs.microsoft.com/en-us/learn/modules/collaborate-with-git/)
 Use the sandbox for this exercise to preserve your local git configuration.
 
+The module covers the following:
+
 * Clone a repository
 * Introduction to pull requests
 * Stash changes
@@ -48,21 +50,21 @@ Use the sandbox for this exercise to preserve your local git configuration.
    1. We'll now walk through the process of cloning a repository from GitHub. We'll be creating a private repository in our own accounts.
    2. [Go to GitHub](https://github.com/) and create a new repository.
    3. Make an initial commit.
-   4. With GitBash make a new directory and `git clone` using the URL provided by GitHub.
+   4. With Git Bash make a new directory and `git clone` using the URL provided by GitHub.
    5. Show the folders and open the workspace in VS Code.
 
 4. Demo: Make changes in VS Code and create a pull request
 
     1. With the folder open in VS code, add a new file and make changes to the existing file.
-    2. In Git Bash,`git .add` to stage the files.
+    2. In Git Bash, `git .add` to stage the files.
     3. `git commit` to create the commit. The changes are now committed locally.
     4. `git request-pull -p origin/master .` to create the pull request.
     5. `git push` to push the changes to the remote repo.
 
-5. Demo: Clone from VS Cod
+5. Demo: Clone from VS Code
 
     1. It's also possible to clone a repository from VS Code.
-    2. Open the palette with Ctrl+Shit+P.
+    2. Open the palette with Ctrl+Shit+P (Cmd+Shift+P for Mac OS).
     3. `Git: clone` prompts for a URL where you can paste from GitHub.
 
 6. Poll for questions
