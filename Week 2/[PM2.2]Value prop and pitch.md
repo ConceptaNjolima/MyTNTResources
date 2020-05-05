@@ -19,7 +19,7 @@ Total time: 2 hour
 
 ## Background / review
 
-Deck:
+Deck: [Product decks](https://github.com/microsoft/TNT_Curriculum/tree/master/Reference/Product%20decks)
 
 ## Lesson details
 
