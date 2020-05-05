@@ -22,9 +22,7 @@ None
 
 ## Background / review
 
-This lesson will be led by PM coach(es) from the building.
-
-* Deck: **add link**
+* Deck: [Product decks](https://github.com/microsoft/TNT_Curriculum/tree/master/Reference/Product%20decks)
 * Prepare examples from own product experience: working across the product life cycle (Framing, Defining, Delivering) working across disciplines
 
 ## Lesson details
