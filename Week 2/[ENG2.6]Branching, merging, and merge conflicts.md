@@ -68,10 +68,10 @@ Here's how the team development process is applied with GitHub: [Understanding t
 
 3. Best practices to resolve and reduce merge conflicts
     1. Git attempts to resolve differences in code. Merge conflicts occur when Git is unable to resolve the differences. This occurs when there are changes made to the same part of the same file on two different branches.
-    2. Before attempting to merge, make sure any work in progress is either committed or merged. If you need to `git merge --abort` this will prevent you from loosing changes.
+    2. Before attempting to merge, make sure any work in progress is either committed or merged. If you need to `git merge --abort` this will prevent you from losing changes.
     3. Take a minute (or several) to understand the conflict. This will help you pick a solution to resolve the conflict.
     4. Decide what code should be included in master after the merge. Make the changes to resolve the conflict.
-    5. Fetch from master and pull intro your branch frequently to stay in sync.
+    5. Fetch from master and pull into your branch frequently to stay in sync.
     6. Plan the work. Breakdown who is working on what and what may conflict.
 
 4. Using Source Tree
@@ -83,14 +83,14 @@ Here's how the team development process is applied with GitHub: [Understanding t
 
 1. Together we're going to create a whole bunch of merge conflicts.
 2. Clone the NameandFavFood repository.
-3. Create a branch named using Source Tree "firstnameLastInitial", for example "MichaelS".
+3. Using Source Tree create a branch named "firstnameLastInitial", for example "MichaelS".
 4. Make a change adding your name, favorite food to the list. "Michael, soft pretzels".
 5. Commit the change to your branch.
 6. Make a pull request to push the changes.
 7. Merge the branch and resolve the merge conflicts.
-    * Be mindful not to delete other people's response
+    * Be mindful not to delete other people's response.
     * You may have to deal with merge conflicts more than once through this process.
-8. Delete your branch when you're done
+8. Delete your branch when you're done.
 
 ### Regroup and review (10 minutes)
 
@@ -102,4 +102,4 @@ Here's how the team development process is applied with GitHub: [Understanding t
 
 * Checkout learning modules on GitHub: [Managing merge conflicts](https://lab.github.com/githubtraining/managing-merge-conflicts) or [Ramp up on Git and GitHub](https://lab.github.com/githubtraining/paths/ramp-up-on-git-and-github)
 
-* Interactive online tutorial for practicing Git Branching: {Learn Git Branching] (https://learngitbranching.js.org/)
+* Interactive online tutorial for practicing Git Branching: [Learn Git Branching](https://learngitbranching.js.org/)
