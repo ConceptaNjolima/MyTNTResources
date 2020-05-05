@@ -24,11 +24,9 @@ None
 
 ## Background / review
 
-Deck:
+* Deck: [Product decks](https://github.com/microsoft/TNT_Curriculum/tree/master/Reference/Product%20decks)
 
 ## Lesson details
-
-This lesson will be led by PM coaches from the building.
 
 ### Leading questions
 
