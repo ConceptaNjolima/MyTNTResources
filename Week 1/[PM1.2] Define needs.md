@@ -25,11 +25,9 @@ Get paper and a marker ready
 
 ## Background / review
 
-Deck:
+* Deck: [Product decks](https://github.com/microsoft/TNT_Curriculum/tree/master/Reference/Product%20decks)
 
 ## Lesson details
-
-This lesson will be led by PM coaches from the building.
 
 ### Pass draw (10 min)
 
