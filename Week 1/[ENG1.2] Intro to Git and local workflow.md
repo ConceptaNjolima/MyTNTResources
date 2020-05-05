@@ -30,7 +30,7 @@ Watch this video - [What is Git and GitHub?](https://www.youtube.com/watch?v=uUu
 ### Introduction to Git
 
 Complete this learning module - [Introduction to Git](https://docs.microsoft.com/en-us/learn/modules/intro-to-git/)
-The exercises suggests using the sandbox. Instead use Git Bash on your computer to become more familiar with on of the tools we'll be using. There are lots of tools for using Git, just like there are lots of different places to save files or programs to edit text.
+The exercises suggests using the sandbox. Instead use Git Bash on your computer to become more familiar with one of the tools we'll be using. There are lots of tools for using Git, just like there are lots of different places to save files or programs to edit text.
 
 After checking the git version number, skip the rest of the Configure Git exercise and skip to Set up your Git Repository.
 
@@ -80,8 +80,8 @@ After checking the git version number, skip the rest of the Configure Git exerci
 
 3. Demo scenario using Git Bash: creating new repo and initial commit
     1. The flow for using git starts with creating a directory (folder). The cycle as changes are made is `add` and `commit`. Small chunks as you go.
-    2. `mkdir Dogs` - create new folder named Dogs
-    3. `cd Dogs` - move to the project folder
+    2. `mkdir SampleApp` - create new folder named SampleApp
+    3. `cd SampleApp` - move to the project folder
     4. `git init` - initialize the repository
     5. `touch index.html` - create a new file
     6. `git status` - view the repository status
@@ -98,14 +98,15 @@ After checking the git version number, skip the rest of the Configure Git exerci
 5. Demo: Git in VS Code
     1. Open the workspace in VS Code. VS Code has git support built in. It doesn't have all the commands of Git Bash but is convenient when working in VS Code.
     2. Make a change in a file.
-    3. Invoke the command either View -> Command Palette or Ctrl+Shift+P.
+    3. Invoke the command either View -> Command Palette or Ctrl+Shift+P. (Cmd+Shift+P for Mac OS)
     4. Type / select "Git: stage all changes".
     5. Show the Source Control tab and the file diffs.
     6. Invoke the command pallette again and type / select "Git: commit".
     7. Check out the changes in Git Bash with `git log`
 
 6. Best practices
-    * To commit changes for all files us ".". It is a best practice to include a short and descriptive message. Your future self thanks you.
+    * To commit changes for all files us "."
+    * It is a best practice to include a short and descriptive message. Your future self thanks you.
 
 ### Create repo and edit in VS Code (10 minutes)
 
@@ -125,7 +126,7 @@ This practice reinforces using the Git command line and VS Code together.
 1. Git best practices
      * It takes practice
      * Keep commits light - it's good to save often and keep the change set small, it'll be easier to merge
-     * Take a minute to review your changes before checking-in - more time will be spent on debugging, diff tools make it easier to quickly glance
+     * Take a minute to review your changes before checking-in - more time will be spent on debugging, diff tools make it easier to quickly glance. Your teammates will thank you when it's time for them to review your merge request.
 
 2. Room discussion - What worked? Where did you get stuck?
      * Address trouble areas
