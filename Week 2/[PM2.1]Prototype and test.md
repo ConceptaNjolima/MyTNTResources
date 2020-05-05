@@ -11,7 +11,7 @@ NTs explore some of their problem statement ideas through prototyping. It introd
 
 ## Time required and pace
 
-Total time: 1.30 hour
+Total time: 2 hours
 
 * 10 minutes - engage: draw
 * 30 minutes - explain: introduction to prototyping
@@ -21,15 +21,13 @@ Total time: 1.30 hour
 
 ## Background / review
 
-Deck:
+Deck: [Product decks](https://github.com/microsoft/TNT_Curriculum/tree/master/Reference/Product%20decks)
 
 ## Lesson details
 
-This lesson will be led by PM coaches from the building.
-
 ### Draw (10 min)
 
-Warm up exercise to being drawing.
+Warm up exercise to beging drawing.
 
 ### Introduction to prototyping (20 min)
 
