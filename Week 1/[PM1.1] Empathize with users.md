@@ -24,11 +24,9 @@ None
 
 ## Background / review
 
-Deck: **add link**
+* Deck: [Product decks](https://github.com/microsoft/TNT_Curriculum/tree/master/Reference/Product%20decks)
 
 ## Lesson details
-
-This lesson will be kicked off by PM coaches from the building.
 
 ### Practice listening (10 minutes)
 
