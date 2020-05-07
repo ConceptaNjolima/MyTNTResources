@@ -41,8 +41,16 @@ This will give them a broad understanding of scale for API services
 ## Explain: What is an API service (15 minutes)
 
 * Definition of an API service
+
 * What is a RESTful API?
-* OAuth 2.0 for secure APIs
+
+* Request object
+
+  * Differences between GET, POST, PUT, DELETE
+  
+* Brief overview of OAuth 2.0 for secure APIs
+
+  * What is an access token? Bearer token? Refresh token?
 
 ![RESTAPI](./rest-api.png)
 
@@ -72,11 +80,15 @@ fetch("https://api.example.com/todos")
 
 ## Evaluate: Create a React App to use an API (45 minutes)
 
+The NTs will create a new React app that will contain a list of to dos. Before the to dos can be rendered an API request will need to be made. Once the JSON response has been received in the React app they will use the JSON response to display to dos.
+
+Encourage the use of CSS Flex box or Fluent UI to help with the layout.
+
 1. Create a new React app
 
     `npx create-react-app api-requests --template typescript`
 
-2. Use this URL for your API service URL
+2. Use this URL for your API request
 
     `https://jsonplaceholder.typicode.com/todos`
 
@@ -87,13 +99,13 @@ fetch("https://api.example.com/todos")
         {
             "userId": 1,
             "id": 1,
-            "title": "delectus aut autem",
+            "title": "Send meeting notice",
             "completed": false
         },
         {
             "userId": 1,
             "id": 2,
-            "title": "quis ut nam facilis et officia qui",
+            "title": "Learn about API services",
             "completed": true
         }
     ]
@@ -103,17 +115,19 @@ fetch("https://api.example.com/todos")
 
 ## Stretch
 
+To view additional API services available for testing: [https://jsonplaceholder.typicode.com](https://jsonplaceholder.typicode.com)
+
 1. Dynamic CSS class names
     * If a to do is marked as `completed: true` make the background green
     * If a to do is marked as `completed: false` make the background yellow
 
-2. Create a component that has one function that makes (2) API calls
+2. Create a component that has one function that executes (2) API calls
 
     The two API calls should be:
     * `https://jsonplaceholder.typicode.com/comments`
     * `https://jsonplaceholder.typicode.com/todos`
 
-    A few questions the NTs should think about:
+    A few questions the NTs should explore:
 
     * What is a composition service? And why do you need one?
     * What happens if one of the two API calls fails?
