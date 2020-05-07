@@ -52,10 +52,10 @@ The store is supplied to your App component via HOC (High Order Component)
 
 ```js
 render(
-    // Provider is a High Order Component
-    <Provider store={store}>
-        <App />
-    </Provider>,
+  // Provider is a High Order Component
+  <Provider store={store}>
+      <App />
+  </Provider>,
   document.getElementById("root")
 );
 ```
@@ -130,7 +130,7 @@ Middleware is a function that intercepts the Redux action before it reaches the 
 
 You can write your own middleware or import 3rd party component libraries such as redux-thunk: [https://github.com/reduxjs/redux-thunk](https://github.com/reduxjs/redux-thunk)
 
-Example of a middleware that inspects a string before it's added to the Redux store
+Example of a middleware that inspects a string for anything resembling a credit card number before it's added to the Redux store
 
 ```js
 import { ADD_COMMENT } from "../constants/action-types";
