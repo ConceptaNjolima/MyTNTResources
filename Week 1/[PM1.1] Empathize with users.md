@@ -1,4 +1,4 @@
-# Problem statement and user needs
+# Empathize with users
 
 During this session each building receives their broad problem statement. The concepts of user needs is reenforced and students explore the problem space to develop customer empathy.
 
