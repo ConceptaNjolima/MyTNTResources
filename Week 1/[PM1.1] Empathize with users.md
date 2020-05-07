@@ -5,7 +5,7 @@ During this session each building receives their broad problem statement. The co
 ## Learning objectives
 
 * TNTs will learn about their problem statement.
-* TNTs will conduct investigations to begin collocating information and data that will inform user needs.
+* TNTs will conduct investigations on user needs.
 * TNTs will practice skills for productive product discussions.
 
 ## Time required and pace
