@@ -7,10 +7,10 @@ Web development curriculum for The New Technologist Summer Academy - Welcome to 
 
 You may notice some to-dos left in the curriculum and some lessons and samples in the works. Here's what's still under construction:
 
-* Adjustments for remote TNT program - big change for the program this summer, the curriculum will under go some changes to optimize for a work from home structure.
+* Adjustments for remote TNT program - big change for the program this summer, the curriculum will undergo some changes to optimize for a work from home structure.
 * Day by day schedule - this will be part of the remote work adjustments, right now the topics of ordered.
-* Stretch topics - these are stretch topics that some NTs and teams will approach. Additional details and topics are still in the work.
-* Deliverable map - week by week what NTs are delivering and what coaches should check-in on, give feedback, guide
+* Stretch topics - these are stretch topics that some NTs and teams will approach. Additional details and topics are still in the works.
+* Deliverable map - week-by-week what NTs are delivering and what coaches should check-in on, give feedback about, and guide.
 
 ## How to use these materials
 
@@ -27,7 +27,7 @@ The curriculum is divided into five threads that span five weeks.
 * **Web design** - building a web application with HTML, CSS, and React.
 * **Typescript programming** - building a web application with VS Code and TypeScript.
 
-The course is applied to the to the application development process, end to end, from identifying user needs to building a prototype. The course accumulates with NTs building and pitching an app prototype.
+The course is applied to the application development process end to end, from identifying user needs to building a prototype. The course accumulates with NTs building and pitching an app prototype.
 
 **Product thinking**
 
