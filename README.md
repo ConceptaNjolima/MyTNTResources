@@ -11,6 +11,7 @@ You may notice some to-dos left in the curriculum and some lessons and samples i
 * Day by day schedule - this will be part of the remote work adjustments, right now the topics of ordered.
 * Stretch topics - these are stretch topics that some NTs and teams will approach. Additional details and topics are still in the work.
 * Deliverable map - week by week what NTs are delivering and what coaches should check-in on, give feedback, guide
+* Clarity on repos and moving to GitHub - first week introduces Git basics, second remote repos, some instructions are out of sync with Git learning
 
 ## How to use these materials
 
