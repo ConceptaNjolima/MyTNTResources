@@ -4,9 +4,9 @@ This lesson introduces the roles of program (product) manager (PM) and gives an 
 
 ## Learning objectives
 
-* TNTs will understand the role of PM in in the engineering life cycle.
+* TNTs will understand the role of PM and the product lifecycle.
 * TNTs will learn design thinking methodology.
-* TNTs will be able to view the product problem statement through the design thinking lens/
+* TNTs will be able to view the product problem statement through the design thinking lens
 
 ## Time required and pace
 

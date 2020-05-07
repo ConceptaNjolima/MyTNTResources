@@ -63,8 +63,8 @@ Here's how the team development process is applied with GitHub: [Understanding t
     7. In VS Code look at the pull request and complete the pull request and merge.
 
 2. Demo: show a merge conflict
-    8. From master, make a change in GitHub added a fictitious name and food.
-    9. From VS Code on the branch, make a change adding a different change.
+    1. From master, make a change in GitHub added a fictitious name and food.
+    2. From VS Code on the branch, make a change adding a different change.
 
 3. Best practices to resolve and reduce merge conflicts
     1. Git attempts to resolve differences in code. Merge conflicts occur when Git is unable to resolve the differences. This occurs when there are changes made to the same part of the same file on two different branches.
