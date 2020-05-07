@@ -81,9 +81,9 @@ There's likely a range of familiarity with web pages, web apps, and how they wor
       | Project setup | React create app tool |
 
 3. How HTML, CSS, and TypeScript come together. W3Schools describes it well:
-       * Hyper Text Markup Language (HTML) - the language for building webpages
-       * Cascading Style Sheets (CSS) - the language for styling webpages
-       * TypeScript (JS) - the language for programming web pages
+      * Hyper Text Markup Language (HTML) - the language for building webpages
+      * Cascading Style Sheets (CSS) - the language for styling webpages
+      * TypeScript (JS) - the language for programming web pages
 
 4. TypeScript vs. JavaScript
       * TypeScript (TS) is a super set of JavaScript (JS), JS + additional features and capabilities
