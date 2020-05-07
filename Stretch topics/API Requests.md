@@ -10,11 +10,11 @@ A common feature in any application is interacting with an API service to get da
 
 ## Time required and pace
 
-Total time: 1.25 hour
+Total time: 1 hour
 
 * 10 minutes - engage: apps that use an API service
-* 20 minutes - explain: what is an API service
-* 45 minutes - evaluate: create a new React app to use an API service
+* 10 minutes - explain: what is an API service
+* 40 minutes - evaluate: create a new React app to use an API service
 
 ## Background / review
 
@@ -38,7 +38,7 @@ Now ask the students how many API requests do they think happens on some of the 
 
 This will give them a broad understanding of scale for API services
 
-## Explain: What is an API service (15 minutes)
+## Explain: What is an API service (10 minutes)
 
 * Definition of an API service
 
@@ -78,7 +78,7 @@ fetch("https://api.example.com/todos")
       )
 ```
 
-## Evaluate: Create a React App to use an API (45 minutes)
+## Evaluate: Create a React App to use an API (40 minutes)
 
 The NTs will create a new React app that will contain a list of to dos. Before the to dos can be rendered an API request will need to be made. Once the JSON response has been received in the React app they will use the JSON response to display to dos.
 
