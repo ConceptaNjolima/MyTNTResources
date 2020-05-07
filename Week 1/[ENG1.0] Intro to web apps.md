@@ -45,23 +45,23 @@ Total time: 1.5 hour
         | Performance optimized for platform | Performance optimized for browser |
 
 3. As a group:
-       * List examples of websites, web applications, and native applications
-       * Research and list how web applications are both similar and different than native applications, consider a venn diagram
-       * Answer: why would you build a web app vs. native app? What are the tradeoffs of each?
+      * List examples of websites, web applications, and native applications
+      * Research and list how web applications are both similar and different than native applications, consider a venn diagram
+      * Answer: why would you build a web app vs. native app? What are the tradeoffs of each?
 
 4. Come back together:
-       * Groups share top similarities and differences
-       * Groups share tradeoffs
+      * Groups share top similarities and differences
+      * Groups share tradeoffs
 
 ### Intro to tech and web app architecture (15 minutes)
 
 There's likely a range of familiarity with web pages, web apps, and how they work. This refresher aims at closing any gaps and providing  the opportunity to dig in and get familiar with resources that will be applicable throughout the program.
 
 1. Why are we building a web app?
-       * Quick to prototype
-       * Introduction to broadly applicable tech - VS Code, HTML, CSS, TypeScript
-       * Many projects - professional, community, philanthropic, for fun... have some web component
-       * Some capabilities between web and native apps are closing
+      * Quick to prototype
+      * Introduction to broadly applicable tech - VS Code, HTML, CSS, TypeScript
+      * Many projects - professional, community, philanthropic, for fun... have some web component
+      * Some capabilities between web and native apps are closing
 
 2. Tech we will use and introduce over the next week. This lesson focuses on HTML, CSS, and an introduction to TypeScript.
 
