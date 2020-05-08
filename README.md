@@ -16,7 +16,7 @@ You may notice some to-dos left in the curriculum and some lessons and samples i
 ## How to use these materials
 
 * **Instructors** - lesson material
-* **Coaches** - map to connect where teams are at throughout the program
+* **Coaches and mentors** - map to connect where teams are at throughout the program
 * **New Technologists** - reference to review and expand your learning
 
 ## Overview
