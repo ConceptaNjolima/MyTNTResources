@@ -71,12 +71,12 @@ Intro to TypeScript syntax, datatypes, structure | | Redux and Flux |  |  |
 
 Individual and team deliverables that span and unite concepts across the curriculum threads. Projects will be introduced throughout the weeks ending with the app prototype and pitch.
 
-Week 1 | Week 2 | Week 3 | Week 4 | Week 5
---- | --- | --- | --- | ---
-To Do - all the basics | YourShare - team engineering | To Do - with Redux basics | Final presentation intro| Presentation practice
-| | User Feedback Jamboree | Spec | | App demo
- | | | | | Final presentation
- | | | | | Presentation summary
+Week 1 | Week 2 | Week 3 | Week 4 | Week 5 | Week 6
+--- | --- | --- | --- | --- | ---
+To Do - all the basics | YourShare - team engineering | To Do - with Redux basics | Final presentation intro| Presentation practice | Final presentation
+| | User Feedback Jamboree | Spec | | App demo |  Presentation summary
+ | | | | | |
+ | | | | | |
 
 ## References
 
