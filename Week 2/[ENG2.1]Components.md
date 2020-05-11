@@ -20,7 +20,7 @@ Total time: 1.5 hour
 
 ## Lesson details
 
-### Component description(20 minutes)
+### Component description (20 minutes)
 
 * Component Properties
 * Component State
@@ -57,13 +57,13 @@ Example:
 
        }
 
-### Class Component ( 10minutes)
+### Class Component (10 minutes)
 
 1. Render (required): This method returns the JSX element to be displayed by the class. It runs whenever the component's view updates.
 2. Properties (optional): This are arguments passed into the component from its parent components. They cannot be changed by the component.
 3. State (optional): This is are arguments that exists only withing the component. Changing them causes the component to update
 
-### Function Component ( 10minutes):
+### Function Component (10 minutes):
 
 1. The function is expected to return the JSX element to be displayed.
 2. Properties (optional): These arguments are passed in from the component's parent similarly to passing parameters to a function. They cannot be changed in the component.
