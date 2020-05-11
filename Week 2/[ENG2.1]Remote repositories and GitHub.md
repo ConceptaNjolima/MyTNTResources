@@ -21,7 +21,7 @@ Total time: 2 hours
 
 ### Collaborate with Git
 
-Complete this learning module - [Collaborate to Git](https://docs.microsoft.com/en-us/learn/modules/collaborate-with-git/)
+Complete this learning module - [Collaborate with Git](https://docs.microsoft.com/en-us/learn/modules/collaborate-with-git/).
 Use the sandbox for this exercise to preserve your local git configuration.
 
 The module covers the following:
