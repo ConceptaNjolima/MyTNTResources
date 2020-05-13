@@ -1,6 +1,6 @@
 # Sample app - bringing TS, React, HTML, and CSS together
 
-In this lesson NTs will build a sample to do list app that demonstrates how the core technologies work together. In future lessons the same sample app will be used for more advanced topics.
+In this lesson NTs will build a sample ToDo List app that demonstrates how the core technologies work together. In future lessons the same sample app will be used for more advanced topics.
 
 ## Learning objectives
 
@@ -34,7 +34,7 @@ Controls in a user interface (UI) follow familiar patterns of behavior. Customer
 
 ### Introduce project spec, components, props, inputs (20 minutes)
 
-We're going to build a list app. This is a high level introduction of the steps and app requirements.
+We're going to build a ToDo List app. This is a high level introduction of the steps and app requirements.
 
 1. Initialize the the app and get the new app up and running with the create react app default.
 2. Change the contents of the app and create a new component.
