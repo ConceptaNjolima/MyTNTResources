@@ -11,11 +11,12 @@ You may notice some to-dos left in the curriculum and some lessons and samples i
 * Day by day schedule - this will be part of the remote work adjustments, right now the topics of ordered.
 * Stretch topics - these are stretch topics that some NTs and teams will approach. Additional details and topics are still in the works.
 * Deliverable map - week-by-week what NTs are delivering and what coaches should check-in on, give feedback about, and guide.
+* Clarity on repos and moving to GitHub - first week introduces Git basics, second remote repos, some instructions are out of sync with Git learning
 
 ## How to use these materials
 
 * **Instructors** - lesson material
-* **Coaches** - map to connect where teams are at throughout the program
+* **Coaches and mentors** - map to connect where teams are at throughout the program
 * **New Technologists** - reference to review and expand your learning
 
 ## Overview
@@ -70,12 +71,12 @@ Intro to TypeScript syntax, datatypes, structure | | Redux and Flux |  |  |
 
 Individual and team deliverables that span and unite concepts across the curriculum threads. Projects will be introduced throughout the weeks ending with the app prototype and pitch.
 
-Week 1 | Week 2 | Week 3 | Week 4 | Week 5
---- | --- | --- | --- | ---
-To Do - all the basics | YourShare - team engineering | To Do - with Redux basics | Final presentation intro| Presentation practice
-| | User Feedback Jamboree | Spec | | App demo
- | | | | | Final presentation
- | | | | | Presentation summary
+Week 1 | Week 2 | Week 3 | Week 4 | Week 5 | Week 6
+--- | --- | --- | --- | --- | ---
+To Do - all the basics | YourShare - team engineering | To Do - with Redux basics | Final presentation intro| Presentation practice | Final presentation
+| | User Feedback Jamboree | Spec | | App demo |  Presentation summary
+ | | | | | |
+ | | | | | |
 
 ## References
 
