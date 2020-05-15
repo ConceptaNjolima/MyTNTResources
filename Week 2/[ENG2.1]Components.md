@@ -10,7 +10,7 @@ This lesson explains in detail how a component works and how its methods functio
 
 ## Time required and pace
 
-Total time: 1.5 hour
+Total time: 1 hour
 
 * 20 minutes – explain basic component's content
 * 10 minutes – Explain component's lifecycle
