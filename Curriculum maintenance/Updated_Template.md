@@ -10,26 +10,34 @@
 
 ## Time required and pace
 
-Total time: 2 hours
+Total time: x hours
 
-* 45 minutes - pre-session: background learning, research, and investigations
-* 10 minutes - engage: opening activity
-* 10 minutes - explain: recap learning
-* 30 minutes - explore: specific activity
-* 10 minutes - elaborate: review trouble spots
-* 15 minutes - evaluate: specific activity to demonstrate understanding
+* x minutes - pre-session: background learning, research, and investigations, what NTs so prior to the session
+* x minutes - session detatils, consider these options:
+  * session setup: what's required prep for the instructor
+  * engage: opening activity
+  * explain: recap learning
+  * explore: specific activity
+  * elaborate: review trouble spots
+  * evaluate: specific activity to demonstrate understanding
+* x minutes - post-session: what to continue working on, how it ties into the next sessions or projects
 
 ## Pre-session
 
 [Pre-virtual session material for NTs to review]
 
-## Session set up
+
+## Session details
+
+[Discussion and topics to revisit together]
+
+### Session set up
 
 [Resources for instructors to get set up on lesson]
 
-## Lesson details
+## Post-session
 
-[Instruction]
+[Next for NTs, what to continue working on, what to follow up with coaches on]
 
 ## Stretch
 
