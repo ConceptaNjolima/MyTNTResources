@@ -5,7 +5,6 @@ This lesson explains in detail how a component works and how its methods functio
 ## Learning objectives
 
 * TNTs will understand how a component's key methods function
-* TNTs will understand how the store, reducer and actions work together
 * TNTs will practice building components
 
 ## Time required and pace
