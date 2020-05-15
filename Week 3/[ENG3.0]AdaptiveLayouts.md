@@ -9,15 +9,15 @@ This lesson explains how to make your content's position adapt to your screen si
 
 **Time required and pace**
 
-Total time: 1.5 hour
+Total time: 40 minutes
 
-- **** 10 minutes - explain: Adaptive units vs fixed units
-- **** 10 minutes - explain: Flex property
-- **** 20 minutes - Explore the effects of different properties on a flex container
+- 10 minutes - explain: Adaptive units vs fixed units
+- 10 minutes - explain: Flex property
+- 20 minutes - Explore the effects of different properties on a flex container
 
 **Background / review**
 
-- **** CSS properties
+-  CSS properties
 
 **Lesson details**
 
