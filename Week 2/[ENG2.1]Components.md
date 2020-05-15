@@ -13,7 +13,7 @@ Total time: 1 hour
 
 * 20 minutes – explain basic component's content
 * 10 minutes – Explain component's lifecycle
-* 20 minutes - practice
+* 30 minutes - practice
 
 ## Background / review
 
@@ -76,10 +76,10 @@ These are methods that are trigger through out a components existence from when 
 
 [https://www.w3schools.com/react/react\_lifecycle.asp](https://www.w3schools.com/react/react_lifecycle.asp)
 
-### Build components (x minutes)
+### Build components (30 minutes)
 *Exercise for NTs building custom button as functional component, and a class based component*
 
-## Stretch (20 minutes)
+## Stretch
 
   1. Convert a giving class Component to a functionComponent.
   2. Convert a given function component to a class component.
