@@ -45,7 +45,7 @@ As a team draft an interview guide. Tomorrow the prototype and task portion will
 
 With the interview guide draft, practice conducting your interview with a partner. In the case of a group of three, the third person should take notes.
 
-* What's going we'll?
+* What's going well?
 * What needs improvement?
 * Make updates to the script
 
