@@ -5,7 +5,7 @@ NTs create a final walkthroughs of their app in preparation for the spec and pro
 ## Learning objectives
 
 * TNTs will learn how create a walkthrough.
-* TNTs will learn how the walktrhough fits into the spec and prototyping process.
+* TNTs will understand how the walktrhough fits into the spec and prototyping process.
 
 ## Time required and pace
 
