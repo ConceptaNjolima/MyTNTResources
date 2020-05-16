@@ -9,7 +9,7 @@ NTs create a final walkthroughs of their app in preparation for the spec and pro
 
 ## Time required and pace
 
-Total time:  hours
+Total time: 2-3 hours
 
 * 15 minutes - explain: introduce walkthrough and role in spec and prototyping
 * 2-3 hours: - explore: Teams create walkthroughs together
