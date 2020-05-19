@@ -140,3 +140,4 @@ This practice reinforces using the Git command line and VS Code together.
 * Interested in security? Learn about how [git uses cyrptographic hashes](https://ericsink.com/vcbe/html/cryptographic_hashes.html).
 * [xkcd](https://xkcd.com/1597/).
 * [Git Cheat Sheet](https://www.git-tower.com/blog/git-cheat-sheet).
+* Want to learn more about all the amazing things you can do using bash? Check out [Linux Productivity Tools](https://www.usenix.org/sites/default/files/conference/protected-files/lisa19_maheshwari.pdf)
