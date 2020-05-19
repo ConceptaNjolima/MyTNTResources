@@ -20,7 +20,7 @@ Table of Contents:
 
 ## Starting a collaboration session
 
-1. Click on the live share in the activity bar or status bar
+1. Click on either the live share in the activity bar or status bar
 
     ![Live Share](./live-share-resources/live-share.png)
 
