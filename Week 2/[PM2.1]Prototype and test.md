@@ -1,0 +1,53 @@
+# Prototype and test
+
+NTs explore some of their problem statement ideas through prototyping. It introduces the value of prototyping and various methods, starting with low fidelity options.
+
+## Learning objectives
+
+* TNTs will learn how to build a paper prototype.
+* TNTs will be introduced to tools for prototyping.
+* TNTs will understand how prototyping fits into the product life cycle.
+* TNTs will learn how to and practice testing a prototype.
+
+## Time required and pace
+
+Total time: 2 hours
+
+* 10 minutes - engage: draw
+* 30 minutes - explain: introduction to prototyping
+* 50 minutes - explore: create paper prototype walkthrough
+* 30 minutes - explore: combine walkthroughs
+* [After] - evaluate: practice and feedback with coaches
+
+## Background / review
+
+Deck: [Product decks](https://github.com/microsoft/TNT_Curriculum/tree/master/Reference/Product%20decks)
+
+## Lesson details
+
+### Draw (10 min)
+
+Warm up exercise to beging drawing.
+
+### Introduction to prototyping (20 min)
+
+Details are in the deck. The phases of the design sprint are revisited. The role of UX designer is introduce. Prototyping and the value of prototyping is introduced. Three methods - paper, low-md fidelity mockup, high-fidelity interactive prototypes are discussed. Large screen vs. small screen considerations are discussed. The goal for the prototype and the User Feedback Jamboree is set.
+
+### Create paper prototype walk through (50 min)
+
+1. Pick one solution you want to explore further from Crazy 8s, or related to your leading problem statement.
+2. Draw the high-level, low-fidelity screens or flow of the experience. Considering whether this should be a mobile or large screen experience.
+3. Take about 25 minutes. You might have multiple options for a given task or user job.
+
+Regroup as a team and share your walkthroughs.
+
+### Combine walkthroughs (30)
+
+1. Combine your walktrhoughs for the User Feedback Jamboree.
+2. To prioritize, focus on which tasks you want to ge feedback on and how it ties back to your goals.
+3. Add the tasks to your interview guide.
+4. Prepare a combine version of the prototype.
+
+## Stretch
+
+[A guide to paper prototyping & testing for web interfaces](https://medium.com/digital-experience-design/a-guide-to-paper-prototyping-testing-for-web-interfaces-49e542ba765f)
