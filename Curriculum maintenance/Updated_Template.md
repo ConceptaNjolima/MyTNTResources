@@ -13,7 +13,7 @@
 Total time: x hours
 
 * x minutes - pre-session: background learning, research, and investigations, what NTs so prior to the session
-* x minutes - session detatils, consider these options:
+* x minutes - session details, consider these options:
   * session setup: what's required prep for the instructor
   * engage: opening activity
   * explain: recap learning
