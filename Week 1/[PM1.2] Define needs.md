@@ -1,11 +1,11 @@
 # Define needs
 
-This session enters the define phase of design thinking. It's the first step of refining and articulating the problem statements NTs will address.
+This session enters the define phase of design thinking. It's the first step of refining and articulating the problem statements NTs will address and the target audience.
 
 ## Learning objectives
 
 * TNTs will revisit the phases of design thinking.
-* TNTs will practice methods for articulating their target audience.
+* TNTs will identify their target audience.
 * TNTs will map the user journey.
 * TNTs will learn what makes a great problem statement.
 
@@ -13,11 +13,8 @@ This session enters the define phase of design thinking. It's the first step of 
 
 Total time: 2 hour
 
-* 10 minutes - engage: pass draw
-* 30 minutes - explain: target audience, user journey mapping
-* 30 minutes - explore: user journey mapping
-* 15 minutes - elaborate: regroup and share with team
-* 35 minutes - evaluate: write problem statements
+* x minutes - pre-session: 
+* x minutes - post-session: 
 
 ## Pre-session
 
