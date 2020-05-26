@@ -12,8 +12,8 @@ The concepts of user needs is reinforced and students explore the problem space 
 
 Total time: 2 hour
 
-* 30 minutes - pre-session: read Empathize with users document
-* 90 minutes - post-session: as a team, break up the activities and create an empathy map  
+* 30 minutes - pre-session: read HMW and ideation
+* 1 hour 30 minutes - post-session: as a team discuss potential target audiences, individually create user journey maps, together share and write problem statements
 
 ## Pre-session
 

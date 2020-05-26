@@ -92,3 +92,31 @@ On the engineering side of the focus is getting started with create React app.
 * Prompt a discussion around the architecture of a web app.
 * Ask for demo.
 * Ask the team to explain how all the pieces they've learned so far work together. Fill in any unknowns as a group.
+
+### Day 4
+
+#### tl;dr
+
+* Set the tone for open brainstorming with great ideas pitch or an activity to build support of ideas in brainstorming.
+* Today the NTs enter the ideation phase, using a how might we exercise to come up with two potential problem statements as a team. Check-in on where they're at in the process. Ensure that all perspectives are represented.
+* NTs started with the list app work, the first project. Ask for a volunteer to share where they're at open the floor to questions on the work.
+
+#### Details
+
+Consider kicking off today with an activity that focuses on big ideas and building off one another. Set the tone for how you can work together on product ideas. Great idea pitch is an exercise where everyone takes turns pitching from a list of not so great ideas. Introduce this activity through a how might we statement, and give an example of bad idea. For example, for 2 minutes let's create a list of the worst possible way to - "make fast food restaurants faster" Examples:
+
+* "Don't let cars stop..."
+* "Leave food partially cooked so people can cook it at home"
+...
+
+Next the ideas are pitched. Everyone gets a minute. Randomly choose an idea from the list. Pitch why it is the best idea ever. Build off of one another. There are no bad ideas here... only ideas that need a creative pitch. Start if no one volunteers.
+
+The NTs have begun the ideation phase, beginning to come up with solutions and further refine the exact problem statement they're going to tackle with their prototypes. Encourage broad thinking. Depending on team progress ask to see Crazy 8s or join in a round if they're in the middle. Ask to see their HMW affinity diagram.
+
+On the engineering side, today NTs were introduced to the to-do sample app project. It brings together TS, React and the tools from this week. The focus is on the basic functionality over visuals.
+
+* Poll for how everyone is feeling about the project. Ask for someone to walk through the project goal and what they're working on.
+* Check-in on using the Git workflow locally, committing changes as they go. Next week the NTs will cover remote repositories and create a repo in GitHub.
+* Ask for a demo or for someone to share where they're at.
+
+## Day 5
