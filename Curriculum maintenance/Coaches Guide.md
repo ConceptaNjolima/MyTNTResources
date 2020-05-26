@@ -1,6 +1,6 @@
 # Coaches guide
 
-This resources is aimed at coaches to follow the curriculum, guide prototype development, and infuse the curriculum with real-world product and development experiences.
+This resources is aimed at coaches to follow the curriculum, guide prototype development, and infuse the curriculum with real-world product and development experiences. It's a guide, adapt to your team and where they're at.
 
 ## Week 0
 
@@ -52,7 +52,7 @@ Check that your team has created a channel under their group. Encourage them to 
 #### tl;dr
 
 * Groups get their problem statements! Check in on how they feel - excited? disappointed? nervous?
-* [Empathize with users]() introduces the role of UX researcher and empathy mapping. Reiterate that this phase is about learning what the users need and their problems, rather than jumping to a solution.
+* [Empathize with users](https://github.com/tnt-summer-academy/Curriculum/blob/master/Reference/Product%20decks/1.1%20-%20Empathize%20with%20users.pdf) introduces the role of UX researcher and empathy mapping. Reiterate that this phase is about learning what the users need and their problems, rather than jumping to a solution.
 * Check in on how they are doing with the activities - just getting started, well underway? Any questions? Give an example of how user research has impacted your product or works.
 * NTs started on Git learning with the introduction to Git and the local workflow. Share about your experience learning Git.
 
@@ -67,3 +67,56 @@ This kicks of the empathize design phase! The goal is to develop a deep, empathe
 * Be on the look out for talk of the app they're going to build or particular features. Bring the discussion back to what they're learning about the user.
 
 NTs engineering focus today is on Git. Check-in on questions, share your experience with source control, Git, and re-encourage that it's a learned skill that takes practice.
+
+### Day 3
+
+#### tl;dr
+
+* It's been a busy week, consider a one word check-in or some way to share how it's going.
+* Teams should have wrapped up with empathize investigation activities and moved on to user journey mapping and defining potential targeting audiences and problem statements. Check-in on where they're at in this process and ask to see the latest work.
+* Push to keep the discussion solution agnostic and rooted in user needs if you see it drifting towards a particular application.
+* Today the NTs are also introduced to the create React app tool. Ask for demo or dive into a discussion on the basics of web architecture.
+
+#### Details
+
+It has been a big week with many introductions, new tools, and getting in a rhythm working as a team. Ask everyone how they're doing in or feeling at this moment with one word. Share too and connections to feelings with getting started and something new. Look for positive and negative trends to pull more info out on.
+
+NTs have begun the [define](https://github.com/tnt-summer-academy/Curriculum/blob/master/Reference/Product%20decks/1.2%20-%20Define%20needs.pdf) phase and are refining towards an addressable problem statement. They're identifying their specific target audience and creating user journey maps. See where the are in the process and if they have an questions:
+
+* At this point the discussions should be solution agnostic, not talking about specific applications or features.
+* Check-in and make sure all NTs are participating in the activities. Even if it's not their favorite part of the program it's important to take the time in these phases to make sure you build something great. Everyone has something to contribute that expands thinking here.
+* Depending on the timing, NTs may have come up with problem statements and created an affinity diagram. Ask for a tour. Look for trends they may haven't seen or help them expand if the problem statements are too narrow.
+
+On the engineering side of the focus is getting started with create React app.
+
+* Prompt a discussion around the architecture of a web app.
+* Ask for demo.
+* Ask the team to explain how all the pieces they've learned so far work together. Fill in any unknowns as a group.
+
+### Day 4
+
+#### tl;dr
+
+* Set the tone for open brainstorming with great ideas pitch or an activity to build support of ideas in brainstorming.
+* Today the NTs enter the ideation phase, using a how might we exercise to come up with two potential problem statements as a team. Check-in on where they're at in the process. Ensure that all perspectives are represented.
+* NTs started with the list app work, the first project. Ask for a volunteer to share where they're at open the floor to questions on the work.
+
+#### Details
+
+Consider kicking off today with an activity that focuses on big ideas and building off one another. Set the tone for how you can work together on product ideas. Great idea pitch is an exercise where everyone takes turns pitching from a list of not so great ideas. Introduce this activity through a how might we statement, and give an example of bad idea. For example, for 2 minutes let's create a list of the worst possible way to - "make fast food restaurants faster" Examples:
+
+* "Don't let cars stop..."
+* "Leave food partially cooked so people can cook it at home"
+...
+
+Next the ideas are pitched. Everyone gets a minute. Randomly choose an idea from the list. Pitch why it is the best idea ever. Build off of one another. There are no bad ideas here... only ideas that need a creative pitch. Start if no one volunteers.
+
+The NTs have begun the ideation phase, beginning to come up with solutions and further refine the exact problem statement they're going to tackle with their prototypes. Encourage broad thinking. Depending on team progress ask to see Crazy 8s or join in a round if they're in the middle. Ask to see their HMW affinity diagram.
+
+On the engineering side, today NTs were introduced to the to-do sample app project. It brings together TS, React and the tools from this week. The focus is on the basic functionality over visuals.
+
+* Poll for how everyone is feeling about the project. Ask for someone to walk through the project goal and what they're working on.
+* Check-in on using the Git workflow locally, committing changes as they go. Next week the NTs will cover remote repositories and create a repo in GitHub.
+* Ask for a demo or for someone to share where they're at.
+
+## Day 5
