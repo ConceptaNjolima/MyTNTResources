@@ -52,7 +52,7 @@ Check that your team has created a channel under their group. Encourage them to 
 #### tl;dr
 
 * Groups get their problem statements! Check in on how they feel - excited? disappointed? nervous?
-* [Empathize with users]() introduces the role of UX researcher and empathy mapping. Reiterate that this phase is about learning what the users need and their problems, rather than jumping to a solution.
+* [Empathize with users](https://github.com/tnt-summer-academy/Curriculum/blob/master/Reference/Product%20decks/1.1%20-%20Empathize%20with%20users.pdf) introduces the role of UX researcher and empathy mapping. Reiterate that this phase is about learning what the users need and their problems, rather than jumping to a solution.
 * Check in on how they are doing with the activities - just getting started, well underway? Any questions? Give an example of how user research has impacted your product or works.
 * NTs started on Git learning with the introduction to Git and the local workflow. Share about your experience learning Git.
 

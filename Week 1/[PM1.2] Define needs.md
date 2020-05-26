@@ -5,7 +5,7 @@ This session enters the define phase of design thinking. It's the first step of 
 ## Learning objectives
 
 * TNTs will revisit the phases of design thinking.
-* TNTs will identify their target audience.
+* TNTs will learn about and identify their target audience.
 * TNTs will map the user journey.
 * TNTs will learn what makes a great problem statement.
 
@@ -18,9 +18,7 @@ Total time: 2 hour
 
 ## Pre-session
 
-Get paper and a marker ready
-
-## Background / review
+Read [Empathize with users](https://github.com/tnt-summer-academy/Curriculum/blob/master/Reference/Product%20decks/1.0%20-%20Intro%20to%20pm%20and%20design%20thinking.pdf). This document introduces the user researcher and kicks off the empathize phase of the design sprint. The document also has instructions for the activities below to do as a team.
 
 * Deck: [Product decks](https://github.com/microsoft/TNT_Curriculum/tree/master/Reference/Product%20decks)
 
