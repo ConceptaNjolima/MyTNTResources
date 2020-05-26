@@ -12,7 +12,7 @@ The concepts of user needs is reinforced and students explore the problem space 
 
 Total time: 2 hour
 
-* 30 minutes - pre-session: review Empathize with users document
+* 30 minutes - pre-session: read Empathize with users document
 * 90 minutes - post-session: as a team, break up the activities and create an empathy map  
 
 ## Pre-session
