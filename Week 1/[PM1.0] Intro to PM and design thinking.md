@@ -1,6 +1,6 @@
 # Intro to PM and design thinking
 
-This lesson introduces the roles of program (product) manager (PM) and gives an overview of how products are designed and built.
+This topic introduces the roles of program (product) manager (PM) and gives an overview of how products are designed and built.
 
 ## Learning objectives
 
@@ -15,7 +15,7 @@ This lesson introduces the roles of program (product) manager (PM) and gives an 
 
 ## Pre-session
 
-Read Intro to PM and Design. This document introduces the role of the program manager (PM) and the design thinking phases. The design thinking phases will help determine what to build, breaking down the problem statement, understanding the user, and evaluating solutions to best meet the needs.
+Read [Intro to PM and Design thinking](https://github.com/tnt-summer-academy/Curriculum/blob/master/Reference/Product%20decks/1.0%20-%20Intro%20to%20pm%20and%20design%20thinking.pdf). This document introduces the role of the program manager (PM) and the design thinking phases. The design thinking phases will help determine what to build, breaking down the problem statement, understanding the user, and evaluating solutions to best meet the needs.
 
 ## Post-session: connect with coaches
 
