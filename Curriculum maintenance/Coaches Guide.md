@@ -1,6 +1,6 @@
 # Coaches guide
 
-This resources is aimed at coaches to follow the curriculum, guide prototype development, and infuse the curriculum with real-world product and development experiences.
+This resources is aimed at coaches to follow the curriculum, guide prototype development, and infuse the curriculum with real-world product and development experiences. It's a guide, adapt to your team and where they're at.
 
 ## Week 0
 
@@ -67,3 +67,28 @@ This kicks of the empathize design phase! The goal is to develop a deep, empathe
 * Be on the look out for talk of the app they're going to build or particular features. Bring the discussion back to what they're learning about the user.
 
 NTs engineering focus today is on Git. Check-in on questions, share your experience with source control, Git, and re-encourage that it's a learned skill that takes practice.
+
+### Day 3
+
+#### tl;dr
+
+* It's been a busy week, consider a one word check-in or some way to share how it's going.
+* Teams should have wrapped up with empathize investigation activities and moved on to user journey mapping and defining potential targeting audiences and problem statements. Check-in on where they're at in this process and ask to see the latest work.
+* Push to keep the discussion solution agnostic and rooted in user needs if you see it drifting towards a particular application.
+* Today the NTs are also introduced to the create React app tool. Ask for demo or dive into a discussion on the basics of web architecture.
+
+#### Details
+
+It has been a big week with many introductions, new tools, and getting in a rhythm working as a team. Ask everyone how they're doing in or feeling at this moment with one word. Share too and connections to feelings with getting started and something new. Look for positive and negative trends to pull more info out on.
+
+NTs have begun the [define](https://github.com/tnt-summer-academy/Curriculum/blob/master/Reference/Product%20decks/1.2%20-%20Define%20needs.pdf) phase and are refining towards an addressable problem statement. They're identifying their specific target audience and creating user journey maps. See where the are in the process and if they have an questions:
+
+* At this point the discussions should be solution agnostic, not talking about specific applications or features.
+* Check-in and make sure all NTs are participating in the activities. Even if it's not their favorite part of the program it's important to take the time in these phases to make sure you build something great. Everyone has something to contribute that expands thinking here.
+* Depending on the timing, NTs may have come up with problem statements and created an affinity diagram. Ask for a tour. Look for trends they may haven't seen or help them expand if the problem statements are too narrow.
+
+On the engineering side of the focus is getting started with create React app.
+
+* Prompt a discussion around the architecture of a web app.
+* Ask for demo.
+* Ask the team to explain how all the pieces they've learned so far work together. Fill in any unknowns as a group.
