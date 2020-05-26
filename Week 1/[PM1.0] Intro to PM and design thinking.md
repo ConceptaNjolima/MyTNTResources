@@ -10,7 +10,9 @@ This lesson introduces the roles of program (product) manager (PM) and gives an 
 
 ## Time required and pace
 
-Total time: 60 min
+* x minutes - pre-session: 
+* x minutes - session details: 
+* x minutes - post-session: 
 
 * 10 minutes - engage: lunch with anyone
 * 35 minutes - explain: PM, design thinking phases, MVP, product life cycle
