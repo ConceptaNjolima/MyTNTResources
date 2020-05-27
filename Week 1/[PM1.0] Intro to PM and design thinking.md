@@ -10,7 +10,7 @@ This topic introduces the roles of program (product) manager (PM) and gives an o
 
 ## Time required and pace
 
-* 30 minutes - pre-session: review Intro to PM and Design deck
+* 30 minutes - pre-session: read Intro to PM and Design document
 * 30 minutes - post-session: connect with coaches on design thinking phases, MVP, and agile engineering
 
 ## Pre-session

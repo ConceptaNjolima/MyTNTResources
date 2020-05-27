@@ -12,12 +12,12 @@ The concepts of user needs is reinforced and students explore the problem space 
 
 Total time: 2 hour
 
-* 30 minutes - pre-session: review Empathize with users document
-* 90 minutes - post-session: as a team, break up the activities and create an empathy map  
+* 30 minutes - pre-session: read HMW and ideation
+* 1 hour 30 minutes - post-session: as a team discuss potential target audiences, individually create user journey maps, together share and write problem statements
 
 ## Pre-session
 
-Read [Empathize with users](https://github.com/tnt-summer-academy/Curriculum/blob/master/Reference/Product%20decks/1.0%20-%20Intro%20to%20pm%20and%20design%20thinking.pdf). This document introduces the user researcher and kicks off the empathize phase of the design sprint. The document also has instructions for the activities below to do as a team.
+Read [Empathize with users](https://github.com/tnt-summer-academy/Curriculum/blob/master/Reference/Product%20decks/1.1%20-%20Empathize%20with%20users.pdf). This document introduces the user researcher and kicks off the empathize phase of the design sprint. The document also has instructions for the activities below to do as a team.
 
 ## Post-session
 
