@@ -87,5 +87,4 @@ Quick guides describing tech stack, Git, acronyms, and other useful topics.
 Contributions are encouraged and appreciated to fix spelling, grammar, and formating. Each lesson also has a reference section where you can add your favorite learning resources. The curriculum evolves as we learn. For larger topics and changes, open an issue for discussion. See the CONTRIBUTING.md for more details.
 
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
-contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/).
