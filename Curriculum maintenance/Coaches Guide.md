@@ -73,7 +73,7 @@ NTs engineering focus today is on Git. Check-in on questions, share your experie
 #### tl;dr
 
 * It's been a busy week, consider a one word check-in or some way to share how it's going.
-* Teams should have wrapped up with empathize investigation activities and moved on to user journey mapping and defining potential targeting audiences and problem statements. Check-in on where they're at in this process and ask to see the latest work.
+* Teams should have wrapped up with empathize investigation activities and moved onto the [define phase](https://github.com/tnt-summer-academy/Curriculum/blob/master/Reference/Product%20decks/1.2%20-%20Define%20needs.pdf). Check-in on where they're at in this process and ask to see the latest work.
 * Push to keep the discussion solution agnostic and rooted in user needs if you see it drifting towards a particular application.
 * Today the NTs are also introduced to the create React app tool. Ask for demo or dive into a discussion on the basics of web architecture.
 
@@ -98,7 +98,7 @@ On the engineering side of the focus is getting started with create React app.
 #### tl;dr
 
 * Set the tone for open brainstorming with great ideas pitch or an activity to build support of ideas in brainstorming.
-* Today the NTs enter the ideation phase, using a how might we exercise to come up with two potential problem statements as a team. Check-in on where they're at in the process. Ensure that all perspectives are represented.
+* Today the NTs enter the [ideation phase](https://github.com/tnt-summer-academy/Curriculum/blob/master/Reference/Product%20decks/1.3%20-%20HMW%20and%20ideation.pdf), using a how might we exercise to come up with two potential problem statements as a team. Check-in on where they're at in the process. Ensure that all perspectives are represented.
 * NTs started with the list app work, the first project. Ask for a volunteer to share where they're at open the floor to questions on the work.
 
 #### Details
