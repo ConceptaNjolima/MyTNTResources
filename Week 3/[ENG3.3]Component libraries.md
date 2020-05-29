@@ -26,7 +26,7 @@ TODO:
 
 * TNTs will understand what component libraries are
 * TNTs will write code that demonstrates how to import component libraries into their project, and how to utilize existing components/controls/widgets in their existing project
-* TNTs will write code that demonstrates how to create and use new, custom components to their existing project
+* TNTs will write code that demonstrates how to create and use new, custom components in their existing project
 
 ## Time required and pace
 
