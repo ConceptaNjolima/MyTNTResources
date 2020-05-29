@@ -1,6 +1,6 @@
 # Component Libraries
 
-This lesson provides an overview of component libraries (specifically Fluent UI), including both how to use FluenUI and tips on reading documentation
+This lesson provides an overview of component libraries (specifically Fluent UI), including both how to use FluentUI and tips on reading documentation
 
 <!---
 * We'll have an hour for this
@@ -25,7 +25,7 @@ TODO:
 ## Learning objectives
 
 * TNTs will understand what component libraries are
-* TNTs will write code that demonstrates how to import component libraries into their project, and how to utilize existing components/controls/widgets in their project
+* TNTs will write code that demonstrates how to import component libraries into their project, and how to utilize existing components/controls/widgets in their existing project
 * TNTs will write code that demonstrates how to create and use new, custom components to their existing project
 
 ## Time required and pace
