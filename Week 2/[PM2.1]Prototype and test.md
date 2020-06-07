@@ -11,42 +11,34 @@ NTs explore some of their problem statement ideas through prototyping. It introd
 
 ## Time required and pace
 
-Total time: 2 hours
+Total time: 2 hours 30 minutes
 
-* 10 minutes - engage: draw
-* 30 minutes - explain: introduction to prototyping
-* 50 minutes - explore: create paper prototype walkthrough
-* 30 minutes - explore: combine walkthroughs
-* [After] - evaluate: practice and feedback with coaches
+* 30 minutes - pre-session: read prototype and test
+* 2 hours  - post-session: individually create paper prototypes, as a group combine prototypes, and add prototype tasks to your interview guide, share with coaches
 
-## Background / review
+## Pre-session
 
-Deck: [Product decks](https://github.com/microsoft/TNT_Curriculum/tree/master/Reference/Product%20decks)
+Read Prototype and test. This document builds on the ideate design phases, getting into more app details with a paper prototype. It introduces the role of UX designer. Large screen vs. small screen considerations are discussed. It introduces different tools for create prototype and describes the value of prototyping.
 
-## Lesson details
+## Post-session
 
-### Draw (10 min)
+### Create low-fidelity prototypes
 
-Warm up exercise to beging drawing.
-
-### Introduction to prototyping (20 min)
-
-Details are in the deck. The phases of the design sprint are revisited. The role of UX designer is introduce. Prototyping and the value of prototyping is introduced. Three methods - paper, low-md fidelity mockup, high-fidelity interactive prototypes are discussed. Large screen vs. small screen considerations are discussed. The goal for the prototype and the User Feedback Jamboree is set.
-
-### Create paper prototype walk through (50 min)
-
-1. Pick one solution you want to explore further from Crazy 8s, or related to your leading problem statement.
+1. Individually, Pick one solution you want to explore further from Crazy 8s, or related to your leading problem statement. Share with your team what you're working on.
 2. Draw the high-level, low-fidelity screens or flow of the experience. Considering whether this should be a mobile or large screen experience.
-3. Take about 25 minutes. You might have multiple options for a given task or user job.
+3. You might have multiple options for a given task or user job. If you're not sure yet, draw the other option.
+4. Take pictures of your prototype and add to your team's folder.
 
 Regroup as a team and share your walkthroughs.
 
-### Combine walkthroughs (30)
+### Combine walkthroughs (1 hour)
 
-1. Combine your walktrhoughs for the User Feedback Jamboree.
-2. To prioritize, focus on which tasks you want to ge feedback on and how it ties back to your goals.
-3. Add the tasks to your interview guide.
-4. Prepare a combine version of the prototype.
+1. Combine your walktrhoughs as a team. Take the best from each individual walktrhoughs and draw updates to have a similar combine flow.
+2. To prioritize, focus on which tasks you want to ge feedback on and how it ties back to your goals. You may have a few different options for a task or solutions to how a user need is meet. Consider different people drawing and later testing these different options
+3. Add the tasks for the prototypes to your interview guide.
+4. Take pictures of the prototypes and add to your team's folder.
+
+Share your prototypes with your coaches.
 
 ## Stretch
 
