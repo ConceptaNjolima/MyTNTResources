@@ -120,3 +120,11 @@ On the engineering side, today NTs were introduced to the to-do sample app proje
 * Ask for a demo or for someone to share where they're at.
 
 ## Day 5
+
+6/3 Holiday - everyone has the day off
+
+## Week 2
+
+Early in the week NTs continue and wrap up working on their list app. Continuing the Git learning, NTs are introduced to remote repositories and team development practices using branches. Applying, NTs move their list app to GitHub and as a group practice working together on a sample app. Views, layouts, and UI debugging allow NTs to revisit the list app and update.
+
+As they continue working through the design phases, NTs  work through the first iteration of the prototype and test. NTs create paper prototypes, begin early usability testing, and create first drafts of their value prop and pitch. Volunteer as a usability participant and listen to the pitch. The teams will still go through phases of expanding and refining app and feature ideas. When lost or debating, evaluate the solution to the problem statement against how well it meets the user needs.
