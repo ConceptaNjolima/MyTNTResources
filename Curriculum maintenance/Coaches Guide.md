@@ -125,6 +125,64 @@ On the engineering side, today NTs were introduced to the to-do sample app proje
 
 ## Week 2
 
-Early in the week NTs continue and wrap up working on their list app. Continuing the Git learning, NTs are introduced to remote repositories and team development practices using branches. Applying, NTs move their list app to GitHub and as a group practice working together on a sample app. Views, layouts, and UI debugging allow NTs to revisit the list app and update.
+Early in the week NTs continue and wrap up working on their list app. In the Git learning track, NTs are introduced to remote repositories and team development practices using branches. Applying, NTs move their list app to GitHub and later in the week as a group practice working together on a sample app. Views, layouts, and UI debugging allow NTs to revisit the list app and update.
 
-As they continue working through the design phases, NTs  work through the first iteration of the prototype and test. NTs create paper prototypes, begin early usability testing, and create first drafts of their value prop and pitch. Volunteer as a usability participant and listen to the pitch. The teams will still go through phases of expanding and refining app and feature ideas. When lost or debating, evaluate the solution to the problem statement against how well it meets the user needs.
+Working through the design phases, NTs  start the first iteration of the prototype and test. NTs create paper prototypes, begin early usability testing, and create first drafts of their value prop and pitch. Volunteer as a usability participant and listen to the pitch. The teams will still go through phases of expanding and refining app and feature ideas. When lost or debating, evaluate the solution to the problem statement against how well it meets the user needs.
+
+### Day 1
+
+#### tl;dr
+
+* Reconnect after the long weekend.
+* Teams are introduced to [Usability and interviewing](https://github.com/tnt-summer-academy/Curriculum/blob/master/Reference/Product%20decks/2.0%20-%20Usability%20and%20interviewing.pdf) and begin creating their interview guide. Check in and volunteer to practice.
+* Remote repositories are introduced. NTs move to-do apps to a remote repository and begin working there.
+
+#### Details
+
+NTs wrapped up last week with ideation. There may be mixed feelings heading into the second week excited or disappointed, fatigued or re-energized. Ask about the long weekend, share about your weekend and gauge where everyone is at.
+
+Check-in and talk through the concept of remote repositories and strategies for Git back tracking. Docs on the computer vs docs in Google drive make a great analogy.
+
+On the product side, NTs learned about user research and usability testing. Both coaches share about your user research experiences and being customer driven. Talk about how your features crews have worked with user researchers. NTs have begun writing their user research guide. The guide focus today is goals, what they want to learn, and interview questions. Tomorrow they'll work on paper prototypes and then define their usability tasks.
+
+* Volunteer to be interviewed as a participant.
+* Look for open-ended, non-leading questions.
+* Complete the interview and then give feedback at the end.
+
+Again, check that the usability guide is saved somewhere shared in Teams, either a Word doc or OneNote.
+
+### Day 2
+
+#### tl;dr
+
+Something
+
+#### Details
+
+Something
+
+### Day 3
+
+#### tl;dr
+
+Something
+
+#### Details
+
+### Day 4
+
+#### tl;dr
+
+Something
+
+#### Details
+
+Something
+
+#### tl;dr
+
+Something
+
+#### Details
+
+Something
