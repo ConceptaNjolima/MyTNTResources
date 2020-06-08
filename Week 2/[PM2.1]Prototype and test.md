@@ -40,6 +40,10 @@ Regroup as a team and share your walkthroughs.
 
 Share your prototypes with your coaches.
 
+### Wrap-up
+
+This week, use your your paper prototype to conduct usability studies with people you live with, or local regulation permitting, people nearby. If in-person usability isn't possible, take pictures and do remote sessions with other NTs, coaches, or mentors. Conduct 2-3 by end of week and compile your results with your team.
+
 ## Stretch
 
 [A guide to paper prototyping & testing for web interfaces](https://medium.com/digital-experience-design/a-guide-to-paper-prototyping-testing-for-web-interfaces-49e542ba765f)
