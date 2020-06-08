@@ -38,3 +38,4 @@ With the interview guide draft, practice conducting your interview with a partne
 
 * Make sure the script is in your team's Teams folders either in OneNote or a doc
 * Share with your coaches and get their feedback
+* This week, after you create your prototypes, conduct 2-3 usability interviews with people around or use pictures of the paper prototype to conduct remote interviews.
