@@ -1,23 +1,38 @@
 # Components
 
-This lesson explains in detail how a component works and how its methods function
+This lesson explores the purpose of a React component, how a component works and how its methods function
 
 ## Learning objectives
 
+* TNTs will be able to describe the purpose of a React component
 * TNTs will understand how a component's key methods function
 * TNTs will practice building components
 
 ## Time required and pace
 
-Total time: 1 hour
+Total time: 2 hours, 20 minutes
 
-* 20 minutes – explain basic component's content
-* 10 minutes – Explain component's lifecycle
-* 30 minutes - practice
+- 30 minutes - pre-session: background learning, research, and investigations
+- 80 minutes - session
+  - 20 minutes - Investigate the purpose of React components
+  - 20 minutes – explain basic component's content
+  - 10 minutes – Explain component's lifecycle
+  - 30 minutes - practice
+- 30 minutes - post-session: what to continue working on, how it ties into the next sessions or projects
 
-## Background / review
+## Pre-session
+
+- Read the article [What is a React Component](https://www.educative.io/edpresso/what-is-a-react-component) and experiment with the code samples
+- 
 
 ## Lesson details
+
+### What is a Component?
+
+- In Breakout Groups of 3 to 4
+  - Brainstorm a list of your daily schedule analogous to components, e.g., Breakfast. How might thinking about your schedule as "components" be useful?
+  - Explore several given websites to look for component candidates
+- 
 
 ### Component description (20 minutes)
 
@@ -35,25 +50,25 @@ There are two types of components:
 Example:
 
     function App(Properties:any) {
-
+    
         return <div>Hello World</div>
-
+    
     }
 
 2) Class Components
 
        export default class Tile extends React.Component<Properties, State>{
-
+    
           render() {
-
+    
               return (
-
+    
                   <div>Hello World</div>
-
+    
               )
-
+    
           }
-
+    
        }
 
 ### Class Component (10 minutes)
