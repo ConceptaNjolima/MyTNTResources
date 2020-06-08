@@ -12,46 +12,31 @@ This session introduces value propositions (value prop) and methods for pitching
 
 Total time: 2 hour
 
-* 20 minutes - explain: introduce value props and framework
-* 10 minutes - regroup: debrief
-* 45 minutes - explore: develop value prop
-* 45 minutes - evaluate: pitch and fund
+* 30 minutes - pre-session: read Value prop and pitch.
+* 1 hour 30 minutes - post-session: develop a first draft of the value prop as a team, practice pitching, share with coaches
 
-## Background / review
+## Pre-session
 
-Deck: [Product decks](https://github.com/microsoft/TNT_Curriculum/tree/master/Reference/Product%20decks)
+Read Value prop and pitching. The deck introduces what value proposition is, a value prop framework for creating a value prop for your app, why it's important, and tips pitching.
 
-## Lesson details
+## Post-session
 
-### Value prop and value prop framework (20 min)
+### Develop value prop (1 hour)
 
-The deck introduces value propositions, a value prop framework, and pitching.
-
-### Develop value prop (45 min)
-
-NTs use the value prop framework to make a first draft if their pitch.
+Make a first draft of your value prop.
 
 * Use the template as an outline.
-* Capture your value prop in OneNote or a Word doc.
+* Capture your value prop in OneNote or a Word doc. Feel free to work individually at first or together. Whatever works best for your team.
 * Use your value prop to build a pitch.
 
-### Pitch and find (45 min)
+### Practice pitching (30 minutes)
 
-In this activity, NT groups practicing pitching and giving feedback. It's followed by a mock funding run where each NT has $500 to divide across the pitches.
+Take turns pitching as a team. Everyone should give it a go. Say the pitch in your own words.
 
-**Pitch**
+Key considerations for audience:
 
-Go by team, one volunteers to go first and gets an extra $300 added to their fund.
-
-* 3 minutes for each pitch
-* 2 minutes for asking questions, about 3
-  * Ask open ended questions
-
-**Fund**
-
-* Each NT has $500 that can be divided up increments of $100.
-* After all pitches, NTs spend the $500 on the pitches they'd like to most see turned into an app. It can all go to one or to five different pitches.
-* [Method]
+* Be mindful. This is the first go. Comfort and experience with public speaking varies. Build your team up.
+* Give constructive feedback. Ask open ended questions. Hold until the end.
 
 ### Wrap up
 

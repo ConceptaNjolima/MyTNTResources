@@ -10,30 +10,20 @@ This session introduces inventory and analysis of products that meet similar use
 
 ## Time required and pace
 
-Total time: 1.25 hour
+Total time: 2 hours
 
-* 10 minutes - engage: favorite communication app
-* 15 minutes - explain: introduction to competitor analysis
-* 45 minutes - explore: competitive research and create SWOT diagram
-* [After] - evaluate: share SWOT analysis with coaches
+* 45 minutes - pre-session: favorite communication app, read introduction to competitor audit
+* 1 hour 15 minutes - post-session: competitive research and create SWOT diagram
 
 ## Pre-session
-
-None
-
-## Background / review
-
-None
-
-## Lesson details
 
 ### Favorite communication app (10 min)
 
 * Think about the different applications you use to communicate with other people.
 * Which one is your favorite? Which one couldn't you do with out? What user need does it meet? What does it do better than the rest of the apps?
-* Share with your group
+* Later, share with your team.
 
-### Introduction to competitor analysis (15 minutes)
+### Introduction to competitor analysis (20 minutes)
 
 Looking at other products, how existing solutions on the market meet the same needs or similar needs with your customer base has a few benefits:
 
@@ -79,7 +69,7 @@ Here's an outline on how to get started and conduct a competitor audit:
 
         ![SWOT diagram](SWOT_table.png)
 
-### Conduct competitive research and SWOT diagram (45 minutes)
+## Post-session
 
 Get started with customer research and creating a SWOT diagram.
 
