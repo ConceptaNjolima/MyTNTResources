@@ -17,7 +17,7 @@ Total time: 2 hours
 
 ## Pre-session
 
-Read Usability and interviewing. This document introduces how to conduct a usability study. The document includes best practices for interviewing and defines the process for conducting a usability study.
+Read [Usability and interviewing](https://github.com/tnt-summer-academy/Curriculum/blob/master/Reference/Product%20decks/2.0%20-%20Usability%20and%20interviewing.pdf). This document introduces how to conduct a usability study. The document includes best practices for interviewing and defines the process for conducting a usability study.
 
 ## Post-session
 
@@ -38,3 +38,4 @@ With the interview guide draft, practice conducting your interview with a partne
 
 * Make sure the script is in your team's Teams folders either in OneNote or a doc
 * Share with your coaches and get their feedback
+* This week, after you create your prototypes, conduct 2-3 usability interviews with people around or use pictures of the paper prototype to conduct remote interviews.

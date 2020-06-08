@@ -18,7 +18,7 @@ Total time: 2 hours 30 minutes
 
 ## Pre-session
 
-Read Prototype and test. This document builds on the ideate design phases, getting into more app details with a paper prototype. It introduces the role of UX designer. Large screen vs. small screen considerations are discussed. It introduces different tools for create prototype and describes the value of prototyping.
+Read [Prototype and test](https://github.com/tnt-summer-academy/Curriculum/blob/master/Reference/Product%20decks/2.1%20-%20Prototype%20and%20test.pdf). This document builds on the ideate design phases, getting into more app details with a paper prototype. It introduces the role of UX designer. Large screen vs. small screen considerations are discussed. It introduces different tools for create prototype and describes the value of prototyping.
 
 ## Post-session
 
@@ -39,6 +39,10 @@ Regroup as a team and share your walkthroughs.
 4. Take pictures of the prototypes and add to your team's folder.
 
 Share your prototypes with your coaches.
+
+### Wrap-up
+
+This week, use your your paper prototype to conduct usability studies with people you live with, or local regulation permitting, people nearby. If in-person usability isn't possible, take pictures and do remote sessions with other NTs, coaches, or mentors. Conduct 2-3 by end of week and compile your results with your team.
 
 ## Stretch
 
