@@ -127,7 +127,7 @@ On the engineering side, today NTs were introduced to the to-do sample app proje
 
 Early in the week NTs continue and wrap up working on their list app. In the Git learning track, NTs are introduced to remote repositories and team development practices using branches. Applying, NTs move their list app to GitHub and later in the week as a group practice working together on a sample app. Views, layouts, and UI debugging allow NTs to revisit the list app and update.
 
-Working through the design phases, NTs  start the first iteration of the prototype and test. NTs create paper prototypes, begin early usability testing, and create first drafts of their value prop and pitch. Volunteer as a usability participant and listen to the pitch. The teams will still go through phases of expanding and refining app and feature ideas. When lost or debating, evaluate the solution to the problem statement against how well it meets the user needs.
+Working through the design phases, NTs  start the first iteration of the prototype and test. NTs create paper prototypes, begin early usability testing completing 2-3 interviews each by end of week, and create first drafts of their value prop and pitch. Volunteer as a usability participant and listen to the pitch. The teams will still go through phases of expanding and refining app and feature ideas. When lost or debating, evaluate the solution to the problem statement against how well it meets the user needs.
 
 ### Day 1
 
@@ -199,7 +199,7 @@ Combining usability and interviewing with prototype and test, NTs continue condu
 
 * Check-in on where NTs are putting results. Encourage NTs to compile notes as they go.
 * Ask what trends they're seeing, what's working well, where people are blocked.
-* Work through how to apply the feedback they're getting from participants.
+* Work through how to apply the feedback they're getting from participants. Is the person in their target audience, if not that's ok. What's the participant context? Does it shape how the feedback is applied?
 
 As introduced yesterday, NTs will build either a large screen or small screen MVP. As a team they should decide what decision to go. View component layouts begins to introduce adaptive layout concepts and illustrates how Flexbox helps UI flow.
 
@@ -239,7 +239,7 @@ NTs continue product thinking with the value prop and pitch. This is a first dra
 
 * Teams start an practice team engineering practice - YourShare. Check-in on their work breakdown. Look for equitable breakdown fo work.
 * Re-iterate team engineering concepts and GitFlow.
-* Check-in on the competitor audit. Look for a balance of competitors.
+* Check-in on the competitor audit. Ask about strengths, weaknesses, opportunities and threats.
 
 #### Details
 
