@@ -155,11 +155,27 @@ Again, check that the usability guide is saved somewhere shared in Teams, either
 
 #### tl;dr
 
-Something
+* Components and methods are introduced including class and function components, along with React lifcycle Methods.
+* NTs review [Prototype and test](https://github.com/tnt-summer-academy/Curriculum/blob/master/Reference/Product%20decks/2.1%20-%20Prototype%20and%20test.pdf) with why prototype and different methods.
+* NTs begin creating paper prototypes, individually and then combine into a generally shared version maybe with a few options.
 
 #### Details
 
-Something
+NTs reach the React component lifecycle. This is one of the more in-depth technical concepts in the curriculum. Encourage NTs to keep at if they first don't grasp the concepts.
+
+In [Prototype and test](https://github.com/tnt-summer-academy/Curriculum/blob/master/Reference/Product%20decks/2.1%20-%20Prototype%20and%20test.pdf) NTs are introduced to why prototype and different prototype methodologies. Share your experiences with prototypes.
+
+3 options methods are covered - paper, PowerPoint, and Figma. Everyone will start with paper prototypes, though there's an extra barrier to sharing virtually. Taking a picture and putting in a PPT slide or viewing as a slide show can work well. It's not a requirement to use a different method at all through program. Teams can experiment with PPT mock ups, a great option for sharing virtually. Others, especially with an interest in design might try out Figma. A few notes on Figma:
+
+* This is great if it builds on the teams experience. It shouldn't be a replacement for engineering contributions to the project or come at the cost of engineering work.
+* NTs can create a free Figma account. There are limits to sharing projects and the number of projects. 
+* Figma should be a last step after the team has landed an MVP plan.
+
+This week all NTs will create paper prototypes and then test with people they live with if possible. If not possible to test locally, encourage taking pictures and setting up remote testing with other NTs or coaches. Like in ideation, paper and drawing this is a quick way to express ideas, especially when there are open questions and teams are still refining.
+
+* Some individuals and teams will want to jump to high-fidelity quickly. Low-fidelity comes first for faster iteration.
+* Even if this isn't a favorite part of the design sprint, everyone should be creating walktrhoughs and contributing to the interview guide.
+* Ask what tasks the NTs will define to walk someone through their prototype or see where they are in the process.
 
 ### Day 3
 
