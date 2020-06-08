@@ -237,8 +237,24 @@ NTs continue product thinking with the value prop and pitch. This is a first dra
 
 #### tl;dr
 
-Something
+* Teams start an practice team engineering practice - YourShare. Check-in on their work breakdown. Look for equitable breakdown fo work.
+* Re-iterate team engineering concepts and GitFlow.
+* Check-in on the competitor audit. Look for a balance of competitors.
 
 #### Details
 
-Something
+Before jumping in to working on their app together, YourShare provides NTs a chance to collaborate and practice branching and merging. NTs also get to read a spec and practice breaking down the work. NTs won't build the full app, just the first round of check-ins that create the basic app flow.
+
+Check-in on the progress and work breakdown:
+
+* Work breakdown should describe what NTs are building and how. It can be a few sentences or bullet points that describe how the mockup will be built.
+* Does each member have an engineering contribution?
+* Talk through working in a branch and then merging into master with a pull request.
+
+On the product side, NTs take a break from prototyping and testing and conduct a competitor audit completing a SWOT diagram. Some questions to check-in with:
+
+* Which competitors are you looking at?
+* What non-app solution(s) do you have in mind to explore?
+* Is the SWOT diagram in progress? Any top of mind strength, weaknesses, opportunities or threats?
+
+Another incredible week is wrapping up. NTs have created paper prototypes and started on complex web development topics. They've conduct usability studies adn started their first team engineering project. Take a second to celebrate. Everyone can share what they're most excited about next or what they were most surprised to learn this week.
