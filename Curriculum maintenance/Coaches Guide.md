@@ -210,15 +210,30 @@ UI debugging practices using developer tools in Edge. This opens up a new way to
 
 ### Day 4
 
-* [Value prop and pitching](https://github.com/tnt-summer-academy/Curriculum/blob/master/Week%202/%5BPM2.2%5DValue%20prop%20and%20pitch.md) introduces what a value proposition is and a framework for developing a value pop. NTs begin working on the first draft of their value pop.
-
 #### tl;dr
 
-Something
+* NTs are introduced to Redux for state management. Ask the team to describe the data flow.
+* Team engineering skills continue with branching, merging and merge conflict Git.
+* [Value prop and pitching](https://github.com/tnt-summer-academy/Curriculum/blob/master/Week%202/%5BPM2.2%5DValue%20prop%20and%20pitch.md) introduces what a value proposition is and a framework for developing a value prop. NTs begin working on the first draft of their value prop.
 
 #### Details
 
-Something
+Redux is the next step for state management. This week introduces next week and revisits the topic and goes more in depth. Ask your team to share the data flow. See if together they can describe the flow. No need to be a redux experts. If your blocked share how you learn new technical concepts:
+
+* "Bing" it.
+* Look for a YouTube video.
+* Read Stack Overflow.
+* Do you have a favorite channel or explainer of technical content?
+
+This is a great chance to share your favorite Git merging story and re-iterate that Git is a skill that takes practices. The final pieces of the basics with Git are introduced with branching and merging. NTs will follow the [GitHub Flow](https://guides.github.com/introduction/flow/) when working together.
+
+NTs continue product thinking with the value prop and pitch. This is a first draft. There's a long way to go before the final presentations. This is the first step in articulating and convincing stakeholders that this app is valuable, gather support and / or funding in a real world engineering setting. Depending on how far along your team is:
+
+* Ask to hear the pitch or see where the drafts are at.
+* When given feedback consider the work NTs have already done, does it include their target audience and user needs?
+* Encourage NTs to practice pitching when opportunities come up. Can ask other coaches for feedback and take turns pitching to other teams.
+
+### Day 5
 
 #### tl;dr
 
