@@ -18,7 +18,7 @@ Total time: 2 hours 30 minutes
 
 ## Pre-session
 
-Read Prototype and test. This document builds on the ideate design phases, getting into more app details with a paper prototype. It introduces the role of UX designer. Large screen vs. small screen considerations are discussed. It introduces different tools for create prototype and describes the value of prototyping.
+Read [Prototype and test](https://github.com/tnt-summer-academy/Curriculum/blob/master/Reference/Product%20decks/2.1%20-%20Prototype%20and%20test.pdf). This document builds on the ideate design phases, getting into more app details with a paper prototype. It introduces the role of UX designer. Large screen vs. small screen considerations are discussed. It introduces different tools for create prototype and describes the value of prototyping.
 
 ## Post-session
 
