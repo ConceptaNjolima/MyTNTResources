@@ -156,14 +156,21 @@ Again, check that the usability guide is saved somewhere shared in Teams, either
 #### tl;dr
 
 * Components and methods are introduced including class and function components, along with React lifcycle Methods.
-* NTs review [Prototype and test](https://github.com/tnt-summer-academy/Curriculum/blob/master/Reference/Product%20decks/2.1%20-%20Prototype%20and%20test.pdf) with why prototype and different methods.
-* NTs begin creating paper prototypes, individually and then combine into a generally shared version maybe with a few options.
+* NTs are introduced to the large screen vs. small screen MVP question. It's not about features, which would they build first that best meets user needs?
+* NTs review [Prototype and test](https://github.com/tnt-summer-academy/Curriculum/blob/master/Reference/Product%20decks/2.1%20-%20Prototype%20and%20test.pdf) with why prototype and different methods. NTs begin creating paper prototypes, individually and then combine into a generally shared version maybe with a few options.
 
 #### Details
 
 NTs reach the React component lifecycle. This is one of the more in-depth technical concepts in the curriculum. Encourage NTs to keep at if they first don't grasp the concepts.
 
 In [Prototype and test](https://github.com/tnt-summer-academy/Curriculum/blob/master/Reference/Product%20decks/2.1%20-%20Prototype%20and%20test.pdf) NTs are introduced to why prototype and different prototype methodologies. Share your experiences with prototypes.
+
+NTs begin narrowing down whether they build a large screen or small screen MVP.
+
+* Given enough time, it's assumed NTs would build both for the product.
+* Adaptive layouts are introduced, however NTs will only have time to optimize for one.
+* It's an intentional design decisions which direction the app goes. NTs can explore this with their paper prototypes.
+* See the document for more detailed on how this is framed.
 
 3 options methods are covered - paper, PowerPoint, and Figma. Everyone will start with paper prototypes, though there's an extra barrier to sharing virtually. Taking a picture and putting in a PPT slide or viewing as a slide show can work well. It's not a requirement to use a different method at all through program. Teams can experiment with PPT mock ups, a great option for sharing virtually. Others, especially with an interest in design might try out Figma. A few notes on Figma:
 
@@ -176,16 +183,34 @@ This week all NTs will create paper prototypes and then test with people they li
 * Some individuals and teams will want to jump to high-fidelity quickly. Low-fidelity comes first for faster iteration.
 * Even if this isn't a favorite part of the design sprint, everyone should be creating walktrhoughs and contributing to the interview guide.
 * Ask what tasks the NTs will define to walk someone through their prototype or see where they are in the process.
+* No additional product topics tomorrow. Time can be spent on finishing paper prototypes and usability testing.
 
 ### Day 3
 
 #### tl;dr
 
-Something
+* NTs continue working on their paper prototype and conduct usability interviews. Check-in on interview progress.
+* Volunteer to participate in the usability study if you haven't yet.
+* View component layout and UI debugging tools in the browser are introduced.
 
 #### Details
 
+Combining usability and interviewing with prototype and test, NTs continue conducting usability studies. NTs may have different local abilities to test. Offer remote connections and encourage reaching out to other coaches and NTs if needed.
+
+* Check-in on where NTs are putting results. Encourage NTs to compile notes as they go.
+* Ask what trends they're seeing, what's working well, where people are blocked.
+* Work through how to apply the feedback they're getting from participants.
+
+As introduced yesterday, NTs will build either a large screen or small screen MVP. As a team they should decide what decision to go. View component layouts begins to introduce adaptive layout concepts and illustrates how Flexbox helps UI flow.
+
+UI debugging practices using developer tools in Edge. This opens up a new way to learn and see how any website is build and how it's working.
+
+* If you work on web or have a web feature, considering digging in and showing something with dev tools.
+* If you're not familiar with the Edge developer tools, ask for a demo.
+
 ### Day 4
+
+* [Value prop and pitching](https://github.com/tnt-summer-academy/Curriculum/blob/master/Week%202/%5BPM2.2%5DValue%20prop%20and%20pitch.md) introduces what a value proposition is and a framework for developing a value pop. NTs begin working on the first draft of their value pop.
 
 #### tl;dr
 
