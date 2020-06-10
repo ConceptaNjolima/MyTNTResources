@@ -263,7 +263,11 @@ Another incredible week is wrapping up. NTs have created paper prototypes and st
 
 Early this week teams finish their work on YourShare together. It's not a complete prototype, the first couple of changes for the scale fold of the app to practice team engineering and merging. NTs will also revisit Redux and add redux to their To Do app from Week 1. Adaptive layout, animation, and using component libraries are introduced.
 
-On the product side, NTs narrow down towards their MVP with a walkthrough. Applying feedback from their usability testing and considering what best demonstrates meeting the user needs, NTs close on final features. The [PowerPoint template](https://github.com/tnt-summer-academy/Curriculum/blob/master/Reference/Wireframe%20template.pptx) is recommended for creating the walk through. The spec is introduced at the beginning of this week and NTs work on it throughout. The goal is for teams to get coach's sign off on the spec by end of week. Teams cannot start working on their MVP until the spec is signed-off by both coaches. Recommended timeline for spec:
+On the product side, NTs narrow down towards their MVP with a walkthrough. Applying feedback from their usability testing and considering what best demonstrates meeting the user needs, NTs close on final features. The [PowerPoint template](https://github.com/tnt-summer-academy/Curriculum/blob/master/Reference/Wireframe%20template.pptx) is recommended for creating the walk through.
+
+The spec is introduced at the beginning of this week and NTs work on it throughout. The goal is for teams to get coach's sign off on the spec by end of week. Teams cannot start working on their MVP until the spec is signed-off by both coaches. The spec includes goals and measurable outcomes. Future considerations can include team thinking on the business model for the app. If you've been waiting for a chance to dive in on data, data in real world development and products, here's your chance. Help the NTs land solid engagement metrics and share your experience with data in product development.
+
+Recommended timeline for spec:
 
 * Tuesday - spec introduced
 * Wednesday - draft of spec
@@ -321,6 +325,12 @@ Check-in on where your team is in the spec process. At a minimum they should hav
 * Discuss the engineering work break down using the prioritized list of user scenarios from the walkthrough. For the engineering work there should be a screen and a technical description of how it's built.
 * Talk about how the team is working on the spec together. Everyone should write some portion of the spec and do engineering work break down.
 * If they're still working on the walk though, no problem. That piece can come last.
+
+The spec introduces metrics through goals. The NTs think through how they'll measure success in whether the app is meeting the user needs. We don't have too much time in the program to spend on metrics and measuring outcomes. This is a good chance to dive in and bring the real world engineering.
+
+* Talk about how you measure your product and work from end user metrics to performance telemetry.
+* In the spec process help NTs pick solid engagement metrics.
+* There's not a focus on funding or revenue in product development curriculum. We don't want this to block big ideas from the get go and time is limited in what we can cover. Future opportunities in the spec is a good place for NTs to include this. Stakeholders might ask questions on this topic. Have a discussion at some point this week and jump start some thinking on business models - ads, subscriptions, freemium. Again, not a focus of the program but an important consideration for product managers and a real world thing.
 
 The goal is spec sign-off by end of week. For sign-off specs must:
 
