@@ -258,3 +258,45 @@ On the product side, NTs take a break from prototyping and testing and conduct a
 * Is the SWOT diagram in progress? Any top of mind strength, weaknesses, opportunities or threats?
 
 Another incredible week is wrapping up. NTs have created paper prototypes and started on complex web development topics. They've conduct usability studies adn started their first team engineering project. Take a second to celebrate. Everyone can share what they're most excited about next or what they were most surprised to learn this week.
+
+## Week 3
+
+Early this week teams finish their work on YourShare together. It's not a complete prototype, the first couple of changes for the scale fold of the app to practice team engineering and merging. NTs will also revisit Redux and add redux to their To Do app from Week 1. Adaptive layout, animation, and using component libraries are introduced.
+
+On the product side, NTs narrow down towards their MVP with a walkthrough. Applying feedback from their usability testing and considering what best demonstrates meeting the user needs, NTs close on final features. The [PowerPoint template](https://github.com/tnt-summer-academy/Curriculum/blob/master/Reference/Wireframe%20template.pptx) is recommended for creating the walk through. The spec is introduced at the beginning of this week and NTs work on it throughout. The goal is for teams to get coach's sign off on the spec by end of week. Teams cannot start working on their MVP until the spec is signed-off by both coaches. Recommended timeline for spec:
+
+* Tuesday - spec introduced
+* Wednesday - draft of spec
+* Thursday - first round of coach feedback
+* Friday - feedback applied, second round of feedback, sign-off end of day if ready
+* Following week - if spec needs more work, aim for Monday or Tuesday sign-off
+
+### Day 1
+
+#### tl;dr
+
+#### Details
+
+### Day 2
+
+#### tl;dr
+
+#### Details
+
+### Day 3
+
+#### tl;dr
+
+#### Details
+
+### Day 4
+
+#### tl;dr
+
+#### Details
+
+### Day 5
+
+#### tl;dr
+
+#### Details
