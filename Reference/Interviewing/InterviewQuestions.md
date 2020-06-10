@@ -84,4 +84,4 @@ Output: 9 (2,12,20, 21, 22, 23, 24 and 25. Note that 22 counts for two 2s.)
 6. What happens when you navigate to a website?
 
 
-# Best practices
+
