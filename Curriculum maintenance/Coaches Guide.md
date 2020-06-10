@@ -313,7 +313,7 @@ Teams will be in different places in the walkthough process. Check-in on where t
 
 React-springs are introduced for animations. Ask the team for an overview of how they work or what they learned. It may be interesting to hear if anyone has worked with animations before or likes thinking about animations and their impact on the user experiences.
 
-The spec is a big come together moment. It defines what the NTs will build for the MVP prototype. NTs cannot begin work on the spec until they have coach sign-off. Share your experiences around specs and engineering planning.
+The spec is a big come together moment. It defines what the NTs will build for the MVP prototype. NTs cannot begin work on the spec until they have coach sign-off. Share your experiences around specs and engineering planning. Revisit the concept of MVP (minimum-viable-product) to help frame scoping.
 
 Check-in on where your team is in the spec process. At a minimum they should have at least read the lesson. If not walk through it together. Topics to cover:
 
@@ -333,20 +333,46 @@ The goal is spec sign-off by end of week. For sign-off specs must:
 * Have contributions from everyone.
 * Once ready, both coaches should say so and post in the team's team channel that they sign-off.
 
+Aim for a draft Thursday for feedback. If needed, do another round of feedback on Friday. It's ok if sign-off happens Monday or Tuesday. NTs should head into building with a clear plan.
+
 ### Day 3
 
 #### tl;dr
 
+* Work on the walkthrough should be wrapped up.
+* Check-in on spec progress and questions.
+* Unit testing and jest is introduced. NTs do a practice unit test. Unit test(s) could be a stretch goal engineering item for someone in the spec.
+
 #### Details
+
+Teams should have wrapped up work on their walktrhoughs and moved product focus onto their spec. Check-in on spec progress. Answer questions. Ensure everyone is contributing here.
+
+Unit testing is introduced. Discuss and share how testing comes into your product development lifecycle. Unit testing isn't a requirement for the prototype though it makes a good stretch goal.
 
 ### Day 4
 
 #### tl;dr
 
+* NTs are introduced to component libraries. It's a good chance to talk about Fluent and common controls.
+* NTs should have a draft of the spec done. Give detailed feedback to help them address changes needed for sign-up. Provide written feedback and then discuss it together. 
+
 #### Details
+
+NTs are introduced to the general concept of component libraries and then pointed to the example of [Fluent UI](https://developer.microsoft.com/en-us/fluentui#/get-started). Fluent controls can be used in their prototypes. Talk through their walkthrough and look at what might be a good match for fluent controls. Make sure the spec is updated with controls that will be used.
+
+Give feedback on the spec. Written feedback is helpful so NTs have a list of things to address. Walkthrough the feedback so NTs understand the changes they need to make. Impress that feedback is part of the product cycle and spec process.
+
 
 ### Day 5
 
 #### tl;dr
 
+* If NTs have addressed feedback thoroughly and the spec is ready to good, sign-off.
+* If NTs have yet to address feedback thoroughly, don't sign-off. Give encouragement and additional pointers if needed.
+* NTs revisit Redux and will be updating the To Do app adding Redux.
+
 #### Details
+
+Give spec sign-off when the NTs have sufficient detail on what they're building and the spec represents the customer thinking, needs, and how the product will meet those needs.
+
+Talk the NTs through the feedback you're providing on the spec. Give feedback from a positive and growth perspective. Some NTs may be excited to jump in and get coding, frustrated with the documentation piece. Give feedback that guides to completion and sign-off. 
