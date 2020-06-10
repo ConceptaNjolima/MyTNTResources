@@ -26,16 +26,51 @@ If you can, do a mock interview with them.
 ## Behavioral or situational questions
 ### How to answer
 The key is direct, logical, and meaningful storytelling, answering with a specific examples. The interviewer is trying to learn about you and your response to situations that may come up in the work environment. STAR is one common framework for responding.
-	• S – Situation: describe the situation in which the task (what the question is asking about) occurred or was accomplished; the background from the work or school setting in which you'll describe how you addressed what the interviewer is asking. Set the scene.
-	• T-task: what you were working towards or the problem or challenge your faced. Describe the purpose.
-	• A-action: what you did, your role in the situation. Explain what you actions you took.
-	• R – results: the outcome, take credit for went what well. In situations where it didn't end well, describe the positive from what you learned and how it was applied. Share the outcome.
+* S – Situation: describe the situation in which the task (what the question is asking about) occurred or was accomplished; the background from the work or school setting in which you'll describe how you addressed what the interviewer is asking. Set the scene.
+* T-task: what you were working towards or the problem or challenge your faced. Describe the purpose.
+* A-action: what you did, your role in the situation. Explain what you actions you took.
+* R – results: the outcome, take credit for went what well. In situations where it didn't end well, describe the positive from what you learned and how it was applied. Share the outcome.
 
 ### Tips
 Practice. Look at lists of common behavioral interview questions. 
-	• Think through scenarios that showcase your experience, leadership, teamwork, creativity, and grit.
-	• Practice giving a short description of each. 
-	• Be ready to describe the situation in more detail. Have a beginning, middle, and end to your storytelling that describes the situation, the problem or challenge, the action you took, and the result.
-	• Be honest and find examples that reflect positively on your actions.
-	• Look for examples across your experiences – school, work, clubs and activities.
-	• Be specific about an event or challenge.
+* Think through scenarios that showcase your experience, leadership, teamwork, creativity, and grit.
+* Practice giving a short description of each. 
+* Be ready to describe the situation in more detail. Have a beginning, middle, and end to your storytelling that describes the situation, the problem or challenge, the action you took, and the result.
+* Be honest and find examples that reflect positively on your actions.
+* Look for examples across your experiences – school, work, clubs and activities.
+* Be specific about an event or challenge.
+	
+## Code questions
+### Understanding the question
+Some tips on understanding the question are:
+1. Repeating the question in your own words
+2. Stating or writing out examples of the expected inputs and outputs
+	
+### Solving the problem without code. 
+This involves:
+1. Solving the problem using the brute force method - which  gives you a good starting point.
+2. Solving a simpler version of the problem.
+3. Thinking out loud about what types of algorithms you think would be best suited to solve the problem
+4. Thinking out loud - stating some of the edge cases you solution may or may not solve.
+5. Pausing to listen for hints from the interviewer.
+6. Once you have an optimized solution to the problem, discussing the algorithmic complexity of your solution.
+7. Writing an outline/pseudocode of your code. This will help you when you get to coding since you can reference your thinking. 
+
+### Tips for finding Optimal solutions
+* Think about the best possible runtime for the problem
+* Think of space and time tradeoffs. How can you use Memory vs CPU to better solve the problem
+* Think of alternative data structures
+* Think of the bottlenecks to you current solution
+* Think of the duplicate or unnecessary work in your current solution
+
+### Writing good code
+1. Use classes and methods
+2. Make your methods have one responsibility, this will ensure they are small.
+3. Use descriptive names for your variables and methods.
+4. Start with the core part of the algorithm assuming you have methods that can handle different details. Then write those other detailed methods later on.
+	
+### Test your code
+1. Run your code through  several examples, make sure to use some edge cases. It is ok if you find bugs, just note them and, if you have time fix, them.
+
+
+## Product questions
