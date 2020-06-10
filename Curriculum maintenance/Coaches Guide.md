@@ -378,3 +378,31 @@ Give spec sign-off when the NTs have sufficient detail on what they're building 
 Talk the NTs through the feedback you're providing on the spec. Give feedback from a positive and growth perspective. Some NTs may be excited to jump in and get coding, frustrated with the documentation step. Give feedback that guides to completion and sign-off.
 
 Redux is revisited. NTs return to the To Do app and upgrade it with Redux.
+
+## Week 4
+
+After spec sign-off this week NTs begin building their prototype. Topics in the curriculum may be revisited based on need. Stretch topics and topics related to app features may be covered by the instructors as well.
+
+As NTs are building, encourage frequent commits and merging following the team GitHub process.
+
+Encourage NTs to get continuous feedback on their app as it's built. Share with other teams, test with people around. Encourage NTs to continue practicing and refining their app pitch.
+
+This week the details of the final presentation requirements will be shared. NTs don't need to start working on it yet, just providing clarity on where they're headed in addition to the prototype and pitch.
+
+## Week 5
+
+This week curriculum topics and stretch topics will continued to be covered by the instructors. The MVP prototype should really be coming together. By end of week there should be an end to end working version meeting the P0s and likely P1s defined in the spec.
+
+Continue encouraging testing the prototype and practice pitching.
+
+By end of week NTs should have a draft for their final presentation as well.
+
+## Week 6
+
+This is the last week of the program. NTs should be wrapping up work on their prototype and preparing for the final presentation.
+
+No new engineering topics are introduced this week. Instructors may revisit and help NTs unblock with any last minute MVP needs.
+
+An additional deliverable is the presentation summary. This is a short snippet that captures the pitch and app demo.
+
+[Details on specific deliverables and final presentation logistics to be defined]
