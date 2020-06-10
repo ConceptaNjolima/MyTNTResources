@@ -1,1 +1,41 @@
 # How to help someone prepare for an interview
+
+## Understanding your Mentees readiness:
+* Find out the data structures and algorithms your Mentee is familiar with. This will help you tailor what topics to focus on.
+* Find out how many technical interviews your Mentee has already done.
+* Share your interview experience with your Mentee, both successes and failures. This will make you relatable and allow them to open up.
+* Ask them about their weak spots when it comes to interviewing. This will help both of you craft a plan to addressing those weak spots.
+* Ask them about their areas of strength since this is a place where they can challenge themselves by attempting more challenging problems.
+
+Explain the different types of interviews that they will experience:
+* Coding
+* Behavioral
+* Product
+
+Emphasize the need to have interview buddies and to do mock interviews.
+
+Discuss the importance of coming up with an approach to solving problems versus doing a large number of questions. Learning the approach to solving problems will help them solve even those problems they have not yet seen.
+
+Help them create an interview prep schedule. Having a schedule helps them get organized and makes the whole process less overwhelming. See Sample 6 week schedule
+
+If you can, do a mock interview with them.
+
+
+# The Approach
+
+## Behavioral or situational questions
+### How to answer
+The key is direct, logical, and meaningful storytelling, answering with a specific examples. The interviewer is trying to learn about you and your response to situations that may come up in the work environment. STAR is one common framework for responding.
+	• S – Situation: describe the situation in which the task (what the question is asking about) occurred or was accomplished; the background from the work or school setting in which you'll describe how you addressed what the interviewer is asking. Set the scene.
+	• T-task: what you were working towards or the problem or challenge your faced. Describe the purpose.
+	• A-action: what you did, your role in the situation. Explain what you actions you took.
+	• R – results: the outcome, take credit for went what well. In situations where it didn't end well, describe the positive from what you learned and how it was applied. Share the outcome.
+
+### Tips
+Practice. Look at lists of common behavioral interview questions. 
+	• Think through scenarios that showcase your experience, leadership, teamwork, creativity, and grit.
+	• Practice giving a short description of each. 
+	• Be ready to describe the situation in more detail. Have a beginning, middle, and end to your storytelling that describes the situation, the problem or challenge, the action you took, and the result.
+	• Be honest and find examples that reflect positively on your actions.
+	• Look for examples across your experiences – school, work, clubs and activities.
+	• Be specific about an event or challenge.
