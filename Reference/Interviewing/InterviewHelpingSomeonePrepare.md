@@ -39,6 +39,28 @@ Practice. Look at lists of common behavioral interview questions.
 * Be honest and find examples that reflect positively on your actions.
 * Look for examples across your experiences – school, work, clubs and activities.
 * Be specific about an event or challenge.
+
+### Gayle interview video guide
+Essential Knowledge  
+https://youtu.be/wCl9kvQGHPI?t=1659
+
+Preparation  
+https://youtu.be/wCl9kvQGHPI?t=1813
+
+Crash Course on Big O  
+https://youtu.be/wCl9kvQGHPI?t=2154
+
+Solving Algorithm Problems  
+https://youtu.be/wCl9kvQGHPI?t=3026
+
+Approach to solving hard problems  
+https://youtu.be/wCl9kvQGHPI?t=3574
+
+Question for interviewers  
+https://youtu.be/wCl9kvQGHPI?t=6337
+
+
+
 	
 ## Code questions
 ### Understanding the question
