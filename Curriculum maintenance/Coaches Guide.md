@@ -373,6 +373,8 @@ Give feedback on the spec. Written feedback is helpful so NTs have a list of thi
 
 #### Details
 
-Give spec sign-off when the NTs have sufficient detail on what they're building and the spec represents the customer thinking, needs, and how the product will meet those needs.
+Give spec sign-off when the NTs have sufficient detail on what they're building and the spec represents the customer thinking and how the product will meet those needs.
 
-Talk the NTs through the feedback you're providing on the spec. Give feedback from a positive and growth perspective. Some NTs may be excited to jump in and get coding, frustrated with the documentation piece. Give feedback that guides to completion and sign-off. 
+Talk the NTs through the feedback you're providing on the spec. Give feedback from a positive and growth perspective. Some NTs may be excited to jump in and get coding, frustrated with the documentation step. Give feedback that guides to completion and sign-off.
+
+Redux is revisited. NTs return to the To Do app and upgrade it with Redux.
