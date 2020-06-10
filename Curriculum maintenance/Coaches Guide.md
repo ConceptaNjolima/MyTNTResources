@@ -271,32 +271,138 @@ On the product side, NTs narrow down towards their MVP with a walkthrough. Apply
 * Friday - feedback applied, second round of feedback, sign-off end of day if ready
 * Following week - if spec needs more work, aim for Monday or Tuesday sign-off
 
+Busy week, but if there's time or a team is jamming, NTs can continuously seek usability feedback on their walktrhoughs and practice their pitch.
+
 ### Day 1
 
 #### tl;dr
 
+* NTs are introduced to adaptive layouts, flex properties and the different properties on a flex container. Discuss your experiences with shipping for different screen sizes. Re-iterate the MVP targets one large or small.
+* Teams may be finishing up there YourShare project. Any challenges with merging?
+* NTs are introduced to the end to end walktrhough and begin building one together. Check-in on any questions here.
+
 #### Details
+
+Again, NTs choose to target a larger or small screen for their prototype MVP. If given enough time, it's assumed their product would have both. Did your team close on a decision here? It should be based on what best demonstrates how the app meets a user need. Adaptive layout is still an important engineering concept to help with scaling and making sure the content lays out as expected.
+
+Teams are finishing up there YourShare project. NTs should be working in branches and then merging back into master with a pull request. Check-in on how it's going. If needed revisit guidance on resolving merge conflicts.
+
+NTs are introduced to the walkthrough. This is a team effort to create the final UX, screen by screen, for the MVP. The session introduces what a mock up is and why it's helpful for planning and the spec. The first step in the walkthrough is creating a prioritized list of scenarios.
+
+* Ask to see the list.
+* Ask if the NTs have any questions about priority, ordering the scenarios. If there's disagreement, go back to the value prop and user needs and discuss which meets the user needs best.
+
+It's recommended that NTs create the walkthrough in PowerPoint. Everyone should contribute to this effort. Give feedback on the walkthrough. Look for:
+
+* Demonstration of their app's core user jobs.
+* Consistent and complete navigation - are there ways into and out of screens?
+* Appropriate use of button and field types - check boxes for multi-select, radio buttons for single choice, small vs. large input boxes...
+* Check-in on who's mocking up or in the process of mocking up each screen?
+
+Teams will be in different places in the walkthough process. Check-in on where they're and go from there.
 
 ### Day 2
 
 #### tl;dr
 
+* NTs are introduced to animations and springs. Animation makes a good stretch goal for the MVP.
+* NTs are introduced to the spec today! The goal is spec sign-off by end of week.
+* Check-in on walkthrough progress. These screens will be a critical part of the spec. It also gives the team space to discuss the details and come together on the plan.
+
 #### Details
+
+React-springs are introduced for animations. Ask the team for an overview of how they work or what they learned. It may be interesting to hear if anyone has worked with animations before or likes thinking about animations and their impact on the user experiences.
+
+The spec is a big come together moment. It defines what the NTs will build for the MVP prototype. NTs cannot begin work on the spec until they have coach sign-off. Share your experiences around specs and engineering planning. Revisit the concept of MVP (minimum-viable-product) to help frame scoping.
+
+Check-in on where your team is in the spec process. At a minimum they should have at least read the lesson. If not walk through it together. Topics to cover:
+
+* The spec brings together work from all phases of the design lifecycle. From their definition of the problem statement, to customer research, SWOT analysis, it all comes together in the spec.
+* Discuss the engineering work break down using the prioritized list of user scenarios from the walkthrough. For the engineering work there should be a screen and a technical description of how it's built.
+* Talk about how the team is working on the spec together. Everyone should write some portion of the spec and do engineering work break down.
+* If they're still working on the walk though, no problem. That piece can come last.
+
+The goal is spec sign-off by end of week. For sign-off specs must:
+
+* Have all sections
+* Have the problem statement well articulated
+* Clearly breakdown the work with UX mock, engineering description, and who's building what
+     * Everyone should have a core engineering contribution
+     * Everyone should have an engineering stretch goal
+* Be in OneNote or a Word document. It should be saved in their team folder.
+* Have contributions from everyone.
+* Once ready, both coaches should say so and post in the team's team channel that they sign-off.
+
+Aim for a draft Thursday for feedback. If needed, do another round of feedback on Friday. It's ok if sign-off happens Monday or Tuesday. NTs should head into building with a clear plan.
 
 ### Day 3
 
 #### tl;dr
 
+* Work on the walkthrough should be wrapped up.
+* Check-in on spec progress and questions.
+* Unit testing and jest is introduced. NTs do a practice unit test. Unit test(s) could be a stretch goal engineering item for someone in the spec.
+
 #### Details
+
+Teams should have wrapped up work on their walktrhoughs and moved product focus onto their spec. Check-in on spec progress. Answer questions. Ensure everyone is contributing here.
+
+Unit testing is introduced. Discuss and share how testing comes into your product development lifecycle. Unit testing isn't a requirement for the prototype though it makes a good stretch goal.
 
 ### Day 4
 
 #### tl;dr
 
+* NTs are introduced to component libraries. It's a good chance to talk about Fluent and common controls.
+* NTs should have a draft of the spec done. Give detailed feedback to help them address changes needed for sign-up. Provide written feedback and then discuss it together. 
+
 #### Details
+
+NTs are introduced to the general concept of component libraries and then pointed to the example of [Fluent UI](https://developer.microsoft.com/en-us/fluentui#/get-started). Fluent controls can be used in their prototypes. Talk through their walkthrough and look at what might be a good match for fluent controls. Make sure the spec is updated with controls that will be used.
+
+Give feedback on the spec. Written feedback is helpful so NTs have a list of things to address. Walkthrough the feedback so NTs understand the changes they need to make. Impress that feedback is part of the product cycle and spec process.
+
 
 ### Day 5
 
 #### tl;dr
 
+* If NTs have addressed feedback thoroughly and the spec is ready to good, sign-off.
+* If NTs have yet to address feedback thoroughly, don't sign-off. Give encouragement and additional pointers if needed.
+* NTs revisit Redux and will be updating the To Do app adding Redux.
+
 #### Details
+
+Give spec sign-off when the NTs have sufficient detail on what they're building and the spec represents the customer thinking and how the product will meet those needs.
+
+Talk the NTs through the feedback you're providing on the spec. Give feedback from a positive and growth perspective. Some NTs may be excited to jump in and get coding, frustrated with the documentation step. Give feedback that guides to completion and sign-off.
+
+Redux is revisited. NTs return to the To Do app and upgrade it with Redux.
+
+## Week 4
+
+After spec sign-off this week NTs begin building their prototype. Topics in the curriculum may be revisited based on need. Stretch topics and topics related to app features may be covered by the instructors as well.
+
+As NTs are building, encourage frequent commits and merging following the team GitHub process.
+
+Encourage NTs to get continuous feedback on their app as it's built. Share with other teams, test with people around. Encourage NTs to continue practicing and refining their app pitch.
+
+This week the details of the final presentation requirements will be shared. NTs don't need to start working on it yet, just providing clarity on where they're headed in addition to the prototype and pitch.
+
+## Week 5
+
+This week curriculum topics and stretch topics will continued to be covered by the instructors. The MVP prototype should really be coming together. By end of week there should be an end to end working version meeting the P0s and likely P1s defined in the spec.
+
+Continue encouraging testing the prototype and practice pitching.
+
+By end of week NTs should have a draft for their final presentation as well.
+
+## Week 6
+
+This is the last week of the program. NTs should be wrapping up work on their prototype and preparing for the final presentation.
+
+No new engineering topics are introduced this week. Instructors may revisit and help NTs unblock with any last minute MVP needs.
+
+An additional deliverable is the presentation summary. This is a short snippet that captures the pitch and app demo.
+
+[Details on specific deliverables and final presentation logistics to be defined]
