@@ -106,7 +106,9 @@ Pre-reqs
 
 * Demo - small React sample
     | * *todo - add react sample* to my-app
-    | * text box to update welcome string?
+    | * text box to update welcome string
+    
+* Common errors:'react-scripts' is not recognized as an internal or external command -> use the command `yarn install`or `npm install`, depending on which the project uses, to get the package manager to insall the dependencies.
 
 ### Explore create React app (30 minutes)
 
