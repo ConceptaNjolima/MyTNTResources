@@ -10,89 +10,98 @@ This lesson explores the purpose of a React component, how a component works and
 
 ## Time required and pace
 
-Total time: 2 hours, 20 minutes
+Total time: 2 hours, 30 minutes
 
-- 30 minutes - pre-session: background learning, research, and investigations
-- 80 minutes - session
-  - 20 minutes - Investigate the purpose of React components
-  - 20 minutes – explain basic component's content
+- 60 minutes - pre-session: background learning, research, and investigations
+- 60 minutes - session
+  - 20 minutes - Components discussion in groups
+  - 10 minutes – Review basic component's ideas
+  - 10 minutes - Discuss component types
   - 10 minutes – Explain component's lifecycle
-  - 30 minutes - practice
-- 30 minutes - post-session: what to continue working on, how it ties into the next sessions or projects
+  - 10 minutes - Exercise Setup
+- 30 minutes - post-session: Pair programming Exercise
 
-## Pre-session
+## Pre-session (60 minutes)
 
-- Read the article [What is a React Component](https://www.educative.io/edpresso/what-is-a-react-component) and experiment with the code samples
-- 
+Prepare for the session [here](../wiki/[ENG2.1]-Components)
 
-## Lesson details
+## Session
 
-### What is a Component?
+### Session Discussion (20 minutes)
 
-- In Breakout Groups of 3 to 4
-  - Brainstorm a list of your daily schedule analogous to components, e.g., Breakfast. How might thinking about your schedule as "components" be useful?
-  - Explore several given websites to look for component candidates
-- 
+In Breakout Groups of 3 to 4 people, discuss the following; be prepared to share an example
 
-### Component description (20 minutes)
+- Share examples of potential *Views* and *Components* you observed on websites
+- Imagine your daily schedule as a set of components, e.g., Wake up, Exercise, Breakfast, .... Discuss as a group what might be examples of:
+  -  **Stateless** and **stateful** components
+  - Component **properties** vs. **state**
+  - **Re-usable** components
+  - Components made up of other components (**composition**)
 
-* Component Properties
-* Component State
-* Interfaces
-* Component render()
+### Component Description (10 minutes)
 
-A component is an object that returns a Javascript XML Element (JSX Element)
+ At it's simplest, a component is an object that returns a Javascript XML Element (JSX Element) which is rendered on the screen. Components are the building blocks of a React App, independent and reusable, much like HTML elements are for web pages.
 
-There are two types of components:
+#### Key Component Ideas
 
-1)Function Components
+- Stateless Components
+- Component Data: *Properties vs. State*
+- Types of Components: *Class vs. Function*
+- Component Lifecycle Methods
 
-Example:
+### Component Types (10 minutes)
 
-    function App(Properties:any) {
-    
-        return <div>Hello World</div>
-    
-    }
-
-2) Class Components
-
-       export default class Tile extends React.Component<Properties, State>{
-    
-          render() {
-    
-              return (
-    
-                  <div>Hello World</div>
-    
-              )
-    
-          }
-    
-       }
-
-### Class Component (10 minutes)
+#### Class Component
 
 1. Render (required): This method returns the JSX element to be displayed by the class. It runs whenever the component's view updates.
 2. Properties (optional): This are arguments passed into the component from its parent components. They cannot be changed by the component.
 3. State (optional): This is are arguments that exists only withing the component. Changing them causes the component to update
+4. Besided *render()*, class can include a constructor, lifecycle method calls and other additional methods
 
-### Function Component (10 minutes):
+#### Class Component Example
 
-1. The function is expected to return the JSX element to be displayed.
+     class Tile extends React.Component<Properties, State> {
+     
+        render() {
+    
+            return (
+             		<div>Hello World</div>
+            )
+    
+        	}
+      }
+
+#### Function Component
+
+1. Originally simple, stateless components; expected to return the JSX element to be displayed.
 2. Properties (optional): These arguments are passed in from the component's parent similarly to passing parameters to a function. They cannot be changed in the component.
 3. UseState: A hook function that returns a state variable, giving function components a way to manipulate a state the way class components do.
 
+#### Function Components Examples (two common syntax)
+
+##### A. Standard Function Syntax
+
+    function App(props:any) {
+    
+        return <div><h1>My App</h1> <Tile/></div>
+    
+    }
+
+##### B. Lambda Function (Arrow Function) Syntax
+
+    let App = (props:any) => <div><h1>My App</h1> <Tile/></div>
+
 ### LifeCycle Methods (10 minutes)
 
-These are methods that are trigger through out a components existence from when they're constructed to when they are dismissed.
+These are methods that are trigger through out a components existence from when they're constructed to when they are dismissed. 
 
-![LifeCycleDiagram](./LifeCycle.png)
+![LifeCycleDiagram](./LifeCycle-methods.png)
 
-[https://www.w3schools.com/react/react\_lifecycle.asp](https://www.w3schools.com/react/react_lifecycle.asp)
+[https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/](https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)
 
-### Build components (30 minutes)
-*Exercise for NTs building custom button as functional component, and a class based component*
+## Post-session (30 minutes)
+
+Use pair programming to work on the *My Internship* sample app
 
 ## Stretch
 
