@@ -12,20 +12,20 @@ This lesson explores the purpose of a React component, how a component works and
 
 Total time: 2 hours, 30 minutes
 
-- 60 minutes - pre-session: background learning, research, and investigations
-- 60 minutes - session
+- 60 minutes - [**Pre-session**](../wiki/[ENG2.1]-Components): background learning, research, and investigations
+- 60 minutes - **Instructional Session**
   - 20 minutes - Components discussion in groups
   - 10 minutes – Review basic component's ideas
   - 10 minutes - Discuss component types
   - 10 minutes – Explain component's lifecycle
   - 10 minutes - Exercise Setup
-- 30 minutes - post-session: Pair programming Exercise
+- 30 minutes - [**Post-session**](https://github.com/tnt-summer-academy/Exercises/wiki/[ENG2.1]-MyTNT-Components): pair programming Exercise
 
 ## Pre-session (60 minutes)
 
-Prepare for the session [here](../wiki/[ENG2.1]-Components)
+*Prepare for the session* [here](../wiki/[ENG2.1]-Components)
 
-## Session
+## Session Details
 
 ### Session Discussion (20 minutes)
 
@@ -99,11 +99,22 @@ These are methods that are trigger through out a components existence from when 
 
 [https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/](https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)
 
+### Exercise Setup - MyTNT App (10 minutes)
+
+- Identify Components and composition: Tile, Card, Item
+- Review GitHub process as needed: Fork•Clone•Branch•Commit•Push•Pull Request 
+- Explore Code
+  - Identify Function and Class Components
+  - Examine use of TypeScript Interfaces with Properties and State
+  - Examine the use of the state value **count** in the *Counter* component
+  - Review HTML/CSS including <ul><li> and <a> elements
+
 ## Post-session (30 minutes)
 
-Use pair programming to work on the *My Internship* sample app
+- Use pair programming to complete the [*My TNT* Exercise](https://github.com/tnt-summer-academy/Exercises/wiki/[ENG2.1]-MyTNT-Components)
+- Push your work to GitHub and submit a Pull Request (one per pair)
 
 ## Stretch
 
-  1. Convert a giving class Component to a functionComponent.
-  2. Convert a given function component to a class component.
+Continue coding on the [*My TNT* Exercise Stretch Goals](https://github.com/tnt-summer-academy/Exercises/wiki/[ENG2.1]-MyTNT-Components)
+
