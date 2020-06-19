@@ -36,7 +36,7 @@ Kick off a discussion on how getting started is going, ask NTs about:
 * VS Code and TypeScript - were they able to get started and up and running?
 * Things going ok with Teams and Outlook, any questions?
 
-Review the Intro to PM and Design thinking deck with your team. NTs should have read through this prior to meeting. Key touch points:
+Talk about concepts related to the Intro to PM and Design thinking deck with your team. Depending on timezone your team may or may not have read document yet. Key touch points:
 
 * PM role - discuss your work as a PM and the range of the PM roles and responsibilities. It's a unique opportunity with the program for the NTs to experience both PM and engineering.
 * Design thinking - talk about the schedule and progressing through these phases over the next two weeks. Help the NTs map this to the prototype they're building as an output. At this point it's critical to step away from the details of implementation and get ready to empathize with users and think boldly and broadly.
