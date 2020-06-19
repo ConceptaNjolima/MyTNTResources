@@ -37,7 +37,7 @@ After reading Define needs, come together as a team and discuss potential target
 * Consider and discussed, what do you have in common? What was different that stretched your thinking?
 * Take pictures of your user journey and save as a file in your team's channel.
 
-### Write problem statement
+### Write problem statements
 
 With the problem statements the goal is to go from the vague high-level group problem statement, add definition, to create something that's meaningful, actionable, human-centric, based on the pain points and user needs you uncovered in the empathy mapping and user journey exercises.
 
