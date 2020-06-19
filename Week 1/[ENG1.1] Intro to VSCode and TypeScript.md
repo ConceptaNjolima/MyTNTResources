@@ -26,7 +26,7 @@ Total time: 1 hour 30 min
 * [TypeScript in Visual Studio Code](https://code.visualstudio.com/docs/languages/typescript)
 * [VS Code User Interface Guide](https://code.visualstudio.com/docs/getstarted/userinterface)
 * [VS Code User Shortcuts](https://code.visualstudio.com/docs/getstarted/keybindings)
-* [TS Hello World](https://www.typescriptlang.org/docs/handbook/basic-types.html)
+* [TS Hello World](https://code.visualstudio.com/docs/typescript/typescript-tutorial)
 * [Basic TS data types](https://www.typescriptlang.org/docs/handbook/basic-types.html)
 
 Pre-reqs
