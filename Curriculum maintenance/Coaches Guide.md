@@ -2,6 +2,8 @@
 
 This resource is aimed at coaches to follow the curriculum, guide prototype development, and infuse the curriculum with real-world product and development experiences. It's a guide, adapt to your team and where they're at.
 
+**Remote note**: depending on EST or PST your team may have not yet dug into the PM concepts of the day. As a best practice check-in on where they're at. Revisit the activities from the previous day and touch on core concepts of the upcoming day.
+
 ## Week 0
 
 NTs are onboarding.
