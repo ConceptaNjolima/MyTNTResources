@@ -95,7 +95,7 @@ In Breakout Groups of 3 to 4 people, discuss the following; be prepared to share
 
 These are methods that are trigger through out a components existence from when they're constructed to when they are dismissed. 
 
-![LifeCycleDiagram](./LifeCycle-methods.png)
+![LifeCycleDiagram](./Lifecycle-methods.png)
 
 [https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/](https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)
 
