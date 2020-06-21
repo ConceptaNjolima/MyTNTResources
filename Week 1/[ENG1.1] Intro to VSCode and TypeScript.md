@@ -2,7 +2,7 @@
 
 This lesson introduces Visual Studio Code and TypeScript including why this set of technology is important, a tour and basics of using the IDE, and TypeScript fundamentals.
 
-*Add debugging*
+[TypeScript](https://www.typescriptlang.org) is a typed superset of JavaScript. It permits, in particular, to define classes, modules and interfaces. 
 
 ## Learning objectives
 
@@ -21,13 +21,14 @@ Total time: 1 hour 30 min
 
 ## Background / review
 
-* Watch this video : https://www.youtube.com/watch?v=g8SCdMvUH2A
-* [Getting started with Visual Studio Code](https://code.visualstudio.com/docs)
-* [TypeScript in Visual Studio Code](https://code.visualstudio.com/docs/languages/typescript)
+* Watch the video: https://www.youtube.com/watch?v=g8SCdMvUH2A
+* [Getting started with VS](https://code.visualstudio.com/docs)
+* [TypeScript in VS Code](https://code.visualstudio.com/docs/languages/typescript)
 * [VS Code User Interface Guide](https://code.visualstudio.com/docs/getstarted/userinterface)
 * [VS Code User Shortcuts](https://code.visualstudio.com/docs/getstarted/keybindings)
-* [TS Hello World](https://www.typescriptlang.org/docs/handbook/basic-types.html)
-* [Basic TS data types](https://www.typescriptlang.org/docs/handbook/basic-types.html)
+* [Debugging in VS](https://code.visualstudio.com/docs/editor/debugging)
+* [TS Hello World](https://code.visualstudio.com/docs/typescript/typescript-tutorial)
+* [Basic TS datatypes, functions and more](https://www.typescriptlang.org/docs/handbook/basic-types.html)
 
 Pre-reqs
 
@@ -40,6 +41,7 @@ Pre-reqs
 
 1. Open VS Code, without a workspace folder open.
     * Highlight the activity bar, status bar, and side bar.
+    * Highlight the terminal.
     * Highlight the "Help" option in the toolbar for quick access to references.
     * Call out that "Learn" is in the landing page. It takes time to get to adopt VS Code, for everyone.
 
@@ -79,9 +81,14 @@ Pre-reqs
     }
     ```
 
-    8. While in your TS file click on the debug/run menu and click start debugging.
-        * Select node.js as the environment. This allows you to run the TS file and set breakpoints/debug the file
-        * Running switches to the Run tab in the side bar. Click the top 'Explorer' icon to get back to the folder view.
+    JS files are now in the directory `out`.
+    
+    8. While in your TS file, click on the debug/run icon in the activity bar or on Run / Start Debugging in the menu.
+        * Create a `launch.json` configuration file. Select Node.js as the environment. This allows you to run the TS file in debug mode. 
+        * You can set breakpoints/logpoints/debug the file. 
+        * Running switches to debug in the side bar. Check the debug console.
+        * Once you have a debug breakpoint or other, the debug toolbar will appear with different options (Continue/Pause, Step over/into/out, Restart, Stop).
+        * Click the top 'Explorer' icon to get back to the folder view.
 
 4. VS Code TS language support features
     * Introduce and demo - IntelliSense and Code Snippets.
@@ -91,9 +98,7 @@ Pre-reqs
 
 5. **Try it** - NTs create and run HelloWorld.ts
 
-### Introduction to TS datatypes, functions, components (35 minutes)
-
-[TypeScrit](https://www.typescriptlang.org) is a typed superset of JavaScript. It permits to define classes, modules and interfaces. 
+### Introduction to TS datatypes, functions, components (35 minutes) 
 
 Samples for datatypes, functions, objects, and classes are available here: [Intro_TS.ts]([ENGresource]Intro_TS.ts). Open the file in VS Code to talk through it with the descriptions that follow.
 
@@ -110,7 +115,7 @@ Samples for datatypes, functions, objects, and classes are available here: [Intr
     * Functions are building blocks of applications in JS.
     * They're used for abstraction. TS also has classes, name spaces, and modules.
     * Functions can be named or anonymous.
-       * *Why is it important at this stage*
+       * *Why is it important at this stage?*
     * Functions can have types and optional default parameters
       * Types define the datatypes of the variables passed into and returned from the function.
       * Parameters are what's passed into the function.
@@ -118,8 +123,8 @@ Samples for datatypes, functions, objects, and classes are available here: [Intr
 3. Objects - [overview of objects](https://www.tutorialspoint.com/typescript/typescript_objects.htm)
    * An object represents key value pairs that describe something. For example, a rectangle has length and width. A contact may have name, phone number and address.
    * Reference - creates an additional name for the same object. Changing a value in the reference object, changes the original object.
-   * Copy - creates a copy of the object. Changing the copy object will not impact the original object.
-   * An interface represents one of TS core principles, type checking the shape values have. Interfaces name the types.
+   * Copy - creates a copy (clone) of the object. Changing the copy object will not impact the original object.
+   * An [interface](https://www.typescriptlang.org/docs/handbook/interfaces.html) represents one of TS core principles, type checking the shape values have. Interfaces name the types.
 
 4. Class - [overview of classes](https://www.typescriptlang.org/docs/handbook/classes.html#classes)
    * A class in object-oriented programming languages, like TS, is a template for creating objects. Classes are a feature of TS, only available in more recent versions of JS (from 2015 onwards).
@@ -132,16 +137,21 @@ Samples for datatypes, functions, objects, and classes are available here: [Intr
 
 5. Components - [overview of components](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-1-8.html#function-components-in-react)
     * Components are building blocks of React Apps that split up the UI intro reusable pieces.
-    * Conceptually they're like JS functions, that accept inputs "props" and return React elements that describe what should appear on the screen, or how the user interface should *react*
-    * More on React in a future lesson
+    * Conceptually they're like JS functions, that accept inputs "props" (for properties) and return React elements that describe what should appear on the screen, or how the user interface should *react*.
+    * Function and class components are React components. More on React in a future lesson.
     
-6. Debugging through VS Code *to add*
+6. Debugging through VS Code - [overview of debugging](https://code.visualstudio.com/docs/editor/debugging)
+    * Start debugging, create a `launch.json` configuration file, and select Node.js.
+    * Breakpoints stop the program. Add breakpoints by clicking on the editor marging (left) (red dots appear).  
+    * Logpoints do not stop the program but permit to log messages to the console. Add logpoints by clicking on the editor marging (left) (red diamonds appear). Experssions between `{}` are evaluated.
+    * If you click on run, the debug toolbar will appear with different options (Continue/Pause, Step over/into/out, Restart, Stop) and you can use this to run the program step by step and backward.
+    * You can observe/inspect the changing values of variables of the program and the call stack. You can watch particular variables. 
 
 7. **Try it** - NTs clone a sample repo with different data types and functions
     * To clone the sample, start in VS Code.
-       1. From GitHub, copy the file path: Week 1/[ENGresource]Intro_TS.ts.
-       2. In empty Explorer tab click the "Clone Repository" or in the command palette type `git: Clone`.
-    * *todo - instructions for cloning and running*
+       1. In the command palette (CTRL+SHIFT+P) type `git: Clone`. Click on Clone from GitHub and enter your GitHub credentials.
+       2. Enter tnt-summer-academy to search for the tnt-summer-academy/Samples repository and select the local directory you want to use for clone. 
+       3. Find IntroTS.ts in the clone repository.
 
 ### Review (10 minutes)
 
