@@ -44,31 +44,31 @@ Pre-reqs
   * When the data changes, React *reacts* and updates the screen
   * CSS is used to style React
   * React is the code behind rendering HTML in a webpage
-  * [React](https://github.com/facebook/react) is an open source project from Facebook. It's used at Microsoft in web experiences across teams. IG, Netflix, New York Times, Khan Academy, What's App, Dropbox... all use and contribute to React.
+  * [React](https://github.com/facebook/react) is an open source project from Facebook. It's used at Microsoft in web experiences across teams. IG, Netflix, New York Times, Khan Academy, WhatsApp, Dropbox... all use and contribute to React.
 * As a table, TNTs draw what they've learned so far about the app architecture
   * Display app architecture with labels, no descriptions
   * TNT groups talk through the function of the different parts and how they connect
-* Re-group and walk through architecture thus far together - HTML, CSS, React, Node, React...
+* Re-group and walk through architecture thus far together - HTML, CSS, React, Node...
 
 ### Creating a new React app with TypeScript (20 minutes)
 
 * Introduce tool chain for generated a react app
   * https://reactjs.org/docs/create-a-new-react-app.html 
-  * This section covers using TypeScript: https://create-react-app.dev/docs/adding-typescript/
+  * This section covers using TypeScript: https://create-react-app.dev/docs/adding-typescript with React
   * The library sets up the environment with the latest TS features and optimizes the app for production
 
-* Demo - Create React Project
+* Demo - create React Project
   * `yarn create react-app my-app --template typescript` is the command to run in the terminal. Breaking down the command:
-  * `yarn` - command line programing for installing JS packages from npm
-  * `create react-app` - library for generating the environment
-  * `my-app` - name of the app
-  * `--template typescript` - use the TypeScript template
+     * `yarn` - command line programing for installing JS packages from npm
+     * `create react-app` - library for generating the environment
+     * `my-app` - name of the app
+     * `--template typescript` - use the TypeScript template
   * Run the command
 
 * Demo - terminal during create React app
   * The command fetches and installs the dependencies needed for a React TypeScript app. The first time it's installed you can see it in action.
   * create react-app will creates a workspace folder with the provided name where the terminal directory, folder, is at.
-  * If it succeeds a Git repository is created.
+  * If it succeeds, a Git repository is created.
 
 * Demo - starting the app
   * create react-app ends with some helpful commands to run.
@@ -116,7 +116,7 @@ NTs create a new React TS app with create react app. Observe for NTs blocked in 
 
 1. Run the app.
 2. Make changes in the app using CSS, HTML, and React. Save the file App.tsx and watch the page reload.
-3. Make changes in the app.css file. Notice how the style changes.
+3. Make changes in the App.css file. Notice how the style changes.
 4. Try adding the React sample.
 
 ### Review (10 minutes)
