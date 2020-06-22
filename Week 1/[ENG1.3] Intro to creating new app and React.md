@@ -1,10 +1,9 @@
 # Intro to creating a new app and React
 
-This lesson covers React. It introduces how to create a new React App project with TypeScript. It describes generating the project with the React integrated tool chain, the pieces of the project, making changes, and running the project.
+This lesson covers React. It introduces how to create a new React App project that supports TypeScript. It describes generating the project with the React integrated tool chain, the pieces of the project, making changes, and running the project.
 
 *Open questions in lesson*
 * *Need app architecture diagram*
-* *React sample code snippet, react sample app description*
 
 ## Learning objectives
 
@@ -27,6 +26,9 @@ Total time: 1.5 hour
 
 * [Create a New React App](https://reactjs.org/docs/create-a-new-react-app.html)
 * [Create a React App - Adding TypeScript](https://create-react-app.dev/docs/adding-typescript/)
+* [React official web site on GitHub](https://github.com/facebook/react) 
+* [Reactjs.org docs](https://reactjs.org/docs)
+* [React with TypeScript cheatsheet](https://react-typescript-cheatsheet.netlify.app)
 
 Pre-reqs
 
@@ -104,9 +106,11 @@ Pre-reqs
     * Save
     * Watch app re-render
 
-* Demo - small React sample
-    | * *todo - add react sample* to my-app
-    | * text box to update welcome string
+* Demo - small React sample 
+    * To update a welcome string based on input text
+    * Edit the App.tsx by replacing the text in my-app with Welcome and an input textbox 
+    * Add the state of the component
+    * Watch the update of Welcome string
     
 * Common errors:'react-scripts' is not recognized as an internal or external command. Use the command `yarn install`or `npm install`, depending on which the project uses, to get the package manager to install the dependencies.
 
@@ -117,18 +121,19 @@ NTs create a new React TS app with create react-app. Observe for NTs blocked in 
 1. Run the app
 2. Make changes in the app using CSS, HTML, and React. Save the file App.tsx and watch the page reload
 3. Make changes in the App.css file. Notice how the style changes
-4. Try adding the React sample
+4. Try adding the small React sample (textbox that update the welcome string)
 
-### Review (10 minutes)
+### Review (15 minutes)
 
 1. Post to Teams what went well and what was challenging?
 2. A few students share with the room
 3. Talk through examples of how to resolve the challenges?
 
-### Extend the sample (20)
+### Extend the sample (15 minutes)
 
-NTs will update the create react sample app to *x* *todo- define x*
+NTs will work on the create react sample app that updates the welcome string. 
 
 ## Stretch
 
+* Check out these samples: [Recommended React + TypeScript codebases to learn from](https://react-typescript-cheatsheet.netlify.app/docs/basic/recommended/resources)
 * Check out these community samples: [Example projects](https://reactjs.org/community/examples.html)
