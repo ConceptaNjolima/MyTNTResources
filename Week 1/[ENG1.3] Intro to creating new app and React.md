@@ -109,7 +109,6 @@ Pre-reqs
 * Demo - small React sample 
     * To update a welcome string based on input text
     * Edit the App.tsx by replacing the text in my-app with Welcome and an input textbox 
-    * Add the state of the component
     * Watch the update of Welcome string
     
 * Common errors:'react-scripts' is not recognized as an internal or external command. Use the command `yarn install`or `npm install`, depending on which the project uses, to get the package manager to install the dependencies.
