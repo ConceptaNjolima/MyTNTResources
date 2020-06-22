@@ -32,7 +32,7 @@ As a team:
     * Regroup as a team.
     * Walk through your findings together, build on one another and expand, don't shut anything down.
     * Pull your research together into an empathy map. Create one empathy map.
-6. Share the completed empathy map, our where you're at, with your coaches at your next sync.
+6. Share the completed empathy map, or where you're at, with your coaches at your next sync.
 
 ## Stretch
 

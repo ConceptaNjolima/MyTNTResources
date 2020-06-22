@@ -51,7 +51,7 @@ The spec serves several purposes:
 In the spec you should prioritize the user stories and the engineering work you will do first in your MVP. Use this system:
 
 * A 0-3 ranking ranking system is used to prioritize work. It defines the order in which things will be built.
-* A P0 (priority-0, said 'p zere') item is a must. There's no way the product or feature can ship or be released with out the user story. The product will be delayed and not ship if these aren't ready on time.
+* A P0 (priority-0, said 'p zero') item is a must. There's no way the product or feature can ship or be released with out the user story. The product will be delayed and not ship if these aren't ready on time.
 * A P1 is an user stor that's high on the priority list, it's likely that you will accomplish all of these before shipping. If you don't it will not block the product from shipping but you would likely ship it in an update as soon as possible.
 * A P2 is an user story with a medium priority. If all goes well you will likely get to all of these before you ship.
 * A P3 is a user story with low priority. It's unlikely you'll get to any of these, but if you do they're nice to have. For our purposes and the limited development time we have for the prototypes, move P3 and the remaining user stories to the Out of Scope section.

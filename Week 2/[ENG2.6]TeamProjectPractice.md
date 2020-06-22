@@ -40,7 +40,7 @@ Checkout [ENG 2.6] Branching, merging, and merge conflicts for a refresher.
 
 ### Breakdown engineering work
 
-Find the sample spec - YourShare in the Reference folder.
+Find the sample spec - [YourShare](https://github.com/tnt-summer-academy/Curriculum/blob/master/Reference/Sample%20spec%20-%20YourShare.md) in the Reference folder.
 
 1. Create a new GitHub repository for your team and put a copy of the spec in your repo.
 2. To break down the engineering work consider what are the pieces it will take to build the user story or functionality. For the prototype purposes, consider what you can show in the UI that would later be back by real integration with other API's or services. For example, it might be out of scope for the prototype to introduce authentication flows. Instead use text boxes to mimic a sign-in experience.

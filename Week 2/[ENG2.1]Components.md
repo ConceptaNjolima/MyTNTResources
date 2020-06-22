@@ -1,85 +1,120 @@
 # Components
 
-This lesson explains in detail how a component works and how its methods function
+This lesson explores the purpose of a React component, how a component works and how its methods function
 
 ## Learning objectives
 
+* TNTs will be able to describe the purpose of a React component
 * TNTs will understand how a component's key methods function
 * TNTs will practice building components
 
 ## Time required and pace
 
-Total time: 1 hour
+Total time: 2 hours, 30 minutes
 
-* 20 minutes – explain basic component's content
-* 10 minutes – Explain component's lifecycle
-* 30 minutes - practice
+- 60 minutes - [**Pre-session**](../wiki/[ENG2.1]-Components): background learning, research, and investigations
+- 60 minutes - **Instructional Session**
+  - 20 minutes - Components discussion in groups
+  - 10 minutes – Review basic component's ideas
+  - 10 minutes - Discuss component types
+  - 10 minutes – Explain component's lifecycle
+  - 10 minutes - Exercise Setup
+- 30 minutes - [**Post-session**](https://github.com/tnt-summer-academy/Exercises/wiki/[ENG2.1]-MyTNT-Components): pair programming Exercise
 
-## Background / review
+## Pre-session (60 minutes)
 
-## Lesson details
+*Prepare for the session* [here](../wiki/[ENG2.1]-Components)
 
-### Component description (20 minutes)
+## Session Details
 
-* Component Properties
-* Component State
-* Interfaces
-* Component render()
+### Session Discussion (20 minutes)
 
-A component is an object that returns a Javascript XML Element (JSX Element)
+In Breakout Groups of 3 to 4 people, discuss the following; be prepared to share an example
 
-There are two types of components:
+- Share examples of potential *Views* and *Components* you observed on websites
+- Imagine your daily schedule as a set of components, e.g., Wake up, Exercise, Breakfast, .... Discuss as a group what might be examples of:
+  -  **Stateless** and **stateful** components
+  - Component **properties** vs. **state**
+  - **Re-usable** components
+  - Components made up of other components (**composition**)
 
-1)Function Components
+### Component Description (10 minutes)
 
-Example:
+ At it's simplest, a component is an object that returns a Javascript XML Element (JSX Element) which is rendered on the screen. Components are the building blocks of a React App, independent and reusable, much like HTML elements are for web pages.
 
-    function App(Properties:any) {
+#### Key Component Ideas
 
-        return <div>Hello World</div>
+- Stateless Components
+- Component Data: *Properties vs. State*
+- Types of Components: *Class vs. Function*
+- Component Lifecycle Methods
 
-    }
+### Component Types (10 minutes)
 
-2) Class Components
-
-       export default class Tile extends React.Component<Properties, State>{
-
-          render() {
-
-              return (
-
-                  <div>Hello World</div>
-
-              )
-
-          }
-
-       }
-
-### Class Component (10 minutes)
+#### Class Component
 
 1. Render (required): This method returns the JSX element to be displayed by the class. It runs whenever the component's view updates.
 2. Properties (optional): This are arguments passed into the component from its parent components. They cannot be changed by the component.
 3. State (optional): This is are arguments that exists only withing the component. Changing them causes the component to update
+4. Besided *render()*, class can include a constructor, lifecycle method calls and other additional methods
 
-### Function Component (10 minutes):
+#### Class Component Example
 
-1. The function is expected to return the JSX element to be displayed.
+     class Tile extends React.Component<Properties, State> {
+     
+        render() {
+    
+            return (
+             		<div>Hello World</div>
+            )
+    
+        	}
+      }
+
+#### Function Component
+
+1. Originally simple, stateless components; expected to return the JSX element to be displayed.
 2. Properties (optional): These arguments are passed in from the component's parent similarly to passing parameters to a function. They cannot be changed in the component.
 3. UseState: A hook function that returns a state variable, giving function components a way to manipulate a state the way class components do.
 
+#### Function Components Examples (two common syntax)
+
+##### A. Standard Function Syntax
+
+    function App(props:any) {
+    
+        return <div><h1>My App</h1> <Tile/></div>
+    
+    }
+
+##### B. Lambda Function (Arrow Function) Syntax
+
+    let App = (props:any) => <div><h1>My App</h1> <Tile/></div>
+
 ### LifeCycle Methods (10 minutes)
 
-These are methods that are trigger through out a components existence from when they're constructed to when they are dismissed.
+These are methods that are trigger through out a components existence from when they're constructed to when they are dismissed. 
 
-![LifeCycleDiagram](./LifeCycle.png)
+![LifeCycleDiagram](./Lifecycle-methods.png)
 
-[https://www.w3schools.com/react/react\_lifecycle.asp](https://www.w3schools.com/react/react_lifecycle.asp)
+[https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/](https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)
 
-### Build components (30 minutes)
-*Exercise for NTs building custom button as functional component, and a class based component*
+### Exercise Setup - MyTNT App (10 minutes)
+
+- Identify Components and composition: Tile, Card, Item
+- Review GitHub process as needed: Fork•Clone•Branch•Commit•Push•Pull Request 
+- Explore Code
+  - Identify Function and Class Components
+  - Examine use of TypeScript Interfaces with Properties and State
+  - Examine the use of the state value **count** in the *Counter* component
+  - Review HTML/CSS including <ul><li> and <a> elements
+
+## Post-session (30 minutes)
+
+- Use pair programming to complete the [*My TNT* Exercise](https://github.com/tnt-summer-academy/Exercises/wiki/[ENG2.1]-MyTNT-Components)
+- Push your work to GitHub and submit a Pull Request (one per pair)
 
 ## Stretch
 
-  1. Convert a giving class Component to a functionComponent.
-  2. Convert a given function component to a class component.
+Continue coding on the [*My TNT* Exercise Stretch Goals](https://github.com/tnt-summer-academy/Exercises/wiki/[ENG2.1]-MyTNT-Components)
+

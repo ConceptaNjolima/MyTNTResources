@@ -1,6 +1,8 @@
 # Coaches guide
 
-This resources is aimed at coaches to follow the curriculum, guide prototype development, and infuse the curriculum with real-world product and development experiences. It's a guide, adapt to your team and where they're at.
+This resource is aimed at coaches to follow the curriculum, guide prototype development, and infuse the curriculum with real-world product and development experiences. It's a guide, adapt to your team and where they're at.
+
+**Remote note**: depending on EST or PST your team may have not yet dug into the PM concepts of the day. As a best practice check-in on where they're at. Revisit the activities from the previous day and touch on core concepts of the upcoming day.
 
 ## Week 0
 
@@ -10,7 +12,7 @@ NTs are onboarding.
 
 This week introduces the basic technologies and tools the prototypes will be built with. NTs begin building with TypeScript and React in VS Code. NTs are also introduced to Git and the basic Git flow. The week ends with NTs building a basic list app.
 
-NT groups are given a broad problem statement. NTs are introduced to the product development lifecycle and work in teams to break down the problem statement into concrete and addressable user needs. This week includes activities to empathize with user, define user needs, ideate and sketch.
+NT groups are given a broad problem statement. NTs are introduced to the product development lifecycle and work in teams to break down the problem statement into concrete and addressable user needs. This week includes activities to empathize with the user, define user needs, ideate and sketch.
 
 ### Day 1
 
@@ -18,25 +20,25 @@ NT groups are given a broad problem statement. NTs are introduced to the product
 
 * Kick off with your team and get to know one another!
 * Check in on getting started with the engineering tools and tech - VS Code, TS, React
-* Revisit the Intro to [Intro to PM and Design thinking](https://github.com/tnt-summer-academy/Curriculum/blob/master/Reference/Product%20decks/1.0%20-%20Intro%20to%20pm%20and%20design%20thinking.pdf) content with your team especially - the PM role design thinking phases, MVP, and agile development.
+* Revisit the [Intro to PM and Design thinking](https://github.com/tnt-summer-academy/Curriculum/blob/master/Reference/Product%20decks/1.0%20-%20Intro%20to%20pm%20and%20design%20thinking.pdf) content with your team, especially - the PM role design thinking phases, MVP, and agile development.
 * Make sure your team has a channel setup, encouraging having conversations in this channel and keeping all files there
 
 #### Details
 
 Kick off with your team and the product lifecycle! Two main objectives - start to get to know everyone and review the [Intro to PM and Design thinking](https://github.com/tnt-summer-academy/Curriculum/blob/master/Reference/Product%20decks/1.0%20-%20Intro%20to%20pm%20and%20design%20thinking.pdf). Start with introductions, names and pronouns. Consider an ice breaker like:
 
-* If you could have lunch with anyone, who what it be?
+* If you could have lunch with anyone, who would it be?
 * What was your favorite course?
 * Where do you most want to travel to?
 
-Share about yourself, what you work on and what you do outside of work. As the NTs the same.
+Share about yourself, what you work on and what you do outside of work. Ask the NTs the same.
 
-Kick of a discussion on how getting started is going, ask NTs about:
+Kick off a discussion on how getting started is going, ask NTs about:
 
-* VS Code and TypeScript, where they able to get started and up and running?
+* VS Code and TypeScript - were they able to get started and up and running?
 * Things going ok with Teams and Outlook, any questions?
 
-Review the Intro to PM and Design thinking deck with your team. NTs should have read through this prior to meeting. Key touch points:
+Talk about concepts related to the Intro to PM and Design thinking deck with your team. Depending on timezone your team may or may not have read document yet. Key touch points:
 
 * PM role - discuss your work as a PM and the range of the PM roles and responsibilities. It's a unique opportunity with the program for the NTs to experience both PM and engineering.
 * Design thinking - talk about the schedule and progressing through these phases over the next two weeks. Help the NTs map this to the prototype they're building as an output. At this point it's critical to step away from the details of implementation and get ready to empathize with users and think boldly and broadly.
@@ -60,7 +62,7 @@ Check that your team has created a channel under their group. Encourage them to 
 
 Each group received their problem statement today. It was posted in the General channel for the group in the morning. Your team may be at various phases of digesting the problem statement. Check-in with your team and get their read on whether or not they're excited. This is a chance to encourage a resilient and growth mindset if they were hoping for a different one.
 
-This kicks of the empathize design phase! The goal is to develop a deep, empathetic understanding of the user needs by observing, engaging and immersing. Reiterate that at this point it's not about finding the solution but figure out what you're going to solve for. NTs have started are started activities to uncover these needs and build an empathy maps.
+This kicks off the empathize design phase! The goal is to develop a deep, empathetic understanding of the user needs by observing, engaging and immersing. Reiterate that at this point it's not about finding the solution but figure out what you're going to solve for. NTs have started activities to uncover these needs and build an empathy map.
 
 * Check-in on how it's going, how they divided the work, and encourage the use of OneNote if it's not already there.
 * If well underway, have the NTs talk through the empathy map and share the key pain points they've found.
@@ -79,13 +81,13 @@ NTs engineering focus today is on Git. Check-in on questions, share your experie
 
 #### Details
 
-It has been a big week with many introductions, new tools, and getting in a rhythm working as a team. Ask everyone how they're doing in or feeling at this moment with one word. Share too and connections to feelings with getting started and something new. Look for positive and negative trends to pull more info out on.
+It has been a big week with many introductions, new tools, and getting in a rhythm working as a team. Ask everyone how they're doing or feeling at this moment with one word. Share too and connections to feelings with getting started and something new. Look for positive and negative trends to pull more info out on.
 
 NTs have begun the [define](https://github.com/tnt-summer-academy/Curriculum/blob/master/Reference/Product%20decks/1.2%20-%20Define%20needs.pdf) phase and are refining towards an addressable problem statement. They're identifying their specific target audience and creating user journey maps. See where the are in the process and if they have an questions:
 
 * At this point the discussions should be solution agnostic, not talking about specific applications or features.
 * Check-in and make sure all NTs are participating in the activities. Even if it's not their favorite part of the program it's important to take the time in these phases to make sure you build something great. Everyone has something to contribute that expands thinking here.
-* Depending on the timing, NTs may have come up with problem statements and created an affinity diagram. Ask for a tour. Look for trends they may haven't seen or help them expand if the problem statements are too narrow.
+* Depending on the timing, NTs may have come up with problem statements and created an affinity diagram. Ask for a tour. Look for trends they may not have seen or help them expand if the problem statements are too narrow.
 
 On the engineering side of the focus is getting started with create React app.
 
@@ -99,7 +101,7 @@ On the engineering side of the focus is getting started with create React app.
 
 * Set the tone for open brainstorming with great ideas pitch or an activity to build support of ideas in brainstorming.
 * Today the NTs enter the [ideation phase](https://github.com/tnt-summer-academy/Curriculum/blob/master/Reference/Product%20decks/1.3%20-%20HMW%20and%20ideation.pdf), using a how might we exercise to come up with two potential problem statements as a team. Check-in on where they're at in the process. Ensure that all perspectives are represented.
-* NTs started with the list app work, the first project. Ask for a volunteer to share where they're at open the floor to questions on the work.
+* NTs started with the list app work, the first project. Ask for a volunteer to share where they're at and open the floor to questions on the work.
 
 #### Details
 
@@ -120,3 +122,299 @@ On the engineering side, today NTs were introduced to the to-do sample app proje
 * Ask for a demo or for someone to share where they're at.
 
 ## Day 5
+
+7/3 Holiday - everyone has the day off
+
+## Week 2
+
+Early in the week NTs continue and wrap up working on their list app. In the Git learning track, NTs are introduced to remote repositories and team development practices using branches. Applying, NTs move their list app to GitHub and later in the week as a group practice working together on a sample app. Views, layouts, and UI debugging allow NTs to revisit the list app and update.
+
+Working through the design phases, NTs  start the first iteration of the prototype and test. NTs create paper prototypes, begin early usability testing completing 2-3 interviews each by end of week, and create first drafts of their value prop and pitch. Volunteer as a usability participant and listen to the pitch. The teams will still go through phases of expanding and refining app and feature ideas. When lost or debating, evaluate the solution to the problem statement against how well it meets the user needs.
+
+### Day 1
+
+#### tl;dr
+
+* Reconnect after the long weekend.
+* Teams are introduced to [Usability and interviewing](https://github.com/tnt-summer-academy/Curriculum/blob/master/Reference/Product%20decks/2.0%20-%20Usability%20and%20interviewing.pdf) and begin creating their interview guide. Check in and volunteer to practice.
+* Remote repositories are introduced. NTs move to-do apps to a remote repository and begin working there.
+
+#### Details
+
+NTs wrapped up last week with ideation. There may be mixed feelings heading into the second week excited or disappointed, fatigued or re-energized. Ask about the long weekend, share about your weekend and gauge where everyone is at.
+
+Check-in and talk through the concept of remote repositories and strategies for Git back tracking. Docs on the computer vs docs in Google drive make a great analogy.
+
+On the product side, NTs will learn about user research and usability testing. Both coaches share about your user research experiences and being customer driven. Talk about how your feature crews have worked with user researchers. NTs have begun writing their user research guide. The guide focus today is goals, what they want to learn, and interview questions. Tomorrow they'll work on paper prototypes and then define their usability tasks.
+
+* Volunteer to be interviewed as a participant.
+* Look for open-ended, non-leading questions.
+* Complete the interview and then give feedback at the end.
+
+Again, check that the usability guide is saved somewhere shared in Teams, either a Word doc or OneNote.
+
+### Day 2
+
+#### tl;dr
+
+* Components and methods are introduced including class and function components, along with React lifecycle methods.
+* NTs are introduced to the large screen vs. small screen MVP question. It's not about features, which would they build first that best meets user needs?
+* NTs review [Prototype and test](https://github.com/tnt-summer-academy/Curriculum/blob/master/Reference/Product%20decks/2.1%20-%20Prototype%20and%20test.pdf) with why prototype and different methods. NTs begin creating paper prototypes, individually and then combine into a generally shared version maybe with a few options.
+
+#### Details
+
+NTs reach the [React component lifecycle](https://github.com/tnt-summer-academy/Curriculum/blob/master/Week%202/%5BENG2.1%5DComponents.md). This is one of the more in-depth technical concepts in the curriculum. Encourage NTs to keep at if they first don't grasp the concepts.
+
+In [Prototype and test](https://github.com/tnt-summer-academy/Curriculum/blob/master/Reference/Product%20decks/2.1%20-%20Prototype%20and%20test.pdf) NTs are introduced to why prototype and different prototype methodologies. Share your experiences with prototypes.
+
+NTs begin narrowing down whether they build a large screen or small screen MVP.
+
+* Given enough time, it's assumed NTs would build both for the product.
+* Adaptive layouts are introduced, however NTs will only have time to optimize for one.
+* It's an intentional design decision which direction the app goes. NTs can explore this with their paper prototypes.
+* See the [document](https://github.com/tnt-summer-academy/Curriculum/blob/master/Reference/Product%20decks/2.1%20-%20Prototype%20and%20test.pdf) for more details on how this is framed.
+
+3 options of prototyping methods are covered - Paper, PowerPoint, and Figma. Everyone will start with paper prototypes, though there's an extra barrier to sharing virtually. Taking a picture and putting in a PPT slide or viewing as a slide show can work well. It's not a requirement to use a different method at all through the program. Teams can experiment with PPT mock ups, a great option for sharing virtually. Others, especially with an interest in design might try out Figma. A few notes on Figma:
+
+* This is great if it builds on the team's experience. It shouldn't be a replacement for engineering contributions to the project or come at the cost of engineering work.
+* NTs can create a free Figma account. There are limits to sharing projects and the number of projects. 
+* Figma should be a last step after the team has landed an MVP plan.
+
+This week all NTs will create paper prototypes and then test with people they live with if possible. If not possible to test locally, encourage taking pictures and setting up remote testing with other NTs or coaches. Like in ideation, paper and drawing this is a quick way to express ideas, especially when there are open questions and teams are still refining.
+
+* Some individuals and teams will want to jump to high-fidelity quickly. Low-fidelity comes first for faster iteration.
+* Even if this isn't a favorite part of the design sprint, everyone should be creating walkthroughs and contributing to the user interview guide.
+* Ask what tasks the NTs will define to walk someone through their prototype or see where they are in the process.
+* No additional product topics tomorrow. Time can be spent on finishing paper prototypes and usability testing.
+
+### Day 3
+
+#### tl;dr
+
+* NTs continue working on their paper prototype and conduct usability interviews. Check-in on interview progress.
+* Volunteer to participate in the usability study if you haven't yet.
+* View component layout and UI debugging tools in the browser are introduced.
+
+#### Details
+
+Combining usability and interviewing with prototype and test, NTs continue conducting usability studies. NTs may have different local abilities to test. Offer remote connections and encourage reaching out to other coaches and NTs if needed.
+
+* Check-in on where NTs are putting results. Encourage NTs to compile notes as they go.
+* Ask what trends they're seeing, what's working well, where people are blocked.
+* Work through how to apply the feedback they're getting from participants. Is the person in their target audience, if not that's ok. What's the participant context? Does it shape how the feedback is applied?
+
+As introduced yesterday, NTs will build either a large screen or small screen MVP. As a team they should decide what decision to go. View component layouts begins to introduce adaptive layout concepts and illustrates how Flexbox helps UI flow.
+
+UI debugging practices using developer tools in Edge. This opens up a new way to learn and see how any website is built and how it's working.
+
+* If you work on web or have a web feature, considering digging in and showing something with dev tools.
+* If you're not familiar with the Edge developer tools, ask for a demo.
+
+### Day 4
+
+#### tl;dr
+
+* NTs are introduced to Redux for state management. Ask the team to describe the data flow.
+* Team engineering skills continue with branching, merging and merge conflict Git.
+* [Value prop and pitching](https://github.com/tnt-summer-academy/Curriculum/blob/master/Week%202/%5BPM2.2%5DValue%20prop%20and%20pitch.md) introduces what a value proposition is and a framework for developing a value prop. NTs begin working on the first draft of their value prop.
+
+#### Details
+
+Redux is the next step for state management. This week introduces next week and revisits the topic and goes more in depth. Ask your team to share the data flow. See if together they can describe the flow. No need to be a redux experts. If you're blocked share how you learn new technical concepts:
+
+* "Bing" it.
+* Look for a YouTube video.
+* Read Stack Overflow (might be good to point at the internal SO: https://stackoverflow.microsoft.com/).
+* Do you have a favorite channel or explainer of technical content?
+
+This is a great chance to share your favorite Git merging story and re-iterate that Git is a skill that takes practice. The final pieces of the basics with Git are introduced with branching and merging. NTs will follow the [GitHub Flow](https://guides.github.com/introduction/flow/) when working together.
+
+NTs continue product thinking with the value prop and pitch. This is a first draft. There's a long way to go before the final presentations. This is the first step in articulating and convincing stakeholders that this app is valuable, gather support and / or funding in a real world engineering setting. Depending on how far along your team is:
+
+* Ask to hear the pitch or see where the drafts are at.
+* When giving feedback consider the work NTs have already done, does it include their target audience and user needs?
+* Encourage NTs to practice pitching when opportunities come up. Can ask other coaches for feedback and take turns pitching to other teams.
+
+### Day 5
+
+#### tl;dr
+
+* Teams start on a practice team engineering project - [YourShare](https://github.com/tnt-summer-academy/Curriculum/blob/master/Reference/Sample%20spec%20-%20YourShare.md). Check-in on their work breakdown. Look for equitable breakdown fo work.
+* Re-iterate team engineering concepts and GitFlow.
+* Check-in on the competitor audit. Ask about strengths, weaknesses, opportunities and threats.
+
+#### Details
+
+Before jumping in to working on their app together, [YourShare](https://github.com/tnt-summer-academy/Curriculum/blob/master/Reference/Sample%20spec%20-%20YourShare.md) provides NTs a chance to collaborate and practice branching and merging. NTs also get to read a spec and practice breaking down the work. NTs won't build the full app, just the first round of check-ins that create the basic app flow.
+
+Check-in on the progress and work breakdown:
+
+* Work breakdown should describe what NTs are building and how. It can be a few sentences or bullet points that describe how the mockup will be built.
+* Does each member have an engineering contribution?
+* Talk through working in a branch and then merging into master with a pull request.
+
+On the product side, NTs take a break from prototyping and testing and conduct a competitor audit completing a SWOT diagram. Some questions to check-in with:
+
+* Which competitors are you looking at?
+* What non-app solution(s) do you have in mind to explore?
+* Is the SWOT diagram in progress? Any top of mind strength, weaknesses, opportunities or threats?
+
+Another incredible week is wrapping up. NTs have created paper prototypes and started on complex web development topics. They've conducted usability studies and started their first team engineering project. Take a second to celebrate. Everyone can share what they're most excited about next or what they were most surprised to learn this week.
+
+## Week 3
+
+Early this week teams finish their work on YourShare together. It's not a complete prototype, the first couple of changes for the scaffolding of the app to practice team engineering and merging. NTs will also revisit Redux and add redux to their To Do app from Week 1. Adaptive layout, animation, and using component libraries are introduced.
+
+On the product side, NTs narrow down towards their MVP with a walkthrough. Applying feedback from their usability testing and considering what best demonstrates meeting the user needs, NTs close on final features. The [PowerPoint template](https://github.com/tnt-summer-academy/Curriculum/blob/master/Reference/Wireframe%20template.pptx) is recommended for creating the walk through.
+
+The spec is introduced at the beginning of this week and NTs work on it throughout. The goal is for teams to get coach's sign off on the spec by end of week. Teams cannot start working on their MVP until the spec is signed-off by both coaches. The spec includes goals and measurable outcomes. Future considerations can include team thinking on the business model for the app. If you've been waiting for a chance to dive in on data, data in real world development and products, here's your chance. Help the NTs land solid engagement metrics and share your experience with data in product development.
+
+Recommended timeline for spec:
+
+* Tuesday - spec introduced
+* Wednesday - draft of spec
+* Thursday - first round of coach feedback
+* Friday - feedback applied, second round of feedback, sign-off end of day if ready
+* Following week - if spec needs more work, aim for Monday or Tuesday sign-off
+
+Busy week, but if there's time or a team is jamming, NTs can continuously seek usability feedback on their walktrhoughs and practice their pitch.
+
+### Day 1
+
+#### tl;dr
+
+* NTs are introduced to adaptive layouts, flex properties and the different properties on a flex container. Discuss your experiences with shipping for different screen sizes. Re-iterate the MVP targets one large or small.
+* Teams may be finishing up there YourShare project. Any challenges with merging?
+* NTs are introduced to the end to end walktrhough and begin building one together. Check-in on any questions here.
+
+#### Details
+
+Again, NTs choose to target a larger or small screen for their prototype MVP. If given enough time, it's assumed their product would have both. Did your team close on a decision here? It should be based on what best demonstrates how the app meets a user need. Adaptive layout is still an important engineering concept to help with scaling and making sure the content lays out as expected.
+
+Teams are finishing up there YourShare project. NTs should be working in branches and then merging back into master with a pull request. Check-in on how it's going. If needed revisit guidance on resolving merge conflicts.
+
+NTs are introduced to the walkthrough. This is a team effort to create the final UX, screen by screen, for the MVP. The session introduces what a mock up is and why it's helpful for planning and the spec. The first step in the walkthrough is creating a prioritized list of scenarios.
+
+* Ask to see the list.
+* Ask if the NTs have any questions about priority, ordering the scenarios. If there's disagreement, go back to the value prop and user needs and discuss which meets the user needs best.
+
+It's recommended that NTs create the walkthrough in PowerPoint. Everyone should contribute to this effort. Give feedback on the walkthrough. Look for:
+
+* Demonstration of their app's core user jobs.
+* Consistent and complete navigation - are there ways into and out of screens?
+* Appropriate use of button and field types - check boxes for multi-select, radio buttons for single choice, small vs. large input boxes...
+* Check-in on who's mocking up or in the process of mocking up each screen?
+
+Teams will be in different places in the walkthough process. Check-in on where they're and go from there.
+
+### Day 2
+
+#### tl;dr
+
+* NTs are introduced to animations and springs. Animation makes a good stretch goal for the MVP.
+* NTs are introduced to the spec today! The goal is spec sign-off by end of week.
+* Check-in on walkthrough progress. These screens will be a critical part of the spec. It also gives the team space to discuss the details and come together on the plan.
+
+#### Details
+
+React-springs are introduced for animations. Ask the team for an overview of how they work or what they learned. It may be interesting to hear if anyone has worked with animations before or likes thinking about animations and their impact on the user experiences.
+
+The spec is a big come together moment. It defines what the NTs will build for the MVP prototype. NTs cannot begin work on the spec until they have coach sign-off. Share your experiences around specs and engineering planning. Revisit the concept of MVP (minimum-viable-product) to help frame scoping.
+
+Check-in on where your team is in the spec process. At a minimum they should have at least read the lesson. If not walk through it together. Topics to cover:
+
+* The spec brings together work from all phases of the design lifecycle. From their definition of the problem statement, to customer research, SWOT analysis, it all comes together in the spec.
+* Discuss the engineering work break down using the prioritized list of user scenarios from the walkthrough. For the engineering work there should be a screen and a technical description of how it's built.
+* Talk about how the team is working on the spec together. Everyone should write some portion of the spec and do engineering work break down.
+* If they're still working on the walk though, no problem. That piece can come last.
+
+The spec introduces metrics through goals. The NTs think through how they'll measure success in whether the app is meeting the user needs. We don't have too much time in the program to spend on metrics and measuring outcomes. This is a good chance to dive in and bring the real world engineering.
+
+* Talk about how you measure your product and work from end user metrics to performance telemetry.
+* In the spec process help NTs pick solid engagement metrics.
+* There's not a focus on funding or revenue in product development curriculum. We don't want this to block big ideas from the get go and time is limited in what we can cover. Future opportunities in the spec is a good place for NTs to include this. Stakeholders might ask questions on this topic. Have a discussion at some point this week and jump start some thinking on business models - ads, subscriptions, freemium. Again, not a focus of the program but an important consideration for product managers and a real world thing.
+
+The goal is spec sign-off by end of week. For sign-off specs must:
+
+* Have all sections
+* Have the problem statement well articulated
+* Clearly breakdown the work with UX mock, engineering description, and who's building what
+     * Everyone should have a core engineering contribution
+     * Everyone should have an engineering stretch goal
+* Be in OneNote or a Word document. It should be saved in their team folder.
+* Have contributions from everyone.
+* Once ready, both coaches should say so and post in the team's team channel that they sign-off.
+
+Aim for a draft Thursday for feedback. If needed, do another round of feedback on Friday. It's ok if sign-off happens Monday or Tuesday. NTs should head into building with a clear plan.
+
+### Day 3
+
+#### tl;dr
+
+* Work on the walkthrough should be wrapped up.
+* Check-in on spec progress and questions.
+* Unit testing and jest is introduced. NTs do a practice unit test. Unit test(s) could be a stretch goal engineering item for someone in the spec.
+
+#### Details
+
+Teams should have wrapped up work on their walktrhoughs and moved product focus onto their spec. Check-in on spec progress. Answer questions. Ensure everyone is contributing here.
+
+Unit testing is introduced. Discuss and share how testing comes into your product development lifecycle. Unit testing isn't a requirement for the prototype though it makes a good stretch goal.
+
+### Day 4
+
+#### tl;dr
+
+* NTs are introduced to component libraries. It's a good chance to talk about Fluent and common controls.
+* NTs should have a draft of the spec done. Give detailed feedback to help them address changes needed for sign-up. Provide written feedback and then discuss it together. 
+
+#### Details
+
+NTs are introduced to the general concept of component libraries and then pointed to the example of [Fluent UI](https://developer.microsoft.com/en-us/fluentui#/get-started). Fluent controls can be used in their prototypes. Talk through their walkthrough and look at what might be a good match for fluent controls. Make sure the spec is updated with controls that will be used.
+
+Give feedback on the spec. Written feedback is helpful so NTs have a list of things to address. Walkthrough the feedback so NTs understand the changes they need to make. Impress that feedback is part of the product cycle and spec process.
+
+
+### Day 5
+
+#### tl;dr
+
+* If NTs have addressed feedback thoroughly and the spec is ready to good, sign-off.
+* If NTs have yet to address feedback thoroughly, don't sign-off. Give encouragement and additional pointers if needed.
+* NTs revisit Redux and will be updating the To Do app adding Redux.
+
+#### Details
+
+Give spec sign-off when the NTs have sufficient detail on what they're building and the spec represents the customer thinking and how the product will meet those needs.
+
+Talk the NTs through the feedback you're providing on the spec. Give feedback from a positive and growth perspective. Some NTs may be excited to jump in and get coding, frustrated with the documentation step. Give feedback that guides to completion and sign-off.
+
+Redux is revisited. NTs return to the To Do app and upgrade it with Redux.
+
+## Week 4
+
+After spec sign-off this week NTs begin building their prototype. Topics in the curriculum may be revisited based on need. Stretch topics and topics related to app features may be covered by the instructors as well.
+
+As NTs are building, encourage frequent commits and merging following the team GitHub process.
+
+Encourage NTs to get continuous feedback on their app as it's built. Share with other teams, test with people around. Encourage NTs to continue practicing and refining their app pitch.
+
+This week the details of the final presentation requirements will be shared. NTs don't need to start working on it yet, just providing clarity on where they're headed in addition to the prototype and pitch.
+
+## Week 5
+
+This week curriculum topics and stretch topics will continued to be covered by the instructors. The MVP prototype should really be coming together. By end of week there should be an end to end working version meeting the P0s and likely P1s defined in the spec.
+
+Continue encouraging testing the prototype and practice pitching.
+
+By end of week NTs should have a draft for their final presentation as well.
+
+## Week 6
+
+This is the last week of the program. NTs should be wrapping up work on their prototype and preparing for the final presentation.
+
+No new engineering topics are introduced this week. Instructors may revisit and help NTs unblock with any last minute MVP needs.
+
+An additional deliverable is the presentation summary. This is a short snippet that captures the pitch and app demo.
+
+[Details on specific deliverables and final presentation logistics to be defined]
