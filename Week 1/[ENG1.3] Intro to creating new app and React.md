@@ -50,6 +50,8 @@ Pre-reqs
   * TNT groups talk through the function of the different parts and how they connect
 * Re-group and walk through architecture thus far together - HTML, CSS, React, Node...
 
+![Architecture to discuss](https://github.com/tnt-summer-academy/Curriculum/blob/master/Week%201/BasicArchitecture.png)
+
 ### Creating a new React app with TypeScript (20 minutes)
 
 * Introduce tool chain to generate a React app
