@@ -29,7 +29,8 @@ Total time: 1.5 hour
 
 Pre-reqs
 
-* [Yarn](https://www.npmjs.com/package/yarn) - `npm install -g yarn`
+* [Yarn](https://www.npmjs.com/package/yarn) - `npm install -g yarn` 
+     * `yarn` - command line programing for installing JS packages from npm
 * Create React app library - `npm install -g create-react-app`
 
 ## Lesson details
@@ -57,8 +58,7 @@ Pre-reqs
   * The library sets up the environment with the latest TypeScript features and optimizes the app for production
 
 * Demo - create React Project
-  * `yarn create-react-app my-app --template typescript` is the command to run in the terminal. Breaking down the command:
-     * `yarn` - command line programing for installing JS packages from npm
+  * `create-react-app my-app --template typescript` is the command to run in the terminal. Breaking down the command:
      * `create-react-app` - library for generating the environment
      * `my-app` - name of the app
      * `--template typescript` - use the TypeScript template
