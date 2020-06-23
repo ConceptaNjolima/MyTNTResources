@@ -1,3 +1,5 @@
+[](Do we have an intro to React?  This kinda dives right in)
+
 # Intro to creating a new app and React
 
 This lesson covers React. It introduces how to create a new React App project that supports TypeScript. It describes generating the project with the React integrated tool chain, the pieces of the project, making changes, and running the project.
@@ -57,20 +59,20 @@ Pre-reqs
   * The library sets up the environment with the latest TypeScript features and optimizes the app for production
 
 * Demo - create React Project
-  * `yarn create react-app my-app --template typescript` is the command to run in the terminal. Breaking down the command:
+  * `yarn create-react-app my-app --template typescript` is the command to run in the terminal. Breaking down the command:
      * `yarn` - command line programing for installing JS packages from npm
-     * `create react-app` - library for generating the environment
+     * `create-react-app` - library for generating the environment
      * `my-app` - name of the app
      * `--template typescript` - use the TypeScript template
   * Run the command
 
-* Demo - terminal during create React app
+* Demo - terminal during `create-react-app`
   * The command fetches and installs the dependencies needed for a React TypeScript app. The first time it is installed you can see it in action.
-  * create react-app will creates a workspace folder with the provided name where the terminal directory, folder, is at.
+  * `create-react-app` will creates a workspace folder with the provided name where the terminal directory, folder, is at.
   * If it succeeds, a Git repository is created.
 
 * Demo - starting the app
-  * create react-app ends with some helpful commands to run
+  * `create-react-app` ends with some helpful commands to run
   * `cd` - change directory to where the repo was created
   * Run `yarn start` script
   * The app runs in the browser! The Node.js server is running locally.
@@ -113,7 +115,7 @@ Pre-reqs
 
 ### Explore create React app (30 minutes)
 
-NTs create a new React TS app with create react-app. Observe for NTs blocked in generating app from missing dependencies.
+NTs create a new React TS app with `create-react-app`. Observe for NTs blocked in generating app from missing dependencies.
 
 1. Run the app
 2. Make changes in the app using CSS, HTML, and React. Save the file App.tsx and watch the page reload
