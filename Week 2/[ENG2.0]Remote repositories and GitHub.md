@@ -43,7 +43,7 @@ The module covers the following:
 
 1. The learning module introduced the basics of cloning a repository and contributing to a repository using `git clone` and `git pull`. These are the building blocks for collaborating with Git and working with a remote repository.
 
-2. It's called a "pull request" because it's asking the master branch to pull in the changes.
+2. It's called a "pull request" because it's asking the main branch to pull in the changes.
 
 3. Demo: Create a new repository in GitHub and clone
 
@@ -58,7 +58,7 @@ The module covers the following:
     1. With the folder open in VS code, add a new file and make changes to the existing file.
     2. In Git Bash, `git .add` to stage the files.
     3. `git commit` to create the commit. The changes are now committed locally.
-    4. `git request-pull -p origin/master .` to create the pull request.
+    4. `git request-pull -p origin/main .` to create the pull request.
     5. `git push` to push the changes to the remote repo.
 
 5. Demo: Clone from VS Code

@@ -16,7 +16,7 @@ Total time: 1.5 hours
 
 ## Post-session
 
-Together read [HMW and Ideation](https://github.com/tnt-summer-academy/Curriculum/blob/master/Reference/Product%20decks/1.3%20-%20HMW%20and%20ideation.pdf). This document introduces the ideate phase of design thinking. The goal is to expand thinking in a problem space and sketch a whole range of solution ideas. This is the time to go big on ideas of how to address your problem statements. The document covers the two team activities for today.
+Together read [HMW and Ideation](https://github.com/tnt-summer-academy/Curriculum/blob/main/Reference/Product%20decks/1.3%20-%20HMW%20and%20ideation.pdf). This document introduces the ideate phase of design thinking. The goal is to expand thinking in a problem space and sketch a whole range of solution ideas. This is the time to go big on ideas of how to address your problem statements. The document covers the two team activities for today.
 
 ### Brainstorm with HMW (50 min)
 
