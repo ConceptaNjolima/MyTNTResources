@@ -1,5 +1,3 @@
-[](Do we have an intro to React?  This kinda dives right in)
-
 # Intro to creating a new app and React
 
 This lesson covers React. It introduces how to create a new React App project that supports TypeScript. It describes generating the project with the React integrated tool chain, the pieces of the project, making changes, and running the project.
