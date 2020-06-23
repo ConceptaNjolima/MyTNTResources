@@ -101,7 +101,7 @@ Pre-reqs
 
 ### Introduction to TS datatypes, functions, classes etc. (35 minutes) 
 
-Samples for datatypes, functions, objects, and classes are available here: [Intro_TS.ts]([ENGresource]Intro_TS.ts). Open the file in VS Code to talk through it with the descriptions that follow.
+Samples for datatypes, functions, objects, and classes are available here: [Intro_TS.ts]([ENGResource]Intro_TS.ts). Open the file in VS Code to talk through it with the descriptions that follow.
 
 1. Datatypes - [overview of the datatypes](https://www.typescriptlang.org/docs/handbook/basic-types.html), [overview of variable declarations](https://www.typescriptlang.org/docs/handbook/variable-declarations.html)
     * Datatypes - what type of value can be assigned to a variable depends on the datatype. Boolean for true false statements, numbers, strings for text...
