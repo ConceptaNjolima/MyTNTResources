@@ -2,9 +2,6 @@
 
 This lesson covers React. It introduces how to create a new React App project that supports TypeScript. It describes generating the project with the React integrated tool chain, the pieces of the project, making changes, and running the project.
 
-*Open questions in lesson*
-* *Need app architecture diagram*
-
 ## Learning objectives
 
 * TNTs will understand how React fits into the app architecture.
@@ -40,14 +37,14 @@ Pre-reqs
 ### Revisit app architecture (10 minutes)
 
 * Revisit React as the component framework
+  * [React](https://github.com/facebook/react) is an open source project from Facebook. It is used at Microsoft in web experiences across teams. IG, Netflix, New York Times, Khan Academy, WhatsApp, Dropbox... all use and contribute to React
   * React is a JS library for building user interfaces
   * UI is built in small, isolated pieces called components
   * Components tell React what to display on the screen
   * When the data changes, React *reacts* and updates the screen
   * CSS is used to style React
   * React is the code behind rendering HTML in a webpage
-  * [React](https://github.com/facebook/react) is an open source project from Facebook. It is used at Microsoft in web experiences across teams. IG, Netflix, New York Times, Khan Academy, WhatsApp, Dropbox... all use and contribute to React.
-* As a table, TNTs draw what they have learned so far about the app architecture
+* TNTs draw what they have learned so far about app architecture
   * Display app architecture with labels, no descriptions
   * TNT groups talk through the function of the different parts and how they connect
 * Re-group and walk through architecture thus far together - HTML, CSS, React, Node...
