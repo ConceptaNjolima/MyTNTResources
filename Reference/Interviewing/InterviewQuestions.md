@@ -74,7 +74,7 @@ Output: 9 (2,12,20, 21, 22, 23, 24 and 25. Note that 22 counts for two 2s.)
 
 1. What's your favorite product and why?
 
-2. Design a LinkedIn for blue collar workers.
+2. Design a LinkedIn for educators.
 
 3. Imagine you’re PM at Bing. What would you do to take over 5% of Google Search market share?
 
