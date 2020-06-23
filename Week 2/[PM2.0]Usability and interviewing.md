@@ -17,7 +17,7 @@ Total time: 2 hours
 
 ## Pre-session
 
-Read [Usability and interviewing](https://github.com/tnt-summer-academy/Curriculum/blob/master/Reference/Product%20decks/2.0%20-%20Usability%20and%20interviewing.pdf). This document introduces how to conduct a usability study. The document includes best practices for interviewing and defines the process for conducting a usability study.
+Read [Usability and interviewing](https://github.com/tnt-summer-academy/Curriculum/blob/main/Reference/Product%20decks/2.0%20-%20Usability%20and%20interviewing.pdf). This document introduces how to conduct a usability study. The document includes best practices for interviewing and defines the process for conducting a usability study.
 
 ## Post-session
 

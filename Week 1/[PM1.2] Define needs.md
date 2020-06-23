@@ -18,7 +18,7 @@ Total time: 2 hour
 
 ## Pre-session
 
-Read [Define needs](https://github.com/tnt-summer-academy/Curriculum/blob/master/Reference/Product%20decks/1.2%20-%20Define%20needs.pdf). This document introduces target audiences, personas, user journey maps and how to create a problem statement.
+Read [Define needs](https://github.com/tnt-summer-academy/Curriculum/blob/main/Reference/Product%20decks/1.2%20-%20Define%20needs.pdf). This document introduces target audiences, personas, user journey maps and how to create a problem statement.
 
 ## Post-session
 

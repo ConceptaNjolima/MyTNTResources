@@ -30,7 +30,7 @@ Week 2:
     - Pull our repo(only has one file in it)
     - Make a local branch
     - Add a file with your name
-    - Merge to master
+    - Merge to main
     - Push to repo
     - Pull repo to see changes
     - Make new branch
