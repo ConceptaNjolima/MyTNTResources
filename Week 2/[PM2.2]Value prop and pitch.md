@@ -17,7 +17,7 @@ Total time: 2 hour
 
 ## Pre-session
 
-Read [Value prop and pitching](https://github.com/tnt-summer-academy/Curriculum/blob/master/Week%202/%5BPM2.2%5DValue%20prop%20and%20pitch.md). The deck introduces what value proposition is, a value prop framework for creating a value prop for your app, why it's important, and tips pitching.
+Read [Value prop and pitching](https://github.com/tnt-summer-academy/Curriculum/blob/main/Week%202/%5BPM2.2%5DValue%20prop%20and%20pitch.md). The deck introduces what value proposition is, a value prop framework for creating a value prop for your app, why it's important, and tips pitching.
 
 ## Post-session
 

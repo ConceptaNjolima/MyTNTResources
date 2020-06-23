@@ -50,7 +50,7 @@ Pre-reqs
   * TNT groups talk through the function of the different parts and how they connect
 * Re-group and walk through architecture thus far together - HTML, CSS, React, Node...
 
-![Architecture to discuss](https://github.com/tnt-summer-academy/Curriculum/blob/master/Week%201/BasicArchitecture.png)
+![Architecture to discuss](https://github.com/tnt-summer-academy/Curriculum/blob/main/Week%201/BasicArchitecture.png)
 
 ### Creating a new React app with TypeScript (20 minutes)
 
@@ -109,7 +109,7 @@ Pre-reqs
     * To update a welcome string based on input text
     * Edit the App.tsx by replacing the text in my-app with Welcome and an input textbox 
     * Watch the update of Welcome string
-    * See the [code](https://github.com/tnt-summer-academy/Samples/tree/master/Week_1/input-app) 
+    * See the [code](https://github.com/tnt-summer-academy/Samples/tree/main/Week_1/input-app) 
     
 * Common errors:'react-scripts' is not recognized as an internal or external command. Use the command `yarn install`or `npm install`, depending on which the project uses, to get the package manager to install the dependencies.
 

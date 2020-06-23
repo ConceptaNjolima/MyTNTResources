@@ -40,7 +40,7 @@ Checkout [ENG 2.6] Branching, merging, and merge conflicts for a refresher.
 
 ### Breakdown engineering work
 
-Find the sample spec - [YourShare](https://github.com/tnt-summer-academy/Curriculum/blob/master/Reference/Sample%20spec%20-%20YourShare.md) in the Reference folder.
+Find the sample spec - [YourShare](https://github.com/tnt-summer-academy/Curriculum/blob/main/Reference/Sample%20spec%20-%20YourShare.md) in the Reference folder.
 
 1. Create a new GitHub repository for your team and put a copy of the spec in your repo.
 2. To break down the engineering work consider what are the pieces it will take to build the user story or functionality. For the prototype purposes, consider what you can show in the UI that would later be back by real integration with other API's or services. For example, it might be out of scope for the prototype to introduce authentication flows. Instead use text boxes to mimic a sign-in experience.
@@ -54,8 +54,8 @@ Here are some tips getting stared on the team development of YourShare:
 1. Everyone clone the repository locally.
 2. Everyone creates a new branch for their user story.
 3. To get started, one persons starts a new app with Create React App in a branch, merges the branch.
-4. Update your local master branch and merge it into your branch.
-5. Work on your user story, commit frequently, push, merge back into master in functional chunks. Fetch from mast frequently and merge into your branch.
+4. Update your local main branch and merge it into your branch.
+5. Work on your user story, commit frequently, push, merge back into main in functional chunks. Fetch from mast frequently and merge into your branch.
 6. When you hit a merge conflict, debug to together.
 7. Once you have the basics flow of the app in and can click between the screens, your done! Make the final merges.
 8. In the real world before moving to the next user story you would implement the full functionality described in the spec for the user story. We're stopping here for time.
