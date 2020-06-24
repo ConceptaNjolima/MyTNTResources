@@ -12,18 +12,18 @@ This lesson explores the purpose of a React component, how a component works and
 
 Total time: 2 hours, 30 minutes
 
-- 60 minutes - [**Pre-session**](../wiki/[ENG2.1]-Components): background learning, research, and investigations
+- 60 minutes - **Pre-session**): background learning, research, and investigations
 - 60 minutes - **Instructional Session**
   - 20 minutes - Components discussion in groups
   - 10 minutes – Review basic component's ideas
   - 10 minutes - Discuss component types
   - 10 minutes – Explain component's lifecycle
   - 10 minutes - Exercise Setup
-- 30 minutes - [**Post-session**](https://github.com/tnt-summer-academy/Exercises/wiki/[ENG2.1]-MyTNT-Components): pair programming Exercise
+- 30 minutes - **Post-session**: pair programming Exercise
 
 ## Pre-session (60 minutes)
 
-*Prepare for the session* [here](../wiki/[ENG2.1]-Components)
+*Prepare for the session* [here](../wiki/[ENG2.1]Components)
 
 ## Session Details
 

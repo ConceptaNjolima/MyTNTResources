@@ -1,4 +1,4 @@
-**Adaptive Layouts**
+# Adaptive Layouts
 
 This lesson explains how to make your content's position adapt to your screen size
 

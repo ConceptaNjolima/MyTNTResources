@@ -1,6 +1,6 @@
-# Component Layout
+# View Component Layout
 
-This lesson explains how to layout components, how to organize components with alignment and distribute space dynamically.
+This lesson introduces how to create components that can display a variety of data and distribute space dynamically.
 
 ## Learning objectives
 
@@ -10,19 +10,27 @@ This lesson explains how to layout components, how to organize components with a
 
 ## Time required and pace
 
-Total time: 1 hour
+Total time: 2 hours, 30 minutes
 
-* 15 minutes – Building a table with react
-* 15 minutes – Explain the basics of CSS Flexbox
-* 30 minutes - Practice
+- 30 minutes - **Pre-session**: background learning, research, and investigations
+- 60 minutes - **Instructional Session**
+  - 15 minutes – Building a table with react
+  - 15 minutes – Examine CSS Flexbox
+  - 30 minutes - Practice
 
-## Background / review
+## Pre-session
+
+*Prepare for the session* [here](../wiki/[ENG2.2]View-component-layout)
 
 ## Lesson details
 
+Components are most useful when their contents are generated on the fly based on the data passed to them. But how can you layout a web page when you don't know what the final content of the page will be, or the content will keep changing?
+
+ Two useful options for working with this kind of dynamic layout are HTML Tables and CSS Flexbox.
+
 ### Building a Table component (15 minutes)
 
-Start to think about the elements required for a basic HTML table such as a table header and table rows. These elements can help us start to build a Table component that can be reused.
+Start to think about the elements required for a basic HTML table such as a table header and table rows. These elements can help us start to build a Table component that can be reused with a variety of data.
 
 Below a basic HTML Table Element
 
@@ -47,7 +55,7 @@ If we configure our Table component with data this will allow us to dynamically 
         return (
             <table>
                 <thead>
-                    {this.header()}
+                    {this.headers()}
                 </thead>
                 <tbody>
                     {this.rows()}
@@ -58,21 +66,35 @@ If we configure our Table component with data this will allow us to dynamically 
 
 ### CSS Flexbox layout (15 minutes)
 
-The Flexbox Layout is an efficient way to layout and distribute child items in a parent container allowing for child items to either take up space or shrink based on the UI requirements.
+The Flexbox Layout is an efficient way to layout and distribute **child items** in a **parent container** allowing for child items to either take up space or shrink based on the UI requirements. This makes Flexbox an incredibly useful way to style the layout for components
 
-When configuring a Flexbox layout both the Parent Container and Children Items have properties you can set to meet your UI needs. We will go more in depth in ENG3.1 Adaptive Layouts.
+When configuring a Flexbox both the Parent Container and Children Items have CSS styles that you set to meet your UI needs. We will go more in depth in ***ENG3.0 Adaptive Layouts***.
 
 Below are a few examples of Flexbox properties for both the Parent Container and Child Items.
 
-Parent Properties:
+#### Parent Container Property: *flex-direction*
+
+*Flex-direction*: sets the flow order for each successive child item element in the parent container. 
+Options are:
+
+- row
+- row-reverse
+- column
+- column-reverse![FlexDirection](./flex-direction.svg)
 
     flex-direction: row | row-reverse | column | column-reverse
 
-![FlexDirection](./flex-direction.svg)
 
-Children Properties:
 
-    flex-grow or flex-shrink
+#### Child Item Shorthhand Property: *flex*
+
+Options are:
+
+- *Flex-grow*: a unit-less value for the relative size of the child element compared to other elements.
+- *Flex-basis*: an optional, minimum default size guaranteed to the child element
+
+    flex: flex-grow flex-basis
+    		
 
 ![FlexGrowShrink](./flex-grow.svg)
 
