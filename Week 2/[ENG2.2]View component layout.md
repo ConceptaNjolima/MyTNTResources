@@ -14,8 +14,8 @@ Total time: 2 hours, 30 minutes
 
 - 30 minutes - **Pre-session**: background learning, research, and investigations
 - 60 minutes - **Instructional Session**
-  - 15 minutes – Building a table with react
-  - 15 minutes – Examine CSS Flexbox
+  - 15 minutes – Building a table component
+  - 15 minutes – CSS Flexbox Layout
   - 30 minutes - Practice
 
 ## Pre-session
