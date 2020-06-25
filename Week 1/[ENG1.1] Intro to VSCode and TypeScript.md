@@ -34,13 +34,13 @@ Total time: 2 hours 30 min
 * [TS in 5 minutes](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html)
 * [Basic TS datatypes, functions and more](https://www.typescriptlang.org/docs/handbook/basic-types.html)
 
-## Pre-session
+## Pre-session (60 minutes)
 
 View the pre-session [here](https://github.com/tnt-summer-academy/Curriculum/wiki/%5BENG1.1%5D-Intro-to-VS-Code-and-TS).
 
-## Lesson details
+## Lesson details (60 minutes)
 
-### Review: Visual Studio Code Tour, create and run TypeScript (20 minutes)
+### Review: Visual Studio Code tour, create and run TypeScript Hello World (20 minutes)
 
 1. Open VS Code, without a workspace folder open.
     * Highlight the activity bar, status bar, and side bar.
@@ -51,6 +51,7 @@ View the pre-session [here](https://github.com/tnt-summer-academy/Curriculum/wik
     * Hightlight the "Extensions" section. 
 
 2. Review the [Hello World tutorial](https://code.visualstudio.com/docs/typescript/typescript-tutorial) and make a tour of the file system.
+   * Any issues in running the code?
 
 3. VS Code TS language support features
     * Introduce and demo - IntelliSense and Code Snippets.
@@ -66,7 +67,7 @@ View the pre-session [here](https://github.com/tnt-summer-academy/Curriculum/wik
      * Once you have a debug breakpoint or other, the debug toolbar will appear with different options (Continue/Pause, Step over/into/out, Restart, Stop).
      * Click the top 'Explorer' icon to get back to the folder view.
 
-5. Discuss VS Code shupport to work productively - code completion, extensions, code formating (SHIFT+OPTION+F), debugging, versioning etc.
+5. Discuss VS Code support to work productively - code completion, extensions, code formating (SHIFT+OPTION+F), debugging, versioning etc.
 
 6. Clone the [Samples repo](https://github.com/tnt-summer-academy/Samples)
     * To clone the sample, start in VS Code.
