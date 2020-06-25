@@ -69,11 +69,12 @@ Output: 9 (2,12,20, 21, 22, 23, 24 and 25. Note that 22 counts for two 2s.)
 21. **Group Anagrams:** Write a method to sort an array of strings so that all the anagrams are next to each other
 
 22. **Sorted Matrix Search:** Given an M x N matrix in which each row and each column is sorted in ascending order, write a method to find an element. 
+
 # Product
 
 1. What's your favorite product and why?
 
-2. Design a LinkedIn for blue collar workers.
+2. Design a LinkedIn for educators.
 
 3. Imagine you’re PM at Bing. What would you do to take over 5% of Google Search market share?
 
@@ -82,6 +83,3 @@ Output: 9 (2,12,20, 21, 22, 23, 24 and 25. Note that 22 counts for two 2s.)
 5. Tell me how an email is sent from Outlook to Gmail.
 
 6. What happens when you navigate to a website?
-
-
-

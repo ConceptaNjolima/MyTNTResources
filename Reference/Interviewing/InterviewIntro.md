@@ -1,5 +1,7 @@
 # Introduction to Interviews at Microsoft
 
+Watch: [how to prepare for Microsoft technical interview](https://www.youtube.com/watch?v=8Myx-vy0csM).
+
 ## Common question areas
 
 * some of your background and doing a coding-focused problem solving question.
@@ -20,6 +22,7 @@
 ## Resources
 
 * <http://www.amazon.com/Cracking-Coding-Interview-Fourth-Programming/dp/145157827X>
+* <https://www.amazon.com/Cracking-PM-Interview-Product-Technology/dp/0984782818>
 * <https://practice.geeksforgeeks.org/ >
 * <https://www.careercup.com/page>
 * <https://leetcode.com/problemset/all/>

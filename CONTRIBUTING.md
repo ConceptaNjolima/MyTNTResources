@@ -23,4 +23,4 @@ If you're interested in getting hands on with the curriculum during FHL or as a 
 
 ## Code of Conduct
 
-[Microsoft Code of Conduct](https://github.com/microsoft/TNT_Curriculum/blob/master/CODE_OF_CONDUCT.md)
+[Microsoft Code of Conduct](https://github.com/tnt-summer-academy/Curriculum/blob/main/CODE_OF_CONDUCT.md)

@@ -17,7 +17,7 @@ Total time: 2 hour
 
 ## Pre-session
 
-Read [Empathize with users](https://github.com/tnt-summer-academy/Curriculum/blob/master/Reference/Product%20decks/1.1%20-%20Empathize%20with%20users.pdf). This document introduces the user researcher and kicks off the empathize phase of the design sprint. The document also has instructions for the activities below to do as a team.
+Read [Empathize with users](https://github.com/tnt-summer-academy/Curriculum/blob/main/Reference/Product%20decks/1.1%20-%20Empathize%20with%20users.pdf). This document introduces the user researcher and kicks off the empathize phase of the design sprint. The document also has instructions for the activities below to do as a team.
 
 ## Post-session
 
@@ -32,7 +32,7 @@ As a team:
     * Regroup as a team.
     * Walk through your findings together, build on one another and expand, don't shut anything down.
     * Pull your research together into an empathy map. Create one empathy map.
-6. Share the completed empathy map, our where you're at, with your coaches at your next sync.
+6. Share the completed empathy map, or where you're at, with your coaches at your next sync.
 
 ## Stretch
 

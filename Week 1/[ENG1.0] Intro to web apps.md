@@ -109,7 +109,7 @@ There's likely a range of familiarity with web pages, web apps, and how they wor
 
 1. Start here:
      * [HTML basics](https://www.w3schools.com/html/html_basic.asp)
-     * [CSS intro](w3schools.com/css/css_intro.asp)
+     * [CSS intro](https://w3schools.com/css/css_intro.asp)
 2. If you are familiar with HTML and CSS - find a new topic tutorials and try it out. Push yourself to discover something you didn't know before.
 3. If you are new to HTML and CSS continue with the tutorials in order, they do a pretty good job building on one another.
 
