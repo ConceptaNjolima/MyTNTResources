@@ -50,7 +50,7 @@ View the pre-session [here](https://github.com/tnt-summer-academy/Curriculum/wik
     * Highlight the palette (Command+Shift+P) to access commands.
     * Hightlight the "Extensions" section. 
 
-2. Review the [Hello World tutorial]((https://code.visualstudio.com/docs/typescript/typescript-tutorial) and make a tour of the file system.
+2. Review the [Hello World tutorial](https://code.visualstudio.com/docs/typescript/typescript-tutorial) and make a tour of the file system.
 
 3. VS Code TS language support features
     * Introduce and demo - IntelliSense and Code Snippets.
