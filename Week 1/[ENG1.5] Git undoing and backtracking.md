@@ -16,7 +16,7 @@ Total time: 80 minutes
     * 15 minutes - engage: practice explaining git
     * 20 minutes - explain: revisit tactics for backtracking and undoing with git
     * 15 minutes - explore and elaborate: specific activity
-* 20 minutes - [**Post-session**](../wiki/[ENG1.5]-Git-undoing-and-backtracking): background learning, review, and investigations
+* 20 minutes - [**Post-session**](https://github.com/tnt-summer-academy/Curriculum/wiki/%5BENG1.5%5D-Git-undoing-and-backtracking): review, and investigations
 
 ## Pre-session
 
@@ -129,4 +129,4 @@ In this activity complete the three scenarios, amending a commit, recovering a d
 
 ## Post-session
 
-View the post-session [here](../wiki/[ENG1.5]-Git-undoing-and-backtracking)
+View the post-session [here](https://github.com/tnt-summer-academy/Curriculum/wiki/%5BENG1.5%5D-Git-undoing-and-backtracking)
