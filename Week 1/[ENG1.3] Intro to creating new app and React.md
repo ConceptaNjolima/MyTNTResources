@@ -100,6 +100,8 @@ View the pre-session [here](https://github.com/tnt-summer-academy/Curriculum/wik
     * Change something in one of the files (App.tsx, App.css) and save 
     * Observe the app re-render in the browser
     * This is React in action!
+    
+![React files](https://github.com/tnt-summer-academy/Curriculum/blob/main/Week%201/%5BENG1.3%5Dreactfiles.png)
 
 ### App architecture (15 minutes)
 
