@@ -133,7 +133,7 @@ View the pre-session [here](https://github.com/tnt-summer-academy/Curriculum/wik
   * Update `<input>` such that the `value` attribute contains `name` 
   * Add `{this.state.name}` after Welcome to print `name`
 
-### Post-session (30 minutes)
+## Post-session (30 minutes)
 
 Extend [`input-app`](https://github.com/tnt-summer-academy/Samples/tree/master/Week_1) by using a form. The Welcome text changes, when the Submit button is clicked
 
