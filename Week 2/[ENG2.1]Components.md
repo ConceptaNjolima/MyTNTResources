@@ -23,13 +23,13 @@ Total time: 2 hours, 30 minutes
 
 ## Pre-session (60 minutes)
 
-*Prepare for the session* [here](../wiki/[ENG2.1]Components)
+*Prepare for the session* [here](../../../wiki/[ENG2.1]Components)
 
 ## Session Details
 
 ### Session Discussion (20 minutes)
 
-In Breakout Groups of 3 to 4 people, discuss the following; be prepared to share an example
+In your team channels, discuss the following; be prepared to share an insight or example with the class
 
 - Share examples of potential *Views* and *Components* you observed on websites
 - Imagine your daily schedule as a set of components, e.g., Wake up, Exercise, Breakfast, .... Discuss as a group what might be examples of:
@@ -101,13 +101,16 @@ These are methods that are trigger through out a components existence from when 
 
 ### Exercise Setup - MyTNT App (10 minutes)
 
-- Identify Components and composition: Tile, Card, Item
-- Review GitHub process as needed: Fork•Clone•Branch•Commit•Push•Pull Request 
+- Identify Components and composition: Tile, Card, Item in the MyTNT App layout  ![completed MyTNT App layout](/Users/brian/Documents/Curriculum/Week 2/MyTNT-component-model.png)
+
+- Review GitHub process as needed to : Fork•Clone•Branch•Commit•Push•Pull Request 
 - Explore Code
   - Identify Function and Class Components
   - Examine use of TypeScript Interfaces with Properties and State
   - Examine the use of the state value **count** in the *Counter* component
   - Review HTML/CSS including <ul><li> and <a> elements
+
+
 
 ## Post-session (30 minutes)
 

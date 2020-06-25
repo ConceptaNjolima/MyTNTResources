@@ -12,25 +12,41 @@ This lesson introduces how to create components that can display a variety of da
 
 Total time: 2 hours, 30 minutes
 
-* 15 minutes – Building a table with react
-* 15 minutes – Explain the basics of CSS Flexbox
-* 30 minutes - Setup for Exercise
+- 60 minutes - **Pre-session**): background learning, research, and investigations
+- 60 minutes - **Instructional Session**
+  - 20 minutes - Components discussion in groups
+  - 10 minutes – Review basic component's ideas
+  - 10 minutes - Discuss component types
+  - 10 minutes – Explain component's lifecycle
+  - 10 minutes - Exercise Setup
+- 30 minutes - **Post-session**: pair programming Exercise
 
-## Pre-session
+## Pre-session (30 minutes)
 
-*Prepare for the session* [here](../wiki/[ENG2.2]View-component-layout)
+*Prepare for the session* [here](../../../wiki/[ENG2.2]View-component-layout)
 
-## Lesson details
+## Session Details
 
-Components are most useful when their contents are generated on the fly based on the data passed to them. But how can you layout a web page when you don't know what the final content of the page will be, or the content will keep changing?
+### Session Discussion (15 minutes)
 
- Two useful options for working with this kind of dynamic layout are HTML Tables and CSS Flexbox.
+In your team channels, answer the following questions; be prepared to share an insight or example with the class
 
-### Building a Table component (15 minutes)
+- Even though the website http://nytime.com displays as rows and columns, why is it not created as an HTML table? What is a table?
+- What is one question about the CSS flexbox that is confusing everyone in your team?
 
-Start to think about the elements required for a basic HTML table such as a table header `<th>`,  table rows `<tr>`, and table data `<td>`. These elements can help us start to build a Table component that can be reused.
+### Components and Data (5 minutes) ###
 
-Below a basic **HTML Table Element** structure
+Components are most useful when their contents are generated on the fly based on the data passed to them. But how can we layout a web page when we don't know what the final content of the page will be? or when the content may continue to change as the user interacts with the page?
+
+ Two useful options for working with this kind of dynamic layout are **HTML Tables** and **CSS Flexbox**.
+
+### Layout using an HTML Table (10 minutes)
+
+An HTML Table is used to display tabular data using four container elements `<table>`, `<thead>`, `<tbody>` and **table rows** `<tr>` along with a two data elements **table header data**  `<th>`,  , and **table data** `<td>`. You can also add a `<caption>`
+
+![Table Layout diagram https://www.codewall.co.uk/how-to-build-accessible-html-tables/](./visual-html-table-structure.jpeg)
+
+If you look at how these elements are used to create a table, you can see a repeating pattern in the format. From this pattern, we can build a template for a **table component** that can be reused with a variety of dynamic data. For example, below a basic **HTML Table Element** structure
 
     <table>
         <thead>
@@ -51,11 +67,11 @@ Below a basic **HTML Table Element** structure
                 <td>Angela</td>
                 <td>angela@email.com</td>
             </tr>
-            ... more rows ...
+            ... more rows in the same pattern as above ...
         </tbody>
     </table>
 
-If we configure our Table component with data this will allow us to dynamically create the table headers and rows. We can convert the basic table element above into our Table component below, where we use a dataset along with the two functions, ***headerNames()*** and ***dataRows()*** to generate the header row and data rows for the table dynamically.
+We can convert the basic table element above into a table component using the template below. By passing the component a dataset, say an array of objects like `{id:371, name:Grace, email:grace@email.com}` , the two functions, `headerNames()` and `dataRows()` can be created to generate the table dynamically.
 
     render() {
         return (
@@ -72,37 +88,43 @@ If we configure our Table component with data this will allow us to dynamically 
 
 ![Table Data Generation](./view-component-table.png)
 
-### CSS Flexbox layout (15 minutes)
+### CSS Flexbox layout (10 minutes)
 
-The Flexbox Layout is an efficient way to layout and distribute child items in ANY parent container allowing for each child item to either take up space or shrink based on the UI requirements and the number of items added.
+The Flexbox Layout is an efficient way to layout and distribute child items in ANY parent container allowing for each child item to either take up more or less space based on the number of items in the collection and  the UI requirements.
 
-When configuring a Flexbox layout both the Parent Container and Children Items have properties you set to meet your UI design needs. We will go more in depth in ENG3.1 Adaptive Layouts, but [a few examples of Flexbox properties](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) for both the Parent Container and Child Items should get you started.
+When configuring a Flexbox layout both the Parent Container and Child Items have properties you set to meet your UI design needs. The five styles below should get your started, but you can review [a more complete view of Flexbox properties](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) for both the Parent Container and Child Items.
 
-#### Parent Properties:
+#### Parent Container Properties:
 
-    flex-direction: row | row-reverse | column | column-reverse
+1. ***display: flex*** 
+   To get started with flex, setting a container&#39;s ***display*** property to ***flex*** allows you to manipulate its children with their flex properties.
+2. ***flex-direction*: row || column**  
+   The flex direction determines the axis the container is oriented on, horizontal or vertical.
+   ![flexDirection](./flexDirection.png)
+3. ***flex-wrap*: wrap || no-wrap** (default)
+   Child items will all try to fit on one line. Setting **flex-wrap** to **wrap** allows the items to flow to a new line rather than overflow the view
+   ![flexWrap](./flexWrap.png)
+4. ***justify-content*: space-around || space-between || flex-start || flex-end**  
+   Sets the alignment of the child items along the main axis
+   ![justifyContent](./justifyContent.png)
 
 
-#### Children Properties:
+#### Child Item Property:
 
-#### Child Item Shorthhand Property: *flex*
+***flex*: **integer 
+Setting a child's flex to an integer makes it try to fill as much of the container as possible. If there are multiple children in the container, as is usual, each child will fill an amount of space proportional to it's flex.
 
-Options are:
-
-- *Flex-grow*: a unit-less value for the relative size of the child element compared to other elements.
-- *Flex-basis*: an optional, minimum default size guaranteed to the child element
-
-    flex: flex-grow flex-basis
-    		
+This means if all the children's flex is set to 1 they will take up an equal amount of space. If a child is set to 2 and the rest are 1, it will take up twice the amount of space.
 
 ![FlexGrowShrink](./flex-grow.svg)
 
-### Practice: Build a Keyword Collection component with CSS Flexbox (30 minutes)
+### Exercise Setup: Component Layouts (30 minutes)
 
-You will build (2) React components:
+Complete the code and layout for two React components:
 
 1. Keyword component
-2. KeywordCollection component
+   1. KeywordCollection component
+2. StudentTable component
 
 Using CSS Flexbox layout multiple Keywords and apply Flexbox properties to achieve the results below
 
