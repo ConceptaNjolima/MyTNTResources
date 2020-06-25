@@ -12,7 +12,7 @@ This lesson introduces Visual Studio Code and TypeScript including why this set 
 
 ## Time required and pace
 
-Total time: 2 hour 30 min
+Total time: 2 hours 30 min
 
 * 60 minutes - pre-session: installations, VS Code tour, create and run first TS code (Hello World!)
 * 60 minutes - instructional session 
