@@ -27,59 +27,7 @@ Total time: 2 hours
 
 ## Pre-session
 
-### Obtaining the sample
-
-- Get it from the 'Samples' repo
-
-### Looking through the sample app
-
-- Look over the sample app
-- Call out the different technologies
-    - CSS
-        - Note where to find the .CSS, and then move on to looking at other stuff
-        - `import './App.css';`
-        - The App.css file itself
-    - `interface AppState`
-        - Remember that the purpose of an interface is to define what an object looks like (duck typing)
-        - The only thing we care about is the list of todo items
-    - `class App extends React.Component<{}, AppState> {`
-        - Within the <> are the props and the state
-        - {} means 'no props'
-        - AppState - this component must have a `list`
-    - constructor actually sets up the state
-        - Try commenting out the `list: ["Do X", "Do Y", "Do Z"]` line - what error do you get?  What does it mean?  How did TS know to warn you that you were missing a key part of your program?
-    - render
-        - Styling
-            - classname will become 'class' in the actual webpage
-            - START OF CLASS REVIEW Q's:
-            - Why is the overall app styled the way it is?
-            - Why is the bottom of the web page NOT styled?
-            - Why is the title ('My to-do list') styled the way it is?
-            - Why are the list items styled differently than the background?
-            - Why is the input box at the bottom styled the way it is?
-            - Why are the list items at the left edge, instead of the center (like the title is)?
-        - Explain the form
-            - How would you change the text that reads "Enter a task"?
-        - Explain the .map()
-            - What if you wanted to put each list item into a separate paragraph?  What if you wanted to put them all into a single paragraph, separated by commas (an extra one at the end is fine)?
-    - inputValue instance variable
-        - Note that this is not part of the state, it's just a temporary thing we're using to avoid having a reference to the text field
-            - Remember that React likes to try and do things declaratively, from the top down
-        - changeInputValue to keep inputValue in sync with whatever's been typed into the box
-    - submitForm
-        - prevent default (send info to a webserver and replace this page with whatever the server sends, or  a blank page if we don't get that)
-        - setState to both update the current state AND tell React that the GUI may need to change
-        - Syntax is tricky
-            - we're creating a new object, with a list of the fields that we want to update
-            - We want to add an element to the list
-            - <Several ways to do this>
-        - Common error: changing the state variable but not telling React that it's changed
-        - Change the event on form submit to update the list 
-        - --- Explain that `setState()` causes a re-render
-        - --- Explain why we prevent default (so we don't refresh the page)
-        - --- Explain why we make a new Array (reference vs copy)
-- Index.tsx:
-    - This is the thing that actually pulls in the App component
+- View the pre-session here
 
 ## Session (The lesson)
 
@@ -240,20 +188,6 @@ Regroup as team, what's going well, what are you blocked on
 1. Try completing functionality
 2. Commit to your local repository as you go.
 3. End of lesson, final Push and comment on what you learned and what was challenging
-
-## Stretch
-
-* Stylize the app
-* Add additional qualities to the shopping items.
-    * Maybe another text field to describe the item
-    * Maybe a true/false field - true if the item is edible, false if it's not
-* Make sure that the input is valid:
-    * Check for empty inputs
-    * Check if the new item duplicates an existing item
-* Clear Input value after form submit
-* Add `delete()` functionality
-* Sort list alphabetically
-* Next week you'll look at Components (ENG 2.1).  Once you've done that come back here and refactor (rearrange) the code so that each ShoppingItem is rendered using a component
 
 ------
 
