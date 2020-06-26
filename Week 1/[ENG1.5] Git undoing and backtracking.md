@@ -117,7 +117,7 @@ We'll cover three scenarios: amending a commit, recovering a deleted file, and r
 
 ### Introducing live sharing in VScode
 
-* [Download VScode live sharing extension](Ihttps://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare-pack)
+* [Download VScode live sharing extension](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare-pack)
 
 * Demo how to start and watch this small [video](https://www.youtube.com/watch?v=9QXwSg9-2qQ&feature=emb_title)
 
