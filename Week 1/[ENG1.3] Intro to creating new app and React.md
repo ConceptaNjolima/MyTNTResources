@@ -11,33 +11,34 @@ This lesson covers React. It introduces how to create a new React App project th
 
 ## Time required and pace
 
-Total time: 1.5 hour
+Total time: 2 hours
 
-* 10 minutes - engage: revisit app architecture
-* 20 minutes - explain: create a new React app with TypeScript
-* 30 minutes - explore: explore create React app
-* 15 minutes - elaborate: review
-* 15 minutes - evaluate: extend the sample
+* 30 minutes - pre-session: 
+* 60 minutes - instructional session 
+  * what is React? (5 minutes)
+  * review of how to create a React app with create-react-app (15 minutes)
+  * app architecture discussion and review of basic ideas (15 minutes)
+  * extend my-app with a textbook that updates the welcome message based on an input text (25 minutes)
+* 30 minutes - post-session: extend the sample
 
-## Background / review
+## References
 
+* [Yarn](https://www.npmjs.com/package/yarn)
 * [Create a New React App](https://reactjs.org/docs/create-a-new-react-app.html)
 * [Create a React App - Adding TypeScript](https://create-react-app.dev/docs/adding-typescript/)
 * [React official web site on GitHub](https://github.com/facebook/react) 
 * [Reactjs.org docs](https://reactjs.org/docs)
 * [React with TypeScript cheatsheet](https://react-typescript-cheatsheet.netlify.app)
 
-Pre-reqs
+## Pre-session (30 minutes)
 
-* [Yarn](https://www.npmjs.com/package/yarn) - `npm install -g yarn` 
-     * `yarn` - command line programing for installing JS packages from npm
-* Create React app library - `npm install -g create-react-app`
+View the pre-session [here](https://github.com/tnt-summer-academy/Curriculum/wiki/%5BENG1.3%5D-Intro-to-React)
 
-## Lesson details
+## Lesson details (60 minutes)
 
-### Revisit app architecture (10 minutes)
+### React (5 minutes)
 
-* Revisit React as the component framework
+* React as the component framework
   * [React](https://github.com/facebook/react) is an open source project from Facebook. It is used at Microsoft in web experiences across teams. IG, Netflix, New York Times, Khan Academy, WhatsApp, Dropbox... all use and contribute to React
   * React is a JS library for building user interfaces
   * UI is built in small, isolated pieces called components
@@ -45,92 +46,96 @@ Pre-reqs
   * When the data changes, React *reacts* and updates the screen
   * CSS is used to style React
   * React is the code behind rendering HTML in a webpage
+* Overview of the React page [here](https://reactjs.org) and go over the examples
+
+### Review of the created app: my-app (15 minutes)
+
+* Did you have any issue with the pre-session work?
+
+* `create-react-app` is a tool chain that permits to create a one-page web app
+
+* `create-react-app my-app --template typescript` is the command to run in the terminal to create my-app and be sure that it supports TypeScript. Do not forget `--template typescript`!
+
+* Folders/files of the project
+  * Open the workspace folder in VS Code
+  * Let us tour the content of what was generated
+    * Some important folders/files
+      * src folder - "source" working files to create the build
+      * App.tsx - React module
+      * App.css - top level style
+      * index.tsx - React module
+      * public folder - can be opened from browser address bar
+      * index.html - most common name for the default webpage of a website
+      * tsconfig.json - TypeScript configuration
+      * .gitignore - tells Git which files or folder to ignore in a project such as editor backup and local configuration files
+      * package.json - dependencies
+      * README - scripts for project and links to learn more about create React app
+      * App.test.tsx - running test with Jest, more on this later
+      * setupTests.ts - tests Jest will run
+      * yarn.lock - stores what versions were installed
+    * Some other folders/files (not imporant at this point!)
+      * node_modules folder - installed packages
+      * favicon.ico - the image that's displayed in a browser tab
+      * logo.png - two sizes, displayed in the web page
+      * logo.svg - scalable vector of logo
+      * manifest.json - metadata for WebExtensions API, used for bookmarks and cross-browsers for compatibility
+      * robots.txt - used by search engines for indexing
+      * react-app-env.d.ts - dev environment
+      * serviceWorker.ts - executes in the background on separate thread from UI, allows app to work offline and used for platform integration
+  * Overview and discussion of the code
+    * index.html - `root` is the id of the div element and is used in other files
+    * App.tsx
+      * Look at the imports  
+      * A function called `App` is created. App is a React component. It returns a JSX `<div>` element
+      * JSX is JavaScript + XML
+      * .tsx means that we are using JSX in this project
+    * index.tsx
+        * Notice the import 
+        ```typescript
+        import App from './App';
+        ```
+        * The function `render` permits to render the App component into the root DOM 
+  * Demo 
+    * Run the app
+    * Change something in one of the files (App.tsx, App.css) and save 
+    * Observe the app re-render in the browser
+    * This is React in action!
+    
+![React files](https://github.com/tnt-summer-academy/Curriculum/blob/main/Week%201/%5BENG1.3%5Dreactfiles.png)
+
+### App architecture (15 minutes)
+
 * TNTs draw what they have learned so far about app architecture
   * Display app architecture with labels, no descriptions
-  * TNT groups talk through the function of the different parts and how they connect
+  * TNT groups talk through the functions of the different parts and how they connect
 * Re-group and walk through architecture thus far together - HTML, CSS, React, Node...
 
 ![Architecture to discuss](https://github.com/tnt-summer-academy/Curriculum/blob/main/Week%201/BasicArchitecture.png)
 
-### Creating a new React app with TypeScript (20 minutes)
+### Going further: input-app (25 minutes)
 
-* Introduce tool chain to generate a React app
-  * [Create a New React App](https://reactjs.org/docs/create-a-new-react-app.html) 
-  * This section covers using [TypeScript with React](https://create-react-app.dev/docs/adding-typescript)
-  * The library sets up the environment with the latest TypeScript features and optimizes the app for production
+* We will go together through th creation of a small app 
+* You can start with `my-app` or create a new React app
+* The goal is create an app that updates a welcome string based on input text
+* We will need to add a textbox for the user to enter text and listen on it. When it will change, the welcome text will be updated
+* The finished code is available [here](https://github.com/tnt-summer-academy/Samples/tree/master/Week_1) (input-app)
+* We are going over the App.tsx code step by step
+  * This app uses a class component (not a function). We use classes for components that have changing states
+  * App extends `React.Component<props, state>`
+  * `props` are propriety parameters that are passed from parents to children through tag atributes
+  * The state of the app is represented by a string called `name`
+  * We will be using `React.Component<{}, {name: string>`
+  * `name` is initialized to the empty string
+  * We are adding the `<input>` tag with attribute `onChange` that will call `this.onChange`. input will create a textbox where the user will input text.
+  * `this` refers to the current component
+  * Notice the camel case notation for the `onChange` attribute due to the use of JSX
+  * Define `onChange` as an anonymous function with fat arrow. It changes the state of the component using the `setState` function. It returns void. 
+  * Update `<input>` such that the `value` attribute contains `name` 
+  * Add `{this.state.name}` after Welcome to print `name`
 
-* Demo - create React Project
-  * `create-react-app my-app --template typescript` is the command to run in the terminal. Breaking down the command:
-     * `create-react-app` - library for generating the environment
-     * `my-app` - name of the app
-     * `--template typescript` - use the TypeScript template
-  * Run the command
+## Post-session (30 minutes)
 
-* Demo - terminal during `create-react-app`
-  * The command fetches and installs the dependencies needed for a React TypeScript app. The first time it is installed you can see it in action.
-  * `create-react-app` will creates a workspace folder with the provided name where the terminal directory, folder, is at.
-  * If it succeeds, a Git repository is created.
-
-* Demo - starting the app
-  * `create-react-app` ends with some helpful commands to run
-  * `cd` - change directory to where the repo was created
-  * Run `yarn start` script
-  * The app runs in the browser! The Node.js server is running locally.
-
-* Demo - editing the app
-  * Open the workspace folder in VS Code, it is the same directory used to start the app.
-    * Tour the contents of what was generated:
-      * public folder - can be opened from browser address bar
-      * src folder - "source" working files to create the build
-      * node_modules folder - installed packages
-      * favicon.ico - the image that's displayed in a browser tab
-      * index.html - most common name for the default webpage of a website
-      * logo.png - two sizes, displayed in the web page
-      * manifest.json - metadata for WebExtensions API, used for bookmarks and cross-browsers for compatibility
-      * robots.txt - used by search engines for indexing
-      * App.css - top level style
-      * App.test.tsx - running test with Jest, more on this later
-      * App.tsx - React module
-      * index.tsx - React module
-      * logo.svg - scalable vector of logo
-      * react-app-env.d.ts - dev environment
-      * serviceWorker.ts - executes in the background on separate thread from UI, allows app to work offline and used for platform integration
-      * setupTests.ts - tests Jest will run
-      * .gitignore - tells Git which files or folder to ignore in a project such as editor backup and local configuration files
-      * package.json - dependencies
-      * README - scripts for project and links to learn more about create React app
-      * tsconfig.json - TypeScript configuration
-      * yarn.lock - stores what versions were installed
-    * Edit the App.tsx
-    * Save
-    * Watch app re-render
-
-* Demo - small React sample 
-    * To update a welcome string based on input text
-    * Edit the App.tsx by replacing the text in my-app with Welcome and an input textbox 
-    * Watch the update of Welcome string
-    * See the [code](https://github.com/tnt-summer-academy/Samples/tree/main/Week_1/input-app) 
-    
-* Common errors:'react-scripts' is not recognized as an internal or external command. Use the command `yarn install`or `npm install`, depending on which the project uses, to get the package manager to install the dependencies.
-
-### Explore create React app (30 minutes)
-
-NTs create a new React TS app with `create-react-app`. Observe for NTs blocked in generating app from missing dependencies.
-
-1. Run the app
-2. Make changes in the app using CSS, HTML, and React. Save the file App.tsx and watch the page reload
-3. Make changes in the App.css file. Notice how the style changes
-4. Try adding the small React sample (textbox that update the welcome string)
-
-### Review (15 minutes)
-
-1. Post to Teams what went well and what was challenging?
-2. A few students share with the room
-3. Talk through examples of how to resolve the challenges?
-
-### Extend the sample (15 minutes)
-
-NTs will work on the create react sample app that updates the welcome string. 
+Extend [`input-app`](https://github.com/tnt-summer-academy/Samples/tree/master/Week_1) by using a form. The Welcome text changes, when the Submit button is clicked
 
 ## Stretch
 
