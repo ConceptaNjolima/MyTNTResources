@@ -62,23 +62,27 @@ We'll cover three scenarios: amending a commit, recovering a deleted file, and r
 
       <img src="./[ENG1.5]recovering-a-deleted-file.png" alt="recovering a deleted file" style="zoom:65%;" />
 
-    
 
     * ***I deleted a file and committed the deletion:***
-    You made a commit deleting a file, but then realized you wanted to keep the file around after all? Do a reset to go back to the state before your commit (be careful: the "--hard" option means the command will discard changes to tracked files after the specified commit — you can also leave this option out in which case the file deletion will show up as an un-staged change along with any other changes you’ve made in your working tree. The file can then be restored as in the previous scenario):
+
+        ![resetting](./[ENG1.5]-resetting.png)
+
+        You made a commit deleting a file, but then realized you wanted to keep the file around after all? Do a reset to go back to the state before your commit (be careful: the "--hard" option means the command will discard changes to tracked files after the specified commit — you can also leave this option out in which case the file deletion will show up as an un-staged change along with any other changes you’ve made in your working tree. The file can then be restored as in the previous scenario):
     `$ git reset --hard HEAD~1`
 
     (Note: this presumes you haven’t already pushed your commit to a remote — this will be covered later next week.
 
-    
-
     <img src="./[ENG1.5]recovering-a-deleted-file-aftercommit.png" alt="hard rest" style="zoom:65%;" />
-
-    
 
     * ***I committed the deletion and then I did more commits***
 
-      If you deleted a file, committed, then continued work and did more commits, only to find that deleting the file was a mistake, Git still has you covered! To find the right commit, first check the history for the deleted file: `$ git log -- <filename>` 
+      If you deleted a file, committed, then continued work and did more commits, only to find that deleting the file was a mistake, Git still has you covered! 
+      
+      <img src="./[ENG1.5]recover-deleted-after-newcommit-p1.png" alt="recovering a deleted file after new commit" style="zoom:70%;" />
+      
+      To find the right commit, first check the history for the deleted file: `$ git log -- <filename>` 
+
+      <img src="./[ENG1.5]-hash-for-needed-file.png" alt="recovering a deleted file after new commit" style="zoom:70%;" />
 
       You can either work with the last commit that still had the file, or the commit that deleted the file. In the first case, just checkout the file from that commit: 
 
@@ -88,23 +92,20 @@ We'll cover three scenarios: amending a commit, recovering a deleted file, and r
 
       `$ git checkout <deletion commit hash>~1 -- <filename>`
 
-      <img src="./[ENG1.5]recover-deleted-after-newcommit.png" alt="recovering a deleted file after new commit" style="zoom:70%;" />
-
-
-​    
+      <img src="./[ENG1.5]recover-deleted-after-newcommit-p2.png" alt="recovering a deleted file after new commit" style="zoom:70%;" />
 
 3. **Demo: reverting a commit**
-   
+
+   ![revert](./[ENG1.5]-revert.png)
+
     Sometimes you just need to go back to a previous version. Refactoring some code didn't head the direction you thought. You accidentally deleted some code that you actually needed. The layout changed in a way you didn't predict and you want a fresh take at it. Don't worry, you've been committing your work in strong reasonable chunks.
     `git revert HEAD` makes a change that's exactly the oppositely of the last commit.
 
-    <img src="./[ENG1.5]gitRevert.png" alt="git revert" style="zoom:85%;" />
+    ***See below demo scenario steps in picture***
 
-    
+    <img src="./[ENG1.5]gitRevert.png" alt="git revert" style="zoom:85%;" /> 
 
 ***Note:*** `git revert HEAD` do the same as `git reset --hard HEAD^` but the second removes the most recent commit and history
-
-
 
 ### Recap for the common scenarios
  * I deleted a file but didn’t commit: use `$ git checkout HEAD <filename>`
@@ -114,18 +115,11 @@ We'll cover three scenarios: amending a commit, recovering a deleted file, and r
     * work with the last commit that still had the file, `$ git checkout <commit hash> -- <filename>`
     * or work with the commit that deleted the file, checkout the file from one commit before that: `$ git checkout <deletion commit hash>~1 -- <filename>`
 
+### Introducing live sharing in VScode
 
-### Practice backtracking and undoing (15 minutes)
+* [Download VScode live sharing extension](Ihttps://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare-pack)
 
-In this activity complete the three scenarios, amending a commit, recovering a deleted file, and reverting a commit. Post on Teams if you're blocked or have a tip to share.
-
-1. Make a new directory, add some sample files, and begin tracking with git.
-2. Edit the files in VS Code. Make several (3-5) commits.
-3. Amend your last commit.
-4. Delete a file. Restore the file.
-5. Make another commit.
-6. Revert the commit.
-7. Post the Git status to teams.
+* Demo how to start and watch this small [video](https://www.youtube.com/watch?v=9QXwSg9-2qQ&feature=emb_title)
 
 ## Post-session
 
