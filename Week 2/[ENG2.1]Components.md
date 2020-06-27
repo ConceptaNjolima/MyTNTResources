@@ -23,7 +23,7 @@ Total time: 2 hours, 30 minutes
 
 ## Pre-session (60 minutes)
 
-*Prepare for the session* [here](../../../wiki/[ENG2.1]Components)
+*Prepare for the session* [here](../../../wiki/[ENG2.1]-Components)
 
 ## Session Details
 
