@@ -1,12 +1,12 @@
 # Intro to Redux
 
-This lesson explains what redux is and how to use it in a practical scenario.
+This lesson explains what Redux is and overviews how to use it in a practice. Another lesson will cover it deeper. 
 
 ## Learning objectives
 
-* TNTs will understand the importance of redux
+* TNTs will understand the importance of Redux
 * TNTs will learn how the store, reducer and actions work together
-* TNTs will have a basic understanding of redux
+* TNTs will have a basic understanding of Redux
 
 ## Time required and pace
 
@@ -15,24 +15,53 @@ Total time: 1 hour
 * 45 minutes – explain what is redux and the benefits
 * 15 minutes - rules to follow for easier development
 
-## Background / review
+## References
+
+* [Redux basic tutorial](https://redux.js.org/basics/basic-tutorial)
 
 ## Lesson details
 
-### Redux description (45 minutes)
+### What is Redux and why do we need it?
 
-What is redux and why do we need it:
-
-* Redux is a state management container similar to the state you're familiar with in react.
-* So far you've only been exposed to immutable properties passed into components and mutable states changed within components.
-* What if we need to pass a mutable property between components, change said property and have the change affect different components.
+* Redux is a flux-based state management container.
+* React permits to solve the problems of maintaining application state and making it consistent with the UI.
+* Redux, on the other hand, was introduced to maintain the application state. Each component having a state makes it complicated to maintain a general application state. In addition, there are many dependencies between components.
+* So far, you have only been exposed to immutable properties passed into components and mutable states changed within components.
+* What if we need to pass a mutable property between components, change said property and have the change affect different components?
 * Redux lets us keep a state that persists through out the app and can be accessed by every component
 
-There are four basic parts of redux. Let's go over what each part does and an example of what it looks like:
+There are four basic parts in Redux: Store, Actions, Reducer, and Connect. Let's go over what each part does and provide an illustrative example. 
+
+[image to add]
+
+### Three principles of Redux
+
+* Single source of truth - the global state of the application is saved in a single store.
+* State is read-only - the only way to change the state is to emit an action.
+* Changes are made through pure functions - these functions are called reducers. They take the state and an action as parameter and return a new state.
+
+### Redux concepts
+
+#### Store
+
+* The whole state of the app is stored in an object tree inside a single store. 
+* The store is created once.
+* The only way to change the store is through actions. 
+
+#### Actions
+
+* Actions are used to change the state of an object. 
+* Actions are sent from the application to the state.
+* Actions are the only source of information for the store.
+
+#### Reducer
+
+* The reducer ties together Actions and Store and returns a new state object. 
+* This is a collection of functions that map actions to the store.
 
 #### Connect
 
-This is used to connect our component, property maps and action maps to the store
+Connect is used to connect components, property maps and action maps to the store. 
 
 ```js
 import { connect } from 'react-redux'
@@ -101,6 +130,29 @@ export default reducer;
 #### Let's put all 4 parts together
 
 ![ReduxDataFlow](./redux-data-flow.png)
+
+### Redux programming
+
+#### Store
+
+* Store is an object with several methods
+  * `createStore(<reducer> [<preloaded state>, <enhancer>])` - creates a Store and returns the whole state tree of the application. 
+  * `getState()` - returns the complete state tree of the application.
+  * `dispatch(action)` - dispatches an action and returns the next state. This is the only way to trigger a state change.
+  
+#### Actions
+
+* Actions are objects 
+  * They have a `type` property that indicates the type of action being performed.
+  * The `type` is typically a string constant.
+  * Other properties specific to the app are added.
+* Action creators are functions that create / return actions.
+
+#### Reducer
+
+* A reducer is a function
+
+#### Connect
 
 ### Rules to follow for easier development (15 minutes)
 

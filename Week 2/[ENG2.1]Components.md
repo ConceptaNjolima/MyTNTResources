@@ -23,7 +23,7 @@ Total time: 2 hours, 30 minutes
 
 ## Pre-session (60 minutes)
 
-*Prepare for the session* [here](../../../wiki/[ENG2.1]Components)
+*Prepare for the session* [here](../../../wiki/[ENG2.1]-Components)
 
 ## Session Details
 
@@ -114,10 +114,10 @@ These are methods that are trigger through out a components existence from when 
 
 ## Post-session (30 minutes)
 
-- Use pair programming to complete the [*My TNT* Exercise](https://github.com/tnt-summer-academy/Exercises/wiki/[ENG2.1]-MyTNT-Components)
+- Use pair programming to complete the [*My TNT* Exercise](https://github.com/tnt-summer-academy/Exercises/tree/main/Week_2/ENG2.1-myTNT)
 - Push your work to GitHub and submit a Pull Request (one per pair)
 
 ## Stretch
 
-Continue coding on the [*My TNT* Exercise Stretch Goals](https://github.com/tnt-summer-academy/Exercises/wiki/[ENG2.1]-MyTNT-Components)
+Continue coding on the *My TNT* Exercise Stretch Goals
 
