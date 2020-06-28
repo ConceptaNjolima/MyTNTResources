@@ -96,7 +96,9 @@ To add Redux to an app:
 * Provide your app a reference to the Redux store
 * Map the action creators, dispatch functions, and state as props to whatever component needs data from the store
 
-The code below cover a simple counter example. The screenshot shows the final results. The code is available here.
+The code below cover a simple counter example. The screenshot shows the final results. The starting code is available [here](The session uses redux-simple-counter [here](https://github.com/tnt-summer-academy/Samples/tree/main/Week_2).
+
+![counter example](https://github.com/tnt-summer-academy/Curriculum/blob/main/Week%202/%5BENG2.4%5Dcounter-example-screenshot.png)
 
 #### Installation
 
