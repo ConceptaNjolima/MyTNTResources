@@ -46,7 +46,7 @@ The developer tools are best shown in action. Open a website and review the pane
 
 ### Debug TypeScript/JS: Sources Tool and Console (10 minutes)
 
-1. Open the [My to-do-list App from ENG 1.4 Pre-Session](./[ENG1.4]-Pre-Session) in the Edge browser
+1. Open the [to-do-basic-walkthrough](https://github.com/tnt-summer-academy/Samples/tree/main/Week_1/to-do-basic-walkthrough) from the Week 1 Samples in the Edge browser
 2. View the **Console panel** for any errors or warnings
 3. Use the **Sources tool** to pause your code with breakpoints and view the call stack, variables, threads and more
 4. When your breakpoint has been hit then you have a few actions you can take:
