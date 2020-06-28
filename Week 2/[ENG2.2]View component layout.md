@@ -12,33 +12,30 @@ This lesson introduces how to create components that can display a variety of da
 
 Total time: 2 hours, 30 minutes
 
-- 60 minutes - **Pre-session**): background learning, research, and investigations
-- 60 minutes - **Instructional Session**
-  - 20 minutes - Components discussion in groups
-  - 10 minutes – Review basic component's ideas
-  - 10 minutes - Discuss component types
-  - 10 minutes – Explain component's lifecycle
-  - 10 minutes - Exercise Setup
-- 30 minutes - **Post-session**: pair programming Exercise
+- 45 minutes - **Pre-session**): background learning, research, and investigations
+- 30 minutes - **Instructional Session**
+  - 5 minutes - Discussion in groups
+  - 10 minutes –  Layout using HTML Tables
+  - 10 minutes - Layout using CSS Flexbox
+  - 5 minutes - Exercise Setup
+- 45 minutes - **Post-session**: pair programming Exercise
 
-## Pre-session (30 minutes)
+## Pre-session (45 minutes)
 
 *Prepare for the session* [here](../../../wiki/[ENG2.2]View-component-layout)
 
 ## Session Details
 
-### Session Discussion (15 minutes)
+Components are most useful when their contents are generated on the fly based on the data passed to them. But how can we layout a web page when we don't know what the final content of the page will be? or when the content may continue to change as the user interacts with the page?
+
+ Two useful options for working with this kind of dynamic layout are **HTML Tables** and **CSS Flexbox**.
+
+### Session Discussion (5 minutes)
 
 In your team channels, answer the following questions; be prepared to share an insight or example with the class
 
 - Even though the website http://nytime.com displays as rows and columns, why is it not created as an HTML table? What is a table?
 - What is one question about the CSS flexbox that is confusing everyone in your team?
-
-### Components and Data (5 minutes) ###
-
-Components are most useful when their contents are generated on the fly based on the data passed to them. But how can we layout a web page when we don't know what the final content of the page will be? or when the content may continue to change as the user interacts with the page?
-
- Two useful options for working with this kind of dynamic layout are **HTML Tables** and **CSS Flexbox**.
 
 ### Layout using an HTML Table (10 minutes)
 
@@ -118,18 +115,23 @@ This means if all the children's flex is set to 1 they will take up an equal amo
 
 ![FlexGrowShrink](./flex-grow.svg)
 
-### Exercise Setup: Component Layouts (30 minutes)
+### Exercise Setup (5 minutes)
 
-Complete the code and layout for two React components:
+1. If you haven't yet, Fork and Clone the Layout Exercise
+2. Identify the two components use in the App
+   - StudentTable component
+   - Keyword component
 
-1. Keyword component
-   1. KeywordCollection component
-2. StudentTable component
-
-Using CSS Flexbox layout multiple Keywords and apply Flexbox properties to achieve the results below
+3. Using an HTML table, complete the code to display the student data
+4. Using CSS Flexbox layout multiple Keywords and apply Flexbox properties to achieve the layout
 
 ![Keyword Layout with Flex](./view-component-flex.png)
 
-## Stretch (20 minutes)
+## Post-session (45 minutes)
+
+- Use pair programming to complete the [*Layout* Exercise](https://github.com/tnt-summer-academy/Exercises/wiki/[ENG2.2]-MyTNT-Components)
+- Push your work to GitHub and submit a Pull Request (one per pair)
+
+## Stretch
 
   1. Add an input field above your component to accept an input from a user and add it to your Keyword Collection component

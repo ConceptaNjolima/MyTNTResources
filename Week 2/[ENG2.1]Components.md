@@ -10,7 +10,7 @@ This lesson explores the purpose of a React component, how a component works and
 
 ## Time required and pace
 
-Total time: 2 hours, 30 minutes
+Total time: 2 hours, 45 minutes
 
 - 60 minutes - **Pre-session**): background learning, research, and investigations
 - 60 minutes - **Instructional Session**
@@ -19,7 +19,7 @@ Total time: 2 hours, 30 minutes
   - 10 minutes - Discuss component types
   - 10 minutes – Explain component's lifecycle
   - 10 minutes - Exercise Setup
-- 30 minutes - **Post-session**: pair programming Exercise
+- 45 minutes - **Post-session**: pair programming Exercise
 
 ## Pre-session (60 minutes)
 
@@ -112,7 +112,7 @@ These are methods that are trigger through out a components existence from when 
 
 
 
-## Post-session (30 minutes)
+## Post-session (45 minutes)
 
 - Use pair programming to complete the [*My TNT* Exercise](https://github.com/tnt-summer-academy/Exercises/wiki/[ENG2.1]-MyTNT-Components)
 - Push your work to GitHub and submit a Pull Request (one per pair)

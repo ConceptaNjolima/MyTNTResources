@@ -1,64 +1,68 @@
 # UI Debugging
 
-This lesson explains how you can debug UI in Edge (Chromium) and introduces the developer tools in more detail.
+This lesson explains how to debug UI code in the Edge browser (Chromium) and explores several tools in more detail.
 
 ## Learning objectives
 
-* TNTs will learn  basic debugging
-* TNTs will understand Edge's tools
-* TNTs will understand how to make file changes while debugging
-* TNTs will practice with the debugging tools
+* TNTs will learn basic UI debugging with Chromium tools
+* TNTs will understand how to investigate HTML/CSS changes while debugging 
+* TNTs will explore the browser debugging tools for TypeScript/JS and React
 
 ## Time required and pace
 
-Total time: 45 min
+Total time: 1 hours, 30 minutes
 
-* 30 minutes – explain: intro to web developer tools and debugging basics
-* 15 minutes – explore: basics
+- 30 minutes - **Pre-session**): check installations, open example app, reading
+- 30 minutes - **Instructional Session**
+  - 5 minutes - Debug Overview
+  - 25 minutes - Debugging Tool Details
+- 30 minutes - **Post-session**: Continue working with UI debugging tools
 
-## Background / review
+## Pre-session
 
-* Enable Developer Tools in Microsoft Edge
+*Prepare for the session* [here](../../../wiki/[ENG2.3]-UI-debugging)
 
-## Lesson details
+## Session Details
 
-### Edge Debugger UI (10 minutes)
+### Edge Debugger Overview (5 minutes)
 
-The developer tools are best shown in action. Open a website and show and demo the panels.
+The developer tools are best shown in action. Open a website and review the panels:
 
-The developer tools provide several panels to assist with debugging. Here are a few noteworthy panels:
+1. **Elements panel** - View and modify the DOM and CSS that is loaded in the browser memory
+2. **Console panel** - View messages, errors warnings and info, and run JS commands
+3. **Sources panel** - Debug Javascript files via breakpoints, view other source files
+4. **Network panel** - View network traffic, HTTP status codes, file types, file size, download times, etc.
+5. **Performance** - View performance metrics by recording a page interaction
 
-1. Elements panel - View the DOM and CSS
-2. Console panel - View messages and logs
-3. Sources panel - View resources loaded by the web page and debug Javascript files via breakpoints
-4. Network panel - View network traffic, HTTP status codes, file types, file size, download times, etc.
-5. Performance - View performance metrics
+### Debug CSS: Elements Tool (10 minutes)
 
-### Debugging Basics (10 minutes)
+1. Open the [ENG2.2-Layouts App from Exercises](https://github.com/tnt-summer-academy/Exercises/tree/main/Week_2/ENG2.2-layouts) and run the app
+   (NOTE: be sure you have added the `<KeyworkCollection>` element to *App.tsx*)
+2. Explore the **Elements tool** to see how it can help us with UI debugging.
+   - Navigating the DOM
+   - Edit the DOM - Add or remove HTML elements to preview the layout
+   - Edit the CSS - Add, remove, or update CSS styles to see changes
+   - Break on DOM modifications - You can start debugging on any DOM element changes that have been made by Javascript; for example if you have the ***StudentTable*** building.
 
-The next two sections section is best demonstrated while running a web app.
+### Debug TypeScript/JS: Sources Tool and Console (10 minutes)
 
-1. View the console panel for any errors or warnings
-2. Use the Sources panel to pause your code with breakpoints and view the call stack, variables, threads and more
-3. When your breakpoint has been hit then you have a few actions you can take:
-    * Pause/Resume: Stop and continue debugging
-    * Step Over: Gives you the ability to "step over" a line of code
-    * Step Into: Go further into a function call
-    * Step Out: If you've decided to Step Into a line of code to go back you can Step Out to navigate back to your last line of code
+1. Open the [My to-do-list App from ENG 1.4 Pre-Session](./[ENG1.4]-Pre-Session) in the Edge browser
+2. View the **Console panel** for any errors or warnings
+3. Use the **Sources tool** to pause your code with breakpoints and view the call stack, variables, threads and more
+4. When your breakpoint has been hit then you have a few actions you can take:
+    * **Pause/Resume**: Stop and continue debugging
+    * **Step Over**: Gives you the ability to "step over" a line of code
+    * **Step Into**: Go further into a function call
+    * **Step Out**: If you've decided to Step Into a line of code to go back you can Step Out to navigate back to your last line of code
 
-### File Changes While Debugging (10 minutes)
+### Debug ReactJS: Components and Profiler Tools (5 minutes)
 
-Let's explore the Elements panel to see how it can help us with UI debugging.
+Continue using the My-to-do-list App, but open the React Debugging Tools
+(You will need to have installed the [React Dev Tools Extension on the Edge browser](https://microsoftedge.microsoft.com/addons/detail/react-developer-tools/gpphkfbcpidddadnkolkpfckpihlkkil) )
 
-1. Navigating the DOM
-2. Edit the DOM - Add or remove HTML elements to preview the layout
-3. Edit the CSS - Update classes to see changes
-4. Break on DOM modifications - You can start debugging on any DOM element changes that have been made by Javascript
+- The Components tool shows the individual components, their nesting, their properties and state
+- The Profiler tool records the browser's execution of the app to identify performance issues. As you add more functionality to the app this becomes more interesting
 
-## Explore with the UI debugger (15 minutes)
+## Post-session
 
-1. Go to [www.microsoft.com](www.microsoft.com)
-2. Open Developer tools.
-3. Familiarize yourself with the panels.
-4. In the Console, what warnings do you see? Share with you team.
-5. With the elements panel, change the color of the banner and on screen change some text. Post a screenshot to your Team's channel with your changes.
+- View the post-session [here](../../../wiki/[ENG2.3]-UI-debugging)
