@@ -99,7 +99,7 @@ There's likely a range of familiarity with web pages, web apps, and how they wor
       * Major benefits: easier to debug, easier to build programs that scale
 
 ## Demo
-[Meet Your Instructors page](https://github.com/tnt-summer-academy/Samples/tree/main/Week_1/meet-your-Instructors)
+[Meet Your Instructors page](https://github.com/tnt-summer-academy/Exercises/tree/main/Week_1/ENG1.0/meet-your-Instructors)
 
 * Show a demo and walk through the HTML tags and CSS files
 * Ask students to clone and experiment with different CSS properties to see different effects
