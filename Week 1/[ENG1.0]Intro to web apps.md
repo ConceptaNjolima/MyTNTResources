@@ -74,7 +74,7 @@ There's likely a range of familiarity with web pages, web apps, and how they wor
       |---|---|
       | Programming Language   | HTML, CSS, TypeScript  |
       | Web framework | React |
-      | Component library | Fabric |
+      | Component library | FluentUI (formerly UI Fabric) |
       | Store management | Redux and state component|
       | Sever environment | Node.js, npm|
       | Package manager | Yarn |
