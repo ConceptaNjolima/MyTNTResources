@@ -15,6 +15,8 @@ This topic introduces the roles of program (product) manager (PM) and gives an o
 
 ## Pre-session
 
+You'll return to your problem statements tomorrow. Today kicks off the design sprint with background on product development. Tomorrow you'll take the problem statement and begin building customer empathy and exploring pain points.
+
 Read [Intro to PM and Design thinking](https://github.com/tnt-summer-academy/Curriculum/blob/main/Reference/Product%20decks/1.0%20-%20Intro%20to%20pm%20and%20design%20thinking.pdf). This document introduces the role of the program manager (PM) and the design thinking phases. The design thinking phases will help determine what to build, breaking down the problem statement, understanding the user, and evaluating solutions to best meet the needs.
 
 ## Post-session: connect with coaches
