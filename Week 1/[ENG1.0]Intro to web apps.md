@@ -35,7 +35,7 @@ View the pre-session [here](https://github.com/tnt-summer-academy/Curriculum/wik
       * Web app - interactive, user control, saves data, often sign-in (identity)
 
 2. How do web apps compare to apps on iOS, Android, or Windows?
-      * Apps targeting a a specific operating system are called "native apps" and work just on that platform - iOS, Android, Windows, Linux
+      * Apps targeting a specific operating system are called "native apps" and work just on that platform - iOS, Android, Windows, Linux
       * Some examples of how they compare:
 
         | Native Apps  | Web apps |
@@ -58,7 +58,7 @@ View the pre-session [here](https://github.com/tnt-summer-academy/Curriculum/wik
 ![FrontEndDev](./[ENG1.0]FrontEndDev.png)
 
 
-### Intro to tech and web app architecture (15 minutes)
+### Intro to web tech (10 minutes)
 
 There's likely a range of familiarity with web pages, web apps, and how they work. This refresher aims at closing any gaps and providing  the opportunity to dig in and get familiar with resources that will be applicable throughout the program.
 
@@ -76,7 +76,7 @@ There's likely a range of familiarity with web pages, web apps, and how they wor
       | Web framework | React |
       | Component library | FluentUI (formerly UI Fabric) |
       | Store management | Redux and state component|
-      | Sever environment | Node.js, npm|
+      | Server environment | Node.js, npm|
       | Package manager | Yarn |
       | Source control | Git |
       | Source control tools | SourceTree, Command line, VS Code|
@@ -98,7 +98,8 @@ There's likely a range of familiarity with web pages, web apps, and how they wor
       * TS is compiled - it generates JS
       * Major benefits: easier to debug, easier to build programs that scale
 
-## Demo
+## Demo (30 minutes)
+
 [Meet Your Instructors page](https://github.com/tnt-summer-academy/Exercises/tree/main/Week_1/ENG1.0/meet-your-Instructors)
 
 * Show a demo and walk through the HTML tags and CSS files
