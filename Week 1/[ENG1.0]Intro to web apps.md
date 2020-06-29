@@ -1,6 +1,6 @@
 # Intro to web app architecture
 
-This lesson provides an overview of how web apps work, HTML and CSS to lay the foundation for the prototypes NTs will build.
+This lesson provides an overview of how web apps work, HTML, CSS and TypeScript to lay the foundation for the prototypes NTs will build.
 
 ## Learning objectives
 
@@ -10,7 +10,7 @@ This lesson provides an overview of how web apps work, HTML and CSS to lay the f
 
 ## Time required and pace
 
-Total time: 2 hour
+Total time: 2 hours
 
 * 30 minutes - [**Pre-session**](https://github.com/tnt-summer-academy/Curriculum/wiki/%5BENG1.0%5D-Intro-to-web-apps): background learning, research, and investigations
 * 60 minutes - **Instructional Session**
