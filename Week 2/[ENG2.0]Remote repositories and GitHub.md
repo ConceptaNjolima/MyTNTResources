@@ -34,7 +34,7 @@ Prepare for the session [here](../../../wiki/[ENG2.0]-Remote-Repositories-and-Gi
 
 1. The learning module introduced the basics of cloning a repository and contributing to a repository using `git clone` and `git pull`. These are the building blocks for collaborating with Git and working with a remote repository.
 
-<table>
+<table style="border: none">
     <tr align="center">
         <td><img src="./remotes.png" alt="Clone, Pull and Push" width="80%"> </td>
     
@@ -51,7 +51,7 @@ We'll now walk through the process of cloning a repository from GitHub. We'll be
     1. [Go to GitHub](https://github.com/) and create a new repository.
     2. Make an initial commit. Select create a Readme file as an initial commit
 
-<table>
+<table style="border: none">
     <tr>
         <td><img src="./CreateRemoteRepo.gif" alt="Create Remote Repo"> </td>
         <td><img src="./CloneURL.gif" alt="Clone URL"></td>
@@ -63,7 +63,7 @@ We'll now walk through the process of cloning a repository from GitHub. We'll be
     4. Clone the remote repository to your local directory using `git clone` using the URL provided by GitHub.
     5. Show the folders and open the workspace in VS Code. you can just in the integrated terminal write `code .`
 
-<table>
+<table style="border: none">
     <tr align="center">
         <td><img src="./VSCodeRemoteClone.gif" width="75%" alt= "VS Code Clone"> </td> 
  </tr>
@@ -88,10 +88,10 @@ We'll now walk through the process of cloning a repository from GitHub. We'll be
 6. what is next?
     * Introduce Github workflow
 
-<table>
+<table style="border: none">
     <tr align="center">
         <td><img src="./GitHubWorkFlow.gif" width="75%" alt="GitHub work flow]"> 
-    <td> 
+    </td> 
  </tr>
 </table>
 
@@ -113,11 +113,10 @@ The goal is to create a repo on GitHub, clone the repository, make changes in VS
 7. Continue making changes in VS Code. Check out the `git diff`. Check out the log using `git log` ,`git log --oneline` or `git log --oneline --graph --decorate --all` to see the tracking of the commits.
 8. Share a screenshot from GitHub of the commit history.
 
-<table>
+<table style="border: none">
     <tr align="center">
         <td><img src="./commitHistory.png" alt="commit History"> </td>
-    
-</tr>
+    </tr>
 </table>
 
 
