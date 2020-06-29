@@ -16,7 +16,7 @@ Total time: 1.5 hours
 
 ## Post-session
 
-Together read [HMW and Ideation](https://github.com/tnt-summer-academy/Curriculum/blob/main/Reference/Product%20decks/1.3%20-%20HMW%20and%20ideation.pdf). This document introduces the ideate phase of design thinking. The goal is to expand thinking in a problem space and sketch a whole range of solution ideas. This is the time to go big on ideas of how to address your problem statements. The document covers the two team activities for today.
+Together read [HMW and Ideation](https://github.com/tnt-summer-academy/Curriculum/blob/main/Reference/Product%20decks/1.3%20-%20HMW%20and%20ideation.pdf). This document introduces the ideate phase of design thinking. The goal is to expand thinking in a problem space and sketch a whole range of solution ideas. This is the time to go big on ideas of how to address your problem statements. The document has examples of the two team activities for today.
 
 ### Brainstorm with HMW (50 min)
 
@@ -38,7 +38,7 @@ Next we're moving on to crazy 8s. You're responsible for keeping your own time. 
 
 2 x Crazy 8s
 
-1. Fold a paper into eight sections and pick one of the problem statements start with.
+1. Fold a paper into eight sections and pick one of the How Might We problem statements start with.
 2. Start a timer for 5 minutes. Draw something in each section.
 3. Regroup as a team and share each section.
 4. Repeat (with the other problem statement)!
