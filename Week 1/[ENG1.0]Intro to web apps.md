@@ -5,7 +5,7 @@ This lesson provides an overview of how web apps work, HTML, CSS and TypeScript 
 ## Learning objectives
 
 * TNTs will learn the basics of how web pages and web apps work.
-* TNTs will be able to make HTML and CSS changes.
+* TNTs will be able to make HTML and CSS changes and learn about the use of TypsScript.
 * TNTs will learn where to go for CSS and HTML info and resources.
 
 ## Time required and pace
