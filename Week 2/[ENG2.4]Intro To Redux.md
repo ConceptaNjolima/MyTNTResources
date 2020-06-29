@@ -46,7 +46,7 @@ Prepare for the session [here](https://github.com/tnt-summer-academy/Curriculum/
 
 There are four basic parts in Redux: Store, Actions, Reducer, and Connect. We will go over what each part does and provide an illustrative example. 
 
-![Why redux](https://github.com/tnt-summer-academy/Curriculum/blob/main/Week%202/%5BENG2.4%5D%20whyredux.png)
+![Why redux](./%5BENG2.4%5D%20whyredux.png)
 [Ref: https://www.systango.com/blog/free-react-redux-starter-kit]
 
 ### Three principles of Redux
@@ -59,7 +59,7 @@ There are four basic parts in Redux: Store, Actions, Reducer, and Connect. We wi
 
 #### High level architecture view
 
-![redux architecture](https://github.com/tnt-summer-academy/Curriculum/blob/main/Week%202/%5BENG2.4%5Dreduxhighlevelarchitecture.png)
+![redux architecture](./%5BENG2.4%5Dreduxhighlevelarchitecture.png)
 [Ref: https://www.kirupa.com/react/using_redux_with_react.htm]
 
 #### Store
@@ -87,7 +87,7 @@ There are four basic parts in Redux: Store, Actions, Reducer, and Connect. We wi
 
 #### Putting everything together
 
-![ReduxDataFlow](https://github.com/tnt-summer-academy/Curriculum/blob/main/Week%202/%5BENG2.4%5Dredux-data-flow.png)
+![ReduxDataFlow](./%5BENG2.4%5Dredux-data-flow.png)
 
 ### Coding a React app with Redux
 
@@ -96,12 +96,13 @@ To add Redux to an app:
 * Provide your app a reference to the Redux store
 * Map the action creators, dispatch functions, and state as props to whatever component needs data from the store
 
-The code below cover a simple counter example. The screenshot shows the final results. The starting code is available [here](The session uses redux-simple-counter [here](https://github.com/tnt-summer-academy/Samples/tree/main/Week_2).
+The code below cover a simple counter example. The screenshot shows the final results. The session uses redux-simple-counter [here](https://github.com/tnt-summer-academy/Samples/tree/main/Week_2).
 
-![counter example](https://github.com/tnt-summer-academy/Curriculum/blob/main/Week%202/%5BENG2.4%5Dcounter-example-screenshot.png)
+![counter example](./%5BENG2.4%5Dcounter-example-screenshot.png)
 
 #### Installation
 
+* `yarn install`
 * `yarn add redux`
 * `yarn add react-redux`
 
@@ -120,7 +121,7 @@ store = createStore(<reducer>);
 ```
 #### Provider
 
-* React Redux provides `<Provider />`, which makes the Redux store available to the rest of your app.
+* React-Redux provides `<Provider />`, which makes the Redux store available to the rest of your app.
 * The application will render a `<Provider>` at the top level, with the entire app’s component tree inside of it.
 
 index.tsx file
@@ -174,6 +175,7 @@ export function increaseCounter() {
 #### Reducer
 
 * A reducer is a pure function that takes the previous state and an action, and returns the next state. 
+  * A 'pure' function is like a function in mathematics: it takes it's parameters, does something with them and returns the result, and doesn't change anything else.  *In other words, our reducer doesn't change or alter the state - it creates a **new** object that will be our new state.*
 * Redux will call a reducer with an undefined state for the first time. This is where the initial state of the app needs to be initialized.
 
 types.tsx file
@@ -218,10 +220,42 @@ export default counterReducer;
 #### Connect
 
 * We are now looking at how to connect a React component with the Redux store.
+
 * We create a component `Counter`.
-* We'll generate a container component with the React Redux library's `connect()` function. This function takes 2 functions as parameters: `mapStateToProps` and `mapDispatchToProps`.
+
+* We'll generate an 'invisible' container component with the React Redux library's `connect()` function. This function takes 2 functions as parameters: `mapStateToProps` and `mapDispatchToProps`.
+
+  * The container component is 'invisible' in the sense that it isn't going to show up in the web browser AND we're never going to see the source code for it.
+    
+  * **It's reasonably accurate to imagine that whenever React decides to 're-render' a Component it basically re-creates it from scratch.**  So whenever the value of `state.count` changes React will need to re-create everything that we're looking at on the page - the thing that shows us the current value of the counter, the plus / increment button, the minus / decrement button, everything.
+    Luckily for us the container component will do all the work needed to provide the Counter Component with all the information it needs - the current value of state.count, the code to run when we click the + and - buttons, etc.
+    Of course, the container isn't magic and it can't know what we want the buttons to do so we'll need to tell it what code to run, and what data this particular component is interested in, etc.  But the container will handle all the work needed to (re)establish all these connections.
+    And it will do that work invisibly, off-stage, where we won't directly see it.  But it's doing that work for us, which is the important thing.
+
+    * Side-note: React will actually try to avoid re-creating everything from scratch by doing smart things like re-using existing DOM elements where it can, but those optimizations should work 'magically' in the background.
+
   * `mapStateToProps` does exactly what its name suggests. It connects a part of the Redux state to the props of a React component. By doing so a connected React component will have access to the exact part of the store it needs.
+
+    * In previous example programs that you've seen the component that you were writing/examining would receive it's props from whichever thing on the page created this component.  So if we had a counter component *without* Redux then the overall App would set the Redux-less counter's props so that the counter component would know what it's number is, etc, etc.
+
+      A major point of using Redux is to avoid situations like that where another thing (like the App) needs to know how to set up this Counter component.
+
+      So when we're using Redux (like we're doing here) we need a way to 'translate' the current state into props that this Component can use.  The App had been doing this in the Redux-less version, and now that it's not doing this we need something else to do this.  We'll have the Component do this for itself (which is awesome because now the code for the individual component is consolidated into a single file)(all the previous files defined how *any* component might interact with Redux - this file defines our new, individual Component)
+
+      That's why the `mapStateToProps` method is given the current state of the app and expected to return an object that contains the props that this Component needs.
+
+    * **In this particular case, the only state that this Counter component is interested in is the current number in `state.count`; it'll 'translate' this into the `countValue` property in the overall props object so that in the JSX we can display the value (on the line that reads `<span>{this.props.countValue}</span>`)**
+
   * `mapDispatchToProps` does something similar, but for actions. It connects Redux actions to React props. This way a connected React component will be able to send messages to the store.
+
+    * Remember that React will re-create the component whenever it needs to update the counter.
+      This includes things like the plus / increment button and the minus / decrement button, which need to be re-created on the page (where the user can see them) AND they need to be "reattached" to the code that we want to run when those buttons are clicked.
+    * You can see in the below JSX code where we tell React which method to use:
+      `<button className="buttons" onClick={this.props.increaseCount}> + </button>`
+      * NOTE: We just made this name up right here - instead of calling it `increaseCount` we could have called it `incrementCount` or `makeNumberBigger` or whatever we'd like.  We can choose the name as long as we use the same name in the code below it.
+    * Turns out we can put functions into the props (not just data).  In this case, we're using the `this.props.increaseCount` method / function.
+    * So where do we set up the `this.props.increaseCount` method / function?  We don't do this ourselves.  Instead, the invisible container component does that for us.  We tell the invisible container to do this in the `mapDispatchToProps` function, when we return an object ( `return { ... }`) that has two properties.  Notice that we've very carefully named the first one as `increaseCount` - again, whatever we chose to call this back in the JSX is what we'll copy-and-paste into here.  We define this to be a function that tells Redux that things have changed using the `dispatch()` function.
+      * Not only is dispatch() built into Redux, but [according to the docs "This is the only way to trigger a state change."](https://redux.js.org/api/store#dispatchaction) 
 
 ```typescript
 import React from 'react';
