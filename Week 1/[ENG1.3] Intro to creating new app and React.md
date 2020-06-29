@@ -119,8 +119,9 @@ View the pre-session [here](https://github.com/tnt-summer-academy/Curriculum/wik
 * You can start with `my-app` or create a new React app
 * The goal is create an app that updates a welcome string based on input text
 * We will need to add a textbox for the user to enter text and listen on it. When it will change, the welcome text will be updated
-* [The finished code is available here (input-app)](https://github.com/tnt-summer-academy/Samples/tree/main/Week_1/input-app)
-  * Remember that whenever you clone a repo with React you'll need to run `npm install`
+* The finished code is available [here](https://github.com/tnt-summer-academy/Samples/tree/main/Week_1/input-app) (input-app)
+* (You can clone Samples to get the code)
+* Be sure to run `npm install` 
 * We are going over the App.tsx code step by step
   * This app uses a class component (not a function). We use classes for components that have changing states
   * App extends `React.Component<props, state>`
