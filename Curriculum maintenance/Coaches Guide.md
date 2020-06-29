@@ -19,9 +19,9 @@ NT groups are given a broad problem statement. NTs are introduced to the product
 #### tl;dr
 
 * Kick off with your team and get to know one another!
-* Check in on getting started with the engineering tools and tech - VS Code, TS, React
+* Check in on getting started with the engineering tools and tech - VS Code, TS, React.
 * Revisit the [Intro to PM and Design thinking](https://github.com/tnt-summer-academy/Curriculum/blob/main/Reference/Product%20decks/1.0%20-%20Intro%20to%20pm%20and%20design%20thinking.pdf) content with your team, especially - the PM role design thinking phases, MVP, and agile development.
-* Make sure your team has a channel setup, encouraging having conversations in this channel and keeping all files there
+* Encouraging having conversations in the team channel, and keeping all files there.
 
 #### Details
 
@@ -62,7 +62,7 @@ Check that your team has created a channel under their group. Encourage them to 
 
 Each group received their problem statement today. It was posted in the General channel for the group in the morning. Your team may be at various phases of digesting the problem statement. Check-in with your team and get their read on whether or not they're excited. This is a chance to encourage a resilient and growth mindset if they were hoping for a different one.
 
-This kicks off the empathize design phase! The goal is to develop a deep, empathetic understanding of the user needs by observing, engaging and immersing. Reiterate that at this point it's not about finding the solution but figure out what you're going to solve for. NTs have started activities to uncover these needs and build an empathy map.
+This kicks off the empathize design phase! The goal is to develop a deep, empathetic understanding of the user needs by observing, engaging and immersing. Reiterate that at this point it's not about finding the solution but figure out what you're going to solve for. NTs have started activities to uncover these needs and build an empathy map. Tomorrow they'll narrow on a particular target audience, starting with broader explorations o the problem space today.
 
 * Check-in on how it's going, how they divided the work, and encourage the use of OneNote if it's not already there.
 * If well underway, have the NTs talk through the empathy map and share the key pain points they've found.
