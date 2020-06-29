@@ -25,13 +25,13 @@ As a team:
 
 1. Spend a few minutes digesting the problem statement together. Share - are you excited? Hoping for something else? Questions on what it means or clarification?
 2. Dive into the strategies shared in the Empathize with uses document. Split them up and work individually or in pairs for the interview exercise.
-    * Take notes in OneNote as you go.
+    * Take notes in OneNote or a share Word doc as you go.
 3. Reach out on Teams if you're blocked or have a question.
 4. Regroup and check-in with each other as you go. Switch activities try at least two of them.
 5. Come back together and create an empathy map as a team:
     * Regroup as a team.
     * Walk through your findings together, build on one another and expand, don't shut anything down.
-    * Pull your research together into an empathy map. Create one empathy map.
+    * Pull your research together into an empathy map. Create one empathy map. Use Miro or PowerPoint to create your empathy map.
 6. Share the completed empathy map, or where you're at, with your coaches at your next sync.
 
 ## Stretch
