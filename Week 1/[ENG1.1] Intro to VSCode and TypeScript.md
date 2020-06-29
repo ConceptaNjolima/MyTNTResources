@@ -172,7 +172,7 @@ Samples for datatypes, functions, objects, classes, use of the fat arrow symbol 
 
 6. Generics - [overview of generics](https://www.typescriptlang.org/docs/handbook/generics.html)
    * Generics permit components to work on a variety of types rather a single one. They also constraint the component.
-   * Types are declared with `<>`, e.g., <string>.
+   * Types are declared with `<>`, e.g., `<string>`.
       
    ```typescript
    // array of strings
