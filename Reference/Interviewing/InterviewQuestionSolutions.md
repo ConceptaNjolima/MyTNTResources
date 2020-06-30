@@ -56,7 +56,7 @@ Tips
 
 1. No right answer on what the product is. Be ready to talk about why in a meaningful way, how it meets a need and why this product over other similar products.
 
-2. Ask questions to clarify which segment of the educator target audience. Prioritize needs. Discuss feature options and feature tradeoffs. Draw! Use the whiteboard. Define how you will measure success.
+2. Ask clarifying questions about the target audience. Prioritize needs. Discuss feature options and feature tradeoffs. Draw! Use the whiteboard. Define how you will measure success.
 
 3. This is time for big ideas. Clarify how market share is measured. Use that as clue for product or features to introduce. Talk how you would gather customer feedback to better identify the opportunity and figure out what to build. Sketch, make proposals on what to build.
 
@@ -66,4 +66,10 @@ Tips
 
 6. Like #5, the question is looking for you to breakdown and technical concept. Use this time with the web curriculum in NT to familiarize yourself with the higher level concepts on how the web works.
 
-7. 
+7. Ask clarifying questions about the target audience. Prioritize needs. Discuss feature options and feature tradeoffs. Draw! Use the whiteboard. Define how you will measure success.
+
+8. Looking for data driven approach, asking about what customers want and need, existing markets and competitors, project management trade-offs.
+
+9. No right answer on what the product is. Be ready to talk about why in a meaningful way. For how to improve the product, think about who uses the product today - could it be brought to a new audience? What need does your proposed improvement meet?
+
+10. 
