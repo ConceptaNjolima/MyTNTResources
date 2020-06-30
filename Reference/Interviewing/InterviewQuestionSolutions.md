@@ -1,4 +1,13 @@
-# Developer Questions
+# Behavioral questions
+
+Tips
+
+* Practice.
+* Follow the STAR method.
+* Ask a clarifying questions as needed.
+
+# Developer questions
+
 1. **Rotate Matrix:** https://www.youtube.com/watch?v=SA867FvqHrM
 
 2. **URLify:** https://www.youtube.com/watch?v=ZC-yBsmsawg
@@ -42,3 +51,5 @@
 21. **Group Anagrams:** https://www.youtube.com/watch?v=sGyGLIx69Og
 
 22. **Sorted Matrix Search:** https://www.youtube.com/watch?v=FOa55B9Ikfg
+
+# PM questions
