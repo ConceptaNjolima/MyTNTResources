@@ -53,3 +53,17 @@ Tips
 22. **Sorted Matrix Search:** https://www.youtube.com/watch?v=FOa55B9Ikfg
 
 # PM questions
+
+1. No right answer on what the product is. Be ready to talk about why in a meaningful way, how it meets a need and why this product over other similar products.
+
+2. Ask questions to clarify which segment of the educator target audience. Prioritize needs. Discuss feature options and feature tradeoffs. Draw! Use the whiteboard. Define how you will measure success.
+
+3. This is time for big ideas. Clarify how market share is measured. Use that as clue for product or features to introduce. Talk how you would gather customer feedback to better identify the opportunity and figure out what to build. Sketch, make proposals on what to build.
+
+4. Talk through how you would learn what's inefficient in the ice cream shop today. Prioritize the list. Think from both the customer and scooper perspective. Brainstorm ways to address the inefficiencies, discuss the tradeoffs, and pitch the top 2-3. Ask clarifying questions, apply feedback and clues the interviewer is dropping along the way.
+
+5. This question is looking for how you explain technical concepts. It's ok if you don't know the answer to this one off the top of your head. Start with the basics you're sure of - two email accounts, two email servers, one email accounts sends a message to another and it's routed. Add in other topics your familiar with - DNS servers, domains. Draw it out.
+
+6. Like #5, the question is looking for you to breakdown and technical concept. Use this time with the web curriculum in NT to familiarize yourself with the higher level concepts on how the web works.
+
+7. 
