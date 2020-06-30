@@ -1,5 +1,13 @@
 # Behavioral
 
+* Tell me about a time you made a mistake and moved forward.
+* Describe the internet to a time traveler from the 1800s.
+* Tell me about a time when there was conflict while you were working ina group. What happened? How did you resolve it?
+* Describe a time you helped someone else on your team achieve their goal.
+* What's your favorite subject you're studying? Why?
+* What keeps them getting up in the morning excited to work on the next problem?
+* Tell me about a time you overcame a challenge?
+* When was a time you experienced ambiguity in project or assignment? What did you do?
 
 # Engineering
 
