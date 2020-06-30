@@ -85,3 +85,8 @@ Output: 9 (2,12,20, 21, 22, 23, 24 and 25. Note that 22 counts for two 2s.)
 4. How would you optimize serving time at an ice cream shop?
 5. Tell me how an email is sent from Outlook to Gmail.
 6. What happens when you navigate to a website?
+7. How would you design a microwave for the visually impaired?
+8. What things should you consider when building a new feature?
+9. What's your favorite Microsoft product and why? How would you improve that product?
+10. Design a remote with two buttons that has over 100 functions.
+11. Tell me about software in a self-driving car.
