@@ -79,7 +79,7 @@ There's likely a range of familiarity with web pages, web apps, and how they wor
       | Server environment | Node.js, npm|
       | Package manager | Yarn |
       | Source control | Git |
-      | Source control tools | SourceTree, Command line, VS Code|
+      | Source control tools | Command line, VS Code|
       | Testing infrastructure | Jest |
       | Debugging | VS Code debugger |
       | Text editor | VS Code |
