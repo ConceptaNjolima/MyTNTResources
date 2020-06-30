@@ -72,4 +72,6 @@ Tips
 
 9. No right answer on what the product is. Be ready to talk about why in a meaningful way. For how to improve the product, think about who uses the product today - could it be brought to a new audience? What need does your proposed improvement meet?
 
-10. 
+10. Before jumping into all the things the remote can do, check-in on who you're building for. Does the stakeholder have any other requirements? Then go big on meeting the needs for the target audience.
+
+11. Looking for an understanding of how to break down a large problem into smaller pieces of logic, how the various inputs and outputs to the system would effect its execution and bonus points for talking about any of the known struggles in the self-driving space: ethics, human intervention...
