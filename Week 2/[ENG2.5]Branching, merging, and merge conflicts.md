@@ -13,7 +13,7 @@ This lesson introduces branching for team collaboration. This is how you work to
 Total time: 2 hours
 
 * 60 minutes - pre-session: overview of branching and merging with git
-* 20 minutes - explain: recap learning and introduce Source Tree
+* 20 minutes - explain: recap learning
 * 30 minutes - explore: create and use a repo on GitHub
 * 10 minutes - elaborate: regroup and review
 
@@ -45,7 +45,6 @@ Use the sandbox for this exercise to preserve your local git configuration.
 ## Session set up
 
 * GitHub - create repository in group from NameandFavFood demo in Samples
-* Source Tree installed and ready to go
 
 ## Lesson details
 
@@ -74,16 +73,11 @@ Here's how the team development process is applied with GitHub: [Understanding t
     5. Fetch from main and pull into your branch frequently to stay in sync.
     6. Plan the work. Breakdown who is working on what and what may conflict.
 
-4. Using Source Tree
-    1. Source Tree is a tool that shows repository history and actions visually.
-    2. It has quick commands to branch and merge.  
-    3. **To-DO: add source tree demo**
-
 ### Try it: add name and favorite food to the list (20 minutes)
 
 1. Together we're going to create a whole bunch of merge conflicts.
 2. Clone the NameandFavFood repository.
-3. Using Source Tree create a branch named "firstnameLastInitial", for example "MichaelS".
+3. Create a branch named "firstnameLastInitial", for example "MichaelS".
 4. Make a change adding your name, favorite food to the list. "Michael, soft pretzels".
 5. Commit the change to your branch.
 6. Make a pull request to push the changes.
