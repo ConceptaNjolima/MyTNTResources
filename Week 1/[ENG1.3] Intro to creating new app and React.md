@@ -55,6 +55,8 @@ View the pre-session [here](https://github.com/tnt-summer-academy/Curriculum/wik
 * `create-react-app` is a tool chain that permits to create a one-page web app
 
 * `create-react-app my-app --template typescript` is the command to run in the terminal to create my-app and be sure that it supports TypeScript. Do not forget `--template typescript`!
+  * NOTE: Make sure that you include `--template typescript`!! It's very easy to leave out. 
+  * One way to check is to look at the file extensions of the files. If you find a file named App.**tsx** (in the src folder) then you're using **Type**Script. However, you instead find a file name App.**jsx** then you've accidentally create a **Java**Script based React app. This isn't a big deal and it's easy to fix - delete the JavaScript based React app and create a new React project, making sure to include `--template typescript`
 
 * Folders/files of the project
   * Open the workspace folder in VS Code
