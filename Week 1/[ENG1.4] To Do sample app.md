@@ -115,9 +115,9 @@ Please work through these steps as a group/pair/etc.  Be prepared for the instru
 
 5. Create a constructor method for the App class 
 
-    - Create the constructor method
-        - Make sure to pass in props as a parameter
-        - Make sure to call `super(props);` as the very first thing you do in the constructor
+    - Create the constructor method with 2 parameters - props and state
+        - Make sure to pass in props and state as parameters
+        - Make sure to call `super(props, state);` as the very first thing you do in the constructor (use the correct types)
     - Create a state object in this constructor
         - Make sure that you add the `items` to the state object 
         - For now you can create an empty list, like this: `items: []`
