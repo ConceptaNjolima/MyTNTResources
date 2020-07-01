@@ -2,7 +2,7 @@
 
 ## Problem statement
 
-There's value in what communities collectively own today that's untapped. People are likely to buy something they use infrequently and there are barriers to sharing and discovering what's available in friend and community circles. How might we enable individuals to share what they own reducing waste and creating stronger local communities.
+There's value in what communities collectively own today that's untapped. People are likely to buy something they use infrequently and there are barriers to sharing and discovering what's available in friend and community circles. How might we enable individuals to share what they own, reducing waste and creating stronger local communities.
 
 ## Summary
 
@@ -21,16 +21,16 @@ YourShare's initial target market is college students and the communities around
 
 Cam is a college junior. They just moved into their own apartment. Later in the fall Cam notices the leaves need cleaning up in their elderly neighbors yard. Cam looks to borrow a rake from someone nearby. They're glad they found another neighbor with two rakes and who offered to jump in to help out.
 
-Stacey is a graduate student. She's accumulated some kitchen appliances as friends have moved away. She only uses them sometimes but isn't quite ready to give them away. Stacey is looking for any easy way to let friends, and friends of friends, know they can barrow her blender and popcorn air popper whenever they'd like. Stacey is happy that her appliances are getting more ues.
+Stacey is a graduate student. She's accumulated some kitchen appliances as friends have moved away. She only uses them sometimes but isn't ready to give them away. Stacey is looking for any easy way to let friends, and friends of friends, know they can barrow her blender and popcorn air popper whenever they'd like. Stacey is happy that her appliances are getting more ues.
 
 Marcos has a car on campus. He uses it occasionally to drive out to the grocery store. Marcos's friends borrow the car frequently. He wants an easy way to manage sharing his ride. Marcos is relieved that some of the stress is taken out of lending is car.
 
 ## Goals
 
-* Reduce waste - many appliances are needed infrequently, once or twice a month. In an effort of conservation, borrowing something reduces energy and renewable material use in manufacturing the product and reduces the waste at the end of the product life, preventing one more thing from ending up in the landfill.
+* Reduce waste - many appliances are needed infrequently, once or twice a month. In an effort of conservation, borrowing something reduces energy and material used in manufacturing the product and reduces the waste at the end of the product life, preventing one more thing from ending up in the landfill.
   * Number and variety of items listed on YourShare
   * User service prompt to measure if it saved a purchase
-* Reduce dependency of sharing economies on large corporations - large companies drive the sharing economy today. YourShare gives it back to communities.
+* Create local sharing economies - large companies drive the sharing economy today. YourShare gives it back to communities.
   * Adoption of YourShare with a college or university community area, % of population
 * Improve resiliency of communities - communities that share can depend on another in good times and in times of trial.
   * Average number of shares over time against economic and health highs and lows
