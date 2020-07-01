@@ -1,3 +1,5 @@
+*This is a minimal viable interview guide. Depending on where you'er at in the design phases and app mockup you may have more or less concept testing and more or less usabiltiy testing*
+
 # Sample interview guide
 
 ## Prepare
