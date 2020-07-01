@@ -1,6 +1,6 @@
 # Usability and interviewing
 
-This session introduces the basics user interviews and usability testing in preparation for the continuous user feedback and testing.
+This session introduces the basics user interviews and usability testing in preparation for the continuous user feedback and testing. After, if it's not wrapped up yet or you'd like to spend additional time on it, revisit the HMW and ideation activities from last week to keep refining and explore solutions.
 
 ## Learning objectives
 
@@ -26,16 +26,12 @@ As a team draft an interview guide. Later the prototype and task portion will be
 1. Set the goal, background questions, and conclusion
 2. Make sure to include not only the questions, but also what you're say in the introduction and conclusion.
 
-### Partner interview practice
-
-With the interview guide draft, practice conducting your interview with a partner. In the case of a group of three, the third person should take notes.
-
-* What's going well?
-* What needs improvement?
-* Make updates to the script
-
 ### Wrap-up
 
 * Make sure the script is in your team's Teams folders either in OneNote or a doc
 * Share with your coaches and get their feedback
 * This week, after you create your prototypes, conduct 2-3 usability interviews with people around or use pictures of the paper prototype to conduct remote interviews.
+
+## Additional references
+
+![How to talk to customers](QuickTips_TalkingToCustomers.png)
