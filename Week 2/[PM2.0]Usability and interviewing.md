@@ -21,10 +21,14 @@ Read [Usability and interviewing](https://github.com/tnt-summer-academy/Curricul
 
 ## Post-session
 
-As a team draft an interview guide. Later the prototype and task portion will be added. This is a great opportunity to get feedback on your concepts and learn more about the user needs and pain points you're circling in on.
+As a team draft an interview guide. Later the prototype and task portion will be added. This is a great opportunity to get feedback on your concepts and learn more about the user needs and pain points you're circling in on. Check out the [Sample interview guide](https://github.com/tnt-summer-academy/Curriculum/blob/main/Reference/SampleInteviewGuide.md) for inspiration.
 
 1. Set the goal, background questions, and conclusion
 2. Make sure to include not only the questions, but also what you're say in the introduction and conclusion.
+3. Create a place where you're going to compile notes from your interview. Best practices for notes:
+    - Group notes by participants
+    - A table or excel sheet can be used with a question in each column
+    - When everyone has conducted their interviews for the week there should be notes from at least 10 participant
 
 ### Wrap-up
 
