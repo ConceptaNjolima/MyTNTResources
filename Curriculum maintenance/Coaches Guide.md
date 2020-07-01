@@ -149,9 +149,11 @@ NTs may ask or seek out people in their target audience to test with. This is gr
 
 NTs wrapped up last week with ideation. There may be mixed feelings heading into the second week excited or disappointed, fatigued or re-energized. Ask about the long weekend, share about your weekend and gauge where everyone is at.
 
-Check-in and talk through the concept of remote repositories and strategies for Git back tracking. Docs on the computer vs docs in Google drive make a great analogy.
+Check-in and talk through the concept of remote repositories and strategies for Git back tracking.
 
 On the product side, NTs will learn about user research and usability testing. Both coaches share about your user research experiences and being customer driven. Talk about how your feature crews have worked with user researchers. NTs have begun writing their user research guide. The guide focus today is goals, what they want to learn, and interview questions. Tomorrow they'll work on paper prototypes and then define their usability tasks.
+
+At this stage it's a great chance for NTs to get feedback on their concepts. It's not time yet for a high-fidelity usability test, rather to get feedback and learn more on needs and pain points and begin early future validation.
 
 * Volunteer to be interviewed as a participant.
 * Look for open-ended, non-leading questions.
