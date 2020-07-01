@@ -131,7 +131,7 @@ Early in the week NTs continue and wrap up working on their list app. In the Git
 
 Working through the design phases, NTs  start the first iteration of the prototype and test. NTs create paper prototypes, begin early usability testing completing 2-3 interviews each by end of week, and create first drafts of their value prop and pitch. This is a great chance for the teams to get feedback on their concepts. Volunteer as a participant and listen to the pitch. The teams will still go through phases of expanding and refining app and feature ideas. When lost or debating, evaluate the solution to the problem statement against how well it meets the user needs.
 
-NTs may ask or seek out people in their target audience to test with. This is great! Each NT should conduct pilot rounds with other NTs or people they're living with and vet the study preparedness with coaches.
+NTs may ask or seek out people in their target audience to test with. This is great! Each NT should conduct pilot rounds with other NTs or people they're living with, and vet the study preparedness with coaches.
 
 * Be a participant and review their study material and execution. Make sure it's ready to go with an audience and their interview skills are up to par.
 * Make sure they have a plan for the interview logistics remotely and they're valuing the participants time.
