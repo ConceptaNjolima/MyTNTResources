@@ -77,7 +77,7 @@ View the pre-session [here](https://github.com/tnt-summer-academy/Curriculum/wik
     *  `git init` - initialize the repository
     *  `touch index.html` - create a new file
     * `git status` - view the repository status
-    * `git add.` - stage the files to commit and tell get what files to track, "." selects all the new files or files with changes
+    * `git add  .` - stage the files to commit and tell get what files to track, "." selects all the new files or files with changes
     * `git commit index.html -m "New index file"` - add the changes to the repo with the named file, "-m" indicates message included
 
     *Remember*
