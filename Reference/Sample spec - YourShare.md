@@ -43,8 +43,10 @@ Marcos has a car on campus. He uses it occasionally to drive out to the grocery 
 * P0: A user can request to borrow items
 * P1: A user can control who can see and borrow their items
 * P1: A user can manage the items they have posted
+* P1: A user can sort items
 * P2: A user can manage the items they've borrowed or currently have borrowed
 * P2: A user can search for items
+* P2: A user can see items on a map
 
 ## Out of scope
 
