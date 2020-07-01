@@ -129,7 +129,13 @@ On the engineering side, today NTs were introduced to the to-do sample app proje
 
 Early in the week NTs continue and wrap up working on their list app. In the Git learning track, NTs are introduced to remote repositories and team development practices using branches. Applying, NTs move their list app to GitHub and later in the week as a group practice working together on a sample app. Views, layouts, and UI debugging allow NTs to revisit the list app and update.
 
-Working through the design phases, NTs  start the first iteration of the prototype and test. NTs create paper prototypes, begin early usability testing completing 2-3 interviews each by end of week, and create first drafts of their value prop and pitch. Volunteer as a usability participant and listen to the pitch. The teams will still go through phases of expanding and refining app and feature ideas. When lost or debating, evaluate the solution to the problem statement against how well it meets the user needs.
+Working through the design phases, NTs  start the first iteration of the prototype and test. NTs create paper prototypes, begin early usability testing completing 2-3 interviews each by end of week, and create first drafts of their value prop and pitch. This is a great chance for the teams to get feedback on their concepts. Volunteer as a participant and listen to the pitch. The teams will still go through phases of expanding and refining app and feature ideas. When lost or debating, evaluate the solution to the problem statement against how well it meets the user needs.
+
+NTs may ask or seek out people in their target audience to test with. This is great! Each NT should conduct pilot rounds with other NTs or people they're living with and vet the study preparedness with coaches.
+
+* Be a participant and review their study material and execution. Make sure it's ready to go with an audience and their interview skills are up to par.
+* Make sure they have a plan for the interview logistics remotely and they're valuing the participants time.
+* If the NTs don't have connections to their target audience, if your're comfortable connect them with someone you know or reach out in the coaches chat to make connections.
 
 ### Day 1
 
@@ -151,7 +157,7 @@ On the product side, NTs will learn about user research and usability testing. B
 * Look for open-ended, non-leading questions.
 * Complete the interview and then give feedback at the end.
 
-Again, check that the usability guide is saved somewhere shared in Teams, either a Word doc or OneNote.
+Again, check that the interview guide is saved somewhere shared in Teams, either a Word doc or OneNote.
 
 ### Day 2
 
