@@ -1,6 +1,6 @@
 # Usability and interviewing
 
-This session introduces the basics user interviews and usability testing in preparation for the continuous user feedback and testing.
+This session introduces the basics user interviews and usability testing in preparation for the continuous user feedback and testing. After, if it's not wrapped up yet or you'd like to spend additional time on it, revisit the HMW and ideation activities from last week to keep refining and explore solutions.
 
 ## Learning objectives
 
