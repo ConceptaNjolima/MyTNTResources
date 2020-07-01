@@ -1,3 +1,5 @@
+*This is a minimal viable sample spec*
+
 # YourShare
 
 ## Problem statement
@@ -41,10 +43,10 @@ Marcos has a car on campus. He uses it occasionally to drive out to the grocery 
 * P0: A user can post new items
 * P0: A user can browse items
 * P0: A user can request to borrow items
-* P1: A user can control who can see and borrow their items
+* P0: A user can add friends and manage permissions
 * P1: A user can manage the items they have posted
 * P1: A user can sort items
-* P2: A user can manage the items they've borrowed or currently have borrowed
+* P2: A user can upload a photo of the item.
 * P2: A user can search for items
 * P2: A user can see items on a map
 
@@ -59,7 +61,25 @@ Marcos has a car on campus. He uses it occasionally to drive out to the grocery 
 
 ## UX
 
-*Screenshots of feature UI design*
+YourShare is first being built as a large screen application. The success of YourShare depends on community adding items. From user feedback we found this is best done from a larger screen device with a keyboard. There is also a high density of information that's best displayed on a larger screen.
+
+When a user navigates to your share, they land on the landing page to sign-up or sign-in. If the user is already signed in they will automatically land on the browse item page. The authentication is handled through the phone number and text confirmation.
+![App landing page](YourShare-Screens/YS_account.png)
+
+This is the main screen of the app. It shows the items that can be borrowed. If is user is signed up through a friend invite, the screen displays items available within that circle of friends. From here, the user can access adding items, borrowing items, and managing friends and settings.
+![Browse items](YourShare-Screens/YS_browse.png)
+
+This is the add item screen. It has the basic fields for a user to submit a new item. Uploading an image is a stretch goal, it starts a just a placeholder.
+![Add item](YourShare-Screens/YS_additem.png)
+
+This is the borrow item screen. Selecting an item from the available list lands here. Items are only shown if available. The user requests to borrow and the lender gets a text to approve or deny. Again the image is a placeholder, stretch goal to add.
+![Borrow item](YourShare-Screens/YS_borrowItem.png)
+
+This is the screen to manage community. It allows the user to connect with new friends or invite new friends to the platform. It also has the key settings for using the app.
+![Manage community](YourShare-Screens/YS_managecommunity.png)
+
+This screen describes the app navigation, how the screens of the app are connected. The central screen is the app landing page. Other screens lead back here.
+![Navigation](YourShare-Screens/YS_navigation.png)
 
 ## Breakdown of work
 
