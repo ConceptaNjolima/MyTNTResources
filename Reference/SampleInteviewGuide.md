@@ -25,6 +25,13 @@ Background questions
 * What items would you be interested in lending?
 * Do you participate in social media based sharing platforms? What do you like or dislike about that experience?
 
+Supporting questions
+
+* Why?
+* Tell me more about what you meant by..."
+* How did that make you feel?
+* What do you think that will do?
+
 Wrap up questions
 
 * Would you be willing to try this experience and borrow and lend from neighbors? Why or why not?
