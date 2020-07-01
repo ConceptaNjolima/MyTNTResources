@@ -109,7 +109,7 @@ Please work through these steps as a group/pair/etc.  Be prepared for the instru
 
 4. Add state to the App in App.tsx
 
-    - Create an interface `AppState` that contains the current todo list state. Call it `items` of type `Array<string>`
+    - Create an interface `AppState` that contains the current todo list state. Call it `items` of type `Array<ShoppingItem>`
     - Adjust the class App that it extends `React.Component<{},AppState>`
     - Once this is working please your commit do work to your local repo.
 
