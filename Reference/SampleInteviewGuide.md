@@ -83,7 +83,7 @@ I'm now going to show you a few screens of the app. As I show you the screens na
       - What fields would you be able to expect to customize?
       - What would you want to know about an item you're borrowing?
 
-![Add item](YourShare-screens/YS_itemadd_drawn.png)
+![Add item](YourShare-screens/YS_additem_drawn.png)
 
 ### Conclude
 
