@@ -1,4 +1,4 @@
-*This is a minimal viable interview guide. Depending on where you'er at in the design phases and app mockup you may have more or less concept testing and more or less usabiltiy testing*
+*This is a minimal viable interview guide. Depending on where you're at in the design phases and app mockup you may have more or less concept testing and more or less usabiltiy testing*
 
 # Sample interview guide
 
@@ -68,7 +68,7 @@ I'm now going to show you a few screens of the app. As I show you the screens na
      - How would you create a new account?
      - How would you sign into the existing account?
 
-![Account landing page](/YourShare-screens/YS_account_drawn.png)
+![Account landing page](YourShare-screens/YS_account_drawn.png)
 
 2. You're signed in.
       - What do you see here?
@@ -76,14 +76,14 @@ I'm now going to show you a few screens of the app. As I show you the screens na
       - How would you borrow an item?
       - How would you add an item?
 
-![Browse items](/YourShare-screens/YS_browse_drawn.png)
+![Browse items](YourShare-screens/YS_browse_drawn.png)
 
 3. You're going to add an item.
       - How do you add an item?
       - What fields would you be able to expect to customize?
       - What would you want to know about an item you're borrowing?
 
-![Add item](/YourShare-screens/YS_itemadd_drawn.png)
+![Add item](YourShare-screens/YS_itemadd_drawn.png)
 
 ### Conclude
 
