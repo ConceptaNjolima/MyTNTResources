@@ -21,7 +21,7 @@ Read [Usability and interviewing](https://github.com/tnt-summer-academy/Curricul
 
 ## Post-session
 
-As a team draft an interview guide. Later the prototype and task portion will be added.
+As a team draft an interview guide. Later the prototype and task portion will be added. This is a great opportunity to get feedback on your concepts and learn more about the user needs and pain points you're circling in on.
 
 1. Set the goal, background questions, and conclusion
 2. Make sure to include not only the questions, but also what you're say in the introduction and conclusion.
@@ -30,7 +30,7 @@ As a team draft an interview guide. Later the prototype and task portion will be
 
 * Make sure the script is in your team's Teams folders either in OneNote or a doc
 * Share with your coaches and get their feedback
-* This week, after you create your prototypes, conduct 2-3 usability interviews with people around or use pictures of the paper prototype to conduct remote interviews.
+* This week, after you create your prototypes and add your tasks, conduct 2-3 usability interviews with people around or use pictures of the paper prototype to conduct remote interviews.
 
 ## Additional references
 
