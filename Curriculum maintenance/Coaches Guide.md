@@ -81,9 +81,9 @@ NTs engineering focus today is on Git. Check-in on questions, share your experie
 
 #### Details
 
-It has been a big week with many introductions, new tools, and getting in a rhythm working as a team. Ask everyone how they're doing or feeling at this moment with one word. Share too and connections to feelings with getting started and something new. Look for positive and negative trends to pull more info out on.
+It has been a big week with many introductions, new tools, and getting in a rhythm working as a team. Ask everyone how they're doing or feeling at this moment with one word. Share your own thoughts as well, and encourage creating connections, how you're feeling, and any thoughts about getting started and/or something new. Look for positive and negative trends to pull more info out on.
 
-NTs have begun the [define](https://github.com/tnt-summer-academy/Curriculum/blob/main/Reference/Product%20decks/1.2%20-%20Define%20needs.pdf) phase and are refining towards an addressable problem statement. They're identifying their specific target audience and creating user journey maps. See where the are in the process and if they have an questions:
+NTs have begun the [define](https://github.com/tnt-summer-academy/Curriculum/blob/main/Reference/Product%20decks/1.2%20-%20Define%20needs.pdf) phase and are refining towards an addressable problem statement. They're identifying their specific target audience and creating user journey maps. See where they are in the process and if they have any questions:
 
 * At this point the discussions should be solution agnostic, not talking about specific applications or features.
 * Check-in and make sure all NTs are participating in the activities. Even if it's not their favorite part of the program it's important to take the time in these phases to make sure you build something great. Everyone has something to contribute that expands thinking here.
