@@ -134,8 +134,8 @@ Working through the design phases, NTs  start the first iteration of the prototy
 NTs may ask or seek out people in their target audience to test with. This is great! Each NT should conduct pilot rounds with other NTs or people they're living with, and vet the study preparedness with coaches.
 
 * Be a participant and review their study material and execution. Make sure it's ready to go with an audience and their interview skills are up to par.
-* Make sure they have a plan for the interview logistics remotely and they're valuing the participants time.
-* If the NTs don't have connections to their target audience, if your're comfortable connect them with someone you know or reach out in the coaches chat to make connections.
+* Make sure they have a plan for the interview logistics remotely and they're valuing the participants time. NTs are representing the program.
+* If the NTs don't have connections to their target audience, if you're comfortable connect them with someone you know or reach out in the coaches chat to make connections.
 
 ### Day 1
 
