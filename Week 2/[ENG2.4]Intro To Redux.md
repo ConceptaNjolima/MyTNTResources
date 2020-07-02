@@ -31,7 +31,7 @@ Total time: 2 hours 30
 
 ## Pre-session (30 minutes)
 
-Prepare for the session [here](https://github.com/tnt-summer-academy/Curriculum/wiki/%5BENG-2.4%5D-Intro-to-Redux)
+Prepare for the session [here](https://github.com/tnt-summer-academy/Curriculum/wiki/%5BENG2.4%5D-Intro-to-Redux)
 
 ## Instructional session (60 minutes)
 
