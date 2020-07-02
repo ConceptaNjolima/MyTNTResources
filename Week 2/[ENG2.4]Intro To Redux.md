@@ -38,7 +38,7 @@ Prepare for the session [here](https://github.com/tnt-summer-academy/Curriculum/
 ### What is Redux and why do we need it?
 
 * Redux is a state management container.
-* React permits to solve the problems of maintaining application state and making it consistent with the UI.
+* React permits to solve the problems of making the application state consistent with the UI. 
 * Redux, on the other hand, was introduced to maintain the application state. Each component having a state complicates maintaining a general application state, especially with the dependecies between components. Your typical app does a lot of state generating, processing, and transferring.
 * So far, you have only been exposed to immutable properties passed into components (from their parents) and mutable states changed within components.
 * What if we need to pass a mutable property between components, change the said property and have the change affect different components?
@@ -47,7 +47,8 @@ Prepare for the session [here](https://github.com/tnt-summer-academy/Curriculum/
 There are four basic parts in Redux: Store, Actions, Reducer, and Connect. We will go over what each part does and provide an illustrative example. 
 
 ![Why redux](./%5BENG2.4%5D%20whyredux.png)
-[Ref: https://www.systango.com/blog/free-react-redux-starter-kit]
+
+[Picture from here](https://www.systango.com/blog/free-react-redux-starter-kit)
 
 ### Three principles of Redux
 
@@ -60,7 +61,8 @@ There are four basic parts in Redux: Store, Actions, Reducer, and Connect. We wi
 #### High level architecture view
 
 ![redux architecture](./%5BENG2.4%5Dreduxhighlevelarchitecture.png)
-[Ref: https://www.kirupa.com/react/using_redux_with_react.htm]
+
+[Picture from here](https://www.kirupa.com/react/using_redux_with_react.htm)
 
 #### Store
 
@@ -78,25 +80,25 @@ There are four basic parts in Redux: Store, Actions, Reducer, and Connect. We wi
 
 * Reducers tie together Actions and Store and returns a new state object. 
 * Reducers are collections of functions that map / dispatch actions to the store.
-* Reducers called “pure functions” because they do nothing but return a value based on their parameters. They have no side effects into any other part of the system.
+* Reducers are called “pure functions” because they do nothing but return a value based on their parameters. They have no side effects into any other part of the system.
 
 #### Connect
 
 * We need to connect React components to Redux.
-* Connect is used to connect components, property maps and action maps to the store. 
-
-#### Putting everything together
-
-![ReduxDataFlow](./%5BENG2.4%5Dredux-data-flow.png)
+* Connect is used to connect components, property maps, and action maps to the store. 
 
 ### Coding a React app with Redux
+
+#### High-level steps
 
 To add Redux to an app:
 
 * Provide your app a reference to the Redux store
 * Map the action creators, dispatch functions, and state as props to whatever component needs data from the store
 
-The code below cover a simple counter example. The screenshot shows the final results. The session uses redux-simple-counter [here](https://github.com/tnt-summer-academy/Samples/tree/main/Week_2).
+#### Simple counter example
+
+The code below cover a ounter example. The screenshot shows the final result. The session uses redux-simple-counter [here](https://github.com/tnt-summer-academy/Samples/tree/main/Week_2).
 
 ![counter example](./%5BENG2.4%5Dcounter-example-screenshot.png)
 
@@ -121,7 +123,7 @@ store = createStore(<reducer>);
 ```
 #### Provider
 
-* React-Redux provides `<Provider />`, which makes the Redux store available to the rest of your app.
+* React-Redux uses the `<Provider />` tag, which makes the Redux store available to the rest of your app.
 * The application will render a `<Provider>` at the top level, with the entire app’s component tree inside of it.
 
 index.tsx file
@@ -175,7 +177,7 @@ export function increaseCounter() {
 #### Reducer
 
 * A reducer is a pure function that takes the previous state and an action, and returns the next state. 
-  * A 'pure' function is like a function in mathematics: it takes it's parameters, does something with them and returns the result, and doesn't change anything else.  *In other words, our reducer doesn't change or alter the state - it creates a **new** object that will be our new state.*
+  * A 'pure' function is like a function in mathematics: it takes its parameters, does something with them and returns the result, and doesn't change anything else.  *In other words, our reducer doesn't change or alter the state - it creates a **new** object that will be our new state.*
 * Redux will call a reducer with an undefined state for the first time. This is where the initial state of the app needs to be initialized.
 
 types.tsx file
