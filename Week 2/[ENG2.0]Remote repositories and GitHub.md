@@ -12,12 +12,12 @@ This lesson introduces the core concepts for collaborating with Git and working 
 
 Total time: 2.5 hour
 
-* 55 minutes - [**Pre-session**](./https://github.com/tnt-summer-academy/Curriculum/wiki/%5BENG2.0%5D-Remote-Repositories-and-GitHub): background learning, research, and investigations
+* 55 minutes - [**Pre-session**](https://github.com/tnt-summer-academy/Curriculum/wiki/%5BENG2.0%5D-Remote-Repositories-and-GitHub): background learning, research, and investigations
 * 60 minutes - **Instructional Session**
     * 20 minutes - explain: recap learning
     * 30 minutes - explore: create and use a repo on GitHub
     * 10 minutes - elaborate: review trouble spots
-* 30 minutes - [**Post-session**](./https://github.com/tnt-summer-academy/Curriculum/wiki/%5BENG2.0%5D-Remote-Repositories-and-GitHub): review, and investigations
+* 30 minutes - [**Post-session**](https://github.com/tnt-summer-academy/Curriculum/wiki/%5BENG2.0%5D-Remote-Repositories-and-GitHub): review, and investigations
 
 ## Pre-session (55 minutes)
 
@@ -85,8 +85,33 @@ We'll now walk through the process of cloning a repository from GitHub. We'll be
     6. `git remote` to know what are remote branch are available on your local.
     5. `git push origin master` to push the changes to the remote repo.
 
-6. what is next?
-    * Introduce Github workflow
+6. Demo: Create Branch and push work to the branch
+- Create a new branch:
+    - Two-step method `git branch NEW-BRANCH-NAME`, `git checkout NEW-BRANCH-NAME`
+    
+        There’s a shortcut to create and checkout a new branch at once. You can pass the -b option (for branch) with git checkout . The following commands do the same thing:
+    - Shortcut `git checkout -b NEW-BRANCH-NAME`
+- Edit, add and commit your files.
+- Push your branch to the remote repository: `git push -u origin feature_branch_name`
+    - the `-u` flag (upstream) when you make your first push to track a remote branch
+
+- Pull from the remote branch: `git pull`
+
+- View Branches
+    - To view the branches in a Git repository, run the command:`git branch`
+    - To view both remote-tracking branches and local branches, run the command: `git branch -a`
+
+- Rename a Branch
+    - To rename a branch, run the command: `git branch -m OLD-BRANCH-NAME NEW-BRANCH-NAME`
+    - Alternative `git branch --move OLD-BRANCH-NAME NEW-BRANCH-NAME`
+- Delete a Branch
+    - Git won’t let you delete a branch that you’re currently on. You first need to checkout a different branch, then run the command:
+    - `git branch -d BRANCH-TO-DELETE`
+    - Alternative: `git branch --delete BRANCH-TO-DELETE`
+
+7. Demo: Create Pull request from GitHub
+
+8. What is next? Introduce Github workflow
 
 <table style="border: none">
     <tr align="center">
@@ -97,8 +122,10 @@ We'll now walk through the process of cloning a repository from GitHub. We'll be
 
     You can also read more about it from [here](https://guides.github.com/introduction/flow/)
 
+    
 
-7. Poll for questions
+
+9. Poll for questions
 
 ### Create and use a repo on GitHub (20 minutes)
 
@@ -126,3 +153,7 @@ In your team's Team channel, discuss:
 
 * What went well?
 * What was difficult?
+
+## Post-session
+
+View the post-session [here](https://github.com/tnt-summer-academy/Curriculum/wiki/%5BENG2.0%5D-Remote-Repositories-and-GitHub)
