@@ -77,7 +77,7 @@ This is the add item screen. It has the basic fields for a user to submit a new 
 ![Add item](YourShare-screens/YS_additem.png)
 
 This is the borrow item screen. Selecting an item from the available list lands here. Items are only shown if available. The user requests to borrow and the lender gets a text to approve or deny. Again the image is a placeholder, stretch goal to add.
-![Borrow item](YourShare-screens/YS_borrowItem.png)
+![Borrow item](YourShare-screens/YS_BorrowItem.png)
 
 This is the screen to manage community. It allows the user to connect with new friends or invite new friends to the platform. It also has the key settings for using the app.
 ![Manage community](YourShare-screens/YS_managecommunity.png)
