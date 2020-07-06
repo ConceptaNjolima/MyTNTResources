@@ -103,7 +103,7 @@ These are methods that are triggered through out a components existence from whe
 
 - Identify components and composition: Tile, Card, Item in the MyTNT App layout 
 
-![completed MyTNT App layout](/https://github.com/tnt-summer-academy/Curriculum/blob/main/Week%202/MyTNT-component-model.png)
+![completed MyTNT App layout](https://github.com/tnt-summer-academy/Curriculum/blob/main/Week%202/MyTNT-component-model.png)
 
 - Review GitHub process as needed to : Fork•Clone•Branch•Commit•Push•Pull Request 
 
