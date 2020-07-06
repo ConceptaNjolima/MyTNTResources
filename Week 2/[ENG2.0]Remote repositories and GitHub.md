@@ -77,7 +77,7 @@ We'll now walk through the process of cloning a repository from GitHub. We'll be
     1. With the folder open in VS code, add a new file and make changes to the existing file.
     2. In VS Code integrated terminal, then  `git add .` to stage the files.
     3. `git commit -m "yourmessage"` to create the commit. The changes are now committed locally.
-    5. `git remote` to know what remote branches are available on your local (here `origin`).
+    5. `git remote -v` to know what remote branches are available on your local (here `origin`).
     6. `git push origin master` to push the changes to the remote repo.
     7. Check the remote repository in GitHub.
 
