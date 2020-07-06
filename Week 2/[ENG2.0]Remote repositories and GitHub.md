@@ -73,7 +73,7 @@ We'll now walk through the process of cloning a repository from GitHub. We'll be
     2. Open the palette with Cmd+Shift+P for Mac OS / Ctrl+Shitf+P for Windows.
     3. `Git: clone` prompts for a URL. You can paste the one from GitHub.
 
-5. **Demo:** Make changes in VS Code and create a pull request
+5. **Demo:** Make changes in VS Code and push changes
 
     1. With the folder open in VS code, add a new file and make changes to the existing file.
     2. In VS Code integrated terminal, then  `git add .` to stage the files.
