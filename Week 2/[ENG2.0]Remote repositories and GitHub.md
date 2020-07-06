@@ -5,6 +5,7 @@ This lesson introduces the core concepts for collaborating with Git and working 
 ## Learning objectives
 
 * TNTs will understand the basic workflow for how multiple people work with Git.
+* TNTs will understand why using branches and practice branching.
 * TNTs will be able to clone a repository, make a pull request, push changes.
 * TNTs will learn how to create and use repositories on GitHub.
 
