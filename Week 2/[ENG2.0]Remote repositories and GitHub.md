@@ -47,8 +47,8 @@ Prepare for the session [here](../../../wiki/[ENG2.0]-Remote-Repositories-and-Gi
 
 We'll now walk through the process of cloning a repository from GitHub. We'll be creating a private repository in our own accounts.
 
-    1. [Go to GitHub](https://github.com/) and create a new (private) repository.
-    2. Make an initial commit by creating a Readme file.
+1. [Go to GitHub](https://github.com/) and create a new (private) repository.
+2. Make an initial commit by creating a Readme file.
 
 <table style="border: none">
     <tr>
@@ -57,8 +57,8 @@ We'll now walk through the process of cloning a repository from GitHub. We'll be
     </tr>
 </table>
 
-    3. Clone the remote repository to your local directory using `git clone` followed by the URL provided by GitHub.
-    4. Show the folders and open the workspace in VS Code. You can also go in the directory and write `code .`
+3. Clone the remote repository to your local directory using `git clone` followed by the URL provided by GitHub.
+ 4. Show the folders and open the workspace in VS Code. You can also go in the directory and write `code .`
 
 <table style="border: none">
     <tr align="center">
