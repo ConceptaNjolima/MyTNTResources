@@ -66,6 +66,18 @@ Here's how the team development process is applied with GitHub: [Understanding t
     </tr>
 </table>
 
+3. **Demo**: Show Pull Request in VS-Code
+    * Install VS Code [Pull Request extension](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github)
+    * Show the navigation and open the created pull request in previous Demo in VS-code
+
+    <table style="border: none">
+    <tr>
+        <td><img src="./VSCode-PullRequestView.png" alt="Open pull request"></td>
+        
+    </tr>
+</table>
+
+
 4. **Best practices to resolve and reduce merge conflicts**
     1. Git attempts to resolve differences in code. Merge conflicts occur when Git is unable to resolve the differences. This occurs when there are changes made to the same part of the same file on two different branches.
     2. Before attempting to merge, make sure any work in progress is either committed or merged. If you need to `git merge --abort` this will prevent you from losing changes.
