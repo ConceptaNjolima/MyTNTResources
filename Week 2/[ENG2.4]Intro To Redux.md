@@ -5,8 +5,9 @@ This lesson explains what Redux is and overviews how to use it in a practice. An
 ## Learning objectives
 
 * TNTs will understand the importance of Redux
-* TNTs will learn how the store, reducer and actions work together
 * TNTs will have a basic understanding of Redux
+* TNTs will learn how the store, reducers, actions and connect work together
+
 
 ## Time required and pace
 
@@ -35,7 +36,7 @@ Prepare for the session [here](https://github.com/tnt-summer-academy/Curriculum/
 
 ## Instructional session (60 minutes)
 
-### What is Redux and why do we need it?
+### What is Redux and why do we need it? (10 minutes)
 
 * Redux is a state management container.
 * React permits to solve the problems of making the application state consistent with the UI. 
@@ -53,7 +54,7 @@ There are four basic parts in Redux: Store, Actions, Reducer, and Connect. We wi
 ### Three principles of Redux
 
 * Single source of truth - the global state of the application is saved in a single store.
-* State is read-only - the only way to change the state is to emit an action.
+* Store is read-only - the only way to change the store is to emit an action.
 * Changes are made through pure functions - these functions are called reducers. They take the state and an action as parameter and return a new state.
 
 ### Architectural overiew of Redux
@@ -66,7 +67,7 @@ There are four basic parts in Redux: Store, Actions, Reducer, and Connect. We wi
 
 #### Store
 
-* The whole state of the app is stored inside a single read-only store. 
+* The whole state of the app is stored inside a single store. 
 * The store is created once.
 * The only way to change the store is to emit an action. 
 
@@ -98,15 +99,15 @@ To add Redux to an app:
 
 #### Simple counter example
 
-The code below cover a ounter example. The screenshot shows the final result. The session uses redux-simple-counter [here](https://github.com/tnt-summer-academy/Samples/tree/main/Week_2).
+The code below covers a counter example. The screenshot shows the final result. The session uses redux-simple-counter [here](https://github.com/tnt-summer-academy/Samples/tree/main/Week_2).
 
 ![counter example](./%5BENG2.4%5Dcounter-example-screenshot.png)
 
 #### Installation
 
-* `yarn install`
-* `yarn add redux`
-* `yarn add react-redux`
+* `npm install`
+* `npm add redux`
+* `npm add react-redux`
 
 #### Store
 
@@ -238,11 +239,11 @@ export default counterReducer;
 
   * `mapStateToProps` does exactly what its name suggests. It connects a part of the Redux state to the props of a React component. By doing so a connected React component will have access to the exact part of the store it needs.
 
-    * In previous example programs that you've seen the component that you were writing/examining would receive it's props from whichever thing on the page created this component.  So if we had a counter component *without* Redux then the overall App would set the Redux-less counter's props so that the counter component would know what it's number is, etc, etc.
+    * In previous example programs that you've seen the component that you were writing/examining would receive it's props from whichever thing on the page created this component.  So if we had a counter component *without* Redux then the overall App would set the Redux-less counter's props so that the counter component would know what its number is, etc, etc.
 
       A major point of using Redux is to avoid situations like that where another thing (like the App) needs to know how to set up this Counter component.
 
-      So when we're using Redux (like we're doing here) we need a way to 'translate' the current state into props that this Component can use.  The App had been doing this in the Redux-less version, and now that it's not doing this we need something else to do this.  We'll have the Component do this for itself (which is awesome because now the code for the individual component is consolidated into a single file)(all the previous files defined how *any* component might interact with Redux - this file defines our new, individual Component)
+      So when we're using Redux (like we're doing here) we need a way to 'translate' the current state into props that this Component can use.  The App had been doing this in the Redux-less version, and now that it's not doing this we need something else to do this.  We'll have the Component do this for itself (which is awesome because now the code for the individual component is consolidated into a single file) (all the previous files defined how *any* component might interact with Redux - this file defines our new, individual Component)
 
       That's why the `mapStateToProps` method is given the current state of the app and expected to return an object that contains the props that this Component needs.
 
