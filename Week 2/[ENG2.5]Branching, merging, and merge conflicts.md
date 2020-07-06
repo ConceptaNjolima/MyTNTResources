@@ -59,24 +59,22 @@ Here's how the team development process is applied with GitHub: [Understanding t
     1. From main, make a change in GitHub added a fictitious name and food.
     2. From VS Code on the branch, make a change adding a different change.
 
-<table style="border: none">
-    <tr>
-        <td><img src="./OpenPullRequestWithConflict.png" alt="Open pull request"></td>
-        <td><img src="./GitHubPullRequestWithConflict.png" alt="Pull Request with Conflict"> </td>
-    </tr>
-</table>
+    <table style="border: none">
+        <tr>
+            <td><img src="./OpenPullRequestWithConflict.png" alt="Open pull request"></td>
+            <td><img src="./GitHubPullRequestWithConflict.png" alt="Pull Request with Conflict"> </td>
+        </tr>
+    </table>
 
 3. **Demo**: Show Pull Request in VS-Code
     * Install VS Code [Pull Request extension](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github)
     * Show the navigation and open the created pull request in previous Demo in VS-code
-
     <table style="border: none">
-    <tr>
-        <td><img src="./VSCode-PullRequestView.png" alt="Open pull request"></td>
-        
+     <tr>
+            <td><img src="./VSCode-PullRequestView.png" alt="Open pull request"></td>
+            
     </tr>
-</table>
-
+    </table>
 
 4. **Best practices to resolve and reduce merge conflicts**
     1. Git attempts to resolve differences in code. Merge conflicts occur when Git is unable to resolve the differences. This occurs when there are changes made to the same part of the same file on two different branches.
@@ -111,7 +109,6 @@ Here's how the team development process is applied with GitHub: [Understanding t
     * Be mindful not to delete other people's response.
     * You may have to deal with merge conflicts more than once through this process.
 8. Delete your branch when you're done.
-
 
 ### Regroup and review (10 minutes)
 
