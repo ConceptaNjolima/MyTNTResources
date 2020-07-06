@@ -100,7 +100,7 @@ We'll now walk through the process of cloning a repository from GitHub. We'll be
         - `git branch -d BRANCH-TO-DELETE`
         - Alternative: `git branch --delete BRANCH-TO-DELETE`
 
-7. **Demo:** Create Pull request from GitHub
+7. **Demo:** Create pull request from GitHub
 
 8. What is next? Introduce GitHub workflow
 
@@ -119,14 +119,14 @@ You can also read more about it from [here](https://guides.github.com/introducti
 
 The goal is to create a repo on GitHub, clone the repository, make changes in VS Code and push the changes back to GitHub.
 
-1. Create a new private repository on GitHub. Make an initial commit adding a file from the website.
+1. Create a new private repository on GitHub. Make an initial commit adding a file directly from the interface.
 2. Clone the repository to your computer.
 3. Open the folder in VS Code.
-4. Add a new file in GitHub, edit the existing file.
-5. Commit changes and make a pull request.
+4. Add a new file in GitHub and edit this file.
+5. Do some changes locally and commit them. Make a pull request.
 6. View the changes in GitHub.
 7. Continue making changes in VS Code. Check out the `git diff`. Check out the log using `git log` ,`git log --oneline` or `git log --oneline --graph --decorate --all` to see the tracking of the commits.
-8. Share a screenshot from GitHub of the commit history.
+8. Share a screenshot of the commit history from GitHub.
 
 <table style="border: none">
     <tr align="center">
