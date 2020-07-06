@@ -57,9 +57,8 @@ We'll now walk through the process of cloning a repository from GitHub. We'll be
     </tr>
 </table>
 
-    3. Within VS Code integrated terminal make a new directory and give it a name `mkdir directory_name`(remoteTNT)
-    4. Clone the remote repository to your local directory using `git clone` followed by the URL provided by GitHub.
-    5. Show the folders and open the workspace in VS Code. You can also go in the directory and write `code .`
+    3. Clone the remote repository to your local directory using `git clone` followed by the URL provided by GitHub.
+    4. Show the folders and open the workspace in VS Code. You can also go in the directory and write `code .`
 
 <table style="border: none">
     <tr align="center">
