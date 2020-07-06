@@ -101,7 +101,7 @@ These are methods that are triggered through out a components existence from whe
 
 ### Exercise Setup - MyTNT App (10 minutes)
 
-- Identify components and composition: Tile, Card, Item in the MyTNT App layout 
+- Identify components and composition: Tile, Card, Item in the [MyTNT App](https://github.com/tnt-summer-academy/Exercises/tree/main/Week_2/ENG2.1-myTNT) layout
 
 ![completed MyTNT App layout](https://github.com/tnt-summer-academy/Curriculum/blob/main/Week%202/MyTNT-component-model.png)
 
@@ -120,5 +120,5 @@ These are methods that are triggered through out a components existence from whe
 
 ## Stretch
 
-Continue coding on the *My TNT* Exercise Stretch Goals
+Continue coding on the *My TNT* Exercise Stretch Goals (See Exercises)
 
