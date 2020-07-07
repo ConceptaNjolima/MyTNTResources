@@ -105,7 +105,7 @@ These are methods that are triggered through out a components existence from whe
 
 ![completed MyTNT App layout](https://github.com/tnt-summer-academy/Curriculum/blob/main/Week%202/MyTNT-component-model.png)
 
-- Review GitHub process as needed to : Fork•Clone•Branch•Commit•Push•Pull Request 
+- Review GitHub process as needed to : Clone•Branch•Commit•Push•Pull Request 
 
 - Explore Code
   - Identify Function and Class Components
