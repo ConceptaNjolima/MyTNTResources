@@ -1,4 +1,4 @@
-# Branching, merging, and merge conflicts
+# Merging, and merge conflicts
 
 This lesson introduces branching for team collaboration. This is how you work together on projects!
 
@@ -56,25 +56,36 @@ Here's how the team development process is applied with GitHub: [Understanding t
 
 
 2. **Demo**: show a merge conflict
-    1. From main, make a change in GitHub added a fictitious name and food.
-    2. From VS Code on the branch, make a change adding a different change.
+    1. In your local repo, switch to main branch
+    2. Create a new branch and switch to this new branch.
+    3. From VS Code on the branch, make a change to the NameandFavFood by adding a different change.
+    4. Push the new branch and changes to GitHub
+    5. Notice the pull request and the conflict
+    6. Resolve conflict
 
-    <table style="border: none">
-        <tr>
-            <td><img src="./OpenPullRequestWithConflict.png" alt="Open pull request"></td>
-            <td><img src="./GitHubPullRequestWithConflict.png" alt="Pull Request with Conflict"> </td>
-        </tr>
-    </table>
+<table style="border: none">
+    <tr>
+        <td><img src="./OpenPullRequestWithConflict.png" alt="Open pull request"></td>
+        <td><img src="./GitHubPullRequestWithConflict.png" alt="Pull Request with Conflict"> </td>
+    </tr>
+</table>
+<table style="border: none">
+    <tr>
+        <td><img src="./ReadConflict.png" alt="Read Conflict"></td>
+    </tr>
+</table>
 
 3. **Demo**: Show Pull Request in VS-Code
     * Install VS Code [Pull Request extension](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github)
     * Show the navigation and open the created pull request in previous Demo in VS-code
+
     <table style="border: none">
-     <tr>
-            <td><img src="./VSCode-PullRequestView.png" alt="Open pull request"></td>
-            
+    <tr>
+        <td><img src="./VSCode-PullRequestView.png" alt="Open pull request"></td>
+        
     </tr>
-    </table>
+</table>
+
 
 4. **Best practices to resolve and reduce merge conflicts**
     1. Git attempts to resolve differences in code. Merge conflicts occur when Git is unable to resolve the differences. This occurs when there are changes made to the same part of the same file on two different branches.
@@ -84,10 +95,11 @@ Here's how the team development process is applied with GitHub: [Understanding t
     5. Fetch from main and pull into your branch frequently to stay in sync.
     6. Plan the work. Breakdown who is working on what and what may conflict.
 
-### Try it: Game Play (20 minutes)
+## Try it: Game Play 
+(20 minutes to explain and start playing a few rounds)
 
 1. Together we're going to create a whole bunch of merge conflicts.
-2. Navigate to the Sign-In Exercise in the Exercises Repository.
+2. Navigate to the MergeConflict Sign-In Exercise repository that you have access to 
 3. Play the game using these TWO RULES
 
     - You will **ONLY** edit the file when on your **feature branch**!
@@ -98,17 +110,41 @@ Here's how the team development process is applied with GitHub: [Understanding t
 4. Open VS Code
 5. Clone the repo into a new directory
 6. Create a new branch, call it **sign-in\*-yourName\*** (this will be your ***feature branch***) and check out this new branch using "**git checkout -b \*your feature branch name\***"
-7. Modify the *sign-in.txt* code to add your name and GitHub username below my name
+7. Modify the *sign-in.txt* code to add your name and the v-account below my name
 8. Commit the changes
 9. Push your feature branch to Github using "**git push origin \*your feature branch name\***"
 
 **Using GitHUB**
 
 7. Make a Pull Request from your branch to main to push changes
-8. resolve the merge conflicts.
+8. resolve the merge conflicts, if there is any.(Check pull-Merge-Commit-Push details below)
     * Be mindful not to delete other people's response.
     * You may have to deal with merge conflicts more than once through this process.
-8. Delete your branch when you're done.
+
+### Pull-Merge-Commit-Push (repeat this part)
+
+*(NOTE: you will need to do this several times since the main branch will be changing using other NT's  pull requests )*
+
+ #### From VS Code Integrated Terminal
+
+1. Be sure you are in the directory for this project
+2. Type "**git status**" to make sure you are on your  **feature** branch and it is clean
+3. Type "**git pull origin main**" to pull the current copy of the main branch from the server and merge it into your feature branch
+4. Make whatever changes you need to the file so that all of the existing names are included in the list and your name is below all other names
+5. Finish the changes and Commit your changes
+6. Type "**git status**" to be sure you are on your feature branch and it is clean
+7. Type "**git push origin \*your feature branch name\***" to push the updated copy of your feature branch to the server
+
+#### From Github
+1. Navigate to your Pull request
+2. Review your pull request to see that it shows that it is able to be merged.
+3. If yes, complete the merge, otherwise see below
+
+#### Repeat over the next few days
+1. Review your pull request details to see if your branch has conflicts with the current main branch. (Somebody branch has been merged ahead of you or other changes were made to main, sorry!!)
+2. Resolve the conflicts using the "Pull-Merge-Commit-Push-Request" steps above (redo the entire process from pulling the main branch to pushing your feature branch and requesting a new review) - notice that the code continue to incorporate new names into main.
+3. Repeat until you are able to merge your branch and close your pull request.
+
 
 ### Regroup and review (10 minutes)
 
