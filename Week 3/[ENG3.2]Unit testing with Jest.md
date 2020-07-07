@@ -1,6 +1,6 @@
 # Unit Testing with Jest
 
-This lesson explains the basics of unit testing, examples of unit testing with Jest and a practice exercise writing unit tests
+This lesson explains the basics of unit testing. It provides examples of unit testing with Jest and practice with writing unit tests.
 
 ## Learning objectives
 
@@ -20,13 +20,13 @@ Total time: 1.25 hour
 
 ## Lesson details
 
-### What is Unit Testing? And why? (15 minutes)
+### What is Unit Testing? And why do we need it? (15 minutes)
 
-* Explain basic definition of unit testing
-* What's the difference between unit test, integration test, functional test
+* Definition of unit testing: Unit tests are automated tests written and executed by software developers to ensure that a small section of an application ("unit") meets its specification and behaves as intended. A unit can be a function, a class, an interface etc.  
+* What's the difference between unit test, integration test, and functional test?
 * Perform unit testing in conjuction with feature implementation
 
-Benefits of unit tests:
+*Benefits of unit testing*
 
 * Confidence in updating code - As a new developer on a team if you make changes to a module and all the unit tests pass you can have that much more confidence in not introducing bugs
 * Reliable modules - A modules inputs can be tested with each unit test serving as a different scenario
