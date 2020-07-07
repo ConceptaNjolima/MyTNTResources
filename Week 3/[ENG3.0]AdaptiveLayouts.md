@@ -1,6 +1,6 @@
 # Adaptive Layouts
 
-This lesson explains how to make your content's position adapt to your screen size
+This lesson explains how to make your content's position adapt to the user's screen size and orientation
 
 **Learning objectives**
 
