@@ -19,7 +19,7 @@ Total time: 2 hours, 45 minutes
   - 10 minutes - Discuss component types
   - 10 minutes – Explain component's lifecycle
   - 10 minutes - Exercise Setup
-- 45 minutes - **Post-session**: pair programming Exercise
+- 60 minutes - **Post-session**: pair programming Exercise
 
 ## Pre-session (60 minutes)
 
@@ -45,7 +45,7 @@ In your team channels, discuss the following; be prepared to share an insight or
 #### Key Component Ideas
 
 - Stateless Components
-- Component Data: *Properties vs. State*
+- Component Data: *Properties*,  *State*, *Children*
 - Types of Components: *Class vs. Function*
 - Component Lifecycle Methods
 
@@ -56,7 +56,8 @@ In your team channels, discuss the following; be prepared to share an insight or
 1. Render (required): This method returns the JSX element to be displayed by the class. It runs whenever the component's view updates.
 2. Properties (optional): They are arguments passed into the component from its parent components. They cannot be changed by the component.
 3. State (optional): They only exist within the components. Changing them causes the component to update.
-4. Besided *render()*, class can include a constructor, lifecycle method calls and other additional methods.
+4. Children (optional): Components nested inside the parent's JSX tags
+5. Besided *render()*, class can include a constructor, lifecycle method calls and other additional methods.
 
 #### Class Component Example
 
@@ -91,7 +92,7 @@ In your team channels, discuss the following; be prepared to share an insight or
 
     let App = (props:any) => <div><h1>My App</h1> <Tile/></div>
 
-### LifeCycle Methods (10 minutes)
+### LifeCycle Methods (5 minutes)
 
 These are methods that are triggered through out a components existence from when they're constructed to when they are dismissed. 
 
@@ -99,21 +100,21 @@ These are methods that are triggered through out a components existence from whe
 
 [https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/](https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)
 
-### Exercise Setup - MyTNT App (10 minutes)
+### Exercise Setup - MyTNT App (15 minutes)
 
 - Identify components and composition: Tile, Card, Item in the [MyTNT App](https://github.com/tnt-summer-academy/Exercises/tree/main/Week_2/ENG2.1-myTNT) layout
 
 ![completed MyTNT App layout](https://github.com/tnt-summer-academy/Curriculum/blob/main/Week%202/MyTNT-component-model.png)
 
-- Review GitHub process as needed to : Clone•Branch•Commit•Push•Pull Request 
+- Review GitHub process: Clone•Branch•Commit•Push•Pull Request 
 
 - Explore Code
-  - Identify Function and Class Components
+  - Identify Function and Class Components, props, state, and children
   - Examine use of TypeScript Interfaces with Properties and State
-  - Examine the use of the state value **count** in the *Counter* component
+  - Examine the use of the state value **count** in the *Counter* component and **map** function
   - Review HTML/CSS including `<ul>`, `<li>` and `<a>` elements
- 
-## Post-session (45 minutes)
+
+## Post-session (60 minutes)
 
 - Use pair programming in Live Share to complete the [*My TNT* Exercise](https://github.com/tnt-summer-academy/Exercises/tree/main/Week_2/ENG2.1-myTNT)
 - Push your work to GitHub and submit a Pull Request (one per pair)
