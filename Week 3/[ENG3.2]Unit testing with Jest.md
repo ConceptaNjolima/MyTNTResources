@@ -20,28 +20,40 @@ Total time: 1.25 hour
 
 ## Lesson details
 
-### What is Unit Testing? And why do we need it? (15 minutes)
+### What is Unit Testing? Why do we need it? (15 minutes)
 
-* Definition of unit testing: Unit tests are automated tests written and executed by software developers to ensure that a small section of an application ("unit") meets its specification and behaves as intended. A unit can be a function, a class, an interface etc.  
-* What's the difference between unit test, integration test, and functional test?
-* Perform unit testing in conjuction with feature implementation
+**Definitions**
 
-*Benefits of unit testing*
+* Unit testing: Unit testing is an automated testing technique where tests are written and executed by software developers to ensure that a small section of an application ("unit") meets its specification and behaves as intended. A unit can be a function, a class, an interface etc.  
+* Functional testing: 
+* Integration testing: 
 
-* Confidence in updating code - As a new developer on a team if you make changes to a module and all the unit tests pass you can have that much more confidence in not introducing bugs
+**Question**
+
+* What's the difference between unit testing, integration testing, and functional testing?
+
+**Unit test**
+
+A unit test has an input and an expected output. A test passes if the expect and actual outputs matches. 
+
+**Benefits of unit testing**
+
+* Confidence in updating code - As a new developer on a team, if you make changes to a module and all the unit tests pass, you can have that much more confidence in not introducing bugs
 * Reliable modules - A modules inputs can be tested with each unit test serving as a different scenario
 * Reusability - An indirect benefit to writing your module to be "testable" results in smaller units of code with, ideally, one singular responsibilty
-* Debugging is simpler - When searching for root cause of a defect you simply identify the module with a failing test. If there are no failing tests then that means there's a missing unit test ready to be written!
+* Debugging is simpler - When searching for root cause of a defect, you simply identify the module with a failing test. If there are no failing tests then that means there's a missing unit test ready to be written!
 
 ### Red, Green, Refactor (15 minutes)
 
-Red, Green, Refactor is an engineering pattern of TDD (Test Driven Development) that is an effective way of writing unit tests.
+Red, Green, Refactor is an engineering pattern of Test Driven Development (TDD) that is an effective way of writing unit tests.
 
 1. Design a test by creating test scenarios (sometimes referred to as test cases)
 2. Write a failing test (Red)
 3. Write code to make the test pass (Green)
 4. Refactor the code
 5. Re-run the test to make sure it still passes
+
+The database of unit tests are executed each time, a process called regression testing. New bugs may be introduced when fixing a bug.
 
 ### Jest (15 minutes)
 
@@ -50,17 +62,17 @@ Red, Green, Refactor is an engineering pattern of TDD (Test Driven Development) 
 * Mocking - If your class depends on external classes mockinging can help to test behavior specific to your class only
 * Async Code - Jest provides several ways to wait for async code to finish before proceeding to the next test
 
-To install Jest:
-
-1. npm install --save-dev jest
-2. To write tests with Typescript we must install ts-jest using 'npm install --save-dev ts-jest @types/jest'
-3. Create a jest config file using 'npx ts-jest config:init'
-
-To run tests with Jest:
-
-1. In the Terminal window use 'npm t'
-
 ### Let's write unit tests (30 minutes)
+
+#### Install and configure Jest
+
+1. `npm install --save-dev jest`
+2. To write tests with Typescript we must install ts-jest using `npm install --save-dev ts-jest @types/jest`
+3. Create a jest config file using `npx ts-jest config:init`
+
+### Run Jest
+
+In the Terminal window, use 'npm t'
 
 #### Examples of unit tests
 
