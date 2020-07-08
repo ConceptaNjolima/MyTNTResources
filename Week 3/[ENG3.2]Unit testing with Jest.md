@@ -84,11 +84,11 @@ Jest is an open JavaScript testing library. While Jest can be used to test any J
 1. A file `App.test.tsx` is created by create-react-app to test `App.tsx`. For each file `file.tsc` under test, there is a file `file.test.tsx`
 2. In the Terminal window, use 'npm t'
 
+#### Red, Green, Refactor in Jest
+
 ![pass](https://github.com/tnt-summer-academy/Curriculum/blob/main/Week%203/%5BENG3.2%5Dgreepass.png)
 
 ![fail](https://github.com/tnt-summer-academy/Curriculum/blob/main/Week%203/%5BENG3.2%5Dredfail.png)
-
-#### Red, Green, Refactor in Jest
 
 #### Examples of unit tests
 
