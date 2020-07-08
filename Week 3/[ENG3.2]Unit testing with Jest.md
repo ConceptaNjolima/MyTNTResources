@@ -15,15 +15,16 @@ Total time: 1 hour 45 minutes
 
 * 15 minutes - Pre-session
 * 60 minutes - Instructional Session
-  * 15 minutes – What is unit testing? Why is it important in the software development lifecycle?
-  * 15 minutes – Red, Green, Refactor
-  * 15 minutes - Jest
-  * 30 minutes - Write unit tests and pracice
+  * 10 minutes – What is unit testing? Why is it important in the software development lifecycle?
+  * 10 minutes – Red, Green, Refactor
+  * 10 minutes - Jest
+  * 30 minutes - Write unit tests and practice
 * 30 minutes - Post-session
 
 ## References
 
 [Jest](https://jestjs.io)
+[Jest documentation](https://jestjs.io/docs/en/getting-started.html)
 
 ## Pre-session (15 minutes)
 
@@ -31,7 +32,7 @@ Prepare for the session [here](https://github.com/tnt-summer-academy/Curriculum/
 
 ## Instructional session (60 minutes)
 
-### What is Unit Testing? Why do we need it? (15 minutes)
+### What is Unit Testing? Why do we need it? (10 minutes)
 
 **Definitions**
 
@@ -51,7 +52,7 @@ Prepare for the session [here](https://github.com/tnt-summer-academy/Curriculum/
 * Reusability - An indirect benefit to writing your module to be "testable" results in smaller units of code with, ideally, one singular responsibilty
 * Debugging is simpler - When searching for root cause of a defect, you simply identify the module with a failing test. If there are no failing tests then that means there's a missing unit test ready to be written!
 
-### Red, Green, Refactor (15 minutes)
+### Red, Green, Refactor (10 minutes)
 
 Red, Green, Refactor is an engineering pattern of Test Driven Development (TDD) that is an effective way of writing unit tests.
 
@@ -61,8 +62,9 @@ Red, Green, Refactor is an engineering pattern of Test Driven Development (TDD) 
 4. Refactor the code
 5. Re-run the test to make sure it still passes
 
-### Jest (15 minutes)
+### Jest (10 minutes)
 
+Jest is an open JavaScript testing library. While Jest can be used to test any JavaScript library, it is very popular when it comes to React 
 
 * Using Matchers - When testing values, Jest provides "matchers" to help compare values
 * Setup and Teardown - If you have code that needs to execute before or after many tests, you can use `beforeEach()` and `afterEach()`
@@ -79,18 +81,23 @@ Red, Green, Refactor is an engineering pattern of Test Driven Development (TDD) 
 
 #### Run Jest
 
-In the Terminal window, use 'npm t'
+1. A file `App.test.tsx` is created by create-react-app to test `App.tsx`. For each file `file.tsc` under test, there is a file `file.test.tsx`
+2. In the Terminal window, use 'npm t'
+
+#### Red, Green, Refactor in Jest
 
 #### Examples of unit tests
 
-This test will always pass
+* This test will always pass
 
+    ```typescript
     test('a very simple test', () => {
         expect(true).toBe(true)
-    })
+    })```
 
-Testing if a list contains an object
+* Testing if a list contains an object
 
+    ```typescript
     const productList = [
         'Microsoft Surface Pro', 
         'Microsoft Office 365', 
@@ -99,15 +106,31 @@ Testing if a list contains an object
 
     test('the list of products contains Xbox', () => {
         expect(productList).toContain('Xbox')
-    })
+    })```
+    
+ * Testing if a function returns the correct result
+ 
+    ```typescript 
+    test('did not rain', () => {
+      expect(inchesOfRain()).toBe(0);
+    });```
+    
+#### Writing unit tests in Jest
+
+* `test` is a function that takes a string and a function as parameters. The string is the title of the test. In the function, we expect something to match something. The overall syntax of test is `test("", () => {expect().matcher()})`. A complete description of `test` is available [here](https://jestjs.io/docs/en/api#testname-fn-timeout). The number of calls of `test` determines the number of test cases
+* There are lots of different matchers: `toBe`, `toEqual`, `toBeDefined`, `toContain`, `toEqual` etc. A list is available [here](https://jestjs.io/docs/en/expect)
 
 #### Practice writing unit tests
 
-A starter project has been created which contains stubbed unit tests. Use the Red, Green, Refactor pattern to write some unit tests.
+A starter project has been created which contains stubbed unit tests. Use the Red, Green, Refactor pattern to write some unit tests
 
-1. 'git clone' the TNT_Samples github repo <https://github.com/microsoft/TNT_Samples>
+1. `git clone` the Samples GitHub repository [here](https://github.com/tnt-summer-academy/Samples)
 2. Use VS Code to open the 'Week_3/unit-testing-with-jest' project
-3. Cmd+J to reveal the Terminal in VS Code
-4. 'jest' and 'ts-jest' are already listed as dependencies in package.json so in the Terminal window type 'npm install' to install both dependencies
+3. Use Cmd+J to reveal the Terminal in VS Code
+4. 'jest' and 'ts-jest' are already listed as dependencies in 'package.json' so in the Terminal window type 'npm install' to install both dependencies
 5. To run tests type 'npm t' in the Terminal window
-6. The file src/store-locator/StoreFilter.test.tsx has empty test stubs that NT's will complete
+6. The file 'src/store-locator/StoreFilter.test.tsx' has empty test stubs to complete
+
+## Post-session (30 minutes)
+
+* Finish writing unit tests for the 'unit-testing-with-jest' project
