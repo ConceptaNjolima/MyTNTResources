@@ -117,7 +117,7 @@ This means if all the children's flex is set to 1 they will take up an equal amo
 
 ### Exercise Setup (5 minutes)
 
-1. If you haven't yet, Fork and Clone the Layout Exercise
+1. If you haven't yet, Clone the Layout Exercise
 2. Identify the two components use in the App
    - StudentTable component
    - Keyword component
