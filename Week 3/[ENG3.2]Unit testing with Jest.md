@@ -23,8 +23,8 @@ Total time: 1 hour 45 minutes
 
 ## References
 
-[Jest](https://jestjs.io)
-[Jest documentation](https://jestjs.io/docs/en/getting-started.html)
+* [Jest](https://jestjs.io)
+* [Jest documentation](https://jestjs.io/docs/en/getting-started.html)
 
 ## Pre-session (15 minutes)
 
