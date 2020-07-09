@@ -127,7 +127,7 @@ On the engineering side, today NTs were introduced to the to-do sample app proje
 
 ## Week 2
 
-Early in the week NTs continue and wrap up working on their list app. In the Git learning track, NTs are introduced to remote repositories and team development practices using branches. Applying, NTs move their list app to GitHub and later in the week as a group practice working together on a sample app. Views, layouts, and UI debugging allow NTs to revisit the list app and update.
+Early in the week NTs continue and wrap up working on their list app. In the Git learning track, NTs are introduced to remote repositories.  Applying, NTs move their list app to GitHub. Components are introduced early in the week and re-iterated throughout, along with UI debugging.
 
 Working through the design phases, NTs  start the first iteration of the prototype and test. NTs create paper prototypes, begin early usability testing completing 2-3 interviews each by end of week, and create first drafts of their value prop and pitch. This is a great chance for the teams to get feedback on their concepts. Volunteer as a participant and listen to the pitch. The teams will still go through phases of expanding and refining app and feature ideas. When lost or debating, evaluate the solution to the problem statement against how well it meets the user needs.
 
