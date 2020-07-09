@@ -108,8 +108,8 @@ When configuring a Flexbox layout both the Parent Container and Child Items have
 
 #### Child Item Property:
 
-***flex*: **integer 
-Setting a child's flex to an integer makes it try to fill as much of the container as possible. If there are multiple children in the container, as is usual, each child will fill an amount of space proportional to it's flex.
+***flex: integer*** 
+Setting a child's flex to an integer makes it try to fill as much of the container as possible. If there are multiple children in the container, as is usual, each child will fill an amount of space proportional to its flex.
 
 This means if all the children's flex is set to 1 they will take up an equal amount of space. If a child is set to 2 and the rest are 1, it will take up twice the amount of space.
 
