@@ -129,9 +129,9 @@ This means if all the children's flex is set to 1 they will take up an equal amo
 
 ## Post-session (45 minutes)
 
-- Use pair programming to complete the [*Layout* Exercise](https://github.com/tnt-summer-academy/Exercises/wiki/[ENG2.2]-MyTNT-Components)
-- Push your work to GitHub and submit a Pull Request (one per pair)
+- Use partner programming to complete the [*Layout* Exercise](https://github.com/tnt-summer-academy/Exercises/tree/main/Week_2/ENG2.2-layouts)
+- Push your work to GitHub and submit a Pull Request (one per partner set)
 
 ## Stretch
 
-  1. Add an input field above your component to accept an input from a user and add it to your Keyword Collection component
+Continue coding on the *Layout* Exercise Stretch Goals
