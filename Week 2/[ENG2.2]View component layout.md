@@ -12,7 +12,7 @@ This lesson introduces how to create components that can display a variety of da
 
 Total time: 2 hours, 30 minutes
 
-- 45 minutes - **Pre-session**): background learning, research, and investigations
+- 45 minutes - **Pre-session**: background learning, research, and investigations
 - 30 minutes - **Instructional Session**
   - 5 minutes - Discussion in groups
   - 10 minutes –  Layout using HTML Tables
@@ -22,7 +22,7 @@ Total time: 2 hours, 30 minutes
 
 ## Pre-session (45 minutes)
 
-*Prepare for the session* [here](../../../wiki/[ENG2.2]View-component-layout)
+*Prepare for the session* [here](../../../wiki/[ENG2.2]-View-component-layout)
 
 ## Session Details
 
@@ -34,7 +34,7 @@ Components are most useful when their contents are generated on the fly based on
 
 In your team channels, answer the following questions; be prepared to share an insight or example with the class
 
-- Even though the website http://nytime.com displays as rows and columns, why is it not created as an HTML table? What is a table?
+- Even though the website https://nytimes.com displays as rows and columns, why is it not created as an HTML table? What is a table?
 - What is one question about the CSS flexbox that is confusing everyone in your team?
 
 ### Layout using an HTML Table (10 minutes)
@@ -103,7 +103,7 @@ When configuring a Flexbox layout both the Parent Container and Child Items have
    ![flexWrap](./flexWrap.png)
 4. ***justify-content*: space-around || space-between || flex-start || flex-end**  
    Sets the alignment of the child items along the main axis
-   ![justifyContent](./justifyContent.png)
+   ![justifyContent](./justifyContent.PNG)
 
 
 #### Child Item Property:
