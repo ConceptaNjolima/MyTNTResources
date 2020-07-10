@@ -88,6 +88,12 @@ There are four basic parts in Redux: Store, Actions, Reducer, and Connect. We wi
 * We need to connect React components to Redux.
 * Connect is used to connect components, property maps, and action maps to the store. 
 
+#### Sample app with Redux in Action
+
+![https://github.com/tnt-summer-academy/Curriculum/blob/main/Week%202/%5BENG2.4%5DReduxSample.gif]([ENG2.4]ReduxSample.gif)
+
+[Gif from here](https://www.kirupa.com/react/using_redux_with_react.htm)
+
 ### Coding a React app with Redux
 
 #### High-level steps
