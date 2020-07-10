@@ -14,7 +14,7 @@ Total time: 2 hour
 
 * 60 minutes - [**Pre-session**](https://github.com/tnt-summer-academy/Curriculum/wiki/%5BENG2.5%5D-Branching-merging-and-merge-conflicts): background learning, research, and investigations
 * 60 minutes - **Instructional Session**
-    * 25 minutes - explain: recap learning and lesson demos
+    * 25 minutes - explain: recap learning, lesson Demos 
     * 5 minutes - best practices
     * 20 minutes - explore: try it: GiHub Game
     * 10 minutes - elaborate: regroup and review
@@ -30,7 +30,7 @@ Prepare for the session [here](https://github.com/tnt-summer-academy/Curriculum/
 
 ## Instructional session (60 minutes)
 
-### Recap learning and Demos (30 minutes)
+### Recap learning (30 minutes)
 
 Here's how the team development process is applied with GitHub: [Understanding the GitHub Flow](https://guides.github.com/introduction/flow/).
 
@@ -47,7 +47,7 @@ Here's how the team development process is applied with GitHub: [Understanding t
     3. Create a new branch and check out to the branch.
     4. Open and edit the file in VS Code, adding your name and favorite food.
     5. Commit the changes to the branch.
-    6. push your local branch with the committed work.
+    6. push your branch with the changes to github
     6. Open a pull request to merge to main.
     7. In GitHub look at the pull request and complete the pull request and merge.
 
@@ -90,13 +90,13 @@ Here's how the team development process is applied with GitHub: [Understanding t
 </table>
 
 
-### Best practices to resolve and reduce merge conflicts (5 minutes)
+### **Best practices to resolve and reduce merge conflicts**
 
     1. Git attempts to resolve differences in code. Merge conflicts occur when Git is unable to resolve the differences. This occurs when there are changes made to the same part of the same file on two different branches.
     2. Before attempting to merge, make sure any work in progress is either committed or merged. If you need to `git merge --abort`, this will prevent you from losing changes.
     3. Take a minute (or several) to understand the conflict. This will help you pick a solution to resolve the conflict.
     4. Decide what code should be included in main after the merge. Make the changes to resolve the conflict.
-    5. Make sure your code is still working as expected and it is providing the expected output
+    5. Make sure your code is still working as expected and it didn't break any of the old working code
     5. Fetch from main and pull into your branch frequently to stay in sync.
     6. Plan the work. Breakdown who is working on what and what may conflict.
 
