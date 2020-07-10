@@ -170,7 +170,7 @@ export let increaseAction = {
 
 // Action creator
 
-export function increaseCounter() {
+export function increaseCounterActionCreator() {
     return increaseAction;
 };
 ```
