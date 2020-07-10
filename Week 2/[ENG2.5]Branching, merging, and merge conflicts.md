@@ -90,15 +90,14 @@ Here's how the team development process is applied with GitHub: [Understanding t
 </table>
 
 
-### **Best practices to resolve and reduce merge conflicts**
-
-    1. Git attempts to resolve differences in code. Merge conflicts occur when Git is unable to resolve the differences. This occurs when there are changes made to the same part of the same file on two different branches.
-    2. Before attempting to merge, make sure any work in progress is either committed or merged. If you need to `git merge --abort`, this will prevent you from losing changes.
-    3. Take a minute (or several) to understand the conflict. This will help you pick a solution to resolve the conflict.
-    4. Decide what code should be included in main after the merge. Make the changes to resolve the conflict.
-    5. Make sure your code is still working as expected and it didn't break any of the old working code
-    5. Fetch from main and pull into your branch frequently to stay in sync.
-    6. Plan the work. Breakdown who is working on what and what may conflict.
+### Best practices to resolve and reduce merge conflicts
+1. Git attempts to resolve differences in code. Merge conflicts occur when Git is unable to resolve the differences. This occurs when there are changes made to the same part of the same file on two different branches.
+2. Before attempting to merge, make sure any work in progress is either committed or merged. If you need to `git merge --abort`, this will prevent you from losing changes.
+3. Take a minute (or several) to understand the conflict. This will help you pick a solution to resolve the conflict.
+4. Decide what code should be included in main after the merge. Make the changes to resolve the conflict.
+5. Make sure your code is still working as expected and it didn't break any of the old working code
+6. Fetch from main and pull into your branch frequently to stay in sync.
+7. Plan the work. Breakdown who is working on what and what may conflict.
 
 ### Try it: Game Play 
 (20 minutes to explain and start playing a few rounds)
