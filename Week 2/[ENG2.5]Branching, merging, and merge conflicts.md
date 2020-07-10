@@ -1,11 +1,11 @@
-# Merging, and merge conflicts
+# Branching, merging, and merge conflicts
 
-This lesson introduces branching for team collaboration. This is how you work together on projects!
+This lesson introduces branching and merging for team collaboration. Conflict resolution will be covered. This is how you work together on projects!
 
 ## Learning objectives
 
 * TNTs will understand the basic of branching, merging, and resolving conflicts.
-* TNTs will learn what is a merge conflict, what causes them, how to resolve and reduce.
+* TNTs will learn what are merge conflicts, what causes them, how to resolve and reduce them.
 * TNTs will be able to create and merge a branch locally and with GitHub.
 
 ## Time required and pace
@@ -15,7 +15,7 @@ Total time: 2 hour
 * 60 minutes - [**Pre-session**](https://github.com/tnt-summer-academy/Curriculum/wiki/%5BENG2.5%5D-Branching-merging-and-merge-conflicts): background learning, research, and investigations
 * 60 minutes - **Instructional Session**
     * 30 minutes - explain: recap learning, lesson Demos and best practices
-    * 20 minutes - explore: Try it: Game Play
+    * 20 minutes - explore: try it: GiHub Game
     * 10 minutes - elaborate: regroup and review
 * [**Post-session**](https://github.com/tnt-summer-academy/Curriculum/wiki/%5BENG2.5%5D-Branching-merging-and-merge-conflicts): review, and investigations
 
@@ -25,13 +25,14 @@ Prepare for the session [here](https://github.com/tnt-summer-academy/Curriculum/
 
 ## Session set up
 
-* GitHub - create repository in group from NameandFavFood demo in Samples
+* GitHub - create repository in group from [NameandFavFood demo](https://github.com/tnt-summer-academy/Samples/tree/main/Week_2/NameandFavFood) in Samples
 
-## Lesson details
+## Instructional session (60 minutes)
 
 ### Recap learning (30 minutes)
 
 Here's how the team development process is applied with GitHub: [Understanding the GitHub Flow](https://guides.github.com/introduction/flow/).
+
 <table style="border: none">
     <tr align="center">
         <td><img src="./GitHubWorkFlow.gif" width="75%" alt="GitHub work flow]"> 
@@ -39,11 +40,11 @@ Here's how the team development process is applied with GitHub: [Understanding t
  </tr>
 </table>
 
-1. **Demo**: cloning, branching, committing a repo from GitHib.
-    1. We're going to review the basics of creating a branch and merging using GitHub.
+1. **Demo**: Cloning, branching, committing a repo from GitHub.
+    1. We're going to review the basics of creating a branch and merging it in GitHub.
     2. With VS Code integrated Terminal, clone the NameandFavFood repository.
     3. Create a new branch and check out to the branch.
-    4. Open and edit the file in VS Code, adding name and favorite food.
+    4. Open and edit the file in VS Code, adding your name and favorite food.
     5. Commit the changes to the branch.
     6. Open a pull request to merge to main.
     7. In GitHub look at the pull request and complete the pull request and merge.
@@ -55,7 +56,7 @@ Here's how the team development process is applied with GitHub: [Understanding t
 </table>
 
 
-2. **Demo**: show a merge conflict
+2. **Demo**: Show a merge conflict
     1. In your local repo, switch to main branch
     2. Create a new branch and switch to this new branch.
     3. From VS Code on the branch, make a change to the NameandFavFood by adding a different change.
@@ -88,8 +89,9 @@ Here's how the team development process is applied with GitHub: [Understanding t
 
 
 4. **Best practices to resolve and reduce merge conflicts**
+
     1. Git attempts to resolve differences in code. Merge conflicts occur when Git is unable to resolve the differences. This occurs when there are changes made to the same part of the same file on two different branches.
-    2. Before attempting to merge, make sure any work in progress is either committed or merged. If you need to `git merge --abort` this will prevent you from losing changes.
+    2. Before attempting to merge, make sure any work in progress is either committed or merged. If you need to `git merge --abort`, this will prevent you from losing changes.
     3. Take a minute (or several) to understand the conflict. This will help you pick a solution to resolve the conflict.
     4. Decide what code should be included in main after the merge. Make the changes to resolve the conflict.
     5. Fetch from main and pull into your branch frequently to stay in sync.
