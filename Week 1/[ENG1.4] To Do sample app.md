@@ -53,7 +53,7 @@ Please work through these steps as a group/pair/etc.  Be prepared for the instru
 
     - Open App.tsx in VSCode and set up a title for your app by replacing everything ***inside*** the header element with something like an `<h1>`  that displays the title.  Pick anything that you want for the title
 
-        - Don't remove the <header> element itself!
+        - Don't remove the `<header>` element itself!
         - Make sure to check your work and verify that you've got this working.  Remember to check the web page to see if it works, and then the command line to see if there are any errors / warnings to watch out for.
         - You'll start seeing a warning about `Line 2:8:  'logo' is defined but never used  @typescript-eslint/no-unused-vars`  You can either ignore the error or else delete line 2 (the one that reads `import logo from './logo.svg';`)
         - Once this is working please do commit your work to your local repo (do not worry about pushing it to your repo on GitHub)
@@ -85,7 +85,7 @@ Please work through these steps as a group/pair/etc.  Be prepared for the instru
 
         - Once this is working please do commit your work to your local repo (do not worry about pushing it to your repo on GitHub)
 
-    3. App.tsx - underneath (outside of) the <header> element add a paragraph that excitedly explains that this is, in fact, a shopping list app.  
+    3. App.tsx - underneath (outside of) the `<header>` element add a paragraph that excitedly explains that this is, in fact, a shopping list app.  
 
         - The main point of this is to make sure that you're comfortable adding more content to the app, outside of the header (which should only be used for stuff that announces the page - the title, who made it, a logo, etc).
     - You may not see the element you just added in because the header is taking up the entire page.  
@@ -145,10 +145,10 @@ Please work through these steps as a group/pair/etc.  Be prepared for the instru
 
 8. Add form and input elements 
 
-    - In App.tsx, add `<form>` and `<input>` elements.  For this exercise you'll need to add an <input> for the item's name, and an <input> for the item's price.  These are separate <inputs> within the same <form>
+    - In App.tsx, add `<form>` and `<input>` elements.  For this exercise you'll need to add an `<input>` for the item's name, and an `<input>` for the item's price.  These are separate `<inputs>` within the same `<form>`
 
         - Save the entered value in private variables like you did with the Todo app
-        - It's recommended that you copy-and-paste from the example project and then modify the code so that it works with your program, has enough <input> elements, etc
+        - It's recommended that you copy-and-paste from the example project and then modify the code so that it works with your program, has enough `<input>` elements, etc
         - For right now it's recommended that you copy-and-paste the `onChange` method and rename it, so that instead of having `inputValue` and `changeInputValue` you'll have `inputName` and `changeInputName` along with  `inputPrice` and `changeInputPrice` 
             - If you'd like to look into ways to avoid this copy-and-pasting please do look into this further - it would make a great 'stretch' goal for this lesson
 

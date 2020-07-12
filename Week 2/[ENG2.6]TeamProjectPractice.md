@@ -1,6 +1,15 @@
 # Team Project Practice
 
-With this project NTs review a spec and break down the engineering work. The teams then merge initial changes for the project into the same repo and resolve and resolve any merge issues. **The goal is not to complete the prototype of the app rather gain experience breaking down the work, coding together, and resolving conflicts.**
+The most important aspect of this exercise is to **start practcding the process that you'll use to develop your prototype app that your team will show off in week 7**.  The specific app that you'll be developing this week ('YourShare') is different from your team's app prototype but the overall steps & approach will be the same for both (or at least very similar).
+
+IMPORTANT NOTE: We will start working on the YourShare app today *and we will keep working on it throughout this week*.  There's a lot to do and it will take a while for this all to fully sink in.
+
+Today we'll be working on the following: 
+
+1.  Each team will review the YourShare spec and then break down the engineering work. 
+2. The teams then merge initial changes for the project into the same repo and resolve and resolve any merge issues. 
+
+**The goal is not to complete the prototype of the app rather gain experience breaking down the work, coding together, and resolving conflicts.**
 
 ## Learning objectives
 
@@ -16,13 +25,61 @@ Total time: 3 hours, 45 instruction, remaining work time
 * 40 minutes - explore: break down the engineering work and review with coaches, create and check-in first changes, resolve merge issues
 * post-session: evaluate: NTs finish initial changes and resolve merge issues
 
+## NT Deliverables:
+
+1. Within your team's AppPrototype repo in GitHub, create a new Project to organize your work on YourShare
+   - [Spec for YourShare]()([https://github.com/tnt-summer-academy/Curriculum/blob/main/Reference/Sample%20spec%20-%20YourShare.md](https://github.com/tnt-summer-academy/Curriculum/blob/main/Reference/Sample%20spec%20-%20YourShare.md))
+2. Within that project find the Kanban board and create Cards, with 1 task per card, in order to break down the overall work into specific steps
+   - Each card must start with "Done when"
+   - Each card must be assigned to a specific person.
+   - As much as possible the volume and 'challenge level' of the work should be about the same for each team member.
+     - That said, feel free to divide up work based on who's most comfortable / experienced / interested in the various features/pages
+3. The work breakdown must be reviewed by your coaches
+4. You should then create pages (components) that look like each of the pages in the spec.
+   - You should be able to navigate amongst the pages in the React app.
+   - Other than looking like the pages in the spec and navigation nothing else in the app should do anything.
+
 ## Background / review
 
 None
 
 ## Lesson details
 
-### Introduce spec, scoping, and breaking down work (20 min)
+### Demo: Kanban boards in GitHub (5 minutes)
+
+First, let's look at [a project in GitHub by following this linkhttps://github.com/tnt-summer-academy/Team00-AppPrototype](https://github.com/tnt-summer-academy/Team00-AppPrototype) 
+
+1. In that repo you'll find a tab labeled "Projects":
+   ![image-20200711171227457](images/%5BENG2.6%5DTeamProjectPractice/image-20200711171227457.png)
+2. Within the Projects list for this repo you'll see something for **ENG2.6: Team Project Practice**.  :
+   ![image-20200711171409650](images/%5BENG2.6%5DTeamProjectPractice/image-20200711171409650.png)
+3. Click on that to see the Kanban board
+   ![image-20200711171434869](images/%5BENG2.6%5DTeamProjectPractice/image-20200711171434869.png)
+4. Within the Kanban board you can click on a card to see it's details:
+   ![image-20200711171647362](images/%5BENG2.6%5DTeamProjectPractice/image-20200711171647362.png)
+
+Please notice a couple of things:
+
+1. <u>This task contains a clear 'Definition Of Done"</u> (the part that starts with "Done when:..."). 
+   For the work that you're doing today (with your team) **every task must contain a statement that clearly describes how you'll know the task is finished**, and that statement must start with "Done when:".
+2. <u>This task is assigned to someone.</u>   (In the above image that's "Bansenauer")
+   That person is responsible for either getting the task done and communicating with the rest of the team about the current status of the task.  
+   (It's fine to move tasks around between people, but it's important that we don't let tasks 'fall between the cracks' because nobody was responsible for it)
+
+<u>Make sure that all the cards you create have a Definition Of Done and are assigned to someone!</u>
+
+### Demo: Adding a new card (5 minutes)
+
+You can add a new card here a couple different ways.  The way that we're recommending is this:
+
+1. In a column (for example, the 'To do" column') click on the plus sign ( + ), then type the TITLE for the card into the text box:![image-20200711181028053](images/%5BENG2.6%5DTeamProjectPractice/image-20200711181028053.png)
+2. Once you've done that find the new card, click on the triple-dot menu, and select 'Convert to issue':
+   ![image-20200711181254783](images/%5BENG2.6%5DTeamProjectPractice/image-20200711181254783.png)
+3. Then type in the additional detail into the 'Body'.  
+   Make sure that you start with a concise, clear, "Done when:" statement:
+   ![image-20200711181408638](images/%5BENG2.6%5DTeamProjectPractice/image-20200711181408638.png)
+
+### Exercise: breaking down work (15 min)
 
 1. For this project you will be breaking down the work in the sample spec.  A spec, short for specification, is a description of the app and it's functionality. It defines what is being built while capturing the essentials of why and how it's being built.
 
@@ -30,33 +87,88 @@ None
     * Breakdown the engineering work.
     * Build the initial screens for the project, associated with the P0, most important work items, merge them in the same repo, and connect the navigation across the screens.
 
-When you're done, you'll have the shell of the shell of the app that navigates between the major pages and some place holder controls to represent the functionality. It'll feel very much like a high-fidelity prototype. Today we'll start by looking the spec and breaking down the work.
+When you're done, you'll have the shell of the app that navigates between the major pages and some place holder controls to represent the functionality. It'll feel very much like a high-fidelity prototype. Today we'll start by looking the spec and breaking down the work.
 
-Consult with and get feedback from your coaches before you start building the screens.
+**At this point you should work with your team to start breaking down the work.**  Your initial technical goal is to create a page (in React) that looks like each page in the spec; you do NOT need to make anything in the page work.  Your initial PM goal is to divide up the work so that it's clear who's working on what.
 
-### Breakdown engineering work
+1. Within your team's AppPrototype repo in GitHub, have someone create a new Project to organize your work on YourShare
+2. Within your team's AppPrototype repo in GitHub, have someone create a folder named *YourShare*.  Within that folder have someone put [a copy of the YourShare spec](https://github.com/tnt-summer-academy/Curriculum/blob/main/Reference/Sample%20spec%20-%20YourShare.md) in your repo.
+3. Examine the YourShare spec as a team, paying particular attention to the various pages and the navigation between them.
+   As a team, create 1 card per page in order to break down the overall work into specific steps
+   - Each card must start with "Done when"
+   - Each card must be assigned to a specific person.
 
-Find the sample spec - [YourShare](https://github.com/tnt-summer-academy/Curriculum/blob/main/Reference/Sample%20spec%20-%20YourShare.md) in the Reference folder.
+*<u>For now the only thing you need to do is to create pages that look like the ones in the spec.  They do NOT need to actually do anything.</u>*
 
-1. Create a new GitHub repository for your team and put a copy of the spec in your repo.
-2. Break down the engineering work; consider what are the pieces it will take to build the user story or functionality.
-   For the prototype purposes, consider what you can show in the UI that would later be back by real integration with other API's or services. For example, it might be out of scope for the prototype to introduce authentication flows. Instead use text boxes to mimic a sign-in experience.
-3. After breaking down the work, assign the engineering work items to individuals.
-   Make sure everyone has a significant contribution to building the app. A good starting place is to have people write down which pieces they'd like to work on then compare.
-   - Remember that today you'll only be working on the P0 tasks. You can scope what you break down for those items. The UX walk through is also scoped to the P0 items.
-   - Your spec will contain the screens and work breakdown for all the user stories.
-4. After you've broken down the work, review with your coaches.
-   Once you have sign-off from your engineering coach you can start building.
+### Demo: Breaking a page into Components (5 minutes)
 
-### Code, branch, merge and resolve conflicts
+Your instructor will walk you through a very brief example of breaking a page into individual components
 
-Here are some tips getting stared on the team development of YourShare:
+### Exercise: Breaking a page into Components (15 minutes)
 
-1. One person create a new, empty repository on GitHub and put the spec into it (this steps was already mentioned, above)
+Your team should choose a single page to work on together, breaking that page down into individual compoents.  For now y'all can work in a Markdown file instead of the Kanban cards to keep things quick.
+
+Create a Markdown document to be stored your AppPrototype repo (within the YourShare folder).  You can do this directly within GitHub itself using the 'Add File' button:
+![image-20200711191232377](images/%5BENG2.6%5DTeamProjectPractice/image-20200711191232377.png)
+
+Think about what elements of the page are naturally grouped together (that grouping might make a good component), think about what you might want to move around on the page (those chunks of the page that you might want to move might each make a good component), and make sure to look for things that are repeated across different pages (such as the 'Cancel/< action >' button pairs )(they might be good as a component).
+
+Write down your Team's list of components in the Markdown file.
+
+If you're looking for advice on how to format the Markdown file:
+Start a new component by putting in a blank line followed by a line that starts with two hash marks ( ## ) before a short name for the component.  Leave a blank line between the ## line and your short paragraph (1-3 sentences, tops) describing what goes into that component.
+
+
+
+After you've broken down the work, review with your coaches.
+Once you have sign-off from your engineering coach you can start building.
+
+### Demo: How to do simple, multi-page navigation in React (without React Router) (10 minutes)
+
+Let's look at the 'Simon Says' sample app.
+
+Specifically, let's look at [the 'App.tsx' file](https://github.com/tnt-summer-academy/Samples/blob/main/Week_2/simon_says/src/App.tsx).
+
+***Essentially, the App will keep a variable as part of it's React state (NOT in Redux) that keeps track of which page to display.***
+
+1. In the render method the App renders whichever page (component) should be displayed by calling the `getCurrentScreen()` method:
+
+```typescript
+   render() { return < div className="App">{this.getCurrentScreen()}< /div>; }
+```
+
+2. The `getCurrentScreen()` method is basically a switch statement that decides which component (page) to return based on the state's `currentPage` value.
+3. The `AppState` interface shows you that the  `currentPage` is a `pages`.  Right above the interface you can see the pages enum - this is a list of pages.
+4. At the bottom of the App.tsx file is a function named `changePage()` which will switch to the specified page
+
+You can see an example of using the changePage() function in the HomePage.tsx file:
+
+```typescript
+        < p onClick={this.props.changePage.bind(this, pages.GamePage)}>
+          New Game
+        < /p>
+```
+
+Two things to note:
+
+1. You'll need to import the pages enum at the top of the HomagePage.tsx file ( on line 2: `import { pages } from "./App";`
+2. Back in App.tsx You'll need to pass the changePage function as a property (line 29 in App.tsx: `return < HomePage changePage={this.changeScreen} />;`) in order to use  `this.props.changePage` in the HomePage.tsx file.
+
+### Exercise: Start coding up the page navigation (5 minutes)
+
+Start your development of YourShare by doing the following within your team.  If y'all could get done with step 5 ("Everyone MUST create a new branch..." ) that would be great.  Steps #6 and onwards are intended for the post-session work
+
+1. For all your work on YourShare, please use your team's AppPrototype repo on GitHub but only put the YourShare work in the YourShare folder
+   - Create the YourShare folder, if you haven't already.
+   - [Rename your 'master' branch to 'main'](https://www.hanselman.com/blog/EasilyRenameYourGitDefaultBranchFromMasterToMain.aspx)
 2. The one person clone the repo locally.
-   - Rename your 'master' branch to 'main'](https://www.hanselman.com/blog/EasilyRenameYourGitDefaultBranchFromMasterToMain.aspx)
-3. That one person start a new app with Create React App in the *main* branch, and then push that back to GitHub
-4. Everyone clone the repository locally.
-5. **Everyone creates a new branch for their user story.**
-6. Work on your user story, commit frequently, push, merge back into main in functional chunks. Fetch from *main* frequently and merge into your branch.
-7. When you hit a merge conflict, debug it together.
+3. That one person should copy the [Simon Says](https://github.com/tnt-summer-academy/Samples/tree/main/Week_2/simon_says)  program into the YourShare folder.  Add/commit/push it back to GitHub.
+   - This way y'all can start with working, multi-page navigation code
+4. Once that starting code has been pushed to GitHub then everyone else should clone the repository locally (or pull the most recent changes, if they'd previously cloned it)
+5. **Everyone MUST create a new branch for their individual work on their individual pages/components/features!!!!!!!!!!!!!!!!!!.**
+6. Each person should create a new component (page) for their page, then adding a link from the main page to their new page.
+   Keep things simple by having your new page do nothing other than offer a link to jump back to the main page.
+7. Once everyone in your team has the multi-page navigation working correctly AND you've gotten your work breakdown reviewed by your dev coach then please have each person start working on their page(s)/component(s).
+8. Commit frequently, push, merge back into main in functional chunks. 
+   Fetch from *main* frequently and merge into your branch.
+9. When you hit a merge conflict, resolve it together.
