@@ -2,23 +2,24 @@
 
 This lesson explains how to make your content's position adapt to the user's screen size and orientation
 
-**Learning objectives
+## Learning objectives
 
-* TNTs will learn how to layout a table with React
-* TNTs will understand the basics of CSS Flexbox layout
-* TNTs will practice experimenting with and troubleshooting CSS in the browser
+* TNTs will explore Adaptive Layouts for UI Design of React apps
+* TNTs will understand the basics of CSS Grid and review CSS Flexbox
+* TNTs will experiment with code for adaptive layout using CSS, media queries and relative sizing
+*  TNTs will continue to practice troubleshooting CSS layout in the browser
 
 ## Time required and pace
 
-Total time: 2 hours, 30 minutes
+Total time: 2 hours, 45 minutes
 
-- 45 minutes - **Pre-session**): background learning, research, and investigations
-- 30 minutes - **Instructional Session**
-  - 5 minutes - Discussion in groups
+- 45 minutes - **Pre-session**: background learning, research, and investigations
+- 60 minutes - **Instructional Session**
+  - 20 minutes - Discussion in groups
   - 10 minutes –  Layout using HTML Tables
   - 10 minutes - Layout using CSS Flexbox
   - 5 minutes - Exercise Setup
-- 45 minutes - **Post-session**: pair programming Exercise
+- 60 minutes - **Post-session**: YourShare Exercise
 
 ## Pre-session (45 minutes)
 
@@ -26,16 +27,16 @@ Total time: 2 hours, 30 minutes
 
 ## Session Details
 
-Work through the YourShare Account page together to investigate the following topics:
-
 ### Adaptive Layouts with YourShare (20 minutes)
 
-**GOAL**: Create a React app UI that feels "right" for [desktop and mobile users](./[ENG3.0]YourShar-layout.pdf)
+**GOAL**: Create a React app UI that feels "right" for [desktop and mobile users](./[ENG3.0]YourShare-layout.pdf)
 
 1. **Identify Components**: Brand, Signup, Nav
 2. **Design UI layout**: based on screen limitations and user expectations for mobile / desktop 
 3. **Define layout strategy**: using CSS grid (macro) and flexbox (micro) for adaptive layout
 4. **Implement adaptive layout**: using CSS cascading, media queries, and relative sizing
+
+Walk through [YourShare Account page](https://github.com/tnt-summer-academy/Samples/tree/main/Week_3/adaptive-layouts) together using the browser debugger to investigate the following topics:
 
 ### Cascading Style Sheets - CSS (10 minutes)
 
@@ -63,6 +64,10 @@ When assigning a size to an element we typically use fixed units like pixels or 
 4. **%**: Size changes relatively to the parent's size
 5. **Rem**: size changes relatively to the root element
 
-## Post-session
+### Setup YourShare Teamwork practice (5 minutes)
+
+Update your Team project for YourShare to identify any new work items (GitHub Issues) coming from today's lesson. Create the GitHub issue with a clear "Done when" statement for the ones you will 
+
+## Post-session (60 minutes)
 
 - View the post-session [here](../../../wiki/[ENG3.0]-Adaptive-layouts)
