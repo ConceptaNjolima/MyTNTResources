@@ -12,7 +12,7 @@ This lesson introduces how to create components that can display a variety of da
 
 Total time: 2 hours, 30 minutes
 
-- 45 minutes - **Pre-session**): background learning, research, and investigations
+- 45 minutes - **Pre-session**: background learning, research, and investigations
 - 30 minutes - **Instructional Session**
   - 5 minutes - Discussion in groups
   - 10 minutes –  Layout using HTML Tables
@@ -22,7 +22,7 @@ Total time: 2 hours, 30 minutes
 
 ## Pre-session (45 minutes)
 
-*Prepare for the session* [here](../../../wiki/[ENG2.2]View-component-layout)
+*Prepare for the session* [here](../../../wiki/[ENG2.2]-View-component-layout)
 
 ## Session Details
 
@@ -34,7 +34,7 @@ Components are most useful when their contents are generated on the fly based on
 
 In your team channels, answer the following questions; be prepared to share an insight or example with the class
 
-- Even though the website http://nytime.com displays as rows and columns, why is it not created as an HTML table? What is a table?
+- Even though the website https://nytimes.com displays as rows and columns, why is it not created as an HTML table? What is a table?
 - What is one question about the CSS flexbox that is confusing everyone in your team?
 
 ### Layout using an HTML Table (10 minutes)
@@ -103,13 +103,13 @@ When configuring a Flexbox layout both the Parent Container and Child Items have
    ![flexWrap](./flexWrap.png)
 4. ***justify-content*: space-around || space-between || flex-start || flex-end**  
    Sets the alignment of the child items along the main axis
-   ![justifyContent](./justifyContent.png)
+   ![justifyContent](./justifyContent.PNG)
 
 
 #### Child Item Property:
 
-***flex*: **integer 
-Setting a child's flex to an integer makes it try to fill as much of the container as possible. If there are multiple children in the container, as is usual, each child will fill an amount of space proportional to it's flex.
+***flex: integer*** 
+Setting a child's flex to an integer makes it try to fill as much of the container as possible. If there are multiple children in the container, as is usual, each child will fill an amount of space proportional to its flex.
 
 This means if all the children's flex is set to 1 they will take up an equal amount of space. If a child is set to 2 and the rest are 1, it will take up twice the amount of space.
 
@@ -117,7 +117,7 @@ This means if all the children's flex is set to 1 they will take up an equal amo
 
 ### Exercise Setup (5 minutes)
 
-1. If you haven't yet, Fork and Clone the Layout Exercise
+1. If you haven't yet, Clone the Layout Exercise
 2. Identify the two components use in the App
    - StudentTable component
    - Keyword component
@@ -129,9 +129,9 @@ This means if all the children's flex is set to 1 they will take up an equal amo
 
 ## Post-session (45 minutes)
 
-- Use pair programming to complete the [*Layout* Exercise](https://github.com/tnt-summer-academy/Exercises/wiki/[ENG2.2]-MyTNT-Components)
-- Push your work to GitHub and submit a Pull Request (one per pair)
+- Use partner programming to complete the [*Layout* Exercise](https://github.com/tnt-summer-academy/Exercises/tree/main/Week_2/ENG2.2-layouts)
+- Push your work to GitHub and submit a Pull Request (one per partner set)
 
 ## Stretch
 
-  1. Add an input field above your component to accept an input from a user and add it to your Keyword Collection component
+Continue coding on the *Layout* Exercise Stretch Goals
