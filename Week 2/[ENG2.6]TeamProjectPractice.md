@@ -154,7 +154,7 @@ Two things to note:
 1. You'll need to import the pages enum at the top of the HomagePage.tsx file ( on line 2: `import { pages } from "./App";`
 2. Back in App.tsx You'll need to pass the changePage function as a property (line 29 in App.tsx: `return < HomePage changePage={this.changeScreen} />;`) in order to use  `this.props.changePage` in the HomePage.tsx file.
 
-### Start coding up the page navigation (5 minutes)
+### Exercise: Start coding up the page navigation (5 minutes)
 
 Start your development of YourShare by doing the following within your team.  If y'all could get done with step 5 ("Everyone MUST create a new branch..." ) that would be great.  Steps #6 and onwards are intended for the post-session work
 
