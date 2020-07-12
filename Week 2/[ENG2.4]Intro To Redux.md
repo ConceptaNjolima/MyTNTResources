@@ -116,6 +116,11 @@ The code below covers a counter example. The screenshot shows the final result. 
 * `npm add redux`
 * `npm add react-redux`
 
+#### Files organization
+
+* `components` contains the `Counter` component.
+* `redux-components` contains the Redux-related files: actions.tsx, reducer.tsx and types.tsx 
+
 #### Store
 
 * Store is an object with several methods
@@ -123,7 +128,7 @@ The code below covers a counter example. The screenshot shows the final result. 
   * `store.getState()` - returns the complete state tree of the application.
   * `store.dispatch(action)` - dispatches an action and returns the next state. This is the only way to trigger a state change.
 
-index.tsx file
+**index.tsx**
 
 ```typescript
 // imports
@@ -134,29 +139,44 @@ store = createStore(<reducer>);
 * React-Redux uses the `<Provider />` tag, which makes the Redux store available to the rest of your app.
 * The application will render a `<Provider>` at the top level, with the entire app’s component tree inside of it.
 
-index.tsx file
+**index.tsx**
 
 ```typescript
 // imports
 ReactDOM.render(
   <Provider store={store}>
-    <Counter />
+    <App/>
   </Provider>,
   document.querySelector('#root')
 );
 ```
 
-Check the imports in index.tsx
+Check the imports in **index.tsx**
 
 ```typescript
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Counter from './Counter';
+import App from './App';
 import {createStore} from 'redux';
 import {Provider} from 'react-redux';
-import counterReducer from './reducer';
+import counterReducer from './redux-components/reducer';
 import './index.css';
 ```
+
+**App.tsx** will render the `Counter` component.
+
+```typescript
+import React from 'react';
+import './App.css';
+import Counter from './components/Counter';
+
+class App extends React.Component<{}, {}>{
+  render() {
+    return (<Counter />)
+  }
+}
+```
+
 
 #### Actions
 
@@ -165,42 +185,41 @@ import './index.css';
   * The `type` is typically a string constant.
 * Action creators are functions that create / return actions. This is a way to abstract the objects.
 
-action.tsx file
+**action.tsx** 
 
 ```typescript
-// Action
-const INCREASE = "INCREASE";
+const DECREASE = "DECREASE";
 
-export let increaseAction = {
-    type: INCREASE
-};
-
-// Action creator
-
-export function increaseCounterActionCreator() {
-    return increaseAction;
+export let decreaseAction = {
+    type: DECREASE
 };
 ```
+
+Note: We ommitted the action creators functions in the example for simplicity.
 
 #### Reducer
 
-* A reducer is a pure function that takes the previous state and an action, and returns the next state. 
-  * A 'pure' function is like a function in mathematics: it takes its parameters, does something with them and returns the result, and doesn't change anything else.  *In other words, our reducer doesn't change or alter the state - it creates a **new** object that will be our new state.*
+* A reducer is a pure function that takes the previous state of the app and an action, and returns the next state. 
+  * A 'pure' function is like a function in mathematics: it takes parameters, does something with them and returns the result, and doesn't change anything else.  *In other words, our reducer doesn't change or alter the state - it creates a **new** object that will be our new state.*
 * Redux will call a reducer with an undefined state for the first time. This is where the initial state of the app needs to be initialized.
 
-types.tsx file
+**types.tsx** is used to define some of the types that we need to use throughout the app. We also define the state of the app in this file.
 
 ```typescript
-// State of the app
-import {increaseAction, decreaseAction} from './actions';
+import { increaseAction, decreaseAction } from './actions';
+
+// Interface for the state of the app (store)
 export interface CounterAppState {
-    count: number
-  }
+  count: number
+}
+
+// Types of the actions
 export type CounterActionsTypes = typeof decreaseAction | typeof increaseAction;
+
 export default CounterAppState;
 ```
 
-reducer.tsx file
+**reducer.tsx**
 
 ```typescript
 import { increaseAction, decreaseAction } from './actions';
@@ -208,7 +227,7 @@ import { CounterAppState, CounterActionsTypes } from './types';
 
 const intialState: CounterAppState = { count: 0 }
 
-function counterReducer(state: CounterAppState | undefined, action: CounterActionsTypes) {
+function counterReducer(state: CounterAppState | undefined, action: CounterActionsTypes): CounterAppState {
     if (state === undefined) {
         return intialState;
     }
@@ -229,11 +248,10 @@ export default counterReducer;
 
 #### Connect
 
-* We are now looking at how to connect a React component with the Redux store.
+* We are now looking at how to connect a React component (here `Counter`) with the Redux store.
 
-* We create a component `Counter`.
 
-* We'll generate an 'invisible' container component with the React Redux library's `connect()` function. This function takes 2 functions as parameters: `mapStateToProps` and `mapDispatchToProps`.
+* We'll generate an 'invisible' container component (`ConnectedComponent`) with the React Redux library's `connect()` function. This function takes 2 functions as parameters: `mapStateToProps` and `mapDispatchToProps`. One of the ways to do this is to put these 3 functions in the components that we want to make access Redux.
 
   * The container component is 'invisible' in the sense that it isn't going to show up in the web browser AND we're never going to see the source code for it.
     
@@ -267,51 +285,64 @@ export default counterReducer;
     * So where do we set up the `this.props.increaseCount` method / function?  We don't do this ourselves.  Instead, the invisible container component does that for us.  We tell the invisible container to do this in the `mapDispatchToProps` function, when we return an object ( `return { ... }`) that has two properties.  Notice that we've very carefully named the first one as `increaseCount` - again, whatever we chose to call this back in the JSX is what we'll copy-and-paste into here.  We define this to be a function that tells Redux that things have changed using the `dispatch()` function.
       * Not only is dispatch() built into Redux, but [according to the docs "This is the only way to trigger a state change."](https://redux.js.org/api/store#dispatchaction) 
 
+**Counter.tsx**
+
 ```typescript
-import React from 'react';
-import './App.css';
-import { increaseAction, decreaseAction } from './actions';
-import { CounterAppState } from './types';
+iimport React from 'react';
+import '../App.css';
+import { increaseAction, decreaseAction } from '../redux-components/actions';
+import { CounterAppState } from '../redux-components/types';
 import { connect } from 'react-redux';
-class Counter extends React.Component<any> {
+
+interface ICounterProps {
+    countProps: number;
+    decreaseCountProps: any ; 
+    increaseCountProps: any ; 
+}
+
+class Counter extends React.Component<ICounterProps> {
+
     render() {
         return (
             <div className="root" >
-                <b>COUNTER</b>
-                <button className="buttons" onClick={this.props.decreaseCount}> - </button>
-                <span>{this.props.countValue}</span>
-                <button className="buttons" onClick={this.props.increaseCount}> + </button>
+                <b>MY COUNTER</b>
+                <button className="buttons" onClick={this.props.decreaseCountProps}> - </button>
+                <span>{this.props.countProps}</span>
+                <button className="buttons" onClick={this.props.increaseCountProps}> + </button>
             </div>
         )
     };
 }
 
-function mapStateToProps(state: CounterAppState) {
+// Connect
+
+// Map redux state to component state
+function mapStateToProps(appState: CounterAppState) {
     return {
-        countValue: state.count
+        countProps: appState.count
     }
 }
 
+// Map redux actions to component props
 function mapDispatchToProps(dispatch: any) {
     return {
-        increaseCount: function () {
-            return dispatch(increaseAction);
-        },
-        decreaseCount: function () {
-            return dispatch(decreaseAction);
-        }
+        increaseCountProps: () => dispatch(increaseAction)
+        ,
+        decreaseCountProps: () => dispatch(decreaseAction)
     }
 }
 
-let connectedComponent = connect(
+// The Hight Order Component (HOC)
+let ConnectedComponent = connect(
     mapStateToProps,
     mapDispatchToProps
 )(Counter);
 
-export default connectedComponent;
+
+export default ConnectedComponent;
 ```
 
-#### Rules to follow for easier development 
+#### Rules to follow for robust development 
 
 * Use meaningful names for variables, modules, components etc.
 
