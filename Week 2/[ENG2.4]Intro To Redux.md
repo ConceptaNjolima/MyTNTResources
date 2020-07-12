@@ -95,7 +95,7 @@ There are four basic parts in Redux: Store, Actions, Reducer, and Connect. We wi
 
 [Gif from here](http://slides.com/jenyaterpil/redux-from-twitter-hype-to-production)
 
-### Coding a React app with Redux
+### Coding a React app with Redux (35 minutes)
 
 #### High-level steps
 
@@ -104,7 +104,7 @@ To add Redux to an app:
 * Provide your app a reference to the Redux store.
 * Map the action creators, dispatch functions, and state as props to whatever component needs data from the store.
 
-#### Simple counter example
+#### Counter example
 
 The code below covers a counter example. The screenshot shows the final result. The session uses redux-simple-counter [here](https://github.com/tnt-summer-academy/Samples/tree/main/Week_2).
 
@@ -311,7 +311,7 @@ let connectedComponent = connect(
 export default connectedComponent;
 ```
 
-### Rules to follow for easier development 
+#### Rules to follow for easier development 
 
 * Use meaningful names for variables, modules, components etc.
 
