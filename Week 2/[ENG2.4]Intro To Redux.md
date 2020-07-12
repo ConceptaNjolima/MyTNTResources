@@ -1,19 +1,19 @@
 # Intro to Redux
 
-This lesson explains what Redux is and overviews how to use it in a practice. Another lesson will cover it deeper. 
+This lesson explains what Redux is and overviews how to use it in a practice. Another lesson will cover it with more details. 
 
 ## Learning objectives
 
 * TNTs will understand the importance of Redux
-* TNTs will have a basic understanding of Redux
+* TNTs will have a **basic understanding** of Redux
 * TNTs will learn how the store, reducers, actions and connect work together
 
 
 ## Time required and pace
 
-Total time: 2 hours 30
+Total time: 2 hours 45
 
-* 30 minutes - pre-session
+* 45 minutes - pre-session
 * 60 minutes – instructional session
   * Why Redux? (10 minutes)
   * Redux concepts and architecture (15 minutes)
@@ -29,8 +29,9 @@ Total time: 2 hours 30
 * [Reducers](https://redux.js.org/basics/reducers)
 * [Providers](https://react-redux.js.org/api/provider)
 * [Connect](https://react-redux.js.org/api/connect)
+* [Videos on React with Redux - Parts 1 to 11](https://www.youtube.com/watch?v=DiLVAXlVYR0)
 
-## Pre-session (30 minutes)
+## Pre-session (45 minutes)
 
 Prepare for the session [here](https://github.com/tnt-summer-academy/Curriculum/wiki/%5BENG2.4%5D-Intro-to-Redux)
 
@@ -51,13 +52,13 @@ There are four basic parts in Redux: Store, Actions, Reducer, and Connect. We wi
 
 [Picture from here](https://www.systango.com/blog/free-react-redux-starter-kit)
 
-### Three principles of Redux
+### Architectural overiew of Redux (15 minutes)
+
+#### Three principles of Redux
 
 * Single source of truth - the global state of the application is saved in a single store.
 * Store is read-only - the only way to change the store is to emit an action.
 * Changes are made through pure functions - these functions are called reducers. They take the state and an action as parameter and return a new state.
-
-### Architectural overiew of Redux
 
 #### High level architecture view
 
@@ -86,13 +87,13 @@ There are four basic parts in Redux: Store, Actions, Reducer, and Connect. We wi
 #### Connect
 
 * We need to connect React components to Redux.
-* Connect is used to connect components, property maps, and action maps to the store. 
+* Connect is used to connect the state of the app to the components. The app state will become components props using some map functions. 
 
 #### Sample app with Redux in Action
 
 ![https://github.com/tnt-summer-academy/Curriculum/blob/main/Week%202/%5BENG2.4%5DReduxSample.gif]([ENG2.4]ReduxSample.gif)
 
-[Gif from here](https://camo.githubusercontent.com/5aba89b6daab934631adffc1f301d17bb273268b/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6d656469612d702e736c69642e65732f75706c6f6164732f3336343831322f696d616765732f323438343535322f415243482d5265647578322d7265616c2e676966)
+[Gif from here](http://slides.com/jenyaterpil/redux-from-twitter-hype-to-production)
 
 ### Coding a React app with Redux
 
@@ -100,8 +101,8 @@ There are four basic parts in Redux: Store, Actions, Reducer, and Connect. We wi
 
 To add Redux to an app:
 
-* Provide your app a reference to the Redux store
-* Map the action creators, dispatch functions, and state as props to whatever component needs data from the store
+* Provide your app a reference to the Redux store.
+* Map the action creators, dispatch functions, and state as props to whatever component needs data from the store.
 
 #### Simple counter example
 
