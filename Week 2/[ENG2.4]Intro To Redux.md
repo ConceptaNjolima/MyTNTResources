@@ -113,8 +113,6 @@ The code below covers a counter example. The screenshot shows the final result. 
 #### Installation
 
 * `npm install`
-* `npm add redux`
-* `npm add react-redux`
 
 #### Files organization
 
