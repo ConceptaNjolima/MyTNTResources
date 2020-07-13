@@ -41,7 +41,7 @@ Prepare for the session [here](https://github.com/tnt-summer-academy/Curriculum/
 
 * Redux is a state management container.
 * React permits to solve the problems of making the application state consistent with the UI. 
-* Redux, on the other hand, was introduced to maintain the application state. Each component having a state complicates maintaining a general application state, especially with the dependecies between components. Your typical app does a lot of state generating, processing, and transferring.
+* Redux, on the other hand, was introduced to maintain the application state. Each component having a state complicates maintaining a general application state, especially with the dependencies between components. Your typical app does a lot of state generating, processing, and transferring.
 * So far, you have only been exposed to immutable properties passed into components (from their parents) and mutable states changed within components.
 * What if we need to pass a mutable property between components, change the said property and have the change affect different components?
 * Redux lets us keep the state that persists through out the app in one place, the store, that can be accessed by every component.
@@ -351,6 +351,10 @@ export default ConnectedComponent;
 * Create an interface for your actions and an enum / constants for your action types. This ensures that your reducer won't expect a property that doesn't exist on that action type.
 
 * Decompose the app - reducer, actions, types, components etc.
+
+# Post-session (60 minutes)
+
+See the post-session [here](https://github.com/tnt-summer-academy/Curriculum/wiki/%5BENG2.4%5D-Intro-to-Redux)
 
 # Stretch
 
