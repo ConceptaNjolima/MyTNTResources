@@ -1,13 +1,13 @@
 # Team Project Practice
 
-The most important aspect of this exercise is to **start practcding the process that you'll use to develop your prototype app that your team will show off in week 7**.  The specific app that you'll be developing this week ('YourShare') is different from your team's app prototype but the overall steps & approach will be the same for both (or at least very similar).
+The most important aspect of this exercise is to **start practicing the process that you'll use to develop your prototype app that your team will show off in week 7**.  The specific app that you'll be developing this week ('YourShare') is different from your team's app prototype but the overall steps & approach will be the same for both (or at least very similar).
 
 IMPORTANT NOTE: We will start working on the YourShare app today *and we will keep working on it throughout this week*.  There's a lot to do and it will take a while for this all to fully sink in.
 
 Today we'll be working on the following: 
 
 1.  Each team will review the YourShare spec and then break down the engineering work. 
-2. The teams then merge initial changes for the project into the same repo and resolve and resolve any merge issues. 
+2. The teams then merge initial changes for the project into the same repo and resolve any merge issues. 
 
 **The goal is not to complete the prototype of the app rather gain experience breaking down the work, coding together, and resolving conflicts.**
 
@@ -28,7 +28,7 @@ Total time: 3 hours, 45 instruction, remaining work time
 ## NT Deliverables:
 
 1. Within your team's AppPrototype repo in GitHub, create a new Project to organize your work on YourShare
-   - [Spec for YourShare]()([https://github.com/tnt-summer-academy/Curriculum/blob/main/Reference/Sample%20spec%20-%20YourShare.md](https://github.com/tnt-summer-academy/Curriculum/blob/main/Reference/Sample%20spec%20-%20YourShare.md))
+   - [Spec for YourShare](https://github.com/tnt-summer-academy/Curriculum/blob/main/Reference/Sample%20spec%20-%20YourShare.md)
 2. Within that project find the Kanban board and create Cards, with 1 task per card, in order to break down the overall work into specific steps
    - Each card must start with "Done when"
    - Each card must be assigned to a specific person.
@@ -47,7 +47,7 @@ None
 
 ### Demo: Kanban boards in GitHub (5 minutes)
 
-First, let's look at [a project in GitHub by following this linkhttps://github.com/tnt-summer-academy/Team00-AppPrototype](https://github.com/tnt-summer-academy/Team00-AppPrototype) 
+First, let's look at [a project in GitHub by following this link https://github.com/tnt-summer-academy/Team00-AppPrototype](https://github.com/tnt-summer-academy/Team00-AppPrototype) 
 
 1. In that repo you'll find a tab labeled "Projects":
    ![image-20200711171227457](images/%5BENG2.6%5DTeamProjectPractice/image-20200711171227457.png)
@@ -62,7 +62,7 @@ Please notice a couple of things:
 
 1. <u>This task contains a clear 'Definition Of Done"</u> (the part that starts with "Done when:..."). 
    For the work that you're doing today (with your team) **every task must contain a statement that clearly describes how you'll know the task is finished**, and that statement must start with "Done when:".
-2. <u>This task is assigned to someone.</u>   (In the above image that's "Bansenauer")
+2. <u>This task is assigned to one person.</u>   (In the above image that's "Bansenauer")
    That person is responsible for either getting the task done and communicating with the rest of the team about the current status of the task.  
    (It's fine to move tasks around between people, but it's important that we don't let tasks 'fall between the cracks' because nobody was responsible for it)
 
@@ -87,7 +87,7 @@ You can add a new card here a couple different ways.  The way that we're recomme
     * Breakdown the engineering work.
     * Build the initial screens for the project, associated with the P0, most important work items, merge them in the same repo, and connect the navigation across the screens.
 
-When you're done, you'll have the shell of the app that navigates between the major pages and some place holder controls to represent the functionality. It'll feel very much like a high-fidelity prototype. Today we'll start by looking the spec and breaking down the work.
+When you're done, you'll have the shell of the app that navigates between the major pages and some place holder controls to represent the functionality. It'll feel very much like a high-fidelity prototype. Today we'll start by looking at the spec and breaking down the work.
 
 **At this point you should work with your team to start breaking down the work.**  Your initial technical goal is to create a page (in React) that looks like each page in the spec; you do NOT need to make anything in the page work.  Your initial PM goal is to divide up the work so that it's clear who's working on what.
 
@@ -108,7 +108,7 @@ Your instructor will walk you through a very brief example of breaking a page in
 
 Your team should choose a single page to work on together, breaking that page down into individual compoents.  For now y'all can work in a Markdown file instead of the Kanban cards to keep things quick.
 
-Create a Markdown document to be stored your AppPrototype repo (within the YourShare folder).  You can do this directly within GitHub itself using the 'Add File' button:
+Create a Markdown document to be stored in your AppPrototype repo (within the YourShare folder).  You can do this directly within GitHub itself using the 'Add File' button:
 ![image-20200711191232377](images/%5BENG2.6%5DTeamProjectPractice/image-20200711191232377.png)
 
 Think about what elements of the page are naturally grouped together (that grouping might make a good component), think about what you might want to move around on the page (those chunks of the page that you might want to move might each make a good component), and make sure to look for things that are repeated across different pages (such as the 'Cancel/< action >' button pairs )(they might be good as a component).
