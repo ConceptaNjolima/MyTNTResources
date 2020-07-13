@@ -160,7 +160,6 @@ Start your development of YourShare by doing the following within your team.  If
 
 1. For all your work on YourShare, please use your team's AppPrototype repo on GitHub but only put the YourShare work in the YourShare folder
    - Create the YourShare folder, if you haven't already.
-   - [Rename your 'master' branch to 'main'](https://www.hanselman.com/blog/EasilyRenameYourGitDefaultBranchFromMasterToMain.aspx)
 2. The one person clone the repo locally.
 3. That one person should copy the [Simon Says](https://github.com/tnt-summer-academy/Samples/tree/main/Week_2/simon_says)  program into the YourShare folder.  Add/commit/push it back to GitHub.
    - This way y'all can start with working, multi-page navigation code
