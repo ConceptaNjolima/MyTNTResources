@@ -133,7 +133,7 @@ Once you have sign-off from your engineering coach you can start building.
 
 Let's look at the YourShare app that has been uploaded to your `TeamXX-AppPrototype` repos 
 
-Specifically, let's look at [the 'App.tsx' file](https://github.com/tnt-summer-academy/Samples/blob/main/Week_2/simon_says/src/App.tsx).
+Specifically, let's look at [the 'App.tsx' file](https://github.com/tnt-summer-academy/Team00-AppPrototype/blob/main/yourshare/src/App.tsx).
 
 ***Essentially, the App will keep a variable as part of it's React state (NOT in Redux) that keeps track of which page to display.***
 
