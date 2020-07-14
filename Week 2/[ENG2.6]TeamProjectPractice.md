@@ -112,7 +112,7 @@ Your instructor will walk you through a very brief example of breaking a page in
 
 ### Exercise: Breaking a page into Components (15 minutes)
 
-Your team should choose a single YourShare page to work on together, breaking that page down into individual compoents.  For now y'all can work in a Markdown file instead of the Kanban cards to keep things quick.
+Your team should choose a single YourShare page to work on together, breaking that page down into individual components.  For now y'all can work in a Markdown file instead of the Kanban cards to keep things quick.
 
 Create a Markdown document to be stored in your AppPrototype repo (within the YourShare folder).  You can do this directly within GitHub itself using the 'Add File' button:
 ![image-20200711191232377](images/%5BENG2.6%5DTeamProjectPractice/image-20200711191232377.png)
