@@ -124,7 +124,7 @@ Write down your Team's list of components in the Markdown file.
 If you're looking for advice on how to format the Markdown file:
 Start a new component by putting in a blank line followed by a line that starts with two hash marks ( ## ) before a short name for the component.  Leave a blank line between the ## line and your short paragraph (1-3 sentences, tops) describing what goes into that component.
 
-
+More information on the Mardown format is available [here](https://guides.github.com/features/mastering-markdown).
 
 After you've broken down the work, review with your coaches.
 Once you have sign-off from your engineering coach you can start building.
