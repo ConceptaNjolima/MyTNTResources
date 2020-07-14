@@ -326,7 +326,7 @@ Check-in on the progress and work breakdown for YourShare:
 
 * Work on the walkthrough should be wrapping up.
 * NTs are introduced to adaptive layouts, flex properties and the different properties on a flex container. Discuss your experiences with shipping for different screen sizes. Re-iterate the MVP targets one large or small.
-* NTs are introduced to the spec they'll be writting.
+* NTs are introduced to the spec they'll be writing.
 
 #### Details
 
