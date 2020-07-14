@@ -18,7 +18,7 @@ Total time: 1.25 hours
 	* 30 minutes - Reflect on demo code, read the docs
 * 75 minutes (1:15) - Session:
 	* 15 minutes – answer review questions in your table group
-	* 15 minutes – what are component libraries
+	* 5 minutes – what are component libraries
 	* 15 minutes – using components inside your components
 	* 15 minutes - how to read documentation
 	* 15 minutes - Reacting to user input on the components
@@ -30,7 +30,7 @@ Total time: 1.25 hours
 
 ## Session (The lesson)
 
-### Pre-session Review Questions
+### Exercise: Pre-session Review Questions
 
 Working within a group, do your best to answer the following questions:
 
@@ -47,7 +47,7 @@ Working within a group, do your best to answer the following questions:
 
 1. Why do you think a collection of widgets (like this FluentUI library) would be useful in general?
 
-### What are component libraries
+### Demo: What are component libraries
 
 A component library is a collection of components installed generally through a package manager that provides common solutions whether it's a UI library, testing library, etc.
 
@@ -65,7 +65,7 @@ Things to consider before using a component library
 * Ease of use generally through an API defined by the component library
 * Tradeoffs between speed, customization time, cost and immediate business needs
 
-### Using components inside your components
+### Demo: Using components inside your components
 
 ![Yo Dawg joke: Yo Dawg I heard you like components so I put a component inside your component, So you can reuse your components while reusing the library's components][YoDawg]
 
@@ -143,7 +143,7 @@ Take the above code (with the component AND the App class) and separate the comp
 
 There's an [EXAMPLE SOLUTION](ENG3.3/SeparatingComponentIntoFiles.md) here.  The idea is that you can use this to check your work during the class session, as a reference afterwards, and also to help get you unstuck if you and your group are stuck.
 
-### How to read documentation
+### Demo: How to read documentation
 
 [https://developer.microsoft.com/en-us/fluentui#/get-started](https://developer.microsoft.com/en-us/fluentui#/get-started)
 
@@ -165,7 +165,7 @@ Documentation is also good for when you're not sure if something will *always* w
 
 Answer ([AFAICT](https://www.urbandictionary.com/define.php?term=afaict): No.  B/c it's not mentioned on the documentation page anywhere)
 
-### Reacting to user input on the components
+### Demo: Reacting to user input on the components
 Demo: In this code sample we'll change the 'text' that the persona displays into a 'click counter', so that our component will do something every time you click on it.
 
 ```typescript
