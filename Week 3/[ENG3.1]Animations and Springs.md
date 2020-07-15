@@ -9,44 +9,44 @@ This lesson explains how to make animations using react-springs
 
 ## Time required and pace
 
-Total time: 1 hour
+* Total time: 2 hours, 45 minutes
 
-* 20 minutes - explain: How to add spring animations to an element.
-* 20 minutes - Explore spring properties
-* 20 minutes - evaluate: create an animated component
+  - 45 minutes - **Pre-session**: background learning, research, and investigations
+  - 60 minutes - **Instructional Session**
+  - 60 minutes - **Post-session**:
 
 ## Background / review
 
 * Function components/Class Components
 * Props, state, Render
 
-## Lesson details
+## Pre-session (45 minutes)
 
-### Add react-springs to a function (20 minutes)
+*Prepare for the session* [here](../../../wiki/[ENG2.2]View-component-layout)
 
-1. Yarn add react-springs
+## Session Details
 
-## How To Use Springs (20 minutes)
+### How To Use Springs (20 minutes)
 
-Springs are used by assigning the style property of an element to a "spring" object. This can be done with a spring component or a spring hook in a function component.
+Springs are used by assigning the style property of an element to a "spring" object. This can be done with a **Spring component** (within a class component) or a **Spring hook** (within a function component.)
 
-1. Spring Component in a class component:
+#### Spring Component within a Class component
 
-A spring component expects a function returning a JSX element. The function will get a spring object that can be assigned to its style. As the spring changes the style object will be updated.
+A spring component expects a function returning a JSX element. The function will get a spring object, often called `props`, that can be assigned to its style. As the spring changes the style object will be updated.
 
     class AnimatedView extends React.Component {
       render() {
         return (
-          <Spring from={{ opacity: 0 }} to={{ opacity: 1 }}/>;
+          <Spring from={{ opacity: 0 }} to={{ opacity: 1 }}>
             {props => <div style={props}>hello</div>
-          </Spring>;
-        );
+          </Spring>
+        )
       }
     }
 
-2. Spring hooks in a function Component
+#### Spring Hooks within a Function Component (only)
 
-Spring hooks are used by calling useSpring with an object containing the basic spring properties. The object returned can then be assigned to a JSX element's style property
+Spring hooks are used by calling `useSpring()` with an object containing the basic spring properties. The object returned can then be assigned to a JSX element's style property. The hook requires that you use an `animated` extentions for the containing JSX elements - create this [using the animated element](), like `<animated.div ... > ... </animated.div>`
 
     function AnimatiedFunc() {
       const springProps = useSpring({
