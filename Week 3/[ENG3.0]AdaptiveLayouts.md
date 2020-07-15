@@ -15,10 +15,11 @@ Total time: 2 hours, 45 minutes
 
 - 45 minutes - **Pre-session**: background learning, research, and investigations
 - 60 minutes - **Instructional Session**
-  - 20 minutes - Discussion in groups
-  - 10 minutes –  Layout using HTML Tables
-  - 10 minutes - Layout using CSS Flexbox
-  - 5 minutes - Exercise Setup
+  - 20 minutes - Discussion on the adaptive layout of the  YourShare account page
+  - 10 minutes –  CSS
+  - 15 minutes - Media queries
+  - 10 minutes - Relative sizes
+  - 5 minutes - YourShare setup
 - 60 minutes - **Post-session**: YourShare Exercise
 
 ## Pre-session (45 minutes)
