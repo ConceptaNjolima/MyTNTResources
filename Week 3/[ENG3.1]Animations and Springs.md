@@ -104,7 +104,7 @@ A [Spring hook](https://www.react-spring.io/docs/hooks/use-spring) is used **as 
 - `useChain` to queue or chain multiple animations together
 
 #### Core API Properties
-  
+
 See [here](https://www.react-spring.io/docs/hooks/api)
 
 - **from**: Object of type CssProperties, specifying the initial style of the animation.
@@ -132,18 +132,19 @@ See [here](https://www.react-spring.io/docs/hooks/api)
 1. **Start** Teams call with your team
 2. **Pull and Review** together the [CSS and React-Spring animation sample](https://github.com/tnt-summer-academy/Samples/tree/main/Week_3/animation-demo) code 
 3. **Decide** together on ONE page component to apply BOTH types of animations, CSS and React-Spring. 
-4. **Divide your team**  with one Focus Group working on CSS and one on React-Spring animation.
+4. **Divide your team**  in two, with one Focus Group working on *CSS animation* and one on *React-Spring animation*.
 5. **Animate the Page** following these [animation best practices](https://animate.style/#best-practices)
 
 ### Code Practice YourShare with Focus Group (30 minutes)
 
-- **Open** YourShare in VS Code; start a LiveShare session with your focus group.
+- **Open** YourShare in VS Code; start a LiveShare session with your focus group; post a link in the Teams chat
+  ( Your team will have two LiveShare links in the chat - one for each focus group)
 
 - **Pull** from main; run `npm install react-spring` and `npm install animate.css` 
 
 - **FOCUS GROUP: CSS**
 
-  - **Apply** one [CSS animation](https://animate.style/) to an element in one YourShare page. 
+  - **Apply** one [CSS animation](https://animate.style/) to an element in the YourShare page. 
 
   - You will need to include this link in the `head` of your `public/index.html` page 
 
