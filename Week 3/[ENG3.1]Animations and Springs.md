@@ -69,7 +69,7 @@ A [Spring hook](https://www.react-spring.io/docs/hooks/use-spring) is used **as 
     function AnimatiedFunc() {
       const springProps = useSpring({
         from: {
-          opacity: 1
+          opacity: 0
         },
         to: {
           opacity: 1
@@ -118,17 +118,36 @@ A [Spring hook](https://www.react-spring.io/docs/hooks/use-spring) is used **as 
 
 ### Code Practice Setup - Sample App (5 minutes)
 
-1. **Start** a live share session with your team
-2. **Pull and Review** together the [CSS and React-Spring animation sample](https://github.com/tnt-summer-academy/Samples/tree/main/Week_3/animation-demo) code focusing on setup for the next part
+1. **Start** Teams call with your team
+2. **Pull and Review** together the [CSS and React-Spring animation sample](https://github.com/tnt-summer-academy/Samples/tree/main/Week_3/animation-demo) code 
+3. **Briefly discuss** together which page and component to apply an animation together. 
+4. **Divide your team**  with one focus group working on CSS and one on React-Spring animation .
 
-### Code Practice YourShare with Team (30 minutes)
+### Code Practice YourShare with Focus Group (30 minutes)
 
-1. Briefly discuss together which page and component to apply an animation together. Pick which type of animation.
-2. **Open** YourShare in VS Code; start a LiveShare session with you team.
-3. **Pull** from main; run `npm add react-spring` then `npm install`
-1. **Apply** one [CSS animation](https://animate.style/) to an element in one YourShare page. Be sure to follow their [animation best practices](https://animate.style/#best-practices)
-2. **Convert** one YourShare page from a class component to a function component
-3. **Build** a React-Spring hook animation for some element in the page
+- **Open** YourShare in VS Code; start a LiveShare session with your focus group.
+
+- **Pull** from main; run `npm install react-spring` and `npm install animate.css` 
+
+- **GROUP CSS**
+
+  - **Apply** one [CSS animation](https://animate.style/) to an element in one YourShare page. 
+
+  - You may need to include this link in your `index.html` page 
+
+    ```html
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+      />
+    ```
+
+  - Be sure to follow their [animation best practices](https://animate.style/#best-practices)
+
+- **GROUP REACT-SPRING**
+
+  - **Convert** one YourShare page from a class component to a function component
+  - **Build** a React-Spring hook animation for some element in the page
 
 ## Post-session (60 minutes)
 
