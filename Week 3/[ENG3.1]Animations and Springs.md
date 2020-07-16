@@ -131,8 +131,9 @@ See [here](https://www.react-spring.io/docs/hooks/api)
 
 1. **Start** Teams call with your team
 2. **Pull and Review** together the [CSS and React-Spring animation sample](https://github.com/tnt-summer-academy/Samples/tree/main/Week_3/animation-demo) code 
-3. **Briefly discuss** together which page and component to apply an animation together. 
-4. **Divide your team**  with one focus group working on CSS and one on React-Spring animation .
+3. **Decide** together on ONE page component to apply BOTH types of animations, CSS and React-Spring. 
+4. **Divide your team**  with one Focus Group working on CSS and one on React-Spring animation.
+5. **Animate the Page** following these [animation best practices](https://animate.style/#best-practices)
 
 ### Code Practice YourShare with Focus Group (30 minutes)
 
@@ -140,11 +141,11 @@ See [here](https://www.react-spring.io/docs/hooks/api)
 
 - **Pull** from main; run `npm install react-spring` and `npm install animate.css` 
 
-- **GROUP CSS**
+- **FOCUS GROUP: CSS**
 
   - **Apply** one [CSS animation](https://animate.style/) to an element in one YourShare page. 
 
-  - You may need to include this link in your `index.html` page 
+  - You will need to include this link in the `head` of your `public/index.html` page 
 
     ```html
     <link
@@ -153,9 +154,7 @@ See [here](https://www.react-spring.io/docs/hooks/api)
       />
     ```
 
-  - Be sure to follow their [animation best practices](https://animate.style/#best-practices)
-
-- **GROUP REACT-SPRING**
+- **FOCUS GROUP: REACT-SPRING**
 
   - **Convert** one YourShare page from a class component to a function component
   - **Build** a React-Spring hook animation for some element in the page
