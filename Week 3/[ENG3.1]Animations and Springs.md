@@ -103,7 +103,9 @@ A [Spring hook](https://www.react-spring.io/docs/hooks/use-spring) is used **as 
 
 - `useChain` to queue or chain multiple animations together
 
-  #### Core API Properties
+#### Core API Properties
+  
+See [here](https://www.react-spring.io/docs/hooks/api)
 
 - **from**: Object of type CssProperties, specifying the initial style of the animation.
 
