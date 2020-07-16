@@ -15,7 +15,7 @@ Total time: 1 hour 45 minutes
 
 * 15 minutes - Pre-session
 * 60 minutes - Instructional Session
-  * 10 minutes – What is unit testing? Why is it important in the software development lifecycle?
+  * 10 minutes – What is unit testing? Why is it important in the software development lifecycle? What are the other testing techniques?
   * 10 minutes – Red, Green, Refactor
   * 10 minutes - Jest
   * 30 minutes - Write unit tests and practice
@@ -32,7 +32,7 @@ Prepare for the session [here](https://github.com/tnt-summer-academy/Curriculum/
 
 ## Instructional session (60 minutes)
 
-### What is Unit Testing? Why do we need it? (10 minutes)
+### What is Unit Testing? Why do we need it? What are other testing techniques? (10 minutes)
 
 **Definitions**
 
@@ -74,8 +74,6 @@ Jest is an open JavaScript testing library. While Jest can be used to test any J
 * Setup and Teardown - If you have code that needs to execute before or after many tests, you can use `beforeEach()` and `afterEach()`
 * Async Code - Jest provides several ways to wait for async code to finish before proceeding to the next test
 
-### Let's write unit tests (35 minutes)
-
 #### Install and configure Jest
 
 1. `npm install --save-dev jest`
@@ -84,10 +82,12 @@ Jest is an open JavaScript testing library. While Jest can be used to test any J
 
 #### Run Jest
 
-1. A file `App.test.tsx` is created by create-react-app to test `App.tsx`. For each file `file.tsc` under test, we can create a file `file.test.tsx`
+1. A file `App.test.tsx` is created automatically by create-react-app to test `App.tsx`. For each file `file.tsc` under test, we can create a file `file.test.tsx`
 2. In the Terminal window, use 'npm t' to run the tests
 
 #### Troubleshooting
+
+It may happen that get an error when running 'npm t'. 
 
 #### Red, Green, Refactor in Jest
 
@@ -97,7 +97,7 @@ This is how passing and failing tests appear in Jest.
 
 ![fail](https://github.com/tnt-summer-academy/Curriculum/blob/main/Week%203/%5BENG3.2%5Dredfail.png)
 
-#### Writing unit tests in Jest
+### Let's write unit tests in Jest (35 minutes)
 
 * `test` is a function that takes a string and a function as parameters. The overall syntax of test is `test("", () => {expect().matcher()})`. The first parameter (a string) is the title of the test. The second parameter is a function that contains the expectations to test. That part uses a matcher.  A complete description of `test` is available [here](https://jestjs.io/docs/en/api#testname-fn-timeout). The number of calls of `test` determines the number of test cases
 * There are lots of different matchers: `toBe`, `toEqual`, `toBeDefined`, `toContain`, `toEqual` etc. A list is available [here](https://jestjs.io/docs/en/expect)
@@ -109,6 +109,13 @@ This is how passing and failing tests appear in Jest.
     ```typescript
     test('a very simple test', () => {
         expect(true).toBe(true)
+    })```
+
+* This test will always fail
+
+    ```typescript
+    test('a very simple test', () => {
+        expect(true).toBe(false)
     })```
 
 * Testing if a list contains an object
@@ -124,37 +131,25 @@ This is how passing and failing tests appear in Jest.
         expect(productList).toContain('Xbox')
     })```
     
- * Testing if a function returns the correct result
+* Testing if a function returns the correct result
 
- Assuming a function `inchesOfRain()` that return 0 if it does not rain.
+Assuming a function `inchesOfRain()` that return 0 if it does not rain.
  
     ```typescript 
-    test('did not rain', () => {
+    test('did not rain', () => {      
       expect(inchesOfRain()).toBe(0);
     });```
     
-  * Testing for an exception
+* Testing for an exception
   
-    ```typescript 
-    function functionWithException() {
-      throw new Error('you are using the wrong API key');
-    }
+* Testing the UI - The text that is rendered contains *Welcome*
 
-    test('compiling android goes as expected', () => {
-      expect(compileAndroidCode).toThrow();
-      expect(compileAndroidCode).toThrow(Error);
-
-      // You can also use the exact error message or a regexp
-      expect(compileAndroidCode).toThrow('you are using the wrong JDK');
-      expect(compileAndroidCode).toThrow(/JDK/);
-    });````
-  
-  * Testing the UI 
+We use a regular expression in the test
 
     ```typescript
     test('renders learn react link', () => {
       const { getByText } = render(<App />);
-      const linkElement = getByText(/learn react/i);
+      const linkElement = getByText(/Welcome/);
       expect(linkElement).toBeInTheDocument();
     });````
     
@@ -172,6 +167,6 @@ A starter project has been created which contains stubbed unit tests. Use the Re
 
 ## Post-session (30 minutes)
 
-* Finish writing unit tests for the 'unit-testing-with-jest' project 
+* Finish writing unit tests related to the UI for the 'unit-testing-with-jest' project 
 
 * Write unit tests related to the YourShare project 
