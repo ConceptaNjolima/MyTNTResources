@@ -36,25 +36,25 @@ Prepare for the session [here](https://github.com/tnt-summer-academy/Curriculum/
 
 **Definitions**
 
-* Test case: A test case is composed of a title, a scenario, and expected and actual outputs. A test passes if the expect and actual outputs match
-* Unit testing: Unit testing is an automated testing technique where tests are written and executed by software developers to ensure that a small section of an application ("unit") meets its specification and behaves as intended. A unit can be a function, a class, an interface etc. Unit testing is a type of white box testing (testing with access to code)  
-* Functional testing: Functional testing is a quality assurance (QA) process and a type of black box testing that bases its test cases on the specifications of an aplication under test. Functional testing is done by testers. Black box testing looks at the application under test as a black box
-* Integration testing: Integration testing involves the testing of combined units that were tested independently and work fine. The purpose of this level of testing is is to expose faults in the interaction between integrated units. Integration testing is done by testers or developers. It can be a type of white box or black box testing
+* **Test case:** A test case is composed of a title, a scenario, and expected and actual outputs. A test passes if the expect and actual outputs match
+* **Unit testing:** Unit testing is an automated testing technique where tests are written and executed by software developers to ensure that a small section of an application ("unit") meets its specification and behaves as intended. A unit can be a function, a class, an interface etc. Unit testing is a type of white box testing (testing with access to code)  
+* **Functional testing:** Functional testing is a quality assurance (QA) process and a type of black box testing that bases its test cases on the specifications of an aplication under test. Functional testing is done by testers. Black box testing looks at the application under test as a black box
+* **Integration testing:** Integration testing involves the testing of combined units that were tested independently and work fine. The purpose of this level of testing is is to expose faults in the interaction between integrated units. Integration testing is done by testers or developers. It can be a type of white box or black box testing
 
-**Question**
+**Question to answer by the TNTs**
 
 * What is/are the difference/s between unit testing, integration testing, and functional testing?
 
 **Benefits of unit testing**
 
-* Confidence in updating code - As a new developer on a team, if you make changes to a module and all the unit tests pass, you can have that much more confidence in not introducing bugs. The database of unit tests increases and tests are executed each time, a process called regression testing
-* Reliable modules - A modules inputs can be tested with each unit test serving as a different scenario
+* Confidence in updating code - As a new developer on a team, if you make changes to a module and all the unit tests pass, you can have that much more confidence in not introducing bugs. The database of unit tests increases and tests are executed each time, a process called *regression testing*
+* Reliable modules - A module inputs can be tested with each unit test serving as a different scenario
 * Reusability - An indirect benefit to writing your module to be "testable" results in smaller units of code with, ideally, one singular responsibilty
 * Debugging is simpler - When searching for root cause of a defect, you simply identify the module with a failing test. If there are no failing tests then that means there's a missing unit test ready to be written!
 
-### Red, Green, Refactor (10 minutes)
+### Red, Green, Refactor (5 minutes)
 
-Red, Green, Refactor is an engineering pattern of Test Driven Development (TDD) that is an effective way of writing unit tests.
+Red, Green, Refactor is an engineering pattern of Test Driven Development (TDD) that is an effective way of writing unit tests
 
 1. Design a test by creating test scenarios (sometimes referred to as test cases)
 2. Write a failing test (Red)
@@ -62,16 +62,19 @@ Red, Green, Refactor is an engineering pattern of Test Driven Development (TDD) 
 4. Refactor the code
 5. Re-run the test to make sure it still passes
 
+![RGR](https://s3.amazonaws.com/codecademy-content/programs/tdd-js/articles/red-green-refactor-tdd.png)
+
+Image from [here](https://www.codecademy.com/articles/tdd-red-green-refactor)
+
 ### Jest (10 minutes)
 
 Jest is an open JavaScript testing library. While Jest can be used to test any JavaScript library, it is very popular when it comes to React 
 
 * Using Matchers - When testing values, Jest provides "matchers" to help compare values
 * Setup and Teardown - If you have code that needs to execute before or after many tests, you can use `beforeEach()` and `afterEach()`
-* Mocking - If your class depends on external classes, mocking can help to test behavior specific to your class only. Mocking is technique where code parts are replaced by dummy implementations that emulate real code. Mocking helps achieve isolation of tests. Mocking is primarily used in unit testing
 * Async Code - Jest provides several ways to wait for async code to finish before proceeding to the next test
 
-### Let's write unit tests (30 minutes)
+### Let's write unit tests (35 minutes)
 
 #### Install and configure Jest
 
@@ -81,14 +84,23 @@ Jest is an open JavaScript testing library. While Jest can be used to test any J
 
 #### Run Jest
 
-1. A file `App.test.tsx` is created by create-react-app to test `App.tsx`. For each file `file.tsc` under test, there is a file `file.test.tsx`
-2. In the Terminal window, use 'npm t'
+1. A file `App.test.tsx` is created by create-react-app to test `App.tsx`. For each file `file.tsc` under test, we can create a file `file.test.tsx`
+2. In the Terminal window, use 'npm t' to run the tests
+
+#### Troubleshooting
 
 #### Red, Green, Refactor in Jest
+
+This is how passing and failing tests appear in Jest.
 
 ![pass](https://github.com/tnt-summer-academy/Curriculum/blob/main/Week%203/%5BENG3.2%5Dgreepass.png)
 
 ![fail](https://github.com/tnt-summer-academy/Curriculum/blob/main/Week%203/%5BENG3.2%5Dredfail.png)
+
+#### Writing unit tests in Jest
+
+* `test` is a function that takes a string and a function as parameters. The overall syntax of test is `test("", () => {expect().matcher()})`. The first parameter (a string) is the title of the test. The second parameter is a function that contains the expectations to test. That part uses a matcher.  A complete description of `test` is available [here](https://jestjs.io/docs/en/api#testname-fn-timeout). The number of calls of `test` determines the number of test cases
+* There are lots of different matchers: `toBe`, `toEqual`, `toBeDefined`, `toContain`, `toEqual` etc. A list is available [here](https://jestjs.io/docs/en/expect)
 
 #### Examples of unit tests
 
@@ -113,28 +125,53 @@ Jest is an open JavaScript testing library. While Jest can be used to test any J
     })```
     
  * Testing if a function returns the correct result
+
+ Assuming a function `inchesOfRain()` that return 0 if it does not rain.
  
     ```typescript 
     test('did not rain', () => {
       expect(inchesOfRain()).toBe(0);
     });```
     
-#### Writing unit tests in Jest
+  * Testing for an exception
+  
+    ```typescript 
+    function functionWithException() {
+      throw new Error('you are using the wrong API key');
+    }
 
-* `test` is a function that takes a string and a function as parameters. The string is the title of the test. In the function, we expect something to match something. The overall syntax of test is `test("", () => {expect().matcher()})`. A complete description of `test` is available [here](https://jestjs.io/docs/en/api#testname-fn-timeout). The number of calls of `test` determines the number of test cases
-* There are lots of different matchers: `toBe`, `toEqual`, `toBeDefined`, `toContain`, `toEqual` etc. A list is available [here](https://jestjs.io/docs/en/expect)
+    test('compiling android goes as expected', () => {
+      expect(compileAndroidCode).toThrow();
+      expect(compileAndroidCode).toThrow(Error);
+
+      // You can also use the exact error message or a regexp
+      expect(compileAndroidCode).toThrow('you are using the wrong JDK');
+      expect(compileAndroidCode).toThrow(/JDK/);
+    });````
+  
+  * Testing the UI 
+
+    ```typescript
+    test('renders learn react link', () => {
+      const { getByText } = render(<App />);
+      const linkElement = getByText(/learn react/i);
+      expect(linkElement).toBeInTheDocument();
+    });````
+    
 
 #### Practice writing unit tests
 
-A starter project has been created which contains stubbed unit tests. Use the Red, Green, Refactor pattern to write some unit tests
+A starter project has been created which contains stubbed unit tests. Use the Red, Green, Refactor pattern to complete the unit tests.
 
-1. `git clone` the Samples GitHub repository [here](https://github.com/tnt-summer-academy/Samples)
+1. `git clone` the Samples GitHub repository [here](https://github.com/tnt-summer-academy/Samples) or use `git pull`
 2. Use VS Code to open the 'Week_3/unit-testing-with-jest' project
 3. Use Cmd+J to reveal the Terminal in VS Code
 4. 'jest' and 'ts-jest' are already listed as dependencies in 'package.json' so in the Terminal window type 'npm install' to install both dependencies
 5. To run tests type 'npm t' in the Terminal window
-6. The file 'src/store-locator/StoreFilter.test.tsx' has empty test stubs to complete
+6. The file 'src/store-locator/StoreFilter.test.tsx' needs to be completed
 
 ## Post-session (30 minutes)
 
-* Finish writing unit tests for the 'unit-testing-with-jest' project
+* Finish writing unit tests for the 'unit-testing-with-jest' project 
+
+* Write unit tests related to the YourShare project 
