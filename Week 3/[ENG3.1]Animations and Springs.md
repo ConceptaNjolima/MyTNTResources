@@ -116,14 +116,17 @@ A [Spring hook](https://www.react-spring.io/docs/hooks/use-spring) is used **as 
 
 - **Config**: Takes in arguments to specify the physical properties of the animation(velocity, duration, etc)
 
-### Code Practice Setup (5 minutes)
+### Code Practice Setup - Sample App (5 minutes)
 
 1. **Start** a live share session with your team
-2. **Review** together the [CSS and React-Spring animation sample](https://github.com/tnt-summer-academy/Samples/tree/main/Week_3/animation-demo) code focusing on setup for the next part
+2. **Pull and Review** together the [CSS and React-Spring animation sample](https://github.com/tnt-summer-academy/Samples/tree/main/Week_3/animation-demo) code focusing on setup for the next part
 
-### Code Practice with Team (30 minutes)
+### Code Practice YourShare with Team (30 minutes)
 
-1. **Apply** one [CSS animation](https://animate.style/) to animate an element in one YourShare page. Be sure to follow their [animation best practices](https://animate.style/#best-practices)
+1. Briefly discuss together which page and component to apply an animation together. Pick which type of animation.
+2. **Open** YourShare in VS Code; start a LiveShare session with you team.
+3. **Pull** from main; run `npm add react-spring` then `npm install`
+1. **Apply** one [CSS animation](https://animate.style/) to an element in one YourShare page. Be sure to follow their [animation best practices](https://animate.style/#best-practices)
 2. **Convert** one YourShare page from a class component to a function component
 3. **Build** a React-Spring hook animation for some element in the page
 
