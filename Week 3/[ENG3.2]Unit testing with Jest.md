@@ -91,7 +91,7 @@ We will be using the code [here](https://github.com/tnt-summer-academy/Samples/W
 
 #### Troubleshooting
 
-It may happen that get an error when running 'npm t'. 
+It may happen that you get an error when running 'npm t'. In that case, the list of actions/steps to take to solve the problem are provided. The problem comes from dependencies between installed jest packages. Info is available [here](https://stackoverflow.com/questions/56528222/npm-start-returns-error-there-might-be-a-problem-with-the-project-dependency-t)
 
 #### Red, Green, Refactor in Jest
 
@@ -214,7 +214,7 @@ A starter project has been created which contains stubbed unit tests. Use the Re
 3. Use Cmd+J to reveal the Terminal in VS Code
 4. 'jest' and 'ts-jest' are already listed as dependencies in 'package.json' so in the Terminal window type 'npm install' to install both dependencies
 5. To run tests type 'npm t' in the Terminal window
-6. The file 'src/store-locator/StoreFilter.test.tsx' needs to be completed
+6. The files 'src/store-locator/StoreFilter.test.tsx' and 'App.tsx' need to be completed
 
 ## Post-session (30 minutes)
 
