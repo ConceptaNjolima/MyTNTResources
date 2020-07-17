@@ -140,9 +140,7 @@ This is how passing and failing tests appear in Jest.
     })
     ```
     
-* Testing if a function returns the correct result
-
-Assuming a function `inchesOfRain()` that returns 0 if it does not rain.
+* Testing if a function returns the correct result. Assuming a function `inchesOfRain()` that returns 0 if it does not rain.
  
     ```typescript
     test('did not rain', () => {
@@ -150,9 +148,7 @@ Assuming a function `inchesOfRain()` that returns 0 if it does not rain.
     });
     ```
     
-* Testing for an error
-
-Making sure the function returns an error (exception)
+* Testing for an exception. Making sure the function throws an exception
 
     ```typescript
     storesForState(state: string): Store[] {
@@ -163,10 +159,7 @@ Making sure the function returns an error (exception)
     });
     ``` 
   
-* Testing the UI 
-
-- The text that is rendered contains *Welcome*
-- We use a regular expression in the test
+* Testing the UI. The text that is rendered contains *Welcome*. We use a regular expression in the test
 
     ```typescript
     test('renders learn react link', () => {
