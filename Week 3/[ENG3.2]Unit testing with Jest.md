@@ -19,7 +19,7 @@ Total time: 1 hour 45 minutes
   * 10 minutes – Red, Green, Refactor
   * 10 minutes - Jest
   * 30 minutes - Write unit tests and practice
-* 30 minutes - Post-session
+* 45 minutes - Post-session
 
 ## References
 
@@ -220,7 +220,7 @@ A starter project has been created which contains stubbed unit tests. Use the Re
 5. To run tests type 'npm t' in the Terminal window
 6. The files 'src/store-locator/StoreFilter.test.tsx' and 'App.tsx' need to be completed
 
-## Post-session (30 minutes)
+## Post-session (45 minutes)
 
 * Finish writing unit tests related to the UI for the 'unit-testing-with-jest' project 
 
