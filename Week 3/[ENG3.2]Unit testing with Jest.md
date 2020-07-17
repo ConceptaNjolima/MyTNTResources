@@ -74,6 +74,10 @@ Jest is an open JavaScript testing library. While Jest can be used to test any J
 * Setup and Teardown - If you have code that needs to execute before or after many tests, you can use `beforeEach()` and `afterEach()`
 * Async Code - Jest provides several ways to wait for async code to finish before proceeding to the next test
 
+#### Sample code
+
+We will be using the code [here](https://github.com/tnt-summer-academy/Samples/Week_3/unit-testing-with-jest
+
 #### Install and configure Jest
 
 1. `npm install --save-dev jest`
@@ -104,6 +108,8 @@ This is how passing and failing tests appear in Jest.
 
 #### Examples of unit tests
 
+Some of these tests are available in the `App.test.tsx` and `StoreFilter.tsx` files
+
 * This test will always pass
 
     ```typescript
@@ -120,19 +126,13 @@ This is how passing and failing tests appear in Jest.
     })
     ```
 
-* This test will always pass
-
-    ```typescript
-    expect(() => {throw new Error()}).toThrow();
-    ```
-
 * Testing if a list contains an object
 
     ```typescript
     const productList = [
         'Microsoft Surface Pro', 
         'Microsoft Office 365', 
-        'XBox'
+        'Xbox'
     ]
 
     test('the list of products contains Xbox', () => {
@@ -147,7 +147,13 @@ This is how passing and failing tests appear in Jest.
       expect(inchesOfRain()).toBe(0);
     });
     ```
-    
+
+* This test with an exception will always pass
+
+    ```typescript
+    expect(() => {throw new Error()}).toThrow();
+    ```
+
 * Testing for an exception. Making sure the function throws an exception
 
     ```typescript
@@ -158,14 +164,44 @@ This is how passing and failing tests appear in Jest.
       expect(() => storeFilter.storesForState("New York")).toThrow();
     });
     ``` 
-  
-* Testing the UI. The text that is rendered contains *Welcome*. We use a regular expression in the test
+ 
+#### Examples of unit tests related to the UI
+
+* These tests are available in the `App.tsx` file.
+
+* Testing the UI. We want to make sure that the text that is rendered contains *Welcome*. We use a regular expression in the test
 
     ```typescript
-    test('renders learn react link', () => {
+    test('renders App with Welcome', () => {
       const { getByText } = render(<App />);
       const linkElement = getByText(/Welcome/);
       expect(linkElement).toBeInTheDocument();
+    });
+    ````
+* The test below shows how to test that the text of a button changes when it is clicked
+
+The test is first setup. An HTML element is created with the `<div>` part of the document. 
+
+    ````typescript
+    let container: HTMLElement;
+    
+    beforeEach(() => {
+      container = document.createElement('div');
+      document.body.appendChild(container);
+    });
+
+    afterEach(() => {
+      document.body.removeChild(container);
+    });
+
+    test('exception returned on click', () => {
+      act(() => { ReactDOM.render(<App />, container) });
+      const btn = container.querySelector('button');
+      console.log("btn " + btn?.textContent);
+      if (btn != null) {
+        fireEvent.click(btn);
+        expect(btn.textContent).toBe("I was clicked!");
+      }
     });
     ````
     
