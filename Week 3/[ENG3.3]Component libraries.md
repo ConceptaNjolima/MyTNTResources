@@ -10,23 +10,21 @@ This lesson provides an overview of component libraries (specifically Fluent UI)
 
 ## Time required and pace
 
-Total time: 1.25 hours
-
 * 60 minutes - pre-session: background learning, research, and investigations
 	* 15 minutes - Installing/Using Fluent UI
 	* 15 minutes - Examine demo code
 	* 30 minutes - Reflect on demo code, read the docs
-* 75 minutes (1:15) - Session:
-	* 15 minutes – answer review questions in your table group
+* 60 minutes - Session:
+	* 10 minutes – answer review questions in your table group
 	* 5 minutes – what are component libraries
 	* 15 minutes – using components inside your components
 	* 15 minutes - how to read documentation
 	* 15 minutes - Reacting to user input on the components
-* 30 minutes - post-session: what to continue working on, how it ties into the next sessions or projects
-	* 15 minutes - Styling the FluentUI components with the Theme Designer
-	* 15 minutes - Styling Your Page with CSS 
+* 60 minutes - post-session: what to continue working on, how it ties into the next sessions or projects
+	* 10 minutes - Styling the FluentUI components with the Theme Designer
+	* 10 minutes - Styling Your Page with CSS 
 	* 30 minutes - practice building a new React component using Fluent UI components
-	* 15 minutes - Reflect, incorporate, plan
+	* 10 minutes - Reflect, incorporate, plan
 
 ## Session (The lesson)
 
@@ -67,7 +65,7 @@ Things to consider before using a component library
 
 ### Demo: Using components inside your components
 
-![Yo Dawg joke: Yo Dawg I heard you like components so I put a component inside your component, So you can reuse your components while reusing the library's components][YoDawg]
+![Yo Dawg joke: Yo Dawg I heard you like components so I put a component inside your component, So you can reuse your components while reusing the library's components](./Eng3.3/YoDawg_Components.jpg)
 
 In this example, we'll look at putting the Persona component inside new custom component that you create, all inside of a single `.TSX` file
 
@@ -245,6 +243,3 @@ Important details:
 	```typescript
 	onClick={this.moveToNextText}	
 	```
-
-
-[YoDawg]: ./ENG3.3/YoDawg_components.jpg "Yo Dawg - Components"
