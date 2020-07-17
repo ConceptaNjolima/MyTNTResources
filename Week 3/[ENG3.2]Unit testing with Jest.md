@@ -110,13 +110,18 @@ This is how passing and failing tests appear in Jest.
     test('a very simple test', () => {
         expect(true).toBe(true)
     })```
-
+    
 * This test will always fail
 
     ```typescript
     test('a very simple test', () => {
         expect(true).toBe(false)
     })```
+
+* This test will always pass
+
+    ```typescript
+    expect(() => {throw new Error()}).toThrow();```
 
 * Testing if a list contains an object
 
@@ -133,18 +138,30 @@ This is how passing and failing tests appear in Jest.
     
 * Testing if a function returns the correct result
 
-Assuming a function `inchesOfRain()` that return 0 if it does not rain.
+Assuming a function `inchesOfRain()` that returns 0 if it does not rain.
  
     ```typescript 
     test('did not rain', () => {      
       expect(inchesOfRain()).toBe(0);
     });```
     
-* Testing for an exception
-  
-* Testing the UI - The text that is rendered contains *Welcome*
+* Testing for an error
 
-We use a regular expression in the test
+Making sure the function returns an error (exception)
+  
+    ```typescript
+    storesForState(state: string): Store[] {
+      throw new Error("Method not implemented");
+    }
+    test("Stores in a particular state throws an error", () => {
+      expect(() => storeFilter.storesForState("New York")).toThrow();
+    });```  
+  
+* Testing the UI 
+
+  * The text that is rendered contains *Welcome*
+
+  * We use a regular expression in the test
 
     ```typescript
     test('renders learn react link', () => {
