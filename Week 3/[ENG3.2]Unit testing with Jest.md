@@ -144,8 +144,8 @@ This is how passing and failing tests appear in Jest.
 
 Assuming a function `inchesOfRain()` that returns 0 if it does not rain.
  
-    ```typescript 
-    test('did not rain', () => {      
+    ```typescript
+    test('did not rain', () => {
       expect(inchesOfRain()).toBe(0);
     });
     ```
@@ -153,7 +153,7 @@ Assuming a function `inchesOfRain()` that returns 0 if it does not rain.
 * Testing for an error
 
 Making sure the function returns an error (exception)
-  
+
     ```typescript
     storesForState(state: string): Store[] {
       throw new Error("Method not implemented");
@@ -161,13 +161,12 @@ Making sure the function returns an error (exception)
     test("Stores in a particular state throws an error", () => {
       expect(() => storeFilter.storesForState("New York")).toThrow();
     });
-    ```  
+    ``` 
   
 * Testing the UI 
 
-  * The text that is rendered contains *Welcome*
-
-  * We use a regular expression in the test
+- The text that is rendered contains *Welcome*
+- We use a regular expression in the test
 
     ```typescript
     test('renders learn react link', () => {
