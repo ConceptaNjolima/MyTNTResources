@@ -186,7 +186,8 @@ export default class MyPersona extends Component<IPersonaProps, IState> {
 
   private moveToNextText = () => {
     console.log("Hi " + this.state.click_count);
-    this.setState({ click_count: this.state.click_count + 1 });
+   this.setState(
+        state => ({ click_count: state.click_count + 1 }));
   }
 
   render() {
@@ -235,7 +236,8 @@ Important details:
 	```typescript
 	private moveToNextText = () => {
 		console.log("Hi " + this.state.click_count);
-		this.setState({ click_count: this.state.click_count + 1 });
+		this.setState(
+        state => ({ click_count: state.click_count + 1 }));
 	}
 	```
  1. Having defined the method that we _want_ to run is great, but doesn't tell TypeScript to connect that method to any particular action in our component.  This line will tell Typescript that when the component is clicked it should run that method:
