@@ -222,6 +222,4 @@ A starter project has been created which contains stubbed unit tests. Use the Re
 
 ## Post-session (45 minutes)
 
-* Finish writing unit tests related to the UI for the 'unit-testing-with-jest' project 
-
-* Write unit tests related to the YourShare project 
+The post-session is available [here](https://github.com/tnt-summer-academy/Curriculum/wiki/[ENG3.2]-Unit-testing-with-Jest)
