@@ -178,10 +178,10 @@ Some of these tests are available in the `App.test.tsx` and `StoreFilter.tsx` fi
       expect(linkElement).toBeInTheDocument();
     });
     ````
-* The test below shows how to test that the text of a button changes when it is clicked
+* Testing the US. The test below shows how to test that the text of a button changes when it is clicked
 
-The test is first setup. An HTML element is created with the `<div>` part of the document. 
-
+  The test is first setup. `act()` prepares the components for the `expects`. It wraps the code rendering it and performing updates. This makes the test run closer to how React works in the browser. The test needs to include the steps a user would take - here we retrieve the button from the ReactDOM (`querySelector`), click on the button programmatically (`fireEvent.click(btn)`), and check that the text on the button changed to the correct one. 
+  
     ````typescript
     let container: HTMLElement;
     
