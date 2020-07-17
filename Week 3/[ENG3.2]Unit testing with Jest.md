@@ -25,6 +25,10 @@ Total time: 1 hour 45 minutes
 
 * [Jest](https://jestjs.io)
 * [Jest documentation](https://jestjs.io/docs/en/getting-started.html)
+* [Basics of testing JavaScript with Jest](https://blog.bitsrc.io/testing-javascript-with-jest-a4b82817bb0f)
+* [React Teting Libray - ReactTestUtils](https://reactjs.org/docs/test-utils.html)
+* [Testing React components in TypeScript](https://www.pluralsight.com/guides/how-to-test-react-components-in-typescript)
+* [](https://olavihaapala.fi/2019/02/04/using-jest-with-typescript.html)
 
 ## Pre-session (15 minutes)
 
