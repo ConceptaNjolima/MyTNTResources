@@ -59,13 +59,13 @@ Why use a component library?
 Things to consider before using a component library
 
 * Components may become outdated as other technologies advance
-* Consider the popularity and communitity activity for the component library
+* Consider the popularity and community activity for the component library
 * Ease of use generally through an API defined by the component library
 * Tradeoffs between speed, customization time, cost and immediate business needs
 
 ### Demo: Using components inside your components
 
-![Yo Dawg joke: Yo Dawg I heard you like components so I put a component inside your component, So you can reuse your components while reusing the library's components](./Eng3.3/YoDawg_Components.jpg)
+![Yo Dawg joke: Yo Dawg I heard you like components so I put a component inside your component, So you can reuse your components while reusing the library's components](./ENG3.3/YoDawg_Components.jpg)
 
 In this example, we'll look at putting the Persona component inside new custom component that you create, all inside of a single `.TSX` file
 
