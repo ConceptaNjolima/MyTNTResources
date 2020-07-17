@@ -109,19 +109,22 @@ This is how passing and failing tests appear in Jest.
     ```typescript
     test('a very simple test', () => {
         expect(true).toBe(true)
-    })```
+    })
+    ```
     
 * This test will always fail
 
     ```typescript
     test('a very simple test', () => {
         expect(true).toBe(false)
-    })```
+    })
+    ```
 
 * This test will always pass
 
     ```typescript
-    expect(() => {throw new Error()}).toThrow();```
+    expect(() => {throw new Error()}).toThrow();
+    ```
 
 * Testing if a list contains an object
 
@@ -134,7 +137,8 @@ This is how passing and failing tests appear in Jest.
 
     test('the list of products contains Xbox', () => {
         expect(productList).toContain('Xbox')
-    })```
+    })
+    ```
     
 * Testing if a function returns the correct result
 
@@ -143,7 +147,8 @@ Assuming a function `inchesOfRain()` that returns 0 if it does not rain.
     ```typescript 
     test('did not rain', () => {      
       expect(inchesOfRain()).toBe(0);
-    });```
+    });
+    ```
     
 * Testing for an error
 
@@ -155,7 +160,8 @@ Making sure the function returns an error (exception)
     }
     test("Stores in a particular state throws an error", () => {
       expect(() => storeFilter.storesForState("New York")).toThrow();
-    });```  
+    });
+    ```  
   
 * Testing the UI 
 
@@ -168,9 +174,9 @@ Making sure the function returns an error (exception)
       const { getByText } = render(<App />);
       const linkElement = getByText(/Welcome/);
       expect(linkElement).toBeInTheDocument();
-    });````
+    });
+    ````
     
-
 #### Practice writing unit tests
 
 A starter project has been created which contains stubbed unit tests. Use the Red, Green, Refactor pattern to complete the unit tests.
