@@ -109,12 +109,10 @@ This is how passing and failing tests appear in Jest.
 
 ### Let's write unit tests in Jest (35 minutes)
 
-* `test` is a function that takes a string and a function as parameters. The overall syntax of test is `test("", () => {expect().matcher()})`. The first parameter (a string) is the title of the test. The second parameter is a function that contains the expectations to test. That part uses a matcher.  A complete description of `test` is available [here](https://jestjs.io/docs/en/api#testname-fn-timeout). The number of calls of `test` determines the number of test cases
-* There are lots of different matchers: `toBe`, `toEqual`, `toBeDefined`, `toContain`, `toEqual` etc. A list is available [here](https://jestjs.io/docs/en/expect)
+* `test` is a function that takes a string and a function as parameters. The overall syntax of test is `test("", () => {expect().matcher()})`. The first parameter (a string) is the title of the test. The second parameter is a function that contains the expectations to test. That part uses a matcher that matches the actual value with the expected value.  A complete description of `test` is available [here](https://jestjs.io/docs/en/api#testname-fn-timeout). The number of calls of `test` determines the number of test cases
+* There are lots of different matchers: `toBe`, `toEqual`, `toBeDefined`, `toContain`, `toEqual` etc. A list of matchers is available [here](https://jestjs.io/docs/en/expect)
 
 #### Examples of unit tests
-
-Some of these tests are available in the `uitesting` and `StoreFilter.tsx` files
 
 * This test will always pass
 
@@ -173,7 +171,9 @@ Some of these tests are available in the `uitesting` and `StoreFilter.tsx` files
  
 #### Examples of unit tests related to the UI
 
-* These tests are available in the `uitesting` files.
+* These tests are available in the `uitesting` files
+
+* When testing components, we want to test that the component behaves in a certain way. We also want to be sure that we can test events (click on a button for example). The components need to be mounted on the browser DOM, but when writing tests there is no DOM.
 
 * We want to make sure that the text that is rendered contains *Welcome*. We use a regular expression in the test
 
@@ -187,6 +187,8 @@ Some of these tests are available in the `uitesting` and `StoreFilter.tsx` files
 * The test below shows how to test that the text of a button changes when it is clicked
 
   The test is first setup. `act()` prepares the components for the `expects`. It wraps the code rendering it and performing updates. This makes the test run closer to how React works in the browser. The test needs to include the steps a user would take - here we retrieve the button from the ReactDOM (`querySelector`), click on the button programmatically (`fireEvent.click(btn)`), and check that the text on the button changed to the correct one. 
+
+* Often you have some setup work that needs to happen before runnin tests and some finishing work that needs to happen after running tests. Jest provides helper functions to handle this:`beforeEach` and `afterEach`
   
     ````typescript
     let container: HTMLElement;
@@ -220,7 +222,6 @@ A starter project has been created which contains stubbed unit tests. Use the Re
 3. Use Cmd+J to reveal the Terminal in VS Code
 4. `jest` and `ts-jest` are already listed as dependencies in 'package.json' so in the Terminal window type 'npm install' to install both dependencies
 5. To run tests type `npm t` in the Terminal window
-6. The files 'src/store-locator/StoreFilter.test.tsx' and in the 'uitesting' directory need to be completed
 
 ## Post-session (45 minutes)
 
