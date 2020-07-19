@@ -91,7 +91,9 @@ We will be using the code [here](https://github.com/tnt-summer-academy/Exercises
 #### Run Jest
 
 1. A file `App.test.tsx` is created automatically by create-react-app to test `App.tsx`. For each file `file.tsc` under test, we can create a file `file.test.tsx`
-2. In the Terminal window, use `npm t` to run the tests
+2. Organize your tests by choosing relevant names and using directories
+3. In the Terminal window, use `npm t` to run the tests
+
 
 #### Troubleshooting
 
@@ -112,7 +114,7 @@ This is how passing and failing tests appear in Jest.
 
 #### Examples of unit tests
 
-Some of these tests are available in the `App.test.tsx` and `StoreFilter.tsx` files
+Some of these tests are available in the `uitesting` and `StoreFilter.tsx` files
 
 * This test will always pass
 
@@ -171,7 +173,7 @@ Some of these tests are available in the `App.test.tsx` and `StoreFilter.tsx` fi
  
 #### Examples of unit tests related to the UI
 
-* These tests are available in the `App.tsx` file.
+* These tests are available in the `uitesting` files.
 
 * We want to make sure that the text that is rendered contains *Welcome*. We use a regular expression in the test
 
@@ -216,9 +218,9 @@ A starter project has been created which contains stubbed unit tests. Use the Re
 1. `git clone` the Samples GitHub repository [here](https://github.com/tnt-summer-academy/Exercises) or use `git pull`
 2. Use VS Code to open the 'Week_3/unit-testing-with-jest' project
 3. Use Cmd+J to reveal the Terminal in VS Code
-4. 'jest' and 'ts-jest' are already listed as dependencies in 'package.json' so in the Terminal window type 'npm install' to install both dependencies
-5. To run tests type 'npm t' in the Terminal window
-6. The files 'src/store-locator/StoreFilter.test.tsx' and 'App.tsx' need to be completed
+4. `jest` and `ts-jest` are already listed as dependencies in 'package.json' so in the Terminal window type 'npm install' to install both dependencies
+5. To run tests type `npm t` in the Terminal window
+6. The files 'src/store-locator/StoreFilter.test.tsx' and in the 'uitesting' directory need to be completed
 
 ## Post-session (45 minutes)
 
