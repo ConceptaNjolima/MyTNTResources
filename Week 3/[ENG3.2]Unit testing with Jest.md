@@ -7,13 +7,13 @@ This lesson explains the basics of unit testing. It provides examples of unit te
 * TNTs will understand what unit testing is and why it's important
 * TNTs will understand red, green, refactor pattern
 * TNTs will understand Jest
-* TNTs will write unit tests
+* TNTs will write unit tests for functions but also for the UI of an app
 
 ## Time required and pace
 
 Total time: 1 hour 45 minutes
 
-* 15 minutes - Pre-session
+* 20 minutes - Pre-session
 * 60 minutes - Instructional Session
   * 10 minutes – What is unit testing? Why is it important in the software development lifecycle? What are the other testing techniques?
   * 10 minutes – Red, Green, Refactor
@@ -28,7 +28,7 @@ Total time: 1 hour 45 minutes
 * [Basics of testing JavaScript with Jest](https://blog.bitsrc.io/testing-javascript-with-jest-a4b82817bb0f)
 * [React Teting Libray - ReactTestUtils](https://reactjs.org/docs/test-utils.html)
 * [Testing React components in TypeScript](https://www.pluralsight.com/guides/how-to-test-react-components-in-typescript)
-* [](https://olavihaapala.fi/2019/02/04/using-jest-with-typescript.html)
+* [Using Jest with TypeScript](https://olavihaapala.fi/2019/02/04/using-jest-with-typescript.html)
 
 ## Pre-session (15 minutes)
 
@@ -80,22 +80,22 @@ Jest is an open JavaScript testing library. While Jest can be used to test any J
 
 #### Sample code
 
-We will be using the code [here](https://github.com/tnt-summer-academy/Samples/Week_3/unit-testing-with-jest
+We will be using the code [here](https://github.com/tnt-summer-academy/Exercises/Week_3/unit-testing-with-jest)
 
 #### Install and configure Jest
 
 1. `npm install --save-dev jest`
-2. To write tests with Typescript we must install ts-jest using `npm install --save-dev ts-jest @types/jest`
+2. To write tests with Typescript, we must install ts-jest using `npm install --save-dev ts-jest @types/jest`
 3. Create a jest config file using `npx ts-jest config:init`
 
 #### Run Jest
 
 1. A file `App.test.tsx` is created automatically by create-react-app to test `App.tsx`. For each file `file.tsc` under test, we can create a file `file.test.tsx`
-2. In the Terminal window, use 'npm t' to run the tests
+2. In the Terminal window, use `npm t` to run the tests
 
 #### Troubleshooting
 
-It may happen that you get an error when running 'npm t'. In that case, the list of actions/steps to take to solve the problem are provided. The problem comes from dependencies between installed jest packages. Info is available [here](https://stackoverflow.com/questions/56528222/npm-start-returns-error-there-might-be-a-problem-with-the-project-dependency-t)
+It may happen that you get an error when running `npm t`. In that case, the list of actions/steps to take to solve the problem are provided. The problem comes from dependencies between installed packages. Info is available [here](https://stackoverflow.com/questions/56528222/npm-start-returns-error-there-might-be-a-problem-with-the-project-dependency-t)
 
 #### Red, Green, Refactor in Jest
 
@@ -173,7 +173,7 @@ Some of these tests are available in the `App.test.tsx` and `StoreFilter.tsx` fi
 
 * These tests are available in the `App.tsx` file.
 
-* Testing the UI. We want to make sure that the text that is rendered contains *Welcome*. We use a regular expression in the test
+* We want to make sure that the text that is rendered contains *Welcome*. We use a regular expression in the test
 
     ```typescript
     test('renders App with Welcome', () => {
@@ -182,7 +182,7 @@ Some of these tests are available in the `App.test.tsx` and `StoreFilter.tsx` fi
       expect(linkElement).toBeInTheDocument();
     });
     ````
-* Testing the US. The test below shows how to test that the text of a button changes when it is clicked
+* The test below shows how to test that the text of a button changes when it is clicked
 
   The test is first setup. `act()` prepares the components for the `expects`. It wraps the code rendering it and performing updates. This makes the test run closer to how React works in the browser. The test needs to include the steps a user would take - here we retrieve the button from the ReactDOM (`querySelector`), click on the button programmatically (`fireEvent.click(btn)`), and check that the text on the button changed to the correct one. 
   
@@ -192,6 +192,7 @@ Some of these tests are available in the `App.test.tsx` and `StoreFilter.tsx` fi
     beforeEach(() => {
       container = document.createElement('div');
       document.body.appendChild(container);
+      act(() => { ReactDOM.render(<App />, container) });
     });
 
     afterEach(() => {
@@ -199,7 +200,6 @@ Some of these tests are available in the `App.test.tsx` and `StoreFilter.tsx` fi
     });
 
     test('exception returned on click', () => {
-      act(() => { ReactDOM.render(<App />, container) });
       const btn = container.querySelector('button');
       console.log("btn " + btn?.textContent);
       if (btn != null) {
@@ -213,7 +213,7 @@ Some of these tests are available in the `App.test.tsx` and `StoreFilter.tsx` fi
 
 A starter project has been created which contains stubbed unit tests. Use the Red, Green, Refactor pattern to complete the unit tests.
 
-1. `git clone` the Samples GitHub repository [here](https://github.com/tnt-summer-academy/Samples) or use `git pull`
+1. `git clone` the Samples GitHub repository [here](https://github.com/tnt-summer-academy/Exercises) or use `git pull`
 2. Use VS Code to open the 'Week_3/unit-testing-with-jest' project
 3. Use Cmd+J to reveal the Terminal in VS Code
 4. 'jest' and 'ts-jest' are already listed as dependencies in 'package.json' so in the Terminal window type 'npm install' to install both dependencies
