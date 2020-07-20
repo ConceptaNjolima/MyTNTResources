@@ -80,7 +80,7 @@ Jest is an open JavaScript testing library. While Jest can be used to test any J
 
 #### Sample code
 
-We will be using the code [here](https://github.com/tnt-summer-academy/Exercises/Week_3/unit-testing-with-jest)
+We will be using the code [here](https://github.com/tnt-summer-academy/Samples/Week_3/unit-testing-with-jest)
 
 #### Install and configure Jest
 
