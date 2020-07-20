@@ -13,7 +13,7 @@ This lesson explains the basics of unit testing. It provides examples of unit te
 
 Total time: 1 hour 45 minutes
 
-* 20 minutes - Pre-session
+* 30 minutes - Pre-session
 * 60 minutes - Instructional Session
   * 10 minutes – What is unit testing? Why is it important in the software development lifecycle? What are the other testing techniques?
   * 10 minutes – Red, Green, Refactor
@@ -29,6 +29,7 @@ Total time: 1 hour 45 minutes
 * [React Teting Libray - ReactTestUtils](https://reactjs.org/docs/test-utils.html)
 * [Testing React components in TypeScript](https://www.pluralsight.com/guides/how-to-test-react-components-in-typescript)
 * [Using Jest with TypeScript](https://olavihaapala.fi/2019/02/04/using-jest-with-typescript.html)
+* [Videos on Jest](https://www.youtube.com/watch?v=D9DdY2WmM-s)
 
 ## Pre-session (15 minutes)
 
@@ -80,7 +81,7 @@ Jest is an open JavaScript testing library. While Jest can be used to test any J
 
 #### Sample code
 
-We will be using the code [here](https://github.com/tnt-summer-academy/Samples/tree/main/Week_3/unit-testing-with-jest)
+We will be using the code [here](https://github.com/tnt-summer-academy/Exercises/tree/main/Week_3/unit-testing-with-jest)
 
 #### Install and configure Jest
 
@@ -217,7 +218,7 @@ This is how passing and failing tests appear in Jest.
 
 A starter project has been created which contains stubbed unit tests. Use the Red, Green, Refactor pattern to complete the unit tests.
 
-1. `git clone` the Samples GitHub repository [here](https://github.com/tnt-summer-academy/Exercises) or use `git pull`
+1. `git clone` the Samples GitHub repository [here](https://github.com/tnt-summer-academy/Exercises/tree/main/Week_3/unit-testing-with-jest) or use `git pull`
 2. Use VS Code to open the 'Week_3/unit-testing-with-jest' project
 3. Use Cmd+J to reveal the Terminal in VS Code
 4. `jest` and `ts-jest` are already listed as dependencies in 'package.json' so in the Terminal window type 'npm install' to install both dependencies
