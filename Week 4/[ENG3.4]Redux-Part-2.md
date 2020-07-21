@@ -88,38 +88,60 @@ For today we're going to want to pay particular attention to the 'currentUser' p
 
 The next step is to figure out what sort of actions we'll need to support, and what information each of those actions will need in order for the action to describe what change(s) should be made.
 
-For this feature we'll need a single action - adding a new user.
+For this feature we'll need a single action - joining the service.
 
-In order to do that we'll need to know what the person's name is, what their phone number is, and what their zip code is.  Essentially, we'll need to keep track of each thing that we're asking for in the sign up page.  Other information about a person (for example, their list of preferences, their list of best friends, their list of items to lend) can be given default starting values (like the preferences) and/or we can leave them empty and let the user fill them in later (best friends and items)
+In order to do that we'll need to know what the new person's name is, what their phone number is, and what their zip code is.  Essentially, we'll need to keep track of each thing that we're asking for in the sign up page.  Other information about a person (for example, their list of preferences, their list of best friends, their list of items to lend) can be given default starting values (like the preferences) and/or we can leave them empty and let the user fill them in later (best friends and items)
 
-*So our action will need a way of identifying itself as an 'add a new user' action, and it will need the name, phone number, and zip code.*
+*So our action will need a way of identifying itself as an 'new user joining the app' action, and it will need the name, phone number, and zip code.*
 
 <u>WARNING</u>: You can't use a class to represent actions so we'll have to define actions as interfaces and then create object literals in the action creator functions.  If we try to use classes Redux will give us an error message :(
 
-Based on what we figured out in the previous step, and knowing that we can't use a class to define this, we'll use the following definition:
+Based on what we figured out in the previous step, and knowing that we can't use a class to define this, we'll use the following definitions
+
+#### Step 3.1: An enum to list all possible actions
 
 ```typescript
 export enum actionIdentifier {
-    Add
+    Join
     // TODO: Add another item to this list. Don't forget to add a comma on the previous line!
 }
+```
+The actionIdentifier enum allows us to identify which action we're taking (right now it's just 'Join', but when we add more actions later those actions will go here).  
 
-export interface AddAction {
+Because it's an enum the TypeScript compiler will check that we're only using options listed here - we can't accidentally type in actionIdentifier.Remove unless there's a 'Remove' option in this enum.  This will help us catch errors earlier.
+
+#### Step 3.2: The action itself - the `JoinAction` *interface*
+
+The actual action is the JoinAction interface.  This is the thing that needs to be an interface (instead of a class).
+
+Since the action is a *description* of what change we want to make we'll need to include a way for the reducer to know what action this is.  We do that using the 'type' field of the JoinAction interface.  In order for the reducer function to work any new actions MUST have a type: actionIdentifier too.  
+
+In additon to the 'type' field we've got the three pieces of information that we'll need to create a new user account: the name, phone number, and zip code.
+
+```typescript
+export interface JoinAction {
     type: actionIdentifier;  // TODO WARNING: Any new actions MUST have a type: actionIdentifier too!!!!!!!!!!!
     name: string;
     phone: string;
     zip: string;
 }
 ```
+#### Step 3.3: The **action creator function** - in this case, `createJoinAction` function
 
-There's two parts to this:
+```typescript
+export function createJoinAction(nam: string, ph: string, z: string): JoinAction {
+    return {
+        type: actionIdentifier.Join,
+        name: nam,
+        phone: ph,
+        zip: z
+    };
+};
+```
 
-- the actionIdentifier which allows us to identify which action we're taking (right now it's just 'Add', but when we add more actions later those actions will go here)
-- the action itself - in this case, AddAction
+Because we can't use classes (which have convenient constructor methods) we will instead define a function whose purpose is to create an object literal that has everything that the JoinAction interface requires.  The part near the end of the first line which reads `: JoinAction` is the part where we tell TypeScript & React that this function will return an object that has everything the JoinAction requires.
 
-Since the action is a *description* of what change we want to make we'll need to include a way for the reducer to know what action this is.  We do that using the 'type' field of the AddAction interface.  In order for the reducer function to work any new actions MUST have a type: actionIdentifier too.  
-
-In additon to the 'type' field we've got the three pieces of information that we'll need to create a new user account: the name, phone number, and zip code.
+Inside the function we create an object literal, copy all the parameters into it, and then return it.
 
 ### Step 4: Write the code that actually makes the action happen (i.e., write the reducer) [redux/reducer.tsx]
 
