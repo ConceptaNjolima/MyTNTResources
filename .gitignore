@@ -117,6 +117,8 @@ $RECYCLE.BIN/
 # Edit at https://www.toptal.com/developers/gitignore?templates=node,react,reactnative
 
 ### Node ###
+package-lock.json
+
 # Logs
 logs
 *.log
