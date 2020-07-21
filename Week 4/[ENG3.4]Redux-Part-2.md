@@ -1,6 +1,6 @@
 # Advanced Redux (Part 2)
 
-This lesson goes more in depth on Redux including how to debug redux, applying middleware and replacing our state in the Todo app to redux
+This lesson goes more in depth on Redux including how to debug redux, showing how to add a new user (as the current user) to the YourShare example
 
 ## Learning objectives
 
@@ -12,8 +12,8 @@ This lesson goes more in depth on Redux including how to debug redux, applying m
 
 Total time: ~ 2 hours
 
-* 20 minutes - recap of redux from a guided tour of YourShare-redux
-* 40 minutes - practice by adding Redux to your YourShare app.
+* 20 minutes - recap of redux from a guided tour of YourShare-redux, this time focusing on changing the state (specifically, adding a new user)
+* 40 minutes - practice by adding Redux to your YourShare app. 
 
 ## Session set up
 
@@ -23,50 +23,23 @@ Total time: ~ 2 hours
 
 ### Overview of our approach
 
-Today we're going to be looking at using Redux to show the 'Items for Borrowing' table on the Welcome page of the YourShare app, as pictured here:
+Today we're going to be looking at using Redux to add new users to the app.  Users can do this by filling in their information into the Signup page of the YourShare app, as pictured here.  Once the user has signed up then we'll show them the Welcome page, this time we'll show them their name at the top of the page.
 
-![Welcome page of YourShare](https://github.com/tnt-summer-academy/Curriculum/blob/main/Reference/YourShare-screens/YS_browse.png)
+![Signup page for YourShare](https://github.com/tnt-summer-academy/Curriculum/blob/main/Reference/YourShare-screens/YS_account.png)
 
-We're going to go through the sample code in a particular order and then you'll implement the 'Your Items' table on your own by following the same steps and in the same order.
+We're going to go through the sample code in a particular order and then you'll implement the 'Add Item' page
 
 ### Step 0: Setup Redux [index.tsx]
 
-Before we use Redux we'll need to set things up.  Each of these things need to be done once and only once for each app that you make.  These steps have already been done for the Samples/Week_4/yourshare-redux sample project so you won't need to do anything to run the sample code (but don't forget to run `npm install` !!!)
-
-First, install the npm packages:
-
-```bash
-npm install react-redux
-```
-
-Second, in the index.tsx file make sure that you import the needed things from Redux and React-Redux, that you import your reducer function (if you're doing this on your own project you'll need to take a quick detour and create one in it's own file), that you create the Redux store (handing it your reducer function as a parameter), and that you then wrap your App in a 'Provider' component, like so: 
-
-```typescript
-import { createStore } from 'redux'; //  import the needed things from Redux and React-Redux
-import { Provider } from 'react-redux';
-
-import yourShareReducer from "./redux/reducer" // import your reducer function
-
-let store = createStore(yourShareReducer); // create the Redux store (handing it your reducer function as a parameter)
-
-// wrap your App in a 'Provider' component:
-ReactDOM.render( 
-  <Provider store={store}>
-    <App />
-  </Provider>, 
-  document.getElementById('root')
-);
-```
-
-These is  mostly boilerplate code (other than naming your reducer function and putting it into a file of your choosing).
+Before we use Redux we'll need to set things up.  Since we did this in yesterday's session you shouldn't need to do it again, but if you do [there's instructions in yesterday's lesson.](https://github.com/tnt-summer-academy/Curriculum/blob/main/Week%204/%5BENG3.4%5DRedux.md#step-0-setup-redux-indextsx)
 
 ### Step 1: What state do we need?
 
 The first step is to figure out what state we need to keep track of.  We can do this by examining the spec, specifically the image above.
 
-For our 'Items For Borrowing' table we'll need a list of people (the right-hand column) and the items that each person has available for lending (the left-hand column).
+For our 'Sign Up' page we'll need to make sure that each person has a name / username, has a phone number, and has a zip code.  In order to keep things simple we'll store all three of those things as strings.
 
-### Step 2: Represent the state in Typescript / Redux [types.tsx]
+### Step 2: Represent the state in Typescript / Redux [redux/types.tsx]
 
 The types.tsx file in the starter project contains the definitions for most of the data that we'll need to keep track of for the pages/screens listed in the spec.  We've tried to simplify this from the previous section on Redux by using classes - one class for **Person** objects (which have a Prefs object inside them for the preferences on the 'Manage Community' page/screen) and one class for each **Item** that can be lent/borrowed.
 
@@ -76,44 +49,25 @@ There's a bunch of stuff in the file so let's focus on the part of the Person cl
 export class Person {
   id: number;
   name: string;
-  // <snip> :)
-  items: Array<Item>;
+  phone: string;
+  zipCode: string;
+   // < snip :) >
 
   constructor(personId: number, theName: string, ph: string, zip: string) {
     this.id = personId;
     this.name = theName;
- 		// <snip> :)
-    this.items = new Array<Item>();
+    this.phone = ph;
+    this.zipCode = zip;
+   // < snip :) >
   }
-  // addItem will create a new Item object and then add it to the end of the person's "items" array:
-  addItem(the_id: number, the_name: string, the_itemType: string, desc: string): Item {
-    const newItem = new Item(the_id, the_name, the_itemType, desc, this);
-    this.items.push(newItem);
-  }
-}
-```
-
-In order to know how to write code that uses individual Items we'll need to look at the Item class.  We'll leave out less-relevant details:
-
-```typescript
-export class Item implements Item {
-  id: number;
-  name: string;
-  itemType: string;
-  description: string;
- 	// <snip> :)
-
-  constructor(itemId: number, the_name: string, the_itemType: string, desc: string, owner: Person) {
-    this.id = itemId;
-    this.name = the_name;
-    this.itemType = the_itemType;
-    this.description = desc;
-    // <snip> :)
+  addItem(the_id: number, the_name: string, the_itemType: string, desc: string) {
+   // < snip :) >
   }
 }
 ```
 
-We bundle these things up into the app's state:
+
+As we saw yesterday we bundle these things up into the app's state:
 
 ```typescript
 export interface IYourShareState {
@@ -128,23 +82,48 @@ export interface IYourShareState {
 export default IYourShareState;
 ```
 
-We'll use an interface (instead of a class) here because this is prety limited - we don't want to attach any methods to this, nor do we need a constructor to help build these.  So instead of a class we'll define this as an interface and then create object literals that implement this interface.
+For today we're going to want to pay particular attention to the 'currentUser' part of the state - once the user has created an account (once they've joined this community) then we'll want to set the currentUser to be the newly-created user account.
 
 ### Step 3: Represent the actions [redux/actions.tsx]
 
 The next step is to figure out what sort of actions we'll need to support, and what information each of those actions will need in order for the action to describe what change(s) should be made.
 
-*For this sample we do not need any actions.*
+For this feature we'll need a single action - adding a new user.
 
-We need a way to display existing items from people AND we need a way to put starter / sample data into the app so that we can verify that our display code is working BUT we won't actually add any items (or people)
+In order to do that we'll need to know what the person's name is, what their phone number is, and what their zip code is.  Essentially, we'll need to keep track of each thing that we're asking for in the sign up page.  Other information about a person (for example, their list of preferences, their list of best friends, their list of items to lend) can be given default starting values (like the preferences) and/or we can leave them empty and let the user fill them in later (best friends and items)
 
-WARNING: You can't use a class to represent actions so we'll have to define actions as interfaces and then create object literals in the action creator functions.  More on this tomorrow!
+*So our action will need a way of identifying itself as an 'add a new user' action, and it will need the name, phone number, and zip code.*
+
+<u>WARNING</u>: You can't use a class to represent actions so we'll have to define actions as interfaces and then create object literals in the action creator functions.  If we try to use classes Redux will give us an error message :(
+
+Based on what we figured out in the previous step, and knowing that we can't use a class to define this, we'll use the following definition:
+
+```typescript
+export enum actionIdentifier {
+    Add
+    // TODO: Add another item to this list. Don't forget to add a comma on the previous line!
+}
+
+export interface AddAction {
+    type: actionIdentifier;  // TODO WARNING: Any new actions MUST have a type: actionIdentifier too!!!!!!!!!!!
+    name: string;
+    phone: string;
+    zip: string;
+}
+```
+
+There's two parts to this:
+
+- the actionIdentifier which allows us to identify which action we're taking (right now it's just 'Add', but when we add more actions later those actions will go here)
+- the action itself - in this case, AddAction
+
+Since the action is a *description* of what change we want to make we'll need to include a way for the reducer to know what action this is.  We do that using the 'type' field of the AddAction interface.  In order for the reducer function to work any new actions MUST have a type: actionIdentifier too.  
+
+In additon to the 'type' field we've got the three pieces of information that we'll need to create a new user account: the name, phone number, and zip code.
 
 ### Step 4: Write the code that actually makes the action happen (i.e., write the reducer) [redux/reducer.tsx]
 
-Right now we're not actually creating / writing any actions.
 
-However, we do need to set up the app with sample data so that we can test our display code.  We'll do this in the reducer function.  Remember that the reducer function is normally given the current state - the very first time it's called it'll be given an `undefined` state.  So when that happens we'll set up the starting state:
 
 ```typescript
 // Initial state of the app:
@@ -402,6 +381,8 @@ Here's a quick summary of what you'll need to do:
 
 ### Step 3: Represent the actions [redux/actions.tsx]
 
+NOTE NOTE: There's 'TODO' comments here explaining what you'll need to change to add an action
+
 - [x] Since you're only showing the list, not modifying it, you shouldn't need to define any actions.
 
 ### Step 4: Write the code that actually makes the action happen (i.e., write the reducer) [redux/reducer.tsx]
@@ -431,4 +412,16 @@ Here's a quick summary of what you'll need to do:
 - [ ] Discuss with your group whether your code will need a single call to .map() or whether you'll need to nest .map() inside a second .map()
 - [ ] Set up the `render()` method to go through the list of items the current user
 
+# Modify that page - new form
 
+1. Tweak the Props at the top and the mapStateToProps at the bottom
+2. Tweak the Props at the top and the mapStateToDispatch at the bottom
+3. Set up the uncontrolled stuff
+   1. Declare instance var
+   2. Create the ReactRef
+   3. Connect ref to HTML form element
+   4. < Use it in the event handler >
+
+We're going with the '[uncontrolled form components](https://reactjs.org/docs/uncontrolled-components.html)'
+
+Another, more React-ish way of doing this might be [React Final Form](https://final-form.org/docs/react-final-form/getting-started).  The ['simple' example is particularly compelling](https://final-form.org/docs/react-final-form/examples/simple).
