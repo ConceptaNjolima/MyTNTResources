@@ -145,132 +145,73 @@ Inside the function we create an object literal, copy all the parameters into it
 
 ### Step 4: Write the code that actually makes the action happen (i.e., write the reducer) [redux/reducer.tsx]
 
-
-
-```typescript
-// Initial state of the app:
-const initialState: IYourShareState = SampleData_LoadedProgrammatically()
-
-function yourShareReducer(state: IYourShareState | undefined, action: YourShareActions): IYourShareState {
-    if (state === undefined) {
-        return initialState;
-    }
-```
-
-​	We'll create the actual starting state using the `SampleData_LoadedProgrammatically()` function.
-
-In this function we'll create a couple of Persons, then add a couple of Items to the persons, and then finally return an object literal that 'looks like' the `IYourShareState` interface (which is good because we promised to return something that looks like that interface)
+Since we created the initial state of the app yesterday today we can focus on how the reducer function will use the information it gets from the action object to actually change the app's state (how it changes the app's variables).  Let's focus on these lines, within the `yourShareReducer` function:
 
 ```typescript
-// 'programmatically' means "done by a program" (as opposed to reading it out of a data file)
-let SampleData_LoadedProgrammatically = (): IYourShareState => { 
-  // ": IYourShareState" is where we promise to return an IYourShareState
-  
-    
-  	// create a couple of Persons:
-    const you = new Person(0, "This is you", "508-867-5309", "98052")
+   switch (action.type) {
+        case actionIdentifier.Join: {
+            let addAction = action as JoinAction; //  treat the `action` object as a JoinObject
 
-    const person1 = new Person(1, "Stacey", "425-123-4567", "98011")
-    // add a couple of Items to the persons:
-    person1.addItem(2, "Blender", "Kitchen", "A pretty great blender.  The lid...");
+            let newState: IYourShareState = { ...state }; // this will copy the current state
 
-    const person2 = new Person(3, "Marcos", "206-7654-321", "98115")
-    // add a couple of Items to the persons:
-    person2.addItem(4, "Rake", "Garden", "A pretty great rake.  The handle...");
-    person2.addItem(5, "Car", "Garden", "A pretty great car.  The steering wheel...");
+            newState.currentUser = new Person(nextId, addAction.name, addAction.phone, addAction.zip);
+            newState.people.push(newState.currentUser); // add the current user to the list of all people
+            newState.idCounter = nextId;
 
-  	// return an object literal that 'looks like' the `IYourShareState` interface:
-    return {
-        idCounter: 6, // this is the id assigned to the next object that we create
-        currentUser: you,
-        people: [
-            person1,
-            person2
-        ]
-    }
-}
-```
-
-There's more code in the reducer function - we'll look at that tomorrow
-
-#### Storing your sample data in a JSON file [redux/SampleData.json]
-
-It's also worth pointing out that it's possible to represent your starting data / sample data as a JSON file and to then load that file in (instead of creating the objects programmatically).  If so the file might look something like this:
-
-```json
-{
-    "idCounter": 6,
-    "currentUser": {
-        "id": 0,
-        "name": "This is you",
-        "phone": "508-867-5309",
-        "zipCode": "98052",
-        "preferences": {
-            "text_me_borrow_requests": false,
-            "bffs_borrow_without_ok": false,
-            "fof_dont_see_items": false
-        },
-        "bestFriends": [],
-        "items": []
-    },
-    "people": [{
-            "id": 1,
-            "name": "Stacey",
-            "phone": "425-123-4567",
-            "zipCode": "98011",
-            "preferences": {
-                "text_me_borrow_requests": false,
-                "bffs_borrow_without_ok": false,
-                "fof_dont_see_items": false
-            },
-            "bestFriends": [],
-            "items": [{
-                "id": 2,
-                "name": "Blender",
-                "itemType": "Kitchen",
-                "description": "A pretty great blender.  The lid...",
-                "ownedBy": 1,
-                "lentTo": null
-            }]
-        },
-        {
-            "id": 3,
-            "name": "Marcos",
-            "phone": "206-7654-321",
-            "zipCode": "98115",
-            "preferences": {
-                "text_me_borrow_requests": false,
-                "bffs_borrow_without_ok": false,
-                "fof_dont_see_items": false
-            },
-            "bestFriends": [],
-            "items": [{
-                    "id": 4,
-                    "name": "Rake",
-                    "itemType": "Garden",
-                    "description": "A pretty great rake.  The handle...",
-                    "ownedBy": 3,
-                    "lentTo": null
-                },
-                {
-                    "id": 5,
-                    "name": "Car",
-                    "itemType": "Garden",
-                    "description": "A pretty great car.  The steering wheel...",
-                    "ownedBy": 3,
-                    "lentTo": null
-                }
-            ]
+            return newState;
         }
-    ]
-}
+
 ```
 
-Two warnings:
+The switch and case ensure that this code is run only when the reducer function is given a 'Join' action.
 
-1. Because the data model that we're using here is circular (the person refers to items, and each item refers back to it's owning person) we would need to do some work to store the information in JSON files or else use [a Node package that can store circular JSON data, such as flatted](https://www.npmjs.com/package/flatted).
+Once we know that we're given a Join action then we can treat the `action` object as a JoinObject.  
+We declared action to be a `YourShareActions` when we wrote the parameter as `action: YourShareActions` - YourShareActions might be a JoinAction OR we might add more actions later.  Since TypeScript isn't certain that YourShareActions will ALWAYS AND FOREVER be JoinActions we need to tell TypeScript that we ourselves know for sure that this will be a JoinAction.  Unless we made a mistake elsewhere this will be correct.
 
-2. We definied all our state using classes, but that may cause problems here.  Namely, TypeScript will complain the the objects in the SampleData.json file don't have all the methods that our classes do.  Flatted may (or may not) be able to solve this for you.
+IT'S REALLY REALLY IMPORTANT THAT WE CREATE A NEW 'STATE' OBJECT - DO NOT MODIFY THE CURRENT STATE!!!!
+
+After that we copy the current state into a new object [using the JavaScript / TypeScript spread operator, which is super-handy for copying objects](https://www.digitalocean.com/community/tutorials/js-spread-operator).  If we wanted to accomplish the same thing without this operator we'd need to do the following in order to manually copy each part of the state object into our newState object.  See how tedious and boilerplate this is?  The spread operator rocks!
+
+```typescript
+    let newState: IYourShareState = {
+        idCounter: state.idCounter,
+        people: state.people,
+        currentUser: state.currentUser
+    }
+```
+
+<u>IMPORTANT NOTE:</u> Once you've created the newState (as a copy of the current state) you should make all your changes on the newState object, which is what we do on the next several lines.
+
+We create a new Person object and use that as the currentUser.  We then make sure to add the currentUser to the list of all the people, and finally we update idCounter.
+
+At that point newState looks exactly like we want our state to look like, so we return it.
+
+<u>NOTE:</u> If you're adding a new action you should look for the TODO comment in the switch statement - it'll tell you were to put your code.  I'd recommend copying the code that we looked at above, pasting it in for your new action, and then modifying it as you go.
+
+#### A quick note on idCounter
+
+The program gives each Person and Item object in the program a unique id number.  If a Person object has the id number of 7, you can know that no other Person and no other Item in the program has that same ID number.  
+
+This is nice in case we want to refer to a Person/Item outside of the program - for example, if we wanted to save all our data into a database, or into a JSON file.  **We don't actually use it for this purpose in the program right now**, but since we've got unique ID numbers it could be possible in future versions of the software.
+
+The way that we ensure that each Person and Item has a unique ID is through several steps:
+
+1. When we manually / programmatically created the sample data in the `SampleData_LoadedProgrammatically` function we made sure to give each Item / Person a unique ID number by starting the ID's at 0 and then moving up one for each number (0, 1, 2, 3, ...).  
+
+2. We created a variable named idCounter in the app's state, because it's used for IDs and it's counting up by 1 each time we assign another ID number to something.
+
+   - In `SampleData_LoadedProgrammatically` we make sure to set idCounter to 6 so that it's ready to go for the next object
+
+3. In the `yourShareReducer` we will get one more than the current ID number *just in case we need an id number* on this line here:
+
+   ```typescript
+       const nextId = state.idCounter + 1;
+   
+       switch (action.type) { // this line is included for context
+           case actionIdentifier.Join: {
+   ```
+
+4. 
 
 ### Step 5: Actually using the Redux state :)
 
@@ -300,7 +241,7 @@ class WelcomePage extends React.Component<WelcomeScreenProps> {
           </p>
 ```
 
-#### Step 5.2: Decide what information the component needs for it's props [components/ItemList.tsx]
+#### Step 5.2: Decide what information the component needs for it's props [WelcomePage.tsx]
 
 Since each Person object has a list of items that they are willing to lend out all we'll really need is the list of people.
 
@@ -334,7 +275,7 @@ function mapDispatchToProps(dispatch: any) {
 }
 ```
 
-#### Step 5.3: Display the information [components/ItemList.tsx]
+#### Step 5.3: Display the information [still WelcomePage.tsx]
 
 The render() method will set up the table that we'll need.  Here we'll focus on the lines of code that generate the rows of information - each row shows the item to borrow in the left hand column and the person who owns it on the right.
 
