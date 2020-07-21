@@ -96,7 +96,7 @@ export class Person {
 In order to know how to write code that uses individual Items we'll need to look at the Item class.  We'll leave out less-relevant details:
 
 ```typescript
-export class Item implements Item {
+export class Item {
   id: number;
   name: string;
   itemType: string;
