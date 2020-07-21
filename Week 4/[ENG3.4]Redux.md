@@ -192,6 +192,85 @@ let SampleData_LoadedProgrammatically = (): IYourShareState => {
 
 There's more code in the reducer function - we'll look at that tomorrow
 
+#### Storing your sample data in a JSON file [redux/SampleData.json]
+
+It's also worth pointing out that it's possible to represent your starting data / sample data as a JSON file and to then load that file in (instead of creating the objects programmatically).  If so the file might look something like this:
+
+```json
+{
+    "idCounter": 6,
+    "currentUser": {
+        "id": 0,
+        "name": "This is you",
+        "phone": "508-867-5309",
+        "zipCode": "98052",
+        "preferences": {
+            "text_me_borrow_requests": false,
+            "bffs_borrow_without_ok": false,
+            "fof_dont_see_items": false
+        },
+        "bestFriends": [],
+        "items": []
+    },
+    "people": [{
+            "id": 1,
+            "name": "Stacey",
+            "phone": "425-123-4567",
+            "zipCode": "98011",
+            "preferences": {
+                "text_me_borrow_requests": false,
+                "bffs_borrow_without_ok": false,
+                "fof_dont_see_items": false
+            },
+            "bestFriends": [],
+            "items": [{
+                "id": 2,
+                "name": "Blender",
+                "itemType": "Kitchen",
+                "description": "A pretty great blender.  The lid...",
+                "ownedBy": 1,
+                "lentTo": null
+            }]
+        },
+        {
+            "id": 3,
+            "name": "Marcos",
+            "phone": "206-7654-321",
+            "zipCode": "98115",
+            "preferences": {
+                "text_me_borrow_requests": false,
+                "bffs_borrow_without_ok": false,
+                "fof_dont_see_items": false
+            },
+            "bestFriends": [],
+            "items": [{
+                    "id": 4,
+                    "name": "Rake",
+                    "itemType": "Garden",
+                    "description": "A pretty great rake.  The handle...",
+                    "ownedBy": 3,
+                    "lentTo": null
+                },
+                {
+                    "id": 5,
+                    "name": "Car",
+                    "itemType": "Garden",
+                    "description": "A pretty great car.  The steering wheel...",
+                    "ownedBy": 3,
+                    "lentTo": null
+                }
+            ]
+        }
+    ]
+}
+```
+
+Two warnings:
+
+1. Because the data model that we're using here is circular (the person refers to items, and each item refers back to it's owning person) we would need to do some work to store the information in JSON files or else use [a Node package that can store circular JSON data, such as flatted](https://www.npmjs.com/package/flatted).
+
+2. We definied all our state using classes, but that may cause problems here.  Namely, TypeScript will complain the the objects in the SampleData.json file don't have all the methods that our classes do.  Flatted may (or may not) be able to solve this for you.
+
 ### Step 5: Actually using the Redux state :)
 
 #### Step 5.1: Use the user-visible component on a page/screen [WelcomePage.tsx]
@@ -295,14 +374,61 @@ The second, inner, 'nested' .map() looks like:
 
 The inner map/loop serves to actually generate a single row.  Notice that if one person has several items then this inner loop/map will run that function once per  item while keeping the 'person' variable the same (until we go on to the next person)
 
-### Practice: Add redux to To Do app (45 minutes)
+## Practice: Add redux to your YourShare app
 
-NTs should focus on implementing one piece of Redux at a time and work their way to the complete solution
+You'll notice that on the WelcomePage there's a list of items that you own, along with a note about whether or not the item is lent out or not.
 
-1. Install react-redux
-2. Install redux-devtools (Optional) - See above for instructions on installation
-3. Implement redux in the Todo app by moving all state to redux
+Please follow the steps above to add this functionality to your YourShare app (in your team's app prototype repo - TeamXX-AppPrototype).
 
-## Stretch
+Here's a quick summary of what you'll need to do:
 
-1. Create a middleware to check if a Todo has emojis in it. If it has an emoji then do not include it in the redux store.  
+### Step 0: Setup Redux [index.tsx]
+
+- [ ] npm install react-redux
+- [ ] Make sure that you import the needed things from Redux and React-Redux
+- [ ] Import your reducer function
+- [ ] you'll need to take a quick detour and create one in it's own file 
+- [ ] Create the Redux store (handing it your reducer function as a parameter)
+- [ ] Wrap your App in a 'Provider' component, like so: 
+
+### Step 1: What state do we need?
+
+- [ ] Look at the picture of the table in the spec and discuss with your team what you'll need
+
+### Step 2: Represent the state in Typescript / Redux [types.tsx]
+
+- [ ] Make sure that you've got something to represent the current user and an array of items that they're willing to lend out.
+  - [ ] You may want to copy the types.tsx file from the demo / sample that the instructor walked you through 
+
+### Step 3: Represent the actions [redux/actions.tsx]
+
+- [x] Since you're only showing the list, not modifying it, you shouldn't need to define any actions.
+
+### Step 4: Write the code that actually makes the action happen (i.e., write the reducer) [redux/reducer.tsx]
+
+- [ ] You'll need to create the initial state
+  - [ ] Again, you may want to model your code off the stuff in the demo / sampl
+
+### Step 5: Actually using the Redux state :)
+
+#### Step 5.0: Display the information [components/ItemList.tsx]
+
+- [ ] Define the LendingList.tsx file, along with a custom React component (class) inside it (also named LendingList) so that you can import it in the next step.  Right now it doesn't really need to do anything specific.
+  - [ ] I'd *strongly* recommend that you find a working React component that has working Redux code in it and copy that as your starting point.  *Strongly* :)
+
+#### Step 5.1: Use the user-visible component on a page/screen [WelcomePage.tsx]
+
+- [ ] Add the &lt;LendingList /&gt; to the WelcomePage.tsx.
+
+#### Step 5.2: Decide what information the component needs for it's props [components/LendingList.tsx]
+
+- [ ] Define the ILendingList interface to tell TypeScript / Redux what the props the LendingList is expecting
+- [ ] Define the mapStateToProps function
+- [ ] Define the mapStateToDispatch function
+
+#### Step 5.3: Display the information [components/LendingList.tsx]
+
+- [ ] Discuss with your group whether your code will need a single call to .map() or whether you'll need to nest .map() inside a second .map()
+- [ ] Set up the `render()` method to go through the list of items the current user
+
+
