@@ -194,7 +194,7 @@ The program gives each Person and Item object in the program a unique id number.
 
 This is nice in case we want to refer to a Person/Item outside of the program - for example, if we wanted to save all our data into a database, or into a JSON file.  **We don't actually use it for this purpose in the program right now**, but since we've got unique ID numbers it could be possible in future versions of the software.
 
-The way that we ensure that each Person and Item has a unique ID is through several steps:
+If you're curious about how this works:  The way that we ensure that each Person and Item has a unique ID is through several steps.
 
 1. When we manually / programmatically created the sample data in the `SampleData_LoadedProgrammatically` function we made sure to give each Item / Person a unique ID number by starting the ID's at 0 and then moving up one for each number (0, 1, 2, 3, ...).  
 
@@ -211,55 +211,42 @@ The way that we ensure that each Person and Item has a unique ID is through seve
            case actionIdentifier.Join: {
    ```
 
-4. 
+4. Then (in the appropriate case of the switch statement) when we create a new object we use that ID number, and save the number (so that we don't use it again)
 
-### Step 5: Actually using the Redux state :)
+   ```typescript
+               newState.currentUser = new Person(nextId, addAction.name, addAction.phone, addAction.zip);
+               // < snip >
+               newState.idCounter = nextId;
+   ```
 
-#### Step 5.1: Use the user-visible component on a page/screen [WelcomePage.tsx]
+   
 
-We might very well want to show the list of items that the user can borrow in multiple places in our app so we're going to put it into a separate component.  We'll put that component into the components folder and name it ItemList.  In the starter project we've got both an `ItemList.tsx` as well as styling information in `ItemList.css`.
+### Step 5: Actually using the Redux state - displaying the current user
 
-We'll then make sure to import the component in our WelcomePage.tsx file:
+####  Step 5.1: Use the user-visible component on a page/screen [WelcomePage.tsx]
 
-```typescript
-import ItemList from "./components/ItemList/ItemList"
-```
+Since we've added the new user to our program, allowing them to join the app's awesome community, we're going to make use of that by displaying the current user's name on the page.
 
-We'll then tell React to render the component for us using &lt;ItemList/&gt; :
-
-```typescript
-class WelcomePage extends React.Component<WelcomeScreenProps> {
-  render() {
-    return (
-      <div>
-        <h1>Welcome, {this.props.you.name}</h1> 
-      
-        <ItemList />
-      
-        <p onClick={(e) => this.props.changePage(pages.AddItemPage)}>
-          Add item
-          </p>
-```
+Since we're going add this information to the WelcomePage.tsx (which we've already got) we don't need to do anything for this step :)
 
 #### Step 5.2: Decide what information the component needs for it's props [WelcomePage.tsx]
 
-Since each Person object has a list of items that they are willing to lend out all we'll really need is the list of people.
-
-In the components/ItemList.tsx file you'll find an interface that defines the properties (props) that tells Typescript and Redux that we'll need a list of people:
+The WelcomePage is going to neeed to know which user is the current user, so let's save that information from the app's overall state.  We can do that by defining an interface, like so (the `changePage` was already there from the original version of YourShare)
 
 ```typescript
-interface IItemListProps {
-    listOfPeople: Array<Person>
+interface WelcomeScreenProps {
+  changePage: (page: pages) => void;
+  you: Person;
 }
 ```
 
-Towards the end of the file you'll see the mapStateToProps function, which tells Redux that the 'people' part of the app's state should be copied into the props's listOfPeople part:
+Towards the end of the file you'll see the mapStateToProps function, which tells Redux that the 'currentUser' part of the app's state should be copied into the props's `you` part:
 
 ```typescript
 function mapStateToProps(state: IYourShareState) {
-    return {
-        listOfPeople: state.people
-    }
+  return {
+    you: state.currentUser // "currentUser" in Redux state is 'you' on this page
+  }
 }
 ```
 
@@ -268,53 +255,79 @@ Because this component will only show the user information and will NOT change t
 ```typescript
 // Map redux actions to component props
 function mapDispatchToProps(dispatch: any) {
-    return {
-        // Because this component doesn't change the state of the app at all
-        // we're going to leave this empty
-    }
+  return {
+    // no actions on this page / screen
+  }
 }
 ```
 
 #### Step 5.3: Display the information [still WelcomePage.tsx]
 
-The render() method will set up the table that we'll need.  Here we'll focus on the lines of code that generate the rows of information - each row shows the item to borrow in the left hand column and the person who owns it on the right.
-
-We'll use two calls to map, one inside the other;
+We'll then tell React to render that on the page using `{this.props.you.name}` in the following code snippet, in WelcomePage.tsx:
 
 ```typescript
-<tbody>
-    {this.props.listOfPeople.map((person: Person) => {
-        return person.items.map((item: Item) => (
-            <tr key={item.id} > <td>{item.name}</td><td>{person.name}</td></tr>)
-        )
-    }
-    )}
-</tbody>
+class WelcomePage extends React.Component<WelcomeScreenProps> {
+  render() {
+    return (
+      <div>
+        <h1>Welcome, {this.props.you.name}</h1> 
 ```
 
-The first, outer .map() looks like :
+
+
+###  BONUS Step 5: Actually using the Redux state - displaying the current user's name on the Welcome Page
+
+#### BONUS Step 5.1: Use the user-visible component on a page/screen [WelcomePage.tsx]
+
+Since we've added the new user to our program, allowing them to join the app's awesome community, we're going to make use of that by displaying the current user's name on the page.
+
+Since we're going add this information to the WelcomePage.tsx (which we've already got) we don't need to do anything for this step :)
+
+#### BONUS Step 5.2: Decide what information the component needs for it's props [WelcomePage.tsx]
+
+The WelcomePage is going to neeed to know which user is the current user, so let's save that information from the app's overall state.  We can do that by defining an interface, like so (the `changePage` was already there from the original version of YourShare)
 
 ```typescript
-<tbody>
-    {this.props.listOfPeople.map((person: Person) => {
-				// <snip - inner loop goes here>
-    }
-    )}
-</tbody>
+interface WelcomeScreenProps {
+  changePage: (page: pages) => void;
+  you: Person;
+}
 ```
 
-The purpose of the outer map/loop is to run some code one per Person.
-
-The second, inner, 'nested' .map() looks like:
+Towards the end of the file you'll see the mapStateToProps function, which tells Redux that the 'currentUser' part of the app's state should be copied into the props's `you` part:
 
 ```typescript
-
-        return person.items.map((item: Item) => (
-            <tr key={item.id} > <td>{item.name}</td><td>{person.name}</td></tr>)
-        )
+function mapStateToProps(state: IYourShareState) {
+  return {
+    you: state.currentUser // "currentUser" in Redux state is 'you' on this page
+  }
+}
 ```
 
-The inner map/loop serves to actually generate a single row.  Notice that if one person has several items then this inner loop/map will run that function once per  item while keeping the 'person' variable the same (until we go on to the next person)
+Because this component will only show the user information and will NOT change the state at all we'll intentionally leave the next part empty:
+
+```typescript
+// Map redux actions to component props
+function mapDispatchToProps(dispatch: any) {
+  return {
+    // no actions on this page / screen
+  }
+}
+```
+
+#### BONUS Step 5.3: Display the information [still WelcomePage.tsx]
+
+We'll then tell React to render that on the page using `{this.props.you.name}` in the following code snippet, in WelcomePage.tsx:
+
+```typescript
+class WelcomePage extends React.Component<WelcomeScreenProps> {
+  render() {
+    return (
+      <div>
+        <h1>Welcome, {this.props.you.name}</h1> 
+```
+
+
 
 ## Practice: Add redux to your YourShare app
 
