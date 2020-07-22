@@ -282,17 +282,104 @@ function mapDispatchToProps(dispatch: any) {
 
 #### Step 5.3: Gather the information
 
-We'll then tell React to render that on the page using `{this.props.you.name}` in the following code snippet, in WelcomePage.tsx:
+<u>NOTE:</u> We're using a different approach to getting the information we need to call the `saveJoinInfo` function.  We're gong with 'uncontrolled' form elements, meaning that we'll wait until the handleSubmit method is called and then we'll ask the browser what the current value in each form element (each text box, etc) is.  In our previous coverage of Redux we used an instance variable and the onChange event handler.  I think this new way is simpler :)
+
+
+
+So how do we actually call the `saveJoinInfo` function?  Back when we defined the HTML / JSX we said that the &lt;form&gt; element should use the handleSubmit function to handle onSubmit events:
 
 ```typescript
-class WelcomePage extends React.Component<WelcomeScreenProps> {
-  render() {
+ render() {
     return (
       <div>
-        <h1>Welcome, {this.props.you.name}</h1> 
+        <h1>Join Your Community</h1>
+        <h2>Sign-up</h2>
+        <form onSubmit={this.handleSubmit}>
 ```
 
+The handleSubmit function will collect up the information that we need.
 
+```typescript
+  private handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    if (this.nameRef.current == null || this.phoneNumRef.current == null || this.zipCodeRef.current == null) {
+      alert('INTERNAL ERROR: missing reference!');
+      return;
+    }
+    this.props.saveJoinInfo(this.nameRef.current.value, this.phoneNumRef.current.value, this.zipCodeRef.current.value);
+    this.props.changePage(pages.WelcomePage)
+  }
+```
+
+Essentiallky we start by preventing the default browser action (which would cause the entire page to reload, losing all our changes), to then call this.`props.saveJoinInfo,` and to then change the page to show to WelcomePage.
+
+You'll notice that we're using this.nameRef, this.phoneNumRef, and this.zipCodeRef here.  For now the important thing is that they each refer to a textbox on the web page.  As long as we first make sure that this.nameRef.current is not null then we can get what the user typed into the 'name' text box using this.nameref.value. 
+
+How do we set up the three refs?  It's a four step process:
+
+1. In our SignupPage class we need to declare the variables that will hold these references:
+
+   ```typescript
+   class SignupPage extends React.Component<SignupScreenProps> {
+     nameRef: React.RefObject<HTMLInputElement>;
+     phoneNumRef: React.RefObject<HTMLInputElement>;
+     zipCodeRef: React.RefObject<HTMLInputElement>;
+   ```
+
+2. In the SignupPage's constructor we create the references.  Note that we have not yet connected the ref objects to the HTML yet
+
+   ```typescript
+     constructor(props: any) {
+       super(props);
+       this.nameRef = React.createRef();
+       this.phoneNumRef = React.createRef();
+       this.zipCodeRef = React.createRef();
+     }
+   ```
+
+3. In the HTML/JSX we then tell React to connect the HTML elements to our refs using the ref={} syntax
+
+   ```typescript
+            <form onSubmit={this.handleSubmit}>
+               <p>
+                 <label>
+                   Name:
+               <input type="text" ref={this.nameRef} />
+                 </label>
+               </p>
+               <p>
+                 <label>
+                   Phone number:
+               <input type="text" ref={this.phoneNumRef} />
+                 </label>
+               </p>
+               <p>
+                 <label>
+                   Zip code:
+               <input type="text" ref={this.zipCodeRef} />
+                 </label>
+               </p>
+               <p>
+                 <input type="submit" value="Join" />
+               </p>
+             </form>
+   ```
+
+4. Finally, in handleSubmit we need to make sure that if this.nameRef.current is null that we return early, so that we never run those last two lines of code when this.nameRef.current is null (same for the other two refs)
+
+   ```typescript
+   private handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+       event.preventDefault();
+       if (this.nameRef.current == null || this.phoneNumRef.current == null || this.zipCodeRef.current == null) {
+         alert('INTERNAL ERROR: missing reference!');
+         return;
+       }
+       this.props.saveJoinInfo(this.nameRef.current.value, this.phoneNumRef.current.value, this.zipCodeRef.current.value);
+       this.props.changePage(pages.WelcomePage)
+     }
+   ```
+
+   
 
 ### BONUS Step 5: Actually using the Redux state - displaying the current user's name on the Welcome Page
 
