@@ -221,47 +221,66 @@ If you're curious about how this works:  The way that we ensure that each Person
 
    
 
-### Step 5: Actually using the Redux state - displaying the current user
+### Step 5: Actually using the Redux state - collecting new user info on the Signup page [SignupPage.tsx]
 
-####  Step 5.1: Use the user-visible component on a page/screen [WelcomePage.tsx]
+#### Step 5.1: Use the user-visible component on a page/screen 
 
-Since we've added the new user to our program, allowing them to join the app's awesome community, we're going to make use of that by displaying the current user's name on the page.
+Now that we've got all the 'plumbing' in place - our state can keep track of the information we need, we can create an action to allow someone to join the app, and we've got code in our reducer that will actually change the app's state - we can now use that action.  Specifically, on the SignupPage.tsx we'll create a form that look liks this:
 
-Since we're going add this information to the WelcomePage.tsx (which we've already got) we don't need to do anything for this step :)
+![image-20200721171329677](images/%5BENG3.4%5DRedux-Part-2/image-20200721171329677.png)
 
-#### Step 5.2: Decide what information the component needs for it's props [WelcomePage.tsx]
-
-The WelcomePage is going to neeed to know which user is the current user, so let's save that information from the app's overall state.  We can do that by defining an interface, like so (the `changePage` was already there from the original version of YourShare)
+The code that generates this looks like this:
 
 ```typescript
-interface WelcomeScreenProps {
+ render() {
+    return (
+      <div>
+        <h1>Join Your Community</h1>
+        <h2>Sign-up</h2>
+        <form onSubmit={this.handleSubmit}>
+          <p>
+            <label>
+              Name:
+          <input type="text" ref={this.nameRef} />
+            </label>
+          </p>
+// < snip - the rest was removed because it's fairly similar to the above>
+```
+
+We'll look at the details as we go on.
+
+#### Step 5.2: Decide what information the component needs for it's props
+
+The SignupPage is going to neeed to send a "please let this user join" action to Redux.  We'll use a prop to do that, and we'll name that prop `saveJoinInfo` (since we're asking Redux to save the info that the user needs to give us in order to join).  As you can see from the `=>` below, `saveJoinInfo` is a function (which takes the name, phone number, and zip code of our new user, does some work, but doesn't return anything directly)
+
+```typescript
+interface SignupScreenProps {
   changePage: (page: pages) => void;
-  you: Person;
+  saveJoinInfo: (n: string, p: string, z: string) => void;
 }
 ```
 
-Towards the end of the file you'll see the mapStateToProps function, which tells Redux that the 'currentUser' part of the app's state should be copied into the props's `you` part:
+Towards the end of the file you'll see the mapStateToProps function.  Since we don't need any data to show the SignupPage doesn't need any data props:
 
 ```typescript
 function mapStateToProps(state: IYourShareState) {
   return {
-    you: state.currentUser // "currentUser" in Redux state is 'you' on this page
+    // no data props
   }
 }
 ```
 
-Because this component will only show the user information and will NOT change the state at all we'll intentionally leave the next part empty:
+However, because we want SignupPage to be able to dispatch actions to Redux we DO need to define the `saveJoinInfo` prop as a function that actually does something.  In this case we'll use the `createJoinAction` from the actions.tsx file to create a new JoinAction object, which we then give to the dispatch function (which will tell Redux that we'd like to do this action.)
 
 ```typescript
-// Map redux actions to component props
 function mapDispatchToProps(dispatch: any) {
   return {
-    // no actions on this page / screen
+    saveJoinInfo: (n: string, p: string, z: string) => dispatch(createJoinAction(n, p, z))
   }
 }
 ```
 
-#### Step 5.3: Display the information [still WelcomePage.tsx]
+#### Step 5.3: Gather the information
 
 We'll then tell React to render that on the page using `{this.props.you.name}` in the following code snippet, in WelcomePage.tsx:
 
@@ -275,7 +294,7 @@ class WelcomePage extends React.Component<WelcomeScreenProps> {
 
 
 
-###  BONUS Step 5: Actually using the Redux state - displaying the current user's name on the Welcome Page
+### BONUS Step 5: Actually using the Redux state - displaying the current user's name on the Welcome Page
 
 #### BONUS Step 5.1: Use the user-visible component on a page/screen [WelcomePage.tsx]
 
