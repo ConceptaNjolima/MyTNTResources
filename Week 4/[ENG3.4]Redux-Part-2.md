@@ -223,7 +223,9 @@ If you're curious about how this works:  The way that we ensure that each Person
 
 ### Step 5: Actually using the Redux state - collecting new user info on the Signup page [SignupPage.tsx]
 
-#### Step 5.1: Use the user-visible component on a page/screen 
+The overall idea here is that when the user clicks on the 'Submit' button the app should save the information into the Redux store and then change the page to show the Welcome page.  Let's see how that's done:
+
+#### Step 5.1: Set up the form so that it collects the info your action will need
 
 Now that we've got all the 'plumbing' in place - our state can keep track of the information we need, we can create an action to allow someone to join the app, and we've got code in our reducer that will actually change the app's state - we can now use that action.  Specifically, on the SignupPage.tsx we'll create a form that look liks this:
 
@@ -282,7 +284,7 @@ function mapDispatchToProps(dispatch: any) {
 
 #### Step 5.3: Gather the information
 
-<u>NOTE:</u> We're using a different approach to getting the information we need to call the `saveJoinInfo` function.  We're gong with 'uncontrolled' form elements, meaning that we'll wait until the handleSubmit method is called and then we'll ask the browser what the current value in each form element (each text box, etc) is.  In our previous coverage of Redux we used an instance variable and the onChange event handler.  I think this new way is simpler :)
+<u>NOTE:</u> We're using a different approach to getting the information we need to call the `saveJoinInfo` function.  We're gong with '[uncontrolled form components](https://reactjs.org/docs/uncontrolled-components.html)', meaning that we'll wait until the handleSubmit method is called and then we'll ask the browser what the current value in each form element (each text box, etc) is.  In our previous coverage of Redux we used an instance variable and the onChange event handler.  I think this new way is simpler :)
 
 
 
@@ -311,7 +313,7 @@ The handleSubmit function will collect up the information that we need.
   }
 ```
 
-Essentiallky we start by preventing the default browser action (which would cause the entire page to reload, losing all our changes), to then call this.`props.saveJoinInfo,` and to then change the page to show to WelcomePage.
+Essentially we start by preventing the default browser action (which would cause the entire page to reload, losing all our changes), to then call this.`props.saveJoinInfo,` and to then change the page to show to WelcomePage.
 
 You'll notice that we're using this.nameRef, this.phoneNumRef, and this.zipCodeRef here.  For now the important thing is that they each refer to a textbox on the web page.  As long as we first make sure that this.nameRef.current is not null then we can get what the user typed into the 'name' text box using this.nameref.value. 
 
@@ -379,7 +381,7 @@ How do we set up the three refs?  It's a four step process:
      }
    ```
 
-   
+5. Once all that's done then the only things left to do are to save the newly joined user (using `saveJoinInfo`) and to then call `changePage` so that the sign up page is replaced with the welcome page.
 
 ### BONUS Step 5: Actually using the Redux state - displaying the current user's name on the Welcome Page
 
@@ -437,13 +439,13 @@ class WelcomePage extends React.Component<WelcomeScreenProps> {
 
 ## Practice: Add redux to your YourShare app
 
-You'll notice that on the WelcomePage there's a list of items that you own, along with a note about whether or not the item is lent out or not.
+You'll notice that on the AddItemPage there's a form that allows you to type in the details for a new Item (that belongs to the current user).  We'd like for that page to actually add an item to the Redux store.
 
 Please follow the steps above to add this functionality to your YourShare app (in your team's app prototype repo - TeamXX-AppPrototype).
 
 Here's a quick summary of what you'll need to do:
 
-### Step 0: Setup Redux [index.tsx]
+### Step 0: Setup Redux [index.tsx] - you probably did this yesterday :)
 
 - [ ] npm install react-redux
 - [ ] Make sure that you import the needed things from Redux and React-Redux
@@ -456,54 +458,45 @@ Here's a quick summary of what you'll need to do:
 
 - [ ] Look at the picture of the table in the spec and discuss with your team what you'll need
 
-### Step 2: Represent the state in Typescript / Redux [types.tsx]
+### Step 2: Represent the state in Typescript / Redux [redux/types.tsx]
 
 - [ ] Make sure that you've got something to represent the current user and an array of items that they're willing to lend out.
   - [ ] You may want to copy the types.tsx file from the demo / sample that the instructor walked you through 
 
 ### Step 3: Represent the actions [redux/actions.tsx]
 
-NOTE NOTE: There's 'TODO' comments here explaining what you'll need to change to add an action
+NOTE: There's 'TODO' comments here explaining what you'll need to change to add an action
 
-- [x] Since you're only showing the list, not modifying it, you shouldn't need to define any actions.
+- [ ] Add another item to the actionIdentifier enum
+- [ ] Create a new interface to represent the new action
+- [ ] Make sure that you write an action creator function for the new action
+- [ ] Add the new type onto the end of the 'export type YourShare' line.
+  Don't forget the vertical line, like so:
+  `export type YourShareActions = AddAction | YourAwesomeNewAction`
 
 ### Step 4: Write the code that actually makes the action happen (i.e., write the reducer) [redux/reducer.tsx]
 
-- [ ] You'll need to create the initial state
-  - [ ] Again, you may want to model your code off the stuff in the demo / sampl
+- [ ] Add a case to the switch statement for your new action.
+- [ ] It's highly recommended to copy-and-paste an existing, working case.
+- [ ] *<u>Remember that you want to add a new item to the current user</u>*
 
-### Step 5: Actually using the Redux state :)
+### Step 5: Actually using the Redux state :) - setting up the form
 
-#### Step 5.0: Display the information [components/ItemList.tsx]
+#### Step 5.1: Set up the form so that it collects the info your action will need [AddItemPage.tsx]
 
-- [ ] Define the LendingList.tsx file, along with a custom React component (class) inside it (also named LendingList) so that you can import it in the next step.  Right now it doesn't really need to do anything specific.
-  - [ ] I'd *strongly* recommend that you find a working React component that has working Redux code in it and copy that as your starting point.  *Strongly* :)
+- [ ] Add the HTML / JSX to AddItemPage.tsx
 
-#### Step 5.1: Use the user-visible component on a page/screen [WelcomePage.tsx]
+#### Step 5.2: Decide what information the component needs for it's props [AddItemPage.tsx]
 
-- [ ] Add the &lt;LendingList /&gt; to the WelcomePage.tsx.
-
-#### Step 5.2: Decide what information the component needs for it's props [components/LendingList.tsx]
-
-- [ ] Define the ILendingList interface to tell TypeScript / Redux what the props the LendingList is expecting
+- [ ] Define the IAddItemPage interface to tell TypeScript / Redux what the props the AddItemPage is expecting
 - [ ] Define the mapStateToProps function
 - [ ] Define the mapStateToDispatch function
 
-#### Step 5.3: Display the information [components/LendingList.tsx]
+#### Step 5.3: Gather the information [AddItemPage.tsx]
 
-- [ ] Discuss with your group whether your code will need a single call to .map() or whether you'll need to nest .map() inside a second .map()
-- [ ] Set up the `render()` method to go through the list of items the current user
-
-# Modify that page - new form
-
-1. Tweak the Props at the top and the mapStateToProps at the bottom
-2. Tweak the Props at the top and the mapStateToDispatch at the bottom
-3. Set up the uncontrolled stuff
-   1. Declare instance var
-   2. Create the ReactRef
-   3. Connect ref to HTML form element
-   4. < Use it in the event handler >
-
-We're going with the '[uncontrolled form components](https://reactjs.org/docs/uncontrolled-components.html)'
-
-Another, more React-ish way of doing this might be [React Final Form](https://final-form.org/docs/react-final-form/getting-started).  The ['simple' example is particularly compelling](https://final-form.org/docs/react-final-form/examples/simple).
+- [ ] Set up the uncontrolled forms:
+  - [ ] Declare the variables in the AddItemPage class that will hold the references to the textboxes
+  - [ ] In the SignupPage's constructor we create the references
+  - [ ] In the HTML/JSX we then tell React to connect the HTML elements to our refs using the ref={} syntax
+  - [ ] In handleSubmit make sure that if `this.nameRef.current` is null that we return early, so that we never run those last two lines of code
+  - [ ] Call the prop function to actually trigger the action (like `saveJoinInfo`), then call changePage to move back to the welcome page
