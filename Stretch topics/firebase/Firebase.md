@@ -217,3 +217,13 @@ Much of what I've got here was [simplified from this blog post](https://www.robi
 
 // Read from / write to DB:
 // https://firebase.google.com/docs/database/web/read-and-write?authuser=0
+
+
+
+Change #1
+
+Change #2
+
+Change #3
+
+FINISHED
