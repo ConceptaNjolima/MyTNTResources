@@ -18,11 +18,12 @@
    2. Let's look at what JSON is
 2. What *should* you put in a DB?
 3. How do we access the database from code?
-   1. Configuring your app to connect to the DB
+   1. Setting up your app
    2. How to get your app's database configuration info
-   3. get a reference to the place in the JSON doc that you want to modify
-   4. call set / once / update / remove / push on the ref
-   5. if you want to know whether it worked or not use Promise.then to run code once it's finished
+   3. Configuring your app to connect to the DB
+   4. get a reference to the place in the JSON doc that you want to modify
+   5. call set / once / update / remove / push on the ref
+   6. if you want to know whether it worked or not use Promise.then to run code once it's finished
        (or skip it)
 
 ### Let's look at Firebase:
@@ -105,16 +106,16 @@ Normally you'd only store data that you want to persist across runs of your prog
 
 ### How do we access the database from code?
 
-#### Configuring your app to connect to the DB
+#### Setting up your app
 
-1. Switching back to your app (or [the sample project in the Samples repo](https://github.com/tnt-summer-academy/Samples/tree/main/Stretch/firebase))
+1. Let's start by looking at your app (or [the sample project in the Samples repo](https://github.com/tnt-summer-academy/Samples/tree/main/Stretch/firebase))
 
 2. You can install the Firebase support by typing in:
    `npm install firebase`
 
    - Note: you do NOT need `npm install @types/firebase` - the firebase package includes type defitions for TypeScript (I believe the Firebase JavaScript API itself is written in TypeScript)
 
-3. Copy this into a new file (named, say, `firebase.tsx`) in your project:
+3. Copy this into a new file (named, say, `myFirebase.tsx`) in your project:
 
    ```typescript
    const config = {
@@ -129,6 +130,8 @@ Normally you'd only store data that you want to persist across runs of your prog
 
    -  Note: Checking all this info into GitHub isn't particularly secure.
      There are ways to store this information in other files (for example, .env files, which are loaded into environment variables); you can then store those files outside of source control
+
+4. Next we'll need to get the config info for our app.
 
 #### How to get your app's database configuration info
 
@@ -149,7 +152,15 @@ Normally you'd only store data that you want to persist across runs of your prog
 
      <img src="images/Firebase/image-20200725225822787.png" alt="image-20200725225822787" style="zoom:67%;" />
 
-1. Next, plug these into the `Firebase.tsx` file:
+#### Configuring your app to connect to the DB
+
+The approach we're going to use is to create a class that all your components can use
+
+Add a method to that class for each action you want to do on the DB (each time you query for information, or add / update / remove something, etc)
+
+
+
+1. Next, plug the configuration info (that you just got from the Firebase web page) into the `myFirebase.tsx` file:
    (Note the <> after createContext!!!)
 
    ```typescript
@@ -200,3 +211,9 @@ Much of what I've got here was [simplified from this blog post](https://www.robi
 1. TODO: The listener / promise thing - we're going to try and ignore it :)
 2. TODO: Basic API
 3. TODO: Do we need to avoid doing the appInit more than once per run?
+
+// The official docs:
+// https://firebase.google.com/docs/web/setup?authuser=0#node.js-apps
+
+// Read from / write to DB:
+// https://firebase.google.com/docs/database/web/read-and-write?authuser=0
