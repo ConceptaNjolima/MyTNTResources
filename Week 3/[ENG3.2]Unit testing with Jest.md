@@ -146,7 +146,7 @@ This is how passing and failing tests appear in Jest.
     ```
     
 * Testing if a function returns the correct result. Assuming a function `inchesOfRain()` that returns 0 if it does not rain.
- 
+
     ```typescript
     test('did not rain', () => {
       expect(inchesOfRain()).toBe(0);
@@ -168,8 +168,8 @@ This is how passing and failing tests appear in Jest.
     test("Stores in a particular state throws an error", () => {
       expect(() => storeFilter.storesForState("New York")).toThrow();
     });
-    ``` 
- 
+    ```
+
 #### Examples of unit tests related to the UI
 
 * These tests are available in the `uitesting` files
