@@ -6,7 +6,7 @@ Using Azure or any service should fall into the stretch goals of your prototype.
 
 * Plan out what you're going to user Azure for first. What service or feature of Azure is going to be used with your prototype. What Azure resources do you need to use?
 * The student Azure and free tiers Azure mays be used in your prototype.
-* Activate your student subscription here: [https://azure.microsoft.com/en-us/free/students/](https://azure.microsoft.com/en-us/free/students/)
+* Activate your student subscription here with your edu email address: [https://azure.microsoft.com/en-us/free/students/](https://azure.microsoft.com/en-us/free/students/)
 
 ## What to do if you get stuck
 
