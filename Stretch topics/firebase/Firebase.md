@@ -18,13 +18,13 @@
    2. Let's look at what JSON is
 2. What *should* you put in a DB?
 3. How do we access the database from code?
-   1. Setting up your app
-   2. How to get your app's database configuration info
-   3. Configuring your app to connect to the DB
-   4. get a reference to the place in the JSON doc that you want to modify
-   5. call set / once / update / remove / push on the ref
-   6. if you want to know whether it worked or not use Promise.then to run code once it's finished
-       (or skip it)
+   1. How to get your app's database configuration info
+   2. Setting up your app
+   3. Overview of our approach to using Firebase
+   4. CRUD operations: Create
+   5. CRUD operations: Read
+   6. CRUD operations: Update
+   7. CRUD operations: Delete
 
 ### Let's look at Firebase:
 
@@ -106,36 +106,9 @@ Normally you'd only store data that you want to persist across runs of your prog
 
 ### How do we access the database from code?
 
-#### Setting up your app
-
-1. Let's start by looking at your app (or [the sample project in the Samples repo](https://github.com/tnt-summer-academy/Samples/tree/main/Stretch/firebase))
-
-2. You can install the Firebase support by typing in:
-   `npm install firebase`
-
-   - Note: you do NOT need `npm install @types/firebase` - the firebase package includes type defitions for TypeScript (I believe the Firebase JavaScript API itself is written in TypeScript)
-
-3. Copy this into a new file (named, say, `myFirebase.tsx`) in your project:
-
-   ```typescript
-   const config = {
-       apiKey: YOUR_API_KEY,
-       authDomain: YOUR_AUTH_DOMAIN,
-       databaseURL: YOUR_DATABASE_URL,
-       projectId: YOUR_PROJECT_ID,
-       storageBucket: '',
-       messagingSenderId: YOUR_MESSAGING_SENDER_ID,
-   };
-   ```
-
-   -  Note: Checking all this info into GitHub isn't particularly secure.
-     There are ways to store this information in other files (for example, .env files, which are loaded into environment variables); you can then store those files outside of source control
-
-4. Next we'll need to get the config info for our app.
-
 #### How to get your app's database configuration info
 
-1. We'll need to create an 'app' before we can have our code use the database.  There are multiple ways to find this, but we'll start by clicking on the Project Overview link in the top-left:
+1. We'll need to create an 'app' before we can have our program use the database.  There are multiple ways to find this, but we'll start by clicking on the Project Overview link in the top-left:
    <img src="images/Firebase/image-20200725225045730.png" alt="image-20200725225045730"  />
 
 2. Notice that there's an option for iOS and another for Android - we'll use the web application option:
@@ -152,53 +125,212 @@ Normally you'd only store data that you want to persist across runs of your prog
 
      <img src="images/Firebase/image-20200725225822787.png" alt="image-20200725225822787" style="zoom:67%;" />
 
-#### Configuring your app to connect to the DB
+#### Setting up your app
 
-The approach we're going to use is to create a class that all your components can use
+1. The next step is to actually set up the code that will connect to the database.
 
-Add a method to that class for each action you want to do on the DB (each time you query for information, or add / update / remove something, etc)
+   The approach we're going to use is to create a class that all your components can use.  This way we can centralize repetitive logic in a single place.
 
+2. Let's start this by opening at your app in VSCode (or by opening [the sample project in the Samples repo](https://github.com/tnt-summer-academy/Samples/tree/main/Stretch/firebase))
 
+3. You can install the Firebase support in your terminal like this:
+   `npm install firebase`
 
-1. Next, plug the configuration info (that you just got from the Firebase web page) into the `myFirebase.tsx` file:
-   (Note the <> after createContext!!!)
+   - Note: you do NOT need `npm install @types/firebase` - the firebase package includes type defitions for TypeScript (I believe the Firebase JavaScript API itself is written in TypeScript)
+
+4. Copy this into a new file (named, say, `myFirebase.tsx`) in your project:
 
    ```typescript
-   export class Firebase {
+   import firebaseApp from 'firebase/app'
+   import firebase from 'firebase'
+   
+   const firebaseConfig = {
+       apiKey: "AIzaSyCzUTWQpoVu956eV_6AQtI5ENtwyxjt",   // REPLACE THIS WITH YOUR INFO!!!
+       authDomain: "tnt-2020-fireb-demo.firebaseapp.com",  // REPLACE THIS WITH YOUR INFO!!!
+       databaseURL: "https://tnt-2020-fireb-demo.firebaseio.com",  // REPLACE THIS WITH YOUR INFO!!!
+       projectId: "tnt-2020-fibase-demo",  // REPLACE THIS WITH YOUR INFO!!!
+       storageBucket: "tnt-2020-frebas-demo.appspot.com",  // REPLACE THIS WITH YOUR INFO!!!
+       messagingSenderId: "3510673140",  // REPLACE THIS WITH YOUR INFO!!!
+       appId: "1:351067380140:web:7fcb50dc0a72bf84209"  // REPLACE THIS WITH YOUR INFO!!!
+   };
+   
+   
+   export class MyFirebase {
        constructor() {
-           app.initializeApp(firebaseConfig);
+           if (firebase.apps.length === 0) {
+               firebaseApp.initializeApp(firebaseConfig);
+           }
        }
    }
-   
-   export const FirebaseContext = React.createContext<Firebase | null>(null);
    ```
 
-2. In index.tsx make sure that you import these
+   - Note: Checking all this info into GitHub isn't particularly secure.
+     There are ways to store this information in other files (for example, .env files, which are loaded into environment variables); you can then store those files outside of source control
+
+   - Firebase wants us to initialize the connection to the database, but it wants us to do that *exactly once* in the program.  We can make this easy by putting the following code into the constructor:
+
+     ```typescript
+     if (firebase.apps.length === 0) {
+     		firebaseApp.initializeApp(firebaseConfig);
+     }
+     ```
+
+     If we've initialized our app already then the firebaseApp.apps array will have an entry in it, so it's length / size will be greater than zero.  If we have NOT initialized the app then that array will be empty, and have a length of 0.
+     Here in TypeScript/JavaScript we ask if the array is empty (if it has a length of zero) and if so then we call the initializeApp() method with the configuration information that we copied from the Firebase website.
+
+5. Then, inside any other file that you want to use Firebase in you'll need to put this at the top of the file:
 
    ```typescript
-   import { Firebase, FirebaseContext } from './firebase';
+   import { MyFirebase } from './myFirebase';
    ```
 
-3. Update ReactDOM.render like so:
+   After that you'll need to create the database in each method / function that you want to use it in, like so:
 
    ```typescript
-   ReactDOM.render(
-     <FirebaseContext.Provider value={new Firebase()}>
-       <App />
-     </FirebaseContext.Provider>,
-     document.getElementById('root'),
-   );
+     let db = new MyFirebase();
+     // After this you can then call methods on your 'MyFirebase' object
    ```
 
-4. 
+#### Overview of our approach to using Firebase
 
-#### get a reference to the place in the JSON doc that you want to modify
+We've already got a class that will connect to Firebase for us.  We're going to add a method to that class for each action you want to do on the DB.  Each time you ask (query) for information, or add / update / remove information, etc - each action gets their own method.   
+This way you can then say something like "`db.addUser(firstname, lastname, etc, etc);`" in the rest of your app, and this one class is the only thing that needs to worry about how to interact with the database.
 
-#### call set / once / update / remove / push on the ref
+In each case we're going to follow the same general set of steps, whether it's adding information to our database or reading a list out.  More-or-less, we'll do the following:
 
-#### if you want to know whether it worked or not use Promise.then to run code once it's finished
+1. Create a MyFirebase object (this will connect to Firebase, if we haven't done so already)
+2. Create a method on the MyFirebase class to interact with the database for our component.
+   That method will then do the following:
+   1. From the firebase package, get a reference to the place in the Firebase database (the JSON document) that you want to modify
+   2. Call the appropriate method on that reference (e.g., set / once / update / remove / push)
+   3. if you want to know whether it worked or not use we can use Promise.then to run code once the database operation is finished
 
- (or skip it)
+#### CRUD operations: Create
+
+Useful for:
+
+- A new order on a ecommerce site
+  In general, whenever you've got an HTML form that's adding new information to your database then you'll want to consider using a 'create' style method on your database
+- If you're replacing something wholesale.
+  For example, if you're replacing your car you might completely replace the information about your current car with the information about the new car.
+- When you initialize the DB with some starting values (for example, when the app is first installed)
+
+##### Example code providing this functionality, inside MyFirebase.tsx:
+
+```typescript
+    // // CREATE:
+    // // basic write
+    // // https://firebase.google.com/docs/database/web/read-and-write?authuser=0
+    createUser1(name: string, eml: string, profilePicURL: string) {
+        let newUserRef = firebase.database().ref('users/1');
+        newUserRef.set({
+            username: name,
+            email: eml,
+            profile_picture: profilePicURL
+        }).then(
+            () => { console.log("Added the new user successfully!"); },
+            (reason: any) => (console.log("ERROR: Did NOT add the user.  Reason: " + reason))
+        );;
+    }
+```
+
+Notice that this will create a new JSON object within the overall database at the `users/1` location.  Typically the '1' would be an ID identifying a particular user.  This does mean that if we run this method twice then the second time this method will replace the contents of `users/1` during that second time that it runs.
+
+We do this by following the steps we listed above.  First we get a reference to the object that we want to create (it's ok that it doesn't exist yet) using the line `et newUserRef = firebase.database().ref('users/1');`
+
+Next, we call the set method and hand it a TypeScript/JavaScript object literal, starting on this line: ` newUserRef.set({`
+
+Finally, on to the third step.  
+How do we know if the operation succeeded or not?  There's any number of reasons why this might not work.  We might experience some sort of connection issue across the internet, or we might run out of space in the database (particularly for the 'free' plan), or, or, or.  So how do we check that things worked out ok?  This is complicated by the fact that it may take a while to get the response back from the Firebase server out there on the Internet and we'd like our program to do something productive in the meantime.
+
+We'll solve these two problems (did my DB operation work ok?  how can I do something else while I'm waiting for the answer?) by using JavaScript Promises.  This is that `.then()` method call with the two arrow functions inside it:
+
+```typescript
+					// < snip > - left out to focus on this detail :)
+					profile_picture: profilePicURL
+        }).then(
+            () => { console.log("Added the new user successfully!"); },
+            (reason: any) => (console.log("ERROR: Did NOT add the user.  Reason: " + reason))
+        );;
+    }
+```
+
+Essentially, if things went ok then the first function will be called (in our case, this will print out "Added the new user successfully!" ).  If something goes wrong then the second function will be called.
+
+<u>It's really important to understand that if you want to run code only when you know for sure that the database operation has succeeded then you must run it inside that first arrow function.</u>
+
+##### Here's how we might call the code inside, say, a render method of a component:
+
+```typescript
+render() {
+
+  let db = new MyFirebase();
+  db.createUser1("Alice", "Alice@A.com", "https://....");
+
+  // unrelated code left in for context
+  return (
+    <div className="App">
+```
+
+You only need to do the line that starts with `let db =` *once* for each method.  If you wanted to do multiple database operations you can use and reuse the `db` variable.
+
+#### What about adding *another* user (instead of always overwriting user #1)?
+
+We can ask Firebase to create a new node using the `push()` method, which will add another node and give it a unique ID.
+
+Here's the method that we'll add to MyFirebase.tsx:
+
+```typescript
+    createANOTHERUser(name: string, eml: string, profilePicURL: string) {
+        let newUserRef = firebase.database().ref('users');
+        newUserRef.push().set(
+            {
+                username: name,
+                email: eml,
+                profile_picture: profilePicURL
+            }
+        ).then(
+            () => { console.log("Added the BRAND NEW new user successfully!"); },
+            (reason: any) => (console.log("ERROR: Did NOT add the brand new user.  Reason: " + reason))
+        );
+    }
+```
+
+This is very similar to the first version - we obtain a referenced (but this time to the parent of the place where we want to add the new object - we're using `users` here, not `users/1`)(which makes sense, since we don't know what the ID number should be).
+
+Next, we call `.push()` to ask Firebase to create a new object underneath the `users` location.  Firebase will also assign a unique ID to it, as well.
+
+Once we've done that we'll call `.set()` on the new object that we got back from Firebase to actually set up the new object the way we want.
+
+The last step is to handle any errors in the `.then()`
+
+#### CRUD operations: Read
+
+Useful for:
+
+- Getting information that you'd previously stored in the database
+- When a user logs on you'll want to display their name, their theme, etc, etc.  This is all stored in the DB and you get it once they've logged in.
+- If you wanted to show a list of products that are available you'd store the items in the DB and then read those values out later
+
+##### Example code providing this functionality, inside MyFirebase.tsx:
+
+```typescript
+
+```
+
+
+
+##### Here's how we might call the code inside, say, a render method of a component:
+
+
+
+CRUD operations: Read A List
+
+#### CRUD operations: Update
+
+#### CRUD operations: Delete
+
+### 
 
 # UNUSED
 
@@ -219,11 +351,3 @@ Much of what I've got here was [simplified from this blog post](https://www.robi
 // https://firebase.google.com/docs/database/web/read-and-write?authuser=0
 
 
-
-Change #1
-
-Change #2
-
-Change #3
-
-FINISHED
