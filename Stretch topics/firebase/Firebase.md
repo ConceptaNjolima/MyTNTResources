@@ -18,13 +18,13 @@
    2. Let's look at what JSON is
 2. What *should* you put in a DB?
 3. How do we access the database from code?
-   1. How to get your app's database configuration info
+   1. How to set up Firebase (and how to get your app's database configuration info)
    2. Setting up your app
    3. Overview of our approach to using Firebase
-   4. CRUD operations: Create
-   5. CRUD operations: Read
-   6. CRUD operations: Update
-   7. CRUD operations: Delete
+   4. CRUD operations: **C**reate
+   5. CRUD operations: **R**ead
+   6. CRUD operations: **U**pdate
+   7. CRUD operations: **D**elete
 
 ### Let's look at Firebase:
 
@@ -96,17 +96,13 @@ There's a couple of important points to remember when working with JSON files:
 
 ### What *should* you put in a DB?
 
-# NOT DONE YET
+Normally you'd only store data that you want to save across runs of your program.  Things like user account information (so the next time the user logins in you'll have their name, email, etc, available), or the items for sale in your store, or what a given user has ordered that you're still putting together to ship to them, etc, etc.
 
-Let's talk briefly about what to put in here
-
-For AppPrototype, maybe just put all of this.state into it?
-
-Normally you'd only store data that you want to persist across runs of your program
+For AppPrototype, it might make sense to just put all of this.state into the database.  It's not really ideal but would mean that when you close the browser's window for your app it'll have everything saved and you can pick up where you left off next time.
 
 ### How do we access the database from code?
 
-#### How to get your app's database configuration info
+#### How to set up Firebase (and how to get your app's database configuration info)
 
 1. We'll need to create an 'app' before we can have our program use the database.  There are multiple ways to find this, but we'll start by clicking on the Project Overview link in the top-left:
    <img src="images/Firebase/image-20200725225045730.png" alt="image-20200725225045730"  />
@@ -202,14 +198,15 @@ In each case we're going to follow the same general set of steps, whether it's a
 2. Create a method on the MyFirebase class to interact with the database for our component.
    That method will then do the following:
    1. From the firebase package, get a reference to the place in the Firebase database (the JSON document) that you want to modify
-   2. Call the appropriate method on that reference (e.g., set / once / update / remove / push)
-   3. if you want to know whether it worked or not use we can use Promise.then to run code once the database operation is finished
+   2. Call the appropriate method on that reference (e.g., set / push /  once / update / remove )
+   3. Use Promise.then to run code once the database operation is finished
+   4. In that code we'll call this.setState in order to update React / update the page that we're showing to the user
 
-# FOR EACH OF THE FOLLOWING:
+For each of the following sections try doing the following:
 
-1. Demo in the browser
-2. Verify / visualize using the Firebase website
-3. Look at the code
+1. Watch the new feature work in the browser
+2. Verify / visualize what change(s) have been made in the database by using the Firebase website
+3. Look through code in detail
 
 #### CRUD operations: Create
 
@@ -270,12 +267,16 @@ Essentially, if things went ok then the first function will be called (in our ca
 ```typescript
 render() {
 
-  let db = new MyFirebase();
-  db.createUser1("Alice", "Alice@A.com", "https://....");
+    let db = new MyFirebase();
 
-  // unrelated code left in for context
-  return (
-    <div className="App">
+    return (
+      <div className="App">
+        <header className="App-header">
+          <h1>Firebase Demo</h1>
+        Options:
+        <ul>
+            <li><button onClick={() => db.createUser1("Alice", "Alice@A.com", "https://....")}>Create User #1</button></li>
+            <li>
 ```
 
 You only need to do the line that starts with `let db =` *once* for each method.  If you wanted to do multiple database operations you can use and reuse the `db` variable.
@@ -310,6 +311,33 @@ Once we've done that we'll call `.set()` on the new object that we got back from
 
 The last step is to handle any errors in the `.then()`
 
+In the App.tsx file we make use of this through two parts of the code.  The first is inside the JSX/HTML that we return from the render function (note that we are using uncontrolled form elements here, which [we've looked at previously](https://github.com/tnt-summer-academy/Curriculum/blob/main/Week%204/%5BENG3.4%5DRedux-Part-2.md#step-53-gather-the-information))
+
+```jsx
+<li><button onClick={() => db.createUser1("Alice", "Alice@A.com", "https://....")}>Create User #1</button></li>
+<li>
+  <form onSubmit={this.submitHandler}>
+    User's name: <input type="text" ref={this.nameRef} /><br />
+    User's email: <input type="text" ref={this.emailRef} /><br />
+    <input type="submit" value="Click to add another user, with this info!" />
+  </form>
+</li>
+```
+
+The second is the 'submitHandler function:
+
+```typescript
+  submitHandler = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    // !. means "I personally know that current will NOT be null"
+    // Note: this will crash if it turns out that it's not true
+    console.log("Name: " + this.nameRef.current!.value + " Email: " + this.emailRef.current!.value);
+
+    let db = new MyFirebase();
+    db.createANOTHERUser(this.nameRef.current!.value, this.emailRef.current!.value, "");
+  }
+```
+
 #### CRUD operations: Read
 
 Useful for:
@@ -318,7 +346,75 @@ Useful for:
 - When a user logs on you'll want to display their name, their theme, etc, etc.  This is all stored in the DB and you get it once they've logged in.
 - If you wanted to show a list of products that are available you'd store the items in the DB and then read those values out later
 
+We'll ask Firebase for the current value of a particular part of the JSON document (of the database) and then wait for it to tell us what that is.  
+
+It's important to understand that because Firebase is out there on the Internet / in The Cloud  that it will take some time for our request to arrive at the Firebase servers, some time for the Firebase servers to figure out their response, and it'll take some time for that response to arrive back at our computer.  We do NOT want our program to just stop and wait for all this to happen.  Instead what we'll do is we'll set up and send our request, TypeScript will give us an "IOU" ("I Owe You"), then we'll tell TypeScript to get back to us when we've gotten a response to that IOU.  The thing that TypeScript gives us is called a [Promise](https://www.freecodecamp.org/news/javascript-es6-promises-for-beginners-resolve-reject-and-chaining-explained/#:~:text=A%20promise%20in%20JavaScript%20is%20similar%20to%20a,kept%20when%20the%20time%20comes%2C%20or%20it%20won%E2%80%99t.).  We'll give TypeScript a function to call once we've received the response (aka "once the Promise has been resolved")
+
+Also remember that there's always the possibility that something goes wrong (we lose our connection to the Internet, or maybe just to Firebase, etc, etc) so we'll have to handle any potential erros.
+
 ##### Example code providing this functionality, inside MyFirebase.tsx:
+
+```typescript
+    // READ:
+    // basic read
+    // https://firebase.google.com/docs/database/web/read-and-write?authuser=0#read_data_once
+    getAnObject(location: string, callWhenFinished: (data: any) => void): void {
+        let ref = firebase.database().ref(location);
+        ref.once('value').then(
+            (snapshot) => {
+                var objectToGet = snapshot.val() || {}; // if we don't find anything then return an empty object
+                console.log("read this value in the original handler: " + objectToGet);
+                callWhenFinished(objectToGet);
+            })
+            .catch((error) => {
+                console.log("Couldn't get the object: " + error);
+                callWhenFinished({})
+            });
+    }
+```
+
+The idea is that we'll pass in a location (such as "/users/1") to get a particular object, and we'll pass in a function to call once we've gotten the reponse for Firebase.  We'll call that function regardless of whether we get data or not, or an error or not, so that the rest of our program can decide what it wants to do.
+
+The 'once' method is the method that actually asks the database for a piece of information.  Once will give us back a Promise, which we can then call methods on.
+
+The 'then' method is a method on Promise objects.  We tell TypeScript what function to call once the promise resolves (i.e., once we get the response to our request).  In this case we're giving it an anonymous arrow function.  Weirdly, "then" returns the Promise.  It's weird but handy - it means that we can call more Promise methods, one after the other, in a chain.
+
+The ''catch" method will be called if the promise is broken - for example, if we've lost our connection to the Internet the program will eventually notice when our program 'times out' and stops waiting for a response.
+
+##### Here's how we might call the code inside, say, a render method of a component:
+
+```jsx
+<li><p>User #1's name: {this.state.user1.username}</p><button onClick={() => db.getAnObject('/users/1', this.displayUser1NameOnPage)}>Get User #1's name</button></li>
+```
+
+Essentially, we're asking for the JSON object at `/users/1` (whether that's a single string or a large complex object) and we're asking TypeScript to call `this.displayUser1NameOnPage` for us once it's got a response.  Let's look at `this.displayUser1NameOnPage` next:
+
+```typescript
+  displayUser1NameOnPage = (newUser1: IUser) => {
+    this.setState((state: IAppState, props: any) => {
+      return {
+        ...state,
+        user1: newUser1
+      }
+    });
+  }
+```
+
+This method is pretty short - once we've (finally) got the value from the database we call this.setState
+
+#### CRUD operations: Read A List
+
+Useful for:
+
+- Get
+
+##### Example code providing this functionality, inside MyFirebase.tsx:
+
+```typescript
+
+```
+
+##### Here's how we might call the code inside, say, a render method of a component:
 
 ```typescript
 
@@ -326,17 +422,43 @@ Useful for:
 
 
 
+#### CRUD operations: Update
+
+Useful for:
+
+- Get
+
+##### Example code providing this functionality, inside MyFirebase.tsx:
+
+```typescript
+
+```
+
 ##### Here's how we might call the code inside, say, a render method of a component:
 
+```typescript
+
+```
 
 
-CRUD operations: Read A List
-
-#### CRUD operations: Update
 
 #### CRUD operations: Delete
 
-### 
+Useful for:
+
+- Get[
+
+##### Example code providing this functionality, inside MyFirebase.tsx:
+
+```typescript
+
+```
+
+##### Here's how we might call the code inside, say, a render method of a component:
+
+```typescript
+
+```
 
 # UNUSED
 
