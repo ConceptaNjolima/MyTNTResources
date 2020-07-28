@@ -205,6 +205,12 @@ In each case we're going to follow the same general set of steps, whether it's a
    2. Call the appropriate method on that reference (e.g., set / once / update / remove / push)
    3. if you want to know whether it worked or not use we can use Promise.then to run code once the database operation is finished
 
+# FOR EACH OF THE FOLLOWING:
+
+1. Demo in the browser
+2. Verify / visualize using the Firebase website
+3. Look at the code
+
 #### CRUD operations: Create
 
 Useful for:
