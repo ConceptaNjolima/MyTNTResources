@@ -610,19 +610,11 @@ Useful for:
 
 
 
-##### 
-
-# UNUSED
+# MISC
 
 [Useful tutorial on React Context](https://www.robinwieruch.de/react-context)
 
 [Typescript and React Context](https://www.carlrippon.com/react-context-with-typescript-p1/)
-
-Much of what I've got here was [simplified from this blog post](https://www.robinwieruch.de/complete-firebase-authentication-react-tutorial#react-application-setup-create-react-app) - this post was terrible.  There's too many concepts thrown in and the author is very, very verbose (both in terms of their writing and their code - they routinely have separate files with like a couple lines of actual code)
-
-1. TODO: The listener / promise thing - we're going to try and ignore it :)
-2. TODO: Basic API
-3. TODO: Do we need to avoid doing the appInit more than once per run?
 
 // The official docs:
 // https://firebase.google.com/docs/web/setup?authuser=0#node.js-apps
