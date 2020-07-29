@@ -17,7 +17,7 @@
 * Function components/Class Components
 * HTML  and CSS overview for Web Apps
 
-## Pre-session (45 minutes)
+## Pre-session (30 minutes)
 
 *Prepare for the session* [here](../../../wiki/[Stretch]-React-Boostrap)
 
