@@ -66,4 +66,4 @@ Many UI component examples are shown using function based components to demonstr
 
 ## React UI Components Demo Code
 
-[Sample code for React UI Components demo](https://github.com/tnt-summer-academy/Samples/tree/main/Week_5/react-ui-demo)
+[Sample code for React UI Components demo](https://github.com/tnt-summer-academy/Samples/tree/main/Stretch/react-ui-demo)
