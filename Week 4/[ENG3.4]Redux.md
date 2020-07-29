@@ -1,6 +1,6 @@
 # Advanced Redux (Part 1)
 
-This lesson goes more in depth on Redux including how to debug redux, applying middleware and replacing our state in the Todo app to redux
+This lesson goes more in depth on Redux including how to debug redux, showing how to display a list of items from multiple people in the YourShare example.
 
 ## Learning objectives
 
@@ -66,7 +66,7 @@ The first step is to figure out what state we need to keep track of.  We can do 
 
 For our 'Items For Borrowing' table we'll need a list of people (the right-hand column) and the items that each person has available for lending (the left-hand column).
 
-### Step 2: Represent the state in Typescript / Redux [types.tsx]
+### Step 2: Represent the state in Typescript / Redux [redux/types.tsx]
 
 The types.tsx file in the starter project contains the definitions for most of the data that we'll need to keep track of for the pages/screens listed in the spec.  We've tried to simplify this from the previous section on Redux by using classes - one class for **Person** objects (which have a Prefs object inside them for the preferences on the 'Manage Community' page/screen) and one class for each **Item** that can be lent/borrowed.
 
@@ -96,7 +96,7 @@ export class Person {
 In order to know how to write code that uses individual Items we'll need to look at the Item class.  We'll leave out less-relevant details:
 
 ```typescript
-export class Item implements Item {
+export class Item {
   id: number;
   name: string;
   itemType: string;
