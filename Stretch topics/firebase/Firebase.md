@@ -362,18 +362,18 @@ Also remember that there's always the possibility that something goes wrong (we 
         let ref = firebase.database().ref(location);
         ref.once('value').then(
             (snapshot) => {
-                var objectToGet = snapshot.val() || {}; // if we don't find anything then return an empty object
+                var objectToGet = snapshot.val() || null; // if we don't find anything then return an empty object
                 console.log("read this value in the original handler: " + objectToGet);
                 callWhenFinished(objectToGet);
             })
             .catch((error) => {
                 console.log("Couldn't get the object: " + error);
-                callWhenFinished({})
+                callWhenFinished(null)
             });
     }
 ```
 
-The idea is that we'll pass in a location (such as "/users/1") to get a particular object, and we'll pass in a function to call once we've gotten the reponse for Firebase.  We'll call that function regardless of whether we get data or not, or an error or not, so that the rest of our program can decide what it wants to do.
+The idea is that we'll pass in a location (such as "/users/1") to get a particular object, and we'll pass in a function to call once we've gotten the reponse for Firebase.  We'll call that function regardless of whether we get data or not, or get an error or not, so that the rest of our program can decide what it wants to do.  If we do get an error we'll pass null so that the callback function can know that something went wrong.
 
 The 'once' method is the method that actually asks the database for a piece of information.  Once will give us back a Promise, which we can then call methods on.
 
@@ -391,6 +391,10 @@ Essentially, we're asking for the JSON object at `/users/1` (whether that's a si
 
 ```typescript
   displayUser1NameOnPage = (newUser1: IUser) => {
+    if (newUser1 === null) {
+      alert("Error - didn't receive an object!")
+      return;
+    }
     this.setState((state: IAppState, props: any) => {
       return {
         ...state,
@@ -400,47 +404,156 @@ Essentially, we're asking for the JSON object at `/users/1` (whether that's a si
   }
 ```
 
-This method is pretty short - once we've (finally) got the value from the database we call this.setState
+This method is pretty short - once we've (finally) got the value from the database we call this.setState (unless something went wrong, in which case we display an alert and then end the method early)
 
 #### CRUD operations: Read A List
 
 Useful for:
 
-- Get
+- Getting a list of users, or items, etc
 
 ##### Example code providing this functionality, inside MyFirebase.tsx:
 
 ```typescript
-
+   // READ:
+    // read a list of objects
+    // https://firebase.google.com/docs/database/web/read-and-write?authuser=0#read_data_once
+    getListOfObjects(location: string, callWhenFinished: (data: any) => void): void {
+        let ref = firebase.database().ref(location);
+        ref.once('value').then(
+            (snapshot) => {
+                var listOfUsers = snapshot.val() || []; // Either we got the users, or else we have an empty list
+                callWhenFinished(Object.values(listOfUsers));
+            })
+            .catch((error) => {
+                console.log("Couldn't get list of objects: " + error);
+                callWhenFinished([])
+            });
+    }
 ```
+
+This method looks really similar to the other method.  So similar that we could probably get away with a single version instead of having two separate methods for this :)
 
 ##### Here's how we might call the code inside, say, a render method of a component:
 
 ```typescript
+            <li><button onClick={() => db.getListOfObjects('/users', this.displayUserListOnPage)}>Get all Users</button></li>
+            {
+              Object.values(this.state.allUsers).map((nextUser) => (<li key={nextUser.username}><b>{nextUser.username}</b><ul>
+                <li>{nextUser.email}</li>
+                <li>{nextUser.profile_picture ? nextUser.profile_picture : "No picture available"}</li>
+              </ul></li>))
+            }
+            <li>
+```
+There's two parts here - call the 'getListOfObjects' method, specifying where to find the list in the JSON document / database, and specifying the function to call once we've gotten our response from the database.
 
+The JSX / HTML then displays that list on the page (which will happen once we've called setState with the new list)
+
+```typescript
+  displayUserListOnPage = (users: Array<any>): void => {
+    if (users.length == 0) {
+      alert("Error - didn't receive the list of users!")
+      return;
+    }
+
+    users = Object.values(users);
+    console.log("Users: " + users);
+    for (var iUser in users) {
+
+      const user = users[iUser];
+      console.log("User: " + user);
+      for (var iAttr in user) {
+        const attr = user[iAttr];
+        console.log("\t " + iAttr + ": " + attr);
+      }
+
+    }
+
+    this.setState((state: IAppState, props: any) => {
+      return {
+        ...state,
+        allUsers: users
+      }
+    })
+  };
 ```
 
+This is the function that actually updates the React state with the new list.
 
+After checking for an error (which in this case would show up as an empty array) we print the contents of the array to the console and then call setState to re-render the page.
 
 #### CRUD operations: Update
 
 Useful for:
 
-- Get
+- Changing *part* of an object in the database (in contrast to set, which r*eplaces the entire object with a new object*)
 
 ##### Example code providing this functionality, inside MyFirebase.tsx:
 
 ```typescript
-
+   // UPDATE:
+    // this will only change the things that we give it, instead of replacing the object & all children
+    // https://firebase.google.com/docs/database/web/read-and-write?authuser=0#update_specific_fields
+    // Get a key for a new Post.
+    updateObject(location: string, updates: {}, callWhenFinished: (err: Error | null) => void): void {
+        let ref = firebase.database().ref(location);
+        ref.update(updates, callWhenFinished); // This will call the 'callWhenFinished' function for us
+    }
 ```
+
+Given a spot in the database and a partially filled in object, we'll call the Firebase .update() method and then wait for .update() to call our callback function when it's done.
 
 ##### Here's how we might call the code inside, say, a render method of a component:
 
 ```typescript
-
+            <li>
+              <form onSubmit={this.updateSubmitHandler}>
+                Change the name of user #1 <input type="text" ref={this.updateNameRef} /><br />
+                <input type="submit" value="Update user #1 to user this name!" />
+              </form>
+            </li>
 ```
 
 
+
+##### Example code for updateSubmitHandler():
+
+```typescript
+  updateSubmitHandler = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    // !. means "I personally know that current will NOT be null"
+    // Note: this will crash if it turns out that it's not true
+    console.log("Name: " + this.nameRef.current!.value + " Email: " + this.emailRef.current!.value);
+
+    let db = new MyFirebase();
+    db.updateObject("/users/1", { username: this.updateNameRef.current!.value }, this.displayUserUpdate);
+  }
+```
+
+We're using the React uncontrolled form elements here, too.  We make sure that we stop the default action for the 'submit' button (which causes a page refresh), and then call the updateObject method that we defined in our Firebase file, handing it the displayUserUpdate function to call when it's done.
+
+##### Example code for displayUserUpdate():
+
+```typescript
+  displayUserUpdate = (err: Error | null): void => {
+    if (err === null) {
+      alert("Updated the user's name!")
+      this.setState(
+        (prevState: IAppState, props: any) => {
+          let newState = { ...prevState };
+          newState.user1.username = this.updateNameRef.current!.value;
+          return newState;
+        }
+      )
+    }
+  }
+
+```
+
+Here we update React's copy of the information in the database.  This will trigger a re-render of the page, which will cause user #1's name to show up because of our previous HTML/JSX
+
+##### 
 
 #### CRUD operations: Delete
 
@@ -451,14 +564,53 @@ Useful for:
 ##### Example code providing this functionality, inside MyFirebase.tsx:
 
 ```typescript
-
+    // DELETE
+    // https://firebase.google.com/docs/reference/node/firebase.database.Reference#remove
+    deleteObject(location: string, callWhenFinished: (err: Error | null) => void): void {
+        firebase.database().ref(location).remove()
+            .then(callWhenFinished)
+            .catch(callWhenFinished);
+    }
 ```
+
+
 
 ##### Here's how we might call the code inside, say, a render method of a component:
 
 ```typescript
-
+   <li><button onClick={() => db.deleteObject("users/1", this.displayRemoveUserResult)}>Remove user 1</button></li>
 ```
+
+
+
+##### Example code providing displayRemoveUserResult:
+
+```typescript
+ displayRemoveUserResult = (err: Error | null): void => { // 
+    if (err === null) {
+      alert("Something went wrong when trying to remove the user!" + err);
+      return;
+    }
+
+    alert("Successfully removed the user!");
+
+    this.setState(
+      (prevState: IAppState, props: any) => {
+        let newState = { ...prevState };
+        newState.user1 = {
+          username: "NO NAME",
+          email: "NO EMAIL",
+          profile_picture: "NO PICTURE"
+        };
+        return newState;
+      }
+    )
+  }
+```
+
+
+
+##### 
 
 # UNUSED
 
@@ -477,7 +629,3 @@ Much of what I've got here was [simplified from this blog post](https://www.robi
 
 // Read from / write to DB:
 // https://firebase.google.com/docs/database/web/read-and-write?authuser=0
-
-# TODO
-
-Chat app?
