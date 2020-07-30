@@ -53,8 +53,6 @@ Prepare for the session [here](https://github.com/tnt-summer-academy/Curriculum/
 * **Redux**, on the other hand, was introduced to maintain the application state. Each component having a state complicates maintaining a general application state, especially with the dependencies between components. Your typical app does a lot of state generating, processing, and transferring.
 * Redux lets us keep the state that persists through out the app in one place, the store, that can be accessed by every component. The state (of a compopnent) is accessible by only one component. 
 
-There are four basic parts in Redux: Store, Actions, Reducer, and Connect. 
-
 #### Three principles of Redux
 
 * Single source of truth - the global state of the application is saved in a single store.
@@ -63,25 +61,13 @@ There are four basic parts in Redux: Store, Actions, Reducer, and Connect.
 
 #### Architectural overiew of Redux 
 
-![redux architecture](./%5BENG2.4%5Dreduxhighlevelarchitecture.png)
+![redux architecture](https://github.com/tnt-summer-academy/Curriculum/blob/main/Week%202/%5BENG2.4%5Dreduxhighlevelarchitecture.png)
 
 [Picture from here](https://www.kirupa.com/react/using_redux_with_react.htm)
 
-#### Steps for the implementation
-
-* Step 0: Setup Redux (index.tsx)
-
-* Step 1: What state do we need?
-
-* Step 2: Represent the state in TypeScript Redux? (types.tsx)
-
-* Step 3: Represent the actions (actions.tsx)
-
-* Step 4: Write the reducer to make the actions happen (reducer.tsx)
-
-* Step 5: Using the state in your components
-
 #### Review of each component
+
+There are four basic parts in Redux: Store, Actions, Reducer, and Connect. 
 
 ##### Store
 
@@ -105,6 +91,20 @@ There are four basic parts in Redux: Store, Actions, Reducer, and Connect.
 
 * We need to connect React components to Redux.
 * Connect is used to connect the state of the app to the components. The app state will become components props using some map functions. 
+
+#### Steps for the implementation
+
+* Step 0: Setup Redux (index.tsx)
+
+* Step 1: What state do we need?
+
+* Step 2: Represent the state in TypeScript Redux? (types.tsx)
+
+* Step 3: Represent the actions (actions.tsx)
+
+* Step 4: Write the reducer to make the actions happen (reducer.tsx)
+
+* Step 5: Using the state in your components
 
 ### Sample app with Redux in Action: Coding Edu4You
 
