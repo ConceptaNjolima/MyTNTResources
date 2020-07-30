@@ -5,8 +5,8 @@ This lesson reviews Redux, overviews combining reducers and answers TNTs questio
 ## Learning objectives
 
 * TNTs will review Redux
-* TNTs will learn about combiner reducers
-* TNTs will work with an example
+* TNTs will learn about combined reducers
+* TNTs will work with examples
 
 ## Time required and pace
 
@@ -22,6 +22,7 @@ Total time: 1 hours 15
 
 ## References
 
+* [PDF of the instruction session](https://github.com/tnt-summer-academy/Curriculum/blob/main/Stretch%20topics/moreredux/MoreRedux.pdf)
 * [Redux basic tutorial](https://redux.js.org/basics/basic-tutorial)
 * [Redux with TypeScript](https://redux.js.org/recipes/usage-with-typescript)
 * [Store](https://redux.js.org/recipes/configuring-your-store)
