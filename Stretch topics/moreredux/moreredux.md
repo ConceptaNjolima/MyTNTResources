@@ -92,7 +92,7 @@ There are four basic parts in Redux: Store, Actions, Reducer, and Connect.
 * We need to connect React components to Redux.
 * Connect is used to connect the state of the app to the components. The app state will become components props using some map functions. 
 
-#### Steps for the implementation
+#### Steps for the implementation of Redux
 
 * Step 0: Setup Redux (index.tsx)
 
@@ -108,9 +108,9 @@ There are four basic parts in Redux: Store, Actions, Reducer, and Connect.
 
 ### Sample app with Redux in Action: Coding Edu4You
 
-* What would the state save in this example?
+* What would the store be in this example?
 
-* Let's go through the steps to implement the application
+* Let's go through the steps to implement the app
 
 * Code [here](https://github.com/tnt-summer-academy/Samples/tree/main/Stretch/courses-redux)
 
@@ -120,9 +120,12 @@ There are four basic parts in Redux: Store, Actions, Reducer, and Connect.
 
 ### Sample app that combines reducers: Coding Cake/Icecream example
 
-* Why would we need to combine reducers?
+* Why would we need to combine reducers? 
 
-* Let's go through the steps to implement this app
+  * As your app grows more complex, you'll want to split your reducing function into separate functions, each managing independent parts of the state.
+  * Is it always possible?
+
+* Let's go through the steps to implement the app
 
 * Code [here](https://github.com/tnt-summer-academy/Samples/tree/main/Stretch/combine-redux)
 
