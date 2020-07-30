@@ -75,6 +75,8 @@ Our code demo aim is to implement a small web app to list some of the recommende
 
 ### Code snippets for implementation
 
+Check code details ***SimpleMap.tsx*** file
+
 1. Create a class component
 2. To render a google map in your component you need to
     * LoadScript and GoogleMap
@@ -150,14 +152,56 @@ Checkout what are other options that you can add to  a marker
 </InfoWindow>
 
 ```
+6. update the import
+`import { GoogleMap, LoadScript, Marker, InfoWindow} from '@react-google-maps/api';`
 
 6. Add multiple marker
 * Create a info window instant 
-    * Add a InfoFlag to the class state interface
-    `infoFlag:boolean`
-    * Initialize in the constructor
-    `infoFlag:false`
-    * Create an infoWindow object
+    * Add an InfoFlag, places and myInfoWindow to the class state interface
+    ```JSX
+    interface places{
+        position:defaultPosition
+        id: number,
+        name: string,
+        description: string,
+        imgSrc:any,
+        address:string,
+        moreInfo:string,
+        type:string,
+    }
+
+    {
+    infoFlag:boolean,
+    places: Array<places>, 
+    myInfoWindow?: places,
+
+    }
+    ```
+    
+     * Initialize in the constructor
+
+``` JSX
+  infoFlag:false
+// App Places Data to render on the map
+  places:[
+    {
+      id: 1, 
+      position: { 
+        lat: 47.6070, 
+        lng: -122.3418 
+      }, 
+      name: "Waterfront Park", 
+      description: "Waterfront Park is a public park on the Central Waterfront, Downtown, Seattle, Washington, USA. Designed by the Bumgardner Partnership and consultants, it was constructed on the site of the former Schwabacher Wharf.",
+      imgSrc:"https://www.touropia.com/gfx/d/tourist-attractions-in-seattle/seattle_downtown_waterfront.jpg?v=1", 
+      address:"1401 Alaskan Way, Seattle, WA 98101",
+      moreInfo:"https://en.wikipedia.org/wiki/Waterfront_Park_(Seattle)",
+      type:'info'
+    },
+    ...
+  ]
+  ```
+
+* Create an infoWindow object
 
 ```JSX
 let infoWindow;
@@ -181,8 +225,10 @@ let infoWindow;
     }
 ```
 
- * Use map to create a marker for each place in your places object 
+ * Use map to create a marker for each place from your places object 
+
  * Call the info window instant after the marker tag
+
 ```JSX
        {this.state.places.map(myPlace => (
           <Marker 
@@ -225,4 +271,4 @@ Check Calendar.tsx and event-utils.tsx for code details
 
 ## Calendar and Maps API Code Demo
 
-[Sample code for demo]()
+[Sample code for demo](https://github.com/tnt-summer-academy/Samples/tree/main/Stretch/google-maps-api-and-calendar)
