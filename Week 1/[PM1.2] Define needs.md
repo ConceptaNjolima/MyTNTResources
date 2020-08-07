@@ -18,11 +18,11 @@ Total time: 2 hour
 
 ## Pre-session
 
-Read [Define needs](https://github.com/tnt-summer-academy/Curriculum/blob/master/Reference/Product%20decks/1.2%20-%20Define%20needs.pdf). This document introduces target audiences, personas, user journey maps and how to create a problem statement.
+Read [Define needs](https://github.com/tnt-summer-academy/Curriculum/blob/main/Reference/Product%20decks/1.2%20-%20Define%20needs.pdf). This document introduces target audiences, personas, user journey maps and how to create a problem statement.
 
 ## Post-session
 
-After reading Define needs, come together as a team and discuss potential target audiences based on your user pain points and user needs investigations from the empathize phase. Make a list together. Pick two potential target audiences to create user journey maps for, everyone will make their own user journey map for on of the target audiences.
+After reading Define needs, come together as a team and discuss potential target audiences based on your user pain points and user needs investigations from the empathize phase. Make a list together. Pick two potential target audiences to create user journey maps for, everyone will make their own user journey map for one of the target audiences.
 
 ### User journey mapping
 
@@ -37,7 +37,7 @@ After reading Define needs, come together as a team and discuss potential target
 * Consider and discussed, what do you have in common? What was different that stretched your thinking?
 * Take pictures of your user journey and save as a file in your team's channel.
 
-### Write problem statement
+### Write problem statements
 
 With the problem statements the goal is to go from the vague high-level group problem statement, add definition, to create something that's meaningful, actionable, human-centric, based on the pain points and user needs you uncovered in the empathy mapping and user journey exercises.
 

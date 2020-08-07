@@ -24,7 +24,7 @@ None
 
 A walkthrough is a mockup that describes the end to end app flow. It is representative of what you will build.
 
-1. To being creating a walkthrough, first list out all the user stories. The user stories will help you outline what to include in the walkthrough.
+1. To begin creating a walkthrough, first list out all the user stories. The user stories will help you outline what to include in the walkthrough.
      * A user scenario or user story is a statement that describes what a user can do.
      * A user story captures the functionality of the app in a statement.
      * For example: a user signs into the app. A user posts a new item. A user shares an item.
