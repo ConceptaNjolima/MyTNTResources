@@ -28,11 +28,16 @@ Total time: 2 hours 30 min
 * [Getting started with VS](https://code.visualstudio.com/docs)
 * [VS Code User Interface Guide](https://code.visualstudio.com/docs/getstarted/userinterface)
 * [VS Code User Shortcuts](https://code.visualstudio.com/docs/getstarted/keybindings)
+
+* [TS Hello World](https://code.visualstudio.com/docs/typescript/typescript-tutorial)
+* [Basic TS data types](https://www.typescriptlang.org/docs/handbook/basic-types.html)
+=======
 * [Debugging in VS](https://code.visualstudio.com/docs/editor/debugging)
 * [TypeScript in VS Code](https://code.visualstudio.com/docs/languages/typescript)
 * [TS Hello World](https://code.visualstudio.com/docs/typescript/typescript-tutorial)
 * [TS in 5 minutes](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html)
 * [Basic TS datatypes, functions and more](https://www.typescriptlang.org/docs/handbook/basic-types.html)
+
 
 ## Pre-session (60 minutes)
 
