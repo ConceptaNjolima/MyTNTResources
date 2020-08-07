@@ -22,7 +22,7 @@ Read [Define needs](https://github.com/tnt-summer-academy/Curriculum/blob/main/R
 
 ## Post-session
 
-After reading Define needs, come together as a team and discuss potential target audiences based on your user pain points and user needs investigations from the empathize phase. Make a list together. Pick two potential target audiences to create user journey maps for, everyone will make their own user journey map for on of the target audiences.
+After reading Define needs, come together as a team and discuss potential target audiences based on your user pain points and user needs investigations from the empathize phase. Make a list together. Pick two potential target audiences to create user journey maps for, everyone will make their own user journey map for one of the target audiences.
 
 ### User journey mapping
 

@@ -9,7 +9,7 @@
 | Sever environment | [Node.js, npm](https://www.npmjs.com/)|
 | Package manager | [Yarn](https://yarnpkg.com/en/) |
 | Source control | [Git](https://git-scm.com/), [GitHub](https://github.com/) |
-| Source control tools | [SourceTree](https://www.sourcetreeapp.com/), [Command line](https://git-scm.com/book/en/v2/Getting-Started-The-Command-Line), [VS Code](https://code.visualstudio.com/Docs/editor/versioncontrol)|
+| Source control tools |[Command line](https://git-scm.com/book/en/v2/Getting-Started-The-Command-Line), [VS Code](https://code.visualstudio.com/Docs/editor/versioncontrol)|
 | Testing infrastructure | [Jest](https://jestjs.io/) |
 | Debugging | [VS Code debugger](https://code.visualstudio.com/Docs/editor/debugging) |
 | Text editor | [VS Code](https://code.visualstudio.com/) |

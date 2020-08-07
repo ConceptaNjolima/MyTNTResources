@@ -27,7 +27,7 @@
 
 ## UX
 
-*Screenshots of feature UI design*
+*Screenshots of feature UI design and descriptions, including why large or small screen*
 
 ## Breakdown of work
 

@@ -1,16 +1,16 @@
 # Intro to web app architecture
 
-This lesson provides an overview of how web apps work, HTML and CSS to lay the foundation for the prototypes NTs will build.
+This lesson provides an overview of how web apps work, HTML, CSS and TypeScript to lay the foundation for the prototypes NTs will build.
 
 ## Learning objectives
 
 * TNTs will learn the basics of how web pages and web apps work.
-* TNTs will be able to make HTML and CSS changes.
+* TNTs will be able to make HTML and CSS changes and learn about the use of TypsScript.
 * TNTs will learn where to go for CSS and HTML info and resources.
 
 ## Time required and pace
 
-Total time: 2 hour
+Total time: 2 hours
 
 * 30 minutes - [**Pre-session**](https://github.com/tnt-summer-academy/Curriculum/wiki/%5BENG1.0%5D-Intro-to-web-apps): background learning, research, and investigations
 * 60 minutes - **Instructional Session**
@@ -35,7 +35,7 @@ View the pre-session [here](https://github.com/tnt-summer-academy/Curriculum/wik
       * Web app - interactive, user control, saves data, often sign-in (identity)
 
 2. How do web apps compare to apps on iOS, Android, or Windows?
-      * Apps targeting a a specific operating system are called "native apps" and work just on that platform - iOS, Android, Windows, Linux
+      * Apps targeting a specific operating system are called "native apps" and work just on that platform - iOS, Android, Windows, Linux
       * Some examples of how they compare:
 
         | Native Apps  | Web apps |
@@ -58,7 +58,7 @@ View the pre-session [here](https://github.com/tnt-summer-academy/Curriculum/wik
 ![FrontEndDev](./[ENG1.0]FrontEndDev.png)
 
 
-### Intro to tech and web app architecture (15 minutes)
+### Intro to web tech (10 minutes)
 
 There's likely a range of familiarity with web pages, web apps, and how they work. This refresher aims at closing any gaps and providing  the opportunity to dig in and get familiar with resources that will be applicable throughout the program.
 
@@ -74,12 +74,12 @@ There's likely a range of familiarity with web pages, web apps, and how they wor
       |---|---|
       | Programming Language   | HTML, CSS, TypeScript  |
       | Web framework | React |
-      | Component library | Fabric |
+      | Component library | FluentUI (formerly UI Fabric) |
       | Store management | Redux and state component|
-      | Sever environment | Node.js, npm|
+      | Server environment | Node.js, npm|
       | Package manager | Yarn |
       | Source control | Git |
-      | Source control tools | SourceTree, Command line, VS Code|
+      | Source control tools | Command line, VS Code|
       | Testing infrastructure | Jest |
       | Debugging | VS Code debugger |
       | Text editor | VS Code |
@@ -98,8 +98,9 @@ There's likely a range of familiarity with web pages, web apps, and how they wor
       * TS is compiled - it generates JS
       * Major benefits: easier to debug, easier to build programs that scale
 
-## Demo
-[Meet Your Instructors page](https://github.com/tnt-summer-academy/Samples/tree/main/Week_1/meet-your-Instructors)
+## Demo (30 minutes)
+
+[Meet Your Instructors page](https://github.com/tnt-summer-academy/Exercises/tree/main/Week_1/ENG1.0/meet-your-Instructors)
 
 * Show a demo and walk through the HTML tags and CSS files
 * Ask students to clone and experiment with different CSS properties to see different effects

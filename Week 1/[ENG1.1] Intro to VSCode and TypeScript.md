@@ -115,7 +115,7 @@ Samples for datatypes, functions, objects, classes, use of the fat arrow symbol 
    // Object
    let boss = {
        name:"Michael Scott",
-       phone:"555-555-5555",
+       phone:2725559393,
        address: "Scranton, PA"
    }
    
@@ -124,7 +124,7 @@ Samples for datatypes, functions, objects, classes, use of the fat arrow symbol 
     name: string;
     phone: number;
     address: string;
-    bossrank: number;
+    bossrank?: number;
    }
 
    const michaelScott:Bosses = {
@@ -172,7 +172,8 @@ Samples for datatypes, functions, objects, classes, use of the fat arrow symbol 
 
 6. Generics - [overview of generics](https://www.typescriptlang.org/docs/handbook/generics.html)
    * Generics permit components to work on a variety of types rather a single one. They also constraint the component.
-   * Types are declared with `<>`, e.g., <string>.
+   * Types are declared with `<>`, e.g., `<string>`
+   * When definining elements as generic, use captial 'T' to "stand in" for the type
       
    ```typescript
    // array of strings

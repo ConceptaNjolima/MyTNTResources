@@ -26,8 +26,9 @@ If you want to separate the component out into it's own file you'll need somethi
 **App.tsx**:
 
 ```
-	import MyPersona from "./MyPersona"
-
+	import React from 'react';
+	import MyPersona from "./MyPersona";
+	
 	class App extends React.Component {
 
 		public render() {

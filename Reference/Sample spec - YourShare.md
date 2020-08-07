@@ -1,8 +1,10 @@
+*This is a minimal viable sample spec*
+
 # YourShare
 
 ## Problem statement
 
-There's value in what communities collectively own today that's untapped. People are likely to buy something they use infrequently and there are barriers to sharing and discovering what's available in friend and community circles. How might we enable individuals to share what they own reducing waste and creating stronger local communities.
+There's value in what communities collectively own today that's untapped. People are likely to buy something they use infrequently and there are barriers to sharing and discovering what's available in friend and community circles. How might we enable individuals to share what they own, reducing waste and creating stronger local communities.
 
 ## Summary
 
@@ -21,16 +23,16 @@ YourShare's initial target market is college students and the communities around
 
 Cam is a college junior. They just moved into their own apartment. Later in the fall Cam notices the leaves need cleaning up in their elderly neighbors yard. Cam looks to borrow a rake from someone nearby. They're glad they found another neighbor with two rakes and who offered to jump in to help out.
 
-Stacey is a graduate student. She's accumulated some kitchen appliances as friends have moved away. She only uses them sometimes but isn't quite ready to give them away. Stacey is looking for any easy way to let friends, and friends of friends, know they can barrow her blender and popcorn air popper whenever they'd like. Stacey is happy that her appliances are getting more ues.
+Stacey is a graduate student. She's accumulated some kitchen appliances as friends have moved away. She only uses them sometimes but isn't ready to give them away. Stacey is looking for any easy way to let friends, and friends of friends, know they can barrow her blender and popcorn air popper whenever they'd like. Stacey is happy that her appliances are getting more ues.
 
 Marcos has a car on campus. He uses it occasionally to drive out to the grocery store. Marcos's friends borrow the car frequently. He wants an easy way to manage sharing his ride. Marcos is relieved that some of the stress is taken out of lending is car.
 
 ## Goals
 
-* Reduce waste - many appliances are needed infrequently, once or twice a month. In an effort of conservation, borrowing something reduces energy and renewable material use in manufacturing the product and reduces the waste at the end of the product life, preventing one more thing from ending up in the landfill.
+* Reduce waste - many appliances are needed infrequently, once or twice a month. In an effort of conservation, borrowing something reduces energy and material used in manufacturing the product and reduces the waste at the end of the product life, preventing one more thing from ending up in the landfill.
   * Number and variety of items listed on YourShare
   * User service prompt to measure if it saved a purchase
-* Reduce dependency of sharing economies on large corporations - large companies drive the sharing economy today. YourShare gives it back to communities.
+* Create local sharing economies - large companies drive the sharing economy today. YourShare gives it back to communities.
   * Adoption of YourShare with a college or university community area, % of population
 * Improve resiliency of communities - communities that share can depend on another in good times and in times of trial.
   * Average number of shares over time against economic and health highs and lows
@@ -41,10 +43,12 @@ Marcos has a car on campus. He uses it occasionally to drive out to the grocery 
 * P0: A user can post new items
 * P0: A user can browse items
 * P0: A user can request to borrow items
-* P1: A user can control who can see and borrow their items
+* P0: A user can add friends and manage permissions
 * P1: A user can manage the items they have posted
-* P2: A user can manage the items they've borrowed or currently have borrowed
+* P1: A user can sort items
+* P2: A user can upload a photo of the item.
 * P2: A user can search for items
+* P2: A user can see items on a map
 
 ## Out of scope
 
@@ -57,7 +61,29 @@ Marcos has a car on campus. He uses it occasionally to drive out to the grocery 
 
 ## UX
 
-*Screenshots of feature UI design*
+*This spec just includes UX for the P0 items as part of the team practice project. Final specs should include UX for all listed user stories*
+
+YourShare is first being built as a large screen application. The success of YourShare depends on community adding items. From user feedback we found this is best done from a larger screen device with a keyboard. There is also a high density of information that's best displayed on a larger screen.
+
+The image assets are in the [YourShare-screens](YourShare-screens) folder - icon, upload, blender.
+
+When a user navigates to your share, they land on the landing page to sign-up or sign-in. If the user is already signed in they will automatically land on the browse item page. The authentication is handled through the phone number and text confirmation.
+![App landing page](YourShare-screens/YS_account.png)
+
+This is the main screen of the app. It shows the items that can be borrowed. If is user is signed up through a friend invite, the screen displays items available within that circle of friends. From here, the user can access adding items, borrowing items, and managing friends and settings.
+![Browse items](YourShare-screens/YS_browse.png)
+
+This is the add item screen. It has the basic fields for a user to submit a new item. Uploading an image is a stretch goal, it starts a just a placeholder.
+![Add item](YourShare-screens/YS_additem.png)
+
+This is the borrow item screen. Selecting an item from the available list lands here. Items are only shown if available. The user requests to borrow and the lender gets a text to approve or deny. Again the image is a placeholder, stretch goal to add.
+![Borrow item](YourShare-screens/YS_BorrowItem.png)
+
+This is the screen to manage community. It allows the user to connect with new friends or invite new friends to the platform. It also has the key settings for using the app.
+![Manage community](YourShare-screens/YS_managecommunity.png)
+
+This screen describes the app navigation, how the screens of the app are connected. The central screen is the app landing page. Other screens lead back here.
+![Navigation](YourShare-screens/YS_navigation.png)
 
 ## Breakdown of work
 
