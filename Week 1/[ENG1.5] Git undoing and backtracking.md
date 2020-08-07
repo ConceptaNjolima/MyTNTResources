@@ -120,9 +120,15 @@ We'll cover three scenarios: amending a commit, recovering a deleted file, and r
 
 ### Introducing Live Share in VS Code
 
+
+* [Download VScode live sharing extension](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare-pack)
+* Show Live sharing [instruction details](https://github.com/tnt-summer-academy/Curriculum/blob/master/Reference/VSCode_Live_Share.md)
+* Demo how to start and watch this small [video](https://www.youtube.com/watch?v=9QXwSg9-2qQ&feature=emb_title)
+=======
 * [Download VS Code Live Share extension](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare-pack)
 * Show Live Share [instruction details](https://github.com/tnt-summer-academy/Curriculum/blob/main/Reference/VSCode_Live_Share.md)
 * Demo how to start and watch this short [video](https://www.youtube.com/watch?v=9QXwSg9-2qQ&feature=emb_title)
+
 
 ## Post-session
 
