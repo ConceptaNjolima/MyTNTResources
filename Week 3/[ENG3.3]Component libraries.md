@@ -10,27 +10,25 @@ This lesson provides an overview of component libraries (specifically Fluent UI)
 
 ## Time required and pace
 
-Total time: 1.25 hours
-
 * 60 minutes - pre-session: background learning, research, and investigations
 	* 15 minutes - Installing/Using Fluent UI
 	* 15 minutes - Examine demo code
 	* 30 minutes - Reflect on demo code, read the docs
-* 75 minutes (1:15) - Session:
-	* 15 minutes – answer review questions in your table group
-	* 15 minutes – what are component libraries
+* 60 minutes - Session:
+	* 10 minutes – answer review questions in your table group
+	* 5 minutes – what are component libraries
 	* 15 minutes – using components inside your components
 	* 15 minutes - how to read documentation
 	* 15 minutes - Reacting to user input on the components
-* 30 minutes - post-session: what to continue working on, how it ties into the next sessions or projects
-	* 15 minutes - Styling the FluentUI components with the Theme Designer
-	* 15 minutes - Styling Your Page with CSS 
+* 60 minutes - post-session: what to continue working on, how it ties into the next sessions or projects
+	* 10 minutes - Styling the FluentUI components with the Theme Designer
+	* 10 minutes - Styling Your Page with CSS 
 	* 30 minutes - practice building a new React component using Fluent UI components
-	* 15 minutes - Reflect, incorporate, plan
+	* 10 minutes - Reflect, incorporate, plan
 
 ## Session (The lesson)
 
-### Pre-session Review Questions
+### Exercise: Pre-session Review Questions
 
 Working within a group, do your best to answer the following questions:
 
@@ -47,7 +45,7 @@ Working within a group, do your best to answer the following questions:
 
 1. Why do you think a collection of widgets (like this FluentUI library) would be useful in general?
 
-### What are component libraries
+### Demo: What are component libraries
 
 A component library is a collection of components installed generally through a package manager that provides common solutions whether it's a UI library, testing library, etc.
 
@@ -61,13 +59,13 @@ Why use a component library?
 Things to consider before using a component library
 
 * Components may become outdated as other technologies advance
-* Consider the popularity and communitity activity for the component library
+* Consider the popularity and community activity for the component library
 * Ease of use generally through an API defined by the component library
 * Tradeoffs between speed, customization time, cost and immediate business needs
 
-### Using components inside your components
+### Demo: Using components inside your components
 
-![Yo Dawg joke: Yo Dawg I heard you like components so I put a component inside your component, So you can reuse your components while reusing the library's components][YoDawg]
+![Yo Dawg joke: Yo Dawg I heard you like components so I put a component inside your component, So you can reuse your components while reusing the library's components](./ENG3.3/YoDawg_Components.jpg)
 
 In this example, we'll look at putting the Persona component inside new custom component that you create, all inside of a single `.TSX` file
 
@@ -143,7 +141,7 @@ Take the above code (with the component AND the App class) and separate the comp
 
 There's an [EXAMPLE SOLUTION](ENG3.3/SeparatingComponentIntoFiles.md) here.  The idea is that you can use this to check your work during the class session, as a reference afterwards, and also to help get you unstuck if you and your group are stuck.
 
-### How to read documentation
+### Demo: How to read documentation
 
 [https://developer.microsoft.com/en-us/fluentui#/get-started](https://developer.microsoft.com/en-us/fluentui#/get-started)
 
@@ -165,7 +163,7 @@ Documentation is also good for when you're not sure if something will *always* w
 
 Answer ([AFAICT](https://www.urbandictionary.com/define.php?term=afaict): No.  B/c it's not mentioned on the documentation page anywhere)
 
-### Reacting to user input on the components
+### Demo: Reacting to user input on the components
 Demo: In this code sample we'll change the 'text' that the persona displays into a 'click counter', so that our component will do something every time you click on it.
 
 ```typescript
@@ -188,7 +186,8 @@ export default class MyPersona extends Component<IPersonaProps, IState> {
 
   private moveToNextText = () => {
     console.log("Hi " + this.state.click_count);
-    this.setState({ click_count: this.state.click_count + 1 });
+   this.setState(
+        state => ({ click_count: state.click_count + 1 }));
   }
 
   render() {
@@ -237,7 +236,8 @@ Important details:
 	```typescript
 	private moveToNextText = () => {
 		console.log("Hi " + this.state.click_count);
-		this.setState({ click_count: this.state.click_count + 1 });
+		this.setState(
+        state => ({ click_count: state.click_count + 1 }));
 	}
 	```
  1. Having defined the method that we _want_ to run is great, but doesn't tell TypeScript to connect that method to any particular action in our component.  This line will tell Typescript that when the component is clicked it should run that method:
@@ -245,6 +245,3 @@ Important details:
 	```typescript
 	onClick={this.moveToNextText}	
 	```
-
-
-[YoDawg]: ./ENG3.3/YoDawg_components.jpg "Yo Dawg - Components"

@@ -245,8 +245,6 @@ NTs continue product thinking with the value prop and pitch. This is a first dra
 
 #### Details
 
-
-
 On the product side, NTs take a break from prototyping and testing and conduct a competitor audit completing a SWOT diagram. Some questions to check-in with:
 
 * Which competitors are you looking at?
@@ -257,16 +255,16 @@ Another incredible week is wrapping up. NTs have created paper prototypes and st
 
 ## Week 3
 
-Early this week teams complete a practice team engineering project - YourShare. It's not a complete prototype, the first couple of changes for the scaffolding of the app to practice team engineering and merging. NTs will be introduced to Redux and add redux. Adaptive layout, animation, and using component libraries are introduced.
+This week teams complete a practice team engineering project from a sample spec - YourShare. It's not a complete prototype, the first couple of changes for the scaffolding of the app to practice team engineering and merging. NTs will be introduced to Redux. Adaptive layout, animation, and using component libraries are introduced later in the week.
 
-On the product side, NTs narrow down towards their MVP with a walkthrough. Applying feedback from their usability testing and considering what best demonstrates meeting the user needs, NTs close on final features. The [PowerPoint template](https://github.com/tnt-summer-academy/Curriculum/blob/main/Reference/Wireframe%20template.pptx) is recommended for creating the walk through.
+On the product side, NTs narrow down towards their MVP with a walkthrough. Applying feedback from their usability testing and considering what best demonstrates meeting the user needs, NTs close on final features. The [PowerPoint template](https://github.com/tnt-summer-academy/Curriculum/blob/main/Reference/Wireframe%20template.pptx) is recommended for creating the walk through, though if NTs are productive with another tool they should move forward with that.
 
-The spec is introduced at the beginning of this week and NTs work on it throughout. The goal is for teams to get coach's sign off on the spec by the following Monday. Teams cannot start working on their MVP until the spec is signed-off by both coaches. The spec includes goals and measurable outcomes. Future considerations can include team thinking on the business model for the app. If you've been waiting for a chance to dive in on data, data in real world development and products, here's your chance. Help the NTs land solid engagement metrics and share your experience with data in product development.
+The spec is introduced Wednesday and NTs work on it throughout. The goal is for teams to get coach's sign off on the spec by the following Monday. Teams cannot start working on their MVP until the spec is signed-off by both coaches. The spec includes goals and measurable outcomes, two topics new to the NTs. Future considerations can include team thinking on the business model for the app. If you've been waiting for a chance to dive in on data, data in real world development and products, here's your chance. Help the NTs land solid engagement metrics and share your experience with data in product development. The metrics should help the NTs learn if their product is meeting the user needs they've identified.
 
 Recommended timeline for spec:
 
-* Tuesday - spec introduced
-* Thursday - draft of spec
+* Wednesdat - spec introduced
+* Thursday - outline / draft of spec
 * Friday - first round of coach feedback
 * Monday - feedback applied, second round of feedback, sign-off end of day if ready
 * Additional time - if spec needs more work, aim for Tuesday sign-off
@@ -277,14 +275,10 @@ Busy week, but if there's time or a team is jamming, NTs can continuously seek u
 
 #### tl;dr
 
-* NTs are introduced to adaptive layouts, flex properties and the different properties on a flex container. Discuss your experiences with shipping for different screen sizes. Re-iterate the MVP targets one large or small.
 * NTs are introduced to Redux.
-* Teams may be finishing up there YourShare project. Any challenges with merging?
 * NTs are introduced to the end to end walktrhough and begin building one together. Check-in on any questions here.
 
 #### Details
-
-Again, NTs choose to target a larger or small screen for their prototype MVP. If given enough time, it's assumed their product would have both. Did your team close on a decision here? It should be based on what best demonstrates how the app meets a user need. Adaptive layout is still an important engineering concept to help with scaling and making sure the content lays out as expected.
 
 Redux is the next step for state management. This week introduces next week and revisits the topic and goes more in depth. Ask your team to share the data flow. See if together they can describe the flow. No need to be a redux experts. If you're blocked share how you learn new technical concepts:
 
@@ -312,25 +306,37 @@ Teams will be in different places in the walkthough process. Check-in on where t
 #### tl;dr
 
 * Teams start on a practice team engineering project - [YourShare](https://github.com/tnt-summer-academy/Curriculum/blob/main/Reference/Sample%20spec%20-%20YourShare.md). Check-in on their work breakdown. Look for equitable breakdown fo work.
-* NTs are introduced to animations and springs. Animation makes a good stretch goal for the MVP.
-* NTs are introduced to the spec today! The goal is spec sign-off is Monday the following week.
 * Check-in on walkthrough progress. These screens will be a critical part of the spec. It also gives the team space to discuss the details and come together on the plan.
 
 #### Details
 
 Before jumping in to working on their app together, [YourShare](https://github.com/tnt-summer-academy/Curriculum/blob/main/Reference/Sample%20spec%20-%20YourShare.md) provides NTs a chance to collaborate and practice branching and merging. NTs also get to read a spec and practice breaking down the work. NTs won't build the full app, just the first round of check-ins that create the basic app flow.
 
-Check-in on the progress and work breakdown:
+Talk to the NTs about writing a similar spec for their app soon and more on what goes in the spec tomorrow.
+
+Check-in on the progress and work breakdown for YourShare:
 
 * Work breakdown should describe what NTs are building and how. It can be a few sentences or bullet points that describe how the mockup will be built.
 * Does each member have an engineering contribution?
 * Talk through working in a branch and then merging into main with a pull request.
 
-React-springs are introduced for animations. Ask the team for an overview of how they work or what they learned. It may be interesting to hear if anyone has worked with animations before or likes thinking about animations and their impact on the user experiences.
+### Day 3
+
+#### tl;dr
+
+* Work on the walkthrough should be wrapping up.
+* NTs are introduced to adaptive layouts, flex properties and the different properties on a flex container. Discuss your experiences with shipping for different screen sizes. Re-iterate the MVP targets one large or small.
+* NTs are introduced to the spec they'll be writing.
+
+#### Details
+
+Teams should be wrapping up the walkthroghs wtheir walktrhoughs and moved product focus to learning about the spec. Check-in on spec progress. Answer questions. Ensure everyone is contributing here.
+
+Again, NTs choose to target a larger or small screen for their prototype MVP. If given enough time, it's assumed their product would have both. Did your team close on a decision here? It should be based on what best demonstrates how the app meets a user need. Adaptive layout is still an important engineering concept to help with scaling and making sure the content lays out as expected.
 
 The spec is a big come together moment. It defines what the NTs will build for the MVP prototype. NTs cannot begin work on the spec until they have coach sign-off. Share your experiences around specs and engineering planning. Revisit the concept of MVP (minimum-viable-product) to help frame scoping.
 
-Check-in on where your team is in the spec process. At a minimum they should have at least read the lesson. If not walk through it together. Topics to cover:
+Check-in on where your team is in understanding the spec process. Topics to cover:
 
 * The spec brings together work from all phases of the design lifecycle. From their definition of the problem statement, to customer research, SWOT analysis, it all comes together in the spec.
 * Discuss the engineering work break down using the prioritized list of user scenarios from the walkthrough. For the engineering work there should be a screen and a technical description of how it's built.
@@ -354,32 +360,17 @@ The goal is spec sign-off by end of week. For sign-off specs must:
 * Have contributions from everyone.
 * Once ready, both coaches should say so and post in the team's team channel that they sign-off.
 
-NTs start with YourShare for their enginering project. Aim for a draft Thursday for feedback. If needed, do another round of feedback on Friday. It's ok if sign-off  Monday. NTs should head into building with a clear plan.
-
-### Day 3
-
-#### tl;dr
-
-* Work on the walkthrough should be wrapped up.
-* Check-in on spec progress and questions.
-* Unit testing and jest is introduced. NTs do a practice unit test. Unit test(s) could be a stretch goal engineering item for someone in the spec.
-
-#### Details
-
-Teams should have wrapped up work on their walktrhoughs and moved product focus onto their spec. Check-in on spec progress. Answer questions. Ensure everyone is contributing here.
-
-Unit testing is introduced. Discuss and share how testing comes into your product development lifecycle. Unit testing isn't a requirement for the prototype though it makes a good stretch goal.
 
 ### Day 4
 
 #### tl;dr
 
-* NTs are introduced to component libraries. It's a good chance to talk about Fluent and common controls.
+* NTs are introduced to animations and springs. Animation makes a good stretch goal for the MVP.
 * NTs should have a draft of the spec done. Give detailed feedback to help them address changes needed for sign-up. Provide written feedback and then discuss it together.
 
 #### Details
 
-NTs are introduced to the general concept of component libraries and then pointed to the example of [Fluent UI](https://developer.microsoft.com/en-us/fluentui#/get-started). Fluent controls can be used in their prototypes. Talk through their walkthrough and look at what might be a good match for fluent controls. Make sure the spec is updated with controls that will be used.
+React-springs are introduced for animations. Ask the team for an overview of how they work or what they learned. It may be interesting to hear if anyone has worked with animations before or likes thinking about animations and their impact on the user experiences.
 
 Give feedback on the spec. Written feedback is helpful so NTs have a list of things to address. Walkthrough the feedback so NTs understand the changes they need to make. Impress that feedback is part of the product cycle and spec process.
 
@@ -387,13 +378,14 @@ Give feedback on the spec. Written feedback is helpful so NTs have a list of thi
 
 #### tl;dr
 
+* NTs are introduced to component libraries. It's a good chance to talk about Fluent and common controls.
 * NTs should be iterating on the spec.
 
 #### Details
 
-Give spec sign-off when the NTs have sufficient detail on what they're building and the spec represents the customer thinking and how the product will meet those needs.
+Monday is the target date for spec sign-off. NTs should be applying feedback.Talk the NTs through the feedback you're providing on the spec. Give feedback from a positive and growth perspective. Some NTs may be excited to jump in and get coding, frustrated with the documentation step. Give feedback that guides to completion and sign-off.
 
-Talk the NTs through the feedback you're providing on the spec. Give feedback from a positive and growth perspective. Some NTs may be excited to jump in and get coding, frustrated with the documentation step. Give feedback that guides to completion and sign-off.
+NTs are introduced to the general concept of component libraries and then pointed to the example of [Fluent UI](https://developer.microsoft.com/en-us/fluentui#/get-started). Fluent controls can be used in their prototypes. Talk through their walkthrough and look at what might be a good match for fluent controls. Make sure the spec is updated with controls that will be used.
 
 ## Week 4
 
